@@ -1,0 +1,123 @@
+[
+  {
+    "slot": "serve-small",
+    "file": "images/serve-small.jpg",
+    "query": "african shop owner small business",
+    "pexelsId": 30019690,
+    "pexelsUrl": "https://www.pexels.com/photo/young-shopkeeper-in-abuja-market-30019690/",
+    "photographer": "Muhammad-Taha Ibrahim",
+    "photographerUrl": "https://www.pexels.com/@planeteelevene",
+    "alt": "Portrait of a young man in a colorful shirt leaning on a market counter in Abuja, Nigeria.",
+    "avgColor": "#694841"
+  },
+  {
+    "slot": "serve-mid",
+    "file": "images/serve-mid.jpg",
+    "query": "african businesswoman office laptop",
+    "pexelsId": 5668845,
+    "pexelsUrl": "https://www.pexels.com/photo/thoughtful-black-businesswoman-working-on-project-in-office-5668845/",
+    "photographer": "Sora Shimazaki",
+    "photographerUrl": "https://www.pexels.com/@sora-shimazaki",
+    "alt": "Serious African American female employee wearing white formal shirt sitting at working desk with laptop and cup of coffee",
+    "avgColor": "#757A80"
+  },
+  {
+    "slot": "serve-corporate",
+    "file": "images/serve-corporate.jpg",
+    "query": "african corporate business meeting",
+    "pexelsId": 7640793,
+    "pexelsUrl": "https://www.pexels.com/photo/a-man-scolding-a-woman-sitting-at-a-desk-7640793/",
+    "photographer": "Yan Krukau",
+    "photographerUrl": "https://www.pexels.com/@yankrukov",
+    "alt": "An office meeting where a man argues with a woman over documents, causing tension.",
+    "avgColor": "#B3AAA4"
+  },
+  {
+    "slot": "home-band",
+    "file": "images/home-band.jpg",
+    "query": "african entrepreneurs team working",
+    "pexelsId": 30690398,
+    "pexelsUrl": "https://www.pexels.com/photo/two-women-collaborating-with-laptops-in-lagos-30690398/",
+    "photographer": "Ninthgrid",
+    "photographerUrl": "https://www.pexels.com/@ninthgrid-2149521550",
+    "alt": "Two professional women collaborating with laptops in Lagos, Nigeria.",
+    "avgColor": "#D5B697"
+  },
+  {
+    "slot": "about-context",
+    "file": "images/about-context.jpg",
+    "query": "african businessman working laptop",
+    "pexelsId": 5060973,
+    "pexelsUrl": "https://www.pexels.com/photo/a-man-using-a-laptop-in-the-office-5060973/",
+    "photographer": "Thirdman",
+    "photographerUrl": "https://www.pexels.com/@thirdman",
+    "alt": "Professional man sitting at a desk working on a laptop in a modern office environment.",
+    "avgColor": "#D7D8D8"
+  },
+  {
+    "slot": "pillar-research",
+    "file": "images/pillar-research.jpg",
+    "query": "african woman analyst laptop data",
+    "pexelsId": 7172813,
+    "pexelsUrl": "https://www.pexels.com/photo/woman-in-talking-on-the-phone-near-a-laptop-7172813/",
+    "photographer": "Nataliya Vaitkevich",
+    "photographerUrl": "https://www.pexels.com/@n-voitkevich",
+    "alt": "African American woman reviewing stock market charts on a laptop while talking on the phone.",
+    "avgColor": "#A1A9A1"
+  },
+  {
+    "slot": "pillar-content",
+    "file": "images/pillar-content.jpg",
+    "query": "african man writing notebook office",
+    "pexelsId": 6773663,
+    "pexelsUrl": "https://www.pexels.com/photo/a-man-in-a-white-shirt-holding-a-pen-6773663/",
+    "photographer": "Kindel Media",
+    "photographerUrl": "https://www.pexels.com/@kindelmedia",
+    "alt": "An adult man writing at a desk in a cozy office environment with bookshelves.",
+    "avgColor": "#988275"
+  },
+  {
+    "slot": "pillar-reporting",
+    "file": "images/pillar-reporting.jpg",
+    "query": "african business meeting charts",
+    "pexelsId": 7446582,
+    "pexelsUrl": "https://www.pexels.com/photo/a-woman-presenting-statistical-graphs-7446582/",
+    "photographer": "Gustavo Fring",
+    "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+    "alt": "Two businesswomen discussing financial charts in a modern office setting.",
+    "avgColor": "#A6A3A2"
+  },
+  {
+    "slot": "blog-what-ai-seo-actually-does",
+    "file": "images/blog-what-ai-seo-actually-does.jpg",
+    "query": "african man laptop office focused",
+    "pexelsId": 5439400,
+    "pexelsUrl": "https://www.pexels.com/photo/a-businessman-sitting-on-a-chair-while-looking-afar-5439400/",
+    "photographer": "Tima Miroshnichenko",
+    "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+    "alt": "African American man in a striped shirt sits at a desk in an office environment.",
+    "avgColor": "#878A89"
+  },
+  {
+    "slot": "blog-what-seo-actually-costs",
+    "file": "images/blog-what-seo-actually-costs.jpg",
+    "query": "african woman small business phone money",
+    "pexelsId": 6693656,
+    "pexelsUrl": "https://www.pexels.com/photo/a-woman-in-plaid-blazer-using-her-laptop-and-mobile-phone-6693656/",
+    "photographer": "Tima Miroshnichenko",
+    "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+    "alt": "Professional woman analyzing financial documents and counting cash at office desk.",
+    "avgColor": "#777672"
+  },
+  {
+    "slot": "blog-ai-seo-vs-traditional-seo",
+    "file": "images/blog-ai-seo-vs-traditional-seo.jpg",
+    "query": "african office computers technology",
+    "pexelsId": 5621980,
+    "pexelsUrl": "https://www.pexels.com/photo/woman-in-black-long-sleeve-shirt-holding-a-black-face-mask-5621980/",
+    "photographer": "Gustavo Fring",
+    "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+    "alt": "African American woman smiling at a computer desk in an office setting, holding a black item.",
+    "avgColor": "#8F9395"
+  }
+]

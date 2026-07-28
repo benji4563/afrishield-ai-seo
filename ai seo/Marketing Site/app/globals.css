@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-ink font-body text-body text-white antialiased;
+  }
+
+  /* Keyboard focus must always be visible — quality floor, no exceptions. */
+  :focus-visible {
+    outline: 2px solid theme('colors.green.300');
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background: theme('colors.green.300');
+    color: theme('colors.ink');
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Measured from AgentFlow: 1264px container, 30px outer / 40px inner pad */
+  .container-page {
+    @apply mx-auto w-full max-w-container px-[30px];
+  }
+
+  .container-inner {
+    @apply mx-auto w-full max-w-container px-0 md:px-[40px];
+  }
+
+  /* Section rhythm: 120px measured. Applied on the surface, never on both a
+     .section and a nested element — avoids the specificity collision that
+     silently doubles padding. */
+  .section {
+    @apply py-[80px] md:py-section;
+  }
+
+  .surface-dark {
+    @apply bg-ink text-white;
+  }
+
+  .surface-light {
+    @apply bg-bone text-ink;
+  }
+
+  .eyebrow {
+    @apply font-mono text-label font-medium uppercase;
+  }
+
+  .eyebrow-dark {
+    @apply eyebrow text-green-300;
+  }
+
+  .eyebrow-light {
+    @apply eyebrow text-green-600;
+  }
+
+  .h1 {
+    @apply font-display text-h1 font-bold;
+  }
+
+  .h2 {
+    @apply font-display text-h2 font-bold;
+  }
+
+  .h3 {
+    @apply font-display text-h3 font-semibold;
+  }
+
+  .body-dim {
+    @apply text-white/60;
+  }
+
+  .body-dim-light {
+    @apply text-slate;
+  }
+
+  .hairline-dark {
+    @apply border-white/10;
+  }
+
+  .hairline-light {
+    @apply border-ink/10;
+  }
+
+  /* Card on a dark surface — the sub-10% green wash is the only place green
+     touches a background, per the never-full-bleed-green rule. */
+  .card-dark {
+    @apply rounded-card border border-white/10 bg-white/[0.03] p-7;
+  }
+
+  .card-light {
+    @apply rounded-card border border-ink/10 bg-white p-7;
+  }
+
+  /* Long-form article body. Scoped to .post-body so it can never collide with
+     the section-level spacing rules above. */
+  .post-body h2 {
+    @apply h2 mt-14 scroll-mt-[100px] first:mt-0;
+  }
+
+  .post-body h3 {
+    @apply h3 mt-10;
+  }
+
+  .post-body p {
+    @apply mt-5 text-body text-slate;
+  }
+
+  .post-body h2 + p,
+  .post-body h3 + p {
+    @apply mt-5;
+  }
+
+  .post-body ul,
+  .post-body ol {
+    @apply mt-5 space-y-2.5 text-body text-slate;
+  }
+
+  .post-body ul > li {
+    @apply relative pl-6 before:absolute before:left-0 before:top-[0.65em] before:h-1.5 before:w-1.5 before:bg-green-600 before:content-[''];
+  }
+
+  .post-body ol {
+    @apply list-decimal pl-6 marker:font-mono marker:text-mute;
+  }
+
+  .post-body strong {
+    @apply font-medium text-ink;
+  }
+
+  .post-body a {
+    @apply text-green-600 underline underline-offset-4 hover:text-green-500;
+  }
+
+  .post-body blockquote {
+    @apply mt-8 border-l-2 border-green-600 pl-6 font-display text-[19px] font-semibold leading-snug text-ink;
+  }
+
+  .post-body table {
+    @apply mt-8 w-full border-collapse text-small;
+  }
+
+  .post-body th {
+    @apply border-b border-ink/20 pb-3 pr-5 text-left font-mono text-label uppercase text-mute;
+  }
+
+  .post-body td {
+    @apply border-b border-ink/10 py-3.5 pr-5 align-top text-slate;
+  }
+
+  .post-body figure {
+    @apply mt-8 overflow-x-auto;
+  }
+}
+
+@layer utilities {
+  .mask-fade-x {
+    mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+  }
+
+  .pause-on-hover:hover * {
+    animation-play-state: paused;
+  }
+}

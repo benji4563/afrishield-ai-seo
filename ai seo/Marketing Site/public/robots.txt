@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you
+
+# AI search & retrieval crawlers — explicitly allowed so answer engines
+# (ChatGPT, Perplexity, Claude, Google AI) can index and cite this content.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://afrishieldai.com/sitemap.xml
+Host: afrishieldai.com

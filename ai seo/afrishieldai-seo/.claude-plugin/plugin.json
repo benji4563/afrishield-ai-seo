@@ -1,0 +1,21 @@
+{
+  "name": "afrishieldai-seo",
+  "description": "The Africa-specific AI SEO / GEO website-builder standard operating procedure. Combines the general website-build workflow with a Generative Engine Optimization + Local SEO layer (AI-crawler allowlist, BLUF answer blocks, LocalBusiness + FAQPage JSON-LD, geo/intent keyword matrix, GBP), African-market imagery discipline, Ask-AI answer buttons, and a technical-SEO verification audit — tuned for broad African SMBs with a trust-led, AI-made-reliable positioning. The Africa-specific AfriShield website-builder skill, beside ai-seo-website-builder (general) and ai-seo-3d-website-builder (immersive).",
+  "version": "1.0.0",
+  "author": {
+    "name": "AfriShield",
+    "email": "hello@afrishieldai.com"
+  },
+  "homepage": "https://afrishieldai.com",
+  "keywords": [
+    "ai-seo",
+    "geo",
+    "generative-engine-optimization",
+    "local-seo",
+    "africa",
+    "african-smb",
+    "ask-ai",
+    "website-builder",
+    "schema"
+  ]
+}

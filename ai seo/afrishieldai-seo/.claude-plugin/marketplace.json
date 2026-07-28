@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "afrishieldai-seo",
+  "description": "Africa-specific AI SEO / GEO website builder — the general workflow plus GEO, Local SEO, African-market imagery, Ask-AI, and a technical-SEO audit, tuned for African SMBs.",
+  "owner": {
+    "name": "AfriShield",
+    "email": "hello@afrishieldai.com"
+  },
+  "plugins": [
+    {
+      "name": "afrishieldai-seo",
+      "source": "./",
+      "skills": ["./skills/afrishieldai-seo"],
+      "description": "The Africa-specific AI SEO / GEO build SOP: the general website-build workflow plus a GEO + Local SEO layer, African-market imagery discipline, Ask-AI answer buttons, and a technical-SEO verification audit — for broad African SMBs with a trust-led, AI-made-reliable positioning.",
+      "category": "design"
+    }
+  ]
+}

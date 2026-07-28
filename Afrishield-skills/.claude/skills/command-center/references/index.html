@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AfriShield — Command Center</title>
+<style>
+  :root{
+    --bg:#000000; --panel:#0a0a0a; --panel2:#111111; --border:#1f1f1f; --border2:#2a2a2a;
+    --text:#f5f5f5; --sec:#9a9a9a; --mut:#5c5c5c;
+    --live:#22c55e; --accent:#e5e5e5;
+    --c1:#22c55e; --c2:#3b82f6; --c3:#eab308; --c4:#ef4444; --c5:#a855f7; --c6:#14b8a6; --c7:#f97316; --c8:#64748b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:'Segoe UI',-apple-system,Roboto,sans-serif;line-height:1.5;min-height:100vh}
+  .wrap{max-width:1360px;margin:0 auto;padding:20px}
+  header{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px;
+    border-bottom:1px solid var(--border);padding-bottom:16px;margin-bottom:18px}
+  .eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);font-weight:700}
+  h1{font-size:26px;font-weight:800;letter-spacing:.01em}
+  h1 .thin{color:var(--sec);font-weight:300}
+  .pills{display:flex;gap:8px;flex-wrap:wrap}
+  .pill{font-size:12px;padding:6px 12px;border-radius:999px;background:var(--panel);border:1px solid var(--border2);color:var(--sec);display:flex;align-items:center;gap:7px;white-space:nowrap}
+  .pill b{color:var(--text)}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--mut);display:inline-block}
+  .dot.on{background:var(--live);box-shadow:0 0 8px var(--live)}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:14px}
+  .kpi{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px 18px}
+  .kpi .label{font-size:10.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.1em;font-weight:700;margin-bottom:6px}
+  .kpi .value{font-size:28px;font-weight:800}
+  .kpi .note{font-size:11px;color:var(--mut);margin-top:2px}
+  .grid{display:grid;grid-template-columns:1fr 1.4fr;gap:12px;margin-bottom:14px}
+  .grid2{display:grid;grid-template-columns:1.4fr 1fr;gap:12px}
+  @media(max-width:980px){.grid,.grid2{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:18px}
+  .card h2{font-size:12px;color:var(--sec);text-transform:uppercase;letter-spacing:.12em;font-weight:700;margin-bottom:14px}
+  .pie-row{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+  .legend{font-size:12.5px;display:flex;flex-direction:column;gap:6px;min-width:180px;flex:1}
+  .legend .row{display:flex;align-items:center;gap:8px;color:var(--sec)}
+  .legend .sw{width:10px;height:10px;border-radius:3px;flex:none}
+  .legend b{color:var(--text)}
+  .bars{display:flex;align-items:flex-end;gap:5px;height:150px}
+  .bcol{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;min-width:0}
+  .bar{width:100%;background:linear-gradient(180deg,#3f3f3f,#262626);border:1px solid var(--border2);border-bottom:2px solid var(--accent);border-radius:4px 4px 0 0;min-height:2px;transition:height .4s}
+  .bar.hot{background:linear-gradient(180deg,#166534,#052e16);border-bottom-color:var(--live)}
+  .blabel{font-size:9px;color:var(--mut);white-space:nowrap}
+  .bval{font-size:10px;color:var(--sec)}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);text-align:left;padding:6px 8px;border-bottom:1px solid var(--border)}
+  td{padding:9px 8px;border-bottom:1px solid var(--border);color:var(--sec);vertical-align:top}
+  td.t{color:var(--text);font-weight:600;max-width:340px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  tr.session{cursor:pointer}
+  tr.session:hover td{background:var(--panel2)}
+  .badge{font-size:10px;font-weight:800;letter-spacing:.08em;padding:3px 8px;border-radius:999px;border:1px solid var(--border2);color:var(--mut)}
+  .badge.live{color:#000;background:var(--live);border-color:var(--live);animation:pulse 1.6s infinite}
+  @keyframes pulse{50%{opacity:.55}}
+  .viewer{display:none;margin-top:12px;background:#050505;border:1px solid var(--border2);border-radius:10px;padding:14px;max-height:420px;overflow:auto}
+  .viewer.open{display:block}
+  .viewer .vhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:12px;color:var(--sec)}
+  .viewer .vhead b{color:var(--text)}
+  .ev{padding:8px 10px;border-left:2px solid var(--border2);margin-bottom:8px;font-size:12.5px;white-space:pre-wrap;word-break:break-word;color:var(--sec)}
+  .ev .who{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:2px}
+  .ev.user{border-color:var(--c2)} .ev.user .who{color:var(--c2)}
+  .ev.assistant{border-color:var(--live);color:var(--text)} .ev.assistant .who{color:var(--live)}
+  .ev.tool{border-color:var(--c3)} .ev.tool .who{color:var(--c3)}
+  .close{cursor:pointer;color:var(--mut);border:1px solid var(--border2);border-radius:6px;padding:2px 10px;font-size:11px;background:none}
+  .close:hover{color:var(--text)}
+  footer{margin-top:22px;font-size:11px;color:var(--mut);text-align:center;padding-bottom:20px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">AfriShield</div>
+      <h1>COMMAND <span class="thin">CENTER</span></h1>
+    </div>
+    <div class="pills">
+      <span class="pill"><span class="dot on" id="hb"></span> <span id="clock">—</span></span>
+      <span class="pill">Projects <b id="p-projects">—</b></span>
+      <span class="pill">Sessions <b id="p-sessions">—</b></span>
+      <span class="pill"><span class="dot" id="livedot"></span> Live now <b id="p-live">—</b></span>
+    </div>
+  </header>
+
+  <div class="kpis">
+    <div class="kpi"><div class="label">Events today</div><div class="value" id="k-today">—</div><div class="note">user + agent messages</div></div>
+    <div class="kpi"><div class="label">Live agent sessions</div><div class="value" id="k-live">—</div><div class="note">active in last 2 min</div></div>
+    <div class="kpi"><div class="label">Total tool runs</div><div class="value" id="k-tools">—</div><div class="note">all sessions, all time</div></div>
+    <div class="kpi"><div class="label">Most active project</div><div class="value" id="k-top" style="font-size:16px;line-height:1.3;padding-top:6px">—</div><div class="note" id="k-top-note"></div></div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Sessions by project</h2>
+      <div class="pie-row">
+        <svg id="pie" width="170" height="170" viewBox="0 0 170 170"></svg>
+        <div class="legend" id="pie-legend"></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Activity — last 14 days</h2>
+      <div class="bars" id="bars"></div>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <h2>Agent sessions <span style="color:var(--mut);letter-spacing:0;text-transform:none;font-weight:400">— click to watch live</span></h2>
+      <table>
+        <thead><tr><th>Session</th><th>Project</th><th>Msgs</th><th>Tools</th><th>Last activity</th><th></th></tr></thead>
+        <tbody id="sess-body"></tbody>
+      </table>
+      <div class="viewer" id="viewer">
+        <div class="vhead"><span>Watching: <b id="v-title">—</b></span><button class="close" onclick="closeViewer()">✕ close</button></div>
+        <div id="v-events"></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>AfriShield projects — follow-up</h2>
+      <table>
+        <thead><tr><th>Folder</th><th>Items</th><th>Last touched</th></tr></thead>
+        <tbody id="af-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>AfriShield Command Center · personal &amp; local (127.0.0.1) · auto-refreshes every 4s</footer>
+</div>
+
+<script>
+const COLORS = ['#22c55e','#3b82f6','#eab308','#ef4444','#a855f7','#14b8a6','#f97316','#64748b'];
+let watching = null; // {project, id, title}
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const ago = (ms) => {
+  const d = Date.now() - ms;
+  if (d < 60e3) return Math.max(1, Math.round(d/1e3)) + 's ago';
+  if (d < 3600e3) return Math.round(d/60e3) + 'm ago';
+  if (d < 86400e3) return Math.round(d/3600e3) + 'h ago';
+  return Math.round(d/86400e3) + 'd ago';
+};
+
+function drawPie(items) {
+  const svg = $('pie'), total = items.reduce((n,i)=>n+i.value,0);
+  svg.innerHTML = '';
+  if (!total) return;
+  let a0 = -Math.PI/2;
+  items.forEach((it, i) => {
+    const frac = it.value/total, a1 = a0 + frac*2*Math.PI;
+    const large = frac > .5 ? 1 : 0;
+    const x0=85+70*Math.cos(a0), y0=85+70*Math.sin(a0), x1=85+70*Math.cos(a1), y1=85+70*Math.sin(a1);
+    const p = document.createElementNS('http://www.w3.org/2000/svg','path');
+    p.setAttribute('d', frac >= .999
+      ? 'M85,15 A70,70 0 1 1 84.9,15 Z'
+      : `M85,85 L${x0},${y0} A70,70 0 ${large} 1 ${x1},${y1} Z`);
+    p.setAttribute('fill', COLORS[i % COLORS.length]);
+    p.setAttribute('stroke', '#000'); p.setAttribute('stroke-width','2');
+    svg.appendChild(p);
+    a0 = a1;
+  });
+  const hole = document.createElementNS('http://www.w3.org/2000/svg','circle');
+  hole.setAttribute('cx',85); hole.setAttribute('cy',85); hole.setAttribute('r',40); hole.setAttribute('fill','#000');
+  svg.appendChild(hole);
+  const label = document.createElementNS('http://www.w3.org/2000/svg','text');
+  label.setAttribute('x',85); label.setAttribute('y',90); label.setAttribute('text-anchor','middle');
+  label.setAttribute('fill','#f5f5f5'); label.setAttribute('font-size','22'); label.setAttribute('font-weight','800');
+  label.textContent = total;
+  svg.appendChild(label);
+}
+
+async function refresh() {
+  let d;
+  try { d = await (await fetch('/api/overview')).json(); } catch { return; }
+  $('p-projects').textContent = d.totals.projects;
+  $('p-sessions').textContent = d.totals.sessions;
+  $('p-live').textContent = d.totals.live;
+  $('livedot').className = 'dot' + (d.totals.live ? ' on' : '');
+  $('k-today').textContent = d.totals.eventsToday;
+  $('k-live').textContent = d.totals.live;
+  $('k-tools').textContent = d.totals.toolUses.toLocaleString();
+  const top = d.projects[0];
+  $('k-top').textContent = top ? top.name : '—';
+  $('k-top-note').textContent = top ? top.sessionCount + ' sessions' : '';
+
+  // pie
+  const pieItems = d.projects.map(p => ({ label: p.name, value: p.sessionCount }));
+  drawPie(pieItems);
+  $('pie-legend').innerHTML = pieItems.map((it,i) =>
+    `<div class="row"><span class="sw" style="background:${COLORS[i%COLORS.length]}"></span>${esc(it.label)} — <b>${it.value}</b></div>`).join('');
+
+  // bars
+  const max = Math.max(1, ...d.activity.map(a=>a.count));
+  $('bars').innerHTML = d.activity.map((a,i) => {
+    const h = Math.round(a.count/max*118);
+    const hot = i === d.activity.length-1 && a.count > 0;
+    return `<div class="bcol"><div class="bval">${a.count||''}</div><div class="bar${hot?' hot':''}" style="height:${h}px"></div><div class="blabel">${a.day.slice(5)}</div></div>`;
+  }).join('');
+
+  // sessions table (top 12 most recent across projects)
+  const rows = d.projects.flatMap(p => p.sessions.map(s => ({...s, project: p.name, projectKey: p.key})))
+    .sort((a,b)=>b.mtime-a.mtime).slice(0,12);
+  $('sess-body').innerHTML = rows.map(s => `
+    <tr class="session" onclick="openViewer('${s.projectKey}','${s.id}','${esc(s.title).replace(/'/g,'&#39;')}')">
+      <td class="t" title="${esc(s.title)}">${esc(s.title)}</td>
+      <td>${esc(s.project)}</td>
+      <td>${s.userMsgs + s.assistantMsgs}</td>
+      <td>${s.toolUses}</td>
+      <td>${ago(s.mtime)}</td>
+      <td>${s.live ? '<span class="badge live">● LIVE</span>' : '<span class="badge">idle</span>'}</td>
+    </tr>`).join('');
+
+  // afrishield follow-up
+  try {
+    const af = await (await fetch('/api/afrishield')).json();
+    $('af-body').innerHTML = af.folders.map(f => `
+      <tr><td class="t">${esc(f.name)}</td><td>${f.items}</td><td>${f.lastTouched ? ago(f.lastTouched) : '—'}</td></tr>`).join('');
+  } catch {}
+}
+
+async function pollViewer() {
+  if (!watching) return;
+  let d;
+  try { d = await (await fetch(`/api/session?project=${watching.project}&id=${watching.id}`)).json(); } catch { return; }
+  if (d.error) return;
+  const box = $('v-events');
+  const atBottom = box.scrollHeight - box.scrollTop - box.clientHeight < 60;
+  box.innerHTML = (d.events || []).map(e => `
+    <div class="ev ${e.kind}"><div class="who">${e.kind === 'tool' ? 'tool run' : e.kind}${e.ts ? ' · ' + e.ts.slice(11,19) : ''}</div>${esc(e.text)}</div>`).join('')
+    || '<div class="ev">No renderable events yet.</div>';
+  if (atBottom) box.scrollTop = box.scrollHeight;
+}
+
+function openViewer(project, id, title) {
+  watching = { project, id, title };
+  $('v-title').textContent = title;
+  $('viewer').classList.add('open');
+  $('v-events').innerHTML = '<div class="ev">Loading…</div>';
+  pollViewer();
+  $('viewer').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+function closeViewer() { watching = null; $('viewer').classList.remove('open'); }
+
+setInterval(() => { $('clock').textContent = new Date().toLocaleTimeString(); }, 1000);
+setInterval(refresh, 4000);
+setInterval(pollViewer, 2000);
+refresh();
+</script>
+</body>
+</html>
