@@ -10,7 +10,7 @@
     {
       "name": "afrishieldai-seo",
       "source": "./",
-      "skills": ["./skills/afrishieldai-seo", "./skills/client-ops-automation"],
+      "skills": ["./skills/afrishieldai-seo", "./skills/client-ops-automation", "./skills/afrishield-blog"],
       "description": "The Africa-specific AI SEO / GEO build SOP: the general website-build workflow plus a GEO + Local SEO layer, African-market imagery discipline, Ask-AI answer buttons, and a technical-SEO verification audit — for broad African SMBs with a trust-led, AI-made-reliable positioning.",
       "category": "design"
     }
