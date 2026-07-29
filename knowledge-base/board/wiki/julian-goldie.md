@@ -36,3 +36,11 @@ links · topical relevance of links.
   for clients (only white-hat, relevance-first links).
 - Never adopt a Julian tactic directly into a skill — route it through board review
   first; log the verdict in the repo.
+
+## Updates log (auto-ingested)
+- **2026-07-29** — [Automate Your Entire Lead Pipeline With Hermes](https://www.youtube.com/watch?v=Zwtorh9Plx0):
+  demoed an agent-driven cold-outreach pipeline — a one-line ICP description in,
+  verified-email leads out, each scored 0–100 and paired with a personalized
+  opener, gated behind human approval before anything sends, plus one inbox
+  setting that protects deliverability. Applies to our own or a client
+  agency's lead-gen, not just content production.
