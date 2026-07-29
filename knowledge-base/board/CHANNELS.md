@@ -32,8 +32,16 @@ Each processed video is recorded in `knowledge-base/board/ingested/<slug>.md` (v
 id + date + verdict: ingested / skipped-off-niche / skipped-nothing-new) so nothing is
 ingested twice.
 
+## Depth
+The routine does **full-video analysis**: it fetches each new video's auto-transcript
+(via `yt-dlp`) to a temp dir **outside the repo** (`/tmp/caps`), reads the whole thing
+to understand it, extracts the new ideas, then **deletes the transcript**. Only the
+distilled takeaways are kept. RSS title+description is the fallback if a transcript
+cannot be obtained (marked `depth=shallow` in the ledger).
+
 ## Copyright rule (non-negotiable)
-Store **only original-wording, transformative takeaways** — the new idea and why it
-matters to our niche, in a sentence or two, with the source link. **Never** store
-transcripts, captions, or long verbatim excerpts. If the only way to capture a point
-is to copy text, summarise it instead or skip it.
+A transcript/caption is **ephemeral working input only** — read it, paraphrase it,
+delete it. Store **only original-wording, transformative takeaways** (the new idea and
+why it matters to our niche, a sentence or two, with the source link). **Never** write
+transcripts, captions, or verbatim/near-verbatim excerpts into the repo, wiki, ledger,
+or PR. If the only way to capture a point is to copy wording, paraphrase it or skip it.
