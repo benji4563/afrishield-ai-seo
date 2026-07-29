@@ -15,6 +15,18 @@ export type PostMeta = {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'answer-engine-optimization',
+    title: 'Answer engine optimization: getting your business quoted by the AI, not just ranked by Google',
+    cardTitle: 'Answer engine optimization, without the hype',
+    metaTitle: 'Answer engine optimization explained',
+    description:
+      'What it takes to be named inside an AI assistant’s answer — not just listed underneath it — and why the gap is wider, and more winnable, in African markets.',
+    category: 'AI answers',
+    published: '2026-07-29',
+    readingMinutes: 9,
+    primaryKeyword: 'answer engine optimization',
+  },
+  {
     slug: 'what-ai-seo-actually-does',
     title: 'What an AI SEO agency actually does all day (and what it definitely does not)',
     cardTitle: 'What an AI SEO agency actually does all day',
