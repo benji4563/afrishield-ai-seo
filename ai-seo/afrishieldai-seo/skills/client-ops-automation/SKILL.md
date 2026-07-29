@@ -19,7 +19,7 @@ user-invocable: true
 > client-agnostic version, living in the `ai-seo` service template. Client
 > folders (`03-Clients/*`) may follow it, but **no client-specific value —
 > domain, email, token, DKIM key — ever lives here**. Those belong in the
-> client's own gitignored `~/.afrishield-ops.env` and onboarding CSV. An
+> client's own gitignored `~/.afrishield-secrets/ops.env` and onboarding CSV. An
 > improvement proven on one client should be flowed back into this copy; a
 > client-specific tweak should not.
 
@@ -55,14 +55,14 @@ propagates in seconds, so if a record is absent from `ns1.vercel-dns.com` after
 
 1. **Vercel access token** — create at <https://vercel.com/account/tokens>, scope
    it to the team. Store it so scripts read it **without the agent ever seeing the
-   literal value**: put `VERCEL_TOKEN=...` in a gitignored `~/.afrishield-ops.env`
+   literal value**: put `VERCEL_TOKEN=...` in a gitignored `~/.afrishield-secrets/ops.env`
    (or the OS keychain) and `source` it. The agent references `$VERCEL_TOKEN`,
    never the string. (Alternative with zero token handling by the agent: install
    the CLI and run `vercel login` once — the agent then calls `vercel …` which
    uses stored auth.)
 2. **Team/‌project IDs** — `curl -s -H "Authorization: Bearer $VERCEL_TOKEN" \
    https://api.vercel.com/v2/teams` for `teamId`; project id from the project's
-   Settings. Cache in `~/.afrishield-ops.env` as `VERCEL_TEAM_ID` /
+   Settings. Cache in `~/.afrishield-secrets/ops.env` as `VERCEL_TEAM_ID` /
    `VERCEL_PROJECT_ID` (the latter is per-client, so keep it in the client's CSV row).
 3. **(Optional) Google Search Console API** — a Google Cloud service account with
    the Search Console API enabled, added as an owner of each property, lets us
@@ -74,7 +74,7 @@ propagates in seconds, so if a record is absent from `ns1.vercel-dns.com` after
    in Chrome so host permission stops dropping mid-task.
 5. **Registrar API token (nameserver delegation)** — e.g. a **GoDaddy Personal
    Access Token** (`gd_pat_…`) from <https://developer.godaddy.com/keys>. Store as
-   `GODADDY_PAT=…` in the same gitignored `~/.afrishield-ops.env`. Used only in
+   `GODADDY_PAT=…` in the same gitignored `~/.afrishield-secrets/ops.env`. Used only in
    Step 0. Auth is **`Bearer`**, not `sso-key`. (GoDaddy's production PAT access is
    gated to qualifying account tiers; other registrars — Cloudflare, Porkbun,
    Name.com — expose the same nameserver-set operation via their own API.)
