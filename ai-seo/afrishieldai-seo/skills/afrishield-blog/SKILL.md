@@ -80,6 +80,17 @@ Non-negotiables:
   `Scene` component already stamps "Illustrative composite"). Minimise contractions;
   the measured register is deliberate.
 - **6 FAQ entries**, drawn from real "People also ask", 2–4 sentences each.
+- **Liftable H2 openers (board: Mike King / retrieval).** The first sentence under
+  every `<h2>` must answer that heading's implicit question outright, before any
+  framing or warm-up — the same BLUF discipline the `ShortAnswer` uses, applied per
+  chunk. An answer engine retrieves the *section*, not the page, so a soft opener
+  ("It helps to picture…", "There is a genuine opening here…") gets lifted and says
+  nothing.
+- **Contextual internal links (board: Koray / topical authority).** Include 2–4
+  in-body anchor-text links to sibling posts in the same `content-queue.md` cluster,
+  with descriptive anchors naming the target topic — do not rely on the auto
+  `RelatedPosts` block, which is undifferentiated. If no cluster sibling exists yet,
+  leave an HTML comment noting the intended link target to back-fill on publish.
 - At least one passage that is honest against interest (when *not* to buy).
 - ~1,700–2,200 words.
 

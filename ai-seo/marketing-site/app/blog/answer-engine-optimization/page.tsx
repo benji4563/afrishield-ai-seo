@@ -169,18 +169,20 @@ export default function Post() {
         <h2 id="how-answers-chosen">How an AI decides who to quote</h2>
 
         <p>
-          It helps to picture the mechanics without the mysticism. When an assistant answers
-          a factual question about products, services, or local options, it is usually doing
-          one of two things, and often both.
+          An AI names whoever states the answer most cleanly and is corroborated by other
+          sources, because that is the safest thing to repeat. Under the hood it is doing one
+          of two things, often both: answering from what it absorbed during training — a
+          frozen snapshot, months old, past its training cutoff — or running a live search
+          and grounding its reply in the top results it retrieves, a process called
+          retrieval-augmented generation, or RAG.
         </p>
 
         <p>
-          It either answers from what it absorbed during training — which is a frozen
-          snapshot, months old, weighted toward sources that appeared often and were widely
-          cited — or it runs a live search, reads a handful of the top results, and writes
-          an answer grounded in those. Either way, the same trait wins: a page that states
-          the answer cleanly and is corroborated elsewhere is the safe thing to quote, and
-          models are built to reach for the safe thing.
+          Either path rewards the same trait. A passage that is corroborated elsewhere and
+          states its point without hedging is the low-risk thing to lift, and models are
+          built to reach for the low-risk thing. This is also the mechanism behind{' '}
+          <a href="/blog/ai-seo-vs-traditional-seo">the overlap between AI SEO and
+          traditional SEO</a> — the same clean, well-sourced page tends to win on both.
         </p>
 
         <blockquote>
@@ -309,12 +311,13 @@ export default function Post() {
         <h2 id="african-angle">Why this matters more in African markets</h2>
 
         <p>
-          There is a genuine opening here, and it is the opposite of the usual story about
-          African businesses being behind.
+          For African businesses this is an opening rather than a threat: AI assistants are
+          weakest exactly where the web is thinnest, and African markets are often where it is
+          thinnest of all. That is the opposite of the usual story about being behind.
         </p>
 
         <p>
-          AI assistants are weakest exactly where the web is thinnest. Ask one for a detailed
+          Ask one for a detailed
           recommendation in a large, well-documented market and it has a thousand corroborating
           sources to lean on. Ask it about a specific service in a specific African city and
           it often has very little — a few directory listings, a stray forum post, and not
@@ -369,8 +372,10 @@ export default function Post() {
           every page, facts written as facts, structured data that agrees with them, and
           enough corroboration that a cautious machine is willing to repeat you. The same
           things that make a page good for a person are, almost exactly, the things that make
-          it quotable by a machine. That is the reassuring part: there is no separate dark art
-          to learn — only the ordinary discipline, done for a second reader.
+          it quotable by a machine — which is most of what{' '}
+          <a href="/blog/what-ai-seo-actually-does">an AI SEO agency actually does all week</a>.
+          That is the reassuring part: there is no separate dark art to learn — only the
+          ordinary discipline, done for a second reader.
         </p>
       </PostShell>
     </>
