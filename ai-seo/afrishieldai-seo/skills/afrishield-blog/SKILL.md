@@ -107,6 +107,16 @@ Curly quotes and straight apostrophes are only safe in specific places:
 - **Inside JSX text** (between tags): apostrophes, `&rsquo;`, `&ldquo;`/`&rdquo;` are
   all fine.
 
+### Liftable-opener self-audit (before step 4)
+
+Before registering the post, list every `<h2>` in the draft with its first
+sentence. For each one, confirm that sentence states the section's answer
+outright — not scene-setting, not a metaphor, not a lead-in to a list. If it
+doesn't, rewrite it before moving on. The 2026-07-31 board review found the
+post that motivated this rule (`answer-engine-optimization`) still had two
+sections violating it — the rule existed but nothing swept every heading
+against it. This audit is that sweep, made mandatory.
+
 ## 4. Register it
 
 The **sitemap (`app/sitemap.xml/route.ts`) and blog index (`app/blog/page.tsx`)
