@@ -35,6 +35,23 @@ value silently fails.
 Prefer **nameserver delegation** over manual A records — all DNS then lives in
 Vercel and you never touch the registrar again.
 
+### Automated option (agent-friendly)
+
+`scripts/connect-domain.mjs` performs the Vercel-side of steps 1 and 4 for you
+and reports exactly which DNS records the registrar still needs. It reads a
+`VERCEL_TOKEN` from the environment (add it as a secret — never paste it in chat
+or commit it), is idempotent, and only touches Vercel project config, never the
+registrar:
+
+```bash
+VERCEL_TOKEN=xxx npm run connect-domain
+# optional: VERCEL_TEAM_ID, VERCEL_PROJECT, APEX_DOMAIN
+```
+
+The registrar nameserver / record change (step 2) stays manual — it is
+ownership-level access an agent should not hold. Do the manual steps below if
+you prefer to click through the dashboard instead.
+
 1. Vercel → **Project** Settings → Domains (note: Project, not Team — this trips
    people up) → add `afrishieldai.com` and `www.afrishieldai.com`
 2. At your registrar, set nameservers to `ns1.vercel-dns.com` and
