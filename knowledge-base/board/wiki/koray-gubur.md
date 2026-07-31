@@ -48,3 +48,16 @@ context · "Koraynese" (his precise, coined terminology).
   King's retrieval eligibility — the two lenses reinforce each other).
 - Keep each client site consistent with its **source context** (an accounting firm
   stays on accounting; no drift into unrelated high-volume topics).
+
+## Updates log (auto-ingested)
+- **2026-07-29** — [How to Rank in AI Search with Semantic SEO and Topical Authority (Navneet interview)](https://www.youtube.com/watch?v=AlHiLfYah74):
+  frames "content effort" (from the Google API leak) as its own measurable
+  ranking signal distinct from topical authority itself, and argues content
+  cannibalization still hurts rankings today — a direct counter to the
+  industry claim that cannibalization "no longer matters."
+- **2026-07-29** — [Topical Authority with 1-Page Exact-Match Domain: 8,000 Clicks/Day](https://www.youtube.com/watch?v=WrU25krFCtk):
+  introduces **Visual Semantics** — Google reading a page's visual layout
+  (block placement, hierarchy, whitespace) as its own semantic/ranking signal,
+  demonstrated on a single-page multilingual domain that scaled from 0 to
+  800k organic clicks in three months on topical authority + layout alone,
+  with no link building.

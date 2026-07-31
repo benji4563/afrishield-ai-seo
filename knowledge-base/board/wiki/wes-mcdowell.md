@@ -38,3 +38,15 @@ message-first design · social proof · local SEO tier list.
   Emil ensures it *feels* premium — clarity first, polish second.
 - Bake his **local SEO fundamentals** into client onboarding alongside Jono
   Catliff's automated execution.
+
+## Updates log (auto-ingested)
+- **2026-07-29** — [How to Make YouTube Videos That Force People to Binge](https://www.youtube.com/watch?v=RwEs5VdH_ZQ):
+  extends his conversion-path thinking from a single page to a content
+  funnel — plan videos for distinct buyer-journey stages and deliberately
+  link them so a viewer is walked from awareness content toward one clear
+  next step; he credits this structure with tripling his own revenue twice.
+- **2026-07-29** — [Big YouTubers Are Down 50% and It's Your Best Chance to Start](https://www.youtube.com/watch?v=HsLLTvosGJw):
+  argues niche experts are outperforming generalist creators as AI
+  commoditizes generic how-to content, and recommends leaning on real,
+  hard-to-fake first-hand experience so content resists being copied by AI or
+  competitors — a content-moat argument adjacent to GEO's originality concerns.
