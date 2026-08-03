@@ -17,6 +17,7 @@ reconcile.
 | how much does seo cost | D — pricing / cost anxiety | `/blog/what-seo-actually-costs` | 2026-07-24 | Live |
 | ai seo vs traditional seo | B — service education / comparison | `/blog/ai-seo-vs-traditional-seo` | 2026-07-24 | Live |
 | answer engine optimization | B — service education (AEO/GEO) | `/blog/answer-engine-optimization` | 2026-07-29 | Live |
+| small business seo | G — SMB / differentiation | `/blog/small-business-seo` | 2026-08-03 | Live |
 
 ## Deliberately not targeted
 

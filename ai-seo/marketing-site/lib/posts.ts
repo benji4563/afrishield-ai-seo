@@ -15,6 +15,18 @@ export type PostMeta = {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'small-business-seo',
+    title: 'Small business SEO: what actually moves the needle when you do not have an enterprise budget',
+    cardTitle: 'Small business SEO, without the enterprise budget',
+    metaTitle: 'Small business SEO explained',
+    description:
+      'What actually works for small business SEO, what to skip, and what a small, realistic budget can and cannot buy in the first three to six months.',
+    category: 'Small business',
+    published: '2026-08-03',
+    readingMinutes: 9,
+    primaryKeyword: 'small business seo',
+  },
+  {
     slug: 'answer-engine-optimization',
     title: 'Answer engine optimization: getting your business quoted by the AI, not just ranked by Google',
     cardTitle: 'Answer engine optimization, without the hype',
