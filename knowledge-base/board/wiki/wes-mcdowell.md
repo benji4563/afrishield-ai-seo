@@ -38,3 +38,30 @@ message-first design · social proof · local SEO tier list.
   Emil ensures it *feels* premium — clarity first, polish second.
 - Bake his **local SEO fundamentals** into client onboarding alongside Jono
   Catliff's automated execution.
+
+## Updates log (auto-ingested)
+- **2026-08-05** — Details a 4-stage YouTube content funnel ("binge to booked
+  relay"): top-of-funnel videos target broad problem-aware searches and end with a
+  soft "watch this next" CTA (no pitch, stays on-platform); mid-funnel videos are
+  solution-aware walkthroughs that build trust and hand off to a bottom-funnel
+  video; bottom-funnel videos are client case studies or an on-channel "walk-up
+  webinar" (a full webinar posted directly to the channel instead of gated) that
+  pitches the offer and is the *only* stage allowed to send traffic off-platform —
+  to a dedicated offer page with a booking-calendar widget, never the homepage or a
+  passive contact form. — https://www.youtube.com/watch?v=RwEs5VdH_ZQ
+- **2026-08-05** — Proposes a "Scar Scale" (Surface → Competence → Adversity →
+  Reframe) for content depth: Surface/Competence-level content (generic facts,
+  process walkthroughs) is now easily replicated by AI chat and no longer
+  differentiates; Adversity-level content (specific client failure patterns + the
+  fix) and Reframe-level content (a contrarian "why everyone gets this wrong" insight
+  earned from pattern volume) are what AI can't fake and what convert viewers into
+  clients. Cites research claiming honest-failure content scores ~44% higher on
+  credibility than polished success-only content. —
+  https://www.youtube.com/watch?v=HsLLTvosGJw
+- **2026-08-05** — Demonstrates using a persistent Claude "project" as a
+  scriptwriting assistant: run one-time audience research (forums/comments) and
+  save it as a reusable skill so every future session auto-applies the same
+  audience profile to titles/hooks without re-explaining it, feed it past scripts
+  and proven hooks as house style, and use it to auto-generate on-brand b-roll
+  graphics and a lead-magnet PDF straight from a finished script. —
+  https://www.youtube.com/watch?v=yuVlHAKbnMQ

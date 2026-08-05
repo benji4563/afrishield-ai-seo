@@ -36,3 +36,20 @@ links · topical relevance of links.
   for clients (only white-hat, relevance-first links).
 - Never adopt a Julian tactic directly into a skill — route it through board review
   first; log the verdict in the repo.
+
+## Updates log (auto-ingested)
+- **2026-08-05** — Publishing the same keyword opportunity as several
+  differently-angled, case-study-driven articles across multiple sites in parallel
+  (rather than one article on one site) is being used as a deliberate way to spread
+  ranking risk and raise the odds that at least one page lands in the result window.
+  Signal only — no independent verification of results. —
+  https://www.youtube.com/watch?v=rTSHFy9Lwlg
+- **2026-08-05** — His "Agent OS" setup uses a `/learn` command that converts a
+  website's public documentation straight into a saved skill file the agent reuses
+  across sessions — an external, independent validation of the same "learn in the
+  repo" pattern this board already follows. — https://www.youtube.com/watch?v=ut_PeUbmk4c
+- **2026-08-05** — Free/open-weight models (e.g. Qwen 3.8 Max) are being positioned
+  by AI-SEO practitioners as production-viable substitutes for paid frontier models
+  in content/site generation. Worth watching for cost impact on our generation
+  pipeline, but needs independent verification before changing our model stack. —
+  https://www.youtube.com/watch?v=PYbBddbflRo
