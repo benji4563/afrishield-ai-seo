@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { PageHero } from '@/components/ui/PageHero';
 import { Section } from '@/components/ui/Section';
 import { PostCard } from '@/components/blog/PostCard';
+import { ShareButtons } from '@/components/blog/ShareButtons';
 import { CtaDrop } from '@/components/home/CtaDrop';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { blogIndexJsonLd, breadcrumbJsonLd } from '@/lib/structured-data';
@@ -39,7 +40,7 @@ export default function BlogIndexPage() {
       <PageHero
         eyebrow="Blog"
         title="Written to be read, not to be ranked at you"
-        blurb="Three pieces so far. Each one covers something the other results on that search quietly skip — usually the price, and usually the part where you should not buy this yet."
+        blurb="Each piece covers something the other results on that search quietly skip — usually the price, and usually the part where you should not buy this yet."
       />
 
       <Section tone="light">
@@ -50,6 +51,11 @@ export default function BlogIndexPage() {
             </div>
           ))}
         </div>
+
+        <ShareButtons
+          url={`${SITE_URL}/blog`}
+          title="AfriShield AI blog — plain writing on SEO for African businesses"
+        />
       </Section>
 
       <CtaDrop
