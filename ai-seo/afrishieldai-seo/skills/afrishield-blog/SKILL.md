@@ -79,6 +79,11 @@ Non-negotiables:
   African cities and names as **clearly labelled** illustrative composites (the
   `Scene` component already stamps "Illustrative composite"). Minimise contractions;
   the measured register is deliberate.
+- **Humor:** apply the standing reference `../humor-writing/SKILL.md` on **every**
+  post — it is the locked-in source material (distilled from the hireawriter.us
+  humor article) for the wry register. 3–5 dry touches per post, aimed at the
+  industry, never in the ShortAnswer, H2 opener sentences, FAQ answers, or
+  metadata.
 - **6 FAQ entries**, drawn from real "People also ask", 2–4 sentences each.
 - **Liftable H2 openers (board: Mike King / retrieval).** The first sentence under
   every `<h2>` must answer that heading's implicit question outright, before any
@@ -106,6 +111,31 @@ Curly quotes and straight apostrophes are only safe in specific places:
   delimiter).
 - **Inside JSX text** (between tags): apostrophes, `&rsquo;`, `&ldquo;`/`&rdquo;` are
   all fine.
+
+### Hero image (one per post)
+
+Every post gets one topic-matched hero, placed right under the `ShortAnswer`.
+
+1. **Generate** with Higgsfield **nano-banana-pro**, 16:9, matched to the post's
+   *angle* — not a generic desk. Decide whether real people or a scene lands the
+   point, and make the image *say something*: e.g. an owner watching flat traffic
+   for a "no agency budget" piece; marketers celebrating a falling graph for a
+   "without the hype" piece. Prompt for correct anatomy and natural hands;
+   African-market, warm natural light, editorial not stock.
+2. **Verify — mandatory, by looking at it.** Download the image and actually view
+   it. Reject and regenerate on any AI artifact: extra or melted fingers, warped
+   faces, garbled critical text, impossible anatomy. A visibly-AI image is worse
+   than no image. **This step needs a vision-capable run** — a headless routine
+   that cannot see the image must not publish it unverified (see Scope).
+3. **Save** the optimised WebP to `public/images/blog-<slug>.webp`, **under ~200 KB**
+   (use the Higgsfield `minUrl` webp; downscale if heavier).
+4. **Wire it:** add `import { EditorialImage } from '@/components/ui/EditorialImage';`,
+   place `<EditorialImage src="/images/blog-<slug>.webp" alt="<describe the scene>"
+   priority className="my-10" />` immediately after `</ShortAnswer>`, and add
+   `images: [\`${SITE_URL}/images/blog-<slug>.webp\`]` to the `openGraph` block. Alt
+   text describes the picture plainly — no keyword stuffing.
+
+This is the one image; do not add inline images unless a specific post needs one.
 
 ## 4. Register it
 
@@ -148,6 +178,8 @@ Then confirm the route is live: `curl -s -o /dev/null -w '%{http_code}' <site>/b
 This skill writes **blog posts** for an AI-SEO marketing site. It is driven on a
 schedule by the **AfriShield blog auto-poster** cloud routine, which runs a condensed
 form of steps 1, 3–6 against `content-queue.md`. The **weekly queue-keeper routine**
-tops up and audits `content-queue.md`. City/service landing pages are a different
-shape — see the sibling build SOP `../afrishieldai-seo/SKILL.md` and the
-`client-ops-automation` skill for the deploy/DNS/ops layer.
+tops up and audits `content-queue.md`. Every run — scheduled or interactive, own
+site or client — writes with the locked-in humor reference
+`../humor-writing/SKILL.md`; the auto-poster applies it as-is. City/service landing
+pages are a different shape — see the sibling build SOP `../afrishieldai-seo/SKILL.md`
+and the `client-ops-automation` skill for the deploy/DNS/ops layer.
