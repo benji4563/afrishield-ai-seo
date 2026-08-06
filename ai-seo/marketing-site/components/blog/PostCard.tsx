@@ -1,24 +1,11 @@
 import Link from 'next/link';
 import type { PostMeta } from '@/lib/posts';
 
-// African-business photography per post — Pexels, see public/images/credits.json.
-const POST_IMAGE: Record<string, { src: string; alt: string }> = {
-  'what-ai-seo-actually-does': {
-    src: '/images/blog-what-ai-seo-actually-does.jpg',
-    alt: 'An African professional focused on work at a laptop in an office.',
-  },
-  'what-seo-actually-costs': {
-    src: '/images/blog-what-seo-actually-costs.jpg',
-    alt: 'An African small-business owner managing money and a phone at a market stall.',
-  },
-  'ai-seo-vs-traditional-seo': {
-    src: '/images/blog-ai-seo-vs-traditional-seo.jpg',
-    alt: 'An African team working at computers in a technology office.',
-  },
-};
-
+// Image comes from the post itself (lib/posts.ts) — African-business photography,
+// Pexels, see public/images/credits.json. A post without an image renders the
+// placeholder band rather than a broken <img>.
 export function PostCard({ post }: { post: PostMeta }) {
-  const image = POST_IMAGE[post.slug];
+  const image = post.image;
   return (
     <article className="group flex flex-col border border-ink/10 bg-white">
       <div className="h-[168px] overflow-hidden border-b border-ink/10 bg-green-50">

@@ -6,6 +6,7 @@ import { Footer } from '@/components/layout/Footer';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { organizationJsonLd } from '@/lib/structured-data';
 import { SITE, SITE_URL } from '@/lib/site';
+import { DEFAULT_OG_IMAGE } from '@/lib/posts';
 
 const sora = Sora({
   subsets: ['latin'],
@@ -42,11 +43,13 @@ export const metadata: Metadata = {
     url: SITE_URL,
     title: 'AI SEO services for African businesses',
     description: SITE.description,
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AI SEO services for African businesses',
     description: SITE.description,
+    images: [DEFAULT_OG_IMAGE],
   },
   robots: { index: true, follow: true },
   verification: {

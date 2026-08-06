@@ -11,7 +11,23 @@ export type PostMeta = {
   modified?: string;
   readingMinutes: number;
   primaryKeyword: string;
+  /**
+   * Card + social image for the post. Lives here (not in a separate hardcoded
+   * map) so a post and its image never drift out of sync. Every post SHOULD
+   * declare one; a post left without an image renders a clean placeholder
+   * rather than a broken `<img>`. Files live in `public/images/` and are
+   * sourced via `scripts/pull-pexels.mjs`.
+   */
+  image?: { src: string; alt: string };
 };
+
+/** Default social share image used when a page/post has none of its own. */
+export const DEFAULT_OG_IMAGE = '/images/home-band.jpg';
+
+/** OG/Twitter image list for a post — its own image, or the site default. */
+export function postOgImages(post: PostMeta) {
+  return [{ url: post.image?.src ?? DEFAULT_OG_IMAGE }];
+}
 
 export const POSTS: PostMeta[] = [
   {
@@ -25,6 +41,8 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-05',
     readingMinutes: 10,
     primaryKeyword: 'small business seo',
+    // image pending — fetched into public/images/blog-small-business-seo.jpg
+    // by scripts/pull-pexels.mjs; add `image` here in the same commit as the file.
   },
   {
     slug: 'answer-engine-optimization',
@@ -37,6 +55,8 @@ export const POSTS: PostMeta[] = [
     published: '2026-07-29',
     readingMinutes: 9,
     primaryKeyword: 'answer engine optimization',
+    // image pending — fetched into public/images/blog-answer-engine-optimization.jpg
+    // by scripts/pull-pexels.mjs; add `image` here in the same commit as the file.
   },
   {
     slug: 'what-ai-seo-actually-does',
@@ -49,6 +69,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-07-24',
     readingMinutes: 9,
     primaryKeyword: 'ai seo agency for small business',
+    image: {
+      src: '/images/blog-what-ai-seo-actually-does.jpg',
+      alt: 'An African professional focused on work at a laptop in an office.',
+    },
   },
   {
     slug: 'what-seo-actually-costs',
@@ -61,6 +85,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-07-24',
     readingMinutes: 10,
     primaryKeyword: 'how much does seo cost',
+    image: {
+      src: '/images/blog-what-seo-actually-costs.jpg',
+      alt: 'An African small-business owner managing money and a phone at a market stall.',
+    },
   },
   {
     slug: 'ai-seo-vs-traditional-seo',
@@ -73,6 +101,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-07-24',
     readingMinutes: 9,
     primaryKeyword: 'ai seo vs traditional seo',
+    image: {
+      src: '/images/blog-ai-seo-vs-traditional-seo.jpg',
+      alt: 'An African team working at computers in a technology office.',
+    },
   },
 ];
 

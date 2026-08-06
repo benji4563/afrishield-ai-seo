@@ -31,6 +31,8 @@ const SLOTS = [
   { slot: 'blog-what-ai-seo-actually-does', queries: ['african man laptop office focused', 'african professional working computer'] },
   { slot: 'blog-what-seo-actually-costs', queries: ['african woman small business phone money', 'african market vendor stall'] },
   { slot: 'blog-ai-seo-vs-traditional-seo', queries: ['african office computers technology', 'african developer computer office'] },
+  { slot: 'blog-small-business-seo', queries: ['african small business owner shop counter', 'african entrepreneur small store owner'] },
+  { slot: 'blog-answer-engine-optimization', queries: ['african professional smartphone technology', 'african person using phone assistant'] },
 ];
 
 async function search(query) {
