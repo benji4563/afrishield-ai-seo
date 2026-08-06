@@ -13,6 +13,20 @@ recurring pattern across all three targets, per the routing table's "anything
 strategic" trigger — no single target here was itself a strategy/pricing/
 process decision, but the *pattern across them* is.
 
+> **Post-merge addendum (2026-08-05):** the blog auto-poster claimed and
+> published `small business seo` on master while this PR was still in review,
+> so it never saw the angle recorded in Target B below. Checked the published
+> post (`/blog/small-business-seo`) against the recommendation anyway: it
+> independently landed on almost the same angle (SMB-vs-enterprise structural
+> differences, not a rehash), links out to `what-seo-actually-costs`,
+> `what-ai-seo-actually-does`, and `answer-engine-optimization` for the
+> granular detail, and every H2 opens with a direct answer. No rework needed.
+> Row 1 in `content-queue.md` is now marked `claimed` to match master; the
+> angle-check rule stays in place for the next queued row. This is a good
+> sign the underlying voice/skill discipline holds even without the board's
+> note landing in time — not a reason to skip the check going forward, since
+> this run got lucky on timing, not guaranteed by it.
+
 ---
 
 ## Target A — Blog post: `answer-engine-optimization`

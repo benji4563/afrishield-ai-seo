@@ -32,7 +32,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 
 | # | Primary keyword | Cluster | Vetting (SA/en) | Status |
 |---|---|---|---|---|
-| 1 | small business seo | G — SMB / differentiation | vetted · SV~40 · commercial · LOW comp | queued — **Angle (board, 2026-08-04): what makes SEO structurally different for a small business vs. an enterprise (budget/time constraints, fewer sharper keywords, single-location scope, DIY-feasibility threshold). Write it as the synthesis/decision layer, not a rehash — BLUF-link out to `what-seo-actually-costs`, `what-ai-seo-actually-does`, `ai-seo-vs-traditional-seo`, and `answer-engine-optimization` for the granular detail rather than re-deriving it. Also cross-link `/` and `/solutions` as the cluster-G core pages.** |
+| 1 | small business seo | G — SMB / differentiation | vetted · SV~40 · commercial · LOW comp | claimed |
 | 2 | how to get my business on google | E — local visibility | vetted · SV~30 · informational · rising | queued |
 | 3 | what is schema markup | B — technical education | vetted · SV~20 · informational · LOW comp | queued |
 | 4 | google business profile optimization | E — local / GBP | vetted · SV~10–20 · commercial · rising · high CPC | queued |
@@ -62,3 +62,4 @@ periodically; promote to the table above once they show real volume.
 | Primary keyword | Page | Claimed |
 |---|---|---|
 | answer engine optimization | `/blog/answer-engine-optimization` | 2026-07-29 |
+| small business seo | `/blog/small-business-seo` | 2026-08-05 |
