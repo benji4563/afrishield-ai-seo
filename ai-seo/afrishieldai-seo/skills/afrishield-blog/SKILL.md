@@ -79,6 +79,11 @@ Non-negotiables:
   African cities and names as **clearly labelled** illustrative composites (the
   `Scene` component already stamps "Illustrative composite"). Minimise contractions;
   the measured register is deliberate.
+- **Humor:** apply the standing reference `../humor-writing/SKILL.md` on **every**
+  post — it is the locked-in source material (distilled from the hireawriter.us
+  humor article) for the wry register. 3–5 dry touches per post, aimed at the
+  industry, never in the ShortAnswer, H2 opener sentences, FAQ answers, or
+  metadata.
 - **6 FAQ entries**, drawn from real "People also ask", 2–4 sentences each.
 - **Liftable H2 openers (board: Mike King / retrieval).** The first sentence under
   every `<h2>` must answer that heading's implicit question outright, before any
@@ -106,6 +111,51 @@ Curly quotes and straight apostrophes are only safe in specific places:
   delimiter).
 - **Inside JSX text** (between tags): apostrophes, `&rsquo;`, `&ldquo;`/`&rdquo;` are
   all fine.
+
+### Hero image (one per post, fully automatic)
+
+Every post gets one topic-matched hero under the `ShortAnswer`, from one of two
+**interchangeable** sources — use whichever is working; if one has issues, use the
+other. No human queue.
+
+**Source A — Pexels (real photography, the safe default).** Real photos, so there
+are no AI artifacts to worry about. The site already uses Pexels
+(`scripts/pull-pexels.mjs`, `public/images/credits.json`). Search for a landscape,
+on-topic African-business photo:
+
+```bash
+curl -s -H "Authorization: $PEXELS_API_KEY" \
+  "https://api.pexels.com/v1/search?query=<concept>&orientation=landscape&per_page=15"
+```
+
+Pick the best on-topic result, download its `src.large` / `src.landscape`, and record
+the photographer name + Pexels URL in `public/images/credits.json`. No AI-error check
+is needed for Pexels — only judge topical fit and quality.
+
+**Source B — Higgsfield `nano-banana-pro` (on-brand AI images).** Generate a 16:9
+image matched to the post's *angle* (people or scene, whatever lands the point;
+prompt for correct anatomy and natural hands; African-market, warm light, editorial —
+not a generic desk). **Then verify — mandatory: download it and view it (Read the
+image file; the model is multimodal).** Reject and regenerate once, or fall back to
+Source A, on ANY AI artifact — extra or melted fingers, warped faces, garbled critical
+text, impossible anatomy. Ship a Higgsfield image only once it is verified clean.
+
+**Selection & fallback (automatic).** Try one source; if it errors, is unavailable,
+returns nothing on-topic, or (Higgsfield) fails verification, switch to the other.
+Only if BOTH fail, publish text-only and say so — never ship a broken or off-topic
+image.
+
+**Save + wire (either source).** Optimise to `public/images/blog-<slug>.webp`, under
+~200 KB. Add `import { EditorialImage } from '@/components/ui/EditorialImage';`, place
+`<EditorialImage src="/images/blog-<slug>.webp" alt="<describe the picture>" priority
+className="my-10" />` immediately after `</ShortAnswer>`, and add
+`images: [\`${SITE_URL}/images/blog-<slug>.webp\`]` to the `openGraph` block. Alt text
+describes the picture plainly — no keyword stuffing.
+
+Runs unattended given `PEXELS_API_KEY` in the environment (Source A) and/or Higgsfield
+access (Source B). The cloud auto-poster follows this step directly — it is multimodal,
+so it performs the Source-B verification itself; with neither source reachable it
+degrades to text-only.
 
 ## 4. Register it
 
@@ -148,6 +198,8 @@ Then confirm the route is live: `curl -s -o /dev/null -w '%{http_code}' <site>/b
 This skill writes **blog posts** for an AI-SEO marketing site. It is driven on a
 schedule by the **AfriShield blog auto-poster** cloud routine, which runs a condensed
 form of steps 1, 3–6 against `content-queue.md`. The **weekly queue-keeper routine**
-tops up and audits `content-queue.md`. City/service landing pages are a different
-shape — see the sibling build SOP `../afrishieldai-seo/SKILL.md` and the
-`client-ops-automation` skill for the deploy/DNS/ops layer.
+tops up and audits `content-queue.md`. Every run — scheduled or interactive, own
+site or client — writes with the locked-in humor reference
+`../humor-writing/SKILL.md`; the auto-poster applies it as-is. City/service landing
+pages are a different shape — see the sibling build SOP `../afrishieldai-seo/SKILL.md`
+and the `client-ops-automation` skill for the deploy/DNS/ops layer.
