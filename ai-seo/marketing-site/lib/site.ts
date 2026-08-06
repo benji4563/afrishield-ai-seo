@@ -5,9 +5,17 @@ export const SITE = {
   legalName: 'AfriShield',
   domain: 'afrishieldai.com',
   url: SITE_URL,
-  email: 'hello@afrishieldai.com',
+  email: 'benji@afrishieldai.com',
   /** WhatsApp click-to-chat link (Cameroon +237). */
   whatsapp: 'https://wa.me/237688099752',
+  /**
+   * Inbound AI call line. Empty until the number is provisioned — set
+   * NEXT_PUBLIC_PHONE (e.g. "+237 6XX XXX XXX") and every phone UI element
+   * switches on. Never fill this with a number we do not own.
+   */
+  phone: process.env.NEXT_PUBLIC_PHONE ?? '',
+  /** tel: href derived from `phone`, with display formatting stripped. */
+  phoneHref: `tel:${(process.env.NEXT_PUBLIC_PHONE ?? '').replace(/[^+\d]/g, '')}`,
   /** Public-facing one-liner. Company brand guidelines, verbatim. */
   tagline: 'Search visibility, run by agents. Reported in plain numbers.',
   description:

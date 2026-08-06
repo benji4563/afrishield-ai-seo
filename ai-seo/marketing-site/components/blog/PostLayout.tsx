@@ -54,10 +54,10 @@ export function AuthorBio() {
         work we have actually done, and where we have not done it yet, we say so.
       </p>
       <a
-        href="mailto:hello@afrishieldai.com"
+        href="mailto:benji@afrishieldai.com"
         className="mt-5 inline-block font-mono text-label uppercase text-green-600 hover:text-green-500"
       >
-        Argue with us — hello@afrishieldai.com
+        Argue with us — benji@afrishieldai.com
       </a>
     </aside>
   );
