@@ -136,6 +136,12 @@ export function PostShell({
               </div>
 
               <div className="max-w-prose">
+                <ShareButtons
+                  url={`${SITE_URL}/blog/${post.slug}`}
+                  title={post.title}
+                  className="mt-0 border-t-0 pt-0"
+                />
+
                 <div className="post-body">{children}</div>
 
                 <ShareButtons url={`${SITE_URL}/blog/${post.slug}`} title={post.title} />

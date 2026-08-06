@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { cn } from '@/lib/utils';
 
 /**
  * Share bar for blog posts. WhatsApp, Facebook, and X are real share-intent
@@ -42,7 +43,15 @@ function InstagramIcon() {
   );
 }
 
-export function ShareButtons({ url, title }: { url: string; title: string }) {
+export function ShareButtons({
+  url,
+  title,
+  className,
+}: {
+  url: string;
+  title: string;
+  className?: string;
+}) {
   const [copied, setCopied] = useState(false);
 
   const encodedUrl = encodeURIComponent(url);
@@ -77,7 +86,7 @@ export function ShareButtons({ url, title }: { url: string; title: string }) {
   };
 
   return (
-    <div className="mt-12 flex flex-wrap items-center gap-3 border-y border-ink/10 py-5">
+    <div className={cn('mt-12 flex flex-wrap items-center gap-3 border-y border-ink/10 py-5', className)}>
       <p className="font-mono text-label uppercase text-mute">Share this</p>
       <div className="flex flex-wrap gap-2">
         {links.map((link) => (
