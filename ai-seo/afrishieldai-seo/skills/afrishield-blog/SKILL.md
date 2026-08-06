@@ -74,11 +74,18 @@ Non-negotiables:
 
 - The **primary keyword is answered outright in the `ShortAnswer`**, within the
   first 100 words, phrased naturally. It is the featured-snippet / AI-answer target.
+- **Humor / voice skill (mandatory — every post, including automated auto-poster
+  runs).** Invoke the **`seo-blog-humor-style`** skill and apply its locked-in
+  humor/voice reference to the whole draft. Load it *before* writing and keep it
+  applied through editing. This is what keeps posts human and on-brand instead of
+  reading like generic AI-written SEO filler; it is not optional and not only for
+  interactive runs.
 - **Voice:** dry, plain, honest, faintly self-deprecating, anti-hype. No guaranteed
   rankings. African-market aware — mid-range Android phones on patchy connections,
   African cities and names as **clearly labelled** illustrative composites (the
   `Scene` component already stamps "Illustrative composite"). Minimise contractions;
-  the measured register is deliberate.
+  the measured register is deliberate. Layer the `seo-blog-humor-style` skill on top
+  of this baseline register — it sharpens the humor without overriding the honesty.
 - **6 FAQ entries**, drawn from real "People also ask", 2–4 sentences each.
 - **Liftable H2 openers (board: Mike King / retrieval).** The first sentence under
   every `<h2>` must answer that heading's implicit question outright, before any
@@ -147,7 +154,9 @@ Then confirm the route is live: `curl -s -o /dev/null -w '%{http_code}' <site>/b
 
 This skill writes **blog posts** for an AI-SEO marketing site. It is driven on a
 schedule by the **AfriShield blog auto-poster** cloud routine, which runs a condensed
-form of steps 1, 3–6 against `content-queue.md`. The **weekly queue-keeper routine**
+form of steps 1, 3–6 against `content-queue.md`. That routine follows step 3 in full,
+so the mandatory **`seo-blog-humor-style`** humor/voice layer applies to every
+scheduled auto-posted article, not just interactive runs. The **weekly queue-keeper routine**
 tops up and audits `content-queue.md`. City/service landing pages are a different
 shape — see the sibling build SOP `../afrishieldai-seo/SKILL.md` and the
 `client-ops-automation` skill for the deploy/DNS/ops layer.
