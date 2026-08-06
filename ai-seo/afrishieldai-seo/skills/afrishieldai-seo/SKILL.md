@@ -139,11 +139,32 @@ Inject validated JSON-LD in the server HTML of every key page. Helpers live in
 |---|---|
 | Root layout (all pages) | `Organization` |
 | Home | `ProfessionalService` + `hasOfferCatalog` + `FAQPage` |
-| Solutions | `Service` |
+| Solutions | `Service` (with per-pillar sub-services via `hasOfferCatalog`/`makesOffer`, entities sourced from the same data used to render the page — not one flat prose `description`) + `FAQPage` |
 | Pricing | `FAQPage` (+ Offers with price/currency) |
 | Location pages | `LocalBusiness` (areaServed City→Country) + `FAQPage` + `BreadcrumbList` |
 | Blog post | `BlogPosting` + `FAQPage` + `BreadcrumbList` |
 | About | `AboutPage` + `Person` (founder) |
+
+**Entity-linked schema, not prose blobs (board: Mike King).** Any page presenting
+named sub-offerings (pillars, tiers, services) must model each as a discrete JSON-LD
+entity, not fold them into one `description` sentence — a machine parsing a single
+prose string cannot pull out "keyword research" as its own citable fact the way it
+can pull out a named sub-`Service`.
+
+**Cross-link the core money pages in body copy (board: Koray).** Solutions, Pricing,
+and How it Works must link each other contextually from within the page content
+(e.g. a pricing mention on Solutions links to `/pricing`, a "weekly publishing" claim
+links to `/how-it-works`) — not only via the closing CTA block. Reviewed 2026-08-04:
+`/solutions` had zero in-body links to any sibling page.
+
+**CTA reachable before the fold-six problem (board: Wes McDowell).** Every interior
+page built on `PageHero` must have a clickable CTA (button or prompt link) reachable
+within the first two sections after the hero — not deferred to the closing CTA block
+alone — plus at least one additional mid-scroll CTA checkpoint if the page runs 3+
+content sections before that closing block. Reference implementation: the homepage
+`Hero` component's "Book a call" + secondary CTA pattern. `PageHero` is a candidate
+for an optional `ctaHref`/`ctaLabel` prop so this becomes structural rather than
+something each page author has to remember.
 
 `LocalBusiness` / service-provider template (fill from real data; never invent
 telephone or address — leave them out or env-driven until supplied):

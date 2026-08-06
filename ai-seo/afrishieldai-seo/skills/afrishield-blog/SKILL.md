@@ -85,12 +85,29 @@ Non-negotiables:
   framing or warm-up — the same BLUF discipline the `ShortAnswer` uses, applied per
   chunk. An answer engine retrieves the *section*, not the page, so a soft opener
   ("It helps to picture…", "There is a genuine opening here…") gets lifted and says
-  nothing.
+  nothing. **Before publish, re-read every H2's opening sentence in isolation, as if
+  it were the only text an AI had retrieved, for *all* sections — not just the ones
+  that felt weak while drafting.** A partial pass (some sections fixed, others left
+  soft) is not compliance; the 2026-08-04 board review caught 3 of 6 sections still
+  soft-opening in a post whose earlier board fix had only checked the other two.
+- **HowTo schema for numbered sequences (board: Mike King).** If a section is a
+  numbered how-to (an `<ol>` walking the reader through steps), add a matching
+  `howToJsonLd` `StructuredData` block (already exported from `lib/structured-data.ts`)
+  alongside the standard three — free retrieval surface, otherwise left on the table.
 - **Contextual internal links (board: Koray / topical authority).** Include 2–4
   in-body anchor-text links to sibling posts in the same `content-queue.md` cluster,
   with descriptive anchors naming the target topic — do not rely on the auto
   `RelatedPosts` block, which is undifferentiated. If no cluster sibling exists yet,
   leave an HTML comment noting the intended link target to back-fill on publish.
+- **Differentiation angle vs. existing posts (board: Koray / topical map).** Before
+  drafting, read the `cardTitle`/`description` of every existing entry in `POSTS`
+  (`lib/posts.ts`) and confirm in one sentence what this post uniquely covers that no
+  live post already does — this extends the existing "cross-check `used-keywords.md`"
+  step from exact-keyword match to topical overlap. A keyword can be un-claimed and
+  still risk restating a sibling post in miniature; when that happens, narrow the
+  angle (e.g. make it the synthesis/decision layer that links out to the posts owning
+  the granular detail) rather than re-deriving material that already exists elsewhere
+  on the site.
 - At least one passage that is honest against interest (when *not* to buy).
 - ~1,700–2,200 words.
 
