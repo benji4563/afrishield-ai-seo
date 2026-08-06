@@ -17,6 +17,10 @@ Rules for the poster:
 - After publishing, set the row to `claimed` here **and** append to `used-keywords.md`.
 - If **no** `queued` rows remain, do nothing and report "queue empty" — never invent
   a keyword or republish an existing one.
+- Write with the locked-in humor reference
+  `afrishieldai-seo/skills/humor-writing/SKILL.md` (distilled from the
+  hireawriter.us humor article): 3–5 dry, industry-aimed touches per post, none
+  in the ShortAnswer, H2 opener sentences, FAQ answers, or metadata.
 
 Vetting note: all volumes below are **DataForSEO, South Africa, en** — a single
 African market, so absolute volumes are low (10–40) by nature. Selection weighs
