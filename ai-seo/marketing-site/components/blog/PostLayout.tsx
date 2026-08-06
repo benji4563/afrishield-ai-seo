@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { Faq } from '@/components/ui/Faq';
+import { ShareButtons } from '@/components/blog/ShareButtons';
 import { POSTS, type PostMeta } from '@/lib/posts';
+import { SITE_URL } from '@/lib/site';
 
 export function TableOfContents({ items }: { items: ReadonlyArray<{ id: string; label: string }> }) {
   return (
@@ -135,6 +137,8 @@ export function PostShell({
 
               <div className="max-w-prose">
                 <div className="post-body">{children}</div>
+
+                <ShareButtons url={`${SITE_URL}/blog/${post.slug}`} title={post.title} />
 
                 <section id="faq" className="mt-16">
                   <h2 className="h2">Questions people actually ask</h2>

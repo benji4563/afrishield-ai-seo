@@ -6,6 +6,8 @@ export const SITE = {
   domain: 'afrishieldai.com',
   url: SITE_URL,
   email: 'hello@afrishieldai.com',
+  /** WhatsApp click-to-chat link (Cameroon +237). */
+  whatsapp: 'https://wa.me/237688099752',
   /** Public-facing one-liner. Company brand guidelines, verbatim. */
   tagline: 'Search visibility, run by agents. Reported in plain numbers.',
   description:
