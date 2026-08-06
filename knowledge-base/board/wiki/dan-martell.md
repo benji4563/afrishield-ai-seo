@@ -40,3 +40,25 @@ work on it vs. in it · leverage.
   buy-back rate taken to its limit.
 - Every new capability is judged by: does it remove founder hours or add them?
 - Use his playbook discipline to keep turning proven manual steps into routines/skills.
+
+## Updates log (auto-ingested)
+- **2026-08-05** — Recommends a "decoy tier" pricing structure for productized
+  services: a cheap DIY tier, a core tier you actually want to sell in volume, and a
+  ~10x-priced white-glove tier that exists mainly to make the core tier look cheap
+  by comparison. For lead-gen, argues the whole delivery *sequence* (not individual
+  steps) is the valuable IP, so it's safe to give the process away as content; for
+  outbound, mine warm contacts/social graph first via "ask past me" referral
+  phrasing before falling back to AI-built cold lists. —
+  https://www.youtube.com/watch?v=xj5gZq159lM
+- **2026-08-05** — Lays out an "AGENT" framework for building agents: Aim at one
+  measurable outcome before building; Give it an identity via separate
+  personality/role/user-context files; Equip it with playbooks reverse-engineered by
+  having AI study your own past work product (not manually written SOPs); Narrow
+  each agent to one specialist job, coordinated by a non-doing "manager agent" that
+  routes tasks; build Trust incrementally, graduating an agent from draft-only to
+  autonomous only after staged approval checkpoints. Filters which tasks deserve an
+  agent at all via a "3 R's" test — repetitive, rule-based, and build time smaller
+  than time saved — and recommends tiering models by task complexity (cheap/fast
+  models for high-volume simple sorting, top-tier reserved for orchestration) to cut
+  agent operating cost roughly 100x on routine work. —
+  https://www.youtube.com/watch?v=Bm84BAtOfQw
