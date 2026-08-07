@@ -9,13 +9,23 @@ export const SITE = {
   /** WhatsApp click-to-chat link (Cameroon +237). */
   whatsapp: 'https://wa.me/237688099752',
   /**
-   * Inbound AI call line. Empty until the number is provisioned — set
-   * NEXT_PUBLIC_PHONE (e.g. "+237 6XX XXX XXX") and every phone UI element
-   * switches on. Never fill this with a number we do not own.
+   * Inbound AI call line (Vapi + Twilio). NEXT_PUBLIC_PHONE overrides the
+   * display value if the number ever changes; phoneHref is derived with the
+   * formatting stripped.
    */
-  phone: process.env.NEXT_PUBLIC_PHONE ?? '',
+  phone: process.env.NEXT_PUBLIC_PHONE ?? '+1 (559) 543-5844',
   /** tel: href derived from `phone`, with display formatting stripped. */
-  phoneHref: `tel:${(process.env.NEXT_PUBLIC_PHONE ?? '').replace(/[^+\d]/g, '')}`,
+  phoneHref: `tel:${(process.env.NEXT_PUBLIC_PHONE ?? '+1 (559) 543-5844').replace(/[^+\d]/g, '')}`,
+  /**
+   * On-page voice assistant (Vapi web calls — the same "Elodie" assistant that
+   * answers the phone line). The public key is designed for browser exposure;
+   * the private key must NEVER appear here. Env-overridable per client.
+   */
+  voice: {
+    assistantId:
+      process.env.NEXT_PUBLIC_VAPI_ASSISTANT_ID ?? '5456b332-d9ba-4928-a978-0a4f3c407a24',
+    publicKey: process.env.NEXT_PUBLIC_VAPI_PUBLIC_KEY ?? '00c9535c-aa2a-45b6-bacb-69174343d0a4',
+  },
   /** Public-facing one-liner. Company brand guidelines, verbatim. */
   tagline: 'Search visibility, run by agents. Reported in plain numbers.',
   description:

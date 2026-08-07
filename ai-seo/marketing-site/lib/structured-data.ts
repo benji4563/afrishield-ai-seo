@@ -9,6 +9,9 @@ export const organizationJsonLd = {
   legalName: SITE.legalName,
   url: SITE_URL,
   email: SITE.email,
+  // Asserted only once a real inbound number is provisioned — never fabricate NAP.
+  // E.164 (from the tel: href) rather than the display formatting.
+  ...(SITE.phone ? { telephone: SITE.phoneHref.replace('tel:', '') } : {}),
   description: SITE.description,
   areaServed: [
     { '@type': 'Place', name: 'Africa' },
@@ -22,7 +25,8 @@ export const organizationJsonLd = {
 /**
  * Cities we serve, used for areaServed on the service/local schema. These make
  * the ProfessionalService legible to local + AI answer engines ("best AI SEO in
- * Lagos"). No telephone or street address is asserted — we never fabricate NAP.
+ * Lagos"). No street address is asserted, and telephone only once a real
+ * inbound number exists — we never fabricate NAP.
  */
 export const SERVED_CITIES = [
   { name: 'Lagos', country: 'Nigeria' },

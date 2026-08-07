@@ -24,6 +24,8 @@ settings need changing.
 |---|---|---|
 | `NEXT_PUBLIC_SITE_URL` | Yes | `https://afrishieldai.com` — canonicals and OG break without it |
 | `HUBSPOT_TOKEN` | No | Private-app token. Unset, the contact form still accepts and logs leads |
+| `NEXT_PUBLIC_PHONE` | Later | Inbound AI call line, e.g. `+237 6XX XXX XXX`. Unset, all phone UI stays hidden and no `telephone` is asserted in JSON-LD. Only set once the number is live |
+| `CALL_WEBHOOK_SECRET` | Later | Random string. Configure the voice platform (Vapi/Retell) to send it as the `x-call-webhook-secret` header to `/api/call-summary`. Unset, the webhook accepts with a warning |
 | `GOOGLE_SITE_VERIFICATION` | Later | Paste the value Search Console gives you, then redeploy |
 | `BING_SITE_VERIFICATION` | Later | Same, from Bing Webmaster Tools |
 

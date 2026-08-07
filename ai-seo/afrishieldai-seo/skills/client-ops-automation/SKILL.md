@@ -99,11 +99,19 @@ Assume env: `DOMAIN`, `VERCEL_TOKEN`, `VERCEL_TEAM_ID`, `VERCEL_PROJECT_ID`,
 4. **Step 0 below** — delegate nameservers to Vercel via the registrar API.
 5. **Steps 1–4 below** — DNS records (email/verification), env vars, redeploy,
    Search Console.
-6. **Verify** against `ns1.vercel-dns.com`, then public resolvers, then the live
-   URL over HTTPS.
+6. **Contact channels** — WhatsApp click-to-chat + Facebook/Instagram links
+   (`../social-contact-links/SKILL.md`) and, if the client bought one, the AI
+   inbound-call line (`../ai-voice-agent/SKILL.md`). Their env vars
+   (`NEXT_PUBLIC_WHATSAPP`, `NEXT_PUBLIC_FACEBOOK_URL`,
+   `NEXT_PUBLIC_INSTAGRAM_URL`, `NEXT_PUBLIC_PHONE`, `CALL_WEBHOOK_SECRET`)
+   ride the same Step 2 env API call and the Step 3 redeploy — collect them in
+   the onboarding CSV so step 6 adds no extra deploy.
+7. **Verify** against `ns1.vercel-dns.com`, then public resolvers, then the live
+   URL over HTTPS — plus each contact channel's own verification checklist.
 
-For N clients, drive steps 1–6 from a CSV of `{domain, repo, rootDir, notifEmail,
-…}` and loop; the only human fan-in is provider-side secrets (§ below).
+For N clients, drive steps 1–7 from a CSV of `{domain, repo, rootDir, notifEmail,
+whatsapp, facebookUrl, instagramUrl, phone, …}` and loop; the only human fan-in
+is provider-side secrets (§ below) and the client's channel values (§ step 6).
 
 ### Step 0 — Delegate the domain's nameservers to Vercel (registrar API)
 
@@ -186,6 +194,10 @@ Standard AI-SEO env set: `NEXT_PUBLIC_SITE_URL`, `GOOGLE_SITE_VERIFICATION`,
 `BING_SITE_VERIFICATION`, `RESEND_API_KEY` (secret → `"type":"encrypted"`),
 `CLIENT_NOTIFICATION_EMAIL`, `NEXT_PUBLIC_SUPABASE_URL`,
 `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` (encrypted).
+Contact-channel set (only when the client has the channel — see step 6 of the
+pathway): `NEXT_PUBLIC_WHATSAPP`, `NEXT_PUBLIC_FACEBOOK_URL`,
+`NEXT_PUBLIC_INSTAGRAM_URL`, `NEXT_PUBLIC_PHONE`,
+`CALL_WEBHOOK_SECRET` (encrypted), `HUBSPOT_TOKEN` (encrypted).
 CLI: `echo -n "$VAL" | vercel env add KEY production`.
 
 ### Step 3 — Redeploy so env/DNS bake in
@@ -202,11 +214,15 @@ is live, e.g. `curl -s https://$DOMAIN/ | grep google-site-verification`.
 ## Human-in-the-loop checkpoints (unavoidable, keep short)
 
 These are the ONLY places a human is required — everything else is scripted:
-- **Any credential/password entry or account creation** (Zoho signup, Vercel login,
-  Google sign-in, buying a domain). The agent must never type these.
+- **Any credential/password entry, purchase, or account creation** (Zoho signup,
+  Vercel login, Google sign-in, buying a domain, **buying the Twilio number**).
+  The agent must never type these.
 - **Generating a provider-side secret** that only exists after a click: Zoho **DKIM
-  selector** (creates the TXT value), **Resend API key**, Supabase keys. Human
-  generates → pastes → agent writes to DNS/env via API.
+  selector** (creates the TXT value), **Resend API key**, Supabase keys, **Vapi
+  private API key**. Human generates → pastes → agent writes to DNS/env/API.
+- **Client-supplied channel values** for pathway step 6 (WhatsApp number,
+  Facebook/Instagram URLs, voice-line number) — collected once in the onboarding
+  CSV, never invented by the agent.
 - **Final "Verify"/"Enable" clicks** in a provider console where no API is wired yet
   (Zoho MX/SPF/DKIM verify+enable; Search Console verify) — until their APIs are set up.
 
@@ -222,3 +238,7 @@ These are the ONLY places a human is required — everything else is scripted:
 ## Related
 - `../afrishieldai-seo/SKILL.md` — the AI SEO build & optimise SOP this Ops layer
   follows (the build side that produces the repo Step 1 deploys).
+- `../ai-voice-agent/SKILL.md` — pathway step 6: AI inbound-call line (Twilio →
+  Vapi → site webhook → HubSpot).
+- `../social-contact-links/SKILL.md` — pathway step 6: WhatsApp click-to-chat and
+  Facebook/Instagram wiring.
