@@ -55,6 +55,7 @@ data (name, email, interest). No telephony code runs on Vercel.
 |---|---|---|
 | Phone number, E.164 (`+15595550199`) | `NEXT_PUBLIC_PHONE` (display form) | Human buys in Twilio |
 | Vapi **private** API key | `VAPI_API_KEY` in secrets file | Vapi dashboard → API Keys |
+| Vapi **public** key (web widget only) | `NEXT_PUBLIC_VAPI_PUBLIC_KEY` | `GET /token` with the private key — the token tagged `"public"` |
 | Vapi assistant ID (or create one) | `VAPI_ASSISTANT_ID` in secrets file | Vapi dashboard, or `POST /assistant` |
 | Twilio SID + Auth Token | `TWILIO_ACCOUNT_SID` / `TWILIO_AUTH_TOKEN` | Only if importing the number |
 | Webhook shared secret | `CALL_WEBHOOK_SECRET` | Agent generates: `openssl rand -hex 32` |
@@ -143,6 +144,35 @@ truth, env-overridable via `NEXT_PUBLIC_PHONE`. Everything renders
   formatting, and never a fabricated number (house rule).
 - Env docs: `NEXT_PUBLIC_PHONE` + `CALL_WEBHOOK_SECRET` in `.env.example` and
   the deployment runbook.
+
+## Step 4b — On-page voice assistant (web calls)
+
+The same assistant can talk to visitors **in the browser**, no phone call
+needed. Reference: `components/layout/VoiceCallButton.tsx` in the
+marketing-site repo, mounted in `app/layout.tsx` directly above the WhatsApp
+float (`bottom-24 right-5` vs the float's `bottom-5 right-5`).
+
+Rules that matter:
+
+- **Web calls use the Vapi _public_ key — never the private one.** The private
+  key must never ship to a browser. Retrieve the public key from the API with
+  the private key: `GET https://api.vapi.ai/token` lists the org's tokens; take
+  the one tagged `"public"`. (`GET /org` rejects the private key with a
+  misleading "Invalid Key" 401 — use `/token`.)
+- Config lives in `lib/site.ts` as `voice: { assistantId, publicKey }`,
+  env-overridable via `NEXT_PUBLIC_VAPI_ASSISTANT_ID` /
+  `NEXT_PUBLIC_VAPI_PUBLIC_KEY`; the button renders nothing when either is
+  empty.
+- Use the `@vapi-ai/web` SDK, **dynamically imported on first click**
+  (`await import('@vapi-ai/web')`) so its ~100 KB never touches the initial
+  bundle — FCP discipline from the build SOP applies.
+- Three states: idle (mic icon) → connecting (mic permission prompt) → live
+  (pulsing, tap to end). On `error` or mic denial, fall back to idle silently —
+  the phone line is the fallback path. No red styling (house rule: threat red
+  never appears in marketing).
+- Web calls and phone calls share the assistant, so the same `serverUrl`
+  webhook from Step 2 receives both kinds of end-of-call report — no extra
+  wiring.
 
 ## Step 5 — Deploy, verify, test
 
