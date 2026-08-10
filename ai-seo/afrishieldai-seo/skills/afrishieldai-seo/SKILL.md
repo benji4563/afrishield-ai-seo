@@ -63,7 +63,9 @@ Run the phases from the `ai-seo-website-builder` skill in order. The compressed 
 5. **SEO foundation** → per-page metadata, canonical, sitemap, robots. Extended
    by B.1 (AI crawlers) and B.3 (schema).
 6. **Content pipeline** → research live SERP → original prose → BLUF block (B.2)
-   → FAQ → schema → verify → log keyword.
+   → FAQ → schema → verify → log keyword. Humor per the standing reference
+   `../humor-writing/SKILL.md` — for client sites apply its client calibration
+   (one notch drier; near-zero in regulated verticals).
 7. **Local pages** → one real page per target city (B.4), never a template swap.
 8. **Deploy** → Vercel, apex canonical, HTTPS, Search Console + sitemap submit.
 

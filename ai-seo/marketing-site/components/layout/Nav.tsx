@@ -50,7 +50,15 @@ export function Nav() {
             ))}
           </nav>
 
-          <div className="hidden lg:block">
+          <div className="hidden items-center gap-6 lg:flex">
+            {SITE.phone ? (
+              <a
+                href={SITE.phoneHref}
+                className="font-mono text-label uppercase text-white/60 transition-colors hover:text-white"
+              >
+                {SITE.phone}
+              </a>
+            ) : null}
             <Button href="/contact">Book a call</Button>
           </div>
 
@@ -95,7 +103,16 @@ export function Nav() {
                 </Link>
               ))}
             </nav>
-            <div className="mt-7">
+            <div className="mt-7 space-y-4">
+              {SITE.phone ? (
+                <a
+                  href={SITE.phoneHref}
+                  onClick={() => setOpen(false)}
+                  className="block font-mono text-label uppercase text-white/70"
+                >
+                  Call: {SITE.phone}
+                </a>
+              ) : null}
               <Button href="/contact">Book a call</Button>
             </div>
           </div>

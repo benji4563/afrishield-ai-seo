@@ -3,6 +3,14 @@ import type { PostMeta } from '@/lib/posts';
 
 // African-business photography per post — Pexels, see public/images/credits.json.
 const POST_IMAGE: Record<string, { src: string; alt: string }> = {
+  'small-business-seo': {
+    src: '/images/blog-small-business-seo.webp',
+    alt: 'A small-business owner looking anxiously at a laptop showing a falling website-traffic graph.',
+  },
+  'answer-engine-optimization': {
+    src: '/images/blog-answer-engine-optimization.webp',
+    alt: 'Two marketers celebrating in front of a screen showing a falling Google traffic graph — hype outpacing the results.',
+  },
   'what-ai-seo-actually-does': {
     src: '/images/blog-what-ai-seo-actually-does.jpg',
     alt: 'An African professional focused on work at a laptop in an office.',

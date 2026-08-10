@@ -70,6 +70,24 @@ export default function ContactPage() {
                 >
                   {SITE.email}
                 </a>
+
+                {SITE.phone ? (
+                  <>
+                    <p className="mt-10 font-mono text-label uppercase text-white/40">
+                      Or call — answered 24/7 by our AI
+                    </p>
+                    <a
+                      href={SITE.phoneHref}
+                      className="mt-2 inline-block font-display text-[19px] font-semibold text-green-300 hover:text-green-200"
+                    >
+                      {SITE.phone}
+                    </a>
+                    <p className="mt-3 max-w-[46ch] text-small body-dim">
+                      Our AI assistant answers every call, in English or French, and
+                      passes qualified enquiries straight to the team.
+                    </p>
+                  </>
+                ) : null}
               </div>
 
               <div className="space-y-5">

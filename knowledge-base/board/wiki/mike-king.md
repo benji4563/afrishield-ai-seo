@@ -51,3 +51,15 @@ synthesis-first discovery.
 - Cover the **query fan-out** of a topic, not just the primary keyword.
 - Add a GEO check to the site health / board-review loop: are we actually cited in
   Claude/Gemini/Perplexity/ChatGPT answers for target questions?
+
+## Updates log (auto-ingested)
+- **2026-07-29** — [SEO Week 2026 | Zach Chahalis — Why You Need A Relevance Engineer Driving The Car](https://www.youtube.com/watch?v=Rqe_4g2cWA8):
+  operationalizes Relevance Engineering into a measurement practice — define
+  AI-Search-specific metrics that vary by query type/intent, run controlled
+  experiments against them, then feed findings back into content templates
+  and editorial strategy, rather than treating relevance as a one-time audit.
+- **2026-07-29** — [SEO Week 2026 | Garrett Sussman — Run Persona Run](https://www.youtube.com/watch?v=fmN6Sw0un7w):
+  a year of experiments showing AI Search results vary by the searcher's
+  persona and personal/connected-data context, not just by the content
+  itself — brand visibility in AI answers needs to be measured across
+  personas and prompts, not treated as one stable ranking.

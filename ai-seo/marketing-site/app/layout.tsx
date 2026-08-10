@@ -3,6 +3,8 @@ import { Inter, JetBrains_Mono, Sora } from 'next/font/google';
 import './globals.css';
 import { Nav } from '@/components/layout/Nav';
 import { Footer } from '@/components/layout/Footer';
+import { WhatsAppFloat } from '@/components/layout/WhatsAppFloat';
+import { VoiceCallButton } from '@/components/layout/VoiceCallButton';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { organizationJsonLd } from '@/lib/structured-data';
 import { SITE, SITE_URL } from '@/lib/site';
@@ -75,6 +77,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Nav />
         <main id="main">{children}</main>
         <Footer />
+        <WhatsAppFloat />
+        <VoiceCallButton />
       </body>
     </html>
   );

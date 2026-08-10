@@ -22,6 +22,14 @@ export function Footer() {
               >
                 {SITE.email}
               </a>
+              {SITE.phone ? (
+                <a
+                  href={SITE.phoneHref}
+                  className="mt-3 block font-mono text-label uppercase text-white/60 transition-colors hover:text-white"
+                >
+                  {SITE.phone} — answered 24/7 by our AI
+                </a>
+              ) : null}
             </div>
 
             {FOOTER_COLUMNS.map((column) => (
