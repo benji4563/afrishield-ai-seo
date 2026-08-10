@@ -74,6 +74,12 @@ Non-negotiables:
 
 - The **primary keyword is answered outright in the `ShortAnswer`**, within the
   first 100 words, phrased naturally. It is the featured-snippet / AI-answer target.
+- **Humor / voice skill (mandatory — every post, including automated auto-poster
+  runs).** Invoke the **`seo-blog-humor-style`** skill and apply its locked-in
+  humor/voice reference to the whole draft. Load it *before* writing and keep it
+  applied through editing. This is what keeps posts human and on-brand instead of
+  reading like generic AI-written SEO filler; it is not optional and not only for
+  interactive runs.
 - **Voice:** dry, plain, honest, faintly self-deprecating, anti-hype. No guaranteed
   rankings. African-market aware — mid-range Android phones on patchy connections,
   African cities and names as **clearly labelled** illustrative composites (the

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { blogPostingJsonLd, breadcrumbJsonLd, faqPageJsonLd } from '@/lib/structured-data';
-import { getPost } from '@/lib/posts';
+import { getPost, postOgImages } from '@/lib/posts';
 import { SITE_URL } from '@/lib/site';
 
 const post = getPost('what-ai-seo-actually-does')!;
@@ -17,8 +17,14 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/blog/${post.slug}`,
     type: 'article',
     publishedTime: post.published,
+    images: postOgImages(post),
   },
-  twitter: { card: 'summary_large_image', title: post.title, description: post.description },
+  twitter: {
+    card: 'summary_large_image',
+    title: post.title,
+    description: post.description,
+    images: postOgImages(post),
+  },
 };
 
 const TOC = [

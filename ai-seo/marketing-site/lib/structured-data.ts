@@ -146,7 +146,7 @@ export function blogPostingJsonLd(post: {
   description: string;
   published: string;
   modified?: string;
-  image?: string;
+  image?: { src: string; alt: string };
 }) {
   return {
     '@context': 'https://schema.org',
@@ -157,7 +157,7 @@ export function blogPostingJsonLd(post: {
     mainEntityOfPage: { '@type': 'WebPage', '@id': abs(`/blog/${post.slug}`) },
     datePublished: post.published,
     dateModified: post.modified ?? post.published,
-    ...(post.image ? { image: abs(post.image) } : {}),
+    ...(post.image ? { image: abs(post.image.src) } : {}),
     author: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
     publisher: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
   };
