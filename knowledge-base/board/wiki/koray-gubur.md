@@ -55,9 +55,23 @@ context · "Koraynese" (his precise, coined terminology).
   ranking signal distinct from topical authority itself, and argues content
   cannibalization still hurts rankings today — a direct counter to the
   industry claim that cannibalization "no longer matters."
-- **2026-07-29** — [Topical Authority with 1-Page Exact-Match Domain: 8,000 Clicks/Day](https://www.youtube.com/watch?v=WrU25krFCtk):
-  introduces **Visual Semantics** — Google reading a page's visual layout
-  (block placement, hierarchy, whitespace) as its own semantic/ranking signal,
-  demonstrated on a single-page multilingual domain that scaled from 0 to
-  800k organic clicks in three months on topical authority + layout alone,
-  with no link building.
+- **2026-08-05** — Introduces "visual semantics": he argues search engines now read
+  a page's layout and component structure (not just its text) via agentic retrieval
+  to judge a page's purpose and quality, with a "centerpiece annotation" — the
+  primary above-the-fold block — signalling the page's dominant service/purpose.
+  For local/service niches he splits the topical map into a core layer (city-specific
+  commercial pages) and an outer layer (supporting educational content that
+  internally links back to the core pages), and warns multi-location pages need
+  genuinely distinct local detail (courts, stats, neighborhoods), not just a
+  swapped city name, to avoid duplicate-content dilution. —
+  https://www.youtube.com/watch?v=mD51uM8v_bw
+- **2026-08-05** — Ties ranking behavior to a Google "query augmentation" patent
+  (queries get expanded into semantic variants, and click/relevance signals on those
+  variants feed ranking) and a January 2026 "landing page scoring" patent tied to
+  visual/component layout. Also claims multilingual sites can cross-boost each
+  other's ranking signals between language versions, and recommends a
+  "triple-to-triple translation" check (translate forward and back to compare
+  sentence structure) for multilingual content quality. Frames ranking as
+  progressive: a domain earns "rankability" through accumulated click/engagement
+  satisfaction over time rather than ranking outright from day one. —
+  https://www.youtube.com/watch?v=WrU25krFCtk

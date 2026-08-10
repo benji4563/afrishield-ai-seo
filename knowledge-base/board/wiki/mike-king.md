@@ -63,3 +63,27 @@ synthesis-first discovery.
   persona and personal/connected-data context, not just by the content
   itself — brand visibility in AI answers needs to be measured across
   personas and prompts, not treated as one stable ranking.
+- **2026-08-05** — A controlled iPullRank experiment (three account types, ~1,900
+  AI Mode responses, ~22,000 brand mentions) found that Gmail-seeded brand mentions
+  showed up roughly 5x more often in AI Mode answers than photo-seeded ones and were
+  markedly more likely to land in the top 3, while an unseeded control account
+  stayed flat — meaning AI-search visibility now extends into a prospect's inbox
+  and other Google-ecosystem touchpoints, not just their own site. The lift was
+  strongest for subjective/personal-taste categories and tightly constrained
+  prompts, weaker for higher-stakes categories (banks, agencies) where answers
+  leaned more on public-web consensus — and personalized mentions were still cited
+  back to external sources most of the time, so conventional SEO/reputation signals
+  remain necessary alongside any inbox-seeding tactic. —
+  https://www.youtube.com/watch?v=JjPfPT37li0
+- **2026-08-05** — Argues Google's own GEO guidance (downplaying chunking,
+  llms.txt) is self-serving — it tends to recommend whatever standardizes the web
+  in ways that cut Google's own crawling/parsing cost, similar to past pushes like
+  HTTPS and Core Web Vitals. Recommends dropping the 60-character title-tag
+  convention in favor of appending top Search Console query terms to titles, since
+  Google usually rewrites titles from what's available rather than summarizing the
+  page (reports a 10-20% CTR lift from this). Also reframes "AI content" ranking
+  drops as an engagement-signal problem, not an authorship-detection one: Google
+  provisionally scores new content against similar existing content, then adjusts
+  based on real user behavior (bounce/dwell time) — so generic AI-written pages
+  with poor UX get demoted regardless of how they were produced. —
+  https://www.youtube.com/watch?v=dTHuLMWDFWo
