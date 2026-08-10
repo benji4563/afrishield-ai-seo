@@ -17,6 +17,10 @@ Rules for the poster:
 - After publishing, set the row to `claimed` here **and** append to `used-keywords.md`.
 - If **no** `queued` rows remain, do nothing and report "queue empty" — never invent
   a keyword or republish an existing one.
+- Write with the locked-in humor reference
+  `afrishieldai-seo/skills/humor-writing/SKILL.md` (distilled from the
+  hireawriter.us humor article): 3–5 dry, industry-aimed touches per post, none
+  in the ShortAnswer, H2 opener sentences, FAQ answers, or metadata.
 
 Vetting note: all volumes below are **DataForSEO, South Africa, en** — a single
 African market, so absolute volumes are low (10–40) by nature. Selection weighs
@@ -26,8 +30,8 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 
 | # | Primary keyword | Cluster | Vetting (SA/en) | Status |
 |---|---|---|---|---|
-| 1 | small business seo | G — SMB / differentiation | vetted · SV~40 · commercial · LOW comp | queued |
-| 2 | how to get my business on google | E — local visibility | vetted · SV~30 · informational · rising | queued |
+| 1 | small business seo | G — SMB / differentiation | vetted · SV~40 · commercial · LOW comp | claimed |
+| 2 | how to get my business on google | E — local visibility | vetted · SV~30 · informational · rising | claimed |
 | 3 | what is schema markup | B — technical education | vetted · SV~20 · informational · LOW comp | queued |
 | 4 | google business profile optimization | E — local / GBP | vetted · SV~10–20 · commercial · rising · high CPC | queued |
 | 5 | how to rank on chatgpt | B — AI answers (AEO/GEO) | vetted · SV~10 · informational · zero comp | queued |
@@ -56,3 +60,5 @@ periodically; promote to the table above once they show real volume.
 | Primary keyword | Page | Claimed |
 |---|---|---|
 | answer engine optimization | `/blog/answer-engine-optimization` | 2026-07-29 |
+| small business seo | `/blog/small-business-seo` | 2026-08-05 |
+| how to get my business on google | `/blog/how-to-get-my-business-on-google` | 2026-08-10 |

@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "connect-domain": "node scripts/connect-domain.mjs"
   },
   "//overrides": "next 16.2.11 pins vulnerable postcss/sharp transitively; npm's suggested 'fix' is a downgrade to next@9. These force the patched versions instead. Re-check on each Next upgrade and drop when upstream catches up.",
   "overrides": {
@@ -15,6 +16,7 @@
     "sharp": "^0.35.0"
   },
   "dependencies": {
+    "@vapi-ai/web": "^2.6.1",
     "framer-motion": "^12.42.2",
     "next": "^16.2.11",
     "react": "^19.2.8",

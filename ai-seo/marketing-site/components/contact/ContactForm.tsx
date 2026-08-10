@@ -33,7 +33,7 @@ export function ContactForm() {
         // Errors say what went wrong and how to fix it — never just "failed".
         setMessage(
           body.error ??
-            'That did not send. Check the required fields and try again, or email hello@afrishieldai.com directly.',
+            'That did not send. Check the required fields and try again, or email benji@afrishieldai.com directly.',
         );
         return;
       }
@@ -42,7 +42,7 @@ export function ContactForm() {
     } catch {
       setStatus('error');
       setMessage(
-        'The request could not reach us — usually a network drop. Try again, or email hello@afrishieldai.com.',
+        'The request could not reach us — usually a network drop. Try again, or email benji@afrishieldai.com.',
       );
     }
   }
