@@ -19,6 +19,7 @@ reconcile.
 | answer engine optimization | B — service education (AEO/GEO) | `/blog/answer-engine-optimization` | 2026-07-29 | Live |
 | small business seo | G — SMB / differentiation | `/blog/small-business-seo` | 2026-08-05 | Live |
 | how to get my business on google | E — local visibility | `/blog/how-to-get-my-business-on-google` | 2026-08-10 | Live |
+| what is schema markup | B — technical education | `/blog/what-is-schema-markup` | 2026-08-10 | Live |
 
 ## Deliberately not targeted
 

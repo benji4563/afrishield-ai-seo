@@ -31,6 +31,19 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'what-is-schema-markup',
+    title:
+      'What is schema markup? The structured data explainer for a small business site',
+    cardTitle: 'What is schema markup, explained plainly',
+    metaTitle: 'What is schema markup? A plain answer',
+    description:
+      'What schema markup actually is, the handful of schema.org types worth using on a small business site, and the honest limits of what a few lines of JSON-LD can do for you.',
+    category: 'Technical SEO',
+    published: '2026-08-10',
+    readingMinutes: 9,
+    primaryKeyword: 'what is schema markup',
+  },
+  {
     slug: 'how-to-get-my-business-on-google',
     title:
       'How to get your business on Google: search, Maps, and being the answer an AI names',
