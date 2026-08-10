@@ -37,3 +37,16 @@ clicks/month as the scoreboard.
   (a "local" companion to the blog pipeline).
 - Use his "automate the right 3 things first" discipline to prioritise which manual
   steps become the next routines — serving the ≤5%-human goal.
+
+## Updates log (auto-ingested)
+- **2026-07-29** — [Claude Code Local Google Ads: Automate Everything ($730K Earned)](https://www.youtube.com/watch?v=8VyHKDSyCCo):
+  extends his automation stack from organic local SEO into paid acquisition —
+  a Claude-Code-driven system covering Local Services Ads setup and ranking
+  factors (reviews, response speed, photos), single-keyword ad groups,
+  automated review collection, retargeting, and a 60-second speed-to-lead
+  workflow, tied together with a profit-only analytics dashboard.
+- **2026-07-29** — [Claude Code WordPress SEO: Automate Everything ($500K+ Earned)](https://www.youtube.com/watch?v=LabRBZp2ODk):
+  applies the same Claude-Code automation approach to WordPress technical/
+  on-page SEO execution specifically — same "automate the highest-leverage
+  repeated steps first" discipline, aimed at CMS-specific SEO tasks rather
+  than the local-SEO fundamentals already documented above.
