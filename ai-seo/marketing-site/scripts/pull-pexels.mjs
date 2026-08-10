@@ -33,6 +33,8 @@ const SLOTS = [
   { slot: 'blog-ai-seo-vs-traditional-seo', queries: ['african office computers technology', 'african developer computer office'] },
   { slot: 'blog-small-business-seo', queries: ['african small business owner shop counter', 'african entrepreneur small store owner'] },
   { slot: 'blog-answer-engine-optimization', queries: ['african professional smartphone technology', 'african person using phone assistant'] },
+  { slot: 'blog-what-is-schema-markup', queries: ['african developer coding laptop office', 'african programmer computer screen focused'] },
+  { slot: 'blog-how-to-get-my-business-on-google', queries: ['african shop owner smartphone storefront', 'african small business owner phone google maps'] },
 ];
 
 async function search(query) {

@@ -42,6 +42,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-10',
     readingMinutes: 9,
     primaryKeyword: 'what is schema markup',
+    image: {
+      src: '/images/blog-what-is-schema-markup.jpg',
+      alt: 'An African developer reviewing structured data code on a laptop screen at a desk.',
+    },
   },
   {
     slug: 'how-to-get-my-business-on-google',
@@ -55,6 +59,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-10',
     readingMinutes: 10,
     primaryKeyword: 'how to get my business on google',
+    image: {
+      src: '/images/blog-how-to-get-my-business-on-google.jpg',
+      alt: 'An African small-business owner checking their Google Business Profile listing on a smartphone.',
+    },
   },
   {
     slug: 'small-business-seo',
