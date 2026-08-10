@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
+import { EditorialImage } from '@/components/ui/EditorialImage';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { blogPostingJsonLd, breadcrumbJsonLd, faqPageJsonLd } from '@/lib/structured-data';
 import { getPost, postOgImages } from '@/lib/posts';
@@ -89,6 +90,13 @@ export default function Post() {
           your core facts down plainly, in one place, a model has nothing to lift, and it
           quotes whoever did.
         </ShortAnswer>
+
+        <EditorialImage
+          src="/images/blog-answer-engine-optimization.webp"
+          alt="Two marketers celebrating with raised fists in front of a screen showing a falling Google traffic graph — hype outpacing the results."
+          priority
+          className="my-10"
+        />
 
         <Scene>
           <p>

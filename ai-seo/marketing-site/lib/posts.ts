@@ -31,6 +31,19 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'how-to-get-my-business-on-google',
+    title:
+      'How to get your business on Google: search, Maps, and being the answer an AI names',
+    cardTitle: 'How to get your business on Google',
+    metaTitle: 'Get your business on Google, step by step',
+    description:
+      'The three separate ways a business shows up on Google — Maps, organic search, and AI answers — and the concrete, mostly-free steps for each, cheapest first.',
+    category: 'Local visibility',
+    published: '2026-08-10',
+    readingMinutes: 10,
+    primaryKeyword: 'how to get my business on google',
+  },
+  {
     slug: 'small-business-seo',
     title: 'Small business SEO: what actually matters when you do not have an agency budget',
     cardTitle: 'Small business SEO, without the agency budget',
@@ -41,8 +54,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-05',
     readingMinutes: 10,
     primaryKeyword: 'small business seo',
-    // image pending — fetched into public/images/blog-small-business-seo.jpg
-    // by scripts/pull-pexels.mjs; add `image` here in the same commit as the file.
+    image: {
+      src: '/images/blog-small-business-seo.webp',
+      alt: 'A small-business owner looking anxiously at a laptop showing a falling website-traffic graph.',
+    },
   },
   {
     slug: 'answer-engine-optimization',
@@ -55,8 +70,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-07-29',
     readingMinutes: 9,
     primaryKeyword: 'answer engine optimization',
-    // image pending — fetched into public/images/blog-answer-engine-optimization.jpg
-    // by scripts/pull-pexels.mjs; add `image` here in the same commit as the file.
+    image: {
+      src: '/images/blog-answer-engine-optimization.webp',
+      alt: 'Two marketers celebrating in front of a screen showing a falling Google traffic graph — hype outpacing the results.',
+    },
   },
   {
     slug: 'what-ai-seo-actually-does',

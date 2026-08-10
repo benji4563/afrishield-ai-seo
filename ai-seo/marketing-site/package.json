@@ -16,6 +16,7 @@
     "sharp": "^0.35.0"
   },
   "dependencies": {
+    "@vapi-ai/web": "^2.6.1",
     "framer-motion": "^12.42.2",
     "next": "^16.2.11",
     "react": "^19.2.8",

@@ -9,6 +9,9 @@ export const organizationJsonLd = {
   legalName: SITE.legalName,
   url: SITE_URL,
   email: SITE.email,
+  // Asserted only once a real inbound number is provisioned — never fabricate NAP.
+  // E.164 (from the tel: href) rather than the display formatting.
+  ...(SITE.phone ? { telephone: SITE.phoneHref.replace('tel:', '') } : {}),
   description: SITE.description,
   areaServed: [
     { '@type': 'Place', name: 'Africa' },
@@ -22,7 +25,8 @@ export const organizationJsonLd = {
 /**
  * Cities we serve, used for areaServed on the service/local schema. These make
  * the ProfessionalService legible to local + AI answer engines ("best AI SEO in
- * Lagos"). No telephone or street address is asserted — we never fabricate NAP.
+ * Lagos"). No street address is asserted, and telephone only once a real
+ * inbound number exists — we never fabricate NAP.
  */
 export const SERVED_CITIES = [
   { name: 'Lagos', country: 'Nigeria' },
@@ -142,6 +146,7 @@ export function blogPostingJsonLd(post: {
   description: string;
   published: string;
   modified?: string;
+  image?: { src: string; alt: string };
 }) {
   return {
     '@context': 'https://schema.org',
@@ -152,16 +157,20 @@ export function blogPostingJsonLd(post: {
     mainEntityOfPage: { '@type': 'WebPage', '@id': abs(`/blog/${post.slug}`) },
     datePublished: post.published,
     dateModified: post.modified ?? post.published,
+    ...(post.image ? { image: abs(post.image.src) } : {}),
     author: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
     publisher: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
   };
 }
 
-export function howToJsonLd(steps: ReadonlyArray<{ name: string; text: string }>) {
+export function howToJsonLd(
+  steps: ReadonlyArray<{ name: string; text: string }>,
+  name: string = 'How an AfriShield AI SEO engagement runs',
+) {
   return {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: 'How an AfriShield AI SEO engagement runs',
+    name,
     step: steps.map((step, i) => ({
       '@type': 'HowToStep',
       position: i + 1,

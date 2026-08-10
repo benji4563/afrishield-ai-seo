@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
+import { EditorialImage } from '@/components/ui/EditorialImage';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { blogPostingJsonLd, breadcrumbJsonLd, faqPageJsonLd } from '@/lib/structured-data';
 import { getPost, postOgImages } from '@/lib/posts';
@@ -89,6 +90,13 @@ export default function Post() {
           and city pages, and content that answers the exact questions customers already ask
           in person. Most of it costs time rather than money, at least at the start.
         </ShortAnswer>
+
+        <EditorialImage
+          src="/images/blog-small-business-seo.webp"
+          alt="A small-business owner looking anxiously at a laptop showing a falling website-traffic graph."
+          priority
+          className="my-10"
+        />
 
         <Scene>
           <p>
