@@ -50,6 +50,11 @@ context · "Koraynese" (his precise, coined terminology).
   stays on accounting; no drift into unrelated high-volume topics).
 
 ## Updates log (auto-ingested)
+- **2026-07-29** — [How to Rank in AI Search with Semantic SEO and Topical Authority (Navneet interview)](https://www.youtube.com/watch?v=AlHiLfYah74):
+  frames "content effort" (from the Google API leak) as its own measurable
+  ranking signal distinct from topical authority itself, and argues content
+  cannibalization still hurts rankings today — a direct counter to the
+  industry claim that cannibalization "no longer matters."
 - **2026-08-05** — Introduces "visual semantics": he argues search engines now read
   a page's layout and component structure (not just its text) via agentic retrieval
   to judge a page's purpose and quality, with a "centerpiece annotation" — the

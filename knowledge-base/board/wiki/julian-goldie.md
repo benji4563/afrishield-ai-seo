@@ -38,6 +38,12 @@ links · topical relevance of links.
   first; log the verdict in the repo.
 
 ## Updates log (auto-ingested)
+- **2026-07-29** — [Automate Your Entire Lead Pipeline With Hermes](https://www.youtube.com/watch?v=Zwtorh9Plx0):
+  demoed an agent-driven cold-outreach pipeline — a one-line ICP description in,
+  verified-email leads out, each scored 0–100 and paired with a personalized
+  opener, gated behind human approval before anything sends, plus one inbox
+  setting that protects deliverability. Applies to our own or a client
+  agency's lead-gen, not just content production.
 - **2026-08-05** — Publishing the same keyword opportunity as several
   differently-angled, case-study-driven articles across multiple sites in parallel
   (rather than one article on one site) is being used as a deliberate way to spread

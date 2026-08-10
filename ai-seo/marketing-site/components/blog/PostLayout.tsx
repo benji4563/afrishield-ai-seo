@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { Faq } from '@/components/ui/Faq';
+import { ShareButtons } from '@/components/blog/ShareButtons';
 import { POSTS, type PostMeta } from '@/lib/posts';
+import { SITE_URL } from '@/lib/site';
 
 export function TableOfContents({ items }: { items: ReadonlyArray<{ id: string; label: string }> }) {
   return (
@@ -52,10 +54,10 @@ export function AuthorBio() {
         work we have actually done, and where we have not done it yet, we say so.
       </p>
       <a
-        href="mailto:hello@afrishieldai.com"
+        href="mailto:benji@afrishieldai.com"
         className="mt-5 inline-block font-mono text-label uppercase text-green-600 hover:text-green-500"
       >
-        Argue with us — hello@afrishieldai.com
+        Argue with us — benji@afrishieldai.com
       </a>
     </aside>
   );
@@ -134,7 +136,15 @@ export function PostShell({
               </div>
 
               <div className="max-w-prose">
+                <ShareButtons
+                  url={`${SITE_URL}/blog/${post.slug}`}
+                  title={post.title}
+                  className="mt-0 border-t-0 pt-0"
+                />
+
                 <div className="post-body">{children}</div>
+
+                <ShareButtons url={`${SITE_URL}/blog/${post.slug}`} title={post.title} />
 
                 <section id="faq" className="mt-16">
                   <h2 className="h2">Questions people actually ask</h2>

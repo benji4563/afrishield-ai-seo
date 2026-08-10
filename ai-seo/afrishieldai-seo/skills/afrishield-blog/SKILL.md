@@ -79,18 +79,40 @@ Non-negotiables:
   African cities and names as **clearly labelled** illustrative composites (the
   `Scene` component already stamps "Illustrative composite"). Minimise contractions;
   the measured register is deliberate.
+- **Humor:** apply the standing reference `../humor-writing/SKILL.md` on **every**
+  post — it is the locked-in source material (distilled from the hireawriter.us
+  humor article) for the wry register. 3–5 dry touches per post, aimed at the
+  industry, never in the ShortAnswer, H2 opener sentences, FAQ answers, or
+  metadata.
 - **6 FAQ entries**, drawn from real "People also ask", 2–4 sentences each.
 - **Liftable H2 openers (board: Mike King / retrieval).** The first sentence under
   every `<h2>` must answer that heading's implicit question outright, before any
   framing or warm-up — the same BLUF discipline the `ShortAnswer` uses, applied per
   chunk. An answer engine retrieves the *section*, not the page, so a soft opener
   ("It helps to picture…", "There is a genuine opening here…") gets lifted and says
-  nothing.
+  nothing. **Before publish, re-read every H2's opening sentence in isolation, as if
+  it were the only text an AI had retrieved, for *all* sections — not just the ones
+  that felt weak while drafting.** A partial pass (some sections fixed, others left
+  soft) is not compliance; the 2026-08-04 board review caught 3 of 6 sections still
+  soft-opening in a post whose earlier board fix had only checked the other two.
+- **HowTo schema for numbered sequences (board: Mike King).** If a section is a
+  numbered how-to (an `<ol>` walking the reader through steps), add a matching
+  `howToJsonLd` `StructuredData` block (already exported from `lib/structured-data.ts`)
+  alongside the standard three — free retrieval surface, otherwise left on the table.
 - **Contextual internal links (board: Koray / topical authority).** Include 2–4
   in-body anchor-text links to sibling posts in the same `content-queue.md` cluster,
   with descriptive anchors naming the target topic — do not rely on the auto
   `RelatedPosts` block, which is undifferentiated. If no cluster sibling exists yet,
   leave an HTML comment noting the intended link target to back-fill on publish.
+- **Differentiation angle vs. existing posts (board: Koray / topical map).** Before
+  drafting, read the `cardTitle`/`description` of every existing entry in `POSTS`
+  (`lib/posts.ts`) and confirm in one sentence what this post uniquely covers that no
+  live post already does — this extends the existing "cross-check `used-keywords.md`"
+  step from exact-keyword match to topical overlap. A keyword can be un-claimed and
+  still risk restating a sibling post in miniature; when that happens, narrow the
+  angle (e.g. make it the synthesis/decision layer that links out to the posts owning
+  the granular detail) rather than re-deriving material that already exists elsewhere
+  on the site.
 - At least one passage that is honest against interest (when *not* to buy).
 - ~1,700–2,200 words.
 
@@ -106,6 +128,61 @@ Curly quotes and straight apostrophes are only safe in specific places:
   delimiter).
 - **Inside JSX text** (between tags): apostrophes, `&rsquo;`, `&ldquo;`/`&rdquo;` are
   all fine.
+
+### Liftable-opener self-audit (before step 4)
+
+Before registering the post, list every `<h2>` in the draft with its first
+sentence. For each one, confirm that sentence states the section's answer
+outright — not scene-setting, not a metaphor, not a lead-in to a list. If it
+doesn't, rewrite it before moving on. The 2026-07-31 board review found the
+post that motivated this rule (`answer-engine-optimization`) still had two
+sections violating it — the rule existed but nothing swept every heading
+against it. This audit is that sweep, made mandatory.
+
+### Hero image (one per post, fully automatic)
+
+Every post gets one topic-matched hero under the `ShortAnswer`, from one of two
+**interchangeable** sources — use whichever is working; if one has issues, use the
+other. No human queue.
+
+**Source A — Pexels (real photography, the safe default).** Real photos, so there
+are no AI artifacts to worry about. The site already uses Pexels
+(`scripts/pull-pexels.mjs`, `public/images/credits.json`). Search for a landscape,
+on-topic African-business photo:
+
+```bash
+curl -s -H "Authorization: $PEXELS_API_KEY" \
+  "https://api.pexels.com/v1/search?query=<concept>&orientation=landscape&per_page=15"
+```
+
+Pick the best on-topic result, download its `src.large` / `src.landscape`, and record
+the photographer name + Pexels URL in `public/images/credits.json`. No AI-error check
+is needed for Pexels — only judge topical fit and quality.
+
+**Source B — Higgsfield `nano-banana-pro` (on-brand AI images).** Generate a 16:9
+image matched to the post's *angle* (people or scene, whatever lands the point;
+prompt for correct anatomy and natural hands; African-market, warm light, editorial —
+not a generic desk). **Then verify — mandatory: download it and view it (Read the
+image file; the model is multimodal).** Reject and regenerate once, or fall back to
+Source A, on ANY AI artifact — extra or melted fingers, warped faces, garbled critical
+text, impossible anatomy. Ship a Higgsfield image only once it is verified clean.
+
+**Selection & fallback (automatic).** Try one source; if it errors, is unavailable,
+returns nothing on-topic, or (Higgsfield) fails verification, switch to the other.
+Only if BOTH fail, publish text-only and say so — never ship a broken or off-topic
+image.
+
+**Save + wire (either source).** Optimise to `public/images/blog-<slug>.webp`, under
+~200 KB. Add `import { EditorialImage } from '@/components/ui/EditorialImage';`, place
+`<EditorialImage src="/images/blog-<slug>.webp" alt="<describe the picture>" priority
+className="my-10" />` immediately after `</ShortAnswer>`, and add
+`images: [\`${SITE_URL}/images/blog-<slug>.webp\`]` to the `openGraph` block. Alt text
+describes the picture plainly — no keyword stuffing.
+
+Runs unattended given `PEXELS_API_KEY` in the environment (Source A) and/or Higgsfield
+access (Source B). The cloud auto-poster follows this step directly — it is multimodal,
+so it performs the Source-B verification itself; with neither source reachable it
+degrades to text-only.
 
 ## 4. Register it
 
@@ -148,6 +225,8 @@ Then confirm the route is live: `curl -s -o /dev/null -w '%{http_code}' <site>/b
 This skill writes **blog posts** for an AI-SEO marketing site. It is driven on a
 schedule by the **AfriShield blog auto-poster** cloud routine, which runs a condensed
 form of steps 1, 3–6 against `content-queue.md`. The **weekly queue-keeper routine**
-tops up and audits `content-queue.md`. City/service landing pages are a different
-shape — see the sibling build SOP `../afrishieldai-seo/SKILL.md` and the
-`client-ops-automation` skill for the deploy/DNS/ops layer.
+tops up and audits `content-queue.md`. Every run — scheduled or interactive, own
+site or client — writes with the locked-in humor reference
+`../humor-writing/SKILL.md`; the auto-poster applies it as-is. City/service landing
+pages are a different shape — see the sibling build SOP `../afrishieldai-seo/SKILL.md`
+and the `client-ops-automation` skill for the deploy/DNS/ops layer.

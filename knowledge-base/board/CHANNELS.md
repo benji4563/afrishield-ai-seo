@@ -19,12 +19,21 @@ curl -sL "https://www.youtube.com/@<handle>" | grep -oE '"channelId":"UC[^"]+"' 
 | Julian Goldie | julian-goldie | @JulianGoldieSEO | `UCGpsgNbzdF7BECCVbB1COHw` |
 | Koray Tuğberk Gübür | koray-gubur | @TopicalAuthority | `UCXTg_CjVldLQ1RH8jxTTqiw` |
 | Wes McDowell | wes-mcdowell | @WesMcDowellInc | `UCMq1R1LgS04lIKdpLh_OS1w` |
-| Mike King (iPullRank) | mike-king | @iPullRank | `UCttOymj_FLE8d7xA7rEbsTw` |
+| Mike King (iPullRank) | mike-king | @iPullRank (see note) | `UCttOymj_FLE8d7xA7rEbsTw` |
 | Dan Martell | dan-martell | @DanMartell | `UCA-mWX9CvCTVFWRMb9bKc9w` |
 | Jono Catliff | jono-catliff | @jonocatliff | `UCnzxPyNnn8jk4bHFk3JUBhA` |
 
 When a `RESOLVE` is turned into a real id, the routine updates this table on its PR
 branch so the lookup is cached next time.
+
+**Note on Mike King / iPullRank (resolved 2026-07-29):** the `@iPullRank`
+handle itself resolves to Mike King's old personal YouTube channel (dormant
+since ~2021, no SEO content — camera tests, one-off clips). His current SEO
+Week talks / GEO content are posted on the separate **iPullRank company
+channel**, handle `@iPullRank` shown on ipullrank.com but a different
+underlying channel ID (`UCttOymj_FLE8d7xA7rEbsTw`, channel name "iPullRank").
+The table above has been pointed at the company channel since that's where
+the actual doctrine-relevant content lives.
 
 ## Ledger
 
