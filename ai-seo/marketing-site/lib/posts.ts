@@ -11,7 +11,23 @@ export type PostMeta = {
   modified?: string;
   readingMinutes: number;
   primaryKeyword: string;
+  /**
+   * Card + social image for the post. Lives here (not in a separate hardcoded
+   * map) so a post and its image never drift out of sync. Every post SHOULD
+   * declare one; a post left without an image renders a clean placeholder
+   * rather than a broken `<img>`. Files live in `public/images/` and are
+   * sourced via `scripts/pull-pexels.mjs`.
+   */
+  image?: { src: string; alt: string };
 };
+
+/** Default social share image used when a page/post has none of its own. */
+export const DEFAULT_OG_IMAGE = '/images/home-band.jpg';
+
+/** OG/Twitter image list for a post — its own image, or the site default. */
+export function postOgImages(post: PostMeta) {
+  return [{ url: post.image?.src ?? DEFAULT_OG_IMAGE }];
+}
 
 export const POSTS: PostMeta[] = [
   {
@@ -39,6 +55,32 @@ export const POSTS: PostMeta[] = [
     primaryKeyword: 'how to reduce ota commission',
   },
   {
+    slug: 'what-is-schema-markup',
+    title:
+      'What is schema markup? The structured data explainer for a small business site',
+    cardTitle: 'What is schema markup, explained plainly',
+    metaTitle: 'What is schema markup? A plain answer',
+    description:
+      'What schema markup actually is, the handful of schema.org types worth using on a small business site, and the honest limits of what a few lines of JSON-LD can do for you.',
+    category: 'Technical SEO',
+    published: '2026-08-10',
+    readingMinutes: 9,
+    primaryKeyword: 'what is schema markup',
+  },
+  {
+    slug: 'how-to-get-my-business-on-google',
+    title:
+      'How to get your business on Google: search, Maps, and being the answer an AI names',
+    cardTitle: 'How to get your business on Google',
+    metaTitle: 'Get your business on Google, step by step',
+    description:
+      'The three separate ways a business shows up on Google — Maps, organic search, and AI answers — and the concrete, mostly-free steps for each, cheapest first.',
+    category: 'Local visibility',
+    published: '2026-08-10',
+    readingMinutes: 10,
+    primaryKeyword: 'how to get my business on google',
+  },
+  {
     slug: 'small-business-seo',
     title: 'Small business SEO: what actually matters when you do not have an agency budget',
     cardTitle: 'Small business SEO, without the agency budget',
@@ -49,6 +91,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-05',
     readingMinutes: 10,
     primaryKeyword: 'small business seo',
+    image: {
+      src: '/images/blog-small-business-seo.webp',
+      alt: 'A small-business owner looking anxiously at a laptop showing a falling website-traffic graph.',
+    },
   },
   {
     slug: 'answer-engine-optimization',
@@ -61,6 +107,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-07-29',
     readingMinutes: 9,
     primaryKeyword: 'answer engine optimization',
+    image: {
+      src: '/images/blog-answer-engine-optimization.webp',
+      alt: 'Two marketers celebrating in front of a screen showing a falling Google traffic graph — hype outpacing the results.',
+    },
   },
   {
     slug: 'what-ai-seo-actually-does',
@@ -73,6 +123,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-07-24',
     readingMinutes: 9,
     primaryKeyword: 'ai seo agency for small business',
+    image: {
+      src: '/images/blog-what-ai-seo-actually-does.jpg',
+      alt: 'An African professional focused on work at a laptop in an office.',
+    },
   },
   {
     slug: 'what-seo-actually-costs',
@@ -85,6 +139,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-07-24',
     readingMinutes: 10,
     primaryKeyword: 'how much does seo cost',
+    image: {
+      src: '/images/blog-what-seo-actually-costs.jpg',
+      alt: 'An African small-business owner managing money and a phone at a market stall.',
+    },
   },
   {
     slug: 'ai-seo-vs-traditional-seo',
@@ -97,6 +155,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-07-24',
     readingMinutes: 9,
     primaryKeyword: 'ai seo vs traditional seo',
+    image: {
+      src: '/images/blog-ai-seo-vs-traditional-seo.jpg',
+      alt: 'An African team working at computers in a technology office.',
+    },
   },
 ];
 

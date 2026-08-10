@@ -21,6 +21,7 @@ export function EditorialImage({
 }) {
   return (
     <figure className={cn('relative overflow-hidden bg-ink/5', ratio, className)}>
+      {/* eslint-disable-next-line @next/next/no-img-element -- deliberate plain <img>, see component doc */}
       <img
         src={src}
         alt={alt}
