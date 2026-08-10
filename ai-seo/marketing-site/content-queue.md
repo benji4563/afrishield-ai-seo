@@ -21,6 +21,12 @@ Rules for the poster:
   `afrishieldai-seo/skills/humor-writing/SKILL.md` (distilled from the
   hireawriter.us humor article): 3–5 dry, industry-aimed touches per post, none
   in the ShortAnswer, H2 opener sentences, FAQ answers, or metadata.
+- **Differentiation angle check (board review, 2026-08-04):** an un-claimed keyword
+  can still restate a live post in miniature once the site has enough published
+  content. Before writing, skim the `cardTitle`/`description` of every entry in
+  `lib/posts.ts` and confirm this row's angle doesn't duplicate one. See the
+  `afrishield-blog` skill's step 1 for the full check. Row 1 below carries the
+  board's recommended angle as an example of the format to use going forward.
 
 Vetting note: all volumes below are **DataForSEO, South Africa, en** — a single
 African market, so absolute volumes are low (10–40) by nature. Selection weighs
