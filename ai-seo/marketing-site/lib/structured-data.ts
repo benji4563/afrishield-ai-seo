@@ -146,6 +146,7 @@ export function blogPostingJsonLd(post: {
   description: string;
   published: string;
   modified?: string;
+  image?: string;
 }) {
   return {
     '@context': 'https://schema.org',
@@ -156,16 +157,20 @@ export function blogPostingJsonLd(post: {
     mainEntityOfPage: { '@type': 'WebPage', '@id': abs(`/blog/${post.slug}`) },
     datePublished: post.published,
     dateModified: post.modified ?? post.published,
+    ...(post.image ? { image: abs(post.image) } : {}),
     author: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
     publisher: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
   };
 }
 
-export function howToJsonLd(steps: ReadonlyArray<{ name: string; text: string }>) {
+export function howToJsonLd(
+  steps: ReadonlyArray<{ name: string; text: string }>,
+  name: string = 'How an AfriShield AI SEO engagement runs',
+) {
   return {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: 'How an AfriShield AI SEO engagement runs',
+    name,
     step: steps.map((step, i) => ({
       '@type': 'HowToStep',
       position: i + 1,
