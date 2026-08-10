@@ -15,6 +15,30 @@ export type PostMeta = {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'how-to-get-hotel-cited-by-chatgpt',
+    title: 'How to get your hotel cited by ChatGPT (and the other assistants travelers now ask)',
+    cardTitle: 'How to get your hotel cited by ChatGPT',
+    metaTitle: 'Get your hotel cited by ChatGPT',
+    description:
+      'Travelers increasingly ask ChatGPT and Perplexity where to stay. What actually gets a hotel named in the answer: crawler access, answer-first content, structured data, and one consistent identity across the web.',
+    category: 'AI answers',
+    published: '2026-08-10',
+    readingMinutes: 10,
+    primaryKeyword: 'how to get hotel cited by chatgpt',
+  },
+  {
+    slug: 'how-to-reduce-ota-commission',
+    title: 'How to reduce OTA commission: the direct-booking playbook for lodges and hotels',
+    cardTitle: 'How to reduce OTA commission',
+    metaTitle: 'How to reduce OTA commission',
+    description:
+      'OTA commissions run 10–25% of every booking. A practical playbook for African lodges and hotels to shift reservations onto direct channels — mostly arithmetic and consistency, no magic.',
+    category: 'Direct bookings',
+    published: '2026-08-10',
+    readingMinutes: 11,
+    primaryKeyword: 'how to reduce ota commission',
+  },
+  {
     slug: 'small-business-seo',
     title: 'Small business SEO: what actually matters when you do not have an agency budget',
     cardTitle: 'Small business SEO, without the agency budget',

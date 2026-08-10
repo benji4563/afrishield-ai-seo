@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="surface-dark border-t border-white/10">
       <div className="container-page">
         <div className="container-inner py-[80px]">
-          <div className="grid gap-12 lg:grid-cols-[1.4fr_repeat(3,1fr)]">
+          <div className="grid gap-12 lg:grid-cols-[1.4fr_repeat(4,1fr)]">
             <div className="max-w-[320px]">
               <Link href="/" className="flex items-center gap-2.5 text-green-300">
                 <SignalNodeMark className="h-6 w-6" />

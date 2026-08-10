@@ -18,6 +18,12 @@ reconcile.
 | ai seo vs traditional seo | B — service education / comparison | `/blog/ai-seo-vs-traditional-seo` | 2026-07-24 | Live |
 | answer engine optimization | B — service education (AEO/GEO) | `/blog/answer-engine-optimization` | 2026-07-29 | Live |
 | small business seo | G — SMB / differentiation | `/blog/small-business-seo` | 2026-08-05 | Live |
+| hospitality seo services africa | A — hire a provider (tourism) | `/for-tourism-hospitality` | 2026-08-10 | Live |
+| seo for safari operators | A — hire a provider (tourism) | `/for-safari-operators` | 2026-08-10 | Live |
+| seo for lodges | A — hire a provider (tourism) | `/for-lodges-hotels` | 2026-08-10 | Live |
+| generative engine optimization services | B — service education (AEO/GEO) | `/geo-services` | 2026-08-10 | Live |
+| how to reduce ota commission | D — problem-aware (tourism) | `/blog/how-to-reduce-ota-commission` | 2026-08-10 | Live |
+| how to get hotel cited by chatgpt | B — service education (AEO/GEO) | `/blog/how-to-get-hotel-cited-by-chatgpt` | 2026-08-10 | Live |
 
 ## Deliberately not targeted
 

@@ -91,6 +91,66 @@ export const servicesJsonLd = {
     'Keyword and SERP intelligence, a content engine that publishes on a schedule, rank tracking reported monthly, and visibility in AI answer engines like ChatGPT, Claude and Perplexity.',
 };
 
+/** Service schema for the tourism & hospitality umbrella page. */
+export const tourismHospitalityServiceJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Hospitality SEO services',
+  provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+  areaServed: [
+    { '@type': 'Place', name: 'Africa' },
+    ...SERVED_CITIES.map((city) => ({ '@type': 'City', name: city.name })),
+  ],
+  description:
+    'Hospitality SEO services for African tourism businesses — safari operators, lodges, hotels, and tour companies — covering keyword research, technical SEO, a scheduled content engine, and visibility in AI answer engines like ChatGPT, Claude and Perplexity.',
+};
+
+/** Service schema for the safari operators segment page. */
+export const safariOperatorsServiceJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'SEO for safari operators',
+  provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+  areaServed: [
+    { '@type': 'Place', name: 'Africa' },
+    { '@type': 'Country', name: 'Kenya' },
+    { '@type': 'Country', name: 'Tanzania' },
+    { '@type': 'Country', name: 'Uganda' },
+    { '@type': 'Country', name: 'South Africa' },
+    { '@type': 'Country', name: 'Cameroon' },
+  ],
+  description:
+    'SEO for safari operators and tour companies in Africa — keyword research aimed at international buyers, technical fixes, a content engine, and GEO work so AI assistants name the operator when travelers plan a safari.',
+};
+
+/** Service schema for the lodges & hotels segment page. */
+export const lodgesHotelsServiceJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'SEO for lodges and hotels',
+  provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+  areaServed: [
+    { '@type': 'Place', name: 'Africa' },
+    ...SERVED_CITIES.map((city) => ({ '@type': 'City', name: city.name })),
+  ],
+  description:
+    'SEO for lodges, hotels, and guest houses in Africa — direct-booking visibility that reduces OTA commission dependence, plus AI search optimization so assistants like ChatGPT and Perplexity name the property.',
+};
+
+/** Service schema for the GEO (generative engine optimization) service page. */
+export const geoServicesJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Generative engine optimization',
+  provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+  areaServed: [
+    { '@type': 'Place', name: 'Africa' },
+    ...SERVED_CITIES.map((city) => ({ '@type': 'City', name: city.name })),
+  ],
+  description:
+    'Generative engine optimization services — AI-crawler allowlists, answer-first content blocks, a structured-data engine, Ask-AI prompts, and a monthly AI-citation benchmark across ChatGPT, Claude, Perplexity, and Gemini.',
+};
+
 /** Founder, for the About page. */
 export const founderJsonLd = {
   '@context': 'https://schema.org',

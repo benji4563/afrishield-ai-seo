@@ -1,5 +1,11 @@
 # Content queue — afrishieldai.com blog
 
+> **Editorial rule (added 2026-08-10, tourism-niche expansion):** going forward, **60% of
+> queued posts target tourism & hospitality** (clusters A/B/D/E and Cameroon FR in
+> `keyword-map.md`), **40% the existing general mix**. The poster should apply this ratio
+> when choosing between equally-vetted `queued` rows; the queue-keeper should keep the
+> candidate pool stocked to match it.
+
 The **blog auto-poster** (scheduled cloud routine) consumes this file. Each run it
 takes the **top `queued` keyword**, writes the post, then marks it `claimed`.
 
@@ -45,6 +51,12 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 13 | how to appear on google maps | E — local visibility | vetted · SV~10 · informational | queued |
 | 14 | how to get more website traffic | H — general how-to | vetted · SV~10 · informational | queued |
 | 15 | content marketing for small business | F — content strategy | vetted · SV~10 · commercial · declining | queued |
+| 16 | get safari company recommended by ai | B — AI answers (GEO × safari) | candidate — no DataForSEO pass yet (see `keyword-map.md`) | candidate |
+| 17 | increase direct hotel bookings | D — problem-aware (tourism) | candidate — no DataForSEO pass yet | candidate |
+| 18 | booking.com commission alternative | D — problem-aware (tourism) | candidate — no DataForSEO pass yet | candidate |
+| 19 | direct booking strategy for lodges | D — problem-aware (tourism) | candidate — no DataForSEO pass yet | candidate |
+| 20 | google business profile for hotels | E — local / GBP × hotels | candidate — no DataForSEO pass yet | candidate |
+| 21 | google maps ranking for safari companies | E — local / GBP × safari | candidate — no DataForSEO pass yet | candidate |
 
 ## Watchlist — no DataForSEO volume yet (do NOT queue until confirmed)
 
@@ -61,3 +73,5 @@ periodically; promote to the table above once they show real volume.
 |---|---|---|
 | answer engine optimization | `/blog/answer-engine-optimization` | 2026-07-29 |
 | small business seo | `/blog/small-business-seo` | 2026-08-05 |
+| how to reduce ota commission | `/blog/how-to-reduce-ota-commission` | 2026-08-10 |
+| how to get hotel cited by chatgpt | `/blog/how-to-get-hotel-cited-by-chatgpt` | 2026-08-10 |

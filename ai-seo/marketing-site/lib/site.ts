@@ -51,6 +51,15 @@ export const FOOTER_COLUMNS = [
     ],
   },
   {
+    heading: 'Who we serve',
+    links: [
+      { label: 'Tourism & hospitality', href: '/for-tourism-hospitality' },
+      { label: 'Safari operators', href: '/for-safari-operators' },
+      { label: 'Lodges & hotels', href: '/for-lodges-hotels' },
+      { label: 'GEO services', href: '/geo-services' },
+    ],
+  },
+  {
     heading: 'Reading',
     links: [
       { label: 'Blog', href: '/blog' },
