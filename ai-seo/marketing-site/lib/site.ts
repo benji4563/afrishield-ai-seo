@@ -48,6 +48,7 @@ export const FOOTER_COLUMNS = [
       { label: 'How it works', href: '/how-it-works' },
       { label: 'Pricing', href: '/pricing' },
       { label: 'Case study', href: '/case-studies' },
+      { label: 'Free AI-visibility check', href: '/ai-visibility-check' },
     ],
   },
   {
@@ -74,7 +75,6 @@ export const FOOTER_COLUMNS = [
       { label: 'Our story', href: '/about' },
       { label: 'Case study', href: '/case-studies' },
       { label: 'Contact', href: '/contact' },
-      { label: 'AfriShield Cyber Security', href: 'https://afrishield.com' },
     ],
   },
 ] as const;
