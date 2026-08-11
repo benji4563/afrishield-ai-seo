@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
+import { EditorialImage } from '@/components/ui/EditorialImage';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { blogPostingJsonLd, breadcrumbJsonLd, faqPageJsonLd, howToJsonLd } from '@/lib/structured-data';
 import { getPost, postOgImages } from '@/lib/posts';
@@ -108,6 +109,13 @@ export default function Post() {
           rating or a set of hours shown right in the results, and why an AI answer can quote
           the fact without getting it wrong.
         </ShortAnswer>
+
+        <EditorialImage
+          src="/images/blog-what-is-schema-markup.jpg"
+          alt="An African developer reviewing structured data code on a laptop screen at a desk."
+          priority
+          className="my-10"
+        />
 
         <Scene>
           <p>
