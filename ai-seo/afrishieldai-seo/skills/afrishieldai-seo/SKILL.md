@@ -143,6 +143,7 @@ Inject validated JSON-LD in the server HTML of every key page. Helpers live in
 | Home | `ProfessionalService` + `hasOfferCatalog` + `FAQPage` |
 | Solutions | `Service` (with per-pillar sub-services via `hasOfferCatalog`/`makesOffer`, entities sourced from the same data used to render the page — not one flat prose `description`) + `FAQPage` |
 | Pricing | `FAQPage` (+ Offers with price/currency) |
+| How it works | `HowTo` + `FAQPage` + `BreadcrumbList` |
 | Location pages | `LocalBusiness` (areaServed City→Country) + `FAQPage` + `BreadcrumbList` |
 | Blog post | `BlogPosting` + `FAQPage` + `BreadcrumbList` |
 | About | `AboutPage` + `Person` (founder) |
@@ -157,16 +158,36 @@ can pull out a named sub-`Service`.
 and How it Works must link each other contextually from within the page content
 (e.g. a pricing mention on Solutions links to `/pricing`, a "weekly publishing" claim
 links to `/how-it-works`) — not only via the closing CTA block. Reviewed 2026-08-04:
-`/solutions` had zero in-body links to any sibling page.
+`/solutions` had zero in-body links to any sibling page. **Reviewed again 2026-08-11:
+still zero — on all three of `/solutions`, `/pricing`, and `/how-it-works`.** A rule
+written into this skill does nothing until it is applied to the pages that already
+exist, not just the next page built. Do not close this finding until `grep -n
+"href=" app/{solutions,pricing,how-it-works}/page.tsx` shows real contextual links on
+all three, not just `Button` calls to `/contact`/`/pricing`.
 
 **CTA reachable before the fold-six problem (board: Wes McDowell).** Every interior
 page built on `PageHero` must have a clickable CTA (button or prompt link) reachable
 within the first two sections after the hero — not deferred to the closing CTA block
 alone — plus at least one additional mid-scroll CTA checkpoint if the page runs 3+
 content sections before that closing block. Reference implementation: the homepage
-`Hero` component's "Book a call" + secondary CTA pattern. `PageHero` is a candidate
-for an optional `ctaHref`/`ctaLabel` prop so this becomes structural rather than
-something each page author has to remember.
+`Hero` component's "Book a call" + secondary CTA pattern. **`PageHero` still takes no
+`ctaHref`/`ctaLabel` prop as of 2026-08-11** — the rule was written 2026-08-04 and
+`/how-it-works` (reviewed this cycle) has the identical zero-CTA-before-the-close
+problem `/solutions` had, because the component it's built on was never updated.
+Add the prop to `PageHero` itself first — a component-level fix that structurally
+covers every page built on it — then confirm each existing `PageHero` page
+(`/solutions`, `/pricing`, `/how-it-works`, `/about`, `/contact`) actually passes it,
+rather than fixing pages one at a time as the rotation happens to reach them.
+
+**Retrofit sweep, not just the triggering page (board: Dan Martell, standing rule).**
+When a page-level rule is added here because one page failed a review, the fix is not
+done until every existing page the rule applies to has been swept — the same
+discipline `afrishield-blog/SKILL.md` already enforces per-post with its
+liftable-opener self-audit. A rule that only ever gets applied to whichever page the
+board happens to be looking at that cycle is not a system; it is a coincidence. Two
+rules above (cross-linking, CTA placement) were written 2026-08-04 and, as of the next
+full pass through the page rotation (2026-08-11), had been applied to zero of the
+pages they govern. Treat an unswept rule as an open item, not a closed one.
 
 `LocalBusiness` / service-provider template (fill from real data; never invent
 telephone or address — leave them out or env-driven until supplied):

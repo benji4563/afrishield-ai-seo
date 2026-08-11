@@ -145,6 +145,20 @@ post that motivated this rule (`answer-engine-optimization`) still had two
 sections violating it — the rule existed but nothing swept every heading
 against it. This audit is that sweep, made mandatory.
 
+**Standing gap (board review, 2026-08-11): the fixes above still are not applied
+to `answer-engine-optimization` itself.** Two board cycles now (2026-07-31,
+2026-08-04) have logged the same concrete fixes against this post — rewrite the
+`what-changed`/`what-fails`/`what-works` H2 openers, add a `howToJsonLd` block for
+the `check-yours` numbered steps, link FAQ answer 5 to `/blog/what-seo-actually-costs`
+— and none have landed in the file as of this review. The board advises; nothing
+in the current pipeline turns that advice into a scheduled edit. Compare the newest
+post (`google-business-profile-optimization`, published 2026-08-11): every H2 opener
+is liftable, the HowTo block is present, and links are in range — proof the rule
+works when a post is *written* under it. It does not yet work retroactively. Until a
+"fix the flagged post" step exists somewhere in the pipeline (queue-keeper routine or
+a dedicated backlog file), treat every open board finding against a *published* post
+as still outstanding — do not assume a later cycle silently fixed it.
+
 ### Hero image (one per post, fully automatic)
 
 Every post gets one topic-matched hero under the `ShortAnswer`, from one of two
