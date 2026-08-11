@@ -233,7 +233,14 @@ export default function Post() {
           </li>
         </ul>
 
-        {/* Cluster sibling: google business profile optimization (queued) — link here on publish */}
+        <p>
+          A profile does not stay finished after this. The ongoing habits that keep it winning —
+          category upkeep, photo and Posts cadence, and answering every review — are covered in{' '}
+          <a href="/blog/google-business-profile-optimization">
+            Google Business Profile optimization
+          </a>
+          .
+        </p>
 
         <h2 id="verification">Verifying the profile is really yours</h2>
 

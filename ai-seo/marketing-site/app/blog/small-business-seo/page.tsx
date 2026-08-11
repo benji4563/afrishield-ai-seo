@@ -246,7 +246,14 @@ export default function Post() {
           it.
         </p>
 
-        {/* Cluster sibling: Google Business Profile optimisation — queued, link here on publish */}
+        <p>
+          The ongoing side of that work — category and attribute upkeep, photo and Posts
+          cadence, and answering reviews on a schedule — is covered in more depth in{' '}
+          <a href="/blog/google-business-profile-optimization">
+            Google Business Profile optimization
+          </a>
+          , for a profile that is already claimed and verified.
+        </p>
 
         <h2 id="content-that-works">Content that actually works</h2>
 

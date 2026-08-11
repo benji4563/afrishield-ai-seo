@@ -31,6 +31,18 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'google-business-profile-optimization',
+    title: 'Google Business Profile optimization: the work that happens after setup',
+    cardTitle: 'Google Business Profile optimization, done right',
+    metaTitle: 'Google Business Profile Optimization',
+    description:
+      'The ranking factors, category and attribute choices, photo and Posts cadence, and review habits that actually move a Google Business Profile once it is already set up.',
+    category: 'Local visibility',
+    published: '2026-08-11',
+    readingMinutes: 10,
+    primaryKeyword: 'google business profile optimization',
+  },
+  {
     slug: 'how-to-get-hotel-cited-by-chatgpt',
     title: 'How to get your hotel cited by ChatGPT (and the other assistants travelers now ask)',
     cardTitle: 'How to get your hotel cited by ChatGPT',
