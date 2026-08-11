@@ -33,6 +33,20 @@ Rules for the poster:
   `lib/posts.ts` and confirm this row's angle doesn't duplicate one. See the
   `afrishield-blog` skill's step 1 for the full check. Row 1 below carries the
   board's recommended angle as an example of the format to use going forward.
+- **Row 5 held (board review, 2026-08-11):** "how to rank on chatgpt" (cluster B) now
+  sits in the same territory as *three* live posts — `answer-engine-optimization`
+  (broad AEO explainer, already names ChatGPT/Claude/Perplexity explicitly),
+  `how-to-get-hotel-cited-by-chatgpt` (ChatGPT-citation angle, tourism-scoped), and
+  `how-to-get-my-business-on-google` (its third pillar is "AI answers"). Writing this
+  keyword as a generic "how do I show up in ChatGPT" piece would restate the AEO post
+  in miniature — self-cannibalizing retrieval (King) rather than extending the map
+  (Koray). **Do not write as-is.** If picked up, narrow hard to ChatGPT-specific
+  mechanics the AEO post does not cover — e.g. Browse/live-search grounding vs.
+  training-cutoff answers, GPT Store/custom-GPT discovery, or the persona/
+  account-context variance Mike King's wiki logged 2026-08-05 (answers differ by the
+  asker's Google-ecosystem signals, not just by page content) — and link out to
+  `answer-engine-optimization` for the general framework rather than re-deriving it.
+  Otherwise skip to the next un-cannibalized queued row.
 
 Vetting note: all volumes below are **DataForSEO, South Africa, en** — a single
 African market, so absolute volumes are low (10–40) by nature. Selection weighs
@@ -46,7 +60,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 2 | how to get my business on google | E — local visibility | vetted · SV~30 · informational · rising | claimed |
 | 3 | what is schema markup | B — technical education | vetted · SV~20 · informational · LOW comp | claimed |
 | 4 | google business profile optimization | E — local / GBP | vetted · SV~10–20 · commercial · rising · high CPC | claimed |
-| 5 | how to rank on chatgpt | B — AI answers (AEO/GEO) | vetted · SV~10 · informational · zero comp | queued |
+| 5 | how to rank on chatgpt | B — AI answers (AEO/GEO) | vetted · SV~10 · informational · zero comp | **hold** — see cannibalization note below |
 | 6 | is seo worth it | D — cost / ROI anxiety | vetted · SV~10 · informational · LOW comp | queued |
 | 7 | how long does seo take | D — expectations | vetted · SV~10 · informational · LOW comp | queued |
 | 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | queued |
