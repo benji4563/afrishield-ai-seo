@@ -14,6 +14,9 @@ type Payload = {
   website?: string;
   tier?: string;
   message?: string;
+  whatsapp?: string;
+  businessType?: string;
+  source?: string;
 };
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -29,7 +32,15 @@ export async function POST(request: Request) {
 
   const name = body.name?.trim();
   const email = body.email?.trim();
-  const message = body.message?.trim();
+  // The visibility-check form sends a business type instead of free text, so a
+  // message is only required when neither is present.
+  const details = [
+    body.businessType?.trim() ? `Business type: ${body.businessType.trim()}` : '',
+    body.whatsapp?.trim() ? `WhatsApp: ${body.whatsapp.trim()}` : '',
+  ]
+    .filter(Boolean)
+    .join('\n');
+  const message = [body.message?.trim(), details].filter(Boolean).join('\n\n');
 
   if (!name || !email || !message) {
     return NextResponse.json(
@@ -52,7 +63,9 @@ export async function POST(request: Request) {
     website: body.website?.trim() ?? '',
     tier: body.tier?.trim() ?? '',
     message,
-    sourcePage: request.headers.get('referer') ?? '/contact',
+    // An explicit `source` from the form wins over the referer, which browsers
+    // can strip. Keeps leads attributable to the page that captured them.
+    sourcePage: body.source?.trim() || request.headers.get('referer') || '/contact',
     receivedAt: new Date().toISOString(),
   };
 

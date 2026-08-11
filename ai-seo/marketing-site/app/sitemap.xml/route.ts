@@ -15,9 +15,11 @@ const ROUTES = [
   { path: '/for-safari-operators', priority: '0.9', changefreq: 'monthly' },
   { path: '/for-lodges-hotels', priority: '0.9', changefreq: 'monthly' },
   { path: '/geo-services', priority: '0.9', changefreq: 'monthly' },
+  { path: '/ai-visibility-check', priority: '0.9', changefreq: 'monthly' },
   { path: '/about', priority: '0.8', changefreq: 'monthly' },
   { path: '/case-studies', priority: '0.8', changefreq: 'monthly' },
   { path: '/blog', priority: '0.8', changefreq: 'weekly' },
+  { path: '/resources/ai-visibility-checklist', priority: '0.7', changefreq: 'monthly' },
   { path: '/contact', priority: '0.7', changefreq: 'yearly' },
 ];
 
