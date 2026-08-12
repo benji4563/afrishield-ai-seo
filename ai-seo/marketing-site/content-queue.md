@@ -46,7 +46,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 2 | how to get my business on google | E — local visibility | vetted · SV~30 · informational · rising | claimed |
 | 3 | what is schema markup | B — technical education | vetted · SV~20 · informational · LOW comp | claimed |
 | 4 | google business profile optimization | E — local / GBP | vetted · SV~10–20 · commercial · rising · high CPC | claimed |
-| 5 | how to rank on chatgpt | B — AI answers (AEO/GEO) | vetted · SV~10 · informational · zero comp | queued |
+| 5 | how to rank on chatgpt | B — AI answers (AEO/GEO) | vetted · SV~10 · informational · zero comp | claimed |
 | 6 | is seo worth it | D — cost / ROI anxiety | vetted · SV~10 · informational · LOW comp | queued |
 | 7 | how long does seo take | D — expectations | vetted · SV~10 · informational · LOW comp | queued |
 | 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | queued |
@@ -84,3 +84,4 @@ periodically; promote to the table above once they show real volume.
 | how to get my business on google | `/blog/how-to-get-my-business-on-google` | 2026-08-10 |
 | what is schema markup | `/blog/what-is-schema-markup` | 2026-08-10 |
 | google business profile optimization | `/blog/google-business-profile-optimization` | 2026-08-11 |
+| how to rank on chatgpt | `/blog/how-to-rank-on-chatgpt` | 2026-08-12 |

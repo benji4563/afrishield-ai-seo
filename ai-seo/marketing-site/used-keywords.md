@@ -27,6 +27,7 @@ reconcile.
 | how to reduce ota commission | D — problem-aware (tourism) | `/blog/how-to-reduce-ota-commission` | 2026-08-10 | Live |
 | how to get hotel cited by chatgpt | B — service education (AEO/GEO) | `/blog/how-to-get-hotel-cited-by-chatgpt` | 2026-08-10 | Live |
 | google business profile optimization | E — local / GBP | `/blog/google-business-profile-optimization` | 2026-08-11 | Live |
+| how to rank on chatgpt | B — AI answers (AEO/GEO) | `/blog/how-to-rank-on-chatgpt` | 2026-08-12 | Live |
 
 ## Deliberately not targeted
 

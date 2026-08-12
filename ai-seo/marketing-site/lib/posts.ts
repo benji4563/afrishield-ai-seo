@@ -31,6 +31,19 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'how-to-rank-on-chatgpt',
+    title:
+      'How to rank on ChatGPT: the actual work, since there is no ranking algorithm to game',
+    cardTitle: 'How to rank on ChatGPT, without the ranking',
+    metaTitle: 'How to rank on ChatGPT, explained',
+    description:
+      'There is no ChatGPT ranking algorithm to climb. Here is the concrete, checkable work that actually gets a business named in a ChatGPT answer instead.',
+    category: 'AI answers',
+    published: '2026-08-12',
+    readingMinutes: 10,
+    primaryKeyword: 'how to rank on chatgpt',
+  },
+  {
     slug: 'google-business-profile-optimization',
     title: 'Google Business Profile optimization: the work that happens after setup',
     cardTitle: 'Google Business Profile optimization, done right',
