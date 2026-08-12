@@ -65,3 +65,10 @@ message-first design · social proof · local SEO tier list.
   and proven hooks as house style, and use it to auto-generate on-brand b-roll
   graphics and a lead-magnet PDF straight from a finished script. —
   https://www.youtube.com/watch?v=yuVlHAKbnMQ
+- **2026-08-12** — From a 2-hour live channel-audit session: recommends an
+  8-12 minute video length as the engagement sweet spot (shorts draw views but
+  convert to subscribers/clients less reliably), search-intent-driven titles
+  checked against a keyword tool (e.g. VidIQ) rather than cleverness, and treats
+  a channel banner as the same "instantly answer what/who/what's-next" clarity
+  test as a homepage — extending the Homepage Blueprint principle to channel
+  branding itself. — https://www.youtube.com/watch?v=VDnueqVW7Cc

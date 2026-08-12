@@ -59,3 +59,15 @@ links · topical relevance of links.
   in content/site generation. Worth watching for cost impact on our generation
   pipeline, but needs independent verification before changing our model stack. —
   https://www.youtube.com/watch?v=PYbBddbflRo
+- **2026-08-12** — Omniroute, a free AI model gateway aggregating 230+ providers
+  (~90 free), adds automatic provider fallback and token compression so Claude Code
+  sessions don't hit context/rate limits, with routing modes that trade off speed
+  vs. output quality and an optional link to a personal-memory system for tailored
+  output — worth evaluating as a cost-reduction layer for our own generation
+  pipeline. — https://www.youtube.com/watch?v=XDBv_K5cpHU
+- **2026-08-12** — Prime Agent (open-source) uses a "snowball" self-improvement
+  loop: it retains memory of completed tasks and refines its own future operations
+  from them, with a coordinator pattern for parallel multi-agent work (e.g. parallel
+  agents on one blog build) — an independent example of the same agent-memory/
+  self-improvement pattern worth comparing against our own agent design. —
+  https://www.youtube.com/watch?v=TEwRO4150x0

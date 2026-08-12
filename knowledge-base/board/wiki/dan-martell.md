@@ -62,3 +62,19 @@ work on it vs. in it · leverage.
   models for high-volume simple sorting, top-tier reserved for orchestration) to cut
   agent operating cost roughly 100x on routine work. —
   https://www.youtube.com/watch?v=Bm84BAtOfQw
+- **2026-08-12** — On exit-readiness: build with the end in mind from day one,
+  make sure co-founder equity is actually vested (unvested "ghost equity" becomes
+  a liability at exit), and hire people who act like owners rather than
+  task-doers — a business built to be sellable is also the one that runs cleanest
+  day-to-day. — https://www.youtube.com/watch?v=ClanUPjNFsg
+- **2026-08-12** — Describes the base-tier AI-automation-agency pitch as
+  concretely as a script: get login access to a business's website/email/ads and
+  run basic automations for a flat $500-1,000/month retainer — cited as viable
+  enough that beginners (including teenagers) are landing paying clients on it, a
+  useful floor reference for our own service-tier pricing. —
+  https://www.youtube.com/watch?v=J_RORdJqAeo
+- **2026-08-12** — Sales-language swap list for client-facing copy and calls:
+  "invest" not "buy," "challenge" not "problem," "client" not "customer," "value"
+  not "cost," "experience" not "try" — small wording changes framed as
+  meaningfully shifting how a pitch lands. —
+  https://www.youtube.com/watch?v=_s8ve8O8S-s

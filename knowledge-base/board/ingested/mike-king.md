@@ -26,3 +26,20 @@ Note (2026-08-05, deep pass): `cDuoGFq0hj8` is a short promotional excerpt of
 the same Gmail-personalization experiment covered in full in `JjPfPT37li0` —
 no new content beyond what's already logged there. No videoId overlap with
 the 2026-07-29 run.
+
+| 2026-08-12 | aUshhde15Kw | SEO Week 2026-ClickBait Ep 4 | skipped-off-niche | deep |
+| 2026-08-12 | zEvikHPR_dA | SEO Week 2026-ClickBait Ep 3 | skipped-off-niche | deep |
+| 2026-08-12 | 60OLPnCqYT0 | SEO Week 2026-ClickBait Ep 2 | skipped-off-niche | deep |
+
+Note (2026-08-12 run): channel enumeration via the YouTube Data API's
+uploads-playlist endpoint (Composio) found no upload newer than the
+already-logged `dTHuLMWDFWo`; the next three unprocessed videos were a
+short-form "ClickBait" interview-clip series from SEO Week 2026 (crowd
+sentiment on AI and job anxiety/personalization ethics) — personal-identity/
+psychology content in the same vein as the already-skipped `N4Mdv5t5upc`, not
+a tactical SEO/GEO insight, so all three are off-niche. Video understanding
+used Firecrawl's built-in YouTube post-processor (whole-video summary,
+server-side) since direct youtube.com access and YouTube Data API caption
+downloads (owner-only) were both unavailable this run; logged as `deep` on
+that basis. No raw transcript/caption text was fetched into or stored in this
+repo.
