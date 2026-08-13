@@ -20,3 +20,17 @@ underlying videos. `0f3KbpW8TBk` carries the same title as `mGQdB3cMNGE`
 judged it `ingested` (a routing-rule + agent-safety finding), differing from
 the 2026-07-29 run's `skipped-off-niche` call on the other ID — both rows are
 kept since they're technically different videoIds.
+
+| 2026-08-12 | -EInjdpjKy0 | Claude Code Google Ads: Automate Everything ($730K Earned) | skipped-nothing-new | deep |
+| 2026-08-12 | jzq3FUrQ-u0 | How To Land Your First AI Client As A Freelancer (100+ Beginners Did This) | ingested | deep |
+| 2026-08-12 | aHI8OG6gODA | Make Claude Code Write EXACTLY Like You (Free Templates) | ingested | deep |
+
+Note (2026-08-12 run, depth methodology): direct youtube.com access remained
+blocked at the network egress proxy; the YouTube Data API refuses caption
+downloads for videos we don't own. Video understanding used Firecrawl's
+built-in YouTube post-processor (whole-video summary, server-side) — logged
+as `deep` on that basis. No raw transcript/caption text was fetched into or
+stored in this repo. `-EInjdpjKy0` ("Claude Code Google Ads") covers the same
+SKAG-structure + Claude-Code-automation + remarketing content already logged
+in depth from `8VyHKDSyCCo` ("Claude Code Local Google Ads") — an earlier cut
+of essentially the same masterclass, so nothing new to add.
