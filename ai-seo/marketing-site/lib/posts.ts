@@ -31,6 +31,18 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'is-seo-worth-it',
+    title: 'Is SEO worth it? The honest answer, with the math that backs it up',
+    cardTitle: 'Is SEO worth it? An honest answer',
+    metaTitle: 'Is SEO Worth It? The Honest Answer',
+    description:
+      'SEO is worth it for most small businesses, but not on every timeline or budget. The real return, what it costs to get there, and the honest case for skipping it.',
+    category: 'Money',
+    published: '2026-08-13',
+    readingMinutes: 10,
+    primaryKeyword: 'is seo worth it',
+  },
+  {
     slug: 'how-to-rank-on-chatgpt',
     title:
       'How to rank on ChatGPT: the actual work, since there is no ranking algorithm to game',
