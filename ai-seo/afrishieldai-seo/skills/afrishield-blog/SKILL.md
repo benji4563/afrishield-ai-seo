@@ -105,11 +105,32 @@ Non-negotiables:
   numbered how-to (an `<ol>` walking the reader through steps), add a matching
   `howToJsonLd` `StructuredData` block (already exported from `lib/structured-data.ts`)
   alongside the standard three — free retrieval surface, otherwise left on the table.
+  **Render the `<ol>` from the same array the schema is built from** (`{STEPS.map(...)}`),
+  don't hand-type parallel prose — a hand-typed list that paraphrases the schema array
+  is a fidelity mismatch an engine cross-checking passage against schema will catch.
+  (Caught 2026-08-14: `how-long-does-seo-take`'s visible `<ol>` used different wording
+  than its `howToJsonLd` source array for all five steps.)
 - **Contextual internal links (board: Koray / topical authority).** Include 2–4
   in-body anchor-text links to sibling posts in the same `content-queue.md` cluster,
   with descriptive anchors naming the target topic — do not rely on the auto
   `RelatedPosts` block, which is undifferentiated. If no cluster sibling exists yet,
   leave an HTML comment noting the intended link target to back-fill on publish.
+- **Topical-map backfill (board: Koray, 2026-08-14).** If the new post is a deeper,
+  canonical treatment of a claim an *older* sibling post already makes in compressed
+  form (e.g. a timeline estimate, a cost range), add a one-line in-body link from that
+  older post's relevant section back to the new post, and note the edited file(s) in
+  the commit. The "contextual internal links" rule above only points the new post
+  *outward*; without this the link graph resolves one-directionally and the cluster
+  accumulates independently-drifting partial answers instead of one canonical source.
+  (Caught 2026-08-14: `how-long-does-seo-take` deepens a timing claim already made in
+  `is-seo-worth-it` and `what-seo-actually-costs`, neither of which links forward to it.)
+- **AI-search-angle check (board: King/Koray, 2026-08-14).** Before publish, confirm at
+  least one sentence or FAQ entry ties the post's topic to AI-search/answer-engine
+  visibility specifically (ChatGPT, Perplexity, AI Overviews) — matching this site's
+  actual positioning as an AI SEO product, not a generic SEO agency. Do not rely on SERP
+  research alone for this (step 2): competitor pages ranking for the keyword are, by
+  definition, generic-SEO sites and won't surface the AI-search framing. Skip only with
+  an explicit one-line justification for why the topic has no natural AI-search tie-in.
 - **Differentiation angle vs. existing posts (board: Koray / topical map).** Before
   drafting, read the `cardTitle`/`description` of every existing entry in `POSTS`
   (`lib/posts.ts`) and confirm in one sentence what this post uniquely covers that no
@@ -118,7 +139,10 @@ Non-negotiables:
   still risk restating a sibling post in miniature; when that happens, narrow the
   angle (e.g. make it the synthesis/decision layer that links out to the posts owning
   the granular detail) rather than re-deriving material that already exists elsewhere
-  on the site.
+  on the site. **If another `queued` row in `content-queue.md` shares this row's
+  cluster letter, assign angles to both before either is claimed (board, 2026-08-14)**
+  — so the poster never writes one without knowing the other is coming, and the two
+  don't independently converge on the same sub-topic.
 - At least one passage that is honest against interest (when *not* to buy).
 - ~1,700–2,200 words.
 
