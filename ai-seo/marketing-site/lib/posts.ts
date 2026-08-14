@@ -31,6 +31,18 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'how-long-does-seo-take',
+    title: 'How long does SEO take? The realistic timeline, month by month',
+    cardTitle: 'How long does SEO take? A realistic timeline',
+    metaTitle: 'How Long Does SEO Take? A Realistic Timeline',
+    description:
+      'Most small business sites see the first ranking movement in three to six months, and real traffic in six to twelve. The honest month-by-month timeline, what speeds it up, and what does not.',
+    category: 'Fundamentals',
+    published: '2026-08-14',
+    readingMinutes: 10,
+    primaryKeyword: 'how long does seo take',
+  },
+  {
     slug: 'is-seo-worth-it',
     title: 'Is SEO worth it? The honest answer, with the math that backs it up',
     cardTitle: 'Is SEO worth it? An honest answer',
