@@ -33,6 +33,10 @@ Rules for the poster:
   `lib/posts.ts` and confirm this row's angle doesn't duplicate one. See the
   `afrishield-blog` skill's step 1 for the full check. Row 1 below carries the
   board's recommended angle as an example of the format to use going forward.
+- **Shared-cluster pre-annotation (board review, 2026-08-14):** if two or more
+  `queued` rows share a cluster letter, assign angles to both before either is
+  claimed — don't wait for the poster to hit the second one. Row 8 below carries an
+  angle now specifically because row 9 (same cluster, E) is queued right behind it.
 
 Vetting note: all volumes below are **DataForSEO, South Africa, en** — a single
 African market, so absolute volumes are low (10–40) by nature. Selection weighs
@@ -49,8 +53,8 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 5 | how to rank on chatgpt | B — AI answers (AEO/GEO) | vetted · SV~10 · informational · zero comp | claimed |
 | 6 | is seo worth it | D — cost / ROI anxiety | vetted · SV~10 · informational · LOW comp | claimed |
 | 7 | how long does seo take | D — expectations | vetted · SV~10 · informational · LOW comp | claimed |
-| 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | queued |
-| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | queued |
+| 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | queued — **Angle (board review, 2026-08-14): own the local-pack ranking system itself — proximity/relevance/prominence (Google's three stated local factors), NAP/citation consistency across directories, cross-platform review strategy (not just Google), and a budget-prioritized "what to do first with zero budget" decision tree. Write as cluster E's synthesis/decision layer, not a GBP or setup rehash — link out to `google-business-profile-optimization` (GBP execution detail) and `how-to-get-my-business-on-google` (Maps/organic/AI-answers setup) rather than re-deriving either. Do NOT claim the "what is local SEO" definitional territory — that's row 9's.** |
+| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | queued — **Note (board review, 2026-08-14): row 8 (same cluster) now owns the ranking-factors/NAP/reviews synthesis. This row should stay a pure definitional/educational piece (what "local SEO" means vs. general SEO, for someone who has never heard the term) and link forward to row 8's post for the "how to actually do it" detail once both are live — re-check for overlap before claiming.** |
 | 10 | seo vs google ads | B — comparison | vetted · SV~10 · commercial · LOW comp | queued |
 | 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | queued |
 | 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | queued |

@@ -157,7 +157,10 @@ can pull out a named sub-`Service`.
 and How it Works must link each other contextually from within the page content
 (e.g. a pricing mention on Solutions links to `/pricing`, a "weekly publishing" claim
 links to `/how-it-works`) — not only via the closing CTA block. Reviewed 2026-08-04:
-`/solutions` had zero in-body links to any sibling page.
+`/solutions` had zero in-body links to any sibling page. **Still unfixed as of
+2026-08-14, and now confirmed on `/pricing` and `/how-it-works` too — a written rule
+that survived two review cycles with zero pages corrected.** This is an execution gap,
+not a doctrine gap; see the mechanical check added to B.7 below.
 
 **CTA reachable before the fold-six problem (board: Wes McDowell).** Every interior
 page built on `PageHero` must have a clickable CTA (button or prompt link) reachable
@@ -167,6 +170,13 @@ content sections before that closing block. Reference implementation: the homepa
 `Hero` component's "Book a call" + secondary CTA pattern. `PageHero` is a candidate
 for an optional `ctaHref`/`ctaLabel` prop so this becomes structural rather than
 something each page author has to remember.
+
+**`CtaDrop` must never self-link (board: Wes McDowell, 2026-08-14).** The closing
+`CtaDrop` component (`components/home/CtaDrop.tsx`) currently hardcodes its secondary
+button to "See pricing" → `/pricing` with no override prop — a dead click when the
+component renders on `/pricing` itself, which it does. Add `secondaryHref`/
+`secondaryLabel` props to `CtaDrop` and require every caller to pass a secondary
+target that is never the current route.
 
 `LocalBusiness` / service-provider template (fill from real data; never invent
 telephone or address — leave them out or env-driven until supplied):
@@ -279,6 +289,16 @@ Run before calling any build done:
 - [ ] BLUF block present near the top of every key page
 - [ ] Ask-AI buttons (ChatGPT / Claude / Perplexity / Gemini) on home + contact, deep-linking a prefilled prompt with a clipboard fallback
 - [ ] `npm audit` clean; Lighthouse near-100 (and the Aramis `seo-audit` reads 100/100/100/100 · GEO 100)
+- [ ] **Money-page cross-links (board, 2026-08-14 — mechanical, not just doctrine):**
+      for each of `/solutions`, `/pricing`, `/how-it-works`, grep the page file for at
+      least 2 in-body `<a href="/…">` links to the other two, excluding `CtaDrop`/
+      `Button` boilerplate. Fail the checklist if any page has zero. This rule was
+      written in B.3 on 2026-08-04 and still failed all three pages on re-check
+      2026-08-14 — treat it as a build-blocking check, not a reminder.
+- [ ] **Pricing `Offer` schema:** `/pricing` must inject an `Offer`/`Product` JSON-LD
+      block per tier matching the visible tier names/prices (reuse
+      `professionalServiceJsonLd`'s `hasOfferCatalog` data, already correct — just wire
+      it into `/pricing`, not only Home).
 - [ ] Baseline GEO benchmark: query ChatGPT / Claude / Perplexity with
       "top [service] in [city]" and record whether the site is cited. Re-check monthly.
 
