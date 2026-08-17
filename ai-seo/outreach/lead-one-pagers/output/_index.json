@@ -1,0 +1,272 @@
+[
+  {
+    "slug": "karibu-camps-and-lodges",
+    "file": "karibu-camps-and-lodges.html",
+    "name": "Karibu Camps & Lodges",
+    "region": "Tanzania (Serengeti / Ngorongoro)",
+    "country": "Tanzania",
+    "bleed": 4200,
+    "contact": "General Manager / Reservations Lead"
+  },
+  {
+    "slug": "into-wild-africa-luxury-safari",
+    "file": "into-wild-africa-luxury-safari.html",
+    "name": "Into Wild Africa Luxury Safari",
+    "region": "Tanzania (Arusha / Serengeti)",
+    "country": "Tanzania",
+    "bleed": 3600,
+    "contact": "Managing Director / Reservations"
+  },
+  {
+    "slug": "tarangire-safari-lodge",
+    "file": "tarangire-safari-lodge.html",
+    "name": "Tarangire Safari Lodge",
+    "region": "Tanzania (Tarangire National Park)",
+    "country": "Tanzania",
+    "bleed": 3900,
+    "contact": "General Manager / Bookings Team"
+  },
+  {
+    "slug": "neptune-ngorongoro-luxury-lodge",
+    "file": "neptune-ngorongoro-luxury-lodge.html",
+    "name": "Neptune Ngorongoro Luxury Lodge",
+    "region": "Tanzania (Ngorongoro Conservation Area)",
+    "country": "Tanzania",
+    "bleed": 5800,
+    "contact": "Reservations Manager / Director"
+  },
+  {
+    "slug": "nyota-boutique-hotel",
+    "file": "nyota-boutique-hotel.html",
+    "name": "Nyota Boutique Hotel",
+    "region": "Tanzania (Nungwi, Zanzibar)",
+    "country": "Tanzania",
+    "bleed": 2900,
+    "contact": "Owner / General Manager"
+  },
+  {
+    "slug": "sharazad-boutique-hotel",
+    "file": "sharazad-boutique-hotel.html",
+    "name": "Sharazad Boutique Hotel",
+    "region": "Tanzania (Jambiani, Zanzibar)",
+    "country": "Tanzania",
+    "bleed": 4800,
+    "contact": "Managing Director / Host"
+  },
+  {
+    "slug": "kendwa-rocks-beach-hotel",
+    "file": "kendwa-rocks-beach-hotel.html",
+    "name": "Kendwa Rocks Beach Hotel",
+    "region": "Tanzania (Kendwa, Zanzibar)",
+    "country": "Tanzania",
+    "bleed": 5100,
+    "contact": "Bookings Director / General Manager"
+  },
+  {
+    "slug": "b4-beach-club-and-boutique-hotel",
+    "file": "b4-beach-club-and-boutique-hotel.html",
+    "name": "B4 Beach Club & Boutique Hotel",
+    "region": "Tanzania (Paje, Zanzibar)",
+    "country": "Tanzania",
+    "bleed": 3200,
+    "contact": "General Manager / Host"
+  },
+  {
+    "slug": "top-guides-bushcamps",
+    "file": "top-guides-bushcamps.html",
+    "name": "Top Guides Bushcamps",
+    "region": "Tanzania (Arusha / Serengeti)",
+    "country": "Tanzania",
+    "bleed": 3100,
+    "contact": "Director of Operations"
+  },
+  {
+    "slug": "mara-nyika-camp-the-boutique-safari",
+    "file": "mara-nyika-camp-the-boutique-safari.html",
+    "name": "Mara Nyika Camp (The Boutique Safari)",
+    "region": "Kenya (Naboisho / Maasai Mara)",
+    "country": "Kenya",
+    "bleed": 5400,
+    "contact": "General Manager / Camp Host"
+  },
+  {
+    "slug": "lorian-safari-camp",
+    "file": "lorian-safari-camp.html",
+    "name": "Lorian Safari Camp",
+    "region": "Kenya (Maasai Mara)",
+    "country": "Kenya",
+    "bleed": 2800,
+    "contact": "General Manager / Reservations"
+  },
+  {
+    "slug": "almanara-luxury-resort",
+    "file": "almanara-luxury-resort.html",
+    "name": "Almanara Luxury Resort",
+    "region": "Kenya (Diani Beach)",
+    "country": "Kenya",
+    "bleed": 4900,
+    "contact": "Managing Director / GM"
+  },
+  {
+    "slug": "asha-boutique-hotel-and-bistro",
+    "file": "asha-boutique-hotel-and-bistro.html",
+    "name": "Asha Boutique Hotel & Bistro",
+    "region": "Kenya (Diani Beach)",
+    "country": "Kenya",
+    "bleed": 2600,
+    "contact": "General Manager / Host"
+  },
+  {
+    "slug": "natural-world-kenya-safaris",
+    "file": "natural-world-kenya-safaris.html",
+    "name": "Natural World Kenya Safaris",
+    "region": "Kenya (Nairobi & Diani Beach)",
+    "country": "Kenya",
+    "bleed": 4500,
+    "contact": "Director of Safari Operations"
+  },
+  {
+    "slug": "mtito-safari-camp",
+    "file": "mtito-safari-camp.html",
+    "name": "Mtito Safari Camp",
+    "region": "Kenya (Tsavo / Maasai Mara)",
+    "country": "Kenya",
+    "bleed": 2500,
+    "contact": "Managing Director"
+  },
+  {
+    "slug": "casa-blanca-boutique-hotel",
+    "file": "casa-blanca-boutique-hotel.html",
+    "name": "Casa Blanca Boutique Hotel",
+    "region": "Namibia (Windhoek)",
+    "country": "Namibia",
+    "bleed": 2700,
+    "contact": "General Manager / Owner"
+  },
+  {
+    "slug": "atlantic-villa-boutique-guesthouse",
+    "file": "atlantic-villa-boutique-guesthouse.html",
+    "name": "Atlantic Villa Boutique Guesthouse",
+    "region": "Namibia (Swakopmund)",
+    "country": "Namibia",
+    "bleed": 3400,
+    "contact": "Managing Director"
+  },
+  {
+    "slug": "beach-lodge-swakopmund",
+    "file": "beach-lodge-swakopmund.html",
+    "name": "Beach Lodge Swakopmund",
+    "region": "Namibia (Swakopmund)",
+    "country": "Namibia",
+    "bleed": 2900,
+    "contact": "General Manager / Host"
+  },
+  {
+    "slug": "namibia-destinations",
+    "file": "namibia-destinations.html",
+    "name": "Namibia Destinations",
+    "region": "Namibia (Windhoek)",
+    "country": "Namibia",
+    "bleed": 3300,
+    "contact": "Managing Director / Tour Manager"
+  },
+  {
+    "slug": "mannor-safaris-namibia",
+    "file": "mannor-safaris-namibia.html",
+    "name": "Mannor Safaris Namibia",
+    "region": "Namibia (Windhoek)",
+    "country": "Namibia",
+    "bleed": 2800,
+    "contact": "Founder / Lead Guide"
+  },
+  {
+    "slug": "inganzo-boutique-hotel",
+    "file": "inganzo-boutique-hotel.html",
+    "name": "Inganzo Boutique Hotel",
+    "region": "Rwanda (Kigali)",
+    "country": "Rwanda",
+    "bleed": 2400,
+    "contact": "General Manager / Owner"
+  },
+  {
+    "slug": "the-court-boutique-hotel",
+    "file": "the-court-boutique-hotel.html",
+    "name": "The Court Boutique Hotel",
+    "region": "Rwanda (Kigali)",
+    "country": "Rwanda",
+    "bleed": 2100,
+    "contact": "Operations Manager / Director"
+  },
+  {
+    "slug": "volcanoes-safaris-virunga-lodge",
+    "file": "volcanoes-safaris-virunga-lodge.html",
+    "name": "Volcanoes Safaris (Virunga Lodge)",
+    "region": "Rwanda (Volcanoes National Park)",
+    "country": "Rwanda",
+    "bleed": 6500,
+    "contact": "General Manager / Enquiries"
+  },
+  {
+    "slug": "rwanda-safaris-primate-experiences",
+    "file": "rwanda-safaris-primate-experiences.html",
+    "name": "Rwanda Safaris (Primate Experiences)",
+    "region": "Rwanda (Kigali)",
+    "country": "Rwanda",
+    "bleed": 4100,
+    "contact": "Managing Director / Tour Planner"
+  },
+  {
+    "slug": "albertine-tours",
+    "file": "albertine-tours.html",
+    "name": "Albertine Tours",
+    "region": "Rwanda (Kigali)",
+    "country": "Rwanda",
+    "bleed": 2900,
+    "contact": "Director of Tourism"
+  },
+  {
+    "slug": "k-hotel-douala",
+    "file": "k-hotel-douala.html",
+    "name": "K Hotel Douala",
+    "region": "Cameroon (Douala Bonanjo)",
+    "country": "Cameroon",
+    "bleed": 3800,
+    "contact": "Directeur Général / Reservations"
+  },
+  {
+    "slug": "star-land-hotel",
+    "file": "star-land-hotel.html",
+    "name": "Star Land Hotel",
+    "region": "Cameroon (Douala & Yaounde)",
+    "country": "Cameroon",
+    "bleed": 3500,
+    "contact": "Direction Commerciale / Marketing"
+  },
+  {
+    "slug": "hotel-ocean-kribi",
+    "file": "hotel-ocean-kribi.html",
+    "name": "Hôtel Océan Kribi",
+    "region": "Cameroon (Kribi)",
+    "country": "Cameroon",
+    "bleed": 1800,
+    "contact": "Directeur d Exploitation"
+  },
+  {
+    "slug": "west-hotel-douala",
+    "file": "west-hotel-douala.html",
+    "name": "West Hotel Douala",
+    "region": "Cameroon (Douala Akwa)",
+    "country": "Cameroon",
+    "bleed": 2200,
+    "contact": "Direction / Réception"
+  },
+  {
+    "slug": "global-bush-travel-and-tourism",
+    "file": "global-bush-travel-and-tourism.html",
+    "name": "Global Bush Travel & Tourism",
+    "region": "Cameroon (Douala & National Parks)",
+    "country": "Cameroon",
+    "bleed": 3100,
+    "contact": "Directeur des Opérations"
+  }
+]
