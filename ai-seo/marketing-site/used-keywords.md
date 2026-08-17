@@ -30,6 +30,7 @@ reconcile.
 | how to rank on chatgpt | B — AI answers (AEO/GEO) | `/blog/how-to-rank-on-chatgpt` | 2026-08-12 | Live |
 | is seo worth it | D — cost / ROI anxiety | `/blog/is-seo-worth-it` | 2026-08-13 | Live |
 | how long does seo take | D — expectations | `/blog/how-long-does-seo-take` | 2026-08-14 | Live |
+| local seo for small business | E — local / commercial | `/blog/local-seo-for-small-business` | 2026-08-17 | Live |
 
 ## Deliberately not targeted
 

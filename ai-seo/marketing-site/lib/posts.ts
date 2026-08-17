@@ -31,6 +31,18 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'local-seo-for-small-business',
+    title: 'Local SEO for small business: the checklist that actually moves rankings',
+    cardTitle: 'Local SEO for small business, the real checklist',
+    metaTitle: 'Local SEO For Small Business, Explained',
+    description:
+      'What local SEO actually is, how it differs from general SEO, and the concrete, mostly-free work — Google Business Profile, NAP consistency, citations, and reviews — that moves the map pack.',
+    category: 'Local visibility',
+    published: '2026-08-17',
+    readingMinutes: 10,
+    primaryKeyword: 'local seo for small business',
+  },
+  {
     slug: 'how-long-does-seo-take',
     title: 'How long does SEO take? The realistic timeline, month by month',
     cardTitle: 'How long does SEO take? A realistic timeline',

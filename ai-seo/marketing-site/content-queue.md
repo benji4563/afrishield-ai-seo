@@ -49,7 +49,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 5 | how to rank on chatgpt | B — AI answers (AEO/GEO) | vetted · SV~10 · informational · zero comp | claimed |
 | 6 | is seo worth it | D — cost / ROI anxiety | vetted · SV~10 · informational · LOW comp | claimed |
 | 7 | how long does seo take | D — expectations | vetted · SV~10 · informational · LOW comp | claimed |
-| 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | queued |
+| 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | claimed |
 | 9 | what is local seo | E — local / education | vetted · SV~10 · informational | queued |
 | 10 | seo vs google ads | B — comparison | vetted · SV~10 · commercial · LOW comp | queued |
 | 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | queued |
@@ -87,3 +87,4 @@ periodically; promote to the table above once they show real volume.
 | how to rank on chatgpt | `/blog/how-to-rank-on-chatgpt` | 2026-08-12 |
 | is seo worth it | `/blog/is-seo-worth-it` | 2026-08-13 |
 | how long does seo take | `/blog/how-long-does-seo-take` | 2026-08-14 |
+| local seo for small business | `/blog/local-seo-for-small-business` | 2026-08-17 |
