@@ -3,7 +3,7 @@
 Personalised, one-page "Revenue Leak & AI Visibility" tear-sheets for the 30
 hospitality leads in `leads.csv`. One page per property, built to the
 tear-sheet structure in `MASTER_OPERATIONAL_PLAYBOOK.md` (section 5) and the
-AfriShield AI brand system (`../../marketing-site/docs/brand-guidelines.md`).
+AfriShield AI brand system (`ai-seo/marketing-site/docs/brand-guidelines.md`).
 
 Each one-pager makes the same argument, in the lead's own numbers:
 
