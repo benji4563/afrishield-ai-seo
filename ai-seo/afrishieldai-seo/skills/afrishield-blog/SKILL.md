@@ -110,6 +110,14 @@ Non-negotiables:
   with descriptive anchors naming the target topic — do not rely on the auto
   `RelatedPosts` block, which is undifferentiated. If no cluster sibling exists yet,
   leave an HTML comment noting the intended link target to back-fill on publish.
+  **If the post's angle is a funding, budget, or "is it worth it" decision (cluster
+  D, or any comparison/ROI post), also include one in-body link to `/pricing` or
+  `/solutions`, in addition to the 2–4 sibling-cluster links** — decision-stage
+  content is the highest-leverage place on the site for a link into the monetizable
+  pages, and it should not depend on the individual writer noticing. `is-seo-worth-it`
+  and `how-to-reduce-ota-commission` already do this on their own initiative;
+  `seo-vs-google-ads` (2026-08-18 board review) shipped without it despite being
+  explicitly framed as a funding-order decision — this rule closes that gap.
 - **Differentiation angle vs. existing posts (board: Koray / topical map).** Before
   drafting, read the `cardTitle`/`description` of every existing entry in `POSTS`
   (`lib/posts.ts`) and confirm in one sentence what this post uniquely covers that no

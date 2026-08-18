@@ -168,6 +168,28 @@ content sections before that closing block. Reference implementation: the homepa
 for an optional `ctaHref`/`ctaLabel` prop so this becomes structural rather than
 something each page author has to remember.
 
+**Trust checkpoint before or at first CTA (board: Wes McDowell).** Every interior
+page built on `PageHero` must surface at least one trust signal (case-study link,
+client count, review, or named outcome) before or alongside its first CTA — not
+deferred only to a dedicated testimonials section that may not exist. If no cleared
+metrics exist yet, link to `/case-studies` as a process-transparency substitute
+rather than shipping the page with zero proof. Reviewed 2026-07-31/08-04
+(`/solutions`) and 2026-08-18 (`/pricing`): both shipped with zero trust signals —
+the CTA-placement fix above never covered this, so it recurred on the very next
+money page reviewed. `/how-it-works`, `/about`, and `/contact` have not been
+checked yet and are likely to have the same gap; check it proactively rather than
+waiting for their scheduled rotation turn.
+
+**Offer entities on Pricing, not just Home (board: Mike King).** `lib/structured-data.ts`
+already exports a reusable Offer/`hasOfferCatalog` shape (via `professionalServiceJsonLd`)
+covering the three tiers, but as of 2026-08-18 it was wired into the home page only —
+`/pricing`, the page whose entire job is answering "how much does this cost," shipped
+with `FAQPage` + `BreadcrumbList` only, no machine-readable price entity of its own.
+Every `/pricing` build must render an Offer/Product entity per visible tier, sourced
+from the same data array that renders the tier cards (not a copy that can drift) —
+this is the same "entity-linked schema, not prose blobs" principle already stated
+above for Solutions, extended explicitly to Pricing so it is not silently skipped.
+
 `LocalBusiness` / service-provider template (fill from real data; never invent
 telephone or address — leave them out or env-driven until supplied):
 
@@ -277,6 +299,14 @@ Run before calling any build done:
 - [ ] Canonicals resolve to the apex; `www` 308-redirects
 - [ ] No horizontal overflow at 390 / 768 / 1440; keyboard-operable nav, tabs, accordions
 - [ ] BLUF block present near the top of every key page
+- [ ] Every core money page (Home, Solutions, Pricing, How it Works) has at least
+      one in-body contextual link to a sibling core page — checked per-page at
+      build time, not only at first board review (`/solutions` failed this on
+      2026-08-04, `/pricing` failed it again on 2026-08-18)
+- [ ] Every `PageHero` page has a trust signal (case-study link, client count,
+      review, named outcome) reachable at or before its first CTA
+- [ ] `/pricing` renders an Offer/Product entity per visible tier, sourced from
+      the same data array used to render the tier cards
 - [ ] Ask-AI buttons (ChatGPT / Claude / Perplexity / Gemini) on home + contact, deep-linking a prefilled prompt with a clipboard fallback
 - [ ] `npm audit` clean; Lighthouse near-100 (and the Aramis `seo-audit` reads 100/100/100/100 · GEO 100)
 - [ ] Baseline GEO benchmark: query ChatGPT / Claude / Perplexity with
