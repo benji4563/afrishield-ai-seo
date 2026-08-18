@@ -31,6 +31,18 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'seo-vs-google-ads',
+    title: 'SEO vs Google Ads: which one should a small business fund first?',
+    cardTitle: 'SEO vs Google Ads, the honest breakdown',
+    metaTitle: 'SEO vs Google Ads: The Honest Breakdown',
+    description:
+      'Google Ads buys clicks the day you launch; SEO earns them for free after months of work. The real comparison on cost, speed, and durability, and which one a small business should fund first.',
+    category: 'Comparison',
+    published: '2026-08-18',
+    readingMinutes: 10,
+    primaryKeyword: 'seo vs google ads',
+  },
+  {
     slug: 'local-seo-for-small-business',
     title: 'Local SEO for small business: the checklist that actually moves rankings',
     cardTitle: 'Local SEO for small business, the real checklist',

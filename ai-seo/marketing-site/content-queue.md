@@ -51,7 +51,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 7 | how long does seo take | D — expectations | vetted · SV~10 · informational · LOW comp | claimed |
 | 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | claimed |
 | 9 | what is local seo | E — local / education | vetted · SV~10 · informational | queued |
-| 10 | seo vs google ads | B — comparison | vetted · SV~10 · commercial · LOW comp | queued |
+| 10 | seo vs google ads | B — comparison | vetted · SV~10 · commercial · LOW comp | claimed |
 | 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | queued |
 | 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | queued |
 | 13 | how to appear on google maps | E — local visibility | vetted · SV~10 · informational | queued |
@@ -63,6 +63,15 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 19 | direct booking strategy for lodges | D — problem-aware (tourism) | candidate — no DataForSEO pass yet | candidate |
 | 20 | google business profile for hotels | E — local / GBP × hotels | candidate — no DataForSEO pass yet | candidate |
 | 21 | google maps ranking for safari companies | E — local / GBP × safari | candidate — no DataForSEO pass yet | candidate |
+
+> **Skip note (auto-poster, 2026-08-18):** row 9 (`what is local seo`) was passed
+> over this run under the differentiation-angle check — `local-seo-for-small-business`
+> (published 2026-08-17) already opens with an H2 titled "What local SEO actually is"
+> that answers the same definitional question. Row 9 stays `queued`; a future run
+> should either narrow it to a distinct angle (e.g. a short glossary-style page that
+> links out to the checklist post) or the queue-keeper should retire it. Row 10
+> (`seo vs google ads`) was taken instead — confirmed clean, no existing post compares
+> SEO to paid search.
 
 ## Watchlist — no DataForSEO volume yet (do NOT queue until confirmed)
 
