@@ -65,3 +65,40 @@ message-first design · social proof · local SEO tier list.
   and proven hooks as house style, and use it to auto-generate on-brand b-roll
   graphics and a lead-magnet PDF straight from a finished script. —
   https://www.youtube.com/watch?v=yuVlHAKbnMQ
+- **2026-08-19** — Pivoting a channel's niche costs real, temporary
+  performance (a roughly year-long dip in his own case) while YouTube
+  re-learns what the channel is about, and how much of the old audience
+  carries over depends on how closely related the new niche is to the old
+  one — an unrelated pivot is often better served by a brand-new channel
+  than by repositioning the existing one. Also: sending outside traffic
+  (social shares, "please watch" asks to friends/family) to a new video
+  pollutes YouTube's audience-matching signal and hurts discovery; the one
+  safe exception is emailing an existing list a specific "here's the problem
+  this solves" pitch rather than a bare watch-my-video ask. —
+  https://www.youtube.com/watch?v=VDnueqVW7Cc
+- **2026-08-19** — Names a "idea ceiling": a video's maximum possible reach
+  is set by how sharp and outcome-clear its core idea/title is, before
+  filming even starts — worth spending twice as long brainstorming the angle
+  as producing the rest. Proposes a "trust balance" ratio for a channel:
+  roughly 5-10 pure-value ("deposit") videos for every one direct pitch
+  ("withdrawal"), with a call-to-work-with-me landing roughly every 4th or
+  5th video; embedding real client case studies inside videos (not parking
+  them on a website) proves competence and implies paid work without ever
+  pitching. — https://www.youtube.com/watch?v=JbBfJtWnyt0
+- **2026-08-19** — Describes YouTube's ranking system as fingerprinting each
+  video on a stack of content tokens (category, niche, subniche, subject,
+  format, style, plus — the two that matter most — the actual ideas/takes
+  and your delivery "signature"); a video landing too close to an existing
+  video's idea-territory gets suppressed, while genuine differentiation
+  ("information gain": a new take, story, or example) earns it new
+  territory. The escape hatch is a "signature concept" — packaging an idea
+  you already teach under a memorable name, acronym, diagram, or numbered
+  list (Cal Newport's "Deep Work," Kim Scott's "Radical Candor," the "FIRE"
+  acronym are the pattern) so it reads as new IP even when the underlying
+  advice isn't. Most notable for our niche: claims AI chat assistants
+  (ChatGPT/Gemini/Claude) are becoming a real referral channel because
+  they're trained on video content — a business whose YouTube videos speak
+  clearly to a specific service + location gets recommended by name when
+  someone asks an AI for a provider (cites a gutter-installation contractor
+  landing jobs this way, and a claim that ~30% of Google's AI Overview boxes
+  already surface a YouTube video). — https://www.youtube.com/watch?v=vl6GDCbMi4I

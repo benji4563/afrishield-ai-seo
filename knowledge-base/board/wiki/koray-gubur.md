@@ -75,3 +75,18 @@ context · "Koraynese" (his precise, coined terminology).
   progressive: a domain earns "rankability" through accumulated click/engagement
   satisfaction over time rather than ranking outright from day one. —
   https://www.youtube.com/watch?v=WrU25krFCtk
+- **2026-08-19** — Frames off-page LLM influence as an "attribute assignment" game
+  distinct from direct ranking: he audits which attributes competitors get cited for
+  in AI answers, then publishes third-party content that explicitly asserts his own
+  entity has those same attributes, since AI attribution can come from documents that
+  aren't the ranking page itself. He splits domains built to influence AI answers into
+  three roles — a main brand domain, a narrower "extension domain" built around one
+  exact-match query cluster, and a disposable "wasteful domain" whose only job is
+  nudging AI outputs via exact/partial-match phrasing rather than real content
+  quality — and claims aged pre-2019 news domains get a crawling advantage that makes
+  them attractive hosts for this kind of content. To reshape how an LLM describes an
+  entity he separates two levers — query statistics (how people search) and document
+  statistics (how many documents describe/mention it a certain way) — and says
+  publishing enough pages sharing a title-tag phrase can shift even Google's
+  autocomplete, not just rankings. —
+  https://www.youtube.com/watch?v=3ncQHJuQaDM
