@@ -32,6 +32,7 @@ reconcile.
 | how long does seo take | D — expectations | `/blog/how-long-does-seo-take` | 2026-08-14 | Live |
 | local seo for small business | E — local / commercial | `/blog/local-seo-for-small-business` | 2026-08-17 | Live |
 | seo vs google ads | B — comparison | `/blog/seo-vs-google-ads` | 2026-08-18 | Live |
+| how to do keyword research | H — general how-to | `/blog/how-to-do-keyword-research` | 2026-08-19 | Live |
 
 ## Deliberately not targeted
 

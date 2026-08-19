@@ -31,6 +31,18 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'how-to-do-keyword-research',
+    title: 'How to do keyword research: a method that works without an agency budget',
+    cardTitle: 'How to do keyword research, the real method',
+    metaTitle: 'How To Do Keyword Research, Explained',
+    description:
+      'Finding the exact words customers use before they buy, without a paid tool: where to look, how to read low African search volumes, matching intent, and a five-step process for one afternoon.',
+    category: 'Research',
+    published: '2026-08-19',
+    readingMinutes: 10,
+    primaryKeyword: 'how to do keyword research',
+  },
+  {
     slug: 'seo-vs-google-ads',
     title: 'SEO vs Google Ads: which one should a small business fund first?',
     cardTitle: 'SEO vs Google Ads, the honest breakdown',

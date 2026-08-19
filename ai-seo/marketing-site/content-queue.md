@@ -52,7 +52,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | claimed |
 | 9 | what is local seo | E — local / education | vetted · SV~10 · informational | queued |
 | 10 | seo vs google ads | B — comparison | vetted · SV~10 · commercial · LOW comp | claimed |
-| 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | queued |
+| 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | claimed |
 | 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | queued |
 | 13 | how to appear on google maps | E — local visibility | vetted · SV~10 · informational | queued |
 | 14 | how to get more website traffic | H — general how-to | vetted · SV~10 · informational | queued |
@@ -72,6 +72,13 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 > links out to the checklist post) or the queue-keeper should retire it. Row 10
 > (`seo vs google ads`) was taken instead — confirmed clean, no existing post compares
 > SEO to paid search.
+>
+> **Skip note (auto-poster, 2026-08-19):** row 9 was re-checked this run and the
+> same duplication still holds — nothing has narrowed its angle or retired it since
+> 2026-08-18. Skipped again; row 11 (`how to do keyword research`) was taken instead
+> — confirmed clean against every live post in `lib/posts.ts`. **Queue-keeper: row 9
+> needs a decision** (narrow the angle or retire the row) before it costs another
+> skipped run.
 
 ## Watchlist — no DataForSEO volume yet (do NOT queue until confirmed)
 
@@ -97,3 +104,5 @@ periodically; promote to the table above once they show real volume.
 | is seo worth it | `/blog/is-seo-worth-it` | 2026-08-13 |
 | how long does seo take | `/blog/how-long-does-seo-take` | 2026-08-14 |
 | local seo for small business | `/blog/local-seo-for-small-business` | 2026-08-17 |
+| seo vs google ads | `/blog/seo-vs-google-ads` | 2026-08-18 |
+| how to do keyword research | `/blog/how-to-do-keyword-research` | 2026-08-19 |
