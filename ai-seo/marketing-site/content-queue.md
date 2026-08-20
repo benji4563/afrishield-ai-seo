@@ -53,7 +53,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 9 | what is local seo | E — local / education | vetted · SV~10 · informational | queued |
 | 10 | seo vs google ads | B — comparison | vetted · SV~10 · commercial · LOW comp | claimed |
 | 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | claimed |
-| 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | queued |
+| 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | claimed |
 | 13 | how to appear on google maps | E — local visibility | vetted · SV~10 · informational | queued |
 | 14 | how to get more website traffic | H — general how-to | vetted · SV~10 · informational | queued |
 | 15 | content marketing for small business | F — content strategy | vetted · SV~10 · commercial · declining | queued |
@@ -79,6 +79,14 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 > — confirmed clean against every live post in `lib/posts.ts`. **Queue-keeper: row 9
 > needs a decision** (narrow the angle or retire the row) before it costs another
 > skipped run.
+>
+> **Skip note (auto-poster, 2026-08-20):** row 9 checked a third time — still the
+> same unresolved duplication against `local-seo-for-small-business`, no narrowing
+> or retirement since the last two runs. Skipped again; row 12
+> (`how to improve google ranking`) was taken instead — confirmed clean against
+> every live post, and it doubles as a natural hub linking out to the keyword
+> research, schema markup, GBP, local SEO, and timeline posts. **Queue-keeper: row 9
+> has now cost three skipped runs — please narrow the angle or retire it.**
 
 ## Watchlist — no DataForSEO volume yet (do NOT queue until confirmed)
 
@@ -106,3 +114,4 @@ periodically; promote to the table above once they show real volume.
 | local seo for small business | `/blog/local-seo-for-small-business` | 2026-08-17 |
 | seo vs google ads | `/blog/seo-vs-google-ads` | 2026-08-18 |
 | how to do keyword research | `/blog/how-to-do-keyword-research` | 2026-08-19 |
+| how to improve google ranking | `/blog/how-to-improve-google-ranking` | 2026-08-20 |

@@ -31,6 +31,18 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'how-to-improve-google-ranking',
+    title: 'How to improve your Google ranking: the checklist that actually works',
+    cardTitle: 'How to improve Google ranking, the plain checklist',
+    metaTitle: 'How To Improve Your Google Ranking',
+    description:
+      'The technical fixes, on-page basics, content, and trust signals that actually move a Google ranking, in the order that matters, plus how long each layer realistically takes to show.',
+    category: 'Fundamentals',
+    published: '2026-08-20',
+    readingMinutes: 11,
+    primaryKeyword: 'how to improve google ranking',
+  },
+  {
     slug: 'how-to-do-keyword-research',
     title: 'How to do keyword research: a method that works without an agency budget',
     cardTitle: 'How to do keyword research, the real method',
