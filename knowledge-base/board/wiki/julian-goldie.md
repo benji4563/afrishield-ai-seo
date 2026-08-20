@@ -59,3 +59,16 @@ links · topical relevance of links.
   in content/site generation. Worth watching for cost impact on our generation
   pipeline, but needs independent verification before changing our model stack. —
   https://www.youtube.com/watch?v=PYbBddbflRo
+- **2026-08-19** — A newly released open agent harness (DeepSeek) can read a
+  project's existing CLAUDE.md-style instruction files directly, so an SEO agent
+  workflow built for one harness can reportedly be dropped into another without
+  rebuilding it — a portability angle worth tracking as harnesses proliferate.
+  It also splits work by cost: a paid frontier model handles strategy/pillar
+  content while a free local model handles bulk tasks like meta descriptions and
+  schema, which is a concrete pattern for cutting generation costs on
+  high-volume, low-complexity content ops.
+- **2026-08-19** — The same tool logs which source files an agent actually opened
+  before drafting an article, giving a fast way to check a published piece was
+  grounded in the material it was supposed to use rather than fabricated — a
+  concrete QA mechanism worth evaluating against our own content-grounding
+  checks. — https://www.youtube.com/watch?v=4B7xy43hVCQ

@@ -12,12 +12,18 @@ transcript) / `shallow` (title+description fallback).
 | 2026-08-05 | rTSHFy9Lwlg | How I Ranked #1 in 7 Hours with Qwen 3.8 Max (FREE!) | ingested | shallow |
 | 2026-08-05 | ut_PeUbmk4c | This NEW Agent Operating System is INSANE! | ingested | shallow |
 | 2026-08-05 | PYbBddbflRo | Qwen 3.8 Max is NOW COMPLETELY FREE! Here's How.. | ingested | shallow |
+| 2026-08-19 | P8SXk6nQjGA | Claude Mythos 6 is COMING! | skipped-off-niche | deep |
+| 2026-08-19 | 4B7xy43hVCQ | How to Rank #1 with DeepSeek Harness AI SEO | ingested | deep |
+| 2026-08-19 | 1eJcRkRfEpI | NEW Grok 4.6 Beats GPT 5.6? | skipped-off-niche | deep |
 
-Note: depth is `shallow` for all entries — the environment's network policy
-blocks direct access to youtube.com (yt-dlp/direct curl get a 403 at the
-proxy), so no auto-transcript could be fetched in either run. Judgment was
-made from the RSS title + full video description + chapter markers (fetched
-via Firecrawl, which reaches YouTube through separate infrastructure). This
-channel posts several times a day; only the 3 newest were reviewed per run
-per the per-advisor cap. No videoId overlap between the 2026-07-29 and
-2026-08-05 runs.
+Note: depth was `shallow` for all entries through 2026-08-05 because the
+environment's network policy blocks direct access to youtube.com (yt-dlp/
+direct curl get a 403 at the proxy). As of the 2026-08-19 run, Firecrawl's
+per-video scrape reliably returned a full "## Transcript" section (not just
+title+description), so all 3 videos reviewed this run got `deep` analysis —
+first deep run for this channel. This channel posts several times a day;
+only the 3 newest were reviewed per run per the per-advisor cap. No videoId
+overlap with prior runs. Both off-niche skips this run were generic AI
+model/industry news (a withheld Anthropic model, a Grok vs GPT benchmark
+comparison) with no SEO/agency-specific angle beyond boilerplate "use AI in
+your business" framing — consistent with the off-niche bar in CHANNELS.md.
