@@ -31,6 +31,18 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'how-to-appear-on-google-maps',
+    title: 'How to appear on Google Maps: the ranking factors that actually decide it',
+    cardTitle: 'How to appear on Google Maps, explained',
+    metaTitle: 'How To Appear On Google Maps',
+    description:
+      'Why a business does not show on Google Maps at all, the three ranking factors Google actually uses, and the concrete profile fixes that move a listing into the map pack.',
+    category: 'Local visibility',
+    published: '2026-08-21',
+    readingMinutes: 10,
+    primaryKeyword: 'how to appear on google maps',
+  },
+  {
     slug: 'how-to-improve-google-ranking',
     title: 'How to improve your Google ranking: the checklist that actually works',
     cardTitle: 'How to improve Google ranking, the plain checklist',

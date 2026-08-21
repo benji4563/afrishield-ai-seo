@@ -194,7 +194,12 @@ export default function Post() {
           </table>
         </figure>
 
-        {/* Cluster sibling: how to appear on google maps (queued) — link here on publish */}
+        <p>
+          For the ranking mechanics behind that Maps pin — why one business sits in the top
+          three and another does not —{' '}
+          <a href="/blog/how-to-appear-on-google-maps">the deeper walkthrough on appearing on
+          Google Maps</a> covers relevance, distance, and prominence in full.
+        </p>
 
         <p>
           The practical read is that a business without a website can still be found on Maps,

@@ -54,7 +54,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 10 | seo vs google ads | B — comparison | vetted · SV~10 · commercial · LOW comp | claimed |
 | 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | claimed |
 | 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | claimed |
-| 13 | how to appear on google maps | E — local visibility | vetted · SV~10 · informational | queued |
+| 13 | how to appear on google maps | E — local visibility | vetted · SV~10 · informational | claimed |
 | 14 | how to get more website traffic | H — general how-to | vetted · SV~10 · informational | queued |
 | 15 | content marketing for small business | F — content strategy | vetted · SV~10 · commercial · declining | queued |
 | 16 | get safari company recommended by ai | B — AI answers (GEO × safari) | candidate — no DataForSEO pass yet (see `keyword-map.md`) | candidate |
@@ -87,6 +87,20 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 > every live post, and it doubles as a natural hub linking out to the keyword
 > research, schema markup, GBP, local SEO, and timeline posts. **Queue-keeper: row 9
 > has now cost three skipped runs — please narrow the angle or retire it.**
+>
+> **Skip note (auto-poster, 2026-08-21):** row 9 checked a fourth time — still the
+> same unresolved duplication against `local-seo-for-small-business`, no narrowing
+> or retirement since the first flag on 2026-08-18. Skipped again; row 13
+> (`how to appear on google maps`) was taken instead, written as a ranking-factor
+> deep dive (relevance/distance/prominence, category and service-area choices,
+> what sabotages a listing) — a distinct angle from the existing GBP post
+> (post-setup maintenance work) and the "get your business on Google" overview
+> (Maps as one of three channels, covered briefly). **Queue-keeper: row 9 has now
+> cost four skipped runs — please narrow the angle or retire it.** Also note: after
+> this run only two general-cluster `queued` rows remain (14, 15) and no
+> tourism-cluster rows have cleared `candidate` status yet, so the 60/40 tourism
+> ratio cannot be met from the current pool — the queue needs a DataForSEO pass on
+> rows 16–21 before the next run or two, or the general pool runs dry.
 
 ## Watchlist — no DataForSEO volume yet (do NOT queue until confirmed)
 
@@ -115,3 +129,4 @@ periodically; promote to the table above once they show real volume.
 | seo vs google ads | `/blog/seo-vs-google-ads` | 2026-08-18 |
 | how to do keyword research | `/blog/how-to-do-keyword-research` | 2026-08-19 |
 | how to improve google ranking | `/blog/how-to-improve-google-ranking` | 2026-08-20 |
+| how to appear on google maps | `/blog/how-to-appear-on-google-maps` | 2026-08-21 |

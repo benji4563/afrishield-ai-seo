@@ -34,6 +34,7 @@ reconcile.
 | seo vs google ads | B — comparison | `/blog/seo-vs-google-ads` | 2026-08-18 | Live |
 | how to do keyword research | H — general how-to | `/blog/how-to-do-keyword-research` | 2026-08-19 | Live |
 | how to improve google ranking | H — general how-to | `/blog/how-to-improve-google-ranking` | 2026-08-20 | Live |
+| how to appear on google maps | E — local visibility | `/blog/how-to-appear-on-google-maps` | 2026-08-21 | Live |
 
 ## Deliberately not targeted
 
