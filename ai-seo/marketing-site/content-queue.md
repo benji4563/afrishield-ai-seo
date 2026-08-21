@@ -50,7 +50,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 6 | is seo worth it | D — cost / ROI anxiety | vetted · SV~10 · informational · LOW comp | claimed |
 | 7 | how long does seo take | D — expectations | vetted · SV~10 · informational · LOW comp | claimed |
 | 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | claimed |
-| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | queued |
+| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | retired |
 | 10 | seo vs google ads | B — comparison | vetted · SV~10 · commercial · LOW comp | claimed |
 | 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | claimed |
 | 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | claimed |
@@ -101,6 +101,13 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 > tourism-cluster rows have cleared `candidate` status yet, so the 60/40 tourism
 > ratio cannot be met from the current pool — the queue needs a DataForSEO pass on
 > rows 16–21 before the next run or two, or the general pool runs dry.
+>
+> **Board review (2026-08-21):** row 9 retired. Four consecutive skipped runs on
+> a confirmed duplicate (`local-seo-for-small-business` already answers this exact
+> question, at the same SV~10 volume) is a process failure, not a content one —
+> the board closed it directly rather than waiting on a fifth skip. See
+> `reports/board-review-2026-08-21.md`. No replacement glossary page: at this
+> volume a second page would cannibalize the existing post, not complement it.
 
 ## Watchlist — no DataForSEO volume yet (do NOT queue until confirmed)
 
