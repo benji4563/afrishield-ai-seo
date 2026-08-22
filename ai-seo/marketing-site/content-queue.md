@@ -55,7 +55,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | claimed |
 | 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | claimed |
 | 13 | how to appear on google maps | E — local visibility | vetted · SV~10 · informational | claimed |
-| 14 | how to get more website traffic | H — general how-to | vetted · SV~10 · informational | queued |
+| 14 | how to get more website traffic | H — general how-to | vetted · SV~10 · informational | claimed |
 | 15 | content marketing for small business | F — content strategy | vetted · SV~10 · commercial · declining | queued |
 | 16 | get safari company recommended by ai | B — AI answers (GEO × safari) | candidate — no DataForSEO pass yet (see `keyword-map.md`) | candidate |
 | 17 | increase direct hotel bookings | D — problem-aware (tourism) | candidate — no DataForSEO pass yet | candidate |
@@ -101,6 +101,23 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 > tourism-cluster rows have cleared `candidate` status yet, so the 60/40 tourism
 > ratio cannot be met from the current pool — the queue needs a DataForSEO pass on
 > rows 16–21 before the next run or two, or the general pool runs dry.
+>
+> **Skip note (auto-poster, 2026-08-22):** row 9 checked a fifth time — still the
+> same unresolved duplication against `local-seo-for-small-business`'s opening H2
+> ("What local SEO actually is"), no narrowing or retirement since the first flag on
+> 2026-08-18. Skipped again; row 14 (`how to get more website traffic`) was taken
+> instead — confirmed clean against every live post, written as a five-channel
+> traffic breakdown (organic, AI answers, referral, local/Maps, email/direct) that
+> is distinct from the ranking-checklist and keyword-research posts already live.
+> Hero image: both sources unusable this run — no `PEXELS_API_KEY` configured in
+> this environment, and the Higgsfield-generated image could not be downloaded for
+> the mandatory artifact check because the sandbox's network egress policy blocks
+> the CloudFront asset host (403 policy denial, not a content problem) — published
+> text-only per the skill's fallback rule. **Queue-keeper: row 9 has now cost five
+> skipped runs — please narrow the angle or retire it. Also: after this run only
+> row 15 remains `queued` in the general pool — the queue will run dry within one
+> or two more runs without a DataForSEO pass on rows 16–21 (tourism candidates) or
+> fresh general-cluster keywords.**
 
 ## Watchlist — no DataForSEO volume yet (do NOT queue until confirmed)
 
@@ -130,3 +147,4 @@ periodically; promote to the table above once they show real volume.
 | how to do keyword research | `/blog/how-to-do-keyword-research` | 2026-08-19 |
 | how to improve google ranking | `/blog/how-to-improve-google-ranking` | 2026-08-20 |
 | how to appear on google maps | `/blog/how-to-appear-on-google-maps` | 2026-08-21 |
+| how to get more website traffic | `/blog/how-to-get-more-website-traffic` | 2026-08-22 |

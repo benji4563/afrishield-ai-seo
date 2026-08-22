@@ -35,6 +35,7 @@ reconcile.
 | how to do keyword research | H — general how-to | `/blog/how-to-do-keyword-research` | 2026-08-19 | Live |
 | how to improve google ranking | H — general how-to | `/blog/how-to-improve-google-ranking` | 2026-08-20 | Live |
 | how to appear on google maps | E — local visibility | `/blog/how-to-appear-on-google-maps` | 2026-08-21 | Live |
+| how to get more website traffic | H — general how-to | `/blog/how-to-get-more-website-traffic` | 2026-08-22 | Live |
 
 ## Deliberately not targeted
 

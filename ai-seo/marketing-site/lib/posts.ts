@@ -31,6 +31,18 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'how-to-get-more-website-traffic',
+    title: 'How to get more website traffic: the channels that actually move the number',
+    cardTitle: 'How to get more website traffic, honestly',
+    metaTitle: 'How To Get More Website Traffic',
+    description:
+      'Why a higher Google ranking does not automatically mean more visitors, the five traffic channels a small business actually controls, and how to tell which one is working.',
+    category: 'Traffic growth',
+    published: '2026-08-22',
+    readingMinutes: 10,
+    primaryKeyword: 'how to get more website traffic',
+  },
+  {
     slug: 'how-to-appear-on-google-maps',
     title: 'How to appear on Google Maps: the ranking factors that actually decide it',
     cardTitle: 'How to appear on Google Maps, explained',
