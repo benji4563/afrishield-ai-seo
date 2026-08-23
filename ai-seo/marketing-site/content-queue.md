@@ -63,6 +63,25 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 19 | direct booking strategy for lodges | D — problem-aware (tourism) | candidate — no DataForSEO pass yet | candidate |
 | 20 | google business profile for hotels | E — local / GBP × hotels | candidate — no DataForSEO pass yet | candidate |
 | 21 | google maps ranking for safari companies | E — local / GBP × safari | candidate — no DataForSEO pass yet | candidate |
+| 22 | how to get more google reviews | E — local / reputation | candidate - verify volume (DataForSEO) | queued |
+| 23 | how to respond to negative reviews | E — local / reputation | candidate - verify volume (DataForSEO) | queued |
+| 24 | how to fix duplicate google business listings | E — local / GBP problem | candidate - verify volume (DataForSEO) | queued |
+| 25 | how to get backlinks for small business | H — general how-to | candidate - verify volume (DataForSEO) | queued |
+| 26 | how to appear in google ai overviews | B — AI answers (AEO/GEO) | candidate - verify volume (DataForSEO) | queued |
+| 27 | why isn't my business showing up in ai search results | B — AI answers (AEO/GEO), problem-aware | candidate - verify volume (DataForSEO) | queued |
+| 28 | how to do an seo audit yourself | H — general how-to | candidate - verify volume (DataForSEO) | queued |
+| 29 | how to write meta descriptions that get clicks | B — technical education | candidate - verify volume (DataForSEO) | queued |
+| 30 | how to get my website indexed by google | H — technical / foundational | candidate - verify volume (DataForSEO) | queued |
+| 31 | how to track seo results without expensive tools | D — cost / measurement | candidate - verify volume (DataForSEO) | queued |
+
+> **Queue top-up (queue-keeper, 2026-08-23):** queued rows had fallen to 2 (row 9
+> stuck on the differentiation-angle duplication, row 15 unclaimed). Added rows
+> 22–31: ten new general-vertical candidates (AI-SEO / GEO / answer-engine /
+> local-SEO / small-business-search), none yet volume-checked. **Do not treat
+> these as vetted** — a DataForSEO pass must confirm volume/intent and promote
+> survivors before the poster should rely on them exclusively. Row 9 is still
+> unresolved after five skipped runs and still needs a human decision (narrow
+> the angle or retire it).
 
 > **Skip note (auto-poster, 2026-08-18):** row 9 (`what is local seo`) was passed
 > over this run under the differentiation-angle check — `local-seo-for-small-business`
