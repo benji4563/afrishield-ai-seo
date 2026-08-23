@@ -14,17 +14,21 @@ no other page touched yet, so this run advances the rotation to **pricing**.
 | B | `what is local seo` — content-queue row 9 | Next `queued` row; has now been skipped **four** consecutive auto-poster runs (2026-08-18 → 2026-08-21) as a duplicate, unresolved |
 | C | `/pricing` | Next in the site-page rotation after solutions |
 
-> **Merge-conflict addendum (2026-08-23):** while this PR sat in draft, the
-> blog auto-poster ran again on master (2026-08-22) and hit row 9 a **fifth**
-> time before this review's retirement had landed — same confirmed
-> duplication, row 14 (`how to get more website traffic`) taken instead. That
-> produced a real conflict in `content-queue.md` between the auto-poster's new
-> skip note and this review's retirement note, both landing on the same spot
-> in the file. Resolved by merging master into this branch and keeping both
-> notes, in order, with the retirement note now dated as landing after the
-> fifth skip rather than preventing it. The underlying point stands and got
-> sharper: waiting on draft-PR review to close a confirmed-duplicate row costs
-> real runs while it sits — five now, not four.
+> **Merge-conflict addendum (2026-08-23, updated after a second conflict):**
+> while this PR sat in draft, the blog auto-poster ran on master twice more —
+> 2026-08-22 (row 9's fifth skip, row 14 `how to get more website traffic`
+> taken) and 2026-08-23 (row 9's **sixth** skip, row 15 `content marketing for
+> small business` taken) — each time hitting row 9 again before this review's
+> retirement had landed, and each time producing a real conflict in
+> `content-queue.md` against this branch's retirement note. Both resolved by
+> merging master in and keeping every note in order. After the second run, the
+> general `queued` pool is now empty (rows 1–15 are all `claimed` except row
+> 9) — the cost of this PR sitting in draft went from wasted auto-poster runs
+> to the poster having nothing left to publish until either row 9 resolves or
+> the queue-keeper adds fresh rows. The underlying point stands and got
+> considerably sharper: waiting on draft-PR review to close a confirmed-
+> duplicate row costs real runs while it sits — six now, not four, and the
+> pool is dry.
 
 Lenses run: **GEO** (Mike King + Koray Tuğberk Gübür) on A and B, **Conversion**
 (Wes McDowell) and **Business** (Dan Martell) on C, **Business** (Dan Martell)

@@ -56,7 +56,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | claimed |
 | 13 | how to appear on google maps | E — local visibility | vetted · SV~10 · informational | claimed |
 | 14 | how to get more website traffic | H — general how-to | vetted · SV~10 · informational | claimed |
-| 15 | content marketing for small business | F — content strategy | vetted · SV~10 · commercial · declining | queued |
+| 15 | content marketing for small business | F — content strategy | vetted · SV~10 · commercial · declining | claimed |
 | 16 | get safari company recommended by ai | B — AI answers (GEO × safari) | candidate — no DataForSEO pass yet (see `keyword-map.md`) | candidate |
 | 17 | increase direct hotel bookings | D — problem-aware (tourism) | candidate — no DataForSEO pass yet | candidate |
 | 18 | booking.com commission alternative | D — problem-aware (tourism) | candidate — no DataForSEO pass yet | candidate |
@@ -119,16 +119,35 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 > or two more runs without a DataForSEO pass on rows 16–21 (tourism candidates) or
 > fresh general-cluster keywords.**
 >
-> **Board review (2026-08-21, PR merged after a fifth skip landed on master):**
-> row 9 retired. Five consecutive skipped runs on a confirmed duplicate
+> **Skip note (auto-poster, 2026-08-23):** row 9 checked a sixth time — still the
+> same unresolved duplication against `local-seo-for-small-business`'s opening H2
+> ("What local SEO actually is"), no narrowing or retirement since the first flag on
+> 2026-08-18. Skipped again; row 15 (`content marketing for small business`) was
+> taken instead — confirmed clean against every live post, no cluster-F sibling
+> exists yet so it stands as the first, with contextual links out to the keyword
+> research, GBP, SEO-vs-ads, and SEO-timeline posts. **After this run the general
+> pool is empty (rows 1–15 are all `claimed` except row 9) — the next run needs
+> either a resolution on row 9 or a fresh DataForSEO pass on rows 16–21 (tourism
+> candidates) or new general-cluster keywords, or it will report "queue empty."**
+> Hero image: both sources unusable again this run — no `PEXELS_API_KEY`
+> configured, and the Higgsfield-generated image could not be downloaded for the
+> mandatory artifact check because the sandbox's network egress policy still
+> blocks the CloudFront asset host (403 policy denial, same as 2026-08-22, not a
+> content problem) — published text-only per the skill's fallback rule.
+>
+> **Board review (2026-08-21, PR merged after a sixth skip landed on master):**
+> row 9 retired. Six consecutive skipped runs on a confirmed duplicate
 > (`local-seo-for-small-business` already answers this exact question, at the
 > same SV~10 volume) is a process failure, not a content one — the board closed
-> it directly rather than waiting on a sixth skip. See
-> `reports/board-review-2026-08-21.md`. No replacement glossary page: at this
-> volume a second page would cannibalize the existing post, not complement it.
-> The next queue-keeper pass should also prioritize rows 16–21 (tourism
-> candidates) — only row 15 is left in the general `queued` pool per the note
-> above.
+> it directly rather than waiting on a seventh skip, and the general pool is now
+> empty (row 9 was the only non-`claimed` row left in 1–15) so the cost of
+> leaving it queued has stopped being merely wasteful and started blocking the
+> poster outright. See `reports/board-review-2026-08-21.md`. No replacement
+> glossary page: at this volume a second page would cannibalize the existing
+> post, not complement it. The next queue-keeper pass should prioritize a
+> DataForSEO vetting pass on rows 16–21 (tourism candidates) or fresh
+> general-cluster keywords — the general pool needs new `queued` rows, not just
+> row 9's resolution, before the next auto-poster run.
 
 ## Watchlist — no DataForSEO volume yet (do NOT queue until confirmed)
 

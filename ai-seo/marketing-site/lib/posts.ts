@@ -31,6 +31,18 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'content-marketing-for-small-business',
+    title: 'Content marketing for small business: what actually earns attention (and what wastes it)',
+    cardTitle: 'Content marketing for small business, honestly',
+    metaTitle: 'Content Marketing For Small Business',
+    description:
+      'What content marketing actually means for a small business, the content worth the time, how often to publish, and how to tell whether any of it is working.',
+    category: 'Content strategy',
+    published: '2026-08-23',
+    readingMinutes: 10,
+    primaryKeyword: 'content marketing for small business',
+  },
+  {
     slug: 'how-to-get-more-website-traffic',
     title: 'How to get more website traffic: the channels that actually move the number',
     cardTitle: 'How to get more website traffic, honestly',
