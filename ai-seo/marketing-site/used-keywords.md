@@ -36,6 +36,7 @@ reconcile.
 | how to improve google ranking | H — general how-to | `/blog/how-to-improve-google-ranking` | 2026-08-20 | Live |
 | how to appear on google maps | E — local visibility | `/blog/how-to-appear-on-google-maps` | 2026-08-21 | Live |
 | how to get more website traffic | H — general how-to | `/blog/how-to-get-more-website-traffic` | 2026-08-22 | Live |
+| content marketing for small business | F — content strategy | `/blog/content-marketing-for-small-business` | 2026-08-23 | Live |
 
 ## Deliberately not targeted
 
