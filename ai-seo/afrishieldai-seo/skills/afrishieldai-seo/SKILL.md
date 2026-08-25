@@ -164,9 +164,18 @@ page built on `PageHero` must have a clickable CTA (button or prompt link) reach
 within the first two sections after the hero — not deferred to the closing CTA block
 alone — plus at least one additional mid-scroll CTA checkpoint if the page runs 3+
 content sections before that closing block. Reference implementation: the homepage
-`Hero` component's "Book a call" + secondary CTA pattern. `PageHero` is a candidate
-for an optional `ctaHref`/`ctaLabel` prop so this becomes structural rather than
-something each page author has to remember.
+`Hero` component's "Book a call" + secondary CTA pattern.
+
+**Escalated — top execution priority (board: Dan Martell, 2026-08-25).** This rule
+was written on 2026-08-04 against `/solutions` and proposed a `PageHero`
+`ctaHref`/`ctaLabel` prop as the structural fix. As of 2026-08-25 neither
+`/solutions` nor `/how-it-works` (confirmed by board review to have the identical
+gap — three content sections before the only CTA) has been fixed, and the prop was
+never added to `components/ui/PageHero.tsx`. Ten pages currently render `PageHero`
+with no CTA support at all. **Fix the component once** — add the prop and wire it
+on every existing `PageHero` page — rather than patching pages one at a time; the
+page-by-page approach has already failed twice. This is the highest-leverage single
+item on the current punch list.
 
 `LocalBusiness` / service-provider template (fill from real data; never invent
 telephone or address — leave them out or env-driven until supplied):

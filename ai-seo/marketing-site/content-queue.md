@@ -50,7 +50,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 6 | is seo worth it | D — cost / ROI anxiety | vetted · SV~10 · informational · LOW comp | claimed |
 | 7 | how long does seo take | D — expectations | vetted · SV~10 · informational · LOW comp | claimed |
 | 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | claimed |
-| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | queued |
+| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | retired |
 | 10 | seo vs google ads | B — comparison | vetted · SV~10 · commercial · LOW comp | claimed |
 | 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | claimed |
 | 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | claimed |
@@ -134,6 +134,20 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 > mandatory artifact check because the sandbox's network egress policy still
 > blocks the CloudFront asset host (403 policy denial, same as 2026-08-22, not a
 > content problem) — published text-only per the skill's fallback rule.
+>
+> **Board decision (2026-08-25):** row 9 retired. Six identical skip cycles
+> (2026-08-18 through 2026-08-23) confirmed the same conclusion each time —
+> `local-seo-for-small-business` already gives a complete, liftable definition
+> of local SEO in its `ShortAnswer` and opening H2, plus full coverage of
+> ranking factors, NAP, citations, reviews, and local content. A second page
+> answering the same definitional query would split retrieval signal (King)
+> rather than extend the topical map (Koray), and re-checking a settled
+> question six times is wasted automation cycles (Dan). No further narrowing
+> is expected; if a bare glossary-style answer is wanted later, add an
+> anchor/snippet to the existing post rather than queueing a new one. The
+> general pool is now fully claimed or retired — the next run needs a fresh
+> DataForSEO pass on rows 16–21 (tourism candidates) or new general-cluster
+> keywords, or it will report "queue empty."
 
 ## Watchlist — no DataForSEO volume yet (do NOT queue until confirmed)
 
