@@ -62,3 +62,20 @@ work on it vs. in it · leverage.
   models for high-volume simple sorting, top-tier reserved for orchestration) to cut
   agent operating cost roughly 100x on routine work. —
   https://www.youtube.com/watch?v=Bm84BAtOfQw
+- **2026-08-26** — Pushes a "MAPS" prompt framework for getting specific instead of
+  generic AI output: state the Mission (the underlying goal, not just the task), the
+  Ask (the concrete deliverable), the Parameters (every piece of your own context/past
+  work you can feed it, not just a sentence or two), and the Shape (the exact output
+  format wanted). Also describes a capture method for turning one-off manual work
+  into a reusable automation: do the task once while narrating out loud, then have AI
+  convert that recording into a scheduled, repeatable "skill" instead of writing the
+  automation by hand. —
+  https://www.youtube.com/watch?v=1MMqPTiWfSc
+- **2026-08-26** — Frames a "Book Architect" style prompt for turning any body of
+  work into structured thought-leadership content: have AI analyze someone's full
+  public output (their videos, posts, quotes) to extract their recurring mental
+  models and phrasing, then organize it into a chaptered outline that mimics their
+  authentic voice rather than generic ghostwriting. Useful as a pattern for building
+  topical-authority content from a client's existing raw material rather than
+  starting from a blank page. —
+  https://www.youtube.com/watch?v=6poBPhfB-WY
