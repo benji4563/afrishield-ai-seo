@@ -75,3 +75,26 @@ context · "Koraynese" (his precise, coined terminology).
   progressive: a domain earns "rankability" through accumulated click/engagement
   satisfaction over time rather than ranking outright from day one. —
   https://www.youtube.com/watch?v=WrU25krFCtk
+- **2026-08-26** — Introduces "cost of retrieval" as distinct from topical
+  authority: since Google is an ads business first, he argues it weighs how cheaply
+  it can crawl/parse/serve a source about as heavily as content quality, so an
+  efficiently-structured source can outrank a technically better but harder-to-parse
+  competitor. Describes serving different markdown versions of the same page to
+  different LLM crawlers (GPT, Claude, Perplexity) based on his own agentic-retrieval
+  testing showing each model weighs entity placement, date recency, and how far into
+  a document it reads differently — never exposed to or indexed by Google, so
+  distinct from cloaking/cannibalization in his framing. Also recommends fully
+  blocking Googlebot (while leaving other bots/social/email open) until a new site
+  has ~80-90 well-structured pages, then opening to Google all at once, claiming the
+  resulting "index gap" makes Google crawl and rank the site unusually fast. Signal
+  only — no independent verification of the launch-gating claim. —
+  https://www.youtube.com/watch?v=VLDa_RoczYI
+- **2026-08-26** — Frames future LLM visibility as being assigned to specific
+  answer-attributes (e.g. a "best-for-X" style combination) rather than ranking for
+  one keyword, and describes scraping a niche's common attribute set to find which
+  third-party pages LLMs already cite for each one. Also discusses deliberately
+  seeding brand mentions across parasite-style platforms (Medium, Ghost, Reddit,
+  Quora) and replicating already-well-performing Reddit threads as levers to shift
+  how LLMs describe or associate an entity — shallow-sourced (description/chapters
+  only), flag for a deep re-pass before treating as doctrine. —
+  https://www.youtube.com/watch?v=3ncQHJuQaDM

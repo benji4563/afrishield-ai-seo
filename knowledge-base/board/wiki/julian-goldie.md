@@ -59,3 +59,14 @@ links · topical relevance of links.
   in content/site generation. Worth watching for cost impact on our generation
   pipeline, but needs independent verification before changing our model stack. —
   https://www.youtube.com/watch?v=PYbBddbflRo
+- **2026-08-26** — Demoed a named, multi-step Claude "skill" that turns one keyword
+  plus one first-party case study into several distinctly-written articles deployed
+  across multiple sites, each using a different headline-psychology angle and tying
+  every claim back to the same case study to avoid generic-sounding AI copy. The same
+  pipeline pings a third-party indexing API immediately on publish rather than
+  waiting for organic crawl, then runs a self-critique pass that reviews its own
+  output and proposes edits to its own skill instructions — tuning on its own recent
+  results rather than external docs. New ranking keywords are then pulled back from
+  Search Console data to feed the next batch, closing a content→ranking→keyword loop
+  across the linked sites. Signal only — no independent verification of ranking
+  results. — https://www.youtube.com/watch?v=DY8hs0bZ8CY
