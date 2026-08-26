@@ -65,3 +65,17 @@ message-first design · social proof · local SEO tier list.
   and proven hooks as house style, and use it to auto-generate on-brand b-roll
   graphics and a lead-magnet PDF straight from a finished script. —
   https://www.youtube.com/watch?v=yuVlHAKbnMQ
+- **2026-08-26** — Argues a video's ceiling on reach is set almost entirely by the
+  strength of its core idea, not production polish, and that most creators spend far
+  too little time on idea generation relative to execution — the ratio should skew
+  the other way. Also proposes giving an existing thing you already teach a memorable,
+  proprietary name/structure ("signature framework") so you're positioned as the
+  originator of a concept rather than one more channel covering it, and suggests AI
+  tools can help with the naming/structuring step once you supply the underlying
+  expertise. —
+  https://www.youtube.com/watch?v=JbBfJtWnyt0
+- **2026-08-26** — Frames every purely-helpful video as a trust "deposit" and every
+  direct pitch as a "withdrawal," recommending a roughly 5:1 to 10:1 give-to-ask ratio
+  — about one direct-offer video for every four or five value-only ones — before a
+  channel has earned the right to make a sales pitch. —
+  https://www.youtube.com/watch?v=JbBfJtWnyt0
