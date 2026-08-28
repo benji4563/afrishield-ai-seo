@@ -119,5 +119,165 @@
     "photographerUrl": "https://www.pexels.com/@gustavo-fring",
     "alt": "African American woman smiling at a computer desk in an office setting, holding a black item.",
     "avgColor": "#8F9395"
+  },
+  {
+    "slot": "blog-how-to-get-hotel-cited-by-chatgpt",
+    "file": "images/blog-how-to-get-hotel-cited-by-chatgpt.webp",
+    "source": "AfriShield AI brand library (00 Knowledge/Afrishieldai Pics)",
+    "photographer": "AfriShield AI",
+    "alt": "A luxury safari lodge surfacing inside an AI assistant's answer to the query 'best luxury lodges near Arusha'."
+  },
+  {
+    "slot": "blog-how-to-reduce-ota-commission",
+    "file": "images/blog-how-to-reduce-ota-commission.webp",
+    "source": "AfriShield AI brand library (00 Knowledge/Afrishieldai Pics)",
+    "photographer": "AfriShield AI",
+    "alt": "A Tanzanian safari operator checking a booking calendar on a tablet, Mount Meru framed in the window."
+  },
+  {
+    "slot": "blog-how-to-get-my-business-on-google",
+    "file": "images/blog-how-to-get-my-business-on-google.webp",
+    "source": "AfriShield AI brand library (00 Knowledge/Afrishieldai Pics)",
+    "photographer": "AfriShield AI",
+    "alt": "A phone-repair shop owner holding up his phone showing his Google Business Profile and a Google Maps pin."
+  },
+  {
+    "slot": "blog-what-is-schema-markup",
+    "file": "images/blog-what-is-schema-markup.webp",
+    "source": "AfriShield AI brand library (00 Knowledge/Afrishieldai Pics)",
+    "photographer": "AfriShield AI",
+    "alt": "A nyama choma food-stall owner on her phone — the hours, menu and reviews schema markup turns into machine-readable facts."
+  },
+  {
+    "slot": "blog-content-marketing-for-small-business",
+    "file": "images/blog-content-marketing-for-small-business.webp",
+    "source": "Pexels",
+    "query": "african entrepreneur writing blog laptop",
+    "pexelsId": 5052857,
+    "pexelsUrl": "https://www.pexels.com/photo/person-using-macbook-pro-on-white-table-5052857/",
+    "photographer": "cottonbro studio",
+    "photographerUrl": "https://www.pexels.com/@cottonbro",
+    "alt": "Top view of a person working on a laptop in a café with a notebook and coffee, ideal for business or blogging themes.",
+    "avgColor": "#8D868C"
+  },
+  {
+    "slot": "blog-how-to-get-more-website-traffic",
+    "file": "images/blog-how-to-get-more-website-traffic.webp",
+    "source": "Pexels",
+    "query": "african entrepreneur laptop analytics growth",
+    "pexelsId": 6930431,
+    "pexelsUrl": "https://www.pexels.com/photo/a-person-using-a-laptop-6930431/",
+    "photographer": "Mikhail Nilov",
+    "photographerUrl": "https://www.pexels.com/@mikhail-nilov",
+    "alt": "Focused professional analyzing data with laptop and tablet in modern office setting.",
+    "avgColor": "#787F88"
+  },
+  {
+    "slot": "blog-how-to-improve-google-ranking",
+    "file": "images/blog-how-to-improve-google-ranking.webp",
+    "source": "Pexels",
+    "query": "african professional laptop office focused",
+    "pexelsId": 6930572,
+    "pexelsUrl": "https://www.pexels.com/photo/a-man-in-white-long-sleeves-using-a-black-laptop-6930572/",
+    "photographer": "Mikhail Nilov",
+    "photographerUrl": "https://www.pexels.com/@mikhail-nilov",
+    "alt": "Serious businessman working on his laptop in a modern office setting with cityscape view.",
+    "avgColor": "#656B76"
+  },
+  {
+    "slot": "blog-how-to-do-keyword-research",
+    "file": "images/blog-how-to-do-keyword-research.webp",
+    "source": "Pexels",
+    "query": "african woman laptop notebook research",
+    "pexelsId": 5965632,
+    "pexelsUrl": "https://www.pexels.com/photo/black-woman-sitting-with-netbook-on-grass-5965632/",
+    "photographer": "Charlotte May",
+    "photographerUrl": "https://www.pexels.com/@charlotte-may",
+    "alt": "Young African American lady in casual clothes with backpack sitting on green grass while studying on laptop with notepad and pen in daytime",
+    "avgColor": "#474C44"
+  },
+  {
+    "slot": "blog-seo-vs-google-ads",
+    "file": "images/blog-seo-vs-google-ads.webp",
+    "source": "Pexels",
+    "query": "african marketer laptop charts office",
+    "pexelsId": 7693217,
+    "pexelsUrl": "https://www.pexels.com/photo/a-man-in-white-long-sleeve-shirt-holding-a-document-7693217/",
+    "photographer": "Yan Krukau",
+    "photographerUrl": "https://www.pexels.com/@yankrukov",
+    "alt": "Colleagues collaborating on financial charts and data during a business meeting indoors.",
+    "avgColor": "#9A979A"
+  },
+  {
+    "slot": "blog-local-seo-for-small-business",
+    "file": "images/blog-local-seo-for-small-business.webp",
+    "source": "Pexels",
+    "query": "african local shop owner counter",
+    "pexelsId": 3906984,
+    "pexelsUrl": "https://www.pexels.com/photo/woman-wearing-an-apron-standing-by-the-shelves-3906984/",
+    "photographer": "Andrea Piacquadio",
+    "photographerUrl": "https://www.pexels.com/@olly",
+    "alt": "Smiling barista standing in a stylish café, showcasing entrepreneurial spirit.",
+    "avgColor": "#7A7674"
+  },
+  {
+    "slot": "blog-how-long-does-seo-take",
+    "file": "images/blog-how-long-does-seo-take.webp",
+    "source": "Pexels",
+    "query": "african business owner thinking laptop window",
+    "pexelsId": 1181215,
+    "pexelsUrl": "https://www.pexels.com/photo/woman-in-black-coat-in-front-of-white-laptop-computer-1181215/",
+    "photographer": "Christina Morillo",
+    "photographerUrl": "https://www.pexels.com/@divinetechygirl",
+    "alt": "Woman with dreadlocks focused on laptop at office desk with city view.",
+    "avgColor": "#C8CACB"
+  },
+  {
+    "slot": "blog-how-to-rank-on-chatgpt",
+    "file": "images/blog-how-to-rank-on-chatgpt.webp",
+    "source": "Pexels",
+    "query": "african professional using smartphone technology",
+    "pexelsId": 8276711,
+    "pexelsUrl": "https://www.pexels.com/photo/man-in-a-black-jacket-using-smartphone-8276711/",
+    "photographer": "PNW Production",
+    "photographerUrl": "https://www.pexels.com/@pnw-prod",
+    "alt": "Businessman in a black jacket using smartphone indoors by office window. Modern and professional setting.",
+    "avgColor": "#AAACA9"
+  },
+  {
+    "slot": "blog-google-business-profile-optimization",
+    "file": "images/blog-google-business-profile-optimization.webp",
+    "source": "Pexels",
+    "query": "african shop owner smartphone storefront",
+    "pexelsId": 8475169,
+    "pexelsUrl": "https://www.pexels.com/photo/a-man-in-brown-apron-8475169/",
+    "photographer": "Kampus Production",
+    "photographerUrl": "https://www.pexels.com/@kampus",
+    "alt": "A man in an apron opens a grocery store door in Portugal, ready for business.",
+    "avgColor": "#90908E"
+  },
+  {
+    "slot": "blog-how-to-appear-on-google-maps",
+    "file": "images/blog-how-to-appear-on-google-maps.webp",
+    "source": "Pexels",
+    "query": "african woman shop owner storefront entrance",
+    "pexelsId": 8475172,
+    "pexelsUrl": "https://www.pexels.com/photo/man-selling-fruits-in-a-grocery-8475172/",
+    "photographer": "Kampus Production",
+    "photographerUrl": "https://www.pexels.com/@kampus",
+    "alt": "Happy vendor holding a crate of oranges at a local store in Portugal.",
+    "avgColor": "#7E7266"
+  },
+  {
+    "slot": "blog-is-seo-worth-it",
+    "file": "images/blog-is-seo-worth-it.webp",
+    "source": "Pexels",
+    "query": "african entrepreneur counting cash shop",
+    "pexelsId": 7654189,
+    "pexelsUrl": "https://www.pexels.com/photo/man-counting-money-in-office-7654189/",
+    "photographer": "Pavel Danilyuk",
+    "photographerUrl": "https://www.pexels.com/@pavel-danilyuk",
+    "alt": "African businessman counting euro bills at a desk with documents and a notebook, highlighting finance theme.",
+    "avgColor": "#978980"
   }
 ]

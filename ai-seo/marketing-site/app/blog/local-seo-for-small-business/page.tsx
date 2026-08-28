@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { blogPostingJsonLd, breadcrumbJsonLd, faqPageJsonLd, howToJsonLd } from '@/lib/structured-data';
+import { EditorialImage } from '@/components/ui/EditorialImage';
 import { getPost, postOgImages } from '@/lib/posts';
 import { SITE_URL } from '@/lib/site';
 
@@ -110,6 +111,13 @@ export default function Post() {
           and prominence in local listings matter as much as the words on your page. None of
           it is exotic. Most of it is unglamorous maintenance, done correctly and kept correct.
         </ShortAnswer>
+
+        <EditorialImage
+          src={post.image!.src}
+          alt={post.image!.alt}
+          priority
+          className="my-10"
+        />
 
         <Scene>
           <p>
