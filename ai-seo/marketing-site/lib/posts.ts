@@ -31,6 +31,24 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'ai-search-visibility-study',
+    title:
+      'Who does AI recommend when someone searches for an African business? A 5-city study',
+    cardTitle: 'Who AI recommends in African cities (a study)',
+    metaTitle: 'Who AI names when Africa searches',
+    description:
+      'We ran real searches across Nairobi, Lagos, Accra, Johannesburg and Arusha. In travel, a business’s own website was just 23% of page one; in professional services, 68%. Google served an AI answer on every single query.',
+    category: 'Original research',
+    published: '2026-08-28',
+    modified: '2026-08-28',
+    readingMinutes: 8,
+    primaryKeyword: 'ai search visibility for african businesses',
+    image: {
+      src: '/images/blog-ai-search-visibility-study.webp',
+      alt: 'An African business owner smiling at a laptop while checking search results in an office.',
+    },
+  },
+  {
     slug: 'content-marketing-for-small-business',
     title: 'Content marketing for small business: what actually earns attention (and what wastes it)',
     cardTitle: 'Content marketing for small business, honestly',

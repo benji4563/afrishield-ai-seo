@@ -279,5 +279,17 @@
     "photographerUrl": "https://www.pexels.com/@pavel-danilyuk",
     "alt": "African businessman counting euro bills at a desk with documents and a notebook, highlighting finance theme.",
     "avgColor": "#978980"
+  },
+  {
+    "slot": "blog-ai-search-visibility-study",
+    "file": "images/blog-ai-search-visibility-study.webp",
+    "source": "Pexels",
+    "query": "african business owner laptop search results",
+    "pexelsId": 10375901,
+    "pexelsUrl": "https://www.pexels.com/photo/woman-in-dress-sitting-in-front-of-a-laptop-10375901/",
+    "photographer": "RDNE Stock project",
+    "photographerUrl": "https://www.pexels.com/@rdne",
+    "alt": "Professional black woman smiling at desk using laptop and smartphone in office.",
+    "avgColor": "#ACA59D"
   }
 ]

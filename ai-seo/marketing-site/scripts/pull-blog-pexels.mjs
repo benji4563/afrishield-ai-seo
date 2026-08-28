@@ -49,6 +49,7 @@ const SLOTS = [
   { slug: 'is-seo-worth-it', queries: ['african entrepreneur counting cash shop', 'black business owner calculator money desk', 'african woman counting money small business'] },
   { slug: 'how-to-rank-on-chatgpt', queries: ['african professional using smartphone technology', 'african person phone ai assistant'] },
   { slug: 'google-business-profile-optimization', queries: ['african shop owner smartphone storefront', 'african business owner phone shop counter'] },
+  { slug: 'ai-search-visibility-study', queries: ['african business owner laptop search results', 'african entrepreneur phone laptop research office'] },
 ];
 
 async function search(query) {
