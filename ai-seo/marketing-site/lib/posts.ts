@@ -84,9 +84,9 @@ export const POSTS: PostMeta[] = [
     title:
       'How to get your business on Google: search, Maps, and being the answer an AI names',
     cardTitle: 'How to get your business on Google',
-    metaTitle: 'Get on Google & rank higher, step by step',
+    metaTitle: 'Get your business on Google, step by step',
     description:
-      'The three ways a business shows up on Google — Maps, organic search, and AI answers — plus the mostly-free steps to rank higher and reach the top of the Google Maps pack.',
+      'The three separate ways a business shows up on Google — Maps, organic search, and AI answers — and the concrete, mostly-free steps for each, cheapest first.',
     category: 'Local visibility',
     published: '2026-08-10',
     readingMinutes: 10,
