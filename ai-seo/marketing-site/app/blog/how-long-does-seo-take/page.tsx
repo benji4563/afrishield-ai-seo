@@ -7,6 +7,7 @@ import {
   faqPageJsonLd,
   howToJsonLd,
 } from '@/lib/structured-data';
+import { EditorialImage } from '@/components/ui/EditorialImage';
 import { getPost, postOgImages } from '@/lib/posts';
 import { SITE_URL } from '@/lib/site';
 
@@ -118,6 +119,13 @@ export default function Post() {
           with no history takes longer than an established one. There is no accelerant that
           collapses this into weeks; anyone selling one is selling something else.
         </ShortAnswer>
+
+        <EditorialImage
+          src={post.image!.src}
+          alt={post.image!.alt}
+          priority
+          className="my-10"
+        />
 
         <Scene>
           <p>

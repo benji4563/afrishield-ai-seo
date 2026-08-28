@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { blogPostingJsonLd, breadcrumbJsonLd, faqPageJsonLd, howToJsonLd } from '@/lib/structured-data';
+import { EditorialImage } from '@/components/ui/EditorialImage';
 import { getPost, postOgImages } from '@/lib/posts';
 import { SITE_URL } from '@/lib/site';
 
@@ -111,6 +112,13 @@ export default function Post() {
           site is slow or the page never actually answers the question is the most common
           reason ranking work stalls.
         </ShortAnswer>
+
+        <EditorialImage
+          src={post.image!.src}
+          alt={post.image!.alt}
+          priority
+          className="my-10"
+        />
 
         <Scene>
           <p>

@@ -41,6 +41,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-23',
     readingMinutes: 10,
     primaryKeyword: 'content marketing for small business',
+    image: {
+      src: '/images/blog-content-marketing-for-small-business.webp',
+      alt: 'A small-business owner writing content on a laptop, a notebook and coffee beside them.',
+    },
   },
   {
     slug: 'how-to-get-more-website-traffic',
@@ -53,6 +57,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-22',
     readingMinutes: 10,
     primaryKeyword: 'how to get more website traffic',
+    image: {
+      src: '/images/blog-how-to-get-more-website-traffic.webp',
+      alt: 'A business owner reviewing website traffic and analytics charts on a laptop and tablet.',
+    },
   },
   {
     slug: 'how-to-appear-on-google-maps',
@@ -65,6 +73,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-21',
     readingMinutes: 10,
     primaryKeyword: 'how to appear on google maps',
+    image: {
+      src: '/images/blog-how-to-appear-on-google-maps.webp',
+      alt: 'A smiling shop owner in an apron at his storefront, holding a crate of fresh produce.',
+    },
   },
   {
     slug: 'how-to-improve-google-ranking',
@@ -77,6 +89,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-20',
     readingMinutes: 11,
     primaryKeyword: 'how to improve google ranking',
+    image: {
+      src: '/images/blog-how-to-improve-google-ranking.webp',
+      alt: 'A focused entrepreneur working intently at a laptop by an office window.',
+    },
   },
   {
     slug: 'how-to-do-keyword-research',
@@ -89,6 +105,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-19',
     readingMinutes: 10,
     primaryKeyword: 'how to do keyword research',
+    image: {
+      src: '/images/blog-how-to-do-keyword-research.webp',
+      alt: 'A young entrepreneur jotting research notes in a notebook beside a laptop.',
+    },
   },
   {
     slug: 'seo-vs-google-ads',
@@ -101,6 +121,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-18',
     readingMinutes: 10,
     primaryKeyword: 'seo vs google ads',
+    image: {
+      src: '/images/blog-seo-vs-google-ads.webp',
+      alt: 'Two colleagues comparing performance charts and figures across a desk.',
+    },
   },
   {
     slug: 'local-seo-for-small-business',
@@ -113,6 +137,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-17',
     readingMinutes: 10,
     primaryKeyword: 'local seo for small business',
+    image: {
+      src: '/images/blog-local-seo-for-small-business.webp',
+      alt: 'A smiling café owner in an apron standing in her shop.',
+    },
   },
   {
     slug: 'how-long-does-seo-take',
@@ -125,6 +153,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-14',
     readingMinutes: 10,
     primaryKeyword: 'how long does seo take',
+    image: {
+      src: '/images/blog-how-long-does-seo-take.webp',
+      alt: 'A business owner pausing in thought at a laptop, coffee in hand, waiting on results.',
+    },
   },
   {
     slug: 'is-seo-worth-it',
@@ -137,6 +169,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-13',
     readingMinutes: 10,
     primaryKeyword: 'is seo worth it',
+    image: {
+      src: '/images/blog-is-seo-worth-it.webp',
+      alt: 'A business owner counting cash over financial statements and a notebook.',
+    },
   },
   {
     slug: 'how-to-rank-on-chatgpt',
@@ -150,6 +186,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-12',
     readingMinutes: 10,
     primaryKeyword: 'how to rank on chatgpt',
+    image: {
+      src: '/images/blog-how-to-rank-on-chatgpt.webp',
+      alt: 'A professional checking his phone the way customers now ask an AI assistant a question.',
+    },
   },
   {
     slug: 'google-business-profile-optimization',
@@ -162,6 +202,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-11',
     readingMinutes: 10,
     primaryKeyword: 'google business profile optimization',
+    image: {
+      src: '/images/blog-google-business-profile-optimization.webp',
+      alt: 'A shop owner turning the sign to Open at the door of his store.',
+    },
   },
   {
     slug: 'how-to-get-hotel-cited-by-chatgpt',
