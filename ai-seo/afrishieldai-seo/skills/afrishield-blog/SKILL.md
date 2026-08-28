@@ -67,8 +67,16 @@ table (`<figure><table>`) → the FAQ (rendered by `PostShell`).
 
 Components live in `components/blog/PostLayout.tsx` (`PostShell`, `ShortAnswer`,
 `Scene`); JSON-LD helpers in `lib/structured-data.ts`; `PostMeta` in `lib/posts.ts`.
-Posts are **text-only** — there is no per-post hero image field, so no image
-generation is required.
+Every post gets a hero image — see the mandatory **Hero image** subsection under
+step 3 below; `PostMeta.image` in `lib/posts.ts` is not optional.
+
+> **Board note (2026-08-28):** this section previously said posts were text-only
+> with no image field, directly contradicting the Hero image subsection below.
+> That contradiction caused 10 consecutive posts (every post published
+> 2026-08-10 through 2026-08-23) to ship without a hero image, breaking the
+> `image` field in `blogPostingJsonLd` and falling back to the generic OG image
+> for all of them. Backfilling those 10 posts' images is a standing to-do — see
+> `reports/board-review-2026-08-28.md`.
 
 Non-negotiables:
 
@@ -198,10 +206,17 @@ auto-map from `POSTS`** — do not touch them. You only:
 1. `lib/posts.ts` — prepend a `PostMeta` to the `POSTS` array (newest first).
    `metaTitle` ≤ 44 chars (brand suffix keeps the SERP title < 60); `published` =
    today; set `cardTitle`, `description`, `category`, `readingMinutes`,
-   `primaryKeyword`.
+   `primaryKeyword`, and `image` (the hero saved in step 3 — do not leave it unset).
 2. `used-keywords.md` — append a row so the keyword is never targeted twice.
 3. `content-queue.md` — if the keyword came from the queue, move its row to
    `claimed`.
+4. **Backfill the inbound link (board: Koray / topical map, 2026-08-28).** A new
+   post launches as an orphan node until something links to it. Scan the 2–3 most
+   recently published posts (or any post in the same `content-queue.md` cluster)
+   for a natural anchor opportunity and add a real in-body link back to the new
+   post now — do not leave an HTML comment for a "later" pass that never
+   happens; this is that pass. If step 3 above left a placeholder comment on an
+   earlier post for exactly this reason, resolve it here too.
 
 ## 5. Verify — do not skip
 
