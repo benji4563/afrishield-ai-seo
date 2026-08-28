@@ -119,5 +119,33 @@
     "photographerUrl": "https://www.pexels.com/@gustavo-fring",
     "alt": "African American woman smiling at a computer desk in an office setting, holding a black item.",
     "avgColor": "#8F9395"
+  },
+  {
+    "slot": "blog-how-to-get-hotel-cited-by-chatgpt",
+    "file": "images/blog-how-to-get-hotel-cited-by-chatgpt.webp",
+    "source": "AfriShield AI brand library (00 Knowledge/Afrishieldai Pics)",
+    "photographer": "AfriShield AI",
+    "alt": "A luxury safari lodge surfacing inside an AI assistant's answer to the query 'best luxury lodges near Arusha'."
+  },
+  {
+    "slot": "blog-how-to-reduce-ota-commission",
+    "file": "images/blog-how-to-reduce-ota-commission.webp",
+    "source": "AfriShield AI brand library (00 Knowledge/Afrishieldai Pics)",
+    "photographer": "AfriShield AI",
+    "alt": "A Tanzanian safari operator checking a booking calendar on a tablet, Mount Meru framed in the window."
+  },
+  {
+    "slot": "blog-how-to-get-my-business-on-google",
+    "file": "images/blog-how-to-get-my-business-on-google.webp",
+    "source": "AfriShield AI brand library (00 Knowledge/Afrishieldai Pics)",
+    "photographer": "AfriShield AI",
+    "alt": "A phone-repair shop owner holding up his phone showing his Google Business Profile and a Google Maps pin."
+  },
+  {
+    "slot": "blog-what-is-schema-markup",
+    "file": "images/blog-what-is-schema-markup.webp",
+    "source": "AfriShield AI brand library (00 Knowledge/Afrishieldai Pics)",
+    "photographer": "AfriShield AI",
+    "alt": "A nyama choma food-stall owner on her phone — the hours, menu and reviews schema markup turns into machine-readable facts."
   }
 ]

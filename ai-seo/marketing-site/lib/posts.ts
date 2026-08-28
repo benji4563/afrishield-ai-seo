@@ -36,11 +36,15 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'How to get your hotel cited by ChatGPT',
     metaTitle: 'Get your hotel cited by ChatGPT',
     description:
-      'Travelers increasingly ask ChatGPT and Perplexity where to stay. What actually gets a hotel named in the answer: crawler access, answer-first content, structured data, and one consistent identity across the web.',
+      'Travelers now ask ChatGPT, Perplexity and Gemini where to stay — here is how to rank inside those AI answers. What actually gets a hotel named: crawler access, answer-first content, structured data, and one consistent identity across the web.',
     category: 'AI answers',
     published: '2026-08-10',
     readingMinutes: 10,
     primaryKeyword: 'how to get hotel cited by chatgpt',
+    image: {
+      src: '/images/blog-how-to-get-hotel-cited-by-chatgpt.webp',
+      alt: 'A luxury safari lodge surfacing inside an AI assistant’s answer to the query “best luxury lodges near Arusha.”',
+    },
   },
   {
     slug: 'how-to-reduce-ota-commission',
@@ -53,6 +57,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-10',
     readingMinutes: 11,
     primaryKeyword: 'how to reduce ota commission',
+    image: {
+      src: '/images/blog-how-to-reduce-ota-commission.webp',
+      alt: 'A Tanzanian safari operator checking a booking calendar on a tablet, Mount Meru framed in the window behind him.',
+    },
   },
   {
     slug: 'what-is-schema-markup',
@@ -66,19 +74,27 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-10',
     readingMinutes: 9,
     primaryKeyword: 'what is schema markup',
+    image: {
+      src: '/images/blog-what-is-schema-markup.webp',
+      alt: 'A nyama choma food-stall owner on her phone — the hours, menu and reviews that schema markup turns into facts a machine can read.',
+    },
   },
   {
     slug: 'how-to-get-my-business-on-google',
     title:
       'How to get your business on Google: search, Maps, and being the answer an AI names',
     cardTitle: 'How to get your business on Google',
-    metaTitle: 'Get your business on Google, step by step',
+    metaTitle: 'Get on Google & rank higher, step by step',
     description:
-      'The three separate ways a business shows up on Google — Maps, organic search, and AI answers — and the concrete, mostly-free steps for each, cheapest first.',
+      'The three ways a business shows up on Google — Maps, organic search, and AI answers — plus the mostly-free steps to rank higher and reach the top of the Google Maps pack.',
     category: 'Local visibility',
     published: '2026-08-10',
     readingMinutes: 10,
     primaryKeyword: 'how to get my business on google',
+    image: {
+      src: '/images/blog-how-to-get-my-business-on-google.webp',
+      alt: 'A phone-repair shop owner holding up his phone showing his Google Business Profile and a Google Maps pin.',
+    },
   },
   {
     slug: 'small-business-seo',

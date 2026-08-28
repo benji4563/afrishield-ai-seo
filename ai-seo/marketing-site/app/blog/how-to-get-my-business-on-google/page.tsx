@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
+import { EditorialImage } from '@/components/ui/EditorialImage';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { blogPostingJsonLd, breadcrumbJsonLd, faqPageJsonLd, howToJsonLd } from '@/lib/structured-data';
-import { getPost } from '@/lib/posts';
+import { getPost, postOgImages } from '@/lib/posts';
 import { SITE_URL } from '@/lib/site';
 
 const post = getPost('how-to-get-my-business-on-google')!;
@@ -17,8 +18,14 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/blog/${post.slug}`,
     type: 'article',
     publishedTime: post.published,
+    images: postOgImages(post),
   },
-  twitter: { card: 'summary_large_image', title: post.title, description: post.description },
+  twitter: {
+    card: 'summary_large_image',
+    title: post.title,
+    description: post.description,
+    images: postOgImages(post),
+  },
 };
 
 const TOC = [
@@ -105,6 +112,13 @@ export default function Post() {
           verification; the website side takes longer, because indexing and trust build over
           weeks, not a single afternoon.
         </ShortAnswer>
+
+        <EditorialImage
+          src={post.image!.src}
+          alt={post.image!.alt}
+          priority
+          className="my-10"
+        />
 
         <Scene>
           <p>
