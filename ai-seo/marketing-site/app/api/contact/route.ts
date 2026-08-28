@@ -99,7 +99,8 @@ export async function POST(request: Request) {
 
     if (!response.ok) {
       // The lead is still captured in logs — never lose it to a CRM outage.
-      console.error('[contact] HubSpot rejected the lead:', response.status, lead.email);
+      const errorBody = await response.json().catch(() => null);
+      console.error('[contact] HubSpot rejected the lead:', response.status, lead.email, errorBody);
       return NextResponse.json({ ok: true, forwarded: false });
     }
 

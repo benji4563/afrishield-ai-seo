@@ -26,6 +26,17 @@ reconcile.
 | generative engine optimization services | B — service education (AEO/GEO) | `/geo-services` | 2026-08-10 | Live |
 | how to reduce ota commission | D — problem-aware (tourism) | `/blog/how-to-reduce-ota-commission` | 2026-08-10 | Live |
 | how to get hotel cited by chatgpt | B — service education (AEO/GEO) | `/blog/how-to-get-hotel-cited-by-chatgpt` | 2026-08-10 | Live |
+| google business profile optimization | E — local / GBP | `/blog/google-business-profile-optimization` | 2026-08-11 | Live |
+| how to rank on chatgpt | B — AI answers (AEO/GEO) | `/blog/how-to-rank-on-chatgpt` | 2026-08-12 | Live |
+| is seo worth it | D — cost / ROI anxiety | `/blog/is-seo-worth-it` | 2026-08-13 | Live |
+| how long does seo take | D — expectations | `/blog/how-long-does-seo-take` | 2026-08-14 | Live |
+| local seo for small business | E — local / commercial | `/blog/local-seo-for-small-business` | 2026-08-17 | Live |
+| seo vs google ads | B — comparison | `/blog/seo-vs-google-ads` | 2026-08-18 | Live |
+| how to do keyword research | H — general how-to | `/blog/how-to-do-keyword-research` | 2026-08-19 | Live |
+| how to improve google ranking | H — general how-to | `/blog/how-to-improve-google-ranking` | 2026-08-20 | Live |
+| how to appear on google maps | E — local visibility | `/blog/how-to-appear-on-google-maps` | 2026-08-21 | Live |
+| how to get more website traffic | H — general how-to | `/blog/how-to-get-more-website-traffic` | 2026-08-22 | Live |
+| content marketing for small business | F — content strategy | `/blog/content-marketing-for-small-business` | 2026-08-23 | Live |
 
 ## Deliberately not targeted
 

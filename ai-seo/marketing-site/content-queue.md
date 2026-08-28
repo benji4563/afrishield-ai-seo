@@ -45,24 +45,95 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 1 | small business seo | G — SMB / differentiation | vetted · SV~40 · commercial · LOW comp | claimed |
 | 2 | how to get my business on google | E — local visibility | vetted · SV~30 · informational · rising | claimed |
 | 3 | what is schema markup | B — technical education | vetted · SV~20 · informational · LOW comp | claimed |
-| 4 | google business profile optimization | E — local / GBP | vetted · SV~10–20 · commercial · rising · high CPC | queued |
-| 5 | how to rank on chatgpt | B — AI answers (AEO/GEO) | vetted · SV~10 · informational · zero comp | queued |
-| 6 | is seo worth it | D — cost / ROI anxiety | vetted · SV~10 · informational · LOW comp | queued |
-| 7 | how long does seo take | D — expectations | vetted · SV~10 · informational · LOW comp | queued |
-| 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | queued |
+| 4 | google business profile optimization | E — local / GBP | vetted · SV~10–20 · commercial · rising · high CPC | claimed |
+| 5 | how to rank on chatgpt | B — AI answers (AEO/GEO) | vetted · SV~10 · informational · zero comp | claimed |
+| 6 | is seo worth it | D — cost / ROI anxiety | vetted · SV~10 · informational · LOW comp | claimed |
+| 7 | how long does seo take | D — expectations | vetted · SV~10 · informational · LOW comp | claimed |
+| 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | claimed |
 | 9 | what is local seo | E — local / education | vetted · SV~10 · informational | queued |
-| 10 | seo vs google ads | B — comparison | vetted · SV~10 · commercial · LOW comp | queued |
-| 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | queued |
-| 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | queued |
-| 13 | how to appear on google maps | E — local visibility | vetted · SV~10 · informational | queued |
-| 14 | how to get more website traffic | H — general how-to | vetted · SV~10 · informational | queued |
-| 15 | content marketing for small business | F — content strategy | vetted · SV~10 · commercial · declining | queued |
+| 10 | seo vs google ads | B — comparison | vetted · SV~10 · commercial · LOW comp | claimed |
+| 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | claimed |
+| 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | claimed |
+| 13 | how to appear on google maps | E — local visibility | vetted · SV~10 · informational | claimed |
+| 14 | how to get more website traffic | H — general how-to | vetted · SV~10 · informational | claimed |
+| 15 | content marketing for small business | F — content strategy | vetted · SV~10 · commercial · declining | claimed |
 | 16 | get safari company recommended by ai | B — AI answers (GEO × safari) | candidate — no DataForSEO pass yet (see `keyword-map.md`) | candidate |
 | 17 | increase direct hotel bookings | D — problem-aware (tourism) | candidate — no DataForSEO pass yet | candidate |
 | 18 | booking.com commission alternative | D — problem-aware (tourism) | candidate — no DataForSEO pass yet | candidate |
 | 19 | direct booking strategy for lodges | D — problem-aware (tourism) | candidate — no DataForSEO pass yet | candidate |
 | 20 | google business profile for hotels | E — local / GBP × hotels | candidate — no DataForSEO pass yet | candidate |
 | 21 | google maps ranking for safari companies | E — local / GBP × safari | candidate — no DataForSEO pass yet | candidate |
+
+> **Skip note (auto-poster, 2026-08-18):** row 9 (`what is local seo`) was passed
+> over this run under the differentiation-angle check — `local-seo-for-small-business`
+> (published 2026-08-17) already opens with an H2 titled "What local SEO actually is"
+> that answers the same definitional question. Row 9 stays `queued`; a future run
+> should either narrow it to a distinct angle (e.g. a short glossary-style page that
+> links out to the checklist post) or the queue-keeper should retire it. Row 10
+> (`seo vs google ads`) was taken instead — confirmed clean, no existing post compares
+> SEO to paid search.
+>
+> **Skip note (auto-poster, 2026-08-19):** row 9 was re-checked this run and the
+> same duplication still holds — nothing has narrowed its angle or retired it since
+> 2026-08-18. Skipped again; row 11 (`how to do keyword research`) was taken instead
+> — confirmed clean against every live post in `lib/posts.ts`. **Queue-keeper: row 9
+> needs a decision** (narrow the angle or retire the row) before it costs another
+> skipped run.
+>
+> **Skip note (auto-poster, 2026-08-20):** row 9 checked a third time — still the
+> same unresolved duplication against `local-seo-for-small-business`, no narrowing
+> or retirement since the last two runs. Skipped again; row 12
+> (`how to improve google ranking`) was taken instead — confirmed clean against
+> every live post, and it doubles as a natural hub linking out to the keyword
+> research, schema markup, GBP, local SEO, and timeline posts. **Queue-keeper: row 9
+> has now cost three skipped runs — please narrow the angle or retire it.**
+>
+> **Skip note (auto-poster, 2026-08-21):** row 9 checked a fourth time — still the
+> same unresolved duplication against `local-seo-for-small-business`, no narrowing
+> or retirement since the first flag on 2026-08-18. Skipped again; row 13
+> (`how to appear on google maps`) was taken instead, written as a ranking-factor
+> deep dive (relevance/distance/prominence, category and service-area choices,
+> what sabotages a listing) — a distinct angle from the existing GBP post
+> (post-setup maintenance work) and the "get your business on Google" overview
+> (Maps as one of three channels, covered briefly). **Queue-keeper: row 9 has now
+> cost four skipped runs — please narrow the angle or retire it.** Also note: after
+> this run only two general-cluster `queued` rows remain (14, 15) and no
+> tourism-cluster rows have cleared `candidate` status yet, so the 60/40 tourism
+> ratio cannot be met from the current pool — the queue needs a DataForSEO pass on
+> rows 16–21 before the next run or two, or the general pool runs dry.
+>
+> **Skip note (auto-poster, 2026-08-22):** row 9 checked a fifth time — still the
+> same unresolved duplication against `local-seo-for-small-business`'s opening H2
+> ("What local SEO actually is"), no narrowing or retirement since the first flag on
+> 2026-08-18. Skipped again; row 14 (`how to get more website traffic`) was taken
+> instead — confirmed clean against every live post, written as a five-channel
+> traffic breakdown (organic, AI answers, referral, local/Maps, email/direct) that
+> is distinct from the ranking-checklist and keyword-research posts already live.
+> Hero image: both sources unusable this run — no `PEXELS_API_KEY` configured in
+> this environment, and the Higgsfield-generated image could not be downloaded for
+> the mandatory artifact check because the sandbox's network egress policy blocks
+> the CloudFront asset host (403 policy denial, not a content problem) — published
+> text-only per the skill's fallback rule. **Queue-keeper: row 9 has now cost five
+> skipped runs — please narrow the angle or retire it. Also: after this run only
+> row 15 remains `queued` in the general pool — the queue will run dry within one
+> or two more runs without a DataForSEO pass on rows 16–21 (tourism candidates) or
+> fresh general-cluster keywords.**
+>
+> **Skip note (auto-poster, 2026-08-23):** row 9 checked a sixth time — still the
+> same unresolved duplication against `local-seo-for-small-business`'s opening H2
+> ("What local SEO actually is"), no narrowing or retirement since the first flag on
+> 2026-08-18. Skipped again; row 15 (`content marketing for small business`) was
+> taken instead — confirmed clean against every live post, no cluster-F sibling
+> exists yet so it stands as the first, with contextual links out to the keyword
+> research, GBP, SEO-vs-ads, and SEO-timeline posts. **After this run the general
+> pool is empty (rows 1–15 are all `claimed` except row 9) — the next run needs
+> either a resolution on row 9 or a fresh DataForSEO pass on rows 16–21 (tourism
+> candidates) or new general-cluster keywords, or it will report "queue empty."**
+> Hero image: both sources unusable again this run — no `PEXELS_API_KEY`
+> configured, and the Higgsfield-generated image could not be downloaded for the
+> mandatory artifact check because the sandbox's network egress policy still
+> blocks the CloudFront asset host (403 policy denial, same as 2026-08-22, not a
+> content problem) — published text-only per the skill's fallback rule.
 
 ## Watchlist — no DataForSEO volume yet (do NOT queue until confirmed)
 
@@ -83,3 +154,13 @@ periodically; promote to the table above once they show real volume.
 | how to get hotel cited by chatgpt | `/blog/how-to-get-hotel-cited-by-chatgpt` | 2026-08-10 |
 | how to get my business on google | `/blog/how-to-get-my-business-on-google` | 2026-08-10 |
 | what is schema markup | `/blog/what-is-schema-markup` | 2026-08-10 |
+| google business profile optimization | `/blog/google-business-profile-optimization` | 2026-08-11 |
+| how to rank on chatgpt | `/blog/how-to-rank-on-chatgpt` | 2026-08-12 |
+| is seo worth it | `/blog/is-seo-worth-it` | 2026-08-13 |
+| how long does seo take | `/blog/how-long-does-seo-take` | 2026-08-14 |
+| local seo for small business | `/blog/local-seo-for-small-business` | 2026-08-17 |
+| seo vs google ads | `/blog/seo-vs-google-ads` | 2026-08-18 |
+| how to do keyword research | `/blog/how-to-do-keyword-research` | 2026-08-19 |
+| how to improve google ranking | `/blog/how-to-improve-google-ranking` | 2026-08-20 |
+| how to appear on google maps | `/blog/how-to-appear-on-google-maps` | 2026-08-21 |
+| how to get more website traffic | `/blog/how-to-get-more-website-traffic` | 2026-08-22 |

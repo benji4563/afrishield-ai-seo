@@ -208,7 +208,12 @@ export default function Post() {
           </table>
         </figure>
 
-        {/* Cluster sibling: how to appear on google maps (queued) — link here on publish */}
+        <p>
+          For the ranking mechanics behind that Maps pin — why one business sits in the top
+          three and another does not —{' '}
+          <a href="/blog/how-to-appear-on-google-maps">the deeper walkthrough on appearing on
+          Google Maps</a> covers relevance, distance, and prominence in full.
+        </p>
 
         <p>
           The practical read is that a business without a website can still be found on Maps,
@@ -247,7 +252,14 @@ export default function Post() {
           </li>
         </ul>
 
-        {/* Cluster sibling: google business profile optimization (queued) — link here on publish */}
+        <p>
+          A profile does not stay finished after this. The ongoing habits that keep it winning —
+          category upkeep, photo and Posts cadence, and answering every review — are covered in{' '}
+          <a href="/blog/google-business-profile-optimization">
+            Google Business Profile optimization
+          </a>
+          .
+        </p>
 
         <h2 id="verification">Verifying the profile is really yours</h2>
 
