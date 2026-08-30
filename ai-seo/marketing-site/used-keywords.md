@@ -37,6 +37,8 @@ reconcile.
 | how to appear on google maps | E — local visibility | `/blog/how-to-appear-on-google-maps` | 2026-08-21 | Live |
 | how to get more website traffic | H — general how-to | `/blog/how-to-get-more-website-traffic` | 2026-08-22 | Live |
 | content marketing for small business | F — content strategy | `/blog/content-marketing-for-small-business` | 2026-08-23 | Live |
+| enterprise generative engine optimization africa | B — service education (AEO/GEO) | `/blog/enterprise-geo-launch-africa` | 2026-08-30 | Live |
+| generative engine optimization agencies africa | A — hire a provider (GEO) | `/blog/top-geo-ai-seo-agencies-africa-2026` | 2026-08-30 | Live |
 
 ## Deliberately not targeted
 

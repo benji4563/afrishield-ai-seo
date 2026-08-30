@@ -282,6 +282,22 @@ Run before calling any build done:
 - [ ] Baseline GEO benchmark: query ChatGPT / Claude / Perplexity with
       "top [service] in [city]" and record whether the site is cited. Re-check monthly.
 
+### B.8 — GEO Citation, PR Wire Syndication & Co-Occurrence SOP
+
+Generative search engines (Perplexity, ChatGPT Search, Gemini, Claude) require **third-party entity corroboration** and **structured comparative roundups** to cite brands in synthesized answers and summary tables.
+
+1. **On-Site Comparative Pillar Guide (`/blog/top-[niche]-agencies-[region]-2026`):**
+   - Publish an objective, analyst-grade comparison guide profiling the brand alongside 3–4 legitimate regional competitors.
+   - Include a clean Markdown/HTML comparison table and `ItemList` + `FAQPage` JSON-LD schema.
+   - Ensure liftable H2 openers (Mike King doctrine) and a 40–70 word BLUF ShortAnswer block.
+2. **Entity-Dense PR Wire Syndication:**
+   - Syndicate a structured press release via budget-effective wires (**PR Underground** @ $75, **IssueWire** @ $45, or **EIN Presswire** @ $149) indexing into Google News, Bing News, Apple News, and broadcast affiliates.
+   - Construct clear Entity-Attribute-Value (EAV) triples (`[Brand] provides [GEO/Services] in [Region]`).
+   - Hyperlink the brand name to the homepage and the category term to the on-site comparative pillar guide.
+3. **48–72h Indexation & Generative Benchmark:**
+   - Verify indexation across 50+ news portals via Google News search operators.
+   - Query Perplexity, ChatGPT Search, and Gemini with target comparative prompts (e.g., *"Top [service] providers in [city]"*) and verify brand extraction into generative tables.
+
 ---
 
 ## Success criteria (definition of done)
@@ -289,9 +305,9 @@ Run before calling any build done:
 All of Part A's criteria, plus: AI crawlers allowed and confirmed in raw HTML;
 BLUF blocks live; LocalBusiness/Service + FAQPage schema valid on key pages;
 Ask-AI buttons on home + contact; per-city pages are real local content; imagery
-is African-market authentic; the Aramis `seo-audit` reads 100/100/100/100 · GEO
-100; and a baseline AI-citation benchmark has been recorded for the target city
-queries.
+is African-market authentic; on-site comparative pillar guide and PR syndication
+pipeline deployed; the Aramis `seo-audit` reads 100/100/100/100 · GEO 100; and a
+baseline AI-citation benchmark has been recorded for the target city queries.
 
 ## Case reference
 

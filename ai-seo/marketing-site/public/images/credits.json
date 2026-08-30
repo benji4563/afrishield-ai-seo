@@ -291,5 +291,27 @@
     "photographerUrl": "https://www.pexels.com/@rdne",
     "alt": "Professional black woman smiling at desk using laptop and smartphone in office.",
     "avgColor": "#ACA59D"
+  },
+  {
+    "slot": "blog-enterprise-geo-launch-africa",
+    "file": "images/blog-enterprise-geo-launch-africa.jpg",
+    "query": "african tech startup team office",
+    "pexelsId": 33176070,
+    "pexelsUrl": "https://www.pexels.com/photo/focused-young-professional-in-modern-office-33176070/",
+    "photographer": "Isaiah Galadima",
+    "photographerUrl": "https://www.pexels.com/@isaiah-galadima-2154285729",
+    "alt": "Young professional working intently on a laptop in a modern office setting. Ideal for business themes.",
+    "avgColor": "#777B84"
+  },
+  {
+    "slot": "blog-top-geo-ai-seo-agencies-africa-2026",
+    "file": "images/blog-top-geo-ai-seo-agencies-africa-2026.jpg",
+    "query": "african business analysts meeting laptop",
+    "pexelsId": 36766689,
+    "pexelsUrl": "https://www.pexels.com/photo/two-businessmen-collaborating-on-a-laptop-36766689/",
+    "photographer": "Vitaly Gariev",
+    "photographerUrl": "https://www.pexels.com/@silverkblack",
+    "alt": "Two businessmen concentrating on a tablet, collaborating in a modern office setting.",
+    "avgColor": "#606964"
   }
 ]
