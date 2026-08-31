@@ -12,7 +12,7 @@
   },
   "//overrides": "next 16.2.11 pins vulnerable postcss/sharp transitively; npm's suggested 'fix' is a downgrade to next@9. These force the patched versions instead. Re-check on each Next upgrade and drop when upstream catches up.",
   "overrides": {
-    "postcss": "^8.5.12",
+    "postcss": "^8.5.23",
     "sharp": "^0.35.0"
   },
   "dependencies": {
@@ -30,7 +30,7 @@
     "autoprefixer": "^10.4.19",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.3.0",
-    "postcss": "^8.5.12",
+    "postcss": "^8.5.23",
     "tailwindcss": "^3.4.7",
     "typescript": "^5.5.4"
   }
