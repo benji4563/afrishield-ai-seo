@@ -31,6 +31,60 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'top-geo-ai-seo-agencies-africa-2026',
+    title:
+      'The 2026 guide to Generative Engine Optimization (GEO) and AI search agencies in Africa',
+    cardTitle: 'Top GEO & AI search agencies in Africa (2026)',
+    metaTitle: 'Top GEO Agencies in Africa (2026)',
+    description:
+      'An objective comparison of the leading Generative Engine Optimization (GEO) and AI search visibility agencies serving African enterprises in 2026 — the evaluation framework, a provider matrix, and when GEO beats local SEO.',
+    category: 'Comparison',
+    published: '2026-08-30',
+    modified: '2026-08-30',
+    readingMinutes: 9,
+    primaryKeyword: 'generative engine optimization agencies africa',
+    image: {
+      src: '/images/blog-top-geo-ai-seo-agencies-africa-2026.jpg',
+      alt: 'Two African business professionals comparing options on a laptop across a table in a meeting.',
+    },
+  },
+  {
+    slug: 'enterprise-geo-launch-africa',
+    title:
+      'AfriShield AI launches enterprise Generative Engine Optimization across Africa',
+    cardTitle: 'AfriShield AI launches enterprise GEO in Africa',
+    metaTitle: 'Enterprise GEO Launches in Africa',
+    description:
+      'AfriShield AI is launching an enterprise Generative Engine Optimization (GEO) and Answer Engine Optimization service across Central, East, and West Africa — getting brands named inside AI answers, the honest way.',
+    category: 'Announcements',
+    published: '2026-08-30',
+    modified: '2026-08-30',
+    readingMinutes: 7,
+    primaryKeyword: 'enterprise generative engine optimization africa',
+    image: {
+      src: '/images/blog-enterprise-geo-launch-africa.jpg',
+      alt: 'A focused African technology professional working at a computer in an open-plan office.',
+    },
+  },
+  {
+    slug: 'ai-search-visibility-study',
+    title:
+      'Who does AI recommend when someone searches for an African business? A 5-city study',
+    cardTitle: 'Who AI recommends in African cities (a study)',
+    metaTitle: 'Who AI names when Africa searches',
+    description:
+      'We ran real searches across Nairobi, Lagos, Accra, Johannesburg and Arusha. In travel, a business’s own website was just 23% of page one; in professional services, 68%. Google served an AI answer on every single query.',
+    category: 'Original research',
+    published: '2026-08-28',
+    modified: '2026-08-28',
+    readingMinutes: 8,
+    primaryKeyword: 'ai search visibility for african businesses',
+    image: {
+      src: '/images/blog-ai-search-visibility-study.webp',
+      alt: 'An African business owner smiling at a laptop while checking search results in an office.',
+    },
+  },
+  {
     slug: 'content-marketing-for-small-business',
     title: 'Content marketing for small business: what actually earns attention (and what wastes it)',
     cardTitle: 'Content marketing for small business, honestly',
@@ -41,6 +95,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-23',
     readingMinutes: 10,
     primaryKeyword: 'content marketing for small business',
+    image: {
+      src: '/images/blog-content-marketing-for-small-business.webp',
+      alt: 'A small-business owner writing content on a laptop, a notebook and coffee beside them.',
+    },
   },
   {
     slug: 'how-to-get-more-website-traffic',
@@ -53,6 +111,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-22',
     readingMinutes: 10,
     primaryKeyword: 'how to get more website traffic',
+    image: {
+      src: '/images/blog-how-to-get-more-website-traffic.webp',
+      alt: 'A business owner reviewing website traffic and analytics charts on a laptop and tablet.',
+    },
   },
   {
     slug: 'how-to-appear-on-google-maps',
@@ -65,6 +127,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-21',
     readingMinutes: 10,
     primaryKeyword: 'how to appear on google maps',
+    image: {
+      src: '/images/blog-how-to-appear-on-google-maps.webp',
+      alt: 'A smiling shop owner in an apron at his storefront, holding a crate of fresh produce.',
+    },
   },
   {
     slug: 'how-to-improve-google-ranking',
@@ -77,6 +143,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-20',
     readingMinutes: 11,
     primaryKeyword: 'how to improve google ranking',
+    image: {
+      src: '/images/blog-how-to-improve-google-ranking.webp',
+      alt: 'A focused entrepreneur working intently at a laptop by an office window.',
+    },
   },
   {
     slug: 'how-to-do-keyword-research',
@@ -89,6 +159,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-19',
     readingMinutes: 10,
     primaryKeyword: 'how to do keyword research',
+    image: {
+      src: '/images/blog-how-to-do-keyword-research.webp',
+      alt: 'A young entrepreneur jotting research notes in a notebook beside a laptop.',
+    },
   },
   {
     slug: 'seo-vs-google-ads',
@@ -101,6 +175,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-18',
     readingMinutes: 10,
     primaryKeyword: 'seo vs google ads',
+    image: {
+      src: '/images/blog-seo-vs-google-ads.webp',
+      alt: 'Two colleagues comparing performance charts and figures across a desk.',
+    },
   },
   {
     slug: 'local-seo-for-small-business',
@@ -113,6 +191,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-17',
     readingMinutes: 10,
     primaryKeyword: 'local seo for small business',
+    image: {
+      src: '/images/blog-local-seo-for-small-business.webp',
+      alt: 'A smiling café owner in an apron standing in her shop.',
+    },
   },
   {
     slug: 'how-long-does-seo-take',
@@ -125,6 +207,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-14',
     readingMinutes: 10,
     primaryKeyword: 'how long does seo take',
+    image: {
+      src: '/images/blog-how-long-does-seo-take.webp',
+      alt: 'A business owner pausing in thought at a laptop, coffee in hand, waiting on results.',
+    },
   },
   {
     slug: 'is-seo-worth-it',
@@ -137,6 +223,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-13',
     readingMinutes: 10,
     primaryKeyword: 'is seo worth it',
+    image: {
+      src: '/images/blog-is-seo-worth-it.webp',
+      alt: 'A business owner counting cash over financial statements and a notebook.',
+    },
   },
   {
     slug: 'how-to-rank-on-chatgpt',
@@ -150,6 +240,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-12',
     readingMinutes: 10,
     primaryKeyword: 'how to rank on chatgpt',
+    image: {
+      src: '/images/blog-how-to-rank-on-chatgpt.webp',
+      alt: 'A professional checking his phone the way customers now ask an AI assistant a question.',
+    },
   },
   {
     slug: 'google-business-profile-optimization',
@@ -162,6 +256,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-11',
     readingMinutes: 10,
     primaryKeyword: 'google business profile optimization',
+    image: {
+      src: '/images/blog-google-business-profile-optimization.webp',
+      alt: 'A shop owner turning the sign to Open at the door of his store.',
+    },
   },
   {
     slug: 'how-to-get-hotel-cited-by-chatgpt',
@@ -169,11 +267,15 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'How to get your hotel cited by ChatGPT',
     metaTitle: 'Get your hotel cited by ChatGPT',
     description:
-      'Travelers increasingly ask ChatGPT and Perplexity where to stay. What actually gets a hotel named in the answer: crawler access, answer-first content, structured data, and one consistent identity across the web.',
+      'Travelers now ask ChatGPT, Perplexity and Gemini where to stay — here is how to rank inside those AI answers. What actually gets a hotel named: crawler access, answer-first content, structured data, and one consistent identity across the web.',
     category: 'AI answers',
     published: '2026-08-10',
     readingMinutes: 10,
     primaryKeyword: 'how to get hotel cited by chatgpt',
+    image: {
+      src: '/images/blog-how-to-get-hotel-cited-by-chatgpt.webp',
+      alt: 'A luxury safari lodge surfacing inside an AI assistant’s answer to the query “best luxury lodges near Arusha.”',
+    },
   },
   {
     slug: 'how-to-reduce-ota-commission',
@@ -186,6 +288,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-10',
     readingMinutes: 11,
     primaryKeyword: 'how to reduce ota commission',
+    image: {
+      src: '/images/blog-how-to-reduce-ota-commission.webp',
+      alt: 'A Tanzanian safari operator checking a booking calendar on a tablet, Mount Meru framed in the window behind him.',
+    },
   },
   {
     slug: 'what-is-schema-markup',
@@ -199,6 +305,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-10',
     readingMinutes: 9,
     primaryKeyword: 'what is schema markup',
+    image: {
+      src: '/images/blog-what-is-schema-markup.webp',
+      alt: 'A nyama choma food-stall owner on her phone — the hours, menu and reviews that schema markup turns into facts a machine can read.',
+    },
   },
   {
     slug: 'how-to-get-my-business-on-google',
@@ -212,6 +322,10 @@ export const POSTS: PostMeta[] = [
     published: '2026-08-10',
     readingMinutes: 10,
     primaryKeyword: 'how to get my business on google',
+    image: {
+      src: '/images/blog-how-to-get-my-business-on-google.webp',
+      alt: 'A phone-repair shop owner holding up his phone showing his Google Business Profile and a Google Maps pin.',
+    },
   },
   {
     slug: 'small-business-seo',
