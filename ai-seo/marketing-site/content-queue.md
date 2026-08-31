@@ -63,6 +63,30 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 19 | direct booking strategy for lodges | D — problem-aware (tourism) | candidate — no DataForSEO pass yet | candidate |
 | 20 | google business profile for hotels | E — local / GBP × hotels | candidate — no DataForSEO pass yet | candidate |
 | 21 | google maps ranking for safari companies | E — local / GBP × safari | candidate — no DataForSEO pass yet | candidate |
+| 22 | how to show up in google ai overviews | B — AI answers (AEO/GEO) | candidate - verify volume (DataForSEO) | queued |
+| 23 | why is my competitor ranking above me on google | D — problem-aware | candidate - verify volume (DataForSEO) | queued |
+| 24 | should i hire an seo agency or do it myself | D — cost / decision anxiety | candidate - verify volume (DataForSEO) | queued |
+| 25 | how to get more google reviews for my business | E — local / GBP | candidate - verify volume (DataForSEO) | queued |
+| 26 | how to check if ai chatbots recommend your business | B — AI answers (GEO diagnostic) | candidate - verify volume (DataForSEO) | queued |
+| 27 | how many backlinks does a small business need | H — general how-to | candidate - verify volume (DataForSEO) | queued |
+| 28 | how to get more phone calls from google search | E — local / commercial | candidate - verify volume (DataForSEO) | queued |
+| 29 | how to write meta descriptions that get clicks | H — general how-to / on-page | candidate - verify volume (DataForSEO) | queued |
+| 30 | how to rank on google in multiple african countries | G — SMB / differentiation (Africa) | candidate - verify volume (DataForSEO) | queued |
+| 31 | how to show up in perplexity ai search | B — AI answers (AEO/GEO) | candidate - verify volume (DataForSEO) | queued |
+
+> **Queue top-up (queue-keeper, 2026-08-30):** audited the queue — only row 9
+> (`what is local seo`) remained `queued` (1 row, below the 6-row floor). Added
+> rows 22–31 as candidates for the general AI-SEO/GEO/AEO/local-SEO vertical,
+> checked against every live post in `lib/posts.ts` and against
+> `used-keywords.md` for duplicates. **Note for the human review pass:** rows
+> 22–31 use `Status = queued` per this run's instructions, which differs from
+> the existing convention for rows 16–21 (`Vetting = candidate` paired with
+> `Status = candidate`, kept out of the poster's pick pool until vetted). As
+> written, the auto-poster's "take the first `queued` row" rule means it could
+> pick one of rows 22–31 before a DataForSEO pass runs. Recommend either running
+> the DataForSEO pass promptly, or flipping rows 22–31's `Status` to `candidate`
+> until vetted, to match the file's own stated rule ("candidate... leave out of
+> the active list until checked").
 
 > **Skip note (auto-poster, 2026-08-18):** row 9 (`what is local seo`) was passed
 > over this run under the differentiation-angle check — `local-seo-for-small-business`
