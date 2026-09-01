@@ -50,7 +50,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 6 | is seo worth it | D — cost / ROI anxiety | vetted · SV~10 · informational · LOW comp | claimed |
 | 7 | how long does seo take | D — expectations | vetted · SV~10 · informational · LOW comp | claimed |
 | 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | claimed |
-| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | queued |
+| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | retired |
 | 10 | seo vs google ads | B — comparison | vetted · SV~10 · commercial · LOW comp | claimed |
 | 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | claimed |
 | 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | claimed |
@@ -134,6 +134,25 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 > mandatory artifact check because the sandbox's network egress policy still
 > blocks the CloudFront asset host (403 policy denial, same as 2026-08-22, not a
 > content problem) — published text-only per the skill's fallback rule.
+>
+> **Board decision (2026-09-01): row 9 retired.** Checked a seventh time (sixth
+> skip was 2026-08-23) — still the same unresolved duplication against
+> `local-seo-for-small-business`'s opening H2 ("What local SEO actually is"),
+> now confirmed directly by the board (GEO lens) rather than just flagged by the
+> poster. Cluster E (local visibility) already has four live posts (`how-to-get-
+> my-business-on-google`, `google-business-profile-optimization`, `how-to-
+> appear-on-google-maps`, `local-seo-for-small-business`) — a fifth definitional
+> post adds little marginal topical value even with a narrowed angle, and seven
+> skipped runs is a real automation cost (Dan Martell/business lens: a decision
+> this repetitive and rule-based should not still be open two weeks on). Retired
+> rather than narrowed. **Queue-keeper: the general-cluster pool is now fully
+> exhausted (rows 1–15 all claimed or retired) — the pipeline is stalled until
+> either a DataForSEO pass promotes rows 16–21 (tourism candidates) or fresh
+> general-cluster keywords are added.** Note: three posts published since
+> 2026-08-23 (`ai-search-visibility-study`, `enterprise-geo-launch-africa`,
+> `top-geo-ai-seo-agencies-africa-2026`) came from a separate interactive/GEO-
+> citation track (B.8 SOP), not this queue — the scheduled auto-poster itself
+> has likely been reporting "queue empty" since row 15 was claimed.
 
 ## Watchlist — no DataForSEO volume yet (do NOT queue until confirmed)
 

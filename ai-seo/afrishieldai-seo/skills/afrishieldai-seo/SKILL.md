@@ -142,7 +142,7 @@ Inject validated JSON-LD in the server HTML of every key page. Helpers live in
 | Root layout (all pages) | `Organization` |
 | Home | `ProfessionalService` + `hasOfferCatalog` + `FAQPage` |
 | Solutions | `Service` (with per-pillar sub-services via `hasOfferCatalog`/`makesOffer`, entities sourced from the same data used to render the page — not one flat prose `description`) + `FAQPage` |
-| Pricing | `FAQPage` (+ Offers with price/currency) |
+| Pricing | `FAQPage` (+ Offers with price/currency, emitted **on the Pricing page itself**, not only inherited from Home's `ProfessionalService.hasOfferCatalog`) |
 | Location pages | `LocalBusiness` (areaServed City→Country) + `FAQPage` + `BreadcrumbList` |
 | Blog post | `BlogPosting` + `FAQPage` + `BreadcrumbList` |
 | About | `AboutPage` + `Person` (founder) |
@@ -164,9 +164,23 @@ page built on `PageHero` must have a clickable CTA (button or prompt link) reach
 within the first two sections after the hero — not deferred to the closing CTA block
 alone — plus at least one additional mid-scroll CTA checkpoint if the page runs 3+
 content sections before that closing block. Reference implementation: the homepage
-`Hero` component's "Book a call" + secondary CTA pattern. `PageHero` is a candidate
-for an optional `ctaHref`/`ctaLabel` prop so this becomes structural rather than
-something each page author has to remember.
+`Hero` component's "Book a call" + secondary CTA pattern. **`PageHero` still renders
+no CTA at all (`components/ui/PageHero.tsx` takes only `eyebrow`/`title`/`blurb`) —
+this was flagged as a candidate fix on 2026-08-04 and confirmed unimplemented again
+on 2026-09-01 (`/pricing` review); every one of the ~10 pages built on `PageHero`
+ships a dead hero.** This is no longer a suggestion: the doer must add optional
+`ctaLabel`/`ctaHref` props to `PageHero` and wire them into pricing, solutions,
+how-it-works, and the vertical landing pages before the next board rotation reaches
+them, and B.7 now gates on it (see below).
+
+**Real proof point on every high-intent page (board: Wes McDowell, 2026-09-01).**
+Pricing and Solutions currently carry zero trust/social-proof signal beyond copy
+tone — no link to `/case-studies`, no reusable proof component exists in
+`components/`. Given the site's own anti-fabrication rule (`app/case-studies/
+page.tsx` explicitly bans invented metrics/testimonials), the fix must be an
+*honest* proof surface: at minimum, an in-body link from Pricing/Solutions/
+How-it-Works to `/case-studies`, or a small proof strip citing concrete, true build
+facts (e.g. "schema on every route"). Never a fake logo or invented quote.
 
 `LocalBusiness` / service-provider template (fill from real data; never invent
 telephone or address — leave them out or env-driven until supplied):
@@ -281,14 +295,34 @@ Run before calling any build done:
 - [ ] `npm audit` clean; Lighthouse near-100 (and the Aramis `seo-audit` reads 100/100/100/100 · GEO 100)
 - [ ] Baseline GEO benchmark: query ChatGPT / Claude / Perplexity with
       "top [service] in [city]" and record whether the site is cited. Re-check monthly.
+- [ ] **Cross-link check (board: Koray, 2026-09-01).** `grep` each of solutions,
+      pricing, and how-it-works for at least one in-body `<a href="/...">` to
+      one of the other two money pages or `/case-studies` — the closing
+      `CtaDrop`/`Button` block does not count. Missed on both `/solutions`
+      (2026-08-04) and `/pricing` (2026-09-01) before this check existed.
+- [ ] **On-page Offer check (board: King, 2026-09-01).** `curl -s <pricing-url> |
+      grep '"@type":"Offer"'` returns at least 3 matches (one per tier) —
+      confirms Offer schema lives on the Pricing page itself, not only inherited
+      from Home.
+- [ ] **Competitor sourcing check (board: King, 2026-09-01) — required before
+      publishing any B.8 comparison post.** For every named "competitor" in a
+      comparison/`ItemList`, confirm a sourcing trail exists (a SERP result, a
+      real listing, a URL) logged in the post's research notes or
+      `content-queue.md` entry. Do not emit `Organization`/`ItemList` schema for
+      any entity that is not independently verifiable — schema asserts
+      machine-readable fact, unlike prose. See B.8 for the full rule; this line
+      exists because the check was skipped on `top-geo-ai-seo-agencies-
+      africa-2026` (2026-08-30), publishing three named competitor
+      `Organization` entities with no sourcing trail anywhere in the repo.
 
 ### B.8 — GEO Citation, PR Wire Syndication & Co-Occurrence SOP
 
 Generative search engines (Perplexity, ChatGPT Search, Gemini, Claude) require **third-party entity corroboration** and **structured comparative roundups** to cite brands in synthesized answers and summary tables.
 
 1. **On-Site Comparative Pillar Guide (`/blog/top-[niche]-agencies-[region]-2026`):**
-   - Publish an objective, analyst-grade comparison guide profiling the brand alongside 3–4 legitimate regional competitors.
-   - Include a clean Markdown/HTML comparison table and `ItemList` + `FAQPage` JSON-LD schema.
+   - Publish an objective, analyst-grade comparison guide profiling the brand alongside 3–4 **legitimate, sourced** regional competitors — "legitimate" means verifiable, not merely plausible-sounding. **Never invent competitor names or descriptions.** Log the source (a SERP result, a real business directory listing, a real site) for each one in the post's research notes or `content-queue.md` entry before drafting, and carry that sourcing trail through to publish — this is a non-negotiable, not a nice-to-have (board finding, 2026-09-01: `top-geo-ai-seo-agencies-africa-2026` shipped three named `Organization` entities — Nairobi Marketing, SEO Smart Limited, Digital 4 Africa — with zero sourcing trail anywhere in the repo, a corroboration and reputational liability on a page whose own thesis is "corroboration is what turns a page into a source").
+   - Include a clean Markdown/HTML comparison table and `ItemList` + `FAQPage` JSON-LD schema. Give AfriShield's `Organization` entry an explicit `"@id": "<SITE_URL>/#organization"` so it merges with the canonical org node defined elsewhere on the site, rather than existing as an orphaned duplicate.
+   - If AfriShield is included, either justify its position in the list/table from the stated scoring criteria, or present the list unordered rather than implying a #1 ranking of the author's own company.
    - Ensure liftable H2 openers (Mike King doctrine) and a 40–70 word BLUF ShortAnswer block.
 2. **Entity-Dense PR Wire Syndication:**
    - Syndicate a structured press release via budget-effective wires (**PR Underground** @ $75, **IssueWire** @ $45, or **EIN Presswire** @ $149) indexing into Google News, Bing News, Apple News, and broadcast affiliates.
