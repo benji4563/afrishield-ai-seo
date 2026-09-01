@@ -101,6 +101,21 @@ Non-negotiables:
   that felt weak while drafting.** A partial pass (some sections fixed, others left
   soft) is not compliance; the 2026-08-04 board review caught 3 of 6 sections still
   soft-opening in a post whose earlier board fix had only checked the other two.
+  **Self-referential deixis is also a soft-opener failure (board, 2026-09-01):** an
+  opener that reads fine in-page but only works because it points at page furniture
+  — "The matrix below compares…", "Each profile below reads…" — still says nothing
+  once lifted out of context, same as a scene-setting opener. State the actual
+  conclusion in sentence one, then introduce the table/list as supporting detail.
+- **Competitor-entity verification for self-comparison posts (board: Mike King,
+  2026-09-01).** When a post compares AfriShield against named competitors (the
+  B.8 "top agencies" format in `afrishieldai-seo/SKILL.md`), every competitor named
+  must be a real, sourced entity — log the source in the post's research notes or
+  `content-queue.md` entry before drafting. Never invent placeholder competitor
+  names or descriptions the way `Scene` persona vignettes intentionally use
+  illustrative composites — an `Organization`/`ItemList` schema block asserts
+  machine-readable fact, not editorial color, and a fabricated one is a
+  corroboration and reputational liability. See `afrishieldai-seo/SKILL.md` B.7/B.8
+  for the full rule and the finding that motivated it.
 - **HowTo schema for numbered sequences (board: Mike King).** If a section is a
   numbered how-to (an `<ol>` walking the reader through steps), add a matching
   `howToJsonLd` `StructuredData` block (already exported from `lib/structured-data.ts`)
