@@ -33,6 +33,15 @@ Rules for the poster:
   `lib/posts.ts` and confirm this row's angle doesn't duplicate one. See the
   `afrishield-blog` skill's step 1 for the full check. Row 1 below carries the
   board's recommended angle as an example of the format to use going forward.
+- **Auto-retire after 2 skips (board review, 2026-08-28).** Row 9 (`what is local
+  seo`) was skipped by this differentiation check 6 times in a row (2026-08-18
+  through 2026-08-23) with an identical unresolved note appended each run, because
+  nothing had authority to close the loop once flagged. The **queue-keeper** must
+  resolve a `queued` row the *second* time the auto-poster skips it for
+  duplication — either propose a specific narrowed angle/title (checked against
+  `lib/posts.ts`) or mark the row `retired — duplicate of <slug>` with a one-line
+  citation to the covering section/FAQ. Do not let a third identical skip note
+  accumulate.
 
 Vetting note: all volumes below are **DataForSEO, South Africa, en** — a single
 African market, so absolute volumes are low (10–40) by nature. Selection weighs
@@ -50,7 +59,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 6 | is seo worth it | D — cost / ROI anxiety | vetted · SV~10 · informational · LOW comp | claimed |
 | 7 | how long does seo take | D — expectations | vetted · SV~10 · informational · LOW comp | claimed |
 | 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | claimed |
-| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | queued |
+| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | retired — duplicate of `/blog/local-seo-for-small-business` |
 | 10 | seo vs google ads | B — comparison | vetted · SV~10 · commercial · LOW comp | claimed |
 | 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | claimed |
 | 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | claimed |
@@ -134,6 +143,19 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 > mandatory artifact check because the sandbox's network egress policy still
 > blocks the CloudFront asset host (403 policy denial, same as 2026-08-22, not a
 > content problem) — published text-only per the skill's fallback rule.
+>
+> **Resolution (board review, 2026-08-28):** row 9 retired after 6 skipped runs
+> (2026-08-18 through 2026-08-23). `local-seo-for-small-business` already
+> retrieval-owns "what is local SEO" — its opening H2 (`id="what-local-seo-is"`,
+> "What local SEO actually is") and its first FAQ entry ("What is local SEO for
+> a small business?", wrapped in `faqPageJsonLd`) both answer this query as a
+> self-contained, citable chunk. No narrowing angle survives the overlap: a
+> glossary framing, a "local SEO vs. GBP optimization" framing, and an
+> audience-qualification framing were all checked and are each already covered
+> by that post's body or FAQ. Board ruling (GEO lens, King + Koray): retire, not
+> narrow — a second page targeting the same query would cannibalize the first
+> rather than extend the topical map. Also see the **queue-keeper** rule added
+> below: this is exactly the case it exists to catch earlier next time.
 
 ## Watchlist — no DataForSEO volume yet (do NOT queue until confirmed)
 
