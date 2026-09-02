@@ -65,3 +65,30 @@ message-first design · social proof · local SEO tier list.
   and proven hooks as house style, and use it to auto-generate on-brand b-roll
   graphics and a lead-magnet PDF straight from a finished script. —
   https://www.youtube.com/watch?v=yuVlHAKbnMQ
+- **2026-09-02** — YouTube doubled the annual watch-hour bar for ad
+  monetization (4,000 to 8,000 hours, effective Feb 2027), explicitly aimed at
+  pushing out AI-slop and faceless channels; frames this as a temporary
+  low-competition window for expert-led business channels (who were never
+  monetizing on ad revenue anyway) since casual/low-effort creators are the
+  ones who quit or never start once the bar rises — worth front-loading our
+  own YouTube-as-lead-funnel publishing while the field is quieter, since the
+  edge fades once serious competitors adjust. —
+  https://www.youtube.com/watch?v=kjRKGZh7uAE
+- **2026-09-02** — Argues most videos lose on a weak *idea* rather than weak
+  execution, and recommends spending twice as long shaping the core
+  idea/title (outcome-first, no jargon) as on writing the rest of the video —
+  a useful discipline to apply to our own and client content-marketing work.
+  Also proposes packaging existing expertise into a named, structured
+  framework purely for memorability/ownability, and a "trust balance" rule of
+  thumb — roughly 5-10 pure-value videos per one pitch/CTA video — as a
+  concrete cadence ratio for AfriShield's own channel. —
+  https://www.youtube.com/watch?v=JbBfJtWnyt0
+- **2026-09-02** — Demonstrates YouTube Studio's built-in "Ask Studio" AI
+  (Gemini-powered, distinct from Claude/ChatGPT) which can see a channel's
+  actual private performance data and even watch the footage itself — used to
+  retitle underperforming videos around real search terms, pull a
+  timestamped postmortem on why a specific video underperformed, and audit
+  (and correct) how YouTube's algorithm has actually categorized the
+  channel's niche. Worth testing as a diagnostic layer alongside our Claude-
+  based content workflow, since it surfaces platform-side signals Claude has
+  no access to. — https://www.youtube.com/watch?v=lIQ79IkGpjk

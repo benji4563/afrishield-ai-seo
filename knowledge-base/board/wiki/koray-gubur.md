@@ -75,3 +75,31 @@ context · "Koraynese" (his precise, coined terminology).
   progressive: a domain earns "rankability" through accumulated click/engagement
   satisfaction over time rather than ranking outright from day one. —
   https://www.youtube.com/watch?v=WrU25krFCtk
+- **2026-09-02** — Frames ranking as partly a cost decision: once Google already
+  trusts one source for a topic, it has little incentive to pay the cost of
+  finding and vetting a second one, so a site should surface its entities and
+  structure as early and cheaply as possible rather than relying on quality
+  alone to win a re-evaluation. Also describes deliberately serving different
+  markdown/content variants to different LLM crawlers (GPT, Claude, Perplexity)
+  based on how each is observed to weight recency and read depth, and separates
+  raw link-graph centrality ("PageRank") from brand search demand ("prestige"),
+  tying the latter to Google pre-associating specific terms with a brand from
+  accumulated reputation and co-occurrence. — https://www.youtube.com/watch?v=VLDa_RoczYI
+- **2026-09-02** — Argues AI answer engines increasingly cite brands for specific
+  *attributes* rather than just ranking a URL, so it pays to map the attribute
+  set a niche gets asked about and get third-party sources (forums, review
+  sites, guest placements) to explicitly associate your brand with those
+  attributes — he calls the resulting cross-domain footprint an "external
+  topical map." Also useful as competitive awareness: describes the more
+  aggressive end of this playbook (throwaway exact-match domains, warmed-up
+  social/Reddit accounts) as a tactic already in active use in the space, not
+  something for us to build service delivery on. — https://www.youtube.com/watch?v=3ncQHJuQaDM
+- **2026-09-02** — Names "query relevance distance": in large programmatic
+  builds, generating pages too deep into a topic's URL taxonomy relative to
+  actual search demand dilutes page rank per page and drags the whole site's
+  rankings, reinforcing the case for demand-checking before spinning up
+  template pages. For crawl-budget recovery on large sites, recommends keeping
+  average server response time under ~100ms and blocking Googlebot from
+  unnecessary JSON/ancillary requests. For YMYL/health-adjacent content,
+  recommends visibly tying claims to named studies/research to build topical
+  trust. — https://www.youtube.com/watch?v=JcYnz52zm9k

@@ -62,3 +62,11 @@ work on it vs. in it · leverage.
   models for high-volume simple sorting, top-tier reserved for orchestration) to cut
   agent operating cost roughly 100x on routine work. —
   https://www.youtube.com/watch?v=Bm84BAtOfQw
+- **2026-09-02** — Pushes a lightweight outbound tactic he calls a "spear" message:
+  instead of a polished pitch, send something short, personal, and phrased so it
+  practically demands a one-word reply (e.g. a plain question as the subject line).
+  He credits it with generating far more responses than conventional cold outreach.
+  Distinct from the existing warm-referral-first note above — this is about *message
+  shape*, not *target selection* — so worth testing as a cheap, low-effort probe
+  format for AfriShield's own outbound/lead-gen sends before investing in longer
+  sequences. — https://www.youtube.com/watch?v=0rkUYeyUjzQ
