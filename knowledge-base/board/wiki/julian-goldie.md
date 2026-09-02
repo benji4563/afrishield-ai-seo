@@ -59,3 +59,26 @@ links · topical relevance of links.
   in content/site generation. Worth watching for cost impact on our generation
   pipeline, but needs independent verification before changing our model stack. —
   https://www.youtube.com/watch?v=PYbBddbflRo
+- **2026-09-02** — Google split enforcement of its "site reputation abuse" (parasite
+  SEO) rule by region as of Aug 30: pages hosted in the EU/EEA are now exempt from
+  the ranking penalty under regulatory pressure, while the US, rest of world, and
+  the UK (excluded despite being in Europe, because of Brexit) are still penalized
+  as before. Google also published, for the first time, the 4 factors it weighs to
+  separate legitimate partner/affiliate content from spam — visual integration with
+  the host site, quality parity, a named accountable author, and non-duplicated
+  text — giving us a concrete audit checklist for any client's guest-post or
+  partner-content sections. — https://www.youtube.com/watch?v=O3BpnQ8U9LY
+- **2026-09-02** — His personal "Agent OS" pairs Hermes agents with an Obsidian
+  vault that auto-logs every agent's conversations and outputs as searchable notes,
+  and every agent reads that shared vault before acting — giving the agents
+  persistent, compounding memory of voice/business context instead of restarting
+  cold each session. Worth testing as a lightweight shared-memory-store pattern for
+  our own agent workflows, on top of the `/learn`-skill pattern already logged from
+  his channel. — https://www.youtube.com/watch?v=MvgyhFX-ECk
+- **2026-09-02** — A follow-up video showed the same Agent OS broken into named,
+  single-purpose sub-agents (a research agent, a content-generation agent, a
+  voice/app-builder agent, plus a separate automated-outreach tool) launched from
+  one dashboard, rather than one generalist agent doing everything. Reinforces the
+  case for building our own agency automation as discrete, purpose-built agents
+  chained together — easier to QA and gate individually for board review than one
+  do-everything prompt. — https://www.youtube.com/watch?v=_OC6lvCCurs
