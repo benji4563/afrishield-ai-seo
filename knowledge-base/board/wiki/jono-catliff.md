@@ -66,3 +66,24 @@ clicks/month as the scoreboard.
   to review agent-made changes/logs rather than trust unattended agent runs
   blindly, relevant to any agency running Claude Code against live client
   sites/accounts. — https://www.youtube.com/watch?v=0f3KbpW8TBk
+- **2026-09-02** — Packages the Semrush + Search Console + Google Business
+  Profile audit-and-fix workflow into a free, open-source "clone the repo,
+  run one prompt" template that explicitly targets custom-coded sites,
+  WordPress, Shopify, Webflow, and Duda, not just WordPress — worth
+  reframing our own audit tooling as platform-agnostic rather than
+  WordPress-specific. Also calls out "doorway pages" (near-duplicate
+  city/service pages) as a distinct audit category that reads as spam to
+  Google, which is a concrete technical-SEO check worth adding to our
+  programmatic city×service page QA. Frames the whole audit as a sales
+  tool — run it on a prospect's site, show the before/after score, then
+  sell the fix — a script we could adapt for our own SEO-audit-led
+  outreach. — https://www.youtube.com/watch?v=M2KJ5-sFbbg
+- **2026-09-02** — Lays out a "4-stage ladder" for landing a first AI-
+  automation client through Upwork (proof-driven profile, AI-drafted bio
+  and proposals, price for social proof before profit, then graduate
+  off-platform) — a repeatable acquisition funnel worth adapting for our
+  own client pipeline. Treats marketing/sales, not technical skill, as the
+  real bottleneck for a solo automation operator, and has Claude auto-draft
+  Upwork proposals matched to each job post — reinforces prioritising
+  sales-enablement automation alongside our delivery tooling as we scale.
+  — https://www.youtube.com/watch?v=jzq3FUrQ-u0
