@@ -17,3 +17,18 @@ at `deep` depth with full transcripts and found materially more — including
 real substance in `yuVlHAKbnMQ` that the shallow title/description pass
 missed — so the deep entries above are what's kept; the shallow duplicates
 were dropped.
+
+| 2026-09-02 | kjRKGZh7uAE | YouTube Just Accidentally Created A HUGE Opportunity For Your Business | ingested | shallow |
+| 2026-09-02 | JbBfJtWnyt0 | How Top Experts Get INSANE Sales From YouTube | ingested | shallow |
+| 2026-09-02 | lIQ79IkGpjk | There's a New AI Inside YouTube and Almost Nobody's Using It | ingested | shallow |
+
+Note (2026-09-02 run): direct YouTube access (curl/yt-dlp) is blocked in this
+environment, so discovery went through Firecrawl web search + scrape of the
+watch pages instead of yt-dlp. Most `site:youtube.com/watch "Wes McDowell"`
+search hits turned out to be false positives — other channels' videos that
+merely show a Wes McDowell video as a sidebar "up next" suggestion — and were
+discarded after checking each candidate's actual "Uploaded by" channel link
+against `@WesMcDowellInc`/`UCMq1R1LgS04lIKdpLh_OS1w`. The three rows above are
+confirmed-genuine uploads, newest three not already in this ledger; older
+confirmed uploads found in the same pass (`2JGEyK2o0yY`, `sZQ9snGyFps`, and
+others) were left unprocessed for a future run per the 3-per-run cap.
