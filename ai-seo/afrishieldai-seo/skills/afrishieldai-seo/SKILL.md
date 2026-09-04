@@ -168,6 +168,16 @@ content sections before that closing block. Reference implementation: the homepa
 for an optional `ctaHref`/`ctaLabel` prop so this becomes structural rather than
 something each page author has to remember.
 
+**Trust signal, minimum one per page (board: Wes McDowell, 2026-09-04).** Every
+landing/money page (Home, Solutions, Pricing, How it Works) must carry at least one
+concrete trust element within the first CTA section, not deferred to a footer or an
+About page — a client/site count, a named case study or link to `/case-studies`, a
+review quote, or a specific outcome number. Bare claims like a "Most chosen" tier
+badge with no backing number don't count. Both `/solutions` (board review
+2026-08-04) and `/pricing` (board review 2026-09-04) independently shipped with
+zero trust signal anywhere on the page — this is now a required checklist item so
+it stops recurring per page.
+
 `LocalBusiness` / service-provider template (fill from real data; never invent
 telephone or address — leave them out or env-driven until supplied):
 
@@ -290,6 +300,17 @@ Generative search engines (Perplexity, ChatGPT Search, Gemini, Claude) require *
    - Publish an objective, analyst-grade comparison guide profiling the brand alongside 3–4 legitimate regional competitors.
    - Include a clean Markdown/HTML comparison table and `ItemList` + `FAQPage` JSON-LD schema.
    - Ensure liftable H2 openers (Mike King doctrine) and a 40–70 word BLUF ShortAnswer block.
+   - **Competitor-verification gate (board: Mike King, 2026-09-04).** Do not emit
+     `schema.org/Organization` markup for a named competitor without a real, public
+     `url`/`sameAs` to back it. If a genuinely verified regional competitor isn't
+     available, either research one before publishing or explicitly label the
+     entry as an illustrative composite in both the visible copy and the schema —
+     never present an unverifiable business as a real, ranked `Organization`.
+     Also add one FAQ entry describing how providers were selected/verified, since
+     a self-inclusive "objective" comparison invites exactly that question.
+     (`top-geo-ai-seo-agencies-africa-2026` shipped three competitor Organizations
+     with no `url`/`sameAs` and no trace anywhere else in the repo — fix that page
+     and apply this gate to every future post under this SOP.)
 2. **Entity-Dense PR Wire Syndication:**
    - Syndicate a structured press release via budget-effective wires (**PR Underground** @ $75, **IssueWire** @ $45, or **EIN Presswire** @ $149) indexing into Google News, Bing News, Apple News, and broadcast affiliates.
    - Construct clear Entity-Attribute-Value (EAV) triples (`[Brand] provides [GEO/Services] in [Region]`).

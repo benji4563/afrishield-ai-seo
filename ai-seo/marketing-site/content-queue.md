@@ -23,6 +23,12 @@ Rules for the poster:
 - After publishing, set the row to `claimed` here **and** append to `used-keywords.md`.
 - If **no** `queued` rows remain, do nothing and report "queue empty" — never invent
   a keyword or republish an existing one.
+- **Escalation rule (board, 2026-09-04):** if a `queued` row is skipped by the
+  differentiation-angle check **twice**, do not keep silently re-skipping it. Set
+  its status to `blocked` and report it as blocked, not skipped — a row that keeps
+  failing the same check needs a resolution (narrow the angle, or retire), not a
+  seventh identical skip note. `blocked` rows are picked up by an interactive/
+  human-in-the-loop pass, never by the automated poster.
 - Write with the locked-in humor reference
   `afrishieldai-seo/skills/humor-writing/SKILL.md` (distilled from the
   hireawriter.us humor article): 3–5 dry, industry-aimed touches per post, none
@@ -50,7 +56,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 6 | is seo worth it | D — cost / ROI anxiety | vetted · SV~10 · informational · LOW comp | claimed |
 | 7 | how long does seo take | D — expectations | vetted · SV~10 · informational · LOW comp | claimed |
 | 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | claimed |
-| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | queued |
+| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | retired |
 | 10 | seo vs google ads | B — comparison | vetted · SV~10 · commercial · LOW comp | claimed |
 | 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | claimed |
 | 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | claimed |
@@ -134,6 +140,23 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 > mandatory artifact check because the sandbox's network egress policy still
 > blocks the CloudFront asset host (403 policy denial, same as 2026-08-22, not a
 > content problem) — published text-only per the skill's fallback rule.
+
+> **Board resolution (2026-09-04): row 9 retired.** Six auto-poster runs
+> (2026-08-18 through 2026-08-23) skipped row 9 for the same unresolved
+> duplication against `local-seo-for-small-business`'s opening H2, and the
+> queue-keeper role named in this file's own rules does not exist as an
+> executable skill anywhere in the repo — nothing was ever going to act on the
+> five prior escalation notes. GEO lens (King/Koray) confirmed the query has
+> genuine standalone intent but cannot run as a full standard-template post
+> without cannibalizing the live post's core section; Business/chairman lens
+> broke the tie on format given SV~10 and zero incremental commercial value:
+> the live post's FAQ already answers "What is local SEO for a small
+> business?" verbatim (`app/blog/local-seo-for-small-business/page.tsx`,
+> FAQ item 1), which is sufficient standalone-retrievable coverage of the
+> definitional query. Retiring rather than spending a run on a 400-600 word
+> glossary page for SV~10 informational-only volume. **Queue-keeper: still
+> needs to exist as a real skill** (see board review 2026-09-04 report) — the
+> new `blocked` escalation rule above is a stopgap, not a replacement for it.
 
 ## Watchlist — no DataForSEO volume yet (do NOT queue until confirmed)
 
