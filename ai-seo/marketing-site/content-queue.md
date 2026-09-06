@@ -63,6 +63,30 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 19 | direct booking strategy for lodges | D — problem-aware (tourism) | candidate — no DataForSEO pass yet | candidate |
 | 20 | google business profile for hotels | E — local / GBP × hotels | candidate — no DataForSEO pass yet | candidate |
 | 21 | google maps ranking for safari companies | E — local / GBP × safari | candidate — no DataForSEO pass yet | candidate |
+| 22 | how to respond to negative reviews | E — local / reputation | candidate - verify volume (DataForSEO) | queued |
+| 23 | how to get more google reviews | E — local / reputation | candidate - verify volume (DataForSEO) | queued |
+| 24 | how to fix a suspended google business profile | E — local / problem-aware | candidate - verify volume (DataForSEO) | queued |
+| 25 | how to optimize for voice search | B — AI answers (voice) | candidate - verify volume (DataForSEO) | queued |
+| 26 | what is topical authority | B — technical education | candidate - verify volume (DataForSEO) | queued |
+| 27 | how to write a meta description that gets clicks | H — general how-to | candidate - verify volume (DataForSEO) | queued |
+| 28 | how to get backlinks for a small business | H — general how-to | candidate - verify volume (DataForSEO) | queued |
+| 29 | comment être visible sur chatgpt hôtellerie | B — AI answers (GEO × tourism, Cameroon FR) | candidate - verify volume (DataForSEO) | queued |
+| 30 | visibilité google maps hôtel yaoundé | E — local / GBP × tourism (Cameroon FR) | candidate - verify volume (DataForSEO) | queued |
+
+> **Queue top-up (queue-keeper, 2026-09-06):** audit found only 1 `queued` row
+> (row 9, still stuck on the unresolved differentiation duplication first flagged
+> 2026-08-18 and unchanged since). Added rows 22–30 as candidates — cross-checked
+> against every row in this table (all statuses), every entry in `used-keywords.md`
+> (including its "deliberately not targeted" list), the watchlist below (so none of
+> `generative engine optimization`, `how to get cited by ai/chatgpt`, or `why is my
+> website not showing on google` were re-added here), `keyword-map.md`'s existing
+> cluster lists, and the `cardTitle`/`description` of every live post in
+> `lib/posts.ts` to avoid restating an existing angle. Rows 22–24 and 27–28 shore up
+> the depleted general pool; rows 25–26 add fresh AI-answers/technical-education
+> angles; rows 29–30 pull directly from `keyword-map.md`'s Cameroon FR cluster
+> (already identified there as blog-post targets but never queued) to keep the
+> tourism side of the 60/40 ratio stocked. **None of these are vetted — a
+> DataForSEO volume/intent pass is required before any of them move to `vetted`.**
 
 > **Skip note (auto-poster, 2026-08-18):** row 9 (`what is local seo`) was passed
 > over this run under the differentiation-angle check — `local-seo-for-small-business`
