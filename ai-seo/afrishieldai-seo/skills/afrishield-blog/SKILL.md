@@ -110,6 +110,23 @@ Non-negotiables:
   with descriptive anchors naming the target topic — do not rely on the auto
   `RelatedPosts` block, which is undifferentiated. If no cluster sibling exists yet,
   leave an HTML comment noting the intended link target to back-fill on publish.
+  **Also link into the cluster's core commercial page** (e.g. `/geo-services`,
+  `/pricing`, `/solutions`) at least once — sibling-post links alone leave a
+  pillar/comparison post as pure outer-layer content with nothing funnelling into
+  the money page it supports. Flagged by the 2026-09-08 board review, which found
+  `top-geo-ai-seo-agencies-africa-2026` linking only to other blog posts and never
+  to `/geo-services`.
+- **Competitor corroboration for comparison/"top X" posts (board: King + Koray,
+  2026-09-08).** Any post that names and ranks specific competing businesses must
+  give each one a `url`/`sameAs` in its JSON-LD entity and at least one outbound
+  link to its site in the body — the same standard the post holds AfriShield to.
+  A "neutral comparison" that only the author's own entry can be independently
+  verified against reads as self-serving to both a skeptical reader and a
+  retrieval-grounded answer engine checking corroboration, and undermines the
+  E-E-A-T case the post is trying to make. If a named competitor genuinely has no
+  public URL, say so in an HTML comment rather than silently omitting the link.
+  Pair this with an explicit, falsifiable scoring element (e.g. a criteria ×
+  provider grid) rather than an asserted ranking order.
 - **Differentiation angle vs. existing posts (board: Koray / topical map).** Before
   drafting, read the `cardTitle`/`description` of every existing entry in `POSTS`
   (`lib/posts.ts`) and confirm in one sentence what this post uniquely covers that no
