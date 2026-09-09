@@ -27,3 +27,19 @@ Note (unresolved disagreement, not deduped): `AlHiLfYah74` was judged
 other. Both rows are kept as-is; the 2026-07-29 verdict is what the existing
 wiki entry for this video reflects. A future `deep` pass on this video would
 be the tiebreaker.
+
+Note (2026-09-09 run — no rows added, discovery failed): could not identify
+any new videoIds this run, so nothing was processed and no table rows were
+added. Direct YouTube access (yt-dlp, WebFetch) is blocked by the environment
+egress proxy as expected. Firecrawl — the documented workaround — was
+unavailable: `firecrawl_scrape` on the channel's `/videos` page and two
+`firecrawl_search` attempts all failed with `402 Insufficient credits`
+(account-level exhaustion, not a transient error). Fell back to generic
+`WebSearch`, but its index only surfaced videos already known from
+Jan–Jul 2026 and did not even return `mD51uM8v_bw` or `WrU25krFCtk` (both
+confirmed real uploads from the 2026-08-05 run), showing it lags too far
+behind to reliably tell "new since 2026-08-05" from "old." Rather than risk
+mis-dated or misattributed entries, no ledger/wiki content was added this
+run. Next run should retry Firecrawl-based discovery and, since this run
+found nothing, should treat the full 2026-08-05 → next-run-date span as the
+gap to cover (not just since 2026-09-09).
