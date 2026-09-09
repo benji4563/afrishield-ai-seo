@@ -65,3 +65,8 @@ message-first design · social proof · local SEO tier list.
   and proven hooks as house style, and use it to auto-generate on-brand b-roll
   graphics and a lead-magnet PDF straight from a finished script. —
   https://www.youtube.com/watch?v=yuVlHAKbnMQ
+- **2026-09-09** — Reframes a wave of creator complaints about dropping views
+  and revenue as a symptom of a 2026 YouTube algorithm/ranking shift rather than
+  a content-quality failure — a useful reassurance point for client channels
+  that see view volatility but keep converting. —
+  https://www.youtube.com/watch?v=q7sJGED_b6g
