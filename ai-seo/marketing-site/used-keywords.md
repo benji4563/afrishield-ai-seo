@@ -39,6 +39,7 @@ reconcile.
 | content marketing for small business | F — content strategy | `/blog/content-marketing-for-small-business` | 2026-08-23 | Live |
 | enterprise generative engine optimization africa | B — service education (AEO/GEO) | `/blog/enterprise-geo-launch-africa` | 2026-08-30 | Live |
 | generative engine optimization agencies africa | A — hire a provider (GEO) | `/blog/top-geo-ai-seo-agencies-africa-2026` | 2026-08-30 | Live |
+| ai search visibility for african businesses | I — original research | `/blog/ai-search-visibility-study` | 2026-08-28 | Live |
 
 ## Deliberately not targeted
 
