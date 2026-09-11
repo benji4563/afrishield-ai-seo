@@ -50,7 +50,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 6 | is seo worth it | D — cost / ROI anxiety | vetted · SV~10 · informational · LOW comp | claimed |
 | 7 | how long does seo take | D — expectations | vetted · SV~10 · informational · LOW comp | claimed |
 | 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | claimed |
-| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | queued |
+| 9 | what is local seo | E — local / education | vetted · SV~10 · informational · **LOCKED ANGLE (board, 2026-09-11) — see note below** | queued |
 | 10 | seo vs google ads | B — comparison | vetted · SV~10 · commercial · LOW comp | claimed |
 | 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | claimed |
 | 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | claimed |
@@ -134,6 +134,33 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 > mandatory artifact check because the sandbox's network egress policy still
 > blocks the CloudFront asset host (403 policy denial, same as 2026-08-22, not a
 > content problem) — published text-only per the skill's fallback rule.
+>
+> **Board resolution (2026-09-11):** row 9 has now been skipped six times across
+> five weeks (2026-08-18 → 2026-08-23) with no queue-keeper action since, and the
+> general pool has been fully dry since 2026-08-23 (rows 1–15 all claimed except
+> this one) — this single unresolved row appears to have stalled the poster's
+> general-cluster output for roughly three weeks. Reviewed under the GEO lens
+> (King/Koray): retire is unnecessary, the term still has standalone commercial
+> value (an outer-layer glossary entry supporting the `local-seo-for-small-business`
+> core page, per Koray's core/outer topical-map split) — it only needed the angle
+> the 2026-08-18 note already proposed but nobody locked in. **Angle, locked:** a
+> short (≈500–700 word) definitional/glossary treatment — what local SEO is, in one
+> direct BLUF paragraph, then 3–4 short subsections (how it differs from general
+> SEO in one sentence each: GBP, proximity/relevance/prominence, reviews, citations)
+> — with **no** "What local SEO actually is" H2 or equivalent restated checklist
+> content. Every subsection links out to the matching deep-dive already live
+> (`/blog/local-seo-for-small-business` for the full checklist,
+> `/blog/google-business-profile-optimization` for GBP, `/blog/how-to-appear-on-google-maps`
+> for Maps ranking factors) rather than re-explaining them — this page's job is to
+> be the fast, liftable definition an answer engine cites for the bare "what is
+> local seo" query, and the hand-off point into the site's deeper content. The
+> poster should treat this note as the locked brief and stop re-running the
+> differentiation check against it. **Separately, unblock the pipeline for real:**
+> rows 16–21 (tourism candidates) still need a DataForSEO pass before they can
+> enter the active queue — that requires an interactive session with the
+> DataForSEO MCP tool, which this cloud review does not have. Flagging to Ben as an
+> open item in the board summary; the general pool will run dry again after row 9
+> clears unless this happens or fresh general-cluster keywords are vetted.
 
 ## Watchlist — no DataForSEO volume yet (do NOT queue until confirmed)
 
@@ -164,3 +191,4 @@ periodically; promote to the table above once they show real volume.
 | how to improve google ranking | `/blog/how-to-improve-google-ranking` | 2026-08-20 |
 | how to appear on google maps | `/blog/how-to-appear-on-google-maps` | 2026-08-21 |
 | how to get more website traffic | `/blog/how-to-get-more-website-traffic` | 2026-08-22 |
+| content marketing for small business | `/blog/content-marketing-for-small-business` | 2026-08-23 |
