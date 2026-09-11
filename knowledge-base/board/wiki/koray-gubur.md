@@ -75,3 +75,14 @@ context · "Koraynese" (his precise, coined terminology).
   progressive: a domain earns "rankability" through accumulated click/engagement
   satisfaction over time rather than ranking outright from day one. —
   https://www.youtube.com/watch?v=WrU25krFCtk
+- **2026-08-24** — Interview with Jason Barnard on retrieval economics: argues
+  engines (and by extension LLM/answer-engine retrieval) optimise for **cost of
+  retrieval**, not pure quality alone — once a source is already trusted on a
+  topic, the engine is reluctant to pay the cost of vetting a second one, so
+  being first to establish trusted coverage compounds. Frames **mentions and
+  consensus across sources** (not backlinks) as the trust signal that lowers
+  that cost. Directly reinforces Mike King's corroboration doctrine: content a
+  model can verify cheaply against other sources is the safer thing to cite, so
+  an *unverifiable* claim (e.g. naming a competitor with no findable footprint)
+  actively raises retrieval cost and works against citation odds, not just
+  against "objectivity" optics. — https://www.youtube.com/watch?v=VLDa_RoczYI
