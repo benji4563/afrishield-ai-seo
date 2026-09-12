@@ -168,6 +168,34 @@ content sections before that closing block. Reference implementation: the homepa
 for an optional `ctaHref`/`ctaLabel` prop so this becomes structural rather than
 something each page author has to remember.
 
+**Closing CTA must not be circular (board: Wes McDowell, 2026-08-28).**
+`components/home/CtaDrop.tsx` hardcodes a secondary button to `/pricing`
+("See pricing"). On any page that *is* `/pricing`, this renders a dead,
+self-referential click at the page's highest-intent moment. `CtaDrop` needs an
+optional secondary-href/label override (or auto-suppression when the current
+route matches its default target) — check this on every page that drops in
+`CtaDrop` with default props, not only `/pricing`.
+
+### Step 5.5 — Money-page checklist (before every publish)
+
+Two consecutive board reviews (2026-08-04 on `/solutions`, 2026-08-28 on
+`/pricing`) found the exact violations the doctrine above already names —
+meaning the prose above isn't preventing recurrence on its own. Before
+publishing or re-publishing any of Home, Solutions, Pricing, or How it Works,
+walk this checklist explicitly (don't rely on memory of the rules above):
+
+- [ ] The page's injected `StructuredData` blocks match its row in the B.3
+      table exactly — diff against the table, not memory. (Pricing
+      specifically needs `Offers`/`PriceSpecification`, not just `FAQPage`.)
+- [ ] At least 2 in-body anchor links to sibling money pages (`/solutions`,
+      `/pricing`, `/how-it-works`), outside the closing CTA block, with
+      descriptive (non-"click here") anchor text.
+- [ ] Every named tier/pillar/service in visible copy has a matching discrete
+      entity in JSON-LD (no prose-only sub-offerings — see "Entity-linked
+      schema" above).
+- [ ] If the page drops in `CtaDrop` with default props, confirm its
+      secondary CTA target isn't the current page itself.
+
 `LocalBusiness` / service-provider template (fill from real data; never invent
 telephone or address — leave them out or env-driven until supplied):
 
