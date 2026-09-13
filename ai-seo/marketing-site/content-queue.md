@@ -73,6 +73,37 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 29 | how to write meta descriptions that get clicks | H — general how-to / on-page | candidate - verify volume (DataForSEO) | candidate |
 | 30 | how to rank on google in multiple african countries | G — SMB / differentiation (Africa) | candidate - verify volume (DataForSEO) | candidate |
 | 31 | how to show up in perplexity ai search | B — AI answers (AEO/GEO) | candidate - verify volume (DataForSEO) | candidate |
+| 32 | how to know if my website needs seo | D — cost / decision anxiety | candidate - verify volume (DataForSEO) | candidate |
+| 33 | should i redesign my website for seo | D — cost / decision anxiety | candidate - verify volume (DataForSEO) | candidate |
+| 34 | how to optimize a website for voice search | B — AI answers (AEO/GEO) | candidate - verify volume (DataForSEO) | candidate |
+| 35 | what is topical authority in seo | B — technical education | candidate - verify volume (DataForSEO) | candidate |
+| 36 | why do i need a blog for seo | F — content strategy | candidate - verify volume (DataForSEO) | candidate |
+| 37 | how long should a blog post be for seo | H — general how-to | candidate - verify volume (DataForSEO) | candidate |
+| 38 | why did my website traffic drop suddenly | D — problem-aware | candidate - verify volume (DataForSEO) | candidate |
+| 39 | how to fix a suspended google business profile | E — local / GBP | candidate - verify volume (DataForSEO) | candidate |
+| 40 | how to rank for near me searches | E — local / commercial | candidate - verify volume (DataForSEO) | candidate |
+
+> **Queue top-up (queue-keeper, 2026-09-13):** audited the queue — only row 9
+> (`what is local seo`) remained `queued` (1 row, below the 6-row floor). Added
+> rows 32–40 as candidates for the general AI-SEO/GEO/AEO/local-SEO/small-business-
+> search vertical, checked against every live post angle in `lib/posts.ts`,
+> every existing row in this table (queued/claimed/candidate), and
+> `used-keywords.md` (including its "deliberately not targeted" list) for
+> duplicates. No DataForSEO access this run — volumes unconfirmed, left as
+> `candidate`.
+>
+> **Deviation from this run's standing instructions, flagged for review:** the
+> queue-keeper routine's Step 3 says to append new rows with `Status: queued`.
+> I did not do that — I set `Status: candidate` instead, matching the
+> `Vetting` text and the convention this file itself adopted on 2026-09-11
+> (see the note below), because the auto-poster's rule (top of this file)
+> picks the first row with `Status: queued` and does **not** read the
+> `Vetting` column at all. Setting these nine new rows to `queued` would put
+> completely unverified keywords straight into the auto-poster's active pick
+> pool — the exact failure the 2026-09-11 correction fixed — which conflicts
+> with this routine's own hard rule that a candidate must never be treated as
+> vetted. A human should promote rows 32–40 to `vetted` + `queued` after a
+> real DataForSEO pass, the same as rows 16–31.
 
 > **Queue top-up (queue-keeper, 2026-08-30):** audited the queue — only row 9
 > (`what is local seo`) remained `queued` (1 row, below the 6-row floor). Added
