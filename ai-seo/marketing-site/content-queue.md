@@ -50,7 +50,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 6 | is seo worth it | D — cost / ROI anxiety | vetted · SV~10 · informational · LOW comp | claimed |
 | 7 | how long does seo take | D — expectations | vetted · SV~10 · informational · LOW comp | claimed |
 | 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | claimed |
-| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | queued |
+| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | retired |
 | 10 | seo vs google ads | B — comparison | vetted · SV~10 · commercial · LOW comp | claimed |
 | 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | claimed |
 | 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | claimed |
@@ -153,6 +153,23 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 > mandatory artifact check because the sandbox's network egress policy still
 > blocks the CloudFront asset host (403 policy denial, same as 2026-08-22, not a
 > content problem) — published text-only per the skill's fallback rule.
+>
+> **Board resolution (2026-09-15): row 9 retired, not narrowed.** Six skip notes
+> (2026-08-18 → 2026-08-23) asked the queue-keeper to decide and none landed —
+> confirmed independently this run: `local-seo-for-small-business/page.tsx:149`
+> ("What local SEO actually is") and its FAQ ("What is local SEO for a small
+> business?", `page.tsx:44`) already give a full, direct, standalone-retrievable
+> answer to exactly this query. At SV~10 and zero incremental commercial value,
+> spending a write-cycle on a narrower glossary variant is negative leverage next
+> to the six runs already burned re-litigating it (Dan/business); the
+> cannibalization risk against the live post is real and confirmed, not
+> hypothetical (Koray). Status set to `retired` above. **Pool status after this
+> retirement: the general-cluster pool has zero `queued` rows** (rows 1–15 are all
+> `claimed` or `retired`; rows 16–31 are all `candidate`, none vetted) — the next
+> scheduled auto-poster run will report "queue empty" unless a DataForSEO pass
+> promotes some of rows 16–31 to `vetted`/`queued` before then. This needs an
+> interactive session with the DataForSEO MCP tool; the board cannot do it from a
+> cloud checkout.
 
 ## Watchlist — no DataForSEO volume yet (do NOT queue until confirmed)
 

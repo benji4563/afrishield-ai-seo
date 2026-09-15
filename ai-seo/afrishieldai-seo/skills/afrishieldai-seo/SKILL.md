@@ -124,7 +124,12 @@ who / what / where / core value. This is what an answer engine lifts as a
 citation. Plain prose, entity-dense, no marketing adjectives.
 
 Pattern (already implemented as the `ShortAnswer` component for posts; add an
-equivalent near the top of home, solutions, pricing, and each location page):
+equivalent near the top of home, solutions, pricing, **how it works, about**,
+and each location page — the "every key page" line above is the actual rule;
+this list must name every page that qualifies, not imply it by example. Board
+review 2026-09-15 found `/how-it-works` has no `Bluf` block at all and never
+names the AfriShield entity anywhere in its copy, unlike every other page in
+the rotation.):
 
 > AfriShield AI provides AI SEO and local search optimisation for businesses
 > across West, Central, East, and Southern Africa. We handle keyword research,
@@ -143,6 +148,7 @@ Inject validated JSON-LD in the server HTML of every key page. Helpers live in
 | Home | `ProfessionalService` + `hasOfferCatalog` + `FAQPage` |
 | Solutions | `Service` (with per-pillar sub-services via `hasOfferCatalog`/`makesOffer`, entities sourced from the same data used to render the page — not one flat prose `description`) + `FAQPage` |
 | Pricing | `FAQPage` (+ Offers with price/currency) |
+| How it works | `HowTo` (implemented, sourced from the same `PROCESS_STEPS` array the page renders — keep it that way) + `FAQPage` + `BreadcrumbList` |
 | Location pages | `LocalBusiness` (areaServed City→Country) + `FAQPage` + `BreadcrumbList` |
 | Blog post | `BlogPosting` + `FAQPage` + `BreadcrumbList` |
 | About | `AboutPage` + `Person` (founder) |
@@ -156,17 +162,39 @@ can pull out a named sub-`Service`.
 **Cross-link the core money pages in body copy (board: Koray).** Solutions, Pricing,
 and How it Works must link each other contextually from within the page content
 (e.g. a pricing mention on Solutions links to `/pricing`, a "weekly publishing" claim
-links to `/how-it-works`) — not only via the closing CTA block. Reviewed 2026-08-04:
-`/solutions` had zero in-body links to any sibling page.
+links to `/how-it-works`) — not only via the closing CTA block. **Enforceable check
+(added 2026-09-15 — the prose rule alone did not stop the gap recurring three times):**
+`grep -n 'href=\"/\(solutions\|pricing\|how-it-works\)' app/{solutions,pricing,how-it-works}/page.tsx`
+and confirm each page has at least one hit pointing at *one of the other two*, outside
+of `CtaDrop`/`PageHero`. Reviewed 2026-08-04: `/solutions` had zero in-body links to
+any sibling page. Reviewed 2026-09-15: `/how-it-works` has the identical gap —
+confirms this needs a mechanical check, not a rule an author has to recall per page.
 
 **CTA reachable before the fold-six problem (board: Wes McDowell).** Every interior
 page built on `PageHero` must have a clickable CTA (button or prompt link) reachable
 within the first two sections after the hero — not deferred to the closing CTA block
 alone — plus at least one additional mid-scroll CTA checkpoint if the page runs 3+
 content sections before that closing block. Reference implementation: the homepage
-`Hero` component's "Book a call" + secondary CTA pattern. `PageHero` is a candidate
-for an optional `ctaHref`/`ctaLabel` prop so this becomes structural rather than
-something each page author has to remember.
+`Hero` component's "Book a call" + secondary CTA pattern. **Required build fix, not a
+suggestion (escalated 2026-09-15 — this has now been recommended on 2026-08-04,
+2026-09-01, and today without landing, across three page reviews, because the board
+can only advise, not commit code):** `components/ui/PageHero.tsx` must gain an
+optional `ctaHref`/`ctaLabel` prop, rendering a `Button` when supplied, so a page
+author sets one prop instead of hand-building a mid-page CTA every time. `/solutions`
+(2026-08-04) and `/how-it-works` (2026-09-15) both currently render zero CTA from
+`PageHero` — wire the prop on both pages in the same change that adds it, so the fix
+can't land on the component but miss the pages that motivated it.
+
+**Trust / social-proof signal, minimum one per page (board: Wes McDowell, added
+2026-09-15).** Every landing/money page (home, solutions, pricing, how it works,
+each vertical/location page) must carry at least one trust element — a client count,
+a short testimonial quote, a logo row, or a contextual link to `/case-studies` — placed
+in the main content flow, not only in the closing `CtaDrop`. Reviewed 2026-08-04
+(`/solutions`), then independently again on 2026-09-15 (`/pricing`, `/how-it-works`):
+all three had zero proof/trust content anywhere in the body. **No reusable proof
+component exists yet in `components/`** — build one (e.g. `components/home/ProofStrip.tsx`,
+client count + link to `/case-studies`) once and require an instance per page, rather
+than leaving each page to invent its own.
 
 `LocalBusiness` / service-provider template (fill from real data; never invent
 telephone or address — leave them out or env-driven until supplied):
@@ -276,7 +304,10 @@ Run before calling any build done:
 - [ ] Sitemap lists every real page and no fake ones; `thank-you` excluded (noindex)
 - [ ] Canonicals resolve to the apex; `www` 308-redirects
 - [ ] No horizontal overflow at 390 / 768 / 1440; keyboard-operable nav, tabs, accordions
-- [ ] BLUF block present near the top of every key page
+- [ ] BLUF block present near the top of every key page (home, solutions, pricing, how it works, about, each location page)
+- [ ] Solutions/Pricing/How-it-works each have at least one in-body contextual link to one of the other two, outside `CtaDrop`/`PageHero` (added 2026-09-15 — grep check above)
+- [ ] Every `PageHero`-based page has a clickable CTA within the first two sections after the hero (added 2026-09-15)
+- [ ] Every landing/money page has at least one trust/proof element in the main content flow (added 2026-09-15)
 - [ ] Ask-AI buttons (ChatGPT / Claude / Perplexity / Gemini) on home + contact, deep-linking a prefilled prompt with a clipboard fallback
 - [ ] `npm audit` clean; Lighthouse near-100 (and the Aramis `seo-audit` reads 100/100/100/100 · GEO 100)
 - [ ] Baseline GEO benchmark: query ChatGPT / Claude / Perplexity with
