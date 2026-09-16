@@ -20,3 +20,15 @@ underlying videos. `0f3KbpW8TBk` carries the same title as `mGQdB3cMNGE`
 judged it `ingested` (a routing-rule + agent-safety finding), differing from
 the 2026-07-29 run's `skipped-off-niche` call on the other ID — both rows are
 kept since they're technically different videoIds.
+
+| 2026-09-16 | 4IyJm1i__ag | Claude Code SEO: How I Got 50,000 Clicks Per Month (Steal This) | ingested | deep |
+| 2026-09-16 | Gt8tT-xf6g4 | How I Built INSANE WordPress Websites In 20 Minutes (Claude Code) | ingested | deep |
+| 2026-09-16 | M2KJ5-sFbbg | Claude Code SEO Audit: Fix Your Whole Website In 1 Prompt (Steal This) | skipped-nothing-new | deep |
+
+Note (2026-09-16): direct youtube.com access was blocked by the environment's
+network policy again this run, but Firecrawl's YouTube postprocessor returned
+full transcripts for all 3 candidates — `deep` depth throughout. `M2KJ5-sFbbg`
+is a repackaged, more generalized version of the already-logged Semrush-audit
+auto-fix workflow (same consolidated on-page/technical/GEO approach); its
+website-builder compatibility caveat and duplicate-city-page flagging are
+minor elaborations, not a materially new technique.

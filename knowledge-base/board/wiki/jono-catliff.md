@@ -66,3 +66,21 @@ clicks/month as the scoreboard.
   to review agent-made changes/logs rather than trust unattended agent runs
   blindly, relevant to any agency running Claude Code against live client
   sites/accounts. — https://www.youtube.com/watch?v=0f3KbpW8TBk
+- **2026-09-16** — Persona reference-file system: separate small files (humor, voice,
+  stories, opinions) built from the owner's real LinkedIn posts/past writing, fed into
+  the Claude Code project so every blog draft gets rewritten in the business owner's
+  actual tone instead of generic AI phrasing. Pairs with a SERP-structure-cloning
+  prompt pattern: before drafting, have Claude pull the top 3 non-forum ranking pages
+  for the target keyword, average their length/heading count/topic coverage, and use
+  that as the target structure instead of guessing a format. —
+  https://www.youtube.com/watch?v=4IyJm1i__ag
+- **2026-09-16** — Uses a free plugin ("Novamira") that gives Claude Code direct write
+  access to a WordPress site (pages, posts, themes, plugins) via an application-
+  password connection — pixel-perfect custom-PHP builds look best but are only
+  editable through Claude Code, while Gutenberg/Elementor builds look rougher but stay
+  editable by non-technical staff/clients, a real tradeoff to flag per client. Also
+  demos a brand-kit-first design flow: extract a reusable design system
+  (colors/type/spacing) from screenshots of the client's existing site via an AI
+  design tool, then generate the new page by combining that kit with a separately-
+  sourced layout reference before handing off to Claude Code to build. —
+  https://www.youtube.com/watch?v=Gt8tT-xf6g4

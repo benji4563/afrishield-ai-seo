@@ -65,3 +65,27 @@ message-first design · social proof · local SEO tier list.
   and proven hooks as house style, and use it to auto-generate on-brand b-roll
   graphics and a lead-magnet PDF straight from a finished script. —
   https://www.youtube.com/watch?v=yuVlHAKbnMQ
+- **2026-09-16** — The real differentiator isn't a second channel or high upload
+  volume — it's pairing broad "wide" videos that build audience with narrow,
+  watch-me-solve-this videos where the expert works one specific problem on camera.
+  Publishing too often on one channel can cannibalize itself (a new upload chokes the
+  prior one's momentum), so most solo creators should cap at roughly 1-2 videos/week
+  and only split into a second channel if audiences genuinely differ. Going narrower
+  than feels comfortable (general advice → one specific client type) can convert
+  better even at far fewer views, since the small audience is already qualified to
+  buy. — https://www.youtube.com/watch?v=i1fLRypxgjU
+- **2026-09-16** — A large share of a video's success comes from topic and
+  title/thumbnail choices rather than production quality — spend more deliberate
+  time deciding what to make than filming it. Channels that succeed often re-run
+  proven topics/title formulas as repeatable "franchises" rather than always chasing
+  fresh ideas. On channel pages and at video endings, avoid dead-end wind-down
+  phrases ("thanks for watching") and route instead to one specific offer/landing
+  page or straight into the next video, since any "this is over" cue invites viewers
+  to leave. — https://www.youtube.com/watch?v=JJTFLkD9NxU
+- **2026-09-16** — Reads YouTube doubling its monetization-hours bar as a "controlled
+  burn" (like past Google/Facebook algorithm purges) that thins out low-effort/AI-slop
+  channels and frees up discovery space for expert-led channels that weren't chasing
+  ad revenue anyway. Since most competitors will only register this as scary
+  headlines and use it as a reason to delay, there's a temporary competitive window
+  for anyone willing to keep publishing before that hesitation fades. —
+  https://www.youtube.com/watch?v=kjRKGZh7uAE

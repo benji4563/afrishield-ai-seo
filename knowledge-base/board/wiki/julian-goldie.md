@@ -59,3 +59,23 @@ links · topical relevance of links.
   in content/site generation. Worth watching for cost impact on our generation
   pipeline, but needs independent verification before changing our model stack. —
   https://www.youtube.com/watch?v=PYbBddbflRo
+- **2026-09-16** — Frames a hosted "Hermes Cloud" instance as a no-cost alternative to
+  running a VPS: unlimited free third-party models paired with a persistent memory
+  store synced across devices and messaging channels (Telegram/Discord/Slack/email),
+  plus running scheduled/24-7 agent tasks in an isolated cloud sandbox so they can't
+  touch the local machine — a safety-by-isolation pattern worth noting for agency ops.
+  Unverified — no reliability/uptime data vs. an actual VPS. —
+  https://www.youtube.com/watch?v=OI2by3seeNo
+- **2026-09-16** — Proposes a 3-step build recipe for a self-hosted "Agent OS": pick a
+  free open-source agent harness, pair it with a free model (OpenRouter or a coding
+  agent's free tier), then iteratively prompt-and-test to grow custom internal tools
+  (dashboards, ad generators) inside it. Claims this fully replaces n8n since custom
+  tools get built directly into the agent OS — an unverified, self-serving claim, not
+  an established best practice. — https://www.youtube.com/watch?v=Tna9xRHRHcI
+- **2026-09-16** — Claims one natural-language prompt to n8n's AI workflow builder
+  generated five linked automations (onboarding, lead triage, news digest, content
+  drafting, re-engagement) in a single pass — unverified, likely needed cleanup
+  despite the framing. More durable pattern underneath: using n8n's built-in "data
+  tables" as a shared dedupe/memory layer across all workflows, and never marking an
+  action "done" if a send/step fails, so logs stay honest — a reusable reliability
+  principle for any client automation stack. — https://www.youtube.com/watch?v=lGBYQqZdly0

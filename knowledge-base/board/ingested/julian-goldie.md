@@ -21,3 +21,12 @@ via Firecrawl, which reaches YouTube through separate infrastructure). This
 channel posts several times a day; only the 3 newest were reviewed per run
 per the per-advisor cap. No videoId overlap between the 2026-07-29 and
 2026-08-05 runs.
+
+| 2026-09-16 | OI2by3seeNo | How to Run Hermes Agent FREE Forever! | ingested | deep |
+| 2026-09-16 | Tna9xRHRHcI | How to Build Your Own Agent OS FREE | ingested | deep |
+| 2026-09-16 | lGBYQqZdly0 | This n8n System Runs My Entire AI Community | ingested | deep |
+
+Note (2026-09-16): direct youtube.com access was blocked by the environment's
+network policy again this run, but Firecrawl's YouTube postprocessor returned
+full transcripts for all 3 candidates — `deep` depth throughout. All 3 verdicts
+carry an unverified-claim caveat per this advisor's "signal not gospel" stance.
