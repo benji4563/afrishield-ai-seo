@@ -23,6 +23,16 @@ Rules for the poster:
 - After publishing, set the row to `claimed` here **and** append to `used-keywords.md`.
 - If **no** `queued` rows remain, do nothing and report "queue empty" — never invent
   a keyword or republish an existing one.
+- **Escalate, don't just log (board: Dan Martell, 2026-09-08).** A skip-note is a
+  decision waiting on the queue-keeper, not a closed loop — row 9 (`what is local
+  seo`) was checked and skipped **six times** (2026-08-18 through 2026-08-23) with
+  the identical finding each time and no queue-keeper action landed in between,
+  quietly stalling the queue-driven pipeline for over two weeks. Going forward:
+  the poster's own run report (not just the skip-note buried in this file) must
+  say explicitly when (a) any row has now been skipped **3 or more times**, or
+  (b) the general `queued` pool has **2 or fewer** rows left — so the gap surfaces
+  where a human or the weekly queue-keeper routine will actually see it, instead
+  of accumulating silently.
 - Write with the locked-in humor reference
   `afrishieldai-seo/skills/humor-writing/SKILL.md` (distilled from the
   hireawriter.us humor article): 3–5 dry, industry-aimed touches per post, none
