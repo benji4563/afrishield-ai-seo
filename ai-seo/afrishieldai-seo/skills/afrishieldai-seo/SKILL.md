@@ -142,7 +142,7 @@ Inject validated JSON-LD in the server HTML of every key page. Helpers live in
 | Root layout (all pages) | `Organization` |
 | Home | `ProfessionalService` + `hasOfferCatalog` + `FAQPage` |
 | Solutions | `Service` (with per-pillar sub-services via `hasOfferCatalog`/`makesOffer`, entities sourced from the same data used to render the page — not one flat prose `description`) + `FAQPage` |
-| Pricing | `FAQPage` (+ Offers with price/currency) |
+| Pricing | `FAQPage` + `Offers` with price/currency, sourced from a named `lib/structured-data.ts` helper (e.g. `pricingOfferJsonLd`) built off the page's own tier data — not left as an optional parenthetical each author can skip |
 | Location pages | `LocalBusiness` (areaServed City→Country) + `FAQPage` + `BreadcrumbList` |
 | Blog post | `BlogPosting` + `FAQPage` + `BreadcrumbList` |
 | About | `AboutPage` + `Person` (founder) |
@@ -157,7 +157,31 @@ can pull out a named sub-`Service`.
 and How it Works must link each other contextually from within the page content
 (e.g. a pricing mention on Solutions links to `/pricing`, a "weekly publishing" claim
 links to `/how-it-works`) — not only via the closing CTA block. Reviewed 2026-08-04:
-`/solutions` had zero in-body links to any sibling page.
+`/solutions` had zero in-body links to any sibling page. **Still not enforced:**
+reviewed again 2026-09-11, `/pricing` shipped with zero in-body links too — the rule
+existed and did not prevent a second instance. Before marking a Solutions/Pricing/
+How-it-works page done, grep the file for `href=` and confirm at least 2 contextual
+(non-CTA-boilerplate) links to sibling pages exist, and confirm every "Schema" cell
+in the table above is actually implemented (not just `FAQPage`) by checking the
+page's `<StructuredData>` calls against the table row — self-check, don't rely on
+remembering the rule.
+
+**Trust signal required per interior page (board: Wes McDowell, 2026-09-11).** Every
+page built on `PageHero` with 2+ content sections must include at least one
+non-self-reported trust element — `TrustStrip` (`components/home/TrustStrip.tsx`,
+currently homepage-only), an in-body link to `/case-studies`, or an equivalent
+credibility line — placed before the closing CTA block, not only inside it. Flagged
+independently on `/solutions` (2026-07-31, 2026-08-04) and now `/pricing`
+(2026-09-11): three consecutive site-page reviews found zero trust/social-proof
+signal in the page body. The CTA-reachability and cross-link rules above didn't
+create this one; it needs its own line.
+
+**`CtaDrop` self-link check.** `CtaDrop` (`components/home/CtaDrop.tsx`) hardcodes a
+secondary button to `/pricing` ("See pricing"). Any page that calls `CtaDrop` on
+`/pricing` itself renders a dead circular link at the exact moment an unsure visitor
+is looking for help. Give `CtaDrop` optional `secondaryHref`/`secondaryLabel` props
+and require every call site to check its own path isn't the hardcoded default before
+shipping.
 
 **CTA reachable before the fold-six problem (board: Wes McDowell).** Every interior
 page built on `PageHero` must have a clickable CTA (button or prompt link) reachable

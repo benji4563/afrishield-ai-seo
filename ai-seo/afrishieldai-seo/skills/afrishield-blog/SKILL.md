@@ -105,6 +105,15 @@ Non-negotiables:
   numbered how-to (an `<ol>` walking the reader through steps), add a matching
   `howToJsonLd` `StructuredData` block (already exported from `lib/structured-data.ts`)
   alongside the standard three — free retrieval surface, otherwise left on the table.
+  **Build both from one source array.** Define a single
+  `ReadonlyArray<{name, text}>` const, render the visible `<ol>` by mapping over it,
+  and pass that same array to `howToJsonLd` — mirroring the `FAQ` const pattern,
+  which already feeds both the visible FAQ block and `faqPageJsonLd` from one source
+  (`components/blog/PostLayout.tsx`). Reviewed 2026-09-11:
+  `top-geo-ai-seo-agencies-africa-2026` has a standalone `BLUEPRINT_STEPS` const
+  feeding only the JSON-LD, hand-paraphrased separately from the visible `<ol>` text
+  — not broken yet, but two copies of the same fact will drift silently on the next
+  edit to either one.
 - **Contextual internal links (board: Koray / topical authority).** Include 2–4
   in-body anchor-text links to sibling posts in the same `content-queue.md` cluster,
   with descriptive anchors naming the target topic — do not rely on the auto
