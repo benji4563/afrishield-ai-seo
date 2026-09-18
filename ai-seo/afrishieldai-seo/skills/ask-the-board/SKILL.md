@@ -81,3 +81,20 @@ weekly Saturday board digest.
   on any RED finding; apply fixes; then ship.
 - **Scheduled:** the twice-weekly board routine runs this over the week's artifacts;
   the Saturday digest rolls up the summaries.
+
+## Backlog circuit-breaker (added 2026-09-18)
+
+Before picking targets, check the count of open PRs in the repo. **If it is
+large and growing across consecutive review cycles** (board reviews from
+2026-09-08 through 2026-09-18 found 20+ and rising, unrelated to any single
+review's content), that backlog *is* this cycle's most important finding —
+recommendations and fixes are being produced but not shipped, which makes
+every other finding in the report moot until it clears. In that state:
+- Lead the report with the backlog itself (count, oldest PR age, anything with
+  real risk exposure such as an unpatched security advisory), not with content
+  scores.
+- Do a **status confirmation**, not a fresh re-review, of any target already
+  covered by a still-open prior review PR — cite it, don't re-derive it.
+- Only spend full review effort on genuinely untouched ground.
+- Prefer recommending *which existing PRs to merge, in what order* over adding
+  another skill-doctrine PR to the pile.

@@ -138,6 +138,13 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 > or two more runs without a DataForSEO pass on rows 16–21 (tourism candidates) or
 > fresh general-cluster keywords.**
 >
+> **Board note (2026-09-18):** row 9's retirement is already written up in the
+> still-unmerged PR `board/review-2026-09-15` (#55) — resolve by merging that PR
+> rather than re-deciding this row again. Separately: no `Add blog post` commit
+> has landed on master since 2026-08-23 (26 days) — worth checking whether the
+> auto-poster's scheduled trigger is still firing, independent of the queue
+> content itself.
+>
 > **Skip note (auto-poster, 2026-08-23):** row 9 checked a sixth time — still the
 > same unresolved duplication against `local-seo-for-small-business`'s opening H2
 > ("What local SEO actually is"), no narrowing or retirement since the first flag on
