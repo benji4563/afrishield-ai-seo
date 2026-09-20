@@ -73,6 +73,16 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 29 | how to write meta descriptions that get clicks | H — general how-to / on-page | candidate - verify volume (DataForSEO) | candidate |
 | 30 | how to rank on google in multiple african countries | G — SMB / differentiation (Africa) | candidate - verify volume (DataForSEO) | candidate |
 | 31 | how to show up in perplexity ai search | B — AI answers (AEO/GEO) | candidate - verify volume (DataForSEO) | candidate |
+| 32 | how to respond to negative google reviews | E — local / reputation | candidate - verify volume (DataForSEO) | candidate |
+| 33 | how to optimize a website for voice search | B — AI answers (voice/AEO) | candidate - verify volume (DataForSEO) | candidate |
+| 34 | does my business need a blog for seo | D — cost / decision anxiety | candidate - verify volume (DataForSEO) | candidate |
+| 35 | how to make a website mobile friendly for seo | H — general how-to / technical | candidate - verify volume (DataForSEO) | candidate |
+| 36 | why did my website traffic drop | D — problem-aware | candidate - verify volume (DataForSEO) | candidate |
+| 37 | how to fix inconsistent business information across the web | E — local / NAP consistency | candidate - verify volume (DataForSEO) | candidate |
+| 38 | how to improve website loading speed for seo | H — general how-to / technical | candidate - verify volume (DataForSEO) | candidate |
+| 39 | how much does a website redesign cost | D — cost anxiety | candidate - verify volume (DataForSEO) | candidate |
+| 40 | what is domain authority and does it matter for small business | H — general how-to / technical education | candidate - verify volume (DataForSEO) | candidate |
+| 41 | how to check if my website is indexed by google | H — general how-to / technical | candidate - verify volume (DataForSEO) | candidate |
 
 > **Queue top-up (queue-keeper, 2026-08-30):** audited the queue — only row 9
 > (`what is local seo`) remained `queued` (1 row, below the 6-row floor). Added
@@ -82,6 +92,22 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 > `Status` flipped from `queued` to `candidate` to match the existing
 > convention for rows 16–21, keeping them out of the auto-poster's pick pool
 > until a DataForSEO pass promotes each to `vetted` + `queued`.
+>
+> **Queue top-up (queue-keeper, 2026-09-20):** audited the queue again — still
+> only row 9 `queued` (unchanged since 08-30/09-11; the differentiation-angle
+> loop against `local-seo-for-small-business` is still unresolved, six skips
+> deep as of 2026-08-23). Added rows 32–41 as new candidates for the AI-SEO /
+> GEO / answer-engine / local-SEO / small-business-search vertical, checked
+> against every live post in `lib/posts.ts`, every page under `app/`, and
+> `used-keywords.md` for duplicate angles. **Deliberate deviation from this
+> run's stored task prompt:** the scheduled prompt says to set `Status =
+> queued` on new candidates, but that would put unvetted rows straight into
+> the auto-poster's pick pool — the exact thing the 2026-09-11 fix above
+> corrected rows 22–31 for. Followed the established, documented convention
+> instead and set rows 32–41 to `Status = candidate` (same as rows 16–31),
+> so nothing here can be auto-published before a human DataForSEO pass
+> promotes it to `vetted` + `queued`. **Recommend fixing the stored prompt
+> itself** so this doesn't need re-litigating every week.
 
 > **Skip note (auto-poster, 2026-08-18):** row 9 (`what is local seo`) was passed
 > over this run under the differentiation-angle check — `local-seo-for-small-business`
