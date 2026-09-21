@@ -10,15 +10,17 @@
     "typecheck": "tsc --noEmit",
     "connect-domain": "node scripts/connect-domain.mjs"
   },
-  "//overrides": "next 16.2.11 pins vulnerable postcss/sharp transitively; npm's suggested 'fix' is a downgrade to next@9. These force the patched versions instead. Re-check on each Next upgrade and drop when upstream catches up.",
+  "//overrides": "next pins vulnerable postcss/sharp transitively; npm's suggested 'fix' is a downgrade to next@9. These force the patched versions instead. nanoid (via postcss) and js-yaml (via @eslint/eslintrc) had their own high-severity advisories, pinned here too. Re-check on each Next/eslint upgrade and drop entries when upstream catches up.",
   "overrides": {
     "postcss": "^8.5.12",
-    "sharp": "^0.35.0"
+    "sharp": "^0.35.4",
+    "nanoid": "^3.3.19",
+    "js-yaml": "^4.3.2"
   },
   "dependencies": {
     "@vapi-ai/web": "^2.6.1",
     "framer-motion": "^12.42.2",
-    "next": "^16.2.11",
+    "next": "^16.3.5",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
