@@ -157,7 +157,29 @@ can pull out a named sub-`Service`.
 and How it Works must link each other contextually from within the page content
 (e.g. a pricing mention on Solutions links to `/pricing`, a "weekly publishing" claim
 links to `/how-it-works`) — not only via the closing CTA block. Reviewed 2026-08-04:
-`/solutions` had zero in-body links to any sibling page.
+`/solutions` had zero in-body links to any sibling page. **Reviewed again 2026-09-22:
+`/pricing` repeated the identical violation** (zero in-body links; only `/contact`
+CTA buttons) and also shipped without the Offers schema this same table already
+specifies below — the rule existing in this doc did not stop it recurring on the
+very next money page reviewed. See the B.7 enforcement checklist below, added for
+this reason.
+
+**On-page Offer entities, not just the homepage (board: Mike King, 2026-09-22).**
+The Pricing row's "`FAQPage` (+ Offers with price/currency)" spec means **on
+`/pricing` itself** — `professionalServiceJsonLd`'s `hasOfferCatalog` living only on
+`app/page.tsx` does not satisfy it. `/pricing`'s own raw HTML must carry a matching
+`Offer[]`/`hasOfferCatalog` block generated from the same tier data that renders the
+visible pricing cards, so copy and schema can't drift apart.
+
+**Trust/social-proof slot on every page shell (board: Wes McDowell, 2026-09-22).**
+`/solutions` (2026-08-04) and `/pricing` (2026-09-22) were independently reviewed and
+both had **zero trust signal anywhere in the body** — no client count, testimonial,
+case-study reference, or number backing a claim. Root cause: none of `PageHero`,
+`Bluf`, `Section`/`SectionHeader`, or `CtaDrop` has a slot for one, so every page
+built on these shells inherits the gap. Add an optional `proof`/`proofStat` prop to
+`PageHero` and `CtaDrop` (renders nothing if omitted, so existing pages are
+unaffected) and require every page pass at least one trust signal to it or include
+one in the body scroll.
 
 **CTA reachable before the fold-six problem (board: Wes McDowell).** Every interior
 page built on `PageHero` must have a clickable CTA (button or prompt link) reachable
@@ -281,6 +303,18 @@ Run before calling any build done:
 - [ ] `npm audit` clean; Lighthouse near-100 (and the Aramis `seo-audit` reads 100/100/100/100 · GEO 100)
 - [ ] Baseline GEO benchmark: query ChatGPT / Claude / Perplexity with
       "top [service] in [city]" and record whether the site is cited. Re-check monthly.
+- [ ] **Money-page schema/link gate (board: King + Koray, 2026-09-22).** For each of
+      `/solutions`, `/pricing`, `/how-it-works`: `curl` the raw HTML and grep for
+      `"@type":"Offer"` (or `hasOfferCatalog`) where the page shows priced/named
+      entities, and for at least one `<a href="/solutions|/pricing|/how-it-works|
+      /case-studies">` inside the body copy — not just inside a nav, `Button`, or
+      `CtaDrop` block. Fail the build-verification step if either check comes back
+      empty; this is the same rule B.3 already states, made mechanically checkable
+      after it went unenforced twice (`/solutions` 2026-08-04, `/pricing` 2026-09-22).
+- [ ] **Trust-signal check (board: Wes McDowell, 2026-09-22).** Every page built on
+      `PageHero`/`CtaDrop` carries at least one trust/social-proof element (client
+      count, case-study link, testimonial, or a concrete number) somewhere in the
+      body — not just self-reported capability claims.
 
 ### B.8 — GEO Citation, PR Wire Syndication & Co-Occurrence SOP
 
@@ -297,6 +331,20 @@ Generative search engines (Perplexity, ChatGPT Search, Gemini, Claude) require *
 3. **48–72h Indexation & Generative Benchmark:**
    - Verify indexation across 50+ news portals via Google News search operators.
    - Query Perplexity, ChatGPT Search, and Gemini with target comparative prompts (e.g., *"Top [service] providers in [city]"*) and verify brand extraction into generative tables.
+4. **Log the artifact (board: Mike King, 2026-09-22).** Steps 2 and 3 are the whole
+   point of B.8 (third-party corroboration) but leave no trace in the repo — the
+   2026-09-22 board review found no evidence either ran for
+   `top-geo-ai-seo-agencies-africa-2026` or `enterprise-geo-launch-africa`, published
+   under this SOP in the same commit. Record each pillar guide's syndication run in
+   `reports/pr-syndication-log.md`: wire used, the EAV triples published, indexed-
+   portal count, and the citation-benchmark result, so the SOP has a checkable record
+   instead of an unverifiable step.
+5. **Comparable entity depth for every profiled competitor (board: Koray).** An
+   "objective, analyst-style" comparison must give every profiled agency comparable
+   entity detail (not just the author) — and every `ItemList`/`ListItem` entry needs
+   its own `url`/`sameAs`, not just the author's. A comparison guide that only
+   disambiguates itself reads as self-serving and weakens the corroboration this SOP
+   exists to build.
 
 ---
 

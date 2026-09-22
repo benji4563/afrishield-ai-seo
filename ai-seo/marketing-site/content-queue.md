@@ -50,7 +50,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 6 | is seo worth it | D — cost / ROI anxiety | vetted · SV~10 · informational · LOW comp | claimed |
 | 7 | how long does seo take | D — expectations | vetted · SV~10 · informational · LOW comp | claimed |
 | 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | claimed |
-| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | queued |
+| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | retired |
 | 10 | seo vs google ads | B — comparison | vetted · SV~10 · commercial · LOW comp | claimed |
 | 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | claimed |
 | 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | claimed |
@@ -153,6 +153,32 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 > mandatory artifact check because the sandbox's network egress policy still
 > blocks the CloudFront asset host (403 policy denial, same as 2026-08-22, not a
 > content problem) — published text-only per the skill's fallback rule.
+>
+> **Board review (2026-09-22): row 9 retired.** Six identical skip notes
+> (2026-08-18 → 2026-08-23) confirmed the same unresolved duplication against
+> `local-seo-for-small-business`'s opening H2 (`#what-local-seo-is`) and its FAQ
+> ("What is local SEO for a small business?"), and nothing narrowed the angle or
+> retired the row in the ~4 weeks since the first flag — each extra run cost a
+> wasted pick-cycle checking a duplication that was never going to resolve itself.
+> The board's GEO lens confirmed the duplication still holds verbatim as of this
+> review and scored a fresh attempt 2/10: the fixed post template forces the same
+> H2s (definition, vs. general SEO, ranking factors) that `local-seo-for-small-
+> business` already owns, so a second full post would dilute cluster E rather than
+> extend it. At SV~10 informational, the keyword's value no longer clears six
+> wasted cycles. Status flipped to `retired` above — see the `afrishield-blog`
+> skill's new skip-count escalation rule (this same review) so a stuck row can't
+> silently repeat this on a future keyword: three consecutive skips now
+> auto-retires instead of logging a note nobody actioned.
+>
+> **Board review (2026-09-22): queue-keeper cadence.** Rows 22–31 have sat
+> `candidate` (no DataForSEO pass) since 2026-09-11, and the skip notes above show
+> the general pool has already hit empty at least once waiting on that promotion.
+> Promoting candidates to `vetted`/`queued` should be a fixed step in every weekly
+> queue-keeper run (enough to keep the `queued` floor at ≥6), not something that
+> happens only when a human/interactive session with DataForSEO notices the pool
+> is dry — a `queued` count under 6 with no promotion that run should be treated as
+> a first-class failure signal, same severity as "queue empty," not a note buried
+> in prose.
 
 ## Watchlist — no DataForSEO volume yet (do NOT queue until confirmed)
 
