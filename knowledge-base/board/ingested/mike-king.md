@@ -26,3 +26,12 @@ Note (2026-08-05, deep pass): `cDuoGFq0hj8` is a short promotional excerpt of
 the same Gmail-personalization experiment covered in full in `JjPfPT37li0` —
 no new content beyond what's already logged there. No videoId overlap with
 the 2026-07-29 run.
+
+Note (2026-09-23, check-only, no rows added): scraped the iPullRank company
+channel's `/videos` tab (channel_id `UCttOymj_FLE8d7xA7rEbsTw`) per the
+Firecrawl recipe. All ~30 videos returned in the initial load are
+date-sorted newest-first (relative ages ran 3mo → 7mo ago, strictly
+increasing), and the single newest one, `JjPfPT37li0`, is already ledgered
+above from the 2026-08-05 run. No videoId newer than that appeared, so
+there are no genuinely new uploads to process this run. Nothing was
+deep-analysed and the wiki was left untouched.
