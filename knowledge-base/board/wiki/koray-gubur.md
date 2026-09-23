@@ -75,3 +75,22 @@ context · "Koraynese" (his precise, coined terminology).
   progressive: a domain earns "rankability" through accumulated click/engagement
   satisfaction over time rather than ranking outright from day one. —
   https://www.youtube.com/watch?v=WrU25krFCtk
+- **2026-09-23** — Frames AI answer engines' retrieval as cost-driven: once one source
+  already satisfies a topic, engines have little incentive to trust a second one, so
+  early comprehensive coverage creates a lock-in advantage beyond mere quality. Claims
+  different LLMs read pages with measurably different thresholds — ChatGPT leans harder
+  on early-page dates/entities and a stricter "is this worth reading further" cutoff,
+  Claude tolerates more content before deciding, Perplexity sits between the two —
+  suggesting it's worth serving a lightly agent-adapted markdown version of key pages
+  rather than one identical page for every crawler. Also describes a "launch trick" of
+  blocking Googlebot entirely while a new site accumulates other traffic/links, then
+  unblocking once fully built, reportedly speeding up how fast Google starts trusting
+  and ranking it. — https://www.youtube.com/watch?v=VLDa_RoczYI
+- **2026-09-23** — Argues LLM answer generation increasingly rewards being associated
+  with the right *attributes* (price, design, speed, etc. inferred from "best X for Y"
+  queries) via any independent third-party mention, not just classic backlinks — so
+  off-page work should target attribute-matching declarations about a brand, not only
+  links. Also claims AI engines favor citing existing HTML listicles over synthesizing
+  from raw passages because aggregating a ready-made list is cheaper than extracting
+  and scoring scattered text, an argument for packaging comparison/best-of content as
+  clean structured lists. — https://www.youtube.com/watch?v=3ncQHJuQaDM
