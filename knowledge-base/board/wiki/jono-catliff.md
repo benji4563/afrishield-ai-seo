@@ -66,3 +66,34 @@ clicks/month as the scoreboard.
   to review agent-made changes/logs rather than trust unattended agent runs
   blindly, relevant to any agency running Claude Code against live client
   sites/accounts. — https://www.youtube.com/watch?v=0f3KbpW8TBk
+- **2026-09-23** — Runs a dedicated Google Ads audit skill (~200 checks across
+  account, campaign/ad-group, ad-copy, landing-page, and keyword/search-term
+  layers via one slash command) that treats Google's own in-product
+  "optimization score" prompts as adversarial — accepting them tends to raise
+  spend more than profit, so the skill is tuned to override those defaults
+  rather than chase the score. Two specific levers worth stealing for local
+  clients: force location targeting to "presence" only (not the
+  Google-recommended "presence or interest") to stop paying for out-of-area
+  clicks, and prioritize Google Maps/local-pack placement, which reportedly
+  pulls several times the clicks of a standard search ad on local queries. —
+  https://www.youtube.com/watch?v=j1tcmbOHYZY
+- **2026-09-23** — Hardens the keyword-research stage of the automation
+  pipeline into explicit numeric filters (minimum monthly volume in the
+  50-100 range, keyword difficulty capped around 30, and a hard split between
+  informational intent → blog posts vs transactional intent → service pages),
+  using competitor cost-per-click as a proxy for how commercially valuable a
+  term actually is — a more codifiable rule set than our current doctrine
+  captures. Content generation then explicitly scrapes the top 3 ranking
+  competitor pages per target keyword to reverse-engineer why they rank
+  before drafting, then adds a distinct human voice/humor pass on top — a
+  competitive-gap-then-differentiate loop worth encoding into our own
+  content-generation skill. — https://www.youtube.com/watch?v=_0wKlt1vHLY
+- **2026-09-23** — Flags "doorway page" risk explicitly as part of the
+  site-audit skill: near-identical programmatic city/service pages (same
+  copy, city name swapped) get surfaced as a specific finding because Google
+  can treat them as spam, which is a useful risk-check to bolt onto our
+  existing city×service page-generation practice rather than assuming scale
+  alone is safe. Also repositions the same audit skill as a client-acquisition
+  tool — running it against a prospect's site to produce a before/after gap
+  report plus a competitor benchmark as sales collateral for landing new
+  SEO/agency clients. — https://www.youtube.com/watch?v=M2KJ5-sFbbg
