@@ -145,7 +145,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 27 | how many backlinks does a small business need | H — general how-to | **retired 2026-09-24** — no geographic qualifier | retired |
 | 28 | how to get more phone calls from google search | E — local / commercial | **retired 2026-09-24** — superseded by row 34 | retired |
 | 29 | how to write meta descriptions that get clicks | H — general how-to / on-page | **retired 2026-09-24** — no geographic qualifier, no commercial intent | retired |
-| 30 | how to rank on google in multiple african countries | G — SMB / differentiation (Africa) | on-strategy, kept — Africa-qualified · `needs-volume` | queued |
+| 30 | how to rank on google in multiple african countries | G — SMB / differentiation (Africa) | on-strategy and Africa-qualified, but `needs-volume` — held as `candidate` for consistency with every other unconfirmed row (45–48), so the poster starts on the `gsc-evidenced` rows instead of an unverified broad term | candidate |
 | 31 | how to show up in perplexity ai search | B — AI answers (AEO/GEO) | **retired 2026-09-24** — no geographic qualifier | retired |
 
 ## Active queue — African commercial intent (added 2026-09-24)
