@@ -1,4 +1,5 @@
 import { POSTS } from '@/lib/posts';
+import { CITIES } from '@/lib/cities';
 import { SITE_URL } from '@/lib/site';
 
 /**
@@ -15,6 +16,7 @@ const ROUTES = [
   { path: '/for-safari-operators', priority: '0.9', changefreq: 'monthly' },
   { path: '/for-lodges-hotels', priority: '0.9', changefreq: 'monthly' },
   { path: '/geo-services', priority: '0.9', changefreq: 'monthly' },
+  { path: '/ai-seo', priority: '0.9', changefreq: 'monthly' },
   { path: '/ai-visibility-check', priority: '0.9', changefreq: 'monthly' },
   { path: '/about', priority: '0.8', changefreq: 'monthly' },
   { path: '/case-studies', priority: '0.8', changefreq: 'monthly' },
@@ -30,6 +32,12 @@ export function GET() {
 
   const entries = [
     ...ROUTES.map((route) => ({ ...route, lastmod: today })),
+    ...CITIES.map((city) => ({
+      path: `/ai-seo/${city.slug}`,
+      priority: '0.9',
+      changefreq: 'monthly',
+      lastmod: today,
+    })),
     ...POSTS.map((post) => ({
       path: `/blog/${post.slug}`,
       priority: '0.7',

@@ -1,10 +1,72 @@
 # Content queue — afrishieldai.com blog
 
-> **Editorial rule (added 2026-08-10, tourism-niche expansion):** going forward, **60% of
-> queued posts target tourism & hospitality** (clusters A/B/D/E and Cameroon FR in
-> `keyword-map.md`), **40% the existing general mix**. The poster should apply this ratio
-> when choosing between equally-vetted `queued` rows; the queue-keeper should keep the
-> candidate pool stocked to match it.
+> ## ⚠️ Editorial rule (2026-09-24, GEOGRAPHIC PIVOT — supersedes the 2026-08-10 ratio)
+>
+> **Every queued keyword must carry African commercial or local intent.** Generic global
+> informational keywords are retired as a strategy. This is not a preference — it is what
+> 90 days of Google Search Console data forced.
+>
+> **The evidence (GSC, sc-domain:afrishieldai.com, 2026-06-24 → 2026-09-21):**
+>
+> | Metric | Value |
+> |---|---|
+> | Total impressions | 667 |
+> | Total clicks | **2** |
+> | Average position | **61.9** |
+>
+> Impressions by country — the whole problem in one table:
+>
+> | Market | Impressions | Avg position |
+> |---|---|---|
+> | United Kingdom | 81 | 74.1 |
+> | Australia | 65 | 66.5 |
+> | India | 46 | 63.0 |
+> | Canada | 38 | 66.6 |
+> | Netherlands | 14 | 41.7 |
+> | **Kenya** | **3** | **17.3** |
+> | **Cameroon** | **3** | **3.7** (1 of the site's 2 clicks) |
+> | **Ghana** | **2** | **7.0** |
+> | **Nigeria** | **1** | **31.0** |
+>
+> Africa is **~9 of 667 impressions — 1.3%**. An African AI-SEO agency was getting 98.7% of
+> its search visibility from markets it does not serve. Top queries included
+> `bli synlig på google maps` (Swedish), `google rankings verbeteren` (Dutch),
+> `ai seo warrendale` (Pennsylvania) and `how long does law firm seo take`.
+>
+> **The critical detail: when an African searcher does see this site, it ranks 3rd–17th.**
+> Cameroon 3.7, Ghana 7.0, Kenya 17.3 — against the UK's 74.1. The site is not weak. It is
+> aimed at the wrong country. The two highest-impression pages
+> (`how-to-appear-on-google-maps`, 233 impressions at position 69;
+> `how-long-does-seo-take`, 181 at 74.7) are generic global posts competing with Ahrefs,
+> Semrush and Moz — unwinnable for a domain with no backlink profile, and worthless even if
+> won, because the searcher is in Manchester.
+>
+> **Rules that follow from this:**
+> 1. A keyword with no African geographic or market qualifier does **not** go in this queue.
+>    "how long does seo take" is retired; "how long does seo take in nigeria" is the shape.
+> 2. **Localise the proven performers first.** Where a generic post already earns impressions
+>    (cost, timeline, Google Maps, GBP), the African-qualified cut of that same topic is the
+>    highest-confidence row available — topical relevance is already demonstrated, only the
+>    geography is wrong.
+> 3. **Francophone Cameroon is the priority market, not an afterthought.** It has the site's
+>    best position (3.7), one of its two clicks, and by far the thinnest competition. French
+>    commercial terms in this market are close to uncontested.
+> 4. Commercial and decision intent outrank informational volume. A 10-volume term that ends
+>    in a call is worth more than a 2,000-volume term that ends in Manchester.
+>
+> **Vetting sources, and an honest note on them.** DataForSEO was *not* reachable in the
+> 2026-09-24 session, so no row below claims a DataForSEO volume it does not have. Two
+> alternative evidence grades are used and are marked per row:
+> - `gsc-evidenced` — Search Console shows this site already taking impressions on this term
+>   or its direct generic parent. This is *first-party proof of real demand touching this
+>   exact domain*, which is stronger evidence than a third-party volume estimate.
+> - `serp-verified` — the live SERP was inspected on 2026-09-24 and the ranking competition
+>   is local agencies and directories (e.g. Lagos: TAGET Media, Nive Digital, Crank Digital;
+>   Nairobi: SEO Smart, SEO Kenya, Kwetu), not Ahrefs/Semrush-class domains. Winnable.
+> - `needs-volume` — plausible and on-strategy, but confirm with DataForSEO before writing.
+>
+> The old 2026-08-10 rule (60% tourism / 40% general) is **superseded**. Tourism remains a
+> strong vertical, but the axis that was actually costing money was geography, not sector.
 
 The **blog auto-poster** (scheduled cloud routine) consumes this file. Each run it
 takes the **top `queued` keyword**, writes the post, then marks it `claimed`.
@@ -33,6 +95,18 @@ Rules for the poster:
   `lib/posts.ts` and confirm this row's angle doesn't duplicate one. See the
   `afrishield-blog` skill's step 1 for the full check. Row 1 below carries the
   board's recommended angle as an example of the format to use going forward.
+- **Geographic-intent check (2026-09-24 pivot — blocking).** Before writing, confirm the
+  row names an African market or is written for one. If a keyword would read identically
+  to a searcher in Manchester and a searcher in Lagos, it is the wrong keyword — skip it
+  and log why. Every post must also:
+  - name the target market explicitly in the `ShortAnswer`/BLUF, not just in passing;
+  - price in the local currency where money is mentioned (NGN, GHS, KES, ZAR, XAF);
+  - link to the matching city page under `/ai-seo/<city>` where one exists
+    (Lagos, Abuja, Accra, Nairobi, Johannesburg, Douala);
+  - use local examples — real districts, real local context — not generic ones.
+- **French rows are written in French.** Rows 36, 37 and 47 target francophone Cameroon,
+  the site's best-performing market. Do not write them in English and translate; write
+  them in French and keep the metadata French too.
 
 Vetting note: all volumes below are **DataForSEO, South Africa, en** — a single
 African market, so absolute volumes are low (10–40) by nature. Selection weighs
@@ -50,7 +124,7 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 6 | is seo worth it | D — cost / ROI anxiety | vetted · SV~10 · informational · LOW comp | claimed |
 | 7 | how long does seo take | D — expectations | vetted · SV~10 · informational · LOW comp | claimed |
 | 8 | local seo for small business | E — local / commercial | vetted · SV~10 · commercial | claimed |
-| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | queued |
+| 9 | what is local seo | E — local / education | vetted · SV~10 · informational | retired |
 | 10 | seo vs google ads | B — comparison | vetted · SV~10 · commercial · LOW comp | claimed |
 | 11 | how to do keyword research | H — general how-to | vetted · SV~10 · informational · LOW comp | claimed |
 | 12 | how to improve google ranking | H — general how-to | vetted · SV~10 · informational | claimed |
@@ -63,16 +137,42 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 | 19 | direct booking strategy for lodges | D — problem-aware (tourism) | candidate — no DataForSEO pass yet | candidate |
 | 20 | google business profile for hotels | E — local / GBP × hotels | candidate — no DataForSEO pass yet | candidate |
 | 21 | google maps ranking for safari companies | E — local / GBP × safari | candidate — no DataForSEO pass yet | candidate |
-| 22 | how to show up in google ai overviews | B — AI answers (AEO/GEO) | candidate - verify volume (DataForSEO) | candidate |
-| 23 | why is my competitor ranking above me on google | D — problem-aware | candidate - verify volume (DataForSEO) | candidate |
-| 24 | should i hire an seo agency or do it myself | D — cost / decision anxiety | candidate - verify volume (DataForSEO) | candidate |
-| 25 | how to get more google reviews for my business | E — local / GBP | candidate - verify volume (DataForSEO) | candidate |
-| 26 | how to check if ai chatbots recommend your business | B — AI answers (GEO diagnostic) | candidate - verify volume (DataForSEO) | candidate |
-| 27 | how many backlinks does a small business need | H — general how-to | candidate - verify volume (DataForSEO) | candidate |
-| 28 | how to get more phone calls from google search | E — local / commercial | candidate - verify volume (DataForSEO) | candidate |
-| 29 | how to write meta descriptions that get clicks | H — general how-to / on-page | candidate - verify volume (DataForSEO) | candidate |
-| 30 | how to rank on google in multiple african countries | G — SMB / differentiation (Africa) | candidate - verify volume (DataForSEO) | candidate |
-| 31 | how to show up in perplexity ai search | B — AI answers (AEO/GEO) | candidate - verify volume (DataForSEO) | candidate |
+| 22 | how to show up in google ai overviews | B — AI answers (AEO/GEO) | **retired 2026-09-24** — no geographic qualifier, see pivot rule | retired |
+| 23 | why is my competitor ranking above me on google | D — problem-aware | **retired 2026-09-24** — no geographic qualifier | retired |
+| 24 | should i hire an seo agency or do it myself | D — cost / decision anxiety | **retired 2026-09-24** — no geographic qualifier | retired |
+| 25 | how to get more google reviews for my business | E — local / GBP | **retired 2026-09-24** — superseded by row 34 (Nigeria-qualified) | retired |
+| 26 | how to check if ai chatbots recommend your business | B — AI answers (GEO diagnostic) | **retired 2026-09-24** — superseded by row 40 | retired |
+| 27 | how many backlinks does a small business need | H — general how-to | **retired 2026-09-24** — no geographic qualifier | retired |
+| 28 | how to get more phone calls from google search | E — local / commercial | **retired 2026-09-24** — superseded by row 34 | retired |
+| 29 | how to write meta descriptions that get clicks | H — general how-to / on-page | **retired 2026-09-24** — no geographic qualifier, no commercial intent | retired |
+| 30 | how to rank on google in multiple african countries | G — SMB / differentiation (Africa) | on-strategy, kept — Africa-qualified · `needs-volume` | queued |
+| 31 | how to show up in perplexity ai search | B — AI answers (AEO/GEO) | **retired 2026-09-24** — no geographic qualifier | retired |
+
+## Active queue — African commercial intent (added 2026-09-24)
+
+Ordered by confidence, highest first. The poster takes the first `queued` row as always.
+Rows 32–35 localise topics this domain has *already demonstrated* it can earn impressions
+on, which makes them the lowest-risk rows in the file.
+
+| # | Primary keyword | Cluster | Vetting | Status |
+|---|---|---|---|---|
+| 32 | how much does seo cost in nigeria | N — Nigeria commercial | `gsc-evidenced` — the generic parent (`what-seo-actually-costs`) holds 26 impressions at pos 59.0; `why is seo so expensive` already surfaces this domain. Commercial, decision-stage, NGN-qualified. | queued |
+| 33 | how to appear on google maps in lagos | N — Nigeria local / GBP | `gsc-evidenced` — strongest page on the site by impressions (233 @ pos 69.0) but the demand is UK/AUS. Same topic, Lagos-qualified, near-zero local competition. | queued |
+| 34 | how to get more google reviews in nigeria | N — Nigeria local / GBP | `serp-verified` — review-velocity is the top local ranking factor (Jono Catliff doctrine) and no Nigerian site owns this term. | queued |
+| 35 | how long does seo take in nigeria | N — Nigeria expectations | `gsc-evidenced` — generic parent holds 181 impressions at pos 74.7 from the UK/AU. Nigeria-qualified cut inherits the topical relevance without the unwinnable competition. | queued |
+| 36 | référencement naturel douala | CM — Cameroon FR (priority) | `gsc-evidenced` + `serp-verified` — Cameroon is the site's best market (pos 3.7, 1 of 2 total clicks). French commercial terms here are close to uncontested. **Write in French.** | queued |
+| 37 | agence seo cameroun | CM — Cameroon FR (priority) | `serp-verified` — francophone Central Africa has almost no optimised competition. Commercial intent, direct fit to `/ai-seo/douala`. **Write in French.** | queued |
+| 38 | seo agency nairobi cost | K — Kenya commercial | `serp-verified` — Nairobi SERP is local agencies (SEO Smart, SEO Kenya, Kwetu), not global domains. Kenya already ranks pos 17.3 for this domain. | queued |
+| 39 | how to get a safari company recommended by ai | K — Kenya × GEO × tourism | `gsc-evidenced` — `how-to-get-hotel-cited-by-chatgpt` sits at pos 6.7. Nearest-neighbour topic, proven position, high commercial value. | queued |
+| 40 | how to check if chatgpt recommends your business in africa | AF — GEO diagnostic (Africa) | `gsc-evidenced` — `how-to-rank-on-chatgpt` holds 40 impressions; Africa-qualified cut ties it to `/ai-visibility-check`. | queued |
+| 41 | seo company accra ghana | GH — Ghana commercial | `gsc-evidenced` — Ghana ranks pos 7.0 already on 2 impressions. Commercial, direct fit to `/ai-seo/accra`. | queued |
+| 42 | why is my business not showing on google maps nigeria | N — Nigeria problem-aware | `serp-verified` — high-intent troubleshooting query, thin local competition, natural bridge to GBP work. | queued |
+| 43 | best seo agency in nigeria | N — Nigeria commercial (head) | `serp-verified` — contested by Clutch/TopSEOs directories plus local agencies. Hard but valuable; write as an honest comparative guide per skill B.8, not a self-promotion piece. | queued |
+| 44 | digital marketing vs seo for nigerian businesses | N — Nigeria comparison | `gsc-evidenced` — `seo vs google ads nigeria` already surfaces this domain at pos 31 on a single impression. Proven Nigerian demand shape. | queued |
+| 45 | how to rank on google in kenya | K — Kenya how-to | `needs-volume` — on-strategy, confirm with DataForSEO before writing. | candidate |
+| 46 | seo for hotels in kenya | K — Kenya × tourism | `needs-volume` — confirm with DataForSEO. | candidate |
+| 47 | comment apparaître sur google maps au cameroun | CM — Cameroon FR local | `needs-volume` — confirm with DataForSEO. **French.** | candidate |
+| 48 | seo agency johannesburg pricing | ZA — South Africa commercial | `needs-volume` — hardest market on the list; confirm volume and expect a long runway. | candidate |
 
 > **Queue top-up (queue-keeper, 2026-08-30):** audited the queue — only row 9
 > (`what is local seo`) remained `queued` (1 row, below the 6-row floor). Added
@@ -153,6 +253,32 @@ but volume **not yet confirmed** — leave out of the active list until checked.
 > mandatory artifact check because the sandbox's network egress policy still
 > blocks the CloudFront asset host (403 policy denial, same as 2026-08-22, not a
 > content problem) — published text-only per the skill's fallback rule.
+>
+> **Board review (2026-09-22): row 9 retired.** Six identical skip notes
+> (2026-08-18 → 2026-08-23) confirmed the same unresolved duplication against
+> `local-seo-for-small-business`'s opening H2 (`#what-local-seo-is`) and its FAQ
+> ("What is local SEO for a small business?"), and nothing narrowed the angle or
+> retired the row in the ~4 weeks since the first flag — each extra run cost a
+> wasted pick-cycle checking a duplication that was never going to resolve itself.
+> The board's GEO lens confirmed the duplication still holds verbatim as of this
+> review and scored a fresh attempt 2/10: the fixed post template forces the same
+> H2s (definition, vs. general SEO, ranking factors) that `local-seo-for-small-
+> business` already owns, so a second full post would dilute cluster E rather than
+> extend it. At SV~10 informational, the keyword's value no longer clears six
+> wasted cycles. Status flipped to `retired` above — see the `afrishield-blog`
+> skill's new skip-count escalation rule (this same review) so a stuck row can't
+> silently repeat this on a future keyword: three consecutive skips now
+> auto-retires instead of logging a note nobody actioned.
+>
+> **Board review (2026-09-22): queue-keeper cadence.** Rows 22–31 have sat
+> `candidate` (no DataForSEO pass) since 2026-09-11, and the skip notes above show
+> the general pool has already hit empty at least once waiting on that promotion.
+> Promoting candidates to `vetted`/`queued` should be a fixed step in every weekly
+> queue-keeper run (enough to keep the `queued` floor at ≥6), not something that
+> happens only when a human/interactive session with DataForSEO notices the pool
+> is dry — a `queued` count under 6 with no promotion that run should be treated as
+> a first-class failure signal, same severity as "queue empty," not a note buried
+> in prose.
 
 ## Watchlist — no DataForSEO volume yet (do NOT queue until confirmed)
 
