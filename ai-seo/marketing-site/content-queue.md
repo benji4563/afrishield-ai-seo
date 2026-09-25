@@ -254,6 +254,24 @@ on, which makes them the lowest-risk rows in the file.
 > blocks the CloudFront asset host (403 policy denial, same as 2026-08-22, not a
 > content problem) — published text-only per the skill's fallback rule.
 >
+> **Board review (2026-08-21, drafted after a sixth skip; PR sat in draft for a
+> month before this merge):** row 9 retired. Six consecutive skipped runs on a
+> confirmed duplicate (`local-seo-for-small-business` already answers this
+> exact question, at the same SV~10 volume) is a process failure, not a
+> content one — the board closed it directly rather than waiting on a seventh
+> skip, and the general pool was empty at the time (row 9 was the only
+> non-`claimed` row left in 1–15) so the cost of leaving it queued had stopped
+> being merely wasteful and started blocking the poster outright. See
+> `reports/board-review-2026-08-21.md`. No replacement glossary page: at this
+> volume a second page would cannibalize the existing post, not complement it.
+>
+> **Note on timing:** while this PR sat unmerged, a later board review
+> (2026-09-22, below) independently reached the identical retirement decision
+> and shipped a stronger systemic fix — skip-count escalation after three
+> skips rather than waiting on a PR review cycle. Both notes are kept for the
+> full audit trail; the 2026-09-22 skip-count rule is the one that actually
+> prevents recurrence and supersedes this review's own systemic-fix framing.
+>
 > **Board review (2026-09-22): row 9 retired.** Six identical skip notes
 > (2026-08-18 → 2026-08-23) confirmed the same unresolved duplication against
 > `local-seo-for-small-business`'s opening H2 (`#what-local-seo-is`) and its FAQ
