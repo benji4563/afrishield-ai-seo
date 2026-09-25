@@ -156,6 +156,23 @@ post that motivated this rule (`answer-engine-optimization`) still had two
 sections violating it — the rule existed but nothing swept every heading
 against it. This audit is that sweep, made mandatory.
 
+### Humor-placement self-audit (before step 4, added 2026-09-15)
+
+The humor rule above ("never in the ShortAnswer, H2 opener sentences, FAQ
+answers, or metadata") has been written into this skill since before
+2026-08-04 and is still checked into `top-geo-ai-seo-agencies-africa-2026` —
+a wry aside fused into the same sentence as a BLUF answer under an `<h2>`, and
+a flat generalization closing a FAQ answer — unresolved as of 2026-09-15
+across four separate board-review passes on that one post, because no PR
+carrying the fix ever merged and nothing mechanical re-checks it before
+publish. Before registering any post: paste every H2's opening sentence and
+every FAQ answer's full text into the working notes, and confirm none of them
+contain a joke, a wry aside welded onto the answer clause, or a "gotcha"-style
+closer generalization. Fix any violation before moving on — this is the same
+mandatory-sweep discipline as the liftable-opener audit above, extended to the
+humor-placement rule, which the record shows a prose-only rule does not catch
+on its own.
+
 ### Hero image (one per post, fully automatic)
 
 Every post gets one topic-matched hero under the `ShortAnswer`, from one of two

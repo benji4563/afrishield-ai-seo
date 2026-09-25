@@ -124,7 +124,12 @@ who / what / where / core value. This is what an answer engine lifts as a
 citation. Plain prose, entity-dense, no marketing adjectives.
 
 Pattern (already implemented as the `ShortAnswer` component for posts; add an
-equivalent near the top of home, solutions, pricing, and each location page):
+equivalent near the top of home, solutions, pricing, **how it works, about**,
+and each location page — the "every key page" line above is the actual rule;
+this list must name every page that qualifies, not imply it by example. Board
+review 2026-09-15 found `/how-it-works` has no `Bluf` block at all and never
+names the AfriShield entity anywhere in its copy, unlike every other page in
+the rotation.):
 
 > AfriShield AI provides AI SEO and local search optimisation for businesses
 > across West, Central, East, and Southern Africa. We handle keyword research,
@@ -143,6 +148,7 @@ Inject validated JSON-LD in the server HTML of every key page. Helpers live in
 | Home | `ProfessionalService` + `hasOfferCatalog` + `FAQPage` |
 | Solutions | `Service` (with per-pillar sub-services via `hasOfferCatalog`/`makesOffer`, entities sourced from the same data used to render the page — not one flat prose `description`) + `FAQPage` |
 | Pricing | `FAQPage` (+ Offers with price/currency) |
+| How it works | `HowTo` (implemented, sourced from the same `PROCESS_STEPS` array the page renders — keep it that way) + `FAQPage` + `BreadcrumbList` |
 | Location pages | `LocalBusiness` (areaServed City→Country) + `FAQPage` + `BreadcrumbList` |
 | Blog post | `BlogPosting` + `FAQPage` + `BreadcrumbList` |
 | About | `AboutPage` + `Person` (founder) |
@@ -161,8 +167,12 @@ links to `/how-it-works`) — not only via the closing CTA block. Reviewed 2026-
 `/pricing` repeated the identical violation** (zero in-body links; only `/contact`
 CTA buttons) and also shipped without the Offers schema this same table already
 specifies below — the rule existing in this doc did not stop it recurring on the
-very next money page reviewed. See the B.7 enforcement checklist below, added for
-this reason.
+very next money page reviewed. **Reviewed again 2026-09-15: `/how-it-works` had the
+same gap** — three consecutive money/interior pages hitting an identical rule with
+nothing enforcing it. **Enforceable check:**
+`grep -n 'href=\"/\(solutions\|pricing\|how-it-works\)' app/{solutions,pricing,how-it-works}/page.tsx`
+and confirm each page has at least one hit pointing at *one of the other two*, outside
+of `CtaDrop`/`PageHero`. See the B.7 enforcement checklist below, added for this reason.
 
 **On-page Offer entities, not just the homepage (board: Mike King, 2026-09-22).**
 The Pricing row's "`FAQPage` (+ Offers with price/currency)" spec means **on
@@ -172,23 +182,29 @@ The Pricing row's "`FAQPage` (+ Offers with price/currency)" spec means **on
 visible pricing cards, so copy and schema can't drift apart.
 
 **Trust/social-proof slot on every page shell (board: Wes McDowell, 2026-09-22).**
-`/solutions` (2026-08-04) and `/pricing` (2026-09-22) were independently reviewed and
-both had **zero trust signal anywhere in the body** — no client count, testimonial,
-case-study reference, or number backing a claim. Root cause: none of `PageHero`,
-`Bluf`, `Section`/`SectionHeader`, or `CtaDrop` has a slot for one, so every page
-built on these shells inherits the gap. Add an optional `proof`/`proofStat` prop to
-`PageHero` and `CtaDrop` (renders nothing if omitted, so existing pages are
-unaffected) and require every page pass at least one trust signal to it or include
-one in the body scroll.
+`/solutions` (2026-08-04), `/pricing` (2026-09-22), and `/how-it-works` (2026-09-15)
+were independently reviewed and all three had **zero trust signal anywhere in the
+body** — no client count, testimonial, case-study reference, or number backing a
+claim. Root cause: none of `PageHero`, `Bluf`, `Section`/`SectionHeader`, or
+`CtaDrop` has a slot for one, so every page built on these shells inherits the gap.
+Add an optional `proof`/`proofStat` prop to `PageHero` and `CtaDrop` (renders
+nothing if omitted, so existing pages are unaffected) and require every page pass
+at least one trust signal to it or include one in the body scroll.
 
 **CTA reachable before the fold-six problem (board: Wes McDowell).** Every interior
 page built on `PageHero` must have a clickable CTA (button or prompt link) reachable
 within the first two sections after the hero — not deferred to the closing CTA block
 alone — plus at least one additional mid-scroll CTA checkpoint if the page runs 3+
 content sections before that closing block. Reference implementation: the homepage
-`Hero` component's "Book a call" + secondary CTA pattern. `PageHero` is a candidate
-for an optional `ctaHref`/`ctaLabel` prop so this becomes structural rather than
-something each page author has to remember.
+`Hero` component's "Book a call" + secondary CTA pattern. **Required build fix, not a
+suggestion (escalated 2026-09-15 — this has now been recommended on 2026-08-04,
+2026-09-01, and today without landing, across three page reviews, because the board
+can only advise, not commit code):** `components/ui/PageHero.tsx` must gain an
+optional `ctaHref`/`ctaLabel` prop, rendering a `Button` when supplied, so a page
+author sets one prop instead of hand-building a mid-page CTA every time. `/solutions`
+(2026-08-04) and `/how-it-works` (2026-09-15) both currently render zero CTA from
+`PageHero` — wire the prop on both pages in the same change that adds it, so the fix
+can't land on the component but miss the pages that motivated it.
 
 `LocalBusiness` / service-provider template (fill from real data; never invent
 telephone or address — leave them out or env-driven until supplied):
@@ -298,7 +314,8 @@ Run before calling any build done:
 - [ ] Sitemap lists every real page and no fake ones; `thank-you` excluded (noindex)
 - [ ] Canonicals resolve to the apex; `www` 308-redirects
 - [ ] No horizontal overflow at 390 / 768 / 1440; keyboard-operable nav, tabs, accordions
-- [ ] BLUF block present near the top of every key page
+- [ ] BLUF block present near the top of every key page (home, solutions, pricing, how it works, about, each location page)
+- [ ] Every `PageHero`-based page has a clickable CTA within the first two sections after the hero (added 2026-09-15)
 - [ ] Ask-AI buttons (ChatGPT / Claude / Perplexity / Gemini) on home + contact, deep-linking a prefilled prompt with a clipboard fallback
 - [ ] `npm audit` clean; Lighthouse near-100 (and the Aramis `seo-audit` reads 100/100/100/100 · GEO 100)
 - [ ] Baseline GEO benchmark: query ChatGPT / Claude / Perplexity with
