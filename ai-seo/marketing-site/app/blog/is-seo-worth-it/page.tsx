@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { blogPostingJsonLd, breadcrumbJsonLd, faqPageJsonLd, howToJsonLd } from '@/lib/structured-data';
+import { EditorialImage } from '@/components/ui/EditorialImage';
 import { getPost, postOgImages } from '@/lib/posts';
 import { SITE_URL } from '@/lib/site';
 
@@ -109,6 +110,13 @@ export default function Post() {
           The honest test is not whether SEO works, but whether you have the runway to reach
           the part where it pays for itself.
         </ShortAnswer>
+
+        <EditorialImage
+          src={post.image!.src}
+          alt={post.image!.alt}
+          priority
+          className="my-10"
+        />
 
         <Scene>
           <p>

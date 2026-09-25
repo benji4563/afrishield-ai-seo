@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/industry-c75009a0-8dac-493d-9c0c-3e855679e6ac/styles.css">
+  <script src="_ds/industry-c75009a0-8dac-493d-9c0c-3e855679e6ac/_ds_bundle.js"></script>
+  <style>
+    body { margin: 0; }
+    a { color: var(--color-accent-700); }
+    a:hover { color: var(--color-accent-900); }
+    ::selection { background: var(--color-accent-300); }
+  </style>
+</helmet>
+
+<div style="min-height:100vh;background:var(--color-bg);font-family:var(--font-body);color:var(--color-text);padding-bottom:var(--space-10);">
+
+  <div class="nav" style="padding:0 var(--space-6);">
+    <div class="nav-brand">AfriShield — Hospitality Leads Tracker</div>
+    <div style="display:flex;gap:var(--space-3);align-items:center;">
+      <span class="tag tag-outline">{{ stats.total }} leads</span>
+      <span class="tag tag-accent">${{ stats.bleedFormatted }}/mo at risk</span>
+    </div>
+  </div>
+
+  <div style="max-width:1400px;margin:0 auto;padding:var(--space-6);">
+
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-4);margin-bottom:var(--space-6);">
+      <sc-for list="{{ statCards }}" as="sc" hint-placeholder-count="4">
+        <div class="card blueprint elev-sm" style="padding:var(--space-4);">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <div class="card-kicker">{{ sc.kicker }}</div>
+          <div class="card-title" style="font-size:2.2rem;">{{ sc.title }}</div>
+          <div class="card-body">{{ sc.body }}</div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div class="card blueprint elev-sm" style="padding:var(--space-5);margin-bottom:var(--space-5);">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="display:flex;flex-wrap:wrap;gap:var(--space-3);align-items:center;">
+        <div class="field" style="flex:1;min-width:220px;margin:0;">
+          <input class="input" type="text" placeholder="Search business, category, notes…" value="{{ query }}" onChange="{{ onQueryChange }}">
+        </div>
+        <select class="input" style="width:auto;" value="{{ countryFilter }}" onChange="{{ onCountryChange }}">
+          <sc-for list="{{ countries }}" as="c" hint-placeholder-count="6">
+            <option value="{{ c }}">{{ c }}</option>
+          </sc-for>
+        </select>
+        <button class="btn btn-secondary" onClick="{{ exportCSV }}">Export CSV</button>
+        <button class="btn btn-primary" onClick="{{ openAdd }}">+ Add Lead</button>
+      </div>
+    </div>
+
+    <div class="card blueprint elev-sm" style="padding:0;">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="overflow-x:auto;">
+        <table class="table" style="width:100%;">
+          <thead>
+            <tr>
+              <th>Business</th>
+              <th>Region</th>
+              <th>Category</th>
+              <th style="text-align:right;">Est. Bleed</th>
+              <th>Outreach</th>
+            </tr>
+          </thead>
+          <tbody>
+            <sc-for list="{{ filteredLeads }}" as="lead" hint-placeholder-count="8">
+              <tr style="cursor:pointer;" onClick="{{ lead.open }}">
+                <td>
+                  <div style="font-weight:600;">{{ lead.business }}</div>
+                  <div style="font-size:0.8em;color:var(--color-neutral-700);">{{ lead.contact }}</div>
+                </td>
+                <td>{{ lead.region }}</td>
+                <td>{{ lead.category }}</td>
+                <td style="text-align:right;white-space:nowrap;">${{ lead.bleedFormatted }}</td>
+                <td>
+                  <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;">
+                    <sc-for list="{{ lead.tags }}" as="t" hint-placeholder-count="3">
+                      <span class="{{ t.cls }}" title="{{ t.status }}">{{ t.label }}</span>
+                    </sc-for>
+                  </div>
+                </td>
+              </tr>
+            </sc-for>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div style="margin-top:var(--space-3);font-size:0.85em;color:var(--color-neutral-700);">
+      Showing {{ filteredLeads.length }} of {{ stats.total }} leads. Click any row to view or edit full details.
+    </div>
+  </div>
+
+  <sc-if value="{{ dialogOpen }}" hint-placeholder-val="{{ false }}">
+    <div class="dialog-backdrop" onClick="{{ closeDialog }}">
+      <div class="dialog" style="width:min(760px,92vw);max-height:88vh;overflow-y:auto;" onClick="{{ stopProp }}">
+        <div class="dialog-title">{{ dialogTitle }}</div>
+        <div class="dialog-body">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);">
+            <div class="field"><label>Business Name</label><input class="input" value="{{ dialogLead.business }}" onChange="{{ fieldSetters.business }}"></div>
+            <div class="field"><label>Country / Region</label><input class="input" value="{{ dialogLead.region }}" onChange="{{ fieldSetters.region }}"></div>
+            <div class="field"><label>Category</label><input class="input" value="{{ dialogLead.category }}" onChange="{{ fieldSetters.category }}"></div>
+            <div class="field"><label>Contact / Title</label><input class="input" value="{{ dialogLead.contact }}" onChange="{{ fieldSetters.contact }}"></div>
+            <div class="field"><label>Primary Email</label><input class="input" value="{{ dialogLead.email }}" onChange="{{ fieldSetters.email }}"></div>
+            <div class="field"><label>Secondary Email</label><input class="input" value="{{ dialogLead.email2 }}" onChange="{{ fieldSetters.email2 }}"></div>
+            <div class="field"><label>WhatsApp</label><input class="input" value="{{ dialogLead.whatsapp }}" onChange="{{ fieldSetters.whatsapp }}"></div>
+            <div class="field"><label>Phone</label><input class="input" value="{{ dialogLead.phone }}" onChange="{{ fieldSetters.phone }}"></div>
+            <div class="field"><label>Website</label><input class="input" value="{{ dialogLead.website }}" onChange="{{ fieldSetters.website }}"></div>
+            <div class="field"><label>Instagram</label><input class="input" value="{{ dialogLead.instagram }}" onChange="{{ fieldSetters.instagram }}"></div>
+            <div class="field"><label>Facebook</label><input class="input" value="{{ dialogLead.facebook }}" onChange="{{ fieldSetters.facebook }}"></div>
+            <div class="field"><label>Est. Monthly Bleed (USD)</label><input class="input" type="number" value="{{ dialogLead.bleed }}" onChange="{{ fieldSetters.bleed }}"></div>
+          </div>
+          <div class="field" style="margin-top:var(--space-4);">
+            <label>AI Visibility Gap Signal</label>
+            <textarea class="input" rows="2" value="{{ dialogLead.gapSignal }}" onChange="{{ fieldSetters.gapSignal }}"></textarea>
+          </div>
+          <div class="field" style="margin-top:var(--space-4);">
+            <label>Tailored Pitch Hook</label>
+            <textarea class="input" rows="3" value="{{ dialogLead.pitch }}" onChange="{{ fieldSetters.pitch }}"></textarea>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:var(--space-4);margin-top:var(--space-4);">
+            <div class="field"><label>Touch 1 — WhatsApp</label><input class="input" value="{{ dialogLead.touch1 }}" onChange="{{ fieldSetters.touch1 }}"></div>
+            <div class="field"><label>Touch 2 — Email</label><input class="input" value="{{ dialogLead.touch2 }}" onChange="{{ fieldSetters.touch2 }}"></div>
+            <div class="field"><label>Touch 3 — Follow-up</label><input class="input" value="{{ dialogLead.touch3 }}" onChange="{{ fieldSetters.touch3 }}"></div>
+          </div>
+          <div class="field" style="margin-top:var(--space-4);">
+            <label>Notes</label>
+            <textarea class="input" rows="2" value="{{ dialogLead.notes }}" onChange="{{ fieldSetters.notes }}"></textarea>
+          </div>
+        </div>
+        <div class="dialog-actions">
+          <sc-if value="{{ isEditMode }}" hint-placeholder-val="{{ false }}">
+            <button class="btn btn-ghost" onClick="{{ deleteCurrent }}">Delete Lead</button>
+          </sc-if>
+          <button class="btn btn-ghost" onClick="{{ closeDialog }}">Cancel</button>
+          <button class="btn btn-primary" onClick="{{ saveLead }}">Save Lead</button>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = {
+    leads: [],
+    query: '',
+    countryFilter: 'All',
+    dialogOpen: false,
+    dialogMode: null,
+    dialogLead: null,
+  };
+
+  componentDidMount() {
+    const saved = localStorage.getItem('afrishield_hospitality_leads_v1');
+    if (saved) {
+      try {
+        this.setState({ leads: JSON.parse(saved) });
+        return;
+      } catch (e) {}
+    }
+    import('./leads-data.js').then((m) => this.setState({ leads: m.LEADS }));
+  }
+
+  persist(leads) {
+    localStorage.setItem('afrishield_hospitality_leads_v1', JSON.stringify(leads));
+  }
+
+  countryOf(region) {
+    region = region || '';
+    const idx = region.indexOf('(');
+    return (idx === -1 ? region : region.slice(0, idx)).trim();
+  }
+
+  tagsFor(lead) {
+    const cls = (s) => {
+      s = (s || '').toLowerCase();
+      if (s.includes('ready')) return 'tag tag-accent';
+      if (s.includes('sent') || s.includes('replied')) return 'tag tag-accent-2';
+      if (s.includes('scheduled')) return 'tag tag-neutral';
+      return 'tag tag-outline';
+    };
+    return [
+      { label: 'WA', status: lead.touch1 || '—', cls: cls(lead.touch1) },
+      { label: 'Email', status: lead.touch2 || '—', cls: cls(lead.touch2) },
+      { label: 'F/U', status: lead.touch3 || '—', cls: cls(lead.touch3) },
+    ];
+  }
+
+  openAdd = () => {
+    const nextId = this.state.leads.reduce((m, l) => Math.max(m, l.id), 0) + 1;
+    this.setState({
+      dialogOpen: true,
+      dialogMode: 'add',
+      dialogLead: {
+        id: nextId, business: '', region: '', category: '', contact: '', email: '', email2: '',
+        whatsapp: '', phone: '', website: '', instagram: '', facebook: '', gapSignal: '',
+        bleed: 0, pitch: '', touch1: '', touch2: '', touch3: '', notes: '',
+      },
+    });
+  };
+
+  openEdit = (lead) => this.setState({ dialogOpen: true, dialogMode: 'edit', dialogLead: { ...lead } });
+  closeDialog = () => this.setState({ dialogOpen: false, dialogMode: null, dialogLead: null });
+  stopProp = (e) => e.stopPropagation();
+  updateField = (key, value) => this.setState((s) => ({ dialogLead: { ...s.dialogLead, [key]: value } }));
+
+  saveLead = () => {
+    const lead = { ...this.state.dialogLead, bleed: Number(this.state.dialogLead.bleed) || 0 };
+    const leads = this.state.dialogMode === 'add'
+      ? [...this.state.leads, lead]
+      : this.state.leads.map((l) => (l.id === lead.id ? lead : l));
+    this.persist(leads);
+    this.setState({ leads, dialogOpen: false, dialogMode: null, dialogLead: null });
+  };
+
+  deleteCurrent = () => {
+    if (!window.confirm('Delete this lead?')) return;
+    const leads = this.state.leads.filter((l) => l.id !== this.state.dialogLead.id);
+    this.persist(leads);
+    this.setState({ leads, dialogOpen: false, dialogMode: null, dialogLead: null });
+  };
+
+  exportCSV = () => {
+    const headers = ['Business_Name','Country_Region','Category','Contact_Person_Or_Title','Primary_Outreach_Email','Secondary_Email','WhatsApp_Number','Phone_Number','Website_URL','Instagram_Page','Facebook_Page','AI_Visibility_Gap_Signal','Estimated_Monthly_Bleed_USD','Tailored_Pitch_Hook','Touch_1_WhatsApp_Status','Touch_2_Email_Status','Touch_3_Followup_Status','Notes'];
+    const esc = (v) => {
+      v = String(v ?? '');
+      return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
+    };
+    const rows = this.state.leads.map((l) => [l.business, l.region, l.category, l.contact, l.email, l.email2, l.whatsapp, l.phone, l.website, l.instagram, l.facebook, l.gapSignal, l.bleed, l.pitch, l.touch1, l.touch2, l.touch3, l.notes].map(esc).join(','));
+    const csv = [headers.join(','), ...rows].join('\n');
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'afrishield-hospitality-leads.csv';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  onQueryChange = (e) => this.setState({ query: e.target.value });
+  onCountryChange = (e) => this.setState({ countryFilter: e.target.value });
+
+  renderVals() {
+    const { leads, query, countryFilter, dialogOpen, dialogMode, dialogLead } = this.state;
+    const fmt = (n) => Number(n || 0).toLocaleString('en-US');
+
+    const countries = ['All', ...Array.from(new Set(leads.map((l) => this.countryOf(l.region)))).sort()];
+
+    const q = query.trim().toLowerCase();
+    const filtered = leads.filter((l) => {
+      if (countryFilter !== 'All' && this.countryOf(l.region) !== countryFilter) return false;
+      if (!q) return true;
+      return (l.business + ' ' + l.category + ' ' + l.notes + ' ' + l.pitch + ' ' + l.region).toLowerCase().includes(q);
+    });
+
+    const filteredLeads = filtered.map((l) => ({
+      ...l,
+      bleedFormatted: fmt(l.bleed),
+      tags: this.tagsFor(l),
+      open: () => this.openEdit(l),
+    }));
+
+    const totalBleed = leads.reduce((s, l) => s + (Number(l.bleed) || 0), 0);
+    const readyCount = leads.filter((l) => (l.touch1 || '').toLowerCase().includes('ready')).length;
+
+    const statCards = [
+      { kicker: 'Pipeline', title: String(leads.length), body: 'Total leads tracked' },
+      { kicker: 'At risk', title: '$' + fmt(totalBleed), body: 'Estimated monthly bleed across pipeline' },
+      { kicker: 'Outreach', title: String(readyCount), body: 'Leads with Touch 1 ready to send' },
+      { kicker: 'Coverage', title: String(Math.max(countries.length - 1, 0)), body: 'Countries represented' },
+    ];
+
+    const fieldSetters = {};
+    ['business','region','category','contact','email','email2','whatsapp','phone','website','instagram','facebook','gapSignal','bleed','pitch','touch1','touch2','touch3','notes'].forEach((k) => {
+      fieldSetters[k] = (e) => this.updateField(k, e.target.value);
+    });
+
+    return {
+      stats: { total: leads.length, bleedFormatted: fmt(totalBleed) },
+      statCards,
+      countries,
+      query,
+      countryFilter,
+      filteredLeads,
+      dialogOpen,
+      dialogTitle: dialogMode === 'add' ? 'Add New Lead' : (dialogLead ? dialogLead.business || 'Edit Lead' : ''),
+      isEditMode: dialogMode === 'edit',
+      dialogLead: dialogLead || {},
+      fieldSetters,
+      openAdd: this.openAdd,
+      closeDialog: this.closeDialog,
+      stopProp: this.stopProp,
+      saveLead: this.saveLead,
+      deleteCurrent: this.deleteCurrent,
+      exportCSV: this.exportCSV,
+      onQueryChange: this.onQueryChange,
+      onCountryChange: this.onCountryChange,
+    };
+  }
+}
+
+</script>
+</body>
+</html>

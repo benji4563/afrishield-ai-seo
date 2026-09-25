@@ -130,6 +130,17 @@ Non-negotiables:
     Maps/schema cluster, grep sibling posts' H2 text for the same explainer. If one
     already owns it, state the sub-topic in a sentence or two and link to the
     sibling as the canonical source instead of re-deriving it in full.
+- **Skip-count escalation (board: Dan Martell, 2026-09-22).** If a `queued` row fails
+  the differentiation-angle check, log the skip note as usual and move to the next
+  `queued` row — but on the **third consecutive skip of the same row**, do not log a
+  fourth note. Flip its `content-queue.md` status straight to `retired` (one-line
+  reason: which sibling post it duplicates, and the skip dates) and move on. Six
+  identical "queue-keeper: needs a decision" notes piled up on row 9 (`what is local
+  seo`, 2026-08-18 → 2026-08-23) before anyone acted — a note nobody is staffed to
+  read is not a resolution mechanism, and every extra skip burns a pick-cycle for
+  nothing. Three tries is enough evidence a row needs narrowing that isn't happening;
+  auto-retiring is reversible (a human can always re-queue it with a narrower angle
+  later) and keeps the pipeline moving without a human in the loop.
 - At least one passage that is honest against interest (when *not* to buy).
 - ~1,700–2,200 words.
 

@@ -7,6 +7,7 @@ import {
   faqPageJsonLd,
   howToJsonLd,
 } from '@/lib/structured-data';
+import { EditorialImage } from '@/components/ui/EditorialImage';
 import { getPost, postOgImages } from '@/lib/posts';
 import { SITE_URL } from '@/lib/site';
 
@@ -119,6 +120,13 @@ export default function Post() {
           you could realistically outrank the current top results for. It takes one afternoon
           and no paid subscription to do a usable first pass.
         </ShortAnswer>
+
+        <EditorialImage
+          src={post.image!.src}
+          alt={post.image!.alt}
+          priority
+          className="my-10"
+        />
 
         <Scene>
           <p>

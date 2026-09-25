@@ -237,3 +237,20 @@ this round — GEO, Conversion, and Business converged on complementary fixes.
 Two systemic fixes shipped on this branch: `content-queue.md` row 9 retired,
 and the `afrishield-blog` differentiation check extended to section-level
 overlap. PR: opened from `board/review-2026-08-21`, link below.
+
+---
+
+> **Final merge note (2026-09-25, one month after this review was drafted):**
+> this PR sat in draft for roughly a month. In that time master absorbed six
+> more auto-poster skips on row 9 before an independent board review
+> (`board-review-2026-09-22.md`) reached the same retirement conclusion this
+> review had reached weeks earlier, plus shipped a stronger systemic fix
+> (skip-count escalation: three skips auto-retires a row, no PR review cycle
+> required). Both retirement notes now live side by side in
+> `content-queue.md` for the audit trail. The lesson from this review's own
+> merge-conflict addenda held all the way through: a correct fix sitting
+> unmerged in draft doesn't stop the problem it fixes from recurring — it
+> just means the fix eventually gets reinvented independently, which is what
+> happened here. The `how-to-appear-on-google-maps` "three factors" content
+> fix (item 4 in the execution to-do above) and the `/pricing` social-proof
+> gap (item 3) were not addressed by the interim review and remain open.

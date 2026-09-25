@@ -7,6 +7,7 @@ import {
   faqPageJsonLd,
   howToJsonLd,
 } from '@/lib/structured-data';
+import { EditorialImage } from '@/components/ui/EditorialImage';
 import { getPost, postOgImages } from '@/lib/posts';
 import { SITE_URL } from '@/lib/site';
 
@@ -124,6 +125,13 @@ export default function Post() {
           them outright: an unverified profile, the wrong primary category, or too few reviews
           to be trusted over a competitor.
         </ShortAnswer>
+
+        <EditorialImage
+          src={post.image!.src}
+          alt={post.image!.alt}
+          priority
+          className="my-10"
+        />
 
         <Scene>
           <p>

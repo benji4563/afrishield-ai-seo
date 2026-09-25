@@ -1,0 +1,32 @@
+{
+  "study": "Who does AI recommend when someone searches for an African business?",
+  "publisher": "AfriShield AI",
+  "collected": "2026-08-28",
+  "method": {
+    "source": "Google desktop SERP + AI Overview / AI-generated People-Also-Ask, retrieved via the DataForSEO SERP API (live, advanced).",
+    "query_template": "best {service} in {city}, {country}",
+    "cities": ["Nairobi, Kenya", "Lagos, Nigeria", "Accra, Ghana", "Johannesburg, South Africa", "Arusha, Tanzania"],
+    "categories": {
+      "hospitality_travel": ["boutique hotel", "safari operator"],
+      "professional_services": ["accounting firm"]
+    },
+    "classification": "Each page-one organic result was classified as OWN (the business's own website), AGGREGATOR (OTA / directory / marketplace / regulator list), MEDIA (editorial listicle / blog), or UGC (Reddit / Instagram / Facebook / YouTube). Google-owned surfaces (hotels_pack, local_pack, AI Overview) were recorded separately.",
+    "limitations": "Pilot sample of 9 searches. Google AI Overview bodies are served asynchronously and were not always retrievable inline; AI-element PRESENCE was recorded, not full citation text. Desktop, English, country-level geolocation."
+  },
+  "queries": [
+    {"city": "Arusha", "service": "safari operator", "category": "hospitality_travel", "organic_total": 9, "own_site": 3, "first_organic": "aggregator (yourafricansafari.com)", "google_surface": "local_pack (3 local operators)", "ai_element": true},
+    {"city": "Nairobi", "service": "boutique hotel", "category": "hospitality_travel", "organic_total": 10, "own_site": 4, "first_organic": "aggregator (tripadvisor.com)", "google_surface": "hotels_pack", "ai_element": true},
+    {"city": "Lagos", "service": "boutique hotel", "category": "hospitality_travel", "organic_total": 10, "own_site": 1, "first_organic": "aggregator (tripadvisor.com)", "google_surface": "hotels_pack", "ai_element": true},
+    {"city": "Accra", "service": "boutique hotel", "category": "hospitality_travel", "organic_total": 9, "own_site": 2, "first_organic": "aggregator (boutiquehotel.me)", "google_surface": "hotels_pack + AI Overview", "ai_element": true},
+    {"city": "Johannesburg", "service": "boutique hotel", "category": "hospitality_travel", "organic_total": 10, "own_site": 1, "first_organic": "aggregator (tripadvisor.co.za)", "google_surface": "hotels_pack", "ai_element": true},
+    {"city": "Nairobi", "service": "accounting firm", "category": "professional_services", "organic_total": 9, "own_site": 6, "first_organic": "media listicle (adamjeeauditors.com)", "google_surface": "local_pack (3 local firms)", "ai_element": true},
+    {"city": "Lagos", "service": "accounting firm", "category": "professional_services", "organic_total": 9, "own_site": 5, "first_organic": "aggregator (clutch.co)", "google_surface": "local_pack + AI Overview", "ai_element": true},
+    {"city": "Accra", "service": "accounting firm", "category": "professional_services", "organic_total": 10, "own_site": 7, "first_organic": "aggregator (sec.gov.gh)", "google_surface": "local_pack + AI Overview", "ai_element": true},
+    {"city": "Johannesburg", "service": "accounting firm", "category": "professional_services", "organic_total": 9, "own_site": 7, "first_organic": "aggregator (findanaccountant.co.za)", "google_surface": "local_pack + AI Overview", "ai_element": true}
+  ],
+  "results": {
+    "hospitality_travel": {"queries": 5, "organic_total": 48, "own_site": 11, "own_site_share_pct": 23, "first_result_aggregator_pct": 100},
+    "professional_services": {"queries": 4, "organic_total": 37, "own_site": 25, "own_site_share_pct": 68},
+    "all": {"queries": 9, "organic_total": 85, "own_site": 36, "own_site_share_pct": 42, "ai_element_present_pct": 100, "top_level_ai_overview_pct": 44}
+  }
+}

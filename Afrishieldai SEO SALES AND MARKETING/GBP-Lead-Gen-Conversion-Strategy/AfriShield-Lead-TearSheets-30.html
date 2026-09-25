@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AfriShield AI — 30 Lead Tear-Sheets</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0A1628;
+    --emerald: #00B67A;
+    --emerald-light: #E6F9F1;
+    --red: #E63946;
+    --red-light: #FFF0F1;
+    --white: #FFFFFF;
+    --gray-50: #F8F9FA;
+    --gray-100: #F1F3F5;
+    --gray-200: #E9ECEF;
+    --gray-400: #ADB5BD;
+    --gray-600: #6C757D;
+    --gray-800: #343A40;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--navy);
+    background: var(--gray-100);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Print button */
+  .controls {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: var(--navy); color: var(--white);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 32px; gap: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  }
+  .controls span { font-size: 14px; font-weight: 500; letter-spacing: 0.02em; }
+  .controls button {
+    background: var(--emerald); color: var(--white); border: none;
+    padding: 10px 28px; border-radius: 6px; font-size: 14px; font-weight: 600;
+    cursor: pointer; letter-spacing: 0.03em; transition: background 0.2s;
+  }
+  .controls button:hover { background: #009e6a; }
+
+  /* Page container */
+  .page {
+    width: 210mm; min-height: 297mm; max-height: 297mm;
+    margin: 80px auto 24px; background: var(--white);
+    box-shadow: 0 4px 24px rgba(10,22,40,0.08);
+    overflow: hidden; position: relative;
+    padding: 28mm 22mm 20mm;
+    display: flex; flex-direction: column;
+  }
+  .page:first-of-type { margin-top: 80px; }
+
+  /* Top green accent bar */
+  .page::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0;
+    height: 5px; background: linear-gradient(90deg, var(--emerald), #00D68F);
+  }
+
+  /* Header */
+  .header {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    margin-bottom: 18px; padding-bottom: 14px;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  .header-left { display: flex; align-items: center; gap: 12px; }
+  .logo-mark {
+    width: 36px; height: 36px; background: var(--navy); border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px; font-weight: 800; color: var(--emerald);
+    letter-spacing: -0.5px;
+  }
+  .header-brand { font-size: 13px; font-weight: 700; color: var(--navy); letter-spacing: 0.04em; }
+  .header-sub { font-size: 10px; color: var(--gray-600); font-weight: 500; margin-top: 1px; letter-spacing: 0.02em; }
+  .header-right { text-align: right; }
+  .header-type {
+    font-size: 10px; font-weight: 600; color: var(--emerald);
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .header-date { font-size: 10px; color: var(--gray-400); margin-top: 2px; }
+
+  /* Lead name bar */
+  .lead-bar {
+    background: var(--navy); color: var(--white);
+    padding: 14px 20px; border-radius: 8px;
+    margin-bottom: 14px;
+  }
+  .lead-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; font-weight: 700; line-height: 1.2;
+  }
+  .lead-location { font-size: 12px; color: var(--gray-400); margin-top: 4px; font-weight: 500; }
+
+  /* Bleed metric */
+  .metric-row {
+    display: flex; gap: 12px; margin-bottom: 14px;
+  }
+  .metric-box {
+    flex: 1; border-radius: 8px; padding: 12px 16px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .metric-bleed {
+    background: var(--red-light); border: 1px solid rgba(230,57,70,0.15);
+  }
+  .metric-recovery {
+    background: var(--emerald-light); border: 1px solid rgba(0,182,122,0.15);
+  }
+  .metric-icon {
+    width: 36px; height: 36px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; flex-shrink: 0;
+  }
+  .metric-bleed .metric-icon { background: rgba(230,57,70,0.12); }
+  .metric-recovery .metric-icon { background: rgba(0,182,122,0.12); }
+  .metric-label { font-size: 9px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-600); }
+  .metric-value { font-size: 22px; font-weight: 800; line-height: 1.1; }
+  .metric-bleed .metric-value { color: var(--red); }
+  .metric-recovery .metric-value { color: var(--emerald); }
+
+  /* Problem / Solution sections */
+  .section { margin-bottom: 12px; }
+  .section-header {
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 6px;
+  }
+  .section-badge {
+    width: 22px; height: 22px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; flex-shrink: 0;
+  }
+  .section-problem .section-badge { background: var(--red-light); color: var(--red); }
+  .section-solution .section-badge { background: var(--emerald-light); color: var(--emerald); }
+  .section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+  .section-problem .section-title { color: var(--red); }
+  .section-solution .section-title { color: var(--emerald); }
+  .section p {
+    font-size: 11px; line-height: 1.55; color: var(--gray-800);
+    padding-left: 30px;
+  }
+
+  /* 3-step roadmap */
+  .roadmap {
+    display: flex; gap: 10px; margin-bottom: 14px;
+    margin-top: auto;
+  }
+  .roadmap-step {
+    flex: 1; background: var(--gray-50); border-radius: 8px;
+    padding: 12px 14px; position: relative;
+    border: 1px solid var(--gray-200);
+  }
+  .step-num {
+    width: 22px; height: 22px; border-radius: 50%;
+    background: var(--emerald); color: var(--white);
+    font-size: 11px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 6px;
+  }
+  .step-title { font-size: 10px; font-weight: 700; color: var(--navy); line-height: 1.35; }
+  .step-desc { font-size: 9px; color: var(--gray-600); margin-top: 3px; line-height: 1.4; }
+
+  /* CTA Footer */
+  .cta-footer {
+    background: var(--navy); color: var(--white);
+    border-radius: 8px; padding: 14px 20px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .cta-text { font-size: 13px; font-weight: 700; }
+  .cta-text span { color: var(--emerald); }
+  .cta-details { text-align: right; font-size: 10px; color: var(--gray-400); line-height: 1.6; }
+  .cta-details strong { color: var(--white); font-weight: 600; }
+
+  /* Divider */
+  .divider { height: 1px; background: var(--gray-200); margin: 2px 0 10px; }
+
+  /* Print styles */
+  @media print {
+    .controls { display: none !important; }
+    body { background: white; }
+    .page {
+      margin: 0; box-shadow: none;
+      page-break-after: always;
+      page-break-inside: avoid;
+      width: 100%; height: 100vh;
+    }
+    .page:last-child { page-break-after: auto; }
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="controls">
+  <span>AfriShield AI — 30 Personalized Lead Tear-Sheets</span>
+  <button onclick="window.print()">⎙ Print All to PDF</button>
+</div>
+
+<script>
+const leads = [
+  {
+    name: "Karibu Camps & Lodges",
+    location: "Serengeti / Ngorongoro, Tanzania 🇹🇿",
+    bleed: "$4,200",
+    recovery: "$2,500–$4,200",
+    problem: "International travelers searching for luxury Serengeti camps via ChatGPT and Perplexity are being routed to Booking.com and TripAdvisor aggregators. Karibu Camps' own website and direct booking engine are completely absent from AI-generated trip recommendations, meaning high-value guests paying $500–$1,200/night are being intercepted by OTAs that take 15–22% commission on every reservation. The Karibu brand identity and unique bush camp experience is being commoditized into a generic listing.",
+    solution: "AfriShield AI will inject LodgingBusiness and Safari entity schema markup across the Karibu website, allowlist GPTBot and PerplexityBot AI crawlers, optimize the Google Business Profile with missing secondary categories (Safari Camp, Eco Tour Agency), and deploy direct-booking intent keyword anchors. Within 90 days, Karibu will appear in ChatGPT and Perplexity recommendations, recapturing an estimated $2,500–$4,200/mo in direct bookings currently lost to OTA commissions."
+  },
+  {
+    name: "Into Wild Africa Safari",
+    location: "Arusha / Serengeti, Tanzania 🇹🇿",
+    bleed: "$3,600",
+    recovery: "$2,000–$3,600",
+    problem: "Into Wild Africa Safari has zero structured data markup on their website, making it impossible for AI search engines to parse their safari packages, pricing, and itineraries. When Perplexity users search for \"authentic Tanzania bush camp experiences,\" international aggregator directories are cited instead. The absence of JSON-LD schema means AI crawlers treat the site as unstructured text rather than a bookable safari entity, costing an estimated $3,600/mo in commission bleed to middlemen.",
+    solution: "AfriShield AI will deploy comprehensive JSON-LD TourOperator and LodgingBusiness schema across all safari packages, implement FAQ structured data for common traveler queries, and configure AI crawler access protocols. We will restructure the GBP listing with primary and secondary category taxonomy aligned to safari-specific search intent, positioning Into Wild Africa as the directly-cited operator for Serengeti and Arusha bush camp queries."
+  },
+  {
+    name: "Tarangire Safari Lodge",
+    location: "Tarangire National Park, Tanzania 🇹🇿",
+    bleed: "$3,900",
+    recovery: "$2,200–$3,900",
+    problem: "Google AI Overviews and Perplexity are citing third-party safari directory aggregators rather than Tarangire Safari Lodge's direct website when travelers search for Tarangire accommodation. The lodge's room rates, availability, and unique wildlife viewing experiences are not being indexed by AI engines because the site lacks the structured entity markup that AI crawlers require. This means $3,900/mo in bookings are being routed through commission-hungry intermediaries.",
+    solution: "AfriShield AI will implement Tarangire Safari Lodge's complete structured data architecture including LodgingBusiness schema with room types, rates, and amenity markup. We will optimize the Google Business Profile to dominate the Local 3-Pack for Tarangire National Park queries, inject direct-booking CTAs into AI-indexed content, and ensure GPTBot and PerplexityBot can access and cite the lodge's direct booking engine in their recommendations."
+  },
+  {
+    name: "Neptune Ngorongoro Lodge",
+    location: "Ngorongoro Crater, Tanzania 🇹🇿",
+    bleed: "$5,800",
+    recovery: "$3,500–$5,800",
+    problem: "Neptune Ngorongoro Lodge occupies one of the most exclusive locations in African tourism — the rim of Ngorongoro Crater — yet when affluent travelers ask ChatGPT for luxury crater rim accommodations, OTA portals like Booking.com and Expedia capture the citation. At $5,800/mo in estimated commission bleed, this is one of the highest-value leaks in the portfolio. Premium suite rates of $800–$1,500/night are being sold through intermediaries who strip margin and dilute the luxury brand positioning.",
+    solution: "AfriShield AI will deploy premium LodgingBusiness schema with suite-level granularity (room types, crater-view amenities, exclusive dining), implement AI crawler allowlisting to ensure ChatGPT and Perplexity can directly cite Neptune's booking page, and restructure the GBP profile with luxury-tier secondary categories. Our direct-booking recovery strategy targets recapturing $3,500–$5,800/mo by making Neptune the first-cited result for high-ticket Ngorongoro queries."
+  },
+  {
+    name: "Nyota Boutique Hotel",
+    location: "Nungwi, Zanzibar 🇹🇿",
+    bleed: "$2,900",
+    recovery: "$1,800–$2,900",
+    problem: "Nyota Boutique Hotel sits in prime Nungwi beachfront territory but ranks #8 in Google's Local 3-Pack — well outside the visible top 3. European honeymooners planning their Zanzibar getaway via AI assistants are being steered toward Booking.com and Hotels.com, where Nyota loses 15–20% commission on every reservation. The property's boutique charm and personalized service — its key differentiator — gets lost in OTA commodity listings.",
+    solution: "AfriShield AI will execute a comprehensive GBP optimization to push Nyota from #8 into the top 3 Local Pack positions through category taxonomy restructuring, review velocity strategy, and photo optimization. We will deploy BoutiqueHotel schema markup, allowlist AI crawlers, and create honeymoon-intent content anchors that position Nyota as the directly-bookable boutique option for Nungwi, recovering an estimated $1,800–$2,900/mo in direct bookings."
+  },
+  {
+    name: "Sharazād Boutique Hotel",
+    location: "Jambiani, Zanzibar 🇹🇿",
+    bleed: "$4,800",
+    recovery: "$2,500–$4,800",
+    problem: "Sharazād Boutique Hotel has developed a dangerous dependency on OTA channels for the majority of its bookings, creating a structural revenue leak of $4,800/mo in commissions. The property's website completely blocks AI crawlers (GPTBot, PerplexityBot) from indexing its content, making it invisible to the growing wave of travelers who plan trips through AI assistants. In Jambiani's competitive boutique segment, this means Sharazād is funding its competitors' visibility while paying intermediaries for its own guests.",
+    solution: "AfriShield AI will break the OTA dependency cycle by implementing a complete AI visibility stack: allowlisting GPTBot, PerplexityBot, and Google AI crawlers, deploying LodgingBusiness and Beach Resort schema, optimizing the GBP profile for Jambiani-specific queries, and building direct-booking intent anchors. Our 90-day roadmap targets shifting 30–40% of OTA bookings to direct channels, recovering $2,500–$4,800/mo in commission savings."
+  },
+  {
+    name: "Kendwa Rocks Beach Hotel",
+    location: "Kendwa, Zanzibar 🇹🇿",
+    bleed: "$5,100",
+    recovery: "$3,000–$5,100",
+    problem: "Kendwa Rocks is a well-known Zanzibar destination, but ChatGPT and Perplexity categorize it primarily through third-party nightlife and event portals rather than as a bookable hotel. When travelers search for Kendwa accommodation, AI engines cite booking aggregators and party-focused review sites, completely omitting the hotel's direct room packages, beachfront suites, and all-inclusive offerings. At $5,100/mo in commission bleed, this mischaracterization is costing the property significant direct revenue.",
+    solution: "AfriShield AI will reposition Kendwa Rocks in AI search by deploying Hotel and Resort schema that clearly structures room types, packages, and rates as bookable accommodation — not just a nightlife venue. We will optimize the GBP profile with primary Hotel and secondary Beach Resort categories, implement AI crawler allowlisting, and create accommodation-intent content that ensures ChatGPT and Perplexity cite Kendwa Rocks as a premium stay destination with direct booking links."
+  },
+  {
+    name: "B4 Beach Club & Hotel",
+    location: "Paje, Zanzibar 🇹🇿",
+    bleed: "$3,200",
+    recovery: "$1,800–$3,200",
+    problem: "B4 Beach Club & Hotel suffers from an identity crisis in AI search. Perplexity and ChatGPT categorize the property exclusively as a beach club and social venue, completely missing its boutique hotel accommodation offering. Without LodgingBusiness schema markup, AI engines cannot distinguish B4 as a bookable stay, meaning travelers looking for Paje boutique hotels never see B4 in their AI-generated recommendations. This misclassification drives $3,200/mo in lost direct bookings to properly-indexed competitors.",
+    solution: "AfriShield AI will resolve the classification gap by deploying dual-entity schema (Hotel + Beach Club) that tells AI crawlers B4 is both a premium stay and a lifestyle venue. We will restructure the GBP listing with Hotel as the primary category, implement room-type and rate structured data, and optimize for accommodation-intent search queries. This ensures AI engines recommend B4 as a bookable boutique hotel in Paje, not just a club."
+  },
+  {
+    name: "Top Guides Bushcamps",
+    location: "Arusha / Serengeti, Tanzania 🇹🇿",
+    bleed: "$3,100",
+    recovery: "$1,800–$3,100",
+    problem: "Top Guides Bushcamps specializes in private, bespoke safari experiences — exactly what high-net-worth travelers search for when they want to avoid cookie-cutter group tours. Yet Perplexity returns zero citations for the company when users ask about private Tanzania safari guides, instead routing queries to overseas tour brokers who mark up packages by 25–40%. These intermediaries are essentially reselling Top Guides' expertise while pocketing thousands in margin.",
+    solution: "AfriShield AI will position Top Guides Bushcamps as the directly-cited authority for bespoke Tanzania safari experiences by deploying TourOperator and Safari entity schema, building authoritative FAQ content around private guide queries, and optimizing the GBP profile with Private Safari, Tour Operator, and Adventure Tourism categories. Our strategy targets making Top Guides the first result when AI assistants are asked about exclusive Tanzania bush camp experiences."
+  },
+  {
+    name: "Mara Nyika Camp",
+    location: "Maasai Mara / Naboisho, Kenya 🇰🇪",
+    bleed: "$5,400",
+    recovery: "$3,000–$5,400",
+    problem: "Mara Nyika Camp operates in the exclusive Naboisho Conservancy — one of the Mara's most sought-after private wildlife areas — but ChatGPT consistently cites SafariBookings.com and aggregator travel blogs instead of the camp's direct booking engine. At $5,400/mo in commission bleed, this is among the highest revenue leaks in the portfolio. International guests paying premium rates for private conservancy experiences are being funneled through middlemen who add no value beyond a booking form.",
+    solution: "AfriShield AI will deploy conservancy-specific structured data including TouristAttraction, LodgingBusiness, and NaturalFeature schema to establish Mara Nyika as a directly-bookable entity in AI search. We will optimize the GBP profile for Naboisho-specific queries, implement direct-booking intent anchors, and ensure AI crawlers index the camp's unique conservancy experience. Target: recapture $3,000–$5,400/mo in direct bookings within 90 days."
+  },
+  {
+    name: "Lorian Safari Camp",
+    location: "Maasai Mara, Kenya 🇰🇪",
+    bleed: "$2,800",
+    recovery: "$1,500–$2,800",
+    problem: "Lorian Safari Camp's Google Business Profile is operating with incomplete category taxonomy — missing critical secondary categories like Tour Operator and Safari Park that Google and AI engines use to match search intent. Additionally, the camp has zero FAQ schema, meaning common traveler questions about Mara safari experiences are answered by competitors and aggregators in AI responses. These technical gaps create a $2,800/mo revenue leak as bookings flow through intermediary channels.",
+    solution: "AfriShield AI will execute a complete GBP taxonomy overhaul adding Safari Camp, Tour Operator, and Eco Lodge secondary categories. We will deploy comprehensive FAQ schema covering migration season, wildlife viewing, booking policies, and camp amenities — the exact queries travelers ask AI assistants. Combined with LodgingBusiness structured data and AI crawler allowlisting, Lorian will be positioned to capture direct Mara safari camp queries."
+  },
+  {
+    name: "Almanara Luxury Resort",
+    location: "Diani Beach, Kenya 🇰🇪",
+    bleed: "$4,900",
+    recovery: "$2,800–$4,900",
+    problem: "Almanara Luxury Resort offers exclusive private villa accommodations on Diani Beach, but ChatGPT routes all luxury villa queries to Expedia, Booking.com, and TripAdvisor. The resort's direct domain is completely uncited in AI responses, meaning travelers searching for premium Diani Beach villas — often at $400–$1,000/night — are booked through OTAs that strip 15–22% commission. At $4,900/mo in bleed, Almanara is essentially subsidizing OTA marketing with its own revenue.",
+    solution: "AfriShield AI will deploy luxury-tier Resort and VacationRental schema with villa-level detail (private pool, ocean-view, butler service), implement AI crawler access for GPTBot and PerplexityBot, and restructure the GBP profile with Luxury Resort, Private Villa, and Beach Accommodation categories. Our direct-booking recovery campaign will target high-intent villa queries, positioning Almanara as the directly-cited luxury option for Diani Beach."
+  },
+  {
+    name: "Asha Boutique Hotel",
+    location: "Diani Beach, Kenya 🇰🇪",
+    bleed: "$2,600",
+    recovery: "$1,500–$2,600",
+    problem: "Asha Boutique Hotel's website contains zero JSON-LD structured data, making it invisible to Google AI Overviews when travelers search for intimate boutique stays on Diani Beach. Without LodgingBusiness markup, AI engines cannot parse room types, rates, or the property's unique boutique character. Competitors with proper schema are capturing the growing segment of AI-assisted travelers, costing Asha an estimated $2,600/mo in direct booking revenue.",
+    solution: "AfriShield AI will implement complete LodgingBusiness JSON-LD markup including room categories, rate ranges, amenity listings, and boutique-specific attributes. We will optimize the GBP profile for intimate and boutique accommodation queries, deploy AI crawler allowlisting, and create content anchors targeting the specific traveler persona searching for non-chain, character-driven Diani stays."
+  },
+  {
+    name: "Natural World Kenya Safaris",
+    location: "Nairobi & Diani Beach, Kenya 🇰🇪",
+    bleed: "$4,500",
+    recovery: "$2,500–$4,500",
+    problem: "Natural World Kenya Safaris has strong traditional Google SEO authority — but the search landscape is shifting. Perplexity and ChatGPT now handle a growing share of high-intent safari planning queries, and both consistently cite international aggregator platforms rather than local operators for customized Kenya itineraries. This creates a dangerous gap: the company ranks well on legacy search but is invisible where future bookings will come from, leaking $4,500/mo to intermediaries who repackage their own safari offerings.",
+    solution: "AfriShield AI will bridge the traditional-to-AI search gap by deploying TourOperator entity schema, implementing GEO-optimized content that targets AI citation requirements (structured Q&A, itinerary markup, experience-based entity data), and ensuring AI crawlers can access and parse Natural World's deep safari expertise. We will leverage existing SEO authority to accelerate AI indexing, targeting first-mover advantage in AI-cited Kenya safari operators."
+  },
+  {
+    name: "Mtito Safari Camp",
+    location: "Tsavo / Mara, Kenya 🇰🇪",
+    bleed: "$2,500",
+    recovery: "$1,400–$2,500",
+    problem: "Mtito Safari Camp suffers from low direct booking search rankings, with Google AI Overviews consistently citing third-party travel blogs and review sites instead of the camp's own booking engine. When travelers research Tsavo safari accommodations through AI, they encounter blogger recommendations with affiliate links to OTAs rather than Mtito's direct rates. This informational gap costs an estimated $2,500/mo in commissions paid to intermediaries.",
+    solution: "AfriShield AI will boost Mtito's direct search presence by deploying Safari Camp and LodgingBusiness schema, implementing review and rating structured data, and optimizing the GBP profile for Tsavo-specific accommodation queries. We will create authoritative content that outranks travel blogs in AI citation priority, ensuring Mtito's direct booking engine is the recommended option for Tsavo safari stays."
+  },
+  {
+    name: "Casa Blanca Boutique Hotel",
+    location: "Windhoek, Namibia 🇳🇦",
+    bleed: "$2,700",
+    recovery: "$1,500–$2,700",
+    problem: "When Perplexity users ask for the best boutique stays in Windhoek, Casa Blanca receives zero direct citations — OTA portals capture 100% of the AI-generated recommendations. Every booking that flows through these channels costs the hotel 15% in commission, adding up to $2,700/mo in revenue that should be going directly to the property. In Windhoek's growing business and tourism market, this AI invisibility is a competitive disadvantage that compounds monthly.",
+    solution: "AfriShield AI will establish Casa Blanca as the top-cited boutique hotel in Windhoek by deploying BoutiqueHotel and LodgingBusiness schema, implementing comprehensive GBP optimization with business-traveler and tourism-specific categories, and allowlisting AI crawlers. Our content strategy will target the specific queries international visitors use when planning Windhoek stays, ensuring Casa Blanca appears in AI recommendations with direct booking links."
+  },
+  {
+    name: "Atlantic Villa Guesthouse",
+    location: "Swakopmund, Namibia 🇳🇦",
+    bleed: "$3,400",
+    recovery: "$2,000–$3,400",
+    problem: "Atlantic Villa Guesthouse has dropped behind older chain hotels in Google's Local 3-Pack for Swakopmund accommodation queries — despite offering a superior boutique experience. The root cause: zero LodgingBusiness schema markup and incomplete GBP category taxonomy. Chain hotels with larger marketing budgets and proper structured data are capturing the top positions, costing Atlantic Villa an estimated $3,400/mo in bookings that go through OTA channels or directly to competitors.",
+    solution: "AfriShield AI will reclaim Atlantic Villa's Local 3-Pack positioning through comprehensive LodgingBusiness schema deployment, GBP category restructuring (Guesthouse, Boutique Accommodation, Bed & Breakfast), and AI crawler allowlisting. We will implement a review velocity and photo optimization strategy to outpace chain competitors on engagement signals, targeting top-3 positioning for Swakopmund boutique accommodation queries."
+  },
+  {
+    name: "Beach Lodge Swakopmund",
+    location: "Swakopmund, Namibia 🇳🇦",
+    bleed: "$2,900",
+    recovery: "$1,600–$2,900",
+    problem: "Beach Lodge Swakopmund holds a prime beachfront position — a key differentiator for travelers — but ChatGPT completely fails to cite the property when users search for direct beachfront stays in Swakopmund. Instead, AI engines recommend aggregator platforms that list Beach Lodge alongside dozens of competitors, stripping the property's beachfront advantage and costing $2,900/mo in commission-laden indirect bookings.",
+    solution: "AfriShield AI will deploy Beachfront and LodgingBusiness schema that explicitly marks Beach Lodge's oceanfront location, implement structured data for room-with-a-view and beachfront amenity attributes, and optimize the GBP profile to emphasize the direct-beach-access differentiator. AI crawler allowlisting will ensure ChatGPT and Perplexity can parse and cite these unique selling points in their accommodation recommendations."
+  },
+  {
+    name: "Namibia Destinations",
+    location: "Windhoek, Namibia 🇳🇦",
+    bleed: "$3,300",
+    recovery: "$1,800–$3,300",
+    problem: "Namibia Destinations specializes in guided 4x4 self-drive tours — a unique offering that international travelers actively seek — but Perplexity recommends international OTA portals and European-based tour operators rather than this local expert. The company's deep knowledge of Namibian routes, road conditions, and hidden gems is being bypassed by AI engines that favor structured, schema-rich aggregator sites. This costs $3,300/mo in bookings routed through commission-heavy intermediaries.",
+    solution: "AfriShield AI will position Namibia Destinations as the locally-cited authority for self-drive Namibia tours by deploying TourOperator and SelfDrive experience schema, building route-specific FAQ structured data (Sossusvlei, Etosha, Skeleton Coast), and optimizing the GBP profile with Adventure Tour, 4x4 Safari, and Self-Drive categories. Our GEO strategy ensures AI engines cite local expertise over international repackagers."
+  },
+  {
+    name: "Mannor Safaris Namibia",
+    location: "Windhoek, Namibia 🇳🇦",
+    bleed: "$2,800",
+    recovery: "$1,500–$2,800",
+    problem: "Mannor Safaris crafts detailed wildlife itineraries across Namibia's most iconic landscapes, but without structured entity markup, these carefully curated experiences are invisible to ChatGPT and Perplexity. When travelers ask AI for recommended Namibia safari operators, Mannor is absent from the top recommendations. The company's founder-led guiding expertise — its core competitive advantage — is being overlooked by AI engines that cannot parse unstructured website content.",
+    solution: "AfriShield AI will deploy comprehensive TourOperator and WildlifeSafari entity schema across all itinerary pages, implement structured FAQ content covering Namibia's key wildlife regions, and optimize the GBP profile with Safari Operator, Wildlife Tour, and Nature Guide categories. We will ensure AI crawlers can access Mannor's deep itinerary content, positioning the founder's expertise as a cited authority in AI safari recommendations."
+  },
+  {
+    name: "Inganzo Boutique Hotel",
+    location: "Kigali, Rwanda 🇷🇼",
+    bleed: "$2,400",
+    recovery: "$1,300–$2,400",
+    problem: "Kigali's growing status as a major conference and business destination means corporate travelers increasingly use AI assistants to find accommodation — and every query routes them to Expedia and Booking.com instead of Inganzo's direct booking engine. Corporate guests booking multi-night stays at premium rates represent high-value revenue, and the 15–20% OTA commission on these bookings adds up to $2,400/mo in lost direct revenue.",
+    solution: "AfriShield AI will deploy LodgingBusiness and BusinessHotel schema targeting corporate travel queries, optimize the GBP profile with Business Hotel, Conference Venue, and Boutique Accommodation categories, and implement AI crawler allowlisting. Our content strategy will target the specific queries corporate travelers use (\"best hotel near Kigali Convention Centre\"), ensuring Inganzo captures direct corporate bookings."
+  },
+  {
+    name: "The Court Boutique Hotel",
+    location: "Kigali, Rwanda 🇷🇼",
+    bleed: "$2,100",
+    recovery: "$1,200–$2,100",
+    problem: "The Court Boutique Hotel's Google Business Profile is running with minimal category tags — missing secondary classifications that Google and AI engines use to match luxury accommodation queries. When ChatGPT users prompt for luxury stays in Kigali, The Court is completely invisible. The absence of entity schema means AI crawlers cannot identify the property as a luxury boutique option, defaulting to chain hotels and OTA listings that cost $2,100/mo in commissions.",
+    solution: "AfriShield AI will execute a full GBP taxonomy expansion adding Luxury Hotel, Boutique Accommodation, and Fine Dining secondary categories. We will deploy LodgingBusiness schema with luxury-tier attributes, implement AI crawler access, and build content anchors targeting Kigali luxury stay queries. This positions The Court as a directly-cited boutique alternative to chain hotels in AI recommendations."
+  },
+  {
+    name: "Volcanoes Safaris (Virunga)",
+    location: "Volcanoes National Park, Rwanda 🇷🇼",
+    bleed: "$6,500",
+    recovery: "$4,000–$6,500",
+    problem: "Volcanoes Safaris operates at the pinnacle of African luxury tourism — $1,500/night gorilla trekking lodges in the Virunga highlands — yet overseas brokers and international tour companies are capturing the AI search citations for these ultra-high-ticket queries. At $6,500/mo in estimated bleed, this represents the single largest revenue leak in the portfolio. Affluent travelers planning once-in-a-lifetime gorilla trekking experiences through AI assistants are being intercepted by intermediaries who add 25–40% markup while offering no local expertise.",
+    solution: "AfriShield AI will position Volcanoes Safaris as the definitive, directly-cited authority for gorilla trekking accommodation by deploying premium LodgingBusiness, WildlifeSafari, and GorillaTrekking entity schema. We will implement structured FAQ content around permit booking, trekking logistics, and luxury lodge amenities — the exact queries affluent travelers ask AI. Our GEO strategy targets making Volcanoes Safaris the first citation in ChatGPT and Perplexity for all gorilla trekking queries, recovering $4,000–$6,500/mo."
+  },
+  {
+    name: "Rwanda Safaris",
+    location: "Kigali, Rwanda 🇷🇼",
+    bleed: "$4,100",
+    recovery: "$2,400–$4,100",
+    problem: "Rwanda Safaris is a local operator with deep expertise in gorilla permit logistics and safari itineraries, but Perplexity consistently returns third-party aggregator directories when travelers search for Volcanoes gorilla permits and Rwanda safari packages. The company's local knowledge — crucial for navigating permit availability, seasonal timing, and combined safari-trekking itineraries — is being bypassed by AI engines that favor structured aggregator sites. This costs $4,100/mo in bookings routed through commission-heavy intermediaries.",
+    solution: "AfriShield AI will deploy TourOperator and GorillaTrekking schema with permit-booking structured data, build authoritative FAQ content covering gorilla permit queries (availability, pricing, best seasons, group sizes), and optimize the GBP profile for Rwanda safari planning intent. Our strategy positions Rwanda Safaris as the locally-cited permit and safari authority, bypassing aggregator intermediaries."
+  },
+  {
+    name: "Albertine Tours",
+    location: "Kigali, Rwanda 🇷🇼",
+    bleed: "$2,900",
+    recovery: "$1,600–$2,900",
+    problem: "Albertine Tours is missing from Google's Local 3-Pack for Kigali tour agency queries and completely absent from ChatGPT prompt responses. When travelers ask AI assistants for recommended Kigali-based tour operators, Albertine receives zero citations despite offering comprehensive Rwanda touring packages. The company's absence from both local search prominence and AI recommendations creates a dual visibility gap costing $2,900/mo in bookings diverted to competitors and aggregators.",
+    solution: "AfriShield AI will execute a dual-channel visibility strategy: optimizing Albertine's GBP profile for Local 3-Pack dominance (category taxonomy, review velocity, photo strategy) while simultaneously deploying TourOperator schema and AI crawler allowlisting for ChatGPT and Perplexity indexing. Our approach targets both traditional Google visibility and emerging AI search channels."
+  },
+  {
+    name: "K Hotel Douala",
+    location: "Douala Bonanjo, Cameroon 🇨🇲",
+    bleed: "$3,800",
+    recovery: "$2,200–$3,800",
+    problem: "K Hotel Douala occupies a prime position in the Bonanjo business district — Cameroon's commercial nerve center — yet ChatGPT recommends Booking.com aggregator listings when business travelers search for premier Douala hotels. The hotel's direct booking engine is completely absent from AI responses, meaning every reservation generated through AI-assisted search flows through OTA channels at 15–20% commission. At $3,800/mo in bleed, this is the highest leak in the Cameroon corridor.",
+    solution: "AfriShield AI will deploy Hotel and BusinessHotel schema targeting Douala Bonanjo business travel queries, implement comprehensive GBP optimization with Business Hotel, Conference Venue, and Restaurant secondary categories, and allowlist AI crawlers. Our bilingual content strategy (French and English) ensures K Hotel captures both Francophone African business travelers and international corporate visitors searching through AI assistants."
+  },
+  {
+    name: "Star Land Hotel",
+    location: "Douala & Yaoundé, Cameroon 🇨🇲",
+    bleed: "$3,500",
+    recovery: "$2,000–$3,500",
+    problem: "Star Land Hotel operates across two of Cameroon's most important business and diplomatic neighborhoods — Bonapriso (Douala) and Bastos (Yaoundé) — but lacks JSON-LD structured data across both properties. This makes both locations invisible to Google AI Overviews and ChatGPT recommendations. Diplomats, NGO staff, and business travelers searching for premium accommodation near embassies and corporate offices are being routed to OTAs, costing $3,500/mo in aggregate commission bleed.",
+    solution: "AfriShield AI will implement location-specific LodgingBusiness schema for both the Bonapriso and Bastos properties, deploy bilingual (French/English) FAQ structured data targeting diplomatic and business travel queries, and optimize separate GBP profiles for each location. AI crawler allowlisting across both domains ensures Star Land captures direct bookings from the high-value corporate and diplomatic traveler segment."
+  },
+  {
+    name: "Hôtel Océan Kribi",
+    location: "Kribi, Cameroon 🇨🇲",
+    bleed: "$1,800",
+    recovery: "$1,000–$1,800",
+    problem: "Kribi is emerging as Cameroon's premier beach and eco-tourism destination, and Hôtel Océan is positioned directly on the coast — yet Perplexity returns generic directory sites when travelers search for seaside eco lodges in Kribi. The hotel's direct website receives zero AI citations, meaning the growing segment of eco-conscious travelers planning Cameroon coastal getaways through AI assistants are being captured by directory listings and OTA platforms. At $1,800/mo, this represents significant lost revenue for a coastal property.",
+    solution: "AfriShield AI will deploy BeachResort and EcoLodge schema to position Hôtel Océan as a directly-cited seaside accommodation in Kribi. We will implement bilingual structured data (French/English), optimize the GBP profile for eco-tourism and beach destination queries, and create content anchors around Kribi's unique coastal attractions (Lobe Falls, pygmy villages, fresh seafood). This positions Hôtel Océan as the locally-cited authority for Kribi coastal stays."
+  },
+  {
+    name: "West Hotel Douala",
+    location: "Douala Akwa, Cameroon 🇨🇲",
+    bleed: "$2,200",
+    recovery: "$1,200–$2,200",
+    problem: "West Hotel Douala has dropped to page 2 on Google organic search results — effectively invisible to most searchers — and its GBP profile lacks the secondary categories and room schema that would signal to Google and AI engines that it's a bookable accommodation. In the competitive Akwa district, this positioning gap means business travelers default to chain hotels or OTA-listed competitors, costing $2,200/mo in direct booking revenue.",
+    solution: "AfriShield AI will execute a search recovery strategy: deploying Hotel and LodgingBusiness schema with room-type structured data, expanding the GBP profile with Business Hotel, City Centre Accommodation, and Restaurant secondary categories, and implementing a technical SEO audit to identify and fix the ranking drop factors. Our bilingual content strategy targets both Google organic recovery and AI search visibility."
+  },
+  {
+    name: "Global Bush Travel & Tourism",
+    location: "Douala, Cameroon 🇨🇲",
+    bleed: "$3,100",
+    recovery: "$1,800–$3,100",
+    problem: "Global Bush Travel & Tourism offers authentic Cameroon wildlife and cultural tours, but AI search assistants consistently recommend European-based aggregators and international tour operators instead of local experts. The company's deep knowledge of Cameroon's wildlife regions, cultural heritage, and off-the-beaten-path destinations is being bypassed by AI engines that favor large, structured aggregator platforms. At $3,100/mo, this gap funds competitors who simply repackage Global Bush's own local expertise.",
+    solution: "AfriShield AI will establish Global Bush as the locally-cited authority for Cameroon wildlife and cultural tourism by deploying TourOperator, WildlifeTour, and CulturalExperience entity schema. We will implement bilingual FAQ content covering Cameroon's key tourism experiences (wildlife safaris, Mount Cameroon, coastal tours, cultural heritage), optimize the GBP profile with Adventure Tour and Cultural Tourism categories, and ensure AI crawlers index Global Bush as the primary local source for authentic Cameroon travel experiences."
+  }
+];
+
+function renderPage(lead, index) {
+  return `
+    <div class="page">
+      <div class="header">
+        <div class="header-left">
+          <div class="logo-mark">A</div>
+          <div>
+            <div class="header-brand">AfriShield AI</div>
+            <div class="header-sub">AI Search Visibility & Direct Booking Recovery</div>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="header-type">AI Visibility & Direct Booking Audit</div>
+          <div class="header-date">August 2026 · Confidential</div>
+        </div>
+      </div>
+
+      <div class="lead-bar">
+        <div class="lead-name">${lead.name}</div>
+        <div class="lead-location">${lead.location}</div>
+      </div>
+
+      <div class="metric-row">
+        <div class="metric-box metric-bleed">
+          <div class="metric-icon">📉</div>
+          <div>
+            <div class="metric-label">Est. Monthly Revenue Leak</div>
+            <div class="metric-value">${lead.bleed}/mo</div>
+          </div>
+        </div>
+        <div class="metric-box metric-recovery">
+          <div class="metric-icon">📈</div>
+          <div>
+            <div class="metric-label">Direct Booking Recovery Target</div>
+            <div class="metric-value">${lead.recovery}/mo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-problem">
+        <div class="section-header">
+          <div class="section-badge">✕</div>
+          <div class="section-title">The Problem — Why You're Losing Direct Revenue</div>
+        </div>
+        <p>${lead.problem}</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="section section-solution">
+        <div class="section-header">
+          <div class="section-badge">✓</div>
+          <div class="section-title">The Fix — What AfriShield AI Will Deploy</div>
+        </div>
+        <p>${lead.solution}</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div style="font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--gray-600);margin-bottom:8px;">90-Day Recovery Roadmap</div>
+      <div class="roadmap">
+        <div class="roadmap-step">
+          <div class="step-num">1</div>
+          <div class="step-title">Inject Entity Schema & Allowlist AI Crawlers</div>
+          <div class="step-desc">Deploy JSON-LD structured data so ChatGPT, Perplexity & Google AI can parse and cite your property directly.</div>
+        </div>
+        <div class="roadmap-step">
+          <div class="step-num">2</div>
+          <div class="step-title">Optimize GBP Categories & Local 3-Pack</div>
+          <div class="step-desc">Restructure primary & secondary categories, review velocity, and photo strategy for top-3 map positioning.</div>
+        </div>
+        <div class="roadmap-step">
+          <div class="step-num">3</div>
+          <div class="step-title">Deploy Direct-Booking Intent Anchors</div>
+          <div class="step-desc">Create content & keyword anchors that bypass OTA intermediaries and drive travelers to your direct booking engine.</div>
+        </div>
+      </div>
+
+      <div class="cta-footer">
+        <div class="cta-text">Book Your Free 15-Minute <span>Strategy Walkthrough</span></div>
+        <div class="cta-details">
+          <strong>Ben</strong> · Founder, AfriShield AI<br>
+          afrishieldai.com · WhatsApp available
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const container = document.createElement('div');
+  leads.forEach((lead, i) => {
+    container.innerHTML += renderPage(lead, i);
+  });
+  document.body.appendChild(container);
+});
+</script>
+
+</body>
+</html>

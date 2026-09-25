@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
+import { EditorialImage } from '@/components/ui/EditorialImage';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { blogPostingJsonLd, breadcrumbJsonLd, faqPageJsonLd } from '@/lib/structured-data';
-import { getPost } from '@/lib/posts';
+import { getPost, postOgImages } from '@/lib/posts';
 import { SITE_URL } from '@/lib/site';
 
 const post = getPost('how-to-reduce-ota-commission')!;
@@ -17,8 +18,14 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/blog/${post.slug}`,
     type: 'article',
     publishedTime: post.published,
+    images: postOgImages(post),
   },
-  twitter: { card: 'summary_large_image', title: post.title, description: post.description },
+  twitter: {
+    card: 'summary_large_image',
+    title: post.title,
+    description: post.description,
+    images: postOgImages(post),
+  },
 };
 
 const TOC = [
@@ -78,6 +85,13 @@ export default function Post() {
           below is the order that works: fix the booking path, win the specific searches, get
           cited by AI assistants, then work your past-guest list.
         </ShortAnswer>
+
+        <EditorialImage
+          src={post.image!.src}
+          alt={post.image!.alt}
+          priority
+          className="my-10"
+        />
 
         <Scene>
           <p>
