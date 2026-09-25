@@ -119,6 +119,25 @@ Non-negotiables:
   angle (e.g. make it the synthesis/decision layer that links out to the posts owning
   the granular detail) rather than re-deriving material that already exists elsewhere
   on the site.
+- **Geographic-pivot compliance (board, 2026-09-25).** `content-queue.md`'s
+  2026-09-24 pivot rule was stated only as prose in that file and was never mirrored
+  here, unlike the differentiation-angle check above — a board review of the next
+  `queued` row (row 32, `how much does seo cost in nigeria`) found the poster's own
+  skill has zero enforcement of it. Before writing any row, confirm it names an
+  African market or is written for one (a keyword that reads identically to a
+  searcher in Manchester and one in Lagos is the wrong keyword — skip it and log
+  why). Every post must also:
+  - name the target market explicitly in the `ShortAnswer`/BLUF, not just in passing;
+  - price in the local currency where money is mentioned (NGN, GHS, KES, ZAR, XAF) —
+    or, where AfriShield's own USD-denominated tiers (`app/pricing/page.tsx`) are the
+    anchor, use the site's own "invoiced in NGN at the prevailing rate" framing rather
+    than inventing a hard-coded local-currency figure that drifts with FX;
+  - link to the matching city page under `/ai-seo/<city>` where one exists (check
+    `lib/cities.ts` for the current list — Lagos, Abuja, Accra, Nairobi, Johannesburg,
+    Douala at the time of writing);
+  - use local examples — real districts, real local context — not generic ones.
+  French rows (Cameroon-targeted keywords) are written in French, not translated
+  after the fact, metadata included.
 - **Skip-count escalation (board: Dan Martell, 2026-09-22).** If a `queued` row fails
   the differentiation-angle check, log the skip note as usual and move to the next
   `queued` row — but on the **third consecutive skip of the same row**, do not log a
