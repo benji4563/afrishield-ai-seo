@@ -24,3 +24,15 @@ the title repeated back with no extractable detail — no wiki update that run.
 Note (2026-08-05, deep pass): full transcripts were available this run. The 3
 newest uploads had moved on from the prior run's short-form clips to
 longer-form business/AI-leverage content — first wiki update logged this run.
+
+| 2026-09-16 | zgOJ0ZMU-lM | How do you make money with AI? | ingested | deep |
+| 2026-09-16 | y9hDis4rRPY | How well do you ACTUALLY know business? | skipped-off-niche | shallow |
+| 2026-09-16 | cJAnjEiSCb0 | Should you use AI, an Assistant, or yourself for these tasks? | ingested | deep |
+
+Note (2026-09-16): direct youtube.com access was blocked by the environment's
+network policy again this run (yt-dlp/curl got a 403 at the proxy gateway),
+but Firecrawl's YouTube postprocessor returned full transcripts for all 3
+candidates, so this run reached `deep` depth throughout despite that block.
+`y9hDis4rRPY` was a rapid-fire list of business jargon with no extractable
+system — off-niche per the routine's own filter (generic content, not a
+business-system idea).

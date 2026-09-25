@@ -26,3 +26,12 @@ Note (2026-08-05, deep pass): `cDuoGFq0hj8` is a short promotional excerpt of
 the same Gmail-personalization experiment covered in full in `JjPfPT37li0` —
 no new content beyond what's already logged there. No videoId overlap with
 the 2026-07-29 run.
+
+Note (2026-09-16): no new videos found this run. Searched the iPullRank
+company channel (`UCttOymj_FLE8d7xA7rEbsTw` / @iPullRankSEO) via Firecrawl
+(direct youtube.com access was blocked by the environment's network policy
+again), including the "Inside SEO Week 2026" playlist and general
+site:youtube.com/watch queries — every result found was either already in
+this ledger or predates the 2026-07-29 run (the playlist itself was last
+updated April 2026). This channel appears to post infrequently; nothing to
+ingest this run.

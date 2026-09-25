@@ -75,3 +75,31 @@ context · "Koraynese" (his precise, coined terminology).
   progressive: a domain earns "rankability" through accumulated click/engagement
   satisfaction over time rather than ranking outright from day one. —
   https://www.youtube.com/watch?v=WrU25krFCtk
+- **2026-09-16** — Introduces "cost of retrieval": once one source cheaply satisfies a
+  topic for Google, there's little incentive to find or trust a second, so being easy
+  and inexpensive to crawl/parse can outweigh marginal quality gains. Argues GPT,
+  Claude, and Perplexity have measurably different retrieval habits (GPT leans on
+  recency/URL dates and reads shallow; Claude reads further into a document;
+  Perplexity sits between) — enough to justify serving LLM-specific markdown variants
+  Google never indexes. Also distinguishes a brand's actual search demand
+  ("prestige") from link-based PageRank, and claims Google retains multiple
+  historical versions of a document, so old-looking backlinks/domains can skew
+  freshness scoring — meaning consensus signals need continual re-amplification to
+  stay weighted. — https://www.youtube.com/watch?v=VLDa_RoczYI
+- **2026-09-16** — (Guest Jeff Oxford) A viable agency-scaling pricing model: strict
+  per-deliverable flat pricing plus hourly billing for outreach, backed by SOPs
+  detailed enough for a non-expert to execute 80-90% of the work. A large Google
+  Shopping ranking study found domain authority correlates with visibility, and
+  notably that just one or two backlinks to a single product URL can sharply boost
+  that specific product's Shopping ranking. Repeatable link-earning framework:
+  publish a "top N [niche] sites/people" roundup, do no-ask relationship-building
+  outreach first, then follow up later with a data/research asset to convert the
+  warmed relationship into a link. — https://www.youtube.com/watch?v=xh5rJlAbw5A
+- **2026-09-16** — Signal only (shallow pass, chapter titles): building LLM-facing
+  topical authority is framed as extending beyond your own site to third-party
+  corroboration — web 2.0 blogs, PBNs, and platforms like Medium, Ghost, Reddit, and
+  Quora — so multiple independent-looking sources back the same entity/attribute
+  claims. Named tactics (exact-match/deliberately low-value "wasteful" domains to
+  steer which sources LLMs surface, replicating high-performing Reddit/listicle
+  formats) lean into gray-hat manipulation and are logged as signal, not a
+  recommended practice. — https://www.youtube.com/watch?v=3ncQHJuQaDM

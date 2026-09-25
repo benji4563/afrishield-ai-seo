@@ -27,3 +27,16 @@ Note (unresolved disagreement, not deduped): `AlHiLfYah74` was judged
 other. Both rows are kept as-is; the 2026-07-29 verdict is what the existing
 wiki entry for this video reflects. A future `deep` pass on this video would
 be the tiebreaker.
+
+| 2026-09-16 | VLDa_RoczYI | Topical Authority and Answer Engine Optimization: How LLMs Actually Retrieve Content | ingested | deep |
+| 2026-09-16 | xh5rJlAbw5A | SEO Masterclass: Scaling SEO Agencies with Topical Authority and Holistic SEO Mindset | ingested | deep |
+| 2026-09-16 | 3ncQHJuQaDM | Semantic SEO and Topical Authority for LLMs - Koray GUBUR and Jabez Ruben | ingested | shallow |
+
+Note (2026-09-16): direct youtube.com access was blocked by the environment's
+network policy again this run, but Firecrawl's YouTube postprocessor returned
+full transcripts for the first two candidates (`deep`). For `3ncQHJuQaDM` the
+postprocessor returned only unrelated auto-generated description boilerplate
+with no real transcript text, so that entry was judged from chapter titles
+only (`shallow`) — its "gray-hat" tactics (exact-match/low-value domains,
+replicating high-engagement post formats) are logged as signal only, not a
+recommended practice.
