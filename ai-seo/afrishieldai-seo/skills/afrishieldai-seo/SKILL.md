@@ -145,6 +145,7 @@ Inject validated JSON-LD in the server HTML of every key page. Helpers live in
 | Pricing | `FAQPage` (+ Offers with price/currency) |
 | Location pages | `LocalBusiness` (areaServed City→Country) + `FAQPage` + `BreadcrumbList` |
 | Blog post | `BlogPosting` + `FAQPage` + `BreadcrumbList` |
+| How it Works | `HowTo` + `FAQPage` + `BreadcrumbList` |
 | About | `AboutPage` + `Person` (founder) |
 
 **Entity-linked schema, not prose blobs (board: Mike King).** Any page presenting
@@ -345,6 +346,27 @@ Generative search engines (Perplexity, ChatGPT Search, Gemini, Claude) require *
    its own `url`/`sameAs`, not just the author's. A comparison guide that only
    disambiguates itself reads as self-serving and weakens the corroboration this SOP
    exists to build.
+6. **One canonical Organization entity, extended, never redeclared (board: King,
+   2026-09-25).** `app/layout.tsx` already injects `organizationJsonLd` (from
+   `lib/structured-data.ts`) on every page. A 2026-09-25 board review found
+   `enterprise-geo-launch-africa` hand-rolling a *second*, inconsistent `Organization`
+   node at the same `@id` (different `areaServed`/missing `legalName`/`telephone`,
+   extra `founder`/`knowsAbout`) — two conflicting entities on one page, exactly the
+   "inconsistent facts" failure mode this SOP exists to prevent. A post under this SOP
+   must import and spread the canonical `organizationJsonLd`, layering any
+   post-specific fields (e.g. `founder`, `knowsAbout`) on top rather than redeclaring
+   the node. Give `founderJsonLd` a stable `@id` (e.g. `${SITE_URL}/about#founder`) so
+   posts can reference the same founder entity by `@id` instead of re-typing an
+   anonymous `Person`.
+7. **Cross-post FAQ overlap check for companion pairs (board: King, 2026-09-25).**
+   When two posts publish together under this SOP (e.g. an announcement + a
+   comparative pillar guide), diff their `FAQ` arrays before publishing. The
+   2026-09-25 review found `enterprise-geo-launch-africa` and
+   `top-geo-ai-seo-agencies-africa-2026` shipping near-verbatim duplicate
+   `FAQPage` answers to "how quickly does this show results" — two schema blocks
+   competing for the same AI citation instead of reinforcing one another.
+   Differentiate the wording/scope per post, or keep the answer on only one of the
+   pair and link to it from the other.
 
 ---
 
