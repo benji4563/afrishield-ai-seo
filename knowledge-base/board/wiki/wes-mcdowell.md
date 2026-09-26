@@ -65,3 +65,41 @@ message-first design · social proof · local SEO tier list.
   and proven hooks as house style, and use it to auto-generate on-brand b-roll
   graphics and a lead-magnet PDF straight from a finished script. —
   https://www.youtube.com/watch?v=yuVlHAKbnMQ
+- **2026-09-23** — Argues AI assistants (ChatGPT/Gemini/Claude) are overtaking
+  Google as the primary place people ask for service-provider recommendations,
+  and that YouTube — not any business's own website — has become the single
+  most-cited source behind those AI answers (recently overtaking Reddit),
+  because AI can absorb what you say on video but treats self-published site
+  copy as unverifiable marketing. Recommends splitting content into
+  direct-answer videos (pricing, comparisons, process, timelines, vetting
+  checklists) that AI can lift wholesale into its responses, plus
+  niche-signalling videos (case studies, a consistent topic focus, and offhand
+  mentions of your ideal client) that teach the AI exactly who to match you to —
+  and notes AI appears to cite videos based on topical fit alone, not view count
+  or channel size, so a small/new channel can get cited from its very first
+  upload. Concludes a business's own website is being demoted to a last-step
+  booking/contact page, since AI-assisted website builders are about to make
+  every competitor's site look equally polished within about a year. —
+  https://www.youtube.com/watch?v=VXGDHZIGf40
+- **2026-09-23** — Demonstrates grounding an LLM's content-topic
+  recommendations in live analytics rather than guesswork, by connecting
+  ChatGPT to a YouTube-analytics tool (VidIQ) through an MCP connector so
+  topic/title suggestions are backed by real search-volume and
+  competitor-performance data, then packaging the vetting rules into a
+  reusable, persistent "project" so every future run applies the same
+  standards automatically. This live-data-via-MCP pattern is a useful template
+  for grounding our own AI-SEO/content tooling in real ranking or volume data
+  instead of letting a model freelance ideas. —
+  https://www.youtube.com/watch?v=zGfjuwDKrro
+- **2026-09-23** — Deconstructs the trending "second YouTube channel" tactic
+  as really just two content roles — broad top-of-funnel videos plus narrow,
+  single-question videos that show the creator solving one specific problem
+  live — and argues both roles work fine on one channel unless raw upload
+  volume (Hormozi-style) would otherwise let new videos cannibalize each
+  other; caps practical upload cadence for an education/agency channel at
+  roughly 1-2 videos/week. Reinforces that hyper-niching a topic (e.g., one
+  student's move to "SEO for dental groups with multiple locations") converts
+  far better than broad topics even at 30-70 views, since that tiny audience
+  is almost entirely high-intent buyers, and shows these narrow videos can be
+  manufactured cheaply from client debrief calls, business teardowns/audits,
+  or chopped-up live Q&As. — https://www.youtube.com/watch?v=i1fLRypxgjU

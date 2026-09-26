@@ -59,3 +59,17 @@ links · topical relevance of links.
   in content/site generation. Worth watching for cost impact on our generation
   pipeline, but needs independent verification before changing our model stack. —
   https://www.youtube.com/watch?v=PYbBddbflRo
+- **2026-09-23** — Anthropic's own Opus 5.5 rollout guidance pushes a different way
+  to brief long-running coding agents: hand over an entire job with a clear finish
+  condition and a checkpoint for when it should pause and ask, then let it work
+  unsupervised for hours instead of confirming every step, and split large audits
+  across parallel sub-agent runs whose output gets spot-checked before acceptance.
+  A directly reusable pattern for how we task our own Claude Code build/content
+  agents to cut down on manual babysitting. — https://www.youtube.com/watch?v=ktfhWFbDUcE
+- **2026-09-23** — A newer category of "decision" model (e.g. Jev) skips prose
+  generation altogether: given a situation plus a menu of possible answers, it
+  returns a machine-readable pick/score/yes-no straight into an automation, with
+  no text parsing required. The vendor claims large speed/cost gains over using a
+  full chat model for the same classify/route/score step — worth piloting for
+  lead-scoring or content-triage automation in our own agency pipeline rather than
+  defaulting to a generative model every time. — https://www.youtube.com/watch?v=9jKTG3yJWH0
