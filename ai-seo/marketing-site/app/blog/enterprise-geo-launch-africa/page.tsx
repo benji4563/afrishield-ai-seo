@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { EditorialImage } from '@/components/ui/EditorialImage';
 import { StructuredData } from '@/components/seo/StructuredData';
-import { blogPostingJsonLd, breadcrumbJsonLd, faqPageJsonLd } from '@/lib/structured-data';
+import { blogPostingJsonLd, breadcrumbJsonLd, faqPageJsonLd, organizationJsonLd } from '@/lib/structured-data';
 import { getPost, postOgImages } from '@/lib/posts';
 import { SITE, SITE_URL } from '@/lib/site';
 
@@ -67,22 +67,15 @@ const FAQ = [
 ];
 
 /**
- * Entity node for the launch announcement — cements one consistent AfriShield AI
- * identity (founder, hubs, focus) so AI answer engines disambiguate the brand the
- * same way across the domain. Founder name matches the canonical founderJsonLd.
+ * Entity node for the launch announcement — extends the canonical organizationJsonLd
+ * (name/url/email/areaServed) rather than restating it, so this page cannot drift out
+ * of sync with the rest of the domain. No separate address/@id: the "hubs" are
+ * marketing framing in the prose below, not an asserted registered address, and
+ * areaServed already carries Cameroon + Kenya via the canonical list.
  */
 const organizationEntityJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  '@id': `${SITE_URL}/#organization`,
-  name: SITE.name,
-  url: SITE_URL,
-  email: SITE.email,
+  ...organizationJsonLd,
   founder: { '@type': 'Person', name: 'Benjamin Njock' },
-  address: [
-    { '@type': 'PostalAddress', addressLocality: 'Douala', addressCountry: 'CM' },
-    { '@type': 'PostalAddress', addressLocality: 'Nairobi', addressCountry: 'KE' },
-  ],
   knowsAbout: [
     'Generative Engine Optimization',
     'Answer Engine Optimization',
