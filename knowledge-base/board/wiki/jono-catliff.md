@@ -66,3 +66,27 @@ clicks/month as the scoreboard.
   to review agent-made changes/logs rather than trust unattended agent runs
   blindly, relevant to any agency running Claude Code against live client
   sites/accounts. — https://www.youtube.com/watch?v=0f3KbpW8TBk
+- **2026-08-30** — Publishes a single-prompt Claude Code audit workflow that pulls
+  Semrush site-audit data, a Google Search Console export, and Google Business
+  Profile details in one pass, then diagnoses **and fixes** on-page, technical,
+  and AI-Overview issues plus the GBP listing itself — reports moving his own
+  agency site's audit score from 61 to 97 by re-running the same prompt two to
+  three times until the score plateaus. Explicitly calls out near-duplicate
+  city pages as "doorway pages" that suppress rankings — a practitioner-side
+  echo of Koray Tuğberk Gübür's multi-location warning already logged in
+  `wiki/koray-gubur.md` (genuinely distinct local detail required per page, not
+  a swapped city name); this is a corroboration across two independent
+  advisors, not a new claim on its own. —
+  https://www.youtube.com/watch?v=M2KJ5-sFbbg
+- **2026-09-06** — Companion "build" agent to the audit workflow above: runs
+  Semrush keyword research filtered on volume/difficulty/intent/CPC, groups
+  results into a city×service keyword matrix for programmatic local-page
+  generation, drafts blog and service-page copy after checking the top-3
+  ranking pages per keyword, then applies the same on-page/technical/AI-Overview
+  pass before publishing. Extends the "workflows as reusable Claude Code
+  skills, invoked by one slash command" pattern already logged from his July
+  WordPress-SEO video by naming the specific commands (`/keyword-research`,
+  `/audit`). Mostly a repackaging/consolidation of his own already-logged
+  tactics rather than a new idea — logged for the city×service matrix detail
+  and the audit/build split, both directly reusable in our own pipeline. —
+  https://www.youtube.com/watch?v=_0wKlt1vHLY
