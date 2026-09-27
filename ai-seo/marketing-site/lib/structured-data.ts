@@ -248,3 +248,133 @@ export const blogIndexJsonLd = {
   description: 'Plain-English writing on search visibility, content, and what it actually costs.',
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
 };
+
+/**
+ * The three service tiers as discrete `Offer` entities.
+ *
+ * Sourced from one constant so `/pricing`'s visible cards and its JSON-LD
+ * cannot drift apart, and so the same offers can be attached to a city page.
+ * Board review 2026-09-22: `/pricing` shipped with no Offer schema at all —
+ * the skill's own spec required it, but the offers only existed on the
+ * homepage's `professionalServiceJsonLd`.
+ */
+export const OFFER_TIERS = [
+  {
+    name: 'Foundation',
+    price: '150',
+    description: 'Technical + AI-visibility foundation, keyword map, and two published pages a month.',
+  },
+  {
+    name: 'Engine',
+    price: '400',
+    description:
+      'Everything in Foundation plus four published pages a month, local landing pages, and competitor tracking.',
+  },
+  {
+    name: 'Operation',
+    price: '900',
+    description:
+      'Full content operation: weekly publishing, local pages on demand, and a quarterly strategy review.',
+  },
+] as const;
+
+const offerItems = (url: string) =>
+  OFFER_TIERS.map((tier) => ({
+    '@type': 'Offer',
+    name: tier.name,
+    price: tier.price,
+    priceCurrency: 'USD',
+    description: tier.description,
+    url: abs(url),
+    availability: 'https://schema.org/InStock',
+    priceSpecification: {
+      '@type': 'UnitPriceSpecification',
+      price: tier.price,
+      priceCurrency: 'USD',
+      billingIncrement: 1,
+      unitCode: 'MON',
+    },
+  }));
+
+/** `/pricing` — the priced offers, on the page that actually shows the prices. */
+export const pricingOffersJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  '@id': abs('/pricing#service'),
+  name: SITE.name,
+  url: abs('/pricing'),
+  description:
+    'AI SEO and generative engine optimisation for African businesses, priced in public at USD 150, 400 or 900 per month.',
+  serviceType: 'Search engine optimisation',
+  priceRange: 'USD 150–900 per month',
+  areaServed: [
+    { '@type': 'Place', name: 'Africa' },
+    ...SERVED_CITIES.map((city) => ({ '@type': 'City', name: city.name })),
+  ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'AI SEO service tiers',
+    itemListElement: offerItems('/pricing'),
+  },
+};
+
+/**
+ * A city landing page's `Service`, scoped to that city.
+ *
+ * `areaServed` is the city itself rather than the whole continent, and the
+ * offers ride along so an answer engine reading a single city page has the
+ * price without a second fetch. No street address or telephone is asserted per
+ * city — we never fabricate NAP.
+ */
+export function cityServiceJsonLd(city: {
+  slug: string;
+  name: string;
+  country: string;
+  metaDescription: string;
+  districts: string[];
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': abs(`/ai-seo/${city.slug}#service`),
+    name: `AI SEO and GEO in ${city.name}`,
+    url: abs(`/ai-seo/${city.slug}`),
+    serviceType: 'Search engine optimisation',
+    description: city.metaDescription,
+    provider: {
+      '@type': 'Organization',
+      name: SITE.name,
+      url: SITE_URL,
+      email: SITE.email,
+    },
+    areaServed: {
+      '@type': 'City',
+      name: city.name,
+      containedInPlace: { '@type': 'Country', name: city.country },
+    },
+    serviceArea: city.districts.map((district) => ({
+      '@type': 'Place',
+      name: `${district}, ${city.name}`,
+    })),
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: `AI SEO service tiers in ${city.name}`,
+      itemListElement: offerItems(`/ai-seo/${city.slug}`),
+    },
+  };
+}
+
+/** `/ai-seo` — the city index, as a liftable ItemList of the markets served. */
+export const cityIndexJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  '@id': abs('/ai-seo#itemlist'),
+  name: 'African cities where AfriShield AI provides AI SEO and GEO',
+  numberOfItems: SERVED_CITIES.length,
+  itemListElement: SERVED_CITIES.map((city, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: `AI SEO in ${city.name}, ${city.country}`,
+    url: abs(`/ai-seo/${city.name.toLowerCase()}`),
+  })),
+};

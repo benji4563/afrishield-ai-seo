@@ -61,6 +61,16 @@ export const FOOTER_COLUMNS = [
     ],
   },
   {
+    heading: 'Where we work',
+    links: [
+      { label: 'AI SEO in Lagos', href: '/ai-seo/lagos' },
+      { label: 'AI SEO in Nairobi', href: '/ai-seo/nairobi' },
+      { label: 'AI SEO in Accra', href: '/ai-seo/accra' },
+      { label: 'AI SEO in Johannesburg', href: '/ai-seo/johannesburg' },
+      { label: 'All six cities', href: '/ai-seo' },
+    ],
+  },
+  {
     heading: 'Reading',
     links: [
       { label: 'Blog', href: '/blog' },
