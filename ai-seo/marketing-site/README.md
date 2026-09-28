@@ -24,9 +24,10 @@ Next.js 16 (App Router) · React 19 · TypeScript · Tailwind · Framer Motion.
 
 > The build brief called for Next.js 14. The entire 14.x line carries unpatched
 > high-severity advisories and npm's only offered remedy is Next 16, so this
-> ships on 16. `npm audit` reports zero vulnerabilities; the `overrides` block
-> in `package.json` forces patched `postcss` and `sharp` and should be re-checked
-> on every Next upgrade.
+> ships on 16. `npm audit` reports zero vulnerabilities; Next 16.3.6 now
+> declares patched `postcss`/`sharp` ranges directly, so the `overrides` block
+> that used to force them has been dropped. Re-check on future Next upgrades
+> in case a regression brings it back.
 
 ## Layout
 
