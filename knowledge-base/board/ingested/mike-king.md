@@ -84,3 +84,12 @@ site:youtube.com/watch queries — every result found was either already in
 this ledger or predates the 2026-07-29 run (the playlist itself was last
 updated April 2026). This channel appears to post infrequently; nothing to
 ingest this run.
+
+Note (2026-09-23, check-only, no rows added): scraped the iPullRank company
+channel's `/videos` tab (channel_id `UCttOymj_FLE8d7xA7rEbsTw`) per the
+Firecrawl recipe. All ~30 videos returned in the initial load are
+date-sorted newest-first (relative ages ran 3mo → 7mo ago, strictly
+increasing), and the single newest one, `JjPfPT37li0`, is already ledgered
+above from the 2026-08-05 run. No videoId newer than that appeared, so
+there are no genuinely new uploads to process this run. Nothing was
+deep-analysed and the wiki was left untouched.

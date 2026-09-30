@@ -43,6 +43,9 @@ buyer-vs-viewer targeting), so no new takeaway could be responsibly extracted
 without fabricating specifics beyond the title — logged skipped-nothing-new
 rather than guessed. `q7sJGED_b6g` had one corroborated, video-specific detail
 (a stated view/revenue dip tied to 2026 algorithm changes) worth capturing.
+| 2026-09-23 | VXGDHZIGf40 | Your Website Won't Matter in 2027. Prepare Now. | ingested | deep |
+| 2026-09-23 | zGfjuwDKrro | ChatGPT Astra Just Changed Making YouTube Videos Forever | ingested | deep |
+| 2026-09-23 | i1fLRypxgjU | Hormozi's New YouTube Strategy Is Genius (but Dangerous) | ingested | deep |
 
 Note (dedup, 2026-08-05 run): all three videoIds above were first logged
 2026-07-29 at `shallow` depth (`RwEs5VdH_ZQ` and `HsLLTvosGJw` as `ingested`;
@@ -122,3 +125,16 @@ per the 3-newest cap. A 5th candidate found in the initial search,
 `mhV0GzrIlAo`, was excluded entirely — its metadata shows it's uploaded by a
 different channel ("The Zinny Studio"), not Wes McDowell, so it was never a
 valid candidate for this advisor.
+
+Note (2026-09-23 run): the channel's `/videos` page returned 30 recent
+uploads, of which only the 3 above were new since the last run and were
+selected (newest-first) for deep analysis — all three had usable full
+transcripts via youtubetotranscript.com. All three were on-niche and added
+genuinely new material, so all are `ingested`. 24 more videos on the page are
+also not yet in this ledger but were left untouched this run (per the "at
+most 3 newest" rule) and should be picked up in a future run, newest first:
+`JJTFLkD9NxU`, `kjRKGZh7uAE`, `vl6GDCbMi4I`, `JbBfJtWnyt0`, `w2ENbVomGao`,
+`VughBZFtHDc`, `lIQ79IkGpjk`, `1ywvAeaFojo`, `BEcIgiXA4M8`, `g3bXPKgvFGM`,
+`81bmuO5U6TY`, `C3l5idU0ja0`, `2JGEyK2o0yY`, `T7IfadQ2XLQ`, `DRs5qr7UY28`,
+`sZQ9snGyFps`, `Y-wymxSUUAk`, `VxkGExMwZCc`, `9ESpRo379PI`, `AE2M5GyCYho`,
+`ibfPT5n_gYw`, `-SfFwE6xtD8`, `lxndWdjOyVM`, `C0foDFGP8JU`.

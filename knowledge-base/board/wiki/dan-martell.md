@@ -115,3 +115,12 @@ work on it vs. in it · leverage.
   calls, big negotiations) stay with the founder — required founder involvement
   should scale up with financial/relationship risk rather than sit at one fixed
   delegation tier. — https://www.youtube.com/watch?v=cJAnjEiSCb0
+- **2026-09-23** — Turns AI into a weekly accountability coach instead of a
+  cheerleader: feed it your own stated goals as the grading rubric so it scores
+  your week against a defined standard rather than just praising you, since
+  models otherwise default to telling you you're crushing it regardless of
+  reality. On the two lowest-scoring areas, have it run repeated interview
+  rounds that dig past the first, easy-feeling answer until it surfaces the
+  actual root cause you weren't naming, then attach a concrete reward/stake to
+  each metric so it stays emotionally "real" instead of a number nobody acts
+  on. — https://www.youtube.com/watch?v=gfSVNJZgbOo
