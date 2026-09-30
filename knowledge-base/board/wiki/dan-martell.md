@@ -103,3 +103,15 @@ work on it vs. in it · leverage.
   shape*, not *target selection* — so worth testing as a cheap, low-effort probe
   format for AfriShield's own outbound/lead-gen sends before investing in longer
   sequences. — https://www.youtube.com/watch?v=0rkUYeyUjzQ
+- **2026-09-16** — The entry-level AI-monetization play is bundling AI-generated
+  content (web copy, scripts, social posts) into a flat monthly managed-service fee
+  sold to non-technical local businesses (gyms, HVAC, plumbing). The real addressable
+  market is owners who actively avoid learning the tools themselves, not the
+  AI-savvy crowd — target that resistance rather than compete on sophistication. —
+  https://www.youtube.com/watch?v=zgOJ0ZMU-lM
+- **2026-09-16** — Proposes routing each task through a stakes-based triage: routine,
+  objective work (inbox, scheduling, meeting notes, vendor research) goes to AI or an
+  assistant, while emotionally personal or high-stakes decisions (gifts, final hiring
+  calls, big negotiations) stay with the founder — required founder involvement
+  should scale up with financial/relationship risk rather than sit at one fixed
+  delegation tier. — https://www.youtube.com/watch?v=cJAnjEiSCb0

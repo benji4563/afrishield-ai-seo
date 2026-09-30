@@ -118,3 +118,15 @@ clearly on-niche upload ("How to start a 1-person business with AI (ask
 these 3 questions)", 1BApLicRt1w, 2026-08-26) was seen but is older than the
 3 selected and was intentionally left unprocessed per the recency cap — it
 should surface again in a future run if upload volume slows.
+
+| 2026-09-16 | zgOJ0ZMU-lM | How do you make money with AI? | ingested | deep |
+| 2026-09-16 | y9hDis4rRPY | How well do you ACTUALLY know business? | skipped-off-niche | shallow |
+| 2026-09-16 | cJAnjEiSCb0 | Should you use AI, an Assistant, or yourself for these tasks? | ingested | deep |
+
+Note (2026-09-16): direct youtube.com access was blocked by the environment's
+network policy again this run (yt-dlp/curl got a 403 at the proxy gateway),
+but Firecrawl's YouTube postprocessor returned full transcripts for all 3
+candidates, so this run reached `deep` depth throughout despite that block.
+`y9hDis4rRPY` was a rapid-fire list of business jargon with no extractable
+system — off-niche per the routine's own filter (generic content, not a
+business-system idea).

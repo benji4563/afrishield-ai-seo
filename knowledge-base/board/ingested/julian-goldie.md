@@ -107,3 +107,12 @@ already tracked in the wiki (see updates log), so only the one or two
 details in each that were not already captured were logged, to avoid
 re-stating existing doctrine. As always, no transcript was obtainable, so
 depth stays shallow.
+
+| 2026-09-16 | OI2by3seeNo | How to Run Hermes Agent FREE Forever! | ingested | deep |
+| 2026-09-16 | Tna9xRHRHcI | How to Build Your Own Agent OS FREE | ingested | deep |
+| 2026-09-16 | lGBYQqZdly0 | This n8n System Runs My Entire AI Community | ingested | deep |
+
+Note (2026-09-16): direct youtube.com access was blocked by the environment's
+network policy again this run, but Firecrawl's YouTube postprocessor returned
+full transcripts for all 3 candidates — `deep` depth throughout. All 3 verdicts
+carry an unverified-claim caveat per this advisor's "signal not gospel" stance.
