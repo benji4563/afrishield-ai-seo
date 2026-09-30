@@ -149,3 +149,44 @@ clicks/month as the scoreboard.
   tool — running it against a prospect's site to produce a before/after gap
   report plus a competitor benchmark as sales collateral for landing new
   SEO/agency clients. — https://www.youtube.com/watch?v=M2KJ5-sFbbg
+- **2026-09-30** — Structures a reusable Claude Code "second brain" as a
+  project scaffold — a CLAUDE.md rulebook plus `context/`, `skills/`,
+  `references/`, `design/`, and `output/` folders — so answers about a
+  business start pulling from its real numbers and history instead of
+  generic AI output; a clean template for scaffolding client-ops workspaces.
+  For large one-off research jobs (e.g. competitor/buyer-persona research),
+  fans work out across many parallel sub-agents (a "manager" delegating
+  slices to "employee" agents) to compress a multi-day pull into minutes.
+  Hardens scheduled Claude Routines by attaching a GitHub-hosted reference
+  file for context the cloud routine can't reach locally, and by enforcing
+  hard guardrails — draft-only actions plus an idempotency/dedupe tag — to
+  stop a runaway or looping automation. —
+  https://www.youtube.com/watch?v=R3mx8XHX8ns
+- **2026-09-30** — Packages a full Google Ads account review into a single
+  `/audit` skill that runs 200+ checks across account, campaign/ad-group,
+  ad, landing-page, and keyword levels, then shows a plan Claude only
+  executes after approval. Flags two outsized quick wins for inherited
+  local-service accounts: missing Google Maps ad placement (roughly 8.4x
+  the clicks of standard search ads) and untracked phone-call conversions,
+  since without conversion tracking the account can't be optimized at all.
+  Also argues Google's own "Optimization Score" recommendations correlate
+  with more spend rather than more profit, and flags a default
+  location-targeting setting ("presence or interest" vs "presence") that
+  lets clicks from outside the service area drain budget. —
+  https://www.youtube.com/watch?v=j1tcmbOHYZY
+- **2026-09-30** — Gives a concrete Semrush filter recipe for a
+  `/keyword-research` skill: keep only keywords with meaningful volume
+  (~50-100+ searches/mo) and difficulty ≤30, split by intent (transactional
+  → service/money pages, informational → blog posts), use CPC as a signal
+  of commercial value, then group results into ~5-keyword clusters per page
+  to multiply a page's ranking chances. Frames blog content as the "tide
+  that lifts" money pages — informational posts build domain authority
+  that raises transactional service pages through the rankings — and builds
+  each post by researching 30+ sources, extracting the pattern behind the
+  current top-3 Google results, then rewriting in an injected distinct
+  voice (he uses humor) specifically to raise on-page dwell time as a
+  ranking signal. Runs page optimization and audits as repeatable
+  one-command skills that score on-page, technical, AI Overview, and
+  LLM-discoverability (ChatGPT/Claude/Perplexity) together and explicitly
+  check for duplicate/doorway pages sitewide, since a single pass rarely
+  reaches a top score. — https://www.youtube.com/watch?v=_0wKlt1vHLY

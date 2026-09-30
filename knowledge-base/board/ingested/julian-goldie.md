@@ -30,6 +30,9 @@ transcript) / `shallow` (title+description fallback).
 | 2026-09-23 | jBlNB7f7ogk | GPT-6 Sol + Luna Just Changed AI Agents | skipped-off-niche | deep |
 | 2026-09-23 | ktfhWFbDUcE | Claude Opus 5.5 AI Just Changed Everything | ingested | deep |
 | 2026-09-23 | 9jKTG3yJWH0 | Run Jev AI For FREE, Here's How! | ingested | deep |
+| 2026-09-30 | 5yOO76v6KM0 | Claude Sonnet 5.5 AI SEO: How to Rank #1 in AI! | ingested | deep |
+| 2026-09-30 | jzMepimRNng | Sonnet 5.5 DESTROYS GPT-6.1 Sol AI? | skipped-off-niche | deep |
+| 2026-09-30 | RJEzrQHv0_o | I Tested OpenAI Dots...Worth it? | skipped-off-niche | deep |
 
 Note (2026-08-26 run): this run got full transcripts (Firecrawl's YouTube
 postprocessor) for all 3 videos checked — a `deep` run, unlike the prior two
@@ -138,3 +141,13 @@ for a future run: `74zoZTQjlEc`, `8XEW4Np8LiU`, `Oh6xHM-2jxc`, `hpBYtTassZ4`,
 `89wCEhkD7ag`, `k-2Jh9bOs2o`, `47a4qvjFbuM`, `tGHYLyG5hFI`, `56IZyqeNsKQ`,
 `aN72k0W21vk`, `k0DEvxhs1K4`, `iK88eHoilYw`, `RdglwPXveiI`, `3bKB80kf5Hw`,
 `xAcjcftjY28`, `8lfWedr1Tng`, `ljjqazjlVMU`.
+
+Note (2026-09-30): channel listing was fetched via Firecrawl rawHtml +
+`ytInitialData` JSON parse (per updated playbook); 30 uploads were returned,
+all newer than the newest ledger entry, all from the last 24 hours — this
+channel is now posting very high-frequency, mostly generic AI-model-release
+coverage. Full transcripts were obtainable this run (depth=deep) for all 3
+selected videos via Firecrawl markdown scrape of the watch page. 2 of 3 were
+off-niche generic AI-model comparisons/reviews (GPT-6.1 Sol vs. other models;
+an OpenAI "Dots" agent product review) with no SEO/agency angle, so nothing
+was folded into the wiki from those two.

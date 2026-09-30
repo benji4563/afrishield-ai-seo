@@ -33,6 +33,9 @@ queued for a future run, since they aren't this channel's own uploads.
 | 2026-09-23 | VLDa_RoczYI | Topical Authority and Answer Engine Optimization: How LLMs Actually Retrieve Content | ingested | deep |
 | 2026-09-23 | 3ncQHJuQaDM | Semantic SEO and Topical Authority for Large Language Models (LLMs) - Koray GUBUR and Jabez Ruben | ingested | deep |
 | 2026-09-23 | R15AekSxmW4 | Holistic SEO Mastermind: Invite-only Private Gathering for SEO Business People [Kusadasi/Turkey] | skipped-off-niche | shallow |
+| 2026-09-30 | VLDa_RoczYI | Topical Authority and Answer Engine Optimization: How LLMs Actually Retrieve Content | ingested | deep |
+| 2026-09-30 | 3ncQHJuQaDM | Semantic SEO and Topical Authority for Large Language Models (LLMs) - Koray GUBUR and Jabez Ruben | ingested | deep |
+| 2026-09-30 | R15AekSxmW4 | Holistic SEO Mastermind: Invite-only Private Gathering for SEO Business People [Kusadasi/Turkey] | skipped-off-niche | shallow |
 
 Note: `Mq0umjlnnUM` is already listed as a source in `wiki/koray-gubur.md` from
 an earlier (pre-ledger) seeding pass — logged here now so it isn't re-flagged
@@ -141,3 +144,11 @@ showed this is a ~59-second recap/trailer for an invite-only in-person
 mastermind event, referencing already-known topics (topical authority,
 topical maps, automation) with no new substantive claims of its own — treated
 as an off-niche promo per the niche filter rather than educational content.
+
+Note (2026-09-30 run): channel listing (newest-first) had 5 videos ahead of the
+next not-yet-ingested one, all already in the ledger (`mD51uM8v_bw`,
+`AlHiLfYah74`, `WrU25krFCtk`, `Mq0umjlnnUM`), so the 3 selected were the next 3
+new videoIds after those: `VLDa_RoczYI`, `3ncQHJuQaDM`, `R15AekSxmW4`.
+`R15AekSxmW4` is a ~1-minute event-recap/promo clip for an invite-only
+mastermind with no substantive transcript (just music/applause), so it was
+judged off-niche/promotional from title+description alone.

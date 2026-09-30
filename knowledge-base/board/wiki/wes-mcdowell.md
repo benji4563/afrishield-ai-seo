@@ -217,3 +217,37 @@ message-first design · social proof · local SEO tier list.
   is almost entirely high-intent buyers, and shows these narrow videos can be
   manufactured cheaply from client debrief calls, business teardowns/audits,
   or chopped-up live Q&As. — https://www.youtube.com/watch?v=i1fLRypxgjU
+- **2026-09-30** — Runs a one-hour-a-day, Monday-to-Friday production system
+  (topic/title research day, differentiation-research day, scripting day,
+  recording day, motion-graphics day) that concentrates effort on the few
+  decisions that actually move a video's performance, and reports it now
+  outperforms his old all-week process on both speed and results. Topic
+  selection is driven by a rank/keyword tool (VidIQ) feeding real audience
+  search queries into an LLM rather than instinct, so titles come from what
+  people are already typing into YouTube search about the problems a channel
+  solves. He also builds one reusable AI-generated "design system" (colors,
+  fonts, animated on-screen text) from a single reference screenshot and
+  reuses it on every future video, shrinking the outsourced-editing job to
+  just cutting footage that a low-cost editor can handle. —
+  https://www.youtube.com/watch?v=bjIL9qoRHds
+- **2026-09-30** — Argues YouTube has overtaken Reddit as the most-cited
+  source inside AI answer engines (cites roughly 30% of Google's AI answers
+  including a YouTube video) because AI treats independently-hosted platform
+  content as more trustworthy than a business's own self-published website
+  copy — making a channel's videos, not site copy, the primary GEO asset now.
+  Also cites a study finding AI citation is decoupled from view count or
+  channel size, so a brand-new channel can start surfacing in AI
+  recommendations immediately rather than waiting months the way organic
+  search ranking requires. Recommends splitting content into "answer" videos
+  that mirror the exact logistical questions prospects ask on sales calls
+  (price, comparisons, process, timeline, how-to-choose — one question per
+  video) plus "claim-jumper" videos (case studies, topic choices, client
+  mentions) that teach the AI model precisely who a business specializes in,
+  with the website's job shrinking to a single closing/booking page once that
+  trust is built on video. — https://www.youtube.com/watch?v=VXGDHZIGf40
+- **2026-09-30** — Connects a keyword/analytics tool (VidIQ) to an agentic
+  LLM through an MCP connector so the model can autonomously run a
+  multi-step topic-research workflow — checking search demand, competitor
+  performance, and a channel's own outlier hits — and return evidence-backed,
+  stage-appropriate video topics instead of guesses. —
+  https://www.youtube.com/watch?v=zGfjuwDKrro

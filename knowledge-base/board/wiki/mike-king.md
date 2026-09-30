@@ -111,3 +111,26 @@ synthesis-first discovery.
   reverse-engineering AI products via browser DevTools/network inspection as an
   ongoing research method for tracking how retrieval and citation actually work. —
   https://www.youtube.com/watch?v=VBH9Od_OL1Q
+- **2026-09-30** — [SEO Value Happens After the Click - Brie Anderson - Inside SEO Week](https://www.youtube.com/watch?v=578yMDdaGEA):
+  As privacy blockers and "direct"-traffic buckets erode last-click attribution,
+  the sturdier way to prove AI-SEO work's value is downstream engagement (e.g.,
+  showing that an internal-linking fix measurably deepens site visits) rather than
+  crediting one channel. Also flags that LLM/AI-training scraper traffic is
+  polluting GA4 as source/medium "not set" with near-zero time-on-site, and
+  default bot filters miss it — ongoing manual filtering is needed to keep
+  AI-search analytics trustworthy.
+- **2026-09-30** — [Content Strategy Is Now a Differentiation Problem - Angela Clark - Inside SEO Week](https://www.youtube.com/watch?v=6qF8mRrtTms):
+  As AI answers commodify generic "definition" content, real differentiation comes
+  from mining a client's own proprietary assets — e.g., recurring questions logged
+  in their on-site chatbot — into content competitors can't replicate. Recommends
+  diversifying content format per query (comparison tables, checklists,
+  interactive tools, short visuals) rather than defaulting to a long-form article,
+  since users increasingly want a fast synthesized answer.
+- **2026-09-30** — [Training Data Is Quietly Deciding Winners in AI Search - Inside SEO Week - Metehan Yeşilyurt](https://www.youtube.com/watch?v=VBH9Od_OL1Q):
+  Training-data presence is emerging as its own AI-visibility lever distinct from
+  live RAG retrieval — many LLM answers to generic questions draw on memorized
+  training data, so a brand's footprint in corpora like Common Crawl can affect
+  AI-answer inclusion independent of current site rankings. Notes some publishers
+  now block Common Crawl's bot, likely excluding them from that training data —
+  worth treating "allow CCBot" as a deliberate technical decision rather than a
+  robots.txt afterthought.

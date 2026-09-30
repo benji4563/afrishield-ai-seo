@@ -17,6 +17,9 @@ transcript) / `shallow` (title+description fallback).
 | 2026-09-23 | j1tcmbOHYZY | Claude Code Google Ads Audit: Fix Your Account In 1 Prompt (Steal This) | ingested | deep |
 | 2026-09-23 | _0wKlt1vHLY | Claude Code SEO Agent: Automate Everything ($500K+ Earned) | ingested | deep |
 | 2026-09-23 | M2KJ5-sFbbg | Claude Code SEO Audit: Fix Your Whole Website In 1 Prompt (Steal This) | ingested | deep |
+| 2026-09-30 | R3mx8XHX8ns | FULL CLAUDE CODE MASTERCLASS: Beginner To Expert In 2 Hours (2026) | ingested | deep |
+| 2026-09-30 | j1tcmbOHYZY | Claude Code Google Ads Audit: Fix Your Account In 1 Prompt (Steal This) | ingested | deep |
+| 2026-09-30 | _0wKlt1vHLY | Claude Code SEO Agent: Automate Everything ($500K+ Earned) | ingested | deep |
 
 Note: `8VyHKDSyCCo` and `LabRBZp2ODk` were first logged 2026-07-29 at `shallow`
 depth (both `ingested`); the 2026-08-05 run re-read them at `deep` depth with a

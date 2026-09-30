@@ -46,6 +46,9 @@ rather than guessed. `q7sJGED_b6g` had one corroborated, video-specific detail
 | 2026-09-23 | VXGDHZIGf40 | Your Website Won't Matter in 2027. Prepare Now. | ingested | deep |
 | 2026-09-23 | zGfjuwDKrro | ChatGPT Astra Just Changed Making YouTube Videos Forever | ingested | deep |
 | 2026-09-23 | i1fLRypxgjU | Hormozi's New YouTube Strategy Is Genius (but Dangerous) | ingested | deep |
+| 2026-09-30 | bjIL9qoRHds | The NEW Way to Make YouTube Videos FAST (Start to Finish) | ingested | deep |
+| 2026-09-30 | VXGDHZIGf40 | Your Website Won't Matter in 2027. Prepare Now. | ingested | deep |
+| 2026-09-30 | zGfjuwDKrro | The NEW ChatGPT Just Killed Claude at Making YouTube Videos | ingested | deep |
 
 Note (dedup, 2026-08-05 run): all three videoIds above were first logged
 2026-07-29 at `shallow` depth (`RwEs5VdH_ZQ` and `HsLLTvosGJw` as `ingested`;

@@ -80,6 +80,9 @@ accountability/scoring coach for founders — genuinely new mechanic, logged to
 the wiki. These 3 were the newest of 8 videos found not yet in this ledger;
 the remaining 5 (`DlQyXhjH2jE`, `1BApLicRt1w`, `1MMqPTiWfSc`, `n7t68A0NQQM`,
 `6poBPhfB-WY`) are left for a future run per the 3-newest-per-run cap.
+| 2026-09-30 | aPSbZbOzB4s | These Are the Best AI Tools in 2026 | ingested | deep |
+| 2026-09-30 | 4_urJ17Rx8s | Give me 57 sec... I'll DELETE your need for perfection | skipped-off-niche | deep |
+| 2026-09-30 | _rBsOP658YA | You're only 6 months away from living your dream life | skipped-off-niche | deep |
 
 Note (2026-07-29, shallow pass): the environment's network policy blocked
 direct access to youtube.com, so no auto-transcript could be fetched;
