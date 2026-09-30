@@ -62,3 +62,14 @@ work on it vs. in it · leverage.
   models for high-volume simple sorting, top-tier reserved for orchestration) to cut
   agent operating cost roughly 100x on routine work. —
   https://www.youtube.com/watch?v=Bm84BAtOfQw
+- **2026-09-30** — Recommends a "MAPS" structure for prompting an autonomous
+  computer-use agent with a whole multi-step workflow in a single instruction:
+  state the Mission (the goal), the Ask (the concrete task), the Parameters
+  (files, rules, limits) and the Shape (what the output should look like and
+  how you want to be notified) — replacing the old pattern of manually
+  chaining separate tool hops together. Also advocates "owning the brain,
+  renting the models": keep one centralized, vendor-agnostic memory layer
+  that captures your meetings, decisions and context so that whichever AI
+  model is currently best can be swapped in immediately without re-teaching
+  it your business from scratch, avoiding lock-in as tools keep changing. —
+  https://www.youtube.com/watch?v=aPSbZbOzB4s

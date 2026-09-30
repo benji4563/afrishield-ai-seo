@@ -59,3 +59,16 @@ links · topical relevance of links.
   in content/site generation. Worth watching for cost impact on our generation
   pipeline, but needs independent verification before changing our model stack. —
   https://www.youtube.com/watch?v=PYbBddbflRo
+- **2026-09-30** — Feeds Google Search Console data straight to an AI model and lets
+  it pick the next keyword gaps to target (pages already getting impressions but no
+  clicks), automating the "what do we write next" step instead of guessing keywords
+  by hand. — https://www.youtube.com/watch?v=5yOO76v6KM0
+- **2026-09-30** — Pairs AI-generated pages with a fast-indexing API tool so
+  brand-new trending queries get crawled and start ranking within roughly a week of
+  publishing — a speed-to-index tactic aimed specifically at capturing freshly
+  trending search terms before competitors. Signal only, unverified independently. —
+  https://www.youtube.com/watch?v=5yOO76v6KM0
+- **2026-09-30** — Reports one site in his multi-site publishing network
+  underperforming the others and suspects it's because that domain is an exact-match
+  domain — a caution worth weighing when picking domains for a scaled site network. —
+  https://www.youtube.com/watch?v=5yOO76v6KM0

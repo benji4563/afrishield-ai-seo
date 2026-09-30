@@ -12,6 +12,9 @@ transcript) / `shallow` (title+description fallback).
 | 2026-08-05 | UvDgL8ShgXs | You're only 6 months away from changing your entire life | skipped-off-niche | deep |
 | 2026-08-05 | xj5gZq159lM | If I Wanted to Make My First $100K/Month, I'd Do This | ingested | deep |
 | 2026-08-05 | Bm84BAtOfQw | You're Not Behind (Yet): How to Build Your First AI Agent (Full Guide) | ingested | deep |
+| 2026-09-30 | aPSbZbOzB4s | These Are the Best AI Tools in 2026 | ingested | deep |
+| 2026-09-30 | 4_urJ17Rx8s | Give me 57 sec... I'll DELETE your need for perfection | skipped-off-niche | deep |
+| 2026-09-30 | _rBsOP658YA | You're only 6 months away from living your dream life | skipped-off-niche | deep |
 
 Note (2026-07-29, shallow pass): the environment's network policy blocked
 direct access to youtube.com, so no auto-transcript could be fetched;

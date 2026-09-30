@@ -9,6 +9,9 @@ transcript) / `shallow` (title+description fallback).
 | 2026-08-05 | RwEs5VdH_ZQ | It's Boring, But THIS YouTube Funnel Can Triple Your Business | ingested | deep |
 | 2026-08-05 | HsLLTvosGJw | Big YouTubers Are Down 50% and It's Your Best Chance to Start | ingested | deep |
 | 2026-08-05 | yuVlHAKbnMQ | Claude Just Changed Making YouTube Videos Again (7 Use Cases) | ingested | deep |
+| 2026-09-30 | bjIL9qoRHds | The NEW Way to Make YouTube Videos FAST (Start to Finish) | ingested | deep |
+| 2026-09-30 | VXGDHZIGf40 | Your Website Won't Matter in 2027. Prepare Now. | ingested | deep |
+| 2026-09-30 | zGfjuwDKrro | The NEW ChatGPT Just Killed Claude at Making YouTube Videos | ingested | deep |
 
 Note (dedup, 2026-08-05 run): all three videoIds above were first logged
 2026-07-29 at `shallow` depth (`RwEs5VdH_ZQ` and `HsLLTvosGJw` as `ingested`;
