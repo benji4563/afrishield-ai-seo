@@ -150,3 +150,8 @@ message-first design · social proof · local SEO tier list.
   channel's niche. Worth testing as a diagnostic layer alongside our Claude-
   based content workflow, since it surfaces platform-side signals Claude has
   no access to. — https://www.youtube.com/watch?v=lIQ79IkGpjk
+- **2026-09-09** — Reframes a wave of creator complaints about dropping views
+  and revenue as a symptom of a 2026 YouTube algorithm/ranking shift rather than
+  a content-quality failure — a useful reassurance point for client channels
+  that see view volatility but keep converting. —
+  https://www.youtube.com/watch?v=q7sJGED_b6g

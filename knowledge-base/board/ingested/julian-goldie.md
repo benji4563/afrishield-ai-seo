@@ -24,6 +24,9 @@ transcript) / `shallow` (title+description fallback).
 | 2026-09-02 | O3BpnQ8U9LY | Google Just Changed Parasite SEO Forever | ingested | shallow |
 | 2026-09-02 | MvgyhFX-ECk | Automate Anything wih Agent OS! | ingested | shallow |
 | 2026-09-02 | _OC6lvCCurs | New Hermes Agent OS is Absolutely WILD! | ingested | shallow |
+| 2026-09-09 | OzYlM4YVuwg | This AI SEO Agent OS is INSANE (FREE!) | ingested | shallow |
+| 2026-09-09 | Wh6_CQKJXwE | Claude AI SEO OS System is INSANE! | ingested | shallow |
+| 2026-09-09 | QOivt0EGrpQ | Hermes Agent Just Automated SEO Completely | ingested | shallow |
 
 Note (2026-08-26 run): this run got full transcripts (Firecrawl's YouTube
 postprocessor) for all 3 videos checked — a `deep` run, unlike the prior two
@@ -81,3 +84,26 @@ found; the 3 newest (by `uploadDate` metadata, Aug 30–31) were processed. A
 4th confirmed-genuine upload, "NEW GLiNER2.5 Just Dropped!" (juUZVyC02SM,
 2026-08-26), was newer than the prior known set but older than the 3 selected
 here — left unprocessed for a future run per the per-run cap.
+
+2026-09-09 run note: this run's discovery method was degraded versus prior
+runs. Firecrawl (`firecrawl_scrape`/`firecrawl_search`) returned HTTP 402
+"insufficient credits" on every call regardless of request size, so the
+usual channel-videos-tab render and site:youtube.com search were
+unavailable. Direct youtube.com/youtu.be access and `python3 -m yt_dlp`
+were re-confirmed blocked (403 at the egress proxy), consistent with prior
+runs. Fell back to general WebSearch, cross-referencing each candidate
+title/videoId pair across at least two independent queries plus matching
+mentions on the @JulianGoldieSEO X account (same handle as the channel) to
+reduce the risk of a mismatched or hallucinated video ID before trusting
+it — one bare video-ID-only query returned an unrelated result, which
+looks like normal search behavior for a non-natural-language ID string
+rather than evidence the corroborated ID is wrong, but is noted here for
+transparency. Exact upload timestamps could not be confirmed, so the three
+processed videos are the best-corroborated "newest new" set rather than a
+chronologically verified top-3; no reliable relative-recency text was
+available to rank them precisely against each other. All three are
+distinguishable evolutions of the "Agent OS" / Hermes-automation thread
+already tracked in the wiki (see updates log), so only the one or two
+details in each that were not already captured were logged, to avoid
+re-stating existing doctrine. As always, no transcript was obtainable, so
+depth stays shallow.
