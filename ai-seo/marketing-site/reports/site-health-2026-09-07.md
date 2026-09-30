@@ -1,0 +1,26 @@
+# AfriShield weekly site-health report — 2026-09-07
+
+**Run type:** primary weekly check (Monday)
+**Overall status: AMBER**
+
+## Checks
+
+| # | Check | Result | Notes |
+|---|-------|--------|-------|
+| 1 | Live routes | **INFO — not verified** | This session's outbound HTTPS egress is blocked by org network policy for the target hosts: every CONNECT to `afrishield-ai-seo.vercel.app:443` and `afrishieldai.com:443` was rejected with a 403 policy denial at the egress gateway (confirmed via the proxy status endpoint, not a site outage). Could not check `/`, `/solutions`, `/how-it-works`, `/pricing`, `/about`, `/case-studies`, `/blog`, `/contact`, `/sitemap.xml`, any `/blog/<slug>`, or the custom domain. This is the third consecutive report (2026-08-06 also hit this) where the routine's own egress is the blocker — see "Action needed." |
+| 2 | Build integrity | **PASS** | `npm install` (409 packages, 15s) then `npx next build` (Next.js 16.2.11, Turbopack) completed with no errors — TypeScript checked clean, 44 pages generated. All 23 posts in `lib/posts.ts` emitted a `/blog/<slug>` route, plus `/api/contact` and `/api/call-summary` as dynamic routes, `/sitemap.xml`, `/llms.txt`, and the core marketing pages. |
+| 3 | Content schedule | **PASS (schedule), AMBER (queue low)** | DUE (campaign dates ≤ 2026-09-07): 15 of 15. DONE (posts in `lib/posts.ts` with `published` ≥ 2026-08-03): 19 — site is ahead of the original 15-date campaign, not behind. However `content-queue.md` has only **1** `queued` row (row 9, `what is local seo`) against the 4-row low-queue threshold — flag as low. Row 9 itself has been skipped **six** times in a row (2026-08-18 through 2026-08-23) for duplicating `local-seo-for-small-business`'s opening H2, and the note explicitly asks the queue-keeper to narrow its angle or retire it; that still hasn't happened. Rows 16–21 (tourism cluster) remain `candidate` — no DataForSEO pass yet, so they can't be drawn on either. Net: the general-cluster queue is effectively empty and the one usable row is stuck. |
+| 4 | Internal consistency | **FAIL (fixed on this branch)** | All 23 posts in `lib/posts.ts` have a matching `app/blog/<slug>/page.tsx` — no mismatch there. But `ai-search-visibility-study` (published 2026-08-28, primary keyword "ai search visibility for african businesses") had **no row in `used-keywords.md`** — it was written and shipped without the keyword-tracking file being updated, breaking the "check this file before targeting anything new" guarantee the file exists for. This is a safe, mechanical fix: this branch adds the missing row in publish-date order, matching the existing format exactly. No other mismatches found. |
+| 5 | Contact endpoint | **INFO — not verified** | Same network block as Check 1 — could not GET `/api/contact` live. Build output confirms the route exists and compiles (`ƒ /api/contact`, dynamic), so it should deploy correctly, but live availability was not confirmed this run. Per instructions, no POST was attempted either way. |
+| 6 | Performance signal | **INFO — not verified** | Same network block as Check 1 — could not measure TTFB or response size. |
+
+## Action needed
+
+1. **The routine's own network egress is now a recurring blocker, not a one-off.** This is at least the second time (also 2026-08-06) that Checks 1, 5, and 6 could not run at all because this cloud session has no outbound path to `afrishield-ai-seo.vercel.app` or `afrishieldai.com` — every CONNECT gets a 403 policy denial. Recommend someone with access to this environment's network policy either allowlists those two hosts for this scheduled routine, or the routine is explicitly scoped as "diagnostics-only, no live checks" until that's fixed. As it stands, roughly half of what this routine exists to verify (routes up, contact endpoint reachable, performance) is unconfirmed two runs running.
+2. **Content queue needs attention.** Only 1 `queued` row remains and it's been skipped 6 times for an unresolved duplication issue (`what is local seo` vs. the live `local-seo-for-small-business` post). The 60/40 tourism ratio also can't be met — rows 16–21 are still uncommitted `candidate`s with no DataForSEO pass. Needs an interactive session with DataForSEO access to either: (a) narrow/retire row 9, and (b) vet rows 16–21 or add fresh general-cluster keywords, before the next auto-poster run has nothing usable to publish.
+3. **`used-keywords.md` gap — fixed on this branch.** The missing row for `ai-search-visibility-study` is added in this PR. Worth a quick look at whichever process published that post to see why the tracking-file update step was skipped, so it doesn't recur.
+4. Once network access is restored, re-run Checks 1, 5, and 6 to get real PASS/FAIL confirmation on live routes, the contact endpoint, and performance — this report cannot certify those as healthy, only as "unknown, but the build that would serve them is sound."
+
+## Not covered by this routine
+
+Keyword rank positions, AI-answer presence (ChatGPT/Claude/Perplexity/Gemini), full Lighthouse scores, and true end-to-end contact-form submission need a SERP/DataForSEO connector or a headless browser (Playwright) that this cloud routine does not have; they are tracked separately in interactive sessions and via the planned Playwright + DataForSEO setup.
