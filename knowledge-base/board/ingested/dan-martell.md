@@ -34,6 +34,9 @@ off-niche-adjacent, generic "should you read books" prompt) title, so
 as the prior run, but was not one of the 3 videos that run selected — it's
 genuinely new to this run. No videoId overlap with the 2026-08-05 run's own
 selections.
+| 2026-09-02 | f5aDPccdHHw | "What was your best investment?" | skipped-off-niche | shallow |
+| 2026-09-02 | 0rkUYeyUjzQ | Best bang for your buck marketing strategy | ingested | shallow |
+| 2026-09-02 | 3Q6TCIEwHiA | Your bank account cannot surpass your self belief | skipped-off-niche | shallow |
 
 Note (2026-07-29, shallow pass): the environment's network policy blocked
 direct access to youtube.com, so no auto-transcript could be fetched;
@@ -74,3 +77,19 @@ Also found a text-only blog post ("How To Prepare For A Future You Can't
 Predict", danmartell.com, 2026-08-10) with no corresponding /watch?v= video
 — per the routine's rule, blog-only content doesn't count as a video and was
 not logged.
+
+Note (2026-09-02, shallow pass): direct youtube.com access (curl/yt-dlp) is
+blocked again, so this run used Firecrawl search + scrape against the watch
+pages directly (title, description, page metadata, on-page transcript where
+YouTube exposed one) rather than an RSS feed. Several search hits were
+false positives — either a *different* channel ("Dan Martell Daily",
+@DanMartellDaily) that reuses his name/likeness, or unrelated creators'
+videos that merely surface his channel as a "related" suggestion — all were
+verified against the uploader link/channel_id (UCA-mWX9CvCTVFWRMb9bKc9w) and
+discarded when they didn't match. Of the 3 newest confirmed genuine uploads,
+two were short-form personal/mindset clips (off-niche) and one was a
+short-form outbound-marketing tactic (on-niche, ingested). A longer-form,
+clearly on-niche upload ("How to start a 1-person business with AI (ask
+these 3 questions)", 1BApLicRt1w, 2026-08-26) was seen but is older than the
+3 selected and was intentionally left unprocessed per the recency cap — it
+should surface again in a future run if upload volume slows.

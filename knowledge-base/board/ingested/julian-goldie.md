@@ -21,6 +21,9 @@ transcript) / `shallow` (title+description fallback).
 | 2026-08-25 | DY8hs0bZ8CY | Rank #1 on Google FAST With This Claude SEO Skill | ingested | deep |
 | 2026-08-24 | XXI3VYNFX90 | NEW Hermes Agent OS JUST Changed AI AGENTS Forever! | skipped-nothing-new | deep |
 | 2026-08-23 | -7Gnfd3D9Ds | Run Hermes Agent Free Forever : Here's How! | skipped-nothing-new | deep |
+| 2026-09-02 | O3BpnQ8U9LY | Google Just Changed Parasite SEO Forever | ingested | shallow |
+| 2026-09-02 | MvgyhFX-ECk | Automate Anything wih Agent OS! | ingested | shallow |
+| 2026-09-02 | _OC6lvCCurs | New Hermes Agent OS is Absolutely WILD! | ingested | shallow |
 
 Note (2026-08-26 run): this run got full transcripts (Firecrawl's YouTube
 postprocessor) for all 3 videos checked — a `deep` run, unlike the prior two
@@ -67,3 +70,14 @@ overlap with prior runs. Both off-niche skips this run were generic AI
 model/industry news (a withheld Anthropic model, a Grok vs GPT benchmark
 comparison) with no SEO/agency-specific angle beyond boilerplate "use AI in
 your business" framing — consistent with the off-niche bar in CHANNELS.md.
+
+2026-09-02 run: `site:youtube.com/watch "Julian Goldie SEO"` (tbs qdr:w) surfaced
+~20 results; most were "Go to channel Julian Goldie SEO" suggestions on OTHER
+creators' watch pages (e.g. videos about Hermes/Claude/Gemini from unrelated
+channels that merely link to his channel) and were discarded as false
+positives after scrape-confirming the uploader on each watch page. 4 genuinely
+his (channel = UCGpsgNbzdF7BECCVbB1COHw) and not already in the known list were
+found; the 3 newest (by `uploadDate` metadata, Aug 30–31) were processed. A
+4th confirmed-genuine upload, "NEW GLiNER2.5 Just Dropped!" (juUZVyC02SM,
+2026-08-26), was newer than the prior known set but older than the 3 selected
+here — left unprocessed for a future run per the per-run cap.

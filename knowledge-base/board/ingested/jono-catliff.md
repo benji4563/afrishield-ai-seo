@@ -11,6 +11,9 @@ transcript) / `shallow` (title+description fallback).
 | 2026-08-05 | LabRBZp2ODk | Claude Code WordPress SEO: Automate Everything ($500K+ Earned) | ingested | deep |
 | 2026-08-05 | 0f3KbpW8TBk | Anthropic Just Dropped Fable 5: Everything You Need To Know | ingested | deep |
 | 2026-08-19 | akhKWlfCMSg | Claude Code Local Google Ads: Automate Everything ($730K Earned) | skipped-nothing-new | shallow |
+| 2026-09-02 | M2KJ5-sFbbg | Claude Code SEO Audit: Fix Your Whole Website In 1 Prompt (Steal This) | ingested | shallow |
+| 2026-09-02 | -EInjdpjKy0 | Claude Code Google Ads: Automate Everything ($730K Earned) | skipped-nothing-new | shallow |
+| 2026-09-02 | jzq3FUrQ-u0 | How To Land Your First AI Client As A Freelancer (100+ Beginners Did This) | ingested | shallow |
 
 Note: `8VyHKDSyCCo` and `LabRBZp2ODk` were first logged 2026-07-29 at `shallow`
 depth (both `ingested`); the 2026-08-05 run re-read them at `deep` depth with a
@@ -51,3 +54,19 @@ the 2026-08-05 batch; most search hits are *other* creators' similarly-titled
 videos ("How I Use Claude Code for SEO...") that merely get recommended
 alongside his flagship, not his own uploads — verify `Uploaded by` on every
 candidate before treating it as his.
+
+Note: the 2026-09-02 run was network-restricted to Firecrawl search/scrape
+only (no yt-dlp/transcripts), so all three rows this run are `shallow`
+depth. Search results for this channel carry a heavy rate of false
+positives — other channels' videos that merely show "Jono Catliff" as a
+YouTube sidebar suggestion — so every candidate was scraped and its
+`Uploaded by` field checked against the channel before inclusion; several
+apparent hits (a SEMrush-tutorial spam channel, an Instagram-lead-scraping
+video, a "Julian Goldie SEO" video, all riding the same "Claude Code SEO"
+keywords) were confirmed false positives and discarded without being
+logged here. `-EInjdpjKy0` (2026-06-07) is the original/foundational
+Google Ads masterclass that `8VyHKDSyCCo` ("...Local Google Ads...",
+logged 2026-08-05) appears to build on and localize — its core tactics
+(single-keyword ad groups, city×service matrix) are already captured in
+the 2026-08-05 wiki entry, hence `skipped-nothing-new` rather than a
+duplicate write-up.

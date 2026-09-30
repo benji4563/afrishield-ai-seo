@@ -27,6 +27,9 @@ Koray", a Kalicube-branded clip, an Edward Sturm episode) surfaced in search
 but were confirmed via uploader-link check to be on OTHER creators' channels
 (FatRank, Kalicube, Edward Sturm) merely featuring him — discarded, not
 queued for a future run, since they aren't this channel's own uploads.
+| 2026-09-02 | VLDa_RoczYI | Topical Authority and Answer Engine Optimization: How LLMs Actually Retrieve Content (Jason Barnard/Kalicube interview) | ingested | shallow |
+| 2026-09-02 | 3ncQHJuQaDM | Semantic SEO and Topical Authority for Large Language Models (LLMs) — Koray GUBUR and Jabez Ruben | ingested | shallow |
+| 2026-09-02 | JcYnz52zm9k | 600K+ Extra Clicks in 6 Months: The Ultimate SEO Recovery Case Study for 2025 | ingested | shallow |
 
 Note: `Mq0umjlnnUM` is already listed as a source in `wiki/koray-gubur.md` from
 an earlier (pre-ledger) seeding pass — logged here now so it isn't re-flagged
@@ -67,3 +70,12 @@ scraped individually and checked against `Uploaded by:` before counting, since
 title/description snippets alone are not a reliable signal of the uploading
 channel. No videos newer than the 2026-08-05 `mD51uM8v_bw` were found on his
 own channel as of this run.
+
+Note (2026-09-02 run): direct YouTube access (yt-dlp/auto-transcripts) was
+unavailable this run, so all three rows above are `shallow` — sourced via
+Firecrawl search to surface candidate uploads, then Firecrawl scrape of each
+watch page to confirm genuine channel ownership (`Uploaded by` /
+`@TopicalAuthority` match) before treating title/description/chapters as
+signal. Several search hits were discarded as false positives — other
+channels' videos (James Dooley/PromoSEO, FatRank, Edward Sturm) that feature
+or mention Koray but are not uploads from his channel.

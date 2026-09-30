@@ -95,3 +95,11 @@ work on it vs. in it · leverage.
   topical-authority content from a client's existing raw material rather than
   starting from a blank page. —
   https://www.youtube.com/watch?v=6poBPhfB-WY
+- **2026-09-02** — Pushes a lightweight outbound tactic he calls a "spear" message:
+  instead of a polished pitch, send something short, personal, and phrased so it
+  practically demands a one-word reply (e.g. a plain question as the subject line).
+  He credits it with generating far more responses than conventional cold outreach.
+  Distinct from the existing warm-referral-first note above — this is about *message
+  shape*, not *target selection* — so worth testing as a cheap, low-effort probe
+  format for AfriShield's own outbound/lead-gen sends before investing in longer
+  sequences. — https://www.youtube.com/watch?v=0rkUYeyUjzQ
