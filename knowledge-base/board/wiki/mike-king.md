@@ -87,3 +87,27 @@ synthesis-first discovery.
   based on real user behavior (bounce/dwell time) — so generic AI-written pages
   with poor UX get demoted regardless of how they were produced. —
   https://www.youtube.com/watch?v=dTHuLMWDFWo
+- **2026-08-19** — Brie Anderson (Beast Analytics) on measuring AI search: a
+  real chunk of what looks like unattributed/direct traffic in GA4 is actually
+  bots scraping the site to feed LLM training pipelines, not humans, so AI-search
+  measurement has to filter that noise out before drawing any visibility
+  conclusions. She also argues that as channel-level attribution keeps breaking
+  down, the sturdier practice is tracking a specific intervention (e.g. an
+  internal-linking fix) against the downstream behavior change it causes, rather
+  than crediting a traffic source. —
+  https://www.youtube.com/watch?v=578yMDdaGEA
+- **2026-08-19** — Angela Clark (iPullRank) on content strategy post-personalization:
+  since AI search results now vary per searcher, there's no stable "page one" to
+  target, so the differentiation edge shifts from writing well to owning content
+  competitors can't replicate (proprietary data, unique subject-matter access)
+  and packaging each answer in whatever format actually fits it — table,
+  checklist, image — instead of defaulting to a blog post. —
+  https://www.youtube.com/watch?v=6qF8mRrtTms
+- **2026-08-19** — Metehan Yeşilyurt (AEO Vision) on training data as a
+  visibility lever: LLMs increasingly answer straight from what's baked into
+  their pretraining data with no live retrieval triggered at all, so a brand's
+  presence and framing in training corpora like Common Crawl is becoming its own
+  optimization target, separate from real-time RAG/retrieval. He treats
+  reverse-engineering AI products via browser DevTools/network inspection as an
+  ongoing research method for tracking how retrieval and citation actually work. —
+  https://www.youtube.com/watch?v=VBH9Od_OL1Q

@@ -15,6 +15,9 @@ transcript) / `shallow` (title+description fallback).
 | 2026-08-12 | XDBv_K5cpHU | Free Claude Code + Omniroute is SCARY GOOD! | ingested | deep |
 | 2026-08-12 | okELDY1YY9Y | Grok Bot DESTROYS Hermes Agent? | skipped-nothing-new | deep |
 | 2026-08-12 | TEwRO4150x0 | Prime Agent AI Just Changed Agents Forever | ingested | deep |
+| 2026-08-19 | P8SXk6nQjGA | Claude Mythos 6 is COMING! | skipped-off-niche | deep |
+| 2026-08-19 | 4B7xy43hVCQ | How to Rank #1 with DeepSeek Harness AI SEO | ingested | deep |
+| 2026-08-19 | 1eJcRkRfEpI | NEW Grok 4.6 Beats GPT 5.6? | skipped-off-niche | deep |
 
 Note: depth is `shallow` for the 2026-07-29 and 2026-08-05 entries — the
 environment's network policy blocks direct access to youtube.com (yt-dlp/
@@ -36,3 +39,15 @@ server-side (not just title/description) — logged as `deep` since it reflects
 the full video's content, though it is Firecrawl's summary rather than a raw
 transcript we read ourselves. No raw transcript or caption text was ever
 fetched into or stored in this repo.
+
+Note (2026-08-19 run): depth was `shallow` for all entries through 2026-08-05 because the
+environment's network policy blocks direct access to youtube.com (yt-dlp/
+direct curl get a 403 at the proxy). As of the 2026-08-19 run, Firecrawl's
+per-video scrape reliably returned a full "## Transcript" section (not just
+title+description), so all 3 videos reviewed this run got `deep` analysis —
+first deep run for this channel. This channel posts several times a day;
+only the 3 newest were reviewed per run per the per-advisor cap. No videoId
+overlap with prior runs. Both off-niche skips this run were generic AI
+model/industry news (a withheld Anthropic model, a Grok vs GPT benchmark
+comparison) with no SEO/agency-specific angle beyond boilerplate "use AI in
+your business" framing — consistent with the off-niche bar in CHANNELS.md.

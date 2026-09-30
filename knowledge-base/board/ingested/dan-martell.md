@@ -12,6 +12,8 @@ transcript) / `shallow` (title+description fallback).
 | 2026-08-05 | UvDgL8ShgXs | You're only 6 months away from changing your entire life | skipped-off-niche | deep |
 | 2026-08-05 | xj5gZq159lM | If I Wanted to Make My First $100K/Month, I'd Do This | ingested | deep |
 | 2026-08-05 | Bm84BAtOfQw | You're Not Behind (Yet): How to Build Your First AI Agent (Full Guide) | ingested | deep |
+| 2026-08-19 | 6poBPhfB-WY | How To Become Dangerously Self-Educated (with AI) | skipped-off-niche | deep |
+| 2026-08-19 | n7t68A0NQQM | How to Make Rich Friends (aka "How to Build a Billion-Dollar Network") | skipped-off-niche | deep |
 
 Note (2026-07-29, shallow pass): the environment's network policy blocked
 direct access to youtube.com, so no auto-transcript could be fetched;
@@ -39,3 +41,16 @@ it is Firecrawl's summary rather than a raw transcript read directly. No raw
 transcript/caption text was fetched into or stored in this repo. All 3 were
 short-form clips but each carried one concrete, non-overlapping tactical
 point (exit-readiness, automation-retainer pricing, sales word-swaps).
+
+Note (2026-08-19, deep pass): only 2 genuinely-new videos found on the main
+@danmartell channel since the last run (channel has been quiet — no upload
+between 2026-08-12 and today). Both were reviewed with full transcripts but
+judged off-niche under the strict filter: the self-educated one is a
+personal-learning/self-education methodology piece (AI-flavored but
+education/self-improvement, not agency-scaling or SEO/automation ops), and
+the rich-friends one is pure personal networking/relationship-building
+advice with no SEO/AI-agency operational takeaway. No wiki update this run.
+Also found a text-only blog post ("How To Prepare For A Future You Can't
+Predict", danmartell.com, 2026-08-10) with no corresponding /watch?v= video
+— per the routine's rule, blog-only content doesn't count as a video and was
+not logged.
