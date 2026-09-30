@@ -75,3 +75,9 @@ context · "Koraynese" (his precise, coined terminology).
   progressive: a domain earns "rankability" through accumulated click/engagement
   satisfaction over time rather than ranking outright from day one. —
   https://www.youtube.com/watch?v=WrU25krFCtk
+- **2026-08-12** — Argues a brand should aim to be defined by specific attributes
+  an LLM can cite, not just chase rankings, and pushes topical-authority signals
+  outward — earning mentions in third-party listicles/round-ups and maintaining
+  active, strategically-placed social profiles — since those external mentions
+  feed LLM-citation visibility in ways an isolated on-site topical map alone
+  doesn't. — https://www.youtube.com/watch?v=3ncQHJuQaDM
