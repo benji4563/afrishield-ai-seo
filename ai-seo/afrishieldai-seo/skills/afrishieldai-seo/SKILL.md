@@ -124,7 +124,13 @@ who / what / where / core value. This is what an answer engine lifts as a
 citation. Plain prose, entity-dense, no marketing adjectives.
 
 Pattern (already implemented as the `ShortAnswer` component for posts; add an
-equivalent near the top of home, solutions, pricing, and each location page):
+equivalent near the top of **every page built on `PageHero`** — not just home,
+solutions, pricing, and each location page. **Board note, 2026-09-29:** this
+list previously named only those four page types, while B.7's own checklist
+said "every key page" — a real doctrine contradiction, not just an execution
+miss, and `/how-it-works` fell through the exact gap it created (shipped with
+no BLUF at all). Scope now matches the CTA-reachability and trust-signal rules
+in B.3/B.7, which were already written this way):
 
 > AfriShield AI provides AI SEO and local search optimisation for businesses
 > across West, Central, East, and Southern Africa. We handle keyword research,
@@ -144,6 +150,7 @@ Inject validated JSON-LD in the server HTML of every key page. Helpers live in
 | Solutions | `Service` (with per-pillar sub-services via `hasOfferCatalog`/`makesOffer`, entities sourced from the same data used to render the page — not one flat prose `description`) + `FAQPage` |
 | Pricing | `FAQPage` (+ Offers with price/currency) |
 | Location pages | `LocalBusiness` (areaServed City→Country) + `FAQPage` + `BreadcrumbList` |
+| How it works | `HowTo` + `FAQPage` + `BreadcrumbList` |
 | Blog post | `BlogPosting` + `FAQPage` + `BreadcrumbList` |
 | About | `AboutPage` + `Person` (founder) |
 
@@ -151,7 +158,24 @@ Inject validated JSON-LD in the server HTML of every key page. Helpers live in
 named sub-offerings (pillars, tiers, services) must model each as a discrete JSON-LD
 entity, not fold them into one `description` sentence — a machine parsing a single
 prose string cannot pull out "keyword research" as its own citable fact the way it
-can pull out a named sub-`Service`.
+can pull out a named sub-`Service`. This applies to announcement/PR-style blog posts
+too, not just site pages — reviewed 2026-09-29: `enterprise-geo-launch-africa`
+listed its three launch capabilities as plain `<li>` prose with no matching
+`Service` entities.
+
+**One canonical `Organization` node, referenced not redeclared (board: Mike King,
+2026-09-29).** The sitewide `organizationJsonLd` (`lib/structured-data.ts`, injected
+via the root layout on every page) is the single canonical Organization entity —
+give it a stable `@id` (`${SITE_URL}/#organization`). Any page that needs to add
+attributes the sitewide node lacks (e.g. a launch post adding `address`/`knowsAbout`)
+must extend that same object or reference it by `@id`, never declare a second,
+divergent `Organization` node with its own `@id`. Same rule for the founder `Person`
+entity — reference the canonical `founderJsonLd` (used on `/about`) by `@id` rather
+than restating a bare `{ name: ... }` stub. Two un-merged nodes for the same real-
+world entity is the opposite of the disambiguation this SOP exists to build; found
+on `enterprise-geo-launch-africa` (own `Organization` node, own `@id`, divergent
+shape from the sitewide one; a bare-stub founder `Person` with no link to
+`founderJsonLd`).
 
 **Cross-link the core money pages in body copy (board: Koray).** Solutions, Pricing,
 and How it Works must link each other contextually from within the page content
@@ -315,6 +339,34 @@ Run before calling any build done:
       `PageHero`/`CtaDrop` carries at least one trust/social-proof element (client
       count, case-study link, testimonial, or a concrete number) somewhere in the
       body — not just self-reported capability claims.
+- [ ] **"Applied" means verified in code, not described in a skill edit (board,
+      2026-09-29).** The 2026-09-22 review marked the CTA-reachability and
+      trust-signal fixes `[Applied]` because this doc was edited to specify
+      `ctaHref`/`ctaLabel` and `proof`/`proofStat` props on `PageHero`/`CtaDrop`.
+      The 2026-09-29 review read the actual component source
+      (`components/ui/PageHero.tsx`, `components/home/CtaDrop.tsx`) and found
+      neither prop exists — the doc-only edit had been silently treated as a
+      shipped fix for a full review cycle, long enough for `/how-it-works` to
+      repeat the identical gap a third time. Before any future report marks a
+      component-level fix `[Applied]`, grep the named prop in the component file
+      itself and cite the line; a sentence in this doc describing an intended
+      prop is not evidence the prop exists.
+- [ ] **B.8 syndication log gate (board, 2026-09-29).** For any blog post published
+      under the B.8 GEO-citation SOP, `reports/pr-syndication-log.md` has an entry
+      naming that post's slug before it is considered done. Confirmed empty for
+      both `top-geo-ai-seo-agencies-africa-2026` and `enterprise-geo-launch-africa`
+      as of this review, one week after the requirement was first written as B.8
+      prose alone — see B.8 point 4.
+- [ ] **Money-page link/schema gate is a script, not a memory (board, 2026-09-29).**
+      The bullet above ("Money-page schema/link gate") has now gone unenforced on
+      three consecutive reviews despite existing in writing since 2026-09-22
+      (`/how-it-works` was even flagged by name in advance and still shipped with
+      zero in-body links). Author `scripts/verify-money-page-links.sh`: curl
+      `/solutions`, `/pricing`, `/how-it-works` and grep for the same two
+      conditions this bullet already states, with a non-zero exit code on
+      failure. Wire it into the same step that runs `npm audit`/Lighthouse so it
+      runs automatically instead of depending on a reviewer remembering to check
+      by hand.
 
 ### B.8 — GEO Citation, PR Wire Syndication & Co-Occurrence SOP
 
@@ -331,14 +383,20 @@ Generative search engines (Perplexity, ChatGPT Search, Gemini, Claude) require *
 3. **48–72h Indexation & Generative Benchmark:**
    - Verify indexation across 50+ news portals via Google News search operators.
    - Query Perplexity, ChatGPT Search, and Gemini with target comparative prompts (e.g., *"Top [service] providers in [city]"*) and verify brand extraction into generative tables.
-4. **Log the artifact (board: Mike King, 2026-09-22).** Steps 2 and 3 are the whole
-   point of B.8 (third-party corroboration) but leave no trace in the repo — the
-   2026-09-22 board review found no evidence either ran for
+4. **Log the artifact (board: Mike King, 2026-09-22) — hard precondition, not
+   prose (board, 2026-09-29).** Steps 2 and 3 are the whole point of B.8
+   (third-party corroboration) but leave no trace in the repo — the 2026-09-22
+   board review found no evidence either ran for
    `top-geo-ai-seo-agencies-africa-2026` or `enterprise-geo-launch-africa`, published
    under this SOP in the same commit. Record each pillar guide's syndication run in
    `reports/pr-syndication-log.md`: wire used, the EAV triples published, indexed-
    portal count, and the citation-benchmark result, so the SOP has a checkable record
-   instead of an unverifiable step.
+   instead of an unverifiable step. **Re-checked 2026-09-29: still no entry for
+   either post, one week later** — a prose instruction to log something is not
+   sufficient. A pillar guide + companion announcement post under this SOP may not
+   be marked complete/published-per-B.8 until `reports/pr-syndication-log.md`
+   contains an entry for that slug; this is now also a literal B.7 checklist item,
+   not only B.8 prose.
 5. **Comparable entity depth for every profiled competitor (board: Koray).** An
    "objective, analyst-style" comparison must give every profiled agency comparable
    entity detail (not just the author) — and every `ItemList`/`ListItem` entry needs
