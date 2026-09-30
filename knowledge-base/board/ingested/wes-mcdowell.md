@@ -17,3 +17,21 @@ at `deep` depth with full transcripts and found materially more — including
 real substance in `yuVlHAKbnMQ` that the shallow title/description pass
 missed — so the deep entries above are what's kept; the shallow duplicates
 were dropped.
+
+| 2026-08-12 | JbBfJtWnyt0 | Unfortunately, Growing on YouTube Just Changed Forever | skipped-nothing-new | deep |
+| 2026-08-12 | VDnueqVW7Cc | I Just Fixed 28 YouTube Channels in a Row | ingested | deep |
+| 2026-08-12 | w2ENbVomGao | The Brutal Truth About Making YouTube Videos | skipped-off-niche | deep |
+
+Note (2026-08-12 run, depth methodology): direct youtube.com access remained
+blocked at the network egress proxy; channel enumeration used the YouTube
+Data API's uploads-playlist endpoint (via Composio) instead of RSS, and the
+API explicitly refuses caption downloads for videos we don't own. Video
+understanding used Firecrawl's built-in YouTube post-processor (a whole-video
+content summary generated server-side, not just title/description) — logged
+as `deep` on that basis. No raw transcript/caption text was fetched into or
+stored in this repo. `w2ENbVomGao` is generic creator-mindset/fear-of-starting
+content, not a tactical SEO/conversion insight — off-niche per the routine's
+own filter. `JbBfJtWnyt0`'s 5-point list (ideas-over-execution, case studies,
+unique packaging, value balance, coaching) substantially overlaps ground
+already logged from `HsLLTvosGJw` (Scar Scale / case-study credibility) with
+nothing new enough to log again.

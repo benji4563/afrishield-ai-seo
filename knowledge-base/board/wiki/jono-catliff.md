@@ -66,3 +66,16 @@ clicks/month as the scoreboard.
   to review agent-made changes/logs rather than trust unattended agent runs
   blindly, relevant to any agency running Claude Code against live client
   sites/accounts. — https://www.youtube.com/watch?v=0f3KbpW8TBk
+- **2026-08-12** — Lays out an Upwork-first path to a first AI-automation
+  client: build the profile around social proof and a short intro video, price
+  low initially to bank reviews rather than maximize early revenue, target
+  lower-competition job posts before competing for the big ones, and only
+  graduate to LinkedIn outreach/owned lead-gen once the Upwork base is stable —
+  a concrete client-acquisition on-ramp distinct from his usual technical-
+  execution content. — https://www.youtube.com/watch?v=jzq3FUrQ-u0
+- **2026-08-12** — Uses a 7-file "voice" system (built from a person's emails,
+  social posts, and past writing) to make Claude Code's output match a specific
+  person's tone/vocabulary/stories instead of generic AI phrasing, then wraps the
+  whole setup into a single reusable slash command — directly reusable for
+  keeping client-facing AI content believably human. —
+  https://www.youtube.com/watch?v=aHI8OG6gODA
