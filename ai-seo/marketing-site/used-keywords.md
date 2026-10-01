@@ -40,6 +40,7 @@ reconcile.
 | enterprise generative engine optimization africa | B — service education (AEO/GEO) | `/blog/enterprise-geo-launch-africa` | 2026-08-30 | Live |
 | generative engine optimization agencies africa | A — hire a provider (GEO) | `/blog/top-geo-ai-seo-agencies-africa-2026` | 2026-08-30 | Live |
 | how much does seo cost in nigeria | N — Nigeria commercial | `/blog/how-much-does-seo-cost-in-nigeria` | 2026-09-30 | Live |
+| ai search visibility for african businesses | B — service education (AEO/GEO) | `/blog/ai-search-visibility-study` | 2026-08-28 | Live |
 
 ## Deliberately not targeted
 
