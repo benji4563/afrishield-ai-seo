@@ -1,0 +1,81 @@
+{
+  "_doc": "Test edit on a REAL recording: the published White House Douala video (story AFR-STORY-000002). Cues are anchored to what Ben actually said. Corrections fix whisper mis-hearings of proper nouns only; anything ambiguous is left for human review. NOTE: this source is an earlier edited cut with graphics already burned in at ~30–41s and ~55–100s, so Signal overlays are placed only on clean founder footage (0–30s, 42–55s, 100–131s).",
+  "content_id": null,
+  "story_id": "AFR-STORY-000002",
+  "corrections": {
+    "Roella": "Douala",
+    "aqua": "Akwa",
+    "bonamos adi": "Bonamoussadi",
+    "bon apprizo": "Bonapriso",
+    "yao ande": "Yaoundé",
+    "TrigyPity": "ChatGPT",
+    "clothes": "Claude"
+  },
+  "emphasis": ["branding", "1993", "brand", "rented", "digital", "property", "AI", "recommend", "visible", "found"],
+  "cues": [
+    {
+      "phrase": "name a restaurant",
+      "component": "Hook",
+      "props": { "text": "The Douala brand that owns its land", "emphasis": ["owns"] },
+      "leadMs": 400,
+      "holdMs": 3400
+    },
+    {
+      "phrase": "White House started in 1993",
+      "component": "StoryCard",
+      "props": { "kicker": "Douala · since 1993", "text": "One restaurant → a multi-location brand", "meta": "Source: white-house-restaurant.com" },
+      "holdMs": 3600
+    },
+    {
+      "phrase": "establishments in",
+      "component": "ProofFlash",
+      "props": { "label": "Their locations" },
+      "leadMs": 250,
+      "holdMs": 700
+    },
+    {
+      "phrase": "establishments in",
+      "component": "Screenshot",
+      "props": { "src": "recordings/whitehouse-ai-visibility/assets/branch-akwa.webp", "caption": "Akwa · Bonamoussadi · Bonapriso · Yaoundé", "source": "Photo via white-house-restaurant.com", "zoom": [1, 1.1] },
+      "endPhrase": "Yaoundé",
+      "tailMs": 500
+    },
+    {
+      "phrase": "they are selling a brand",
+      "component": "SignalPath",
+      "props": {
+        "title": "One brand",
+        "nodes": [
+          { "label": "Restaurants", "atPhrase": "restaurants" },
+          { "label": "Catering", "atPhrase": "catering" },
+          { "label": "Events", "atPhrase": "events" },
+          { "label": "Reservations", "atPhrase": "reservations" },
+          { "label": "Experience", "atPhrase": "experience" }
+        ],
+        "pulseLabel": "the brand signal",
+        "backdrop": 1
+      },
+      "leadMs": 200,
+      "endPhrase": "and experience",
+      "tailMs": 1200
+    },
+    {
+      "phrase": "somebody else's land",
+      "component": "HumorCard",
+      "props": { "line": "Built on somebody else's land.", "tag": "Plot twist" },
+      "holdMs": 1900
+    },
+    {
+      "phrase": "being found, understood, recommended",
+      "component": "Headline",
+      "props": { "setup": "A website isn't the flex.", "punch": "Being recommended is." },
+      "holdMs": 3200
+    },
+    {
+      "phrase": "Comment AI",
+      "component": "CTA",
+      "props": { "keyword": "AI", "line": "and I'll show you how to check" },
+      "holdMs": 3600
+    }
+  ]
+}

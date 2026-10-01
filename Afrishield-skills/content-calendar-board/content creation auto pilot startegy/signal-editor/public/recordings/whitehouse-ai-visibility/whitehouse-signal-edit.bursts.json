@@ -1,0 +1,1763 @@
+{
+  "version": 1,
+  "bursts": [
+    {
+      "startMs": 120,
+      "endMs": 1280,
+      "words": [
+        {
+          "text": "If",
+          "startMs": 120,
+          "endMs": 350,
+          "emphasis": false
+        },
+        {
+          "text": "you",
+          "startMs": 350,
+          "endMs": 700,
+          "emphasis": false
+        },
+        {
+          "text": "ask",
+          "startMs": 700,
+          "endMs": 1050,
+          "emphasis": false
+        },
+        {
+          "text": "me",
+          "startMs": 1050,
+          "endMs": 1280,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 1280,
+      "endMs": 3290,
+      "words": [
+        {
+          "text": "to",
+          "startMs": 1280,
+          "endMs": 1660,
+          "emphasis": false
+        },
+        {
+          "text": "name",
+          "startMs": 1660,
+          "endMs": 1980,
+          "emphasis": false
+        },
+        {
+          "text": "a",
+          "startMs": 1980,
+          "endMs": 2210,
+          "emphasis": false
+        },
+        {
+          "text": "restaurant",
+          "startMs": 2210,
+          "endMs": 3290,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "startMs": 3290,
+      "endMs": 5400,
+      "words": [
+        {
+          "text": "in",
+          "startMs": 3290,
+          "endMs": 3550,
+          "emphasis": false
+        },
+        {
+          "text": "Douala",
+          "startMs": 3550,
+          "endMs": 4300,
+          "emphasis": false
+        },
+        {
+          "text": "that",
+          "startMs": 4300,
+          "endMs": 4590,
+          "emphasis": false
+        },
+        {
+          "text": "understands",
+          "startMs": 4590,
+          "endMs": 5400,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "startMs": 5400,
+      "endMs": 8100,
+      "words": [
+        {
+          "text": "branding,",
+          "startMs": 5400,
+          "endMs": 6290,
+          "emphasis": true
+        },
+        {
+          "text": "White",
+          "startMs": 6290,
+          "endMs": 7050,
+          "emphasis": false
+        },
+        {
+          "text": "House",
+          "startMs": 7050,
+          "endMs": 7850,
+          "emphasis": false
+        },
+        {
+          "text": "is",
+          "startMs": 7850,
+          "endMs": 8100,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 8100,
+      "endMs": 9520,
+      "words": [
+        {
+          "text": "obviously",
+          "startMs": 8100,
+          "endMs": 8520,
+          "emphasis": false
+        },
+        {
+          "text": "in",
+          "startMs": 8520,
+          "endMs": 8610,
+          "emphasis": false
+        },
+        {
+          "text": "the",
+          "startMs": 8610,
+          "endMs": 8740,
+          "emphasis": false
+        },
+        {
+          "text": "conversation.",
+          "startMs": 8740,
+          "endMs": 9520,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "startMs": 9720,
+      "endMs": 11550,
+      "words": [
+        {
+          "text": "This",
+          "startMs": 9720,
+          "endMs": 10000,
+          "emphasis": false
+        },
+        {
+          "text": "isn't",
+          "startMs": 10000,
+          "endMs": 10540,
+          "emphasis": false
+        },
+        {
+          "text": "a",
+          "startMs": 10540,
+          "endMs": 10570,
+          "emphasis": false
+        },
+        {
+          "text": "restaurant",
+          "startMs": 10570,
+          "endMs": 11550,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "startMs": 11550,
+      "endMs": 12810,
+      "words": [
+        {
+          "text": "that",
+          "startMs": 11550,
+          "endMs": 11930,
+          "emphasis": false
+        },
+        {
+          "text": "opened",
+          "startMs": 11930,
+          "endMs": 12530,
+          "emphasis": true
+        },
+        {
+          "text": "on",
+          "startMs": 12530,
+          "endMs": 12720,
+          "emphasis": false
+        },
+        {
+          "text": "a",
+          "startMs": 12720,
+          "endMs": 12810,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 12810,
+      "endMs": 13880,
+      "words": [
+        {
+          "text": "Tuesday.",
+          "startMs": 12810,
+          "endMs": 13880,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 13880,
+      "endMs": 15960,
+      "words": [
+        {
+          "text": "White",
+          "startMs": 13880,
+          "endMs": 14430,
+          "emphasis": false
+        },
+        {
+          "text": "House",
+          "startMs": 14430,
+          "endMs": 15320,
+          "emphasis": false
+        },
+        {
+          "text": "started",
+          "startMs": 15320,
+          "endMs": 15740,
+          "emphasis": true
+        },
+        {
+          "text": "in",
+          "startMs": 15740,
+          "endMs": 15960,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 15960,
+      "endMs": 18490,
+      "words": [
+        {
+          "text": "1993",
+          "startMs": 15960,
+          "endMs": 17270,
+          "emphasis": true
+        },
+        {
+          "text": "and",
+          "startMs": 17270,
+          "endMs": 17600,
+          "emphasis": false
+        },
+        {
+          "text": "has",
+          "startMs": 17600,
+          "endMs": 17930,
+          "emphasis": false
+        },
+        {
+          "text": "grown",
+          "startMs": 17930,
+          "endMs": 18490,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 18490,
+      "endMs": 21630,
+      "words": [
+        {
+          "text": "into",
+          "startMs": 18490,
+          "endMs": 18930,
+          "emphasis": false
+        },
+        {
+          "text": "a",
+          "startMs": 18930,
+          "endMs": 19030,
+          "emphasis": false
+        },
+        {
+          "text": "multi-location",
+          "startMs": 19030,
+          "endMs": 20550,
+          "emphasis": true
+        },
+        {
+          "text": "restaurant",
+          "startMs": 20550,
+          "endMs": 21630,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 21630,
+      "endMs": 24370,
+      "words": [
+        {
+          "text": "brand",
+          "startMs": 21630,
+          "endMs": 22240,
+          "emphasis": true
+        },
+        {
+          "text": "with",
+          "startMs": 22240,
+          "endMs": 22280,
+          "emphasis": false
+        },
+        {
+          "text": "establishments",
+          "startMs": 22280,
+          "endMs": 24120,
+          "emphasis": false
+        },
+        {
+          "text": "in",
+          "startMs": 24120,
+          "endMs": 24370,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 24370,
+      "endMs": 28400,
+      "words": [
+        {
+          "text": "Akwa,",
+          "startMs": 24370,
+          "endMs": 25150,
+          "emphasis": false
+        },
+        {
+          "text": "Bonamoussadi,",
+          "startMs": 25150,
+          "endMs": 26700,
+          "emphasis": true
+        },
+        {
+          "text": "Bonapriso",
+          "startMs": 26700,
+          "endMs": 28000,
+          "emphasis": false
+        },
+        {
+          "text": "and",
+          "startMs": 28000,
+          "endMs": 28400,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 28400,
+      "endMs": 29880,
+      "words": [
+        {
+          "text": "Yaoundé.",
+          "startMs": 28400,
+          "endMs": 29880,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 29880,
+      "endMs": 30660,
+      "words": [
+        {
+          "text": "And",
+          "startMs": 29880,
+          "endMs": 30100,
+          "emphasis": false
+        },
+        {
+          "text": "that",
+          "startMs": 30100,
+          "endMs": 30390,
+          "emphasis": false
+        },
+        {
+          "text": "is",
+          "startMs": 30390,
+          "endMs": 30530,
+          "emphasis": false
+        },
+        {
+          "text": "an",
+          "startMs": 30530,
+          "endMs": 30660,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 30660,
+      "endMs": 32040,
+      "words": [
+        {
+          "text": "interesting",
+          "startMs": 30660,
+          "endMs": 31480,
+          "emphasis": true
+        },
+        {
+          "text": "part.",
+          "startMs": 31480,
+          "endMs": 32040,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 32040,
+      "endMs": 33300,
+      "words": [
+        {
+          "text": "They",
+          "startMs": 32040,
+          "endMs": 32380,
+          "emphasis": false
+        },
+        {
+          "text": "are",
+          "startMs": 32380,
+          "endMs": 32630,
+          "emphasis": false
+        },
+        {
+          "text": "not",
+          "startMs": 32630,
+          "endMs": 32880,
+          "emphasis": false
+        },
+        {
+          "text": "just",
+          "startMs": 32880,
+          "endMs": 33300,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 33300,
+      "endMs": 34890,
+      "words": [
+        {
+          "text": "selling",
+          "startMs": 33300,
+          "endMs": 33810,
+          "emphasis": true
+        },
+        {
+          "text": "pizza",
+          "startMs": 33810,
+          "endMs": 34230,
+          "emphasis": false
+        },
+        {
+          "text": "or",
+          "startMs": 34230,
+          "endMs": 34390,
+          "emphasis": false
+        },
+        {
+          "text": "food,",
+          "startMs": 34390,
+          "endMs": 34890,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 34890,
+      "endMs": 36170,
+      "words": [
+        {
+          "text": "they",
+          "startMs": 34890,
+          "endMs": 35250,
+          "emphasis": false
+        },
+        {
+          "text": "are",
+          "startMs": 35250,
+          "endMs": 35530,
+          "emphasis": false
+        },
+        {
+          "text": "selling",
+          "startMs": 35530,
+          "endMs": 36090,
+          "emphasis": true
+        },
+        {
+          "text": "a",
+          "startMs": 36090,
+          "endMs": 36170,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 36170,
+      "endMs": 39840,
+      "words": [
+        {
+          "text": "brand,",
+          "startMs": 36170,
+          "endMs": 36790,
+          "emphasis": true
+        },
+        {
+          "text": "restaurants,",
+          "startMs": 36790,
+          "endMs": 37870,
+          "emphasis": false
+        },
+        {
+          "text": "catering",
+          "startMs": 37870,
+          "endMs": 38600,
+          "emphasis": false
+        },
+        {
+          "text": "events,",
+          "startMs": 38600,
+          "endMs": 39840,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 39840,
+      "endMs": 44120,
+      "words": [
+        {
+          "text": "reservations",
+          "startMs": 39840,
+          "endMs": 41650,
+          "emphasis": true
+        },
+        {
+          "text": "and",
+          "startMs": 41650,
+          "endMs": 42110,
+          "emphasis": false
+        },
+        {
+          "text": "experience.",
+          "startMs": 42110,
+          "endMs": 44120,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 44120,
+      "endMs": 45830,
+      "words": [
+        {
+          "text": "But",
+          "startMs": 44120,
+          "endMs": 44390,
+          "emphasis": false
+        },
+        {
+          "text": "yes,",
+          "startMs": 44390,
+          "endMs": 44840,
+          "emphasis": false
+        },
+        {
+          "text": "where",
+          "startMs": 44840,
+          "endMs": 45290,
+          "emphasis": false
+        },
+        {
+          "text": "things",
+          "startMs": 45290,
+          "endMs": 45830,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "startMs": 45830,
+      "endMs": 48620,
+      "words": [
+        {
+          "text": "get",
+          "startMs": 45830,
+          "endMs": 46780,
+          "emphasis": false
+        },
+        {
+          "text": "interesting,",
+          "startMs": 46780,
+          "endMs": 47270,
+          "emphasis": true
+        },
+        {
+          "text": "imagine",
+          "startMs": 47270,
+          "endMs": 47850,
+          "emphasis": false
+        },
+        {
+          "text": "building",
+          "startMs": 47850,
+          "endMs": 48620,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 48620,
+      "endMs": 50950,
+      "words": [
+        {
+          "text": "a",
+          "startMs": 48620,
+          "endMs": 48710,
+          "emphasis": false
+        },
+        {
+          "text": "restaurant",
+          "startMs": 48710,
+          "endMs": 49610,
+          "emphasis": true
+        },
+        {
+          "text": "this",
+          "startMs": 49610,
+          "endMs": 49970,
+          "emphasis": false
+        },
+        {
+          "text": "successful",
+          "startMs": 49970,
+          "endMs": 50950,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 50950,
+      "endMs": 52910,
+      "words": [
+        {
+          "text": "and",
+          "startMs": 50950,
+          "endMs": 51160,
+          "emphasis": false
+        },
+        {
+          "text": "building",
+          "startMs": 51160,
+          "endMs": 51900,
+          "emphasis": false
+        },
+        {
+          "text": "your",
+          "startMs": 51900,
+          "endMs": 52270,
+          "emphasis": false
+        },
+        {
+          "text": "digital",
+          "startMs": 52270,
+          "endMs": 52910,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "startMs": 52910,
+      "endMs": 55130,
+      "words": [
+        {
+          "text": "presence",
+          "startMs": 52910,
+          "endMs": 53660,
+          "emphasis": true
+        },
+        {
+          "text": "on",
+          "startMs": 53660,
+          "endMs": 53840,
+          "emphasis": false
+        },
+        {
+          "text": "somebody",
+          "startMs": 53840,
+          "endMs": 54570,
+          "emphasis": false
+        },
+        {
+          "text": "else's",
+          "startMs": 54570,
+          "endMs": 55130,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 55130,
+      "endMs": 55840,
+      "words": [
+        {
+          "text": "land.",
+          "startMs": 55130,
+          "endMs": 55840,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 55840,
+      "endMs": 58200,
+      "words": [
+        {
+          "text": "TikTok",
+          "startMs": 55840,
+          "endMs": 56500,
+          "emphasis": false
+        },
+        {
+          "text": "is",
+          "startMs": 56500,
+          "endMs": 56720,
+          "emphasis": false
+        },
+        {
+          "text": "rented",
+          "startMs": 56720,
+          "endMs": 57380,
+          "emphasis": true
+        },
+        {
+          "text": "land.",
+          "startMs": 57380,
+          "endMs": 58200,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 58200,
+      "endMs": 61030,
+      "words": [
+        {
+          "text": "Instagram,",
+          "startMs": 58200,
+          "endMs": 59390,
+          "emphasis": false
+        },
+        {
+          "text": "Facebook",
+          "startMs": 59390,
+          "endMs": 60200,
+          "emphasis": false
+        },
+        {
+          "text": "or",
+          "startMs": 60200,
+          "endMs": 60410,
+          "emphasis": false
+        },
+        {
+          "text": "rented",
+          "startMs": 60410,
+          "endMs": 61030,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "startMs": 61030,
+      "endMs": 61800,
+      "words": [
+        {
+          "text": "land.",
+          "startMs": 61030,
+          "endMs": 61800,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 61800,
+      "endMs": 63150,
+      "words": [
+        {
+          "text": "You",
+          "startMs": 61800,
+          "endMs": 62070,
+          "emphasis": false
+        },
+        {
+          "text": "can",
+          "startMs": 62070,
+          "endMs": 62340,
+          "emphasis": false
+        },
+        {
+          "text": "build",
+          "startMs": 62340,
+          "endMs": 62950,
+          "emphasis": false
+        },
+        {
+          "text": "your",
+          "startMs": 62950,
+          "endMs": 63150,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 63150,
+      "endMs": 65050,
+      "words": [
+        {
+          "text": "audience",
+          "startMs": 63150,
+          "endMs": 63880,
+          "emphasis": true
+        },
+        {
+          "text": "there,",
+          "startMs": 63880,
+          "endMs": 64650,
+          "emphasis": false
+        },
+        {
+          "text": "but",
+          "startMs": 64650,
+          "endMs": 64800,
+          "emphasis": false
+        },
+        {
+          "text": "you",
+          "startMs": 64800,
+          "endMs": 65050,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 65050,
+      "endMs": 66940,
+      "words": [
+        {
+          "text": "don't",
+          "startMs": 65050,
+          "endMs": 65500,
+          "emphasis": false
+        },
+        {
+          "text": "own",
+          "startMs": 65500,
+          "endMs": 65750,
+          "emphasis": false
+        },
+        {
+          "text": "the",
+          "startMs": 65750,
+          "endMs": 66260,
+          "emphasis": false
+        },
+        {
+          "text": "platform,",
+          "startMs": 66260,
+          "endMs": 66940,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "startMs": 66940,
+      "endMs": 68300,
+      "words": [
+        {
+          "text": "you",
+          "startMs": 66940,
+          "endMs": 67210,
+          "emphasis": false
+        },
+        {
+          "text": "don't",
+          "startMs": 67210,
+          "endMs": 67690,
+          "emphasis": false
+        },
+        {
+          "text": "own",
+          "startMs": 67690,
+          "endMs": 67990,
+          "emphasis": false
+        },
+        {
+          "text": "who",
+          "startMs": 67990,
+          "endMs": 68300,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 68300,
+      "endMs": 70400,
+      "words": [
+        {
+          "text": "sees",
+          "startMs": 68300,
+          "endMs": 68760,
+          "emphasis": false
+        },
+        {
+          "text": "you",
+          "startMs": 68760,
+          "endMs": 69110,
+          "emphasis": false
+        },
+        {
+          "text": "tomorrow.",
+          "startMs": 69110,
+          "endMs": 70400,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "startMs": 70400,
+      "endMs": 71630,
+      "words": [
+        {
+          "text": "They",
+          "startMs": 70400,
+          "endMs": 70780,
+          "emphasis": false
+        },
+        {
+          "text": "can",
+          "startMs": 70780,
+          "endMs": 71050,
+          "emphasis": false
+        },
+        {
+          "text": "take",
+          "startMs": 71050,
+          "endMs": 71440,
+          "emphasis": false
+        },
+        {
+          "text": "it",
+          "startMs": 71440,
+          "endMs": 71630,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 71630,
+      "endMs": 72880,
+      "words": [
+        {
+          "text": "away",
+          "startMs": 71630,
+          "endMs": 72010,
+          "emphasis": false
+        },
+        {
+          "text": "from",
+          "startMs": 72010,
+          "endMs": 72550,
+          "emphasis": false
+        },
+        {
+          "text": "you",
+          "startMs": 72550,
+          "endMs": 72670,
+          "emphasis": false
+        },
+        {
+          "text": "on",
+          "startMs": 72670,
+          "endMs": 72880,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 72880,
+      "endMs": 73920,
+      "words": [
+        {
+          "text": "a",
+          "startMs": 72880,
+          "endMs": 72950,
+          "emphasis": false
+        },
+        {
+          "text": "Tuesday.",
+          "startMs": 72950,
+          "endMs": 73920,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "startMs": 73920,
+      "endMs": 75760,
+      "words": [
+        {
+          "text": "A",
+          "startMs": 73920,
+          "endMs": 74000,
+          "emphasis": false
+        },
+        {
+          "text": "website",
+          "startMs": 74000,
+          "endMs": 74620,
+          "emphasis": false
+        },
+        {
+          "text": "is",
+          "startMs": 74620,
+          "endMs": 74790,
+          "emphasis": false
+        },
+        {
+          "text": "different,",
+          "startMs": 74790,
+          "endMs": 75760,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "startMs": 75760,
+      "endMs": 77980,
+      "words": [
+        {
+          "text": "that's",
+          "startMs": 75760,
+          "endMs": 76520,
+          "emphasis": false
+        },
+        {
+          "text": "your",
+          "startMs": 76520,
+          "endMs": 76630,
+          "emphasis": false
+        },
+        {
+          "text": "digital",
+          "startMs": 76630,
+          "endMs": 77240,
+          "emphasis": true
+        },
+        {
+          "text": "property",
+          "startMs": 77240,
+          "endMs": 77980,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "startMs": 77980,
+      "endMs": 80010,
+      "words": [
+        {
+          "text": "and",
+          "startMs": 77980,
+          "endMs": 78220,
+          "emphasis": false
+        },
+        {
+          "text": "White",
+          "startMs": 78220,
+          "endMs": 78660,
+          "emphasis": false
+        },
+        {
+          "text": "House",
+          "startMs": 78660,
+          "endMs": 79100,
+          "emphasis": false
+        },
+        {
+          "text": "actually",
+          "startMs": 79100,
+          "endMs": 80010,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "startMs": 80010,
+      "endMs": 81520,
+      "words": [
+        {
+          "text": "owns",
+          "startMs": 80010,
+          "endMs": 80160,
+          "emphasis": false
+        },
+        {
+          "text": "the",
+          "startMs": 80160,
+          "endMs": 80520,
+          "emphasis": false
+        },
+        {
+          "text": "land.",
+          "startMs": 80520,
+          "endMs": 81520,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 81520,
+      "endMs": 85030,
+      "words": [
+        {
+          "text": "In",
+          "startMs": 81520,
+          "endMs": 81810,
+          "emphasis": false
+        },
+        {
+          "text": "2026,",
+          "startMs": 81810,
+          "endMs": 83620,
+          "emphasis": false
+        },
+        {
+          "text": "that",
+          "startMs": 83620,
+          "endMs": 84310,
+          "emphasis": false
+        },
+        {
+          "text": "matters",
+          "startMs": 84310,
+          "endMs": 85030,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "startMs": 85030,
+      "endMs": 86580,
+      "words": [
+        {
+          "text": "even",
+          "startMs": 85030,
+          "endMs": 85610,
+          "emphasis": false
+        },
+        {
+          "text": "more.",
+          "startMs": 85610,
+          "endMs": 86580,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 86580,
+      "endMs": 88450,
+      "words": [
+        {
+          "text": "People",
+          "startMs": 86580,
+          "endMs": 87110,
+          "emphasis": true
+        },
+        {
+          "text": "aren't",
+          "startMs": 87110,
+          "endMs": 87620,
+          "emphasis": false
+        },
+        {
+          "text": "only",
+          "startMs": 87620,
+          "endMs": 87980,
+          "emphasis": false
+        },
+        {
+          "text": "asking",
+          "startMs": 87980,
+          "endMs": 88450,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 88450,
+      "endMs": 89600,
+      "words": [
+        {
+          "text": "Instagram.",
+          "startMs": 88450,
+          "endMs": 89600,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 89600,
+      "endMs": 91480,
+      "words": [
+        {
+          "text": "They",
+          "startMs": 89600,
+          "endMs": 90070,
+          "emphasis": false
+        },
+        {
+          "text": "are",
+          "startMs": 90070,
+          "endMs": 90420,
+          "emphasis": false
+        },
+        {
+          "text": "not",
+          "startMs": 90420,
+          "endMs": 91200,
+          "emphasis": false
+        },
+        {
+          "text": "asking",
+          "startMs": 91200,
+          "endMs": 91480,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "startMs": 91480,
+      "endMs": 95660,
+      "words": [
+        {
+          "text": "ChatGPT,",
+          "startMs": 91480,
+          "endMs": 92740,
+          "emphasis": false
+        },
+        {
+          "text": "perplexity,",
+          "startMs": 92740,
+          "endMs": 94140,
+          "emphasis": true
+        },
+        {
+          "text": "Claude,",
+          "startMs": 94140,
+          "endMs": 95200,
+          "emphasis": false
+        },
+        {
+          "text": "what",
+          "startMs": 95200,
+          "endMs": 95660,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 95660,
+      "endMs": 97380,
+      "words": [
+        {
+          "text": "to",
+          "startMs": 95660,
+          "endMs": 95890,
+          "emphasis": false
+        },
+        {
+          "text": "eat,",
+          "startMs": 95890,
+          "endMs": 96680,
+          "emphasis": false
+        },
+        {
+          "text": "where",
+          "startMs": 96680,
+          "endMs": 97060,
+          "emphasis": false
+        },
+        {
+          "text": "to",
+          "startMs": 97060,
+          "endMs": 97380,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 97380,
+      "endMs": 100200,
+      "words": [
+        {
+          "text": "stay,",
+          "startMs": 97380,
+          "endMs": 98380,
+          "emphasis": false
+        },
+        {
+          "text": "who",
+          "startMs": 98380,
+          "endMs": 98480,
+          "emphasis": false
+        },
+        {
+          "text": "to",
+          "startMs": 98480,
+          "endMs": 98640,
+          "emphasis": false
+        },
+        {
+          "text": "trust.",
+          "startMs": 98640,
+          "endMs": 100200,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 100200,
+      "endMs": 101980,
+      "words": [
+        {
+          "text": "The",
+          "startMs": 100200,
+          "endMs": 100550,
+          "emphasis": false
+        },
+        {
+          "text": "real",
+          "startMs": 100550,
+          "endMs": 100860,
+          "emphasis": false
+        },
+        {
+          "text": "question",
+          "startMs": 100860,
+          "endMs": 101610,
+          "emphasis": true
+        },
+        {
+          "text": "is,",
+          "startMs": 101610,
+          "endMs": 101980,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 101980,
+      "endMs": 103590,
+      "words": [
+        {
+          "text": "when",
+          "startMs": 101980,
+          "endMs": 102360,
+          "emphasis": false
+        },
+        {
+          "text": "someone",
+          "startMs": 102360,
+          "endMs": 103010,
+          "emphasis": false
+        },
+        {
+          "text": "asks",
+          "startMs": 103010,
+          "endMs": 103550,
+          "emphasis": false
+        },
+        {
+          "text": "AI",
+          "startMs": 103550,
+          "endMs": 103590,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "startMs": 103590,
+      "endMs": 105470,
+      "words": [
+        {
+          "text": "to",
+          "startMs": 103590,
+          "endMs": 103780,
+          "emphasis": false
+        },
+        {
+          "text": "recommend",
+          "startMs": 103780,
+          "endMs": 104610,
+          "emphasis": true
+        },
+        {
+          "text": "a",
+          "startMs": 104610,
+          "endMs": 104720,
+          "emphasis": false
+        },
+        {
+          "text": "business",
+          "startMs": 104720,
+          "endMs": 105470,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 105470,
+      "endMs": 106960,
+      "words": [
+        {
+          "text": "or",
+          "startMs": 105470,
+          "endMs": 105660,
+          "emphasis": false
+        },
+        {
+          "text": "a",
+          "startMs": 105660,
+          "endMs": 105750,
+          "emphasis": false
+        },
+        {
+          "text": "restaurant",
+          "startMs": 105750,
+          "endMs": 106760,
+          "emphasis": true
+        },
+        {
+          "text": "like",
+          "startMs": 106760,
+          "endMs": 106960,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 106960,
+      "endMs": 110050,
+      "words": [
+        {
+          "text": "yours,",
+          "startMs": 106960,
+          "endMs": 107940,
+          "emphasis": false
+        },
+        {
+          "text": "does",
+          "startMs": 107940,
+          "endMs": 108560,
+          "emphasis": false
+        },
+        {
+          "text": "your",
+          "startMs": 108560,
+          "endMs": 109060,
+          "emphasis": false
+        },
+        {
+          "text": "digital",
+          "startMs": 109060,
+          "endMs": 110050,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "startMs": 110050,
+      "endMs": 113480,
+      "words": [
+        {
+          "text": "property",
+          "startMs": 110050,
+          "endMs": 111360,
+          "emphasis": true
+        },
+        {
+          "text": "allows",
+          "startMs": 111360,
+          "endMs": 112030,
+          "emphasis": false
+        },
+        {
+          "text": "for",
+          "startMs": 112030,
+          "endMs": 112450,
+          "emphasis": false
+        },
+        {
+          "text": "that?",
+          "startMs": 112450,
+          "endMs": 113480,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 113480,
+      "endMs": 115560,
+      "words": [
+        {
+          "text": "Because",
+          "startMs": 113480,
+          "endMs": 114160,
+          "emphasis": true
+        },
+        {
+          "text": "having",
+          "startMs": 114160,
+          "endMs": 114770,
+          "emphasis": false
+        },
+        {
+          "text": "a",
+          "startMs": 114770,
+          "endMs": 114870,
+          "emphasis": false
+        },
+        {
+          "text": "website",
+          "startMs": 114870,
+          "endMs": 115560,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 115560,
+      "endMs": 117540,
+      "words": [
+        {
+          "text": "in",
+          "startMs": 115560,
+          "endMs": 115760,
+          "emphasis": false
+        },
+        {
+          "text": "2026",
+          "startMs": 115760,
+          "endMs": 116940,
+          "emphasis": false
+        },
+        {
+          "text": "isn't",
+          "startMs": 116940,
+          "endMs": 117440,
+          "emphasis": false
+        },
+        {
+          "text": "a",
+          "startMs": 117440,
+          "endMs": 117540,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 117540,
+      "endMs": 120810,
+      "words": [
+        {
+          "text": "flex,",
+          "startMs": 117540,
+          "endMs": 118220,
+          "emphasis": false
+        },
+        {
+          "text": "being",
+          "startMs": 118220,
+          "endMs": 118630,
+          "emphasis": false
+        },
+        {
+          "text": "found,",
+          "startMs": 118630,
+          "endMs": 119580,
+          "emphasis": true
+        },
+        {
+          "text": "understood,",
+          "startMs": 119580,
+          "endMs": 120810,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 120810,
+      "endMs": 123410,
+      "words": [
+        {
+          "text": "recommended",
+          "startMs": 120810,
+          "endMs": 121680,
+          "emphasis": true
+        },
+        {
+          "text": "is,",
+          "startMs": 121680,
+          "endMs": 122370,
+          "emphasis": false
+        },
+        {
+          "text": "is",
+          "startMs": 122370,
+          "endMs": 122880,
+          "emphasis": false
+        },
+        {
+          "text": "your",
+          "startMs": 122880,
+          "endMs": 123410,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 123410,
+      "endMs": 126920,
+      "words": [
+        {
+          "text": "business",
+          "startMs": 123410,
+          "endMs": 124800,
+          "emphasis": false
+        },
+        {
+          "text": "AI",
+          "startMs": 124800,
+          "endMs": 125150,
+          "emphasis": true
+        },
+        {
+          "text": "visible?",
+          "startMs": 125150,
+          "endMs": 126920,
+          "emphasis": true
+        }
+      ]
+    },
+    {
+      "startMs": 126920,
+      "endMs": 128200,
+      "words": [
+        {
+          "text": "Comment",
+          "startMs": 126920,
+          "endMs": 127610,
+          "emphasis": false
+        },
+        {
+          "text": "AI",
+          "startMs": 127610,
+          "endMs": 127800,
+          "emphasis": true
+        },
+        {
+          "text": "and",
+          "startMs": 127800,
+          "endMs": 128070,
+          "emphasis": false
+        },
+        {
+          "text": "I",
+          "startMs": 128070,
+          "endMs": 128200,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 128200,
+      "endMs": 129540,
+      "words": [
+        {
+          "text": "will",
+          "startMs": 128200,
+          "endMs": 128570,
+          "emphasis": false
+        },
+        {
+          "text": "show",
+          "startMs": 128570,
+          "endMs": 128960,
+          "emphasis": false
+        },
+        {
+          "text": "you",
+          "startMs": 128960,
+          "endMs": 129250,
+          "emphasis": false
+        },
+        {
+          "text": "how",
+          "startMs": 129250,
+          "endMs": 129540,
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "startMs": 129540,
+      "endMs": 130320,
+      "words": [
+        {
+          "text": "to",
+          "startMs": 129540,
+          "endMs": 129720,
+          "emphasis": false
+        },
+        {
+          "text": "check.",
+          "startMs": 129720,
+          "endMs": 130320,
+          "emphasis": false
+        }
+      ]
+    }
+  ]
+}

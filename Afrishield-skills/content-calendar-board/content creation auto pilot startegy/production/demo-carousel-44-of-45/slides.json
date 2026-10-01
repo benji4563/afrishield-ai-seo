@@ -1,0 +1,57 @@
+{
+  "_doc": "Real-data carousel from story AFR-STORY-000005 (West Africa TikTok lead research, ANONYMIZE_ONLY — no business is named). Every slide is an OBSERVATION from the tracker or clearly-framed ANALYSIS. No deliverable is promised in the CTA.",
+  "story_id": "AFR-STORY-000005",
+  "handle": "@enyongnjock723 · afrishieldai.com",
+  "slides": [
+    {
+      "variant": "cover",
+      "headline": "44 of 45 businesses had no website",
+      "emphasis": ["no", "website"],
+      "sub": "What we found researching West African businesses that sell on TikTok."
+    },
+    {
+      "variant": "stakes",
+      "headline": "The storefront is a caption",
+      "emphasis": ["caption"],
+      "body": "Real estate, agencies, shops — selling through TikTok captions and hand-typed WhatsApp replies.",
+      "source": "AfriShield lead research · Aug 2026 · 45 businesses · CM, NG, CI, SN, GN"
+    },
+    {
+      "variant": "point",
+      "headline": "It works until the buyer asks AI",
+      "emphasis": ["AI"],
+      "body": "An AI assistant answers from pages it can read and trust. A caption buried in a feed isn't one of them."
+    },
+    {
+      "variant": "signal",
+      "headline": "How AI finds a seller",
+      "emphasis": ["AI"],
+      "nodes": ["Buyer's question", "AI engine", "Pages it can read", "Seller it names"]
+    },
+    {
+      "variant": "compare",
+      "headline": "Caption vs one-page site",
+      "emphasis": ["one-page"],
+      "left": { "title": "Caption only", "points": ["No page AI can read", "Details buried in text", "Gone when the post sinks"] },
+      "right": { "title": "One-page site", "points": ["Services, prices, location", "One routed contact", "Readable by search and AI"] }
+    },
+    {
+      "variant": "point",
+      "headline": "Two or three numbers in one caption",
+      "emphasis": ["numbers"],
+      "body": "A pattern we saw again and again. Every unrouted number is a call that can ring out.",
+      "source": "Same research, Aug 2026"
+    },
+    {
+      "variant": "takeaway",
+      "headline": "A one-page site is step zero of AI visibility",
+      "emphasis": ["step", "zero"]
+    },
+    {
+      "variant": "cta",
+      "headline": "Save this for your one-page site",
+      "emphasis": ["Save"],
+      "body": "Share it with someone who sells on TikTok."
+    }
+  ]
+}

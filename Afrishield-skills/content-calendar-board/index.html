@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfriShield AI — Interactive Content Board & Instagram Meme Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2310B981'/><path d='M30 70 L50 30 L70 70 Z' fill='%23064E3B'/></svg>">
+</head>
+<body>
+
+  <!-- Top App Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand-wrapper">
+        <div class="brand-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>AFRISHIELD AI</h1>
+          <p>180-Day Content Command Board &amp; Instagram Meme Lab</p>
+        </div>
+      </div>
+
+      <!-- View Navigation -->
+      <nav class="nav-tabs" id="viewNav">
+        <button class="nav-tab-btn active" data-view="kanban">
+          <span>📋</span> Kanban Board
+        </button>
+        <button class="nav-tab-btn" data-view="calendar">
+          <span>📅</span> Calendar Grid
+        </button>
+        <button class="nav-tab-btn" data-view="table">
+          <span>📊</span> Data Matrix
+        </button>
+        <button class="nav-tab-btn meme-tab" data-view="memes">
+          <span>🎭</span> Instagram Memes <span class="nav-badge">LAB</span>
+        </button>
+        <button class="nav-tab-btn freestyle-tab" data-view="freestyle">
+          <span>🎬</span> Freestyle Lab <span class="nav-badge">15</span>
+        </button>
+        <button class="nav-tab-btn" data-view="strategy">
+          <span>📖</span> Strategy &amp; Swipe
+        </button>
+        <button class="nav-tab-btn" data-view="analytics">
+          <span>📈</span> Analytics
+        </button>
+      </nav>
+
+      <!-- Quick KPI Stats -->
+      <div class="header-stats">
+        <div class="stat-pill">
+          <span class="num" id="totalDaysCount">180</span>
+          <span class="label">Total Days</span>
+        </div>
+        <div class="stat-pill">
+          <span class="num" id="activeFilterCount">180</span>
+          <span class="label">Filtered</span>
+        </div>
+        <div class="stat-pill">
+          <span class="num" id="publishedCount">0</span>
+          <span class="label">Published</span>
+        </div>
+        <button class="btn-export" id="btnExportData" title="Export Current View">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+          </svg>
+          Export
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Body -->
+  <main class="app-body">
+    
+    <!-- Public Goal & Positioning Banner -->
+    <section class="goal-banner">
+      <div class="goal-left">
+        <div class="goal-icon">🎯</div>
+        <div class="goal-text">
+          <div class="title">Public Build-in-Public Goal:</div>
+          <div class="quote">"12 African tourism businesses onto page 1 and into AI answers in 12 months. This is where we document it."</div>
+        </div>
+      </div>
+      <div class="goal-four-loops">
+        <span class="loop-chip active" title="AI SEO, GEO, crawler optimization">1. DISCOVERED</span>
+        <span class="loop-chip" title="AI booking & qualification agents">2. CONVERTED</span>
+        <span class="loop-chip" title="Voice AI & 24/7 front desk">3. SERVED</span>
+        <span class="loop-chip" title="Virtual Executive Assistants & automation">4. SCALED</span>
+      </div>
+    </section>
+
+    <!-- Global Filter & Control Bar (Active on Kanban, Calendar, Table) -->
+    <section class="control-bar" id="globalControlBar">
+      
+      <!-- Month Carousel Selector -->
+      <div class="month-tabs-row" id="monthTabsContainer">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <!-- Secondary Filter Controls -->
+      <div class="filter-controls-row">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search hooks, scripts, captions, keywords, series (press '/' to focus)...">
+        </div>
+
+        <div class="filter-dropdowns">
+          <select id="pillarFilter" class="filter-select">
+            <option value="ALL">All Content Pillars</option>
+            <option value="AI Search / AI SEO">AI Search / AI SEO</option>
+            <option value="GEO">GEO (Generative Optimization)</option>
+            <option value="DIY Tutorials">DIY Tutorials</option>
+            <option value="Industry Stories / Case Studies">Industry Stories / Audits</option>
+            <option value="AI Agents / Voice Agents">AI Agents / Voice</option>
+            <option value="Virtual Executive Assistant">Virtual Exec Assistant</option>
+            <option value="AfriShield AI / Founder / Brand">Founder / Brand</option>
+          </select>
+
+          <select id="seriesFilter" class="filter-select">
+            <option value="ALL">All Recurring Series</option>
+            <!-- Injected via JS -->
+          </select>
+
+          <select id="industryFilter" class="filter-select">
+            <option value="ALL">All Industries</option>
+            <option value="Tourism & Hospitality">Tourism &amp; Hospitality (Primary)</option>
+            <option value="Professional Services">Professional Services (Secondary)</option>
+            <option value="Real Estate">Real Estate</option>
+            <option value="Beauty & Skincare">Beauty &amp; Skincare (Exp)</option>
+            <option value="Cross-Industry">Cross-Industry</option>
+          </select>
+
+          <select id="statusFilter" class="filter-select">
+            <option value="ALL">All Statuses</option>
+            <option value="Not Started">Not Started</option>
+            <option value="Scripted">Scripted</option>
+            <option value="Filmed">Filmed</option>
+            <option value="Edited">Edited</option>
+            <option value="Scheduled">Scheduled</option>
+            <option value="Published">Published</option>
+          </select>
+
+          <button id="btnResetFilters" class="btn-reset-filters" title="Reset all filters">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Active Results Meta -->
+    <div class="results-meta-bar" id="resultsMetaBar">
+      <div class="results-count">
+        Showing <strong id="visibleDaysCount">180</strong> of 180 planned days across selected filters
+      </div>
+      <div class="results-legend" id="resultsLegend">
+        <span style="color: var(--emerald); font-size: 0.8rem; font-weight: 600;">● Click any card or day to open the Full Script Teleprompter &amp; Multi-Platform Copy</span>
+      </div>
+    </div>
+
+    <!-- =========================================================================
+         VIEW 1: KANBAN BOARD
+         ========================================================================= -->
+    <section id="viewKanban" class="view-section active">
+      <div class="kanban-board-container" id="kanbanBoardContainer">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         VIEW 2: CALENDAR GRID
+         ========================================================================= -->
+    <section id="viewCalendar" class="view-section" style="display: none;">
+      <div class="calendar-view-container">
+        <div class="calendar-header-bar">
+          <div class="calendar-month-info">
+            <h2 id="calendarMonthTitle">Month 1 — The AI Search Revolution</h2>
+            <p id="calendarMonthSub">Days 1–30 · 2026-08-17 → 2026-09-15</p>
+          </div>
+          <div class="calendar-nav-buttons">
+            <button class="btn-export" id="btnPrevMonth">← Previous Month</button>
+            <button class="btn-export" id="btnNextMonth">Next Month →</button>
+          </div>
+        </div>
+
+        <div class="calendar-grid" id="calendarGrid">
+          <div class="calendar-day-header">Mon</div>
+          <div class="calendar-day-header">Tue</div>
+          <div class="calendar-day-header">Wed</div>
+          <div class="calendar-day-header">Thu</div>
+          <div class="calendar-day-header">Fri</div>
+          <div class="calendar-day-header">Sat</div>
+          <div class="calendar-day-header">Sun</div>
+          <!-- Days injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         VIEW 3: DATA MATRIX / TABLE
+         ========================================================================= -->
+    <section id="viewTable" class="view-section" style="display: none;">
+      <div class="table-view-container">
+        <div class="table-scroll-wrapper">
+          <table class="data-table" id="dataTable">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Date</th>
+                <th>Industry / Niche</th>
+                <th>Pillar &amp; Series</th>
+                <th>Core Hook &amp; Story</th>
+                <th>CTA</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="dataTableBody">
+              <!-- Rendered by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         VIEW 4: INSTAGRAM MEMES & VIRAL LAB (Dedicated Feature)
+         ========================================================================= -->
+    <section id="viewMemes" class="view-section" style="display: none;">
+      
+      <div class="meme-studio-container">
+        
+        <!-- Left: Presets & Customizer Form -->
+        <div class="meme-presets-panel">
+          <div class="meme-panel-title">
+            <span>🎭</span> Instagram Meme Presets &amp; Templates
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Select a curated African AI SEO meme preset or customize copy, layout, and colors below.
+          </p>
+
+          <!-- Meme Presets Grid -->
+          <div class="meme-presets-grid" id="memePresetsGrid">
+            <!-- Rendered by JS -->
+          </div>
+
+          <!-- Live Meme Customizer Form -->
+          <div class="meme-customizer-form">
+            <h3 style="font-size: 0.95rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.25rem;">
+              🎨 Visual Customizer
+            </h3>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label>Format / Aspect Ratio</label>
+                <select id="memeFormatSelect" class="form-select">
+                  <option value="1:1">1:1 Square (Feed Post - 1080x1080)</option>
+                  <option value="4:5">4:5 Portrait (Carousel Slide - 1080x1350)</option>
+                  <option value="9:16">9:16 Vertical (Reel Cover / Story - 1080x1920)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Theme Style</label>
+                <select id="memeThemeSelect" class="form-select">
+                  <option value="dark-emerald">Dark Emerald Neon</option>
+                  <option value="cyber-cyan">Cyber Cyan Neon</option>
+                  <option value="amber-luxury">Amber Luxury Gold</option>
+                  <option value="purple-neon">Purple AI Glow</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Top Hook / Setup Text</label>
+              <textarea id="memeTopText" class="form-textarea" rows="2" placeholder="Top situation or setup..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Bottom Text / Comparison / Tweet Body</label>
+              <textarea id="memeBottomText" class="form-textarea" rows="3" placeholder="Bottom twist or body..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Punchline / Takeaway</label>
+              <input type="text" id="memePunchline" class="form-input" placeholder="Punchline or rule...">
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label>Author / Tag Badge</label>
+                <input type="text" id="memeAuthor" class="form-input" value="AfriShield AI SEO">
+              </div>
+              <div class="form-group">
+                <label>Watermark</label>
+                <input type="text" id="memeWatermark" class="form-input" value="afrishieldai.com · @afrishieldai">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Live Canvas Preview & Export -->
+        <div class="meme-canvas-panel">
+          
+          <div class="canvas-controls-bar">
+            <div style="font-weight: 700; font-size: 0.9rem;">Live Render Preview</div>
+            <div class="ratio-selector-group" id="ratioBtnGroup">
+              <button class="ratio-btn active" data-ratio="1:1">1:1 Feed</button>
+              <button class="ratio-btn" data-ratio="4:5">4:5 Carousel</button>
+              <button class="ratio-btn" data-ratio="9:16">9:16 Story</button>
+            </div>
+          </div>
+
+          <!-- HTML5 Canvas Preview -->
+          <div class="canvas-preview-wrapper" id="canvasWrapper">
+            <canvas id="memeCanvas" width="1080" height="1080"></canvas>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="canvas-action-buttons">
+            <button class="btn-download-meme" id="btnDownloadMeme">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+              </svg>
+              Download PNG Image
+            </button>
+            <button class="btn-copy-caption" id="btnCopyMemeCaption">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+              </svg>
+              Copy Caption &amp; Hashtags
+            </button>
+          </div>
+
+          <!-- Caption Preview Box -->
+          <div class="meme-caption-preview-box">
+            <div class="caption-label">
+              <span>Instagram Caption &amp; Hashtags</span>
+              <span id="captionCopiedIndicator" style="color: var(--emerald); display: none;">Copied to clipboard!</span>
+            </div>
+            <div class="caption-content-text" id="memeCaptionText">
+              Select or edit a meme to preview caption...
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================================================================
+         VIEW 4b: FREESTYLE CONTENT LAB (15 Blueprint Cards)
+         ========================================================================= -->
+    <section id="viewFreestyle" class="view-section" style="display: none;">
+      <div class="freestyle-container">
+
+        <!-- Hero Banner -->
+        <div class="freestyle-hero">
+          <div class="freestyle-hero-icon">🎬</div>
+          <div class="freestyle-hero-copy">
+            <h2>Freestyle Content Lab <span class="freestyle-hero-badge">15 Blueprints</span></h2>
+            <p id="freestyleHeroSubtitle">15 plug-and-play blueprints · TikTok Creator Search verified</p>
+            <p class="freestyle-hero-purpose" id="freestyleHeroPurpose"></p>
+          </div>
+          <div class="freestyle-hero-stats">
+            <div class="freestyle-stat-pill">
+              <span class="num" id="freestyleTotalCount">15</span>
+              <span class="label">Total Posts</span>
+            </div>
+            <div class="freestyle-stat-pill">
+              <span class="num" id="freestylePublishedCount">0</span>
+              <span class="label">Published</span>
+            </div>
+            <div class="freestyle-stat-pill">
+              <span class="num" id="freestyleInProgressCount">0</span>
+              <span class="label">In Progress</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Search Categories Row -->
+        <div class="freestyle-categories-row" id="freestyleCategoriesRow">
+          <!-- Rendered by JS -->
+        </div>
+
+        <!-- Status Filter Pills -->
+        <div class="freestyle-filter-bar">
+          <div class="freestyle-filter-pills" id="freestyleStatusPills">
+            <button class="freestyle-pill active" data-status="ALL">All</button>
+            <button class="freestyle-pill" data-status="Not Started">Not Started</button>
+            <button class="freestyle-pill" data-status="Scripted">Scripted</button>
+            <button class="freestyle-pill" data-status="Filmed">Filmed</button>
+            <button class="freestyle-pill" data-status="Edited">Edited</button>
+            <button class="freestyle-pill" data-status="Scheduled">Scheduled</button>
+            <button class="freestyle-pill" data-status="Published">Published</button>
+          </div>
+          <button class="btn-export" id="btnExportFreestyle" title="Export Freestyle to CSV">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+            </svg>
+            Export
+          </button>
+        </div>
+
+        <!-- 15 Clickable Blueprint Cards -->
+        <div class="freestyle-cards-grid" id="freestyleCardsGrid">
+          <!-- Rendered by JS -->
+        </div>
+
+        <!-- Production Playbook Footer -->
+        <div class="freestyle-playbook">
+          <div class="freestyle-playbook-title">
+            <span>🛠️</span>
+            <span id="freestylePlaybookTitle">Production Playbook</span>
+          </div>
+          <ol class="freestyle-playbook-list" id="freestylePlaybookList">
+            <!-- Rendered by JS -->
+          </ol>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         VIEW 5: STRATEGY & SWIPE FILE
+         ========================================================================= -->
+    <section id="viewStrategy" class="view-section" style="display: none;">
+      <div class="strategy-view-container">
+        
+        <div class="strategy-grid-2">
+          <!-- 4 Loops of AfriShield -->
+          <div class="strategy-card">
+            <div class="strategy-card-title">
+              <span>🔄</span> The 4 Core Loops (One Customer Journey)
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+              The AI journey is not 4 disconnected products — it is one continuous customer lifecycle.
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.85rem;" id="strategyFourLoopsList">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+          <!-- Niche Hierarchy -->
+          <div class="strategy-card">
+            <div class="strategy-card-title">
+              <span>🎯</span> Niche Hierarchy &amp; Calibration
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.85rem;" id="strategyNichesList">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+        </div>
+
+        <div class="strategy-grid-2">
+          <!-- Creator Swipe File -->
+          <div class="strategy-card">
+            <div class="strategy-card-title">
+              <span>⚡</span> Creator Swipe File &amp; Transform Engine
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem;">
+              We clone the <strong>mechanisms</strong>, never words or footage, and transform them through our 3 filters.
+            </p>
+            <div class="swipe-file-list" id="creatorSwipeFileList">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+          <!-- Humor Framework -->
+          <div class="strategy-card">
+            <div class="strategy-card-title">
+              <span>🎭</span> Mark Bowden's 5 Rules of Humor
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.85rem;" id="humorRulesList">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         VIEW 6: ANALYTICS & KPIS
+         ========================================================================= -->
+    <section id="viewAnalytics" class="view-section" style="display: none;">
+      <div class="strategy-view-container">
+        
+        <div class="strategy-grid-2">
+          <div class="strategy-card">
+            <div class="strategy-card-title">
+              <span>📊</span> Content Distribution by Pillar
+            </div>
+            <div id="analyticsPillarStats" style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <!-- Injected by JS -->
+            </div>
+          </div>
+
+          <div class="strategy-card">
+            <div class="strategy-card-title">
+              <span>🎯</span> Funnel CTA &amp; Keyword Capture Distribution
+            </div>
+            <div id="analyticsCtaStats" style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <!-- Injected by JS -->
+            </div>
+          </div>
+        </div>
+
+        <div class="strategy-card">
+          <div class="strategy-card-title">
+            <span>📅</span> 180-Day Production Progress by Month
+          </div>
+          <div id="analyticsMonthProgress" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+            <!-- Injected by JS -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       MODAL: SCRIPT TELEPROMPTER & DAY INSPECTOR DRAWER
+       ========================================================================= -->
+  <div class="modal-overlay" id="teleprompterModal">
+    <div class="teleprompter-drawer">
+      
+      <!-- Drawer Header -->
+      <div class="drawer-header">
+        <div class="drawer-title-group">
+          <span class="drawer-day-badge" id="modalDayNumber">Day 1</span>
+          <span class="card-series-pill" id="modalSeriesTag">#AIConciergeTest</span>
+          <span class="meta-tag pillar" id="modalPillarTag">AI Search / AI SEO</span>
+          <span class="meta-tag" id="modalIndustryTag">Tourism &amp; Hospitality</span>
+        </div>
+        <button class="btn-close-drawer" id="btnCloseDrawer" title="Close (Esc)">✕</button>
+      </div>
+
+      <!-- Drawer Body -->
+      <div class="drawer-body">
+        
+        <!-- Status & Date Selector Row -->
+        <div style="display: flex; justify-content: space-between; align-items: center; background: var(--bg-secondary); padding: 0.75rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border);">
+          <div style="font-size: 0.85rem; color: var(--text-secondary);">
+            📅 Scheduled: <strong id="modalDateString" style="color: var(--text-primary);">2026-08-17</strong>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <label style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted);">STATUS:</label>
+            <select id="modalStatusSelect" class="filter-select" style="padding: 0.35rem 0.65rem;">
+              <option value="Not Started">Not Started</option>
+              <option value="Scripted">Scripted</option>
+              <option value="Filmed">Filmed</option>
+              <option value="Edited">Edited</option>
+              <option value="Scheduled">Scheduled</option>
+              <option value="Published">Published</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Core Hook -->
+        <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(6, 182, 212, 0.05) 100%); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: var(--radius-md); padding: 1.25rem;">
+          <div style="font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--emerald); margin-bottom: 0.35rem;">
+            0–2s Spoken Hook (Mirrors On-Screen Text)
+          </div>
+          <div id="modalHookText" style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); line-height: 1.4;">
+            Hook text here...
+          </div>
+        </div>
+
+        <!-- 4-Stage Master Video Timing Blueprint -->
+        <div class="script-timing-box">
+          <h4 style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.85rem; letter-spacing: 0.05em;">
+            ⏱️ 45-Second Master Video Structure
+          </h4>
+
+          <div class="timing-step">
+            <span class="timing-badge">0–2s</span>
+            <div class="timing-content">
+              <div class="step-label">1. The Hook (Number + Constraint + Named Viewer)</div>
+              <div class="step-text" id="modalTimingHook">Spoken hook mirrors on-screen text verbatim.</div>
+            </div>
+          </div>
+
+          <div class="timing-step">
+            <span class="timing-badge">2–8s</span>
+            <div class="timing-content">
+              <div class="step-label">2. The Receipt (Artifact on Screen)</div>
+              <div class="step-text" id="modalTimingReceipt">Screen recording of ChatGPT, Perplexity, or client report page. Proof before explanation.</div>
+            </div>
+          </div>
+
+          <div class="timing-step">
+            <span class="timing-badge">8–40s</span>
+            <div class="timing-content">
+              <div class="step-label">3. The One Fix / Demonstration</div>
+              <div class="step-text" id="modalTimingFix">Exactly one concept or action step demonstrated live on screen. Never two.</div>
+            </div>
+          </div>
+
+          <div class="timing-step">
+            <span class="timing-badge">40–45s</span>
+            <div class="timing-content">
+              <div class="step-label">4. Payoff &amp; Comment-Keyword CTA</div>
+              <div class="step-text" id="modalTimingCTA">One punchline maximum, then comment-keyword call to action.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Multi-Platform Repurposing Tabs -->
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <label style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">
+              📱 Multi-Platform Copy Variations
+            </label>
+            <button class="btn-reset-filters" id="btnCopyActivePlatform" style="padding: 0.25rem 0.6rem; font-size: 0.75rem;">
+              Copy Active Text
+            </button>
+          </div>
+
+          <div class="drawer-platform-tabs" id="drawerPlatformTabs">
+            <button class="drawer-tab-btn active" data-platform="tiktok">TikTok Master Cut</button>
+            <button class="drawer-tab-btn" data-platform="instagramReel">Instagram Reel</button>
+            <button class="drawer-tab-btn" data-platform="facebookReel">Facebook Reel</button>
+            <button class="drawer-tab-btn" data-platform="linkedIn">LinkedIn Post</button>
+            <button class="drawer-tab-btn" data-platform="youtubeShort">YouTube Short</button>
+            <button class="drawer-tab-btn" data-platform="instagramStory">IG Story Sticker</button>
+            <button class="drawer-tab-btn" data-platform="diySteps">DIY Action Steps</button>
+          </div>
+
+          <div class="platform-copy-box" id="modalPlatformCopyBox" style="margin-top: 0.75rem;">
+            Copy text...
+          </div>
+        </div>
+
+        <!-- SEO Keywords & Hashtags -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.85rem;">
+            <div style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.35rem;">
+              SEO Target Keywords
+            </div>
+            <div id="modalKeywords" style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">
+              keywords...
+            </div>
+          </div>
+
+          <div style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.85rem;">
+            <div style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.35rem;">
+              Hashtag Pattern
+            </div>
+            <div id="modalHashtags" style="font-size: 0.8rem; color: var(--emerald); line-height: 1.4;">
+              #hashtags...
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL: FREESTYLE BLUEPRINT DETAIL DRAWER
+       ========================================================================= -->
+  <div class="modal-overlay" id="freestyleModal">
+    <div class="teleprompter-drawer">
+
+      <div class="drawer-header">
+        <div class="drawer-title-group">
+          <span class="drawer-day-badge" id="fsModalNumber">Post 01</span>
+          <span class="card-series-pill" id="fsModalFormat">Mythbust</span>
+          <span class="meta-tag pillar" id="fsModalCategory">Category</span>
+          <span class="meta-tag cta" id="fsModalCta">CTA</span>
+        </div>
+        <button class="btn-close-drawer" id="btnCloseFsDrawer" title="Close (Esc)">✕</button>
+      </div>
+
+      <div class="drawer-body">
+
+        <!-- Title -->
+        <h2 id="fsModalTitle" style="font-size: 1.35rem; font-weight: 800; color: var(--text-primary); line-height: 1.3; margin: 0;">
+          Post Title
+        </h2>
+
+        <!-- Status & Search Intent -->
+        <div style="display: flex; justify-content: space-between; align-items: center; background: var(--bg-secondary); padding: 0.75rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border); gap: 1rem; flex-wrap: wrap;">
+          <div style="font-size: 0.85rem; color: var(--text-secondary); flex: 1; min-width: 200px;">
+            🎯 <strong style="color: var(--text-primary);" id="fsModalIntentLabel">Search Intent:</strong>
+            <span id="fsModalIntent"></span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <label style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted);">STATUS:</label>
+            <select id="fsModalStatusSelect" class="filter-select" style="padding: 0.35rem 0.65rem;">
+              <option value="Not Started">Not Started</option>
+              <option value="Scripted">Scripted</option>
+              <option value="Filmed">Filmed</option>
+              <option value="Edited">Edited</option>
+              <option value="Scheduled">Scheduled</option>
+              <option value="Published">Published</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- TikTok Search Queries -->
+        <div style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.85rem;">
+          <div style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.35rem;">
+            🔍 TikTok Creator Search Insights Queries
+          </div>
+          <div id="fsModalQueries" style="font-size: 0.85rem; color: var(--emerald); line-height: 1.5;">
+            queries...
+          </div>
+        </div>
+
+        <!-- Hook Block -->
+        <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(6, 182, 212, 0.05) 100%); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: var(--radius-md); padding: 1.25rem;">
+          <div style="font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--emerald); margin-bottom: 0.5rem;">
+            0–2s HOOK
+          </div>
+          <div id="fsModalHookSpoken" style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); line-height: 1.45; margin-bottom: 0.65rem;">
+            spoken hook...
+          </div>
+          <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.25rem;">
+            On-Screen Text
+          </div>
+          <div id="fsModalHookText" style="font-size: 0.95rem; font-weight: 600; color: var(--text-secondary);">
+            on-screen...
+          </div>
+        </div>
+
+        <!-- 4-Stage Timing Blueprint -->
+        <div class="script-timing-box">
+          <h4 style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.85rem; letter-spacing: 0.05em;">
+            ⏱️ 45-Second Master Video Structure
+          </h4>
+
+          <div class="timing-step">
+            <span class="timing-badge">0–2s</span>
+            <div class="timing-content">
+              <div class="step-label">1. Hook (Spoken + On-Screen)</div>
+              <div class="step-text" id="fsTimingHook"></div>
+            </div>
+          </div>
+
+          <div class="timing-step">
+            <span class="timing-badge">2–8s</span>
+            <div class="timing-content">
+              <div class="step-label">2. The Receipt (Live Proof)</div>
+              <div class="step-text" id="fsTimingReceipt"></div>
+            </div>
+          </div>
+
+          <div class="timing-step">
+            <span class="timing-badge">8–35s</span>
+            <div class="timing-content">
+              <div class="step-label">3. Core Breakdown (3 Beats)</div>
+              <ol class="step-text" id="fsTimingBreakdown" style="margin: 0.25rem 0 0 1.1rem; padding: 0; color: var(--text-secondary); line-height: 1.55;"></ol>
+            </div>
+          </div>
+
+          <div class="timing-step">
+            <span class="timing-badge">35–42s</span>
+            <div class="timing-content">
+              <div class="step-label">4. Payoff & Punchline</div>
+              <div class="step-text" id="fsTimingPayoff"></div>
+            </div>
+          </div>
+
+          <div class="timing-step">
+            <span class="timing-badge">42–45s</span>
+            <div class="timing-content">
+              <div class="step-label">5. Comment-Keyword CTA</div>
+              <div class="step-text" id="fsTimingCta"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Editable Notes -->
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <label style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">
+              📝 My Notes (auto-saved locally)
+            </label>
+            <span id="fsNotesSavedIndicator" style="font-size: 0.7rem; color: var(--emerald); opacity: 0; transition: opacity 0.3s;">Saved ✓</span>
+          </div>
+          <textarea id="fsModalNotes" class="form-textarea" rows="4" style="width: 100%;" placeholder="Add production notes, edits, ideas, links to raw footage, ManyChat automation keyword links, etc..."></textarea>
+        </div>
+
+        <!-- Hashtags & Actions -->
+        <div style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.85rem;">
+          <div style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.35rem;">
+            Hashtag Pattern
+          </div>
+          <div id="fsModalHashtags" style="font-size: 0.85rem; color: var(--emerald); line-height: 1.5; word-break: break-word;">
+            #hashtags
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <button class="btn-reset-filters" id="btnFsCopyScript" style="font-size: 0.8rem;">📋 Copy Full Script</button>
+          <button class="btn-reset-filters" id="btnFsCopyCaption" style="font-size: 0.8rem;">💬 Copy Caption + Hashtags</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <span id="toastIcon">✅</span>
+    <span id="toastMessage">Action completed successfully</span>
+  </div>
+
+  <!-- Data & Application Logic -->
+  <script src="content-data.js"></script>
+  <script src="content-freestyle-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

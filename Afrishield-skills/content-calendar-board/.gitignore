@@ -1,0 +1,23 @@
+# Dependencies and build output — reinstall with `npm install`
+node_modules/
+dist/
+out/
+.next/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Office lock files
+~$*
+
+# Heavy media and binaries — kept local only (GitHub rejects files >100MB)
+*.mp4
+*.mov
+*.wav
+*.zip
+*.bin
+*.dll
+*.exe
+whitehouse-visuals/whisper.cpp/

@@ -1,0 +1,516 @@
+{
+  "generated_at": "2026-09-14T15:00:18.571Z",
+  "today": "2026-09-14",
+  "items_analyzed": 195,
+  "published_history": 6,
+  "pillar_balance": [
+    {
+      "name": "AI Search / AI SEO",
+      "n": 31,
+      "share": 15.9,
+      "target": 20,
+      "delta": -4.1
+    },
+    {
+      "name": "GEO",
+      "n": 34,
+      "share": 17.4,
+      "target": 20,
+      "delta": -2.6
+    },
+    {
+      "name": "AI Agents / Voice Agents",
+      "n": 27,
+      "share": 13.8,
+      "target": 15,
+      "delta": -1.2
+    },
+    {
+      "name": "Virtual Executive Assistant",
+      "n": 20,
+      "share": 10.3,
+      "target": 10,
+      "delta": 0.3
+    },
+    {
+      "name": "DIY Tutorials",
+      "n": 23,
+      "share": 11.8,
+      "target": 15,
+      "delta": -3.2
+    },
+    {
+      "name": "Industry Stories / Case Studies",
+      "n": 32,
+      "share": 16.4,
+      "target": 15,
+      "delta": 1.4
+    },
+    {
+      "name": "AfriShield AI / Founder / Brand",
+      "n": 13,
+      "share": 6.7,
+      "target": 5,
+      "delta": 1.7
+    }
+  ],
+  "industry_balance": [
+    {
+      "name": "Tourism & Hospitality",
+      "n": 100,
+      "share": 51.3,
+      "target": 57,
+      "delta": -5.7
+    },
+    {
+      "name": "Professional Services",
+      "n": 37,
+      "share": 19,
+      "target": 25,
+      "delta": -6
+    },
+    {
+      "name": "Real Estate",
+      "n": 15,
+      "share": 7.7,
+      "target": 10,
+      "delta": -2.3
+    },
+    {
+      "name": "Beauty & Skincare",
+      "n": 10,
+      "share": 5.1,
+      "target": 5,
+      "delta": 0.1
+    },
+    {
+      "name": "Cross-Industry",
+      "n": 33,
+      "share": 16.9,
+      "target": 3,
+      "delta": 13.9
+    }
+  ],
+  "unknown_pillar": 15,
+  "formats": {
+    "story": 54,
+    "case study": 30,
+    "tutorial": 26,
+    "experiment": 30,
+    "opinion": 26,
+    "news reaction": 1,
+    "myth": 28,
+    "comparison": 47,
+    "humor": 0,
+    "behind-the-scenes": 25,
+    "screen demonstration": 121,
+    "proof": 37,
+    "failure": 26,
+    "lesson": 195,
+    "Q&A": 28
+  },
+  "topics": {
+    "AI Search": 90,
+    "AI SEO": 36,
+    "GEO": 59,
+    "AI visibility": 79,
+    "AI agents": 46,
+    "automation": 9,
+    "AI assistants": 33,
+    "virtual assistants": 20,
+    "AI business transformation": 13,
+    "African business": 71,
+    "tourism/hospitality": 98,
+    "real estate": 23,
+    "fintech": 5,
+    "beauty/skincare": 16,
+    "professional services": 22,
+    "AI news": 1,
+    "build-in-public": 19
+  },
+  "markets": {
+    "Tanzania": 32,
+    "Kenya": 6,
+    "Cameroon": 4,
+    "Nigeria": 4,
+    "Ghana": 2,
+    "Rwanda": 2,
+    "South Africa": 0,
+    "Uganda": 0,
+    "Côte d'Ivoire": 0,
+    "Senegal": 0
+  },
+  "cta": {
+    "Follow for the next experiment": 21,
+    "Comment AI": 19,
+    "Comment AUDIT": 15,
+    "Comment VISIBLE": 13,
+    "Dm AUDIT": 13,
+    "Save this": 13,
+    "Book a free audit": 13,
+    "Tag a business owner": 12,
+    "Send me your website": 12,
+    "Ask me anything this Sunday": 11,
+    "Comment GEO": 11,
+    "Share this with a hotel owner": 11,
+    "Ask for a free AI-visibility check": 8,
+    "Subscribe for the full tutorial": 7,
+    "Which one would you choose? Tell me below": 4,
+    "Comment WEBSITE": 1,
+    "Comment SKILLS": 1,
+    "Comment NOADS": 1,
+    "Comment PROMPT": 1,
+    "Comment CLONE": 1,
+    "Comment REPURPOSE": 1,
+    "Comment ANTIGRAVITY": 1,
+    "Comment LEADS": 1,
+    "Comment GROWTH": 1,
+    "Comment REVERSE": 1,
+    "Comment CALENDAR": 1,
+    "Comment BLUEPRINT": 1
+  },
+  "cta_stages": {
+    "awareness": 110,
+    "consideration": 64,
+    "conversion": 21
+  },
+  "hook_patterns": {
+    "statement": 136,
+    "contrarian": 17,
+    "first-person past event": 12,
+    "I asked AI…": 9,
+    "series-label opener": 6,
+    "third-person case opener": 5,
+    "question": 5,
+    "tombstone": 4,
+    "number-led": 1
+  },
+  "repeated_openers": [],
+  "near_duplicates": [
+    {
+      "a": "AFR-CONTENT-000005",
+      "b": "AFR-CONTENT-000152",
+      "score": 1
+    },
+    {
+      "a": "AFR-CONTENT-000055",
+      "b": "AFR-CONTENT-000062",
+      "score": 0.863
+    },
+    {
+      "a": "AFR-CONTENT-000026",
+      "b": "AFR-CONTENT-000054",
+      "score": 0.754
+    },
+    {
+      "a": "AFR-CONTENT-000125",
+      "b": "AFR-CONTENT-000180",
+      "score": 0.744
+    },
+    {
+      "a": "AFR-CONTENT-000029",
+      "b": "AFR-CONTENT-000059",
+      "score": 0.703
+    },
+    {
+      "a": "AFR-CONTENT-000186",
+      "b": "AFR-CONTENT-000187",
+      "score": 0.675
+    },
+    {
+      "a": "AFR-CONTENT-000030",
+      "b": "AFR-CONTENT-000156",
+      "score": 0.664
+    },
+    {
+      "a": "AFR-CONTENT-000029",
+      "b": "AFR-CONTENT-000085",
+      "score": 0.657
+    },
+    {
+      "a": "AFR-CONTENT-000147",
+      "b": "AFR-CONTENT-000164",
+      "score": 0.649
+    },
+    {
+      "a": "AFR-CONTENT-000057",
+      "b": "AFR-CONTENT-000166",
+      "score": 0.648
+    },
+    {
+      "a": "AFR-CONTENT-000020",
+      "b": "AFR-CONTENT-000055",
+      "score": 0.639
+    },
+    {
+      "a": "AFR-CONTENT-000059",
+      "b": "AFR-CONTENT-000085",
+      "score": 0.636
+    }
+  ],
+  "story_evidence_needed": [
+    "AFR-CONTENT-000001",
+    "AFR-CONTENT-000005",
+    "AFR-CONTENT-000013",
+    "AFR-CONTENT-000022",
+    "AFR-CONTENT-000031",
+    "AFR-CONTENT-000034",
+    "AFR-CONTENT-000041",
+    "AFR-CONTENT-000049",
+    "AFR-CONTENT-000053",
+    "AFR-CONTENT-000063",
+    "AFR-CONTENT-000064",
+    "AFR-CONTENT-000076",
+    "AFR-CONTENT-000090",
+    "AFR-CONTENT-000091",
+    "AFR-CONTENT-000097",
+    "AFR-CONTENT-000098",
+    "AFR-CONTENT-000102",
+    "AFR-CONTENT-000117",
+    "AFR-CONTENT-000121",
+    "AFR-CONTENT-000124",
+    "AFR-CONTENT-000126",
+    "AFR-CONTENT-000138",
+    "AFR-CONTENT-000142",
+    "AFR-CONTENT-000144",
+    "AFR-CONTENT-000155"
+  ],
+  "perform_on_camera": [
+    "AFR-CONTENT-000008",
+    "AFR-CONTENT-000011",
+    "AFR-CONTENT-000012",
+    "AFR-CONTENT-000018",
+    "AFR-CONTENT-000024",
+    "AFR-CONTENT-000026",
+    "AFR-CONTENT-000033",
+    "AFR-CONTENT-000035",
+    "AFR-CONTENT-000039",
+    "AFR-CONTENT-000047",
+    "AFR-CONTENT-000054",
+    "AFR-CONTENT-000061",
+    "AFR-CONTENT-000067",
+    "AFR-CONTENT-000068",
+    "AFR-CONTENT-000073",
+    "AFR-CONTENT-000074",
+    "AFR-CONTENT-000075",
+    "AFR-CONTENT-000081",
+    "AFR-CONTENT-000082",
+    "AFR-CONTENT-000088",
+    "AFR-CONTENT-000089",
+    "AFR-CONTENT-000103",
+    "AFR-CONTENT-000108",
+    "AFR-CONTENT-000116",
+    "AFR-CONTENT-000145",
+    "AFR-CONTENT-000152",
+    "AFR-CONTENT-000157",
+    "AFR-CONTENT-000159",
+    "AFR-CONTENT-000166",
+    "AFR-CONTENT-000171",
+    "AFR-CONTENT-000188"
+  ],
+  "unsourced_statistics": [
+    "AFR-CONTENT-000001",
+    "AFR-CONTENT-000004",
+    "AFR-CONTENT-000005",
+    "AFR-CONTENT-000012",
+    "AFR-CONTENT-000019",
+    "AFR-CONTENT-000020",
+    "AFR-CONTENT-000029",
+    "AFR-CONTENT-000062",
+    "AFR-CONTENT-000064",
+    "AFR-CONTENT-000078",
+    "AFR-CONTENT-000085",
+    "AFR-CONTENT-000102",
+    "AFR-CONTENT-000104",
+    "AFR-CONTENT-000124",
+    "AFR-CONTENT-000134",
+    "AFR-CONTENT-000146",
+    "AFR-CONTENT-000162",
+    "AFR-CONTENT-000165",
+    "AFR-CONTENT-000180",
+    "AFR-CONTENT-000182",
+    "AFR-CONTENT-000184",
+    "AFR-CONTENT-000190",
+    "AFR-CONTENT-000191",
+    "AFR-CONTENT-000194",
+    "AFR-CONTENT-000195"
+  ],
+  "enrichment_unknown": {
+    "title": 180,
+    "objective": 195,
+    "problem": 195,
+    "insight": 180,
+    "proof": 195,
+    "structure": 195,
+    "visual_strategy": 195,
+    "real_story.evaluated": 195,
+    "humor.evaluated": 195
+  },
+  "past_due": [
+    "AFR-CONTENT-000001",
+    "AFR-CONTENT-000002",
+    "AFR-CONTENT-000003",
+    "AFR-CONTENT-000004",
+    "AFR-CONTENT-000005",
+    "AFR-CONTENT-000006",
+    "AFR-CONTENT-000007",
+    "AFR-CONTENT-000008",
+    "AFR-CONTENT-000009",
+    "AFR-CONTENT-000010",
+    "AFR-CONTENT-000011",
+    "AFR-CONTENT-000012",
+    "AFR-CONTENT-000013",
+    "AFR-CONTENT-000014",
+    "AFR-CONTENT-000015",
+    "AFR-CONTENT-000016",
+    "AFR-CONTENT-000017",
+    "AFR-CONTENT-000018",
+    "AFR-CONTENT-000019",
+    "AFR-CONTENT-000020",
+    "AFR-CONTENT-000021",
+    "AFR-CONTENT-000022",
+    "AFR-CONTENT-000023",
+    "AFR-CONTENT-000024",
+    "AFR-CONTENT-000025",
+    "AFR-CONTENT-000026",
+    "AFR-CONTENT-000027",
+    "AFR-CONTENT-000028",
+    "AFR-CONTENT-000029"
+  ],
+  "unused_series": [
+    "AI Search News for African Tourism",
+    "FIX MY WEBSITE",
+    "The Free Audit Diaries",
+    "GEO Glossary",
+    "One Bar Test"
+  ],
+  "outputs": {
+    "core_concepts": 195,
+    "primary_days": 180,
+    "weeks": 26,
+    "planned_tiktok": 78,
+    "planned_instagram_reel": 130,
+    "planned_instagram_carousel": 52,
+    "planned_instagram_story": 182,
+    "planned_threads": 130,
+    "planned_facebook_reel": 130,
+    "planned_facebook_story": 182,
+    "planned_linkedin": 104,
+    "planned_linkedin_carousel": 26,
+    "planned_youtube_short": 130,
+    "planned_youtube_long": 26,
+    "counted_outputs": 806,
+    "counted_plus_stories": 1170,
+    "target": 1600
+  },
+  "gaps": [
+    {
+      "severity": "HIGH",
+      "area": "market",
+      "finding": "Cameroon/Douala appears in 4 items vs Tanzania in 32.",
+      "recommendation": "The founder is Douala-based and the 2026-08-30 entity baseline found no AI-SEO incumbent in Central Africa. Real Cameroon receipts (e.g. the White House Douala post, the West Africa TikTok lead research) are under-used as story sources."
+    },
+    {
+      "severity": "HIGH",
+      "area": "authenticity",
+      "finding": "25 items assert a past real-world event (a client, an owner, a result) with no story-bank evidence.",
+      "recommendation": "Before scripting each one: link a real story, or rewrite as a clearly labeled hypothetical. Never film these as true until evidenced."
+    },
+    {
+      "severity": "HIGH",
+      "area": "production",
+      "finding": "29 calendar days dated on/before 2026-09-14 are unpublished in the calendar; 6 posts were actually published outside it.",
+      "recommendation": "Decide per past-due row: mark done if it was published under another title, reschedule, or flag REVIEW. The calendar must reflect reality before new ideas are added."
+    },
+    {
+      "severity": "DECISION",
+      "area": "volume",
+      "finding": "At the configured cadences (TikTok 3/wk, IG carousel 2/wk, Threads 5/wk, LinkedIn 4/wk + 1 carousel) the plan yields ~806 counted outputs (1170 with Stories) vs the ~1600 target.",
+      "recommendation": "Decide: raise cadence on the cheap-to-adapt text/carousel outputs, add a secondary lane of core ideas, count Stories, or accept the lower number. Quality has priority over arithmetic."
+    },
+    {
+      "severity": "MEDIUM",
+      "area": "balance",
+      "finding": "Tourism & Hospitality: 51.3% vs target 57% (-5.7pp)",
+      "recommendation": "Generate Tourism & Hospitality ideas."
+    },
+    {
+      "severity": "MEDIUM",
+      "area": "balance",
+      "finding": "Professional Services: 19% vs target 25% (-6pp)",
+      "recommendation": "Generate Professional Services ideas."
+    },
+    {
+      "severity": "MEDIUM",
+      "area": "balance",
+      "finding": "Cross-Industry: 16.9% vs target 3% (+13.9pp)",
+      "recommendation": "Hold new Cross-Industry ideas unless they score PRIORITY."
+    },
+    {
+      "severity": "MEDIUM",
+      "area": "duplicates",
+      "finding": "12 near-duplicate pairs already inside the calendar (similarity ≥ 0.62).",
+      "recommendation": "Differentiate the later item (new proof, new story, new application) or flag it for REVIEW."
+    },
+    {
+      "severity": "MEDIUM",
+      "area": "authenticity",
+      "finding": "25 items contain numbers/statistics with no recorded proof source.",
+      "recommendation": "fact-checking must attach a source or hedge the number before QA."
+    },
+    {
+      "severity": "MEDIUM",
+      "area": "enrichment",
+      "finding": "195/195 items have no objective, and none have been evaluated for a real story or humor yet.",
+      "recommendation": "Run enrichment (storytelling + humor-writing) on the next 14 days first, not all 195 at once."
+    },
+    {
+      "severity": "MEDIUM",
+      "area": "platform",
+      "finding": "195/195 items have no Instagram carousel, Threads or LinkedIn document-carousel version — the original calendar never planned these formats.",
+      "recommendation": "platform-adaptation adds them during enrichment: carousels for tutorials/case studies/comparisons, Threads for opinions/myths/Q&A, LinkedIn carousels for data and frameworks."
+    },
+    {
+      "severity": "MEDIUM",
+      "area": "learning",
+      "finding": "TikTok retention metrics are null (Metricool lacks TikTok Business analytics scope).",
+      "recommendation": "Connect TikTok for Business analytics in Metricool so learning is not limited to views and comments."
+    },
+    {
+      "severity": "LOW",
+      "area": "format",
+      "finding": "\"news reaction\" under-used: 1 items (0.5%).",
+      "recommendation": "Add news reaction ideas where they fit a real story or proof."
+    },
+    {
+      "severity": "LOW",
+      "area": "topic",
+      "finding": "Topic \"fintech\" appears in 5 items (2.6%).",
+      "recommendation": "Consider ideas for fintech if strategically relevant."
+    },
+    {
+      "severity": "LOW",
+      "area": "topic",
+      "finding": "Topic \"AI news\" appears in 1 items (0.5%).",
+      "recommendation": "Consider ideas for AI news if strategically relevant."
+    },
+    {
+      "severity": "LOW",
+      "area": "cta",
+      "finding": "37 raw CTA spellings collapse to 27 real CTAs (quote-style variants).",
+      "recommendation": "Normalize CTA text so comment-keyword tracking can count them."
+    },
+    {
+      "severity": "LOW",
+      "area": "production",
+      "finding": "15 approved items have no date (freestyle lab).",
+      "recommendation": "Slot them into the secondary lane or the idea bank."
+    },
+    {
+      "severity": "LOW",
+      "area": "series",
+      "finding": "Series defined in the operating system but never scheduled: AI Search News for African Tourism, FIX MY WEBSITE, The Free Audit Diaries, GEO Glossary, One Bar Test.",
+      "recommendation": "Either schedule them with real sources or retire them from the handbook."
+    }
+  ]
+}
