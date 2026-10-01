@@ -1,0 +1,33 @@
+{
+  "name": "afrishield-signal-editor",
+  "version": "1.0.0",
+  "description": "AfriShield Signal Style — reusable Remotion component library + edit-spec renderer for the Content Autopilot",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "dependencies": {
+    "@remotion/bundler": "4.0.520",
+    "@remotion/captions": "4.0.520",
+    "@remotion/renderer": "4.0.520",
+    "@remotion/cli": "4.0.520",
+    "@remotion/google-fonts": "4.0.520",
+    "@remotion/install-whisper-cpp": "4.0.520",
+    "@remotion/media": "4.0.520",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.520"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "typecheck": "tsc --noEmit",
+    "transcribe": "node scripts/transcribe.mjs",
+    "analyze": "node scripts/analyze-recording.mjs",
+    "spec": "node scripts/build-edit-spec.mjs",
+    "render": "node scripts/render-spec.mjs"
+  }
+}

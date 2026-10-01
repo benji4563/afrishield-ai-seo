@@ -1,0 +1,160 @@
+{
+  "id": "whitehouse-signal-edit",
+  "content_id": null,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationMs": 131120,
+  "source": {
+    "video": "recordings/whitehouse-ai-visibility/edit-proxy.mp4",
+    "trimStartMs": 0,
+    "volume": 1
+  },
+  "captions": {
+    "src": "recordings/whitehouse-ai-visibility/whitehouse-signal-edit.bursts.json"
+  },
+  "events": [
+    {
+      "id": "c0",
+      "component": "Hook",
+      "startMs": 1260,
+      "endMs": 4660,
+      "props": {
+        "text": "The Douala brand that owns its land",
+        "emphasis": [
+          "owns"
+        ]
+      },
+      "trigger": {
+        "phrase": "name a restaurant",
+        "matched": "name a restaurant"
+      }
+    },
+    {
+      "id": "c1",
+      "component": "StoryCard",
+      "startMs": 13760,
+      "endMs": 17360,
+      "props": {
+        "kicker": "Douala · since 1993",
+        "text": "One restaurant → a multi-location brand",
+        "meta": "Source: white-house-restaurant.com"
+      },
+      "trigger": {
+        "phrase": "White House started in 1993",
+        "matched": "White House started in 1993"
+      }
+    },
+    {
+      "id": "c2",
+      "component": "ProofFlash",
+      "startMs": 22030,
+      "endMs": 22730,
+      "props": {
+        "label": "Their locations"
+      },
+      "trigger": {
+        "phrase": "establishments in",
+        "matched": "establishments in"
+      }
+    },
+    {
+      "id": "c3",
+      "component": "Screenshot",
+      "startMs": 22160,
+      "endMs": 30380,
+      "props": {
+        "src": "recordings/whitehouse-ai-visibility/assets/branch-akwa.webp",
+        "caption": "Akwa · Bonamoussadi · Bonapriso · Yaoundé",
+        "source": "Photo via white-house-restaurant.com",
+        "zoom": [
+          1,
+          1.1
+        ]
+      },
+      "trigger": {
+        "phrase": "establishments in",
+        "matched": "establishments in"
+      }
+    },
+    {
+      "id": "c4",
+      "component": "SignalPath",
+      "startMs": 34690,
+      "endMs": 45320,
+      "props": {
+        "title": "One brand",
+        "nodes": [
+          {
+            "label": "Restaurants",
+            "atMs": 2100
+          },
+          {
+            "label": "Catering",
+            "atMs": 3180
+          },
+          {
+            "label": "Events",
+            "atMs": 3910
+          },
+          {
+            "label": "Reservations",
+            "atMs": 5150
+          },
+          {
+            "label": "Experience",
+            "atMs": 7420
+          }
+        ],
+        "pulseLabel": "the brand signal",
+        "backdrop": 1
+      },
+      "trigger": {
+        "phrase": "they are selling a brand",
+        "matched": "they are selling a brand,"
+      }
+    },
+    {
+      "id": "c5",
+      "component": "HumorCard",
+      "startMs": 53720,
+      "endMs": 55620,
+      "props": {
+        "line": "Built on somebody else's land.",
+        "tag": "Plot twist"
+      },
+      "trigger": {
+        "phrase": "somebody else's land",
+        "matched": "somebody else's land."
+      }
+    },
+    {
+      "id": "c6",
+      "component": "Headline",
+      "startMs": 118100,
+      "endMs": 121300,
+      "props": {
+        "setup": "A website isn't the flex.",
+        "punch": "Being recommended is."
+      },
+      "trigger": {
+        "phrase": "being found, understood, recommended",
+        "matched": "being found, understood, recommended"
+      }
+    },
+    {
+      "id": "c7",
+      "component": "CTA",
+      "startMs": 126800,
+      "endMs": 130400,
+      "props": {
+        "keyword": "AI",
+        "line": "and I'll show you how to check"
+      },
+      "trigger": {
+        "phrase": "Comment AI",
+        "matched": "Comment AI"
+      }
+    }
+  ]
+}

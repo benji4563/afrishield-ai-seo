@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "afrishield/content-object",
+  "title": "AfriShield Content Object",
+  "description": "One core content concept in the living calendar database (data/content-db.json → items[]). Any field that is not known is the literal string \"UNKNOWN\" — agents fill it during enrichment; nobody invents it.",
+  "type": "object",
+  "required": ["content_id", "source", "status", "created_at", "updated_at", "hook", "pillar", "history"],
+  "properties": {
+    "content_id": { "type": "string", "pattern": "^AFR-CONTENT-\\d{6}$" },
+    "source": {
+      "type": "object",
+      "required": ["type", "row_key"],
+      "properties": {
+        "type": { "enum": ["calendar-csv", "freestyle", "autopilot", "published-history"] },
+        "file": { "type": "string" },
+        "row_key": { "type": "string", "description": "Stable key of the original row, used for idempotent re-ingest." },
+        "hash": { "type": "string" },
+        "original": { "type": "object", "description": "The original row, verbatim. Never modified." }
+      }
+    },
+    "created_at": { "type": "string" },
+    "updated_at": { "type": "string" },
+    "scheduled_at": { "type": ["string", "null"] },
+    "published_at": { "type": ["string", "null"] },
+    "status": { "enum": ["IDEA", "SCORED", "APPROVED", "SCRIPTED", "RECORDED", "EDITING", "QA", "SCHEDULED", "PUBLISHED", "ANALYZED", "ARCHIVED"] },
+    "production_status": { "type": "string" },
+    "publication_status": { "type": "string" },
+    "review_flag": { "type": ["string", "null"], "description": "REVIEW reason for weak/obsolete items. Items are flagged, never silently deleted." },
+
+    "date": { "type": "string", "description": "YYYY-MM-DD or UNKNOWN" },
+    "day_label": { "type": "string" },
+    "week": { "type": "string" },
+    "month_theme": { "type": "string" },
+    "lane": { "enum": ["primary", "secondary"], "description": "primary = the day's core idea from the 180-day plan; secondary = an approved autopilot addition on the same date." },
+
+    "title": { "type": "string" },
+    "topic": { "type": "string" },
+    "core_idea": { "type": "string" },
+    "pillar": { "type": "string" },
+    "series": { "type": "string" },
+    "format": { "type": "string" },
+    "industry": { "type": "string" },
+    "audience": { "type": "string" },
+    "objective": { "type": "string", "description": "awareness | education | authority | engagement | trust | lead generation | conversion | community | brand building | UNKNOWN" },
+
+    "hook": { "type": "string" },
+    "context": { "type": "string" },
+    "problem": { "type": "string" },
+    "insight": { "type": "string" },
+    "proof": { "type": "string" },
+    "lesson": { "type": "string" },
+    "cta": { "type": "string" },
+    "visual_concept": { "type": "string" },
+    "structure": { "type": "string", "description": "One of the structures in guides/storytelling-guide.md §Structures." },
+
+    "real_story": {
+      "type": "object",
+      "properties": {
+        "evaluated": { "type": "boolean" },
+        "story_id": { "type": ["string", "null"] },
+        "kind": { "enum": ["REAL_STORY", "DOCUMENTED_CASE", "EXPERIMENT", "OBSERVATION", "ANALOGY", "HYPOTHETICAL_LABELED", "NONE", "UNKNOWN"] },
+        "note": { "type": "string" }
+      }
+    },
+    "humor": {
+      "type": "object",
+      "properties": {
+        "evaluated": { "type": "boolean" },
+        "level": { "enum": ["NO_HUMOR", "LIGHT", "MODERATE", "STRONG", "UNKNOWN"] },
+        "type": { "type": "string" },
+        "angle": { "type": "string" },
+        "line": { "type": "string" }
+      }
+    },
+
+    "idea_score": { "type": ["integer", "null"], "minimum": 0, "maximum": 100 },
+    "score_breakdown": {
+      "type": ["object", "null"],
+      "properties": {
+        "business_relevance": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "audience_pain": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "curiosity": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "novelty": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "story_potential": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "educational_value": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "platform_potential": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "brand_alignment": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "proof_availability": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "cta_potential": { "type": "integer", "minimum": 0, "maximum": 10 }
+      }
+    },
+    "score_band": { "type": ["string", "null"] },
+
+    "visual_strategy": { "type": "string" },
+    "remotion_template": { "type": "string" },
+    "platform_versions": {
+      "type": "object",
+      "description": "Keys = config.production.output_types: tiktok, instagram_reel, instagram_carousel, instagram_story, threads, facebook_reel, facebook_story, linkedin, linkedin_carousel, youtube_short, youtube_long. Values: idea string (from the calendar) or a production object written by platform-adaptation ({ summary, copy, slides?, posts?, status })."
+    },
+    "caption": { "type": "string" },
+    "seo_keywords": { "type": "string" },
+    "hashtags": { "type": "string" },
+
+    "claims": {
+      "type": "array",
+      "description": "Factuality-gate output. Every claim that will appear on screen, in VO or in copy.",
+      "items": {
+        "type": "object",
+        "required": ["text", "category"],
+        "properties": {
+          "text": { "type": "string" },
+          "category": { "enum": ["FACT", "OPINION", "ANALYSIS", "HYPOTHETICAL", "HUMOR", "PERSONAL_EXPERIENCE", "UNDETERMINED"] },
+          "evidence": { "type": "string" },
+          "story_id": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "flags": {
+      "type": "array",
+      "items": { "type": "object", "required": ["type", "message"], "properties": { "type": { "type": "string" }, "message": { "type": "string" }, "at": { "type": "string" }, "resolved": { "type": "boolean" } } }
+    },
+    "approvals": {
+      "type": "object",
+      "properties": {
+        "calendar": { "type": ["object", "null"] },
+        "publish": { "type": ["object", "null"] }
+      }
+    },
+    "qa": { "type": ["object", "null"] },
+    "publication_data": { "type": "object" },
+    "performance": { "type": "object" },
+    "links": { "type": "object", "description": "linked_content_id, production folder, asset links." },
+    "history": { "type": "array", "items": { "type": "object", "required": ["at", "action"] } }
+  }
+}

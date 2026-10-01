@@ -1,0 +1,391 @@
+{
+  "recording": "whitehouse-ai-visibility",
+  "duration_ms": 138300,
+  "words": 232,
+  "wpm": 101,
+  "hook_ms": 13760,
+  "comment_ctas": [
+    {
+      "atMs": 126920,
+      "keyword": "AI"
+    }
+  ],
+  "proof_moments": [],
+  "pauses": [],
+  "fillers": [],
+  "repeats": [
+    {
+      "atMs": 121680,
+      "phrase": "is,",
+      "n": 1
+    }
+  ],
+  "low_confidence": [
+    {
+      "atMs": 3550,
+      "text": "Roella",
+      "confidence": 0.11
+    },
+    {
+      "atMs": 10540,
+      "text": "a",
+      "confidence": 0.5
+    },
+    {
+      "atMs": 12720,
+      "text": "a",
+      "confidence": 0.5
+    },
+    {
+      "atMs": 24370,
+      "text": "aqua,",
+      "confidence": 0.48
+    },
+    {
+      "atMs": 25150,
+      "text": "bonamos",
+      "confidence": 0.11
+    },
+    {
+      "atMs": 26060,
+      "text": "adi,",
+      "confidence": 0.13
+    },
+    {
+      "atMs": 27180,
+      "text": "apprizo",
+      "confidence": 0.21
+    },
+    {
+      "atMs": 28400,
+      "text": "yao",
+      "confidence": 0.33
+    },
+    {
+      "atMs": 28790,
+      "text": "ande.",
+      "confidence": 0.1
+    },
+    {
+      "atMs": 33810,
+      "text": "pizza",
+      "confidence": 0.24
+    },
+    {
+      "atMs": 34390,
+      "text": "food,",
+      "confidence": 0.41
+    },
+    {
+      "atMs": 46780,
+      "text": "interesting,",
+      "confidence": 0.37
+    },
+    {
+      "atMs": 57380,
+      "text": "land.",
+      "confidence": 0.48
+    },
+    {
+      "atMs": 63880,
+      "text": "there,",
+      "confidence": 0.45
+    },
+    {
+      "atMs": 66260,
+      "text": "platform,",
+      "confidence": 0.4
+    },
+    {
+      "atMs": 73920,
+      "text": "A",
+      "confidence": 0.34
+    },
+    {
+      "atMs": 74790,
+      "text": "different,",
+      "confidence": 0.14
+    },
+    {
+      "atMs": 80520,
+      "text": "land.",
+      "confidence": 0.42
+    },
+    {
+      "atMs": 91480,
+      "text": "TrigyPity,",
+      "confidence": 0.01
+    },
+    {
+      "atMs": 92740,
+      "text": "perplexity,",
+      "confidence": 0.17
+    },
+    {
+      "atMs": 98380,
+      "text": "who",
+      "confidence": 0.21
+    },
+    {
+      "atMs": 101610,
+      "text": "is,",
+      "confidence": 0.42
+    },
+    {
+      "atMs": 111360,
+      "text": "allows",
+      "confidence": 0.49
+    },
+    {
+      "atMs": 121680,
+      "text": "is,",
+      "confidence": 0.42
+    },
+    {
+      "atMs": 130320,
+      "text": "[BLANK_AUDIO]",
+      "confidence": 0.2
+    }
+  ],
+  "pace_windows": [
+    {
+      "atMs": 120,
+      "wpm": 144
+    },
+    {
+      "atMs": 5120,
+      "wpm": 108
+    },
+    {
+      "atMs": 10120,
+      "wpm": 108
+    },
+    {
+      "atMs": 15120,
+      "wpm": 108
+    },
+    {
+      "atMs": 20120,
+      "wpm": 72
+    },
+    {
+      "atMs": 25120,
+      "wpm": 108
+    },
+    {
+      "atMs": 30120,
+      "wpm": 156
+    },
+    {
+      "atMs": 35120,
+      "wpm": 96
+    },
+    {
+      "atMs": 40120,
+      "wpm": 60
+    },
+    {
+      "atMs": 45120,
+      "wpm": 108
+    },
+    {
+      "atMs": 50120,
+      "wpm": 96
+    },
+    {
+      "atMs": 55120,
+      "wpm": 84
+    },
+    {
+      "atMs": 60120,
+      "wpm": 144
+    },
+    {
+      "atMs": 65120,
+      "wpm": 120
+    },
+    {
+      "atMs": 70120,
+      "wpm": 168
+    },
+    {
+      "atMs": 75120,
+      "wpm": 108
+    },
+    {
+      "atMs": 80120,
+      "wpm": 84
+    },
+    {
+      "atMs": 85120,
+      "wpm": 96
+    },
+    {
+      "atMs": 90120,
+      "wpm": 60
+    },
+    {
+      "atMs": 95120,
+      "wpm": 108
+    },
+    {
+      "atMs": 100120,
+      "wpm": 144
+    },
+    {
+      "atMs": 105120,
+      "wpm": 108
+    },
+    {
+      "atMs": 110120,
+      "wpm": 84
+    },
+    {
+      "atMs": 115120,
+      "wpm": 96
+    },
+    {
+      "atMs": 120120,
+      "wpm": 72
+    },
+    {
+      "atMs": 125120,
+      "wpm": 132
+    },
+    {
+      "atMs": 130120,
+      "wpm": 12
+    },
+    {
+      "atMs": 135120,
+      "wpm": 0
+    }
+  ],
+  "corrections_applied": [],
+  "comparison": {
+    "script_tokens": 789,
+    "coverage_pct": 6,
+    "skipped_script_passages": [
+      "Restaurant, Douala (Cameroon) Format: 60–90s vertical (9:16) video single on-camera character voice-over Brand: AfriShield AI SEO Total length: ~90 seconds ~185 words of voice-over Full script (timed) Time Voice-Over On-Camera B-Roll Visual 00:00–00:05 \"The best restaurant",
+      "French one. It's not the Italian one. It's Cameroonian it's called White House and every",
+      "owner in Africa should be studying them.\" Character direct-to-camera, medium close-up, confident smirk",
+      "\"should be studying them.\" V1 Hook split-screen 00:05–00:10 \"Thirty-three years",
+      "business. Four locations across Douala",
+      "Yaoundé.\" Voice-over kicks in. Cameroon map fills the frame, 4 pins drop in. V2 Map 00:10–00:18 \"Roughly two hundred thousand diners",
+      "year. An estimated two-and-a-half to three billion FCFA",
+      "turnover call it four to five million dollars at healthy double-digit margins. Their buffet starts at eight thousand five hundred FCFA.\" Slow-mo b-roll of the buffet line-up, real footage from their site. V3 Counters 00:18–00:25",
+      "they sit in Douala's top thirty restaurants the only four-location African-cuisine brand on",
+      "French, Italian, Lebanese, or Indian.\" Auto-scrolling TripAdvisor list, highlight lands on 28 White House. V4 TripAdvisor 00:25–00:35 \"But here's the",
+      "most restaurant owners in Cameroon",
+      "going to hate. White House didn't get here on Instagram.",
+      "got here… on this.\" Character holds phone, scrolling IG angrily. Lowers it. Match-cut to browser loading white-house-restaurant.com. V5 Pivot 00:35–00:48 \"Bilingual English and French. A full online shop with over a hundred menu items. Four branch pages. Four WhatsApp buttons one per location. Live chat. A blog. Indexed on Google Maps, TripAdvisor, Waze, Petit Futé you name it.\" Screen recording of the site, six call-out boxes stack in. V6 Audit walkthrough 00:48–00:58 \"Roughly eight hundred to two thousand organic visits",
+      "month, converting into somewhere between forty",
+      "hundred and twenty leads. Every single month. On autopilot. Only real gap? Their homepage meta description literally says:",
+      "is the homepage of the website.' One fixable miss, ten years of compounding wins.\" Dashboard overlays fade in. Red underline flashes under the actual meta text. V7 Dashboard 00:58–01:12 \"Meanwhile, restaurants with better food",
+      "better ratings Kotcha, Le Carino live",
+      "great, until Meta changes the algorithm on a Tuesday. That's",
+      "Rented-land vs. owned-land motion graphic. V8 Rented vs owned 01:12–01:22 \"So is a website really necessary in 2026? Ask",
+      "Cameroonian restaurant that's outselling every French chain in Douala.\" V8 metaphor holds, then cross-dissolves to character close-up. V8 01:22–01:30 \"AfriShield AI SEO. Stop renting attention. Start owning traffic.\" Character on camera. AfriShield wordmark fades in bottom-left. V8 Hook variant (A/B test) \"Douala's most successful restaurant isn't on Instagram. It's",
+      "Google. Here's why that matters.\" Post caption",
+      "outselling every French chain in Douala",
+      "their secret isn't the food. It's",
+      "thing most African business owners are still ignoring",
+      "Hashtags DoualaBusiness SmallBusinessAfrica OwnYourTraffic Shot list summary ID Duration Description V1 5s Split-screen European fine dining top vs. real Cameroonian buffet bottom V2 5s Cameroon map, 4 gold pins drop with year labels V3 8s Counter stack: 33 yrs 200k+ diners 2.5B FCFA over real buffet b-roll V4 7s Auto-scroll Douala top-30, lands on 28 White House highlighted V5 10s Phone",
+      "scroll match cut browser loads white-house-restaurant.com V6 13s Website walkthrough 6 audit call-outs slide in V7 10s Traffic chart leads counter red flash on",
+      "the homepage\" meta gap V8 22s Rented vs owned land metaphor AfriShield CTA close-up Total runtime: 80 seconds (target 60–90 Voice, tone, style rules AfriShield voice: light, human, slightly cheeky. One",
+      "two smiles per script, not stand-up. African audience first. FCFA-native, USD only",
+      "foreign viewers. Neighborhood references OK: Akwa, Bonapriso, Bonamoussadi, Dragage. Numbers must feel real round and hedged (\"roughly\", \"an estimated\") on modeled figures. Character delivery: confident, not preachy. On-camera carries hook pivot CTA. Voice-over carries numbers and audit walk-through over b-roll. Data sources Verified from white-house-restaurant.com and TripAdvisor: Founded 1993 33 years in business 4 locations (Akwa 2005, Bonamoussadi 2008, Bonapriso 2012, Yaoundé 2017) buffet from 8,500 FCFA plate from 5,000 FCFA reservation from 20,000 FCFA 100+ SKUs on Odoo e-commerce bilingual EN/FR 4 WhatsApp numbers TripAdvisor 3.7/5 ranked 28 of 208 in Douala homepage meta description literally reads \"This is the homepage of the",
+      "script): ~200,000 diners/year ~2.5–3.2B FCFA turnover 12–18% net margin 800–2,000 monthly organic visits 40–120 monthly convertible leads. Basis: 4 locations 150 covers/day 360 days 12,000 FCFA blended spend 25% events; traffic modeled from bilingual EN/FR footprint, 33-year brand equity, 100+ product pages, 6+ review-site citations."
+    ],
+    "ad_libs": [
+      {
+        "atMs": 120,
+        "text": "If you ask me to name"
+      },
+      {
+        "atMs": 3550,
+        "text": "Roella that understands branding,"
+      },
+      {
+        "atMs": 12720,
+        "text": "a Tuesday. White House started"
+      },
+      {
+        "atMs": 19030,
+        "text": "multi-location restaurant brand with establishments"
+      },
+      {
+        "atMs": 24370,
+        "text": "aqua, bonamos adi, bon apprizo"
+      },
+      {
+        "atMs": 32630,
+        "text": "not just selling pizza or food,"
+      },
+      {
+        "atMs": 36170,
+        "text": "brand, restaurants, catering events, reservations"
+      },
+      {
+        "atMs": 42110,
+        "text": "experience. But yes, where things get interesting, imagine building"
+      },
+      {
+        "atMs": 51160,
+        "text": "building your digital presence"
+      },
+      {
+        "atMs": 58200,
+        "text": "Instagram, Facebook or rented"
+      },
+      {
+        "atMs": 62070,
+        "text": "can build your audience there, but you don't"
+      },
+      {
+        "atMs": 66260,
+        "text": "platform, you don't own who sees you tomorrow. They can take it away from you"
+      },
+      {
+        "atMs": 74790,
+        "text": "different, that's your digital property"
+      },
+      {
+        "atMs": 78220,
+        "text": "White House actually owns"
+      },
+      {
+        "atMs": 83620,
+        "text": "that matters even more. People aren't only asking"
+      },
+      {
+        "atMs": 89600,
+        "text": "They are not asking TrigyPity, perplexity, clothes, what to eat, where to stay, who to trust."
+      },
+      {
+        "atMs": 101980,
+        "text": "when someone asks AI to recommend a business"
+      },
+      {
+        "atMs": 105660,
+        "text": "a restaurant like yours, does your digital property allows"
+      },
+      {
+        "atMs": 112450,
+        "text": "that? Because having a"
+      },
+      {
+        "atMs": 115760,
+        "text": "2026 isn't a flex, being found, understood, recommended is, is your business AI visible? Comment AI and I will show you how to check. [BLANK_AUDIO]"
+      }
+    ]
+  },
+  "flags": [
+    "Hook sentence ends at 0:13.7 — TikTok standing rule wants the scroll-stop inside ~3s.",
+    "No comment CTA in the first ~6s (standing rule: ~3s).",
+    "Runtime 2:18.1 exceeds the 60s TikTok format — plan a tighter TikTok cut or log it as the 75–90s A/B test.",
+    "25 low-confidence words — check captions for mis-hearings (names, places, brands).",
+    "1 immediate repeats — likely stumbles; consider jump cuts unless the moment feels authentic."
+  ],
+  "transcript": "If you ask me to name a restaurant in Roella that understands branding, White House is obviously in the conversation.This isn't a restaurant that opened on a Tuesday. White House started in 1993 and has grown into a multi-location restaurant brand with establishments in aqua, bonamos adi, bon apprizo and yao ande. And that is an interesting part. They are not just selling pizza or food, they are selling a brand, restaurants, catering events, reservations and experience. But yes, where things get interesting, imagine building a restaurant this successful and building your digital presence on somebody else's land. TikTok is rented land. Instagram, Facebook or rented land. You can build your audience there, but you don't own the platform, you don't own who sees you tomorrow. They can take it away from you on a Tuesday. A website is different, that's your digital property and White House actually owns the land. In 2026, that matters even more. People aren't only asking Instagram. They are not asking TrigyPity, perplexity, clothes, what to eat, where to stay, who to trust. The real question is, when someone asks AI to recommend a business or a restaurant like yours, does your digital property allows for that? Because having a website in 2026 isn't a flex, being found, understood, recommended is, is your business AI visible? Comment AI and I will show you how to check. [BLANK_AUDIO]"
+}

@@ -1,0 +1,472 @@
+{
+  "meta": {
+    "schema_version": 1,
+    "created_at": "2026-09-14T15:03:59.278Z",
+    "updated_at": "2026-09-14T15:03:59.293Z",
+    "id_counters": {
+      "AFR-STORY-": 11
+    }
+  },
+  "stories": [
+    {
+      "story_id": "AFR-STORY-000001",
+      "date": "2026-09-06",
+      "source": "Founder's own TikTok account audit (Metricool + screenshots)",
+      "evidence": [
+        "../deliverables/tiktok-analysis/obi2026-tiktok-hook-retention-analysis.md",
+        "data/performance/raw/metricool-tiktok-2026-09-14.json"
+      ],
+      "what_happened": "Ben audited his first TikTok posts for AfriShield. Every product-first post (founder intro, 'Meet Elodie', AI Concierge Test explainer) stalled at roughly 100–150 views. The one story-led post — the White House Douala restaurant video — drew the most comments of the batch.",
+      "people_involved": "Ben (founder); no third parties",
+      "problem": "Posts opened with the product or the founder's title, some were under 8 seconds, one had typos in the first on-screen text, and hashtags were jammed inside caption sentences.",
+      "discovery": "Nobody scrolls to meet a product. The story post outperformed on comments; the product posts never earned TikTok's second distribution wave.",
+      "result": "A locked story-first script format (the afrishield-tiktok-video-script skill) and a rule to open on tension, not on the product. Retention data itself is unavailable (Metricool lacks TikTok Business analytics scope).",
+      "lesson": "Lead with the customer's tension; the product is the answer at the end of the story.",
+      "proof_available": true,
+      "permission_status": "OWN_WORK",
+      "sensitivity": "LOW",
+      "unverified_claims": [],
+      "possible_topics": [
+        "why product-first videos fail",
+        "build-in-public: our first 6 TikToks",
+        "story-first marketing for small businesses",
+        "We Were Wrong"
+      ],
+      "possible_content_formats": [
+        "failure",
+        "lesson",
+        "behind-the-scenes",
+        "proof"
+      ],
+      "checks": [
+        {
+          "evidence": "../deliverables/tiktok-analysis/obi2026-tiktok-hook-retention-analysis.md",
+          "exists": true
+        },
+        {
+          "evidence": "data/performance/raw/metricool-tiktok-2026-09-14.json",
+          "exists": true
+        }
+      ],
+      "verification_status": "VERIFIED_FROM_SOURCE",
+      "uses": [],
+      "added_at": "2026-09-14T15:03:59.283Z"
+    },
+    {
+      "story_id": "AFR-STORY-000002",
+      "date": "2026-09-05",
+      "source": "Published TikTok about White House Restaurant, Douala (a public business, portrayed positively)",
+      "evidence": [
+        "../deliverables/whitehouse-video/script.md",
+        "https://www.tiktok.com/@enyongnjock723/video/7682170982328470804"
+      ],
+      "what_happened": "Ben made a video using White House, a Douala restaurant brand founded in 1993 with several locations, as an example of a strong brand that owns a website rather than relying only on rented social platforms, ending with the question of whether AI would recommend it.",
+      "people_involved": "White House Restaurant, Douala (public business, not a client)",
+      "problem": "Most businesses build their whole presence on rented platforms they don't control.",
+      "discovery": "A real, well-known local example made the abstract 'rented land vs owned property' idea land — it became the best-commented post.",
+      "result": "139 views, 9 likes, 4 comments, 1 share (Metricool, pulled 2026-09-14).",
+      "lesson": "A website is owned digital property, but owning it is not the same as being understood and recommended by AI.",
+      "proof_available": true,
+      "permission_status": "PUBLIC_RECORD",
+      "sensitivity": "LOW",
+      "unverified_claims": [
+        "Exact list of White House locations should be re-checked against their website before reuse"
+      ],
+      "possible_topics": [
+        "rented land vs owned property",
+        "Cameroon businesses and AI visibility",
+        "what AI says about Douala restaurants"
+      ],
+      "possible_content_formats": [
+        "story",
+        "case study",
+        "experiment"
+      ],
+      "checks": [
+        {
+          "evidence": "../deliverables/whitehouse-video/script.md",
+          "exists": true
+        },
+        {
+          "evidence": "https://www.tiktok.com/@enyongnjock723/video/7682170982328470804",
+          "exists": "url"
+        }
+      ],
+      "verification_status": "VERIFIED_FROM_SOURCE",
+      "uses": [],
+      "added_at": "2026-09-14T15:03:59.285Z"
+    },
+    {
+      "story_id": "AFR-STORY-000003",
+      "date": "2026-08-28",
+      "source": "AfriShield original-data pilot study published on afrishieldai.com (DataForSEO SERP API)",
+      "evidence": [
+        "../../../ai-seo/marketing-site/public/data/ai-visibility-study-2026-08.json",
+        "../../../ai-seo/marketing-site/app/blog/ai-search-visibility-study/page.tsx",
+        "https://afrishieldai.com/blog/ai-search-visibility-study"
+      ],
+      "what_happened": "AfriShield ran 9 'best {service} in {city}' searches across Nairobi, Lagos, Accra, Johannesburg and Arusha and measured who owns page one — the business's own website or an aggregator — plus whether Google showed an AI answer.",
+      "people_involved": "AfriShield (own research); businesses appear only in aggregate",
+      "problem": "Nobody had published how often African businesses own their own search results versus directories and aggregators.",
+      "discovery": "Travel/hospitality businesses owned about 23% of page-one results with their own sites versus 68% for professional services; Google showed an AI answer on 9 of 9 queries.",
+      "result": "A published pilot study and dataset — AfriShield's first original statistics.",
+      "lesson": "In tourism, aggregators own most of the search results; that is the gap AI visibility work targets. It is a 9-search pilot, so present it as a pilot.",
+      "proof_available": true,
+      "permission_status": "OWN_WORK",
+      "sensitivity": "LOW",
+      "unverified_claims": [],
+      "possible_topics": [
+        "who owns page one in African tourism",
+        "aggregators vs your own website",
+        "AI answers on every query"
+      ],
+      "possible_content_formats": [
+        "proof",
+        "case study",
+        "experiment"
+      ],
+      "checks": [
+        {
+          "evidence": "../../../ai-seo/marketing-site/public/data/ai-visibility-study-2026-08.json",
+          "exists": true
+        },
+        {
+          "evidence": "../../../ai-seo/marketing-site/app/blog/ai-search-visibility-study/page.tsx",
+          "exists": true
+        },
+        {
+          "evidence": "https://afrishieldai.com/blog/ai-search-visibility-study",
+          "exists": "url"
+        }
+      ],
+      "verification_status": "VERIFIED_FROM_SOURCE",
+      "uses": [],
+      "added_at": "2026-09-14T15:03:59.285Z"
+    },
+    {
+      "story_id": "AFR-STORY-000004",
+      "date": "2026-08-30",
+      "source": "AfriShield's own entity/GEO baseline measurement",
+      "evidence": [
+        "../../../GEO Citation plan/GEO-CITATION-MASTER-STRATEGY.md",
+        "~/.claude/projects/C--Users-hp-Documents-AFRISHIELD-02-Services-ai-seo/memory/project-entity-baseline-geo.md"
+      ],
+      "what_happened": "AfriShield tested whether AI search would name AfriShield itself as an AI SEO / GEO agency in West, Central, East and North Africa. Across 8 buyer-intent prompts plus a brand search, AfriShield surfaced 0 times.",
+      "people_involved": "AfriShield (own test); competitor agencies named only in private research",
+      "problem": "An AI visibility company that AI doesn't know about.",
+      "discovery": "South African agencies dominate the continental answer; a Kenyan agency already claims 'first in Africa'; nobody owns the answer in Central Africa / Cameroon; a Lagos agency's similar name creates entity confusion.",
+      "result": "A starting line of zero, a Central-Africa beachhead strategy, and two on-site GEO pages published the same day. No citation result has been measured yet.",
+      "lesson": "Measure before you market — and a baseline of zero is a story, not a secret.",
+      "proof_available": true,
+      "permission_status": "OWN_WORK",
+      "sensitivity": "MEDIUM",
+      "unverified_claims": [
+        "Measurement used a live web-search proxy because the geo-optimizer and DataForSEO tools failed to connect; re-run per engine before quoting per-engine numbers"
+      ],
+      "possible_topics": [
+        "we're invisible to AI too",
+        "build-in-public: getting AfriShield cited",
+        "Central Africa has no GEO incumbent"
+      ],
+      "possible_content_formats": [
+        "behind-the-scenes",
+        "failure",
+        "experiment",
+        "proof"
+      ],
+      "checks": [
+        {
+          "evidence": "../../../GEO Citation plan/GEO-CITATION-MASTER-STRATEGY.md",
+          "exists": true
+        },
+        {
+          "evidence": "~/.claude/projects/C--Users-hp-Documents-AFRISHIELD-02-Services-ai-seo/memory/project-entity-baseline-geo.md",
+          "exists": true
+        }
+      ],
+      "verification_status": "VERIFIED_FROM_SOURCE",
+      "uses": [],
+      "added_at": "2026-09-14T15:03:59.288Z"
+    },
+    {
+      "story_id": "AFR-STORY-000005",
+      "date": "2026-08-29",
+      "source": "AfriShield lead research on West African SMBs selling through TikTok",
+      "evidence": [
+        "../../TikTok-Lead-Gen-WestAfrica/TIKTOK_LEADS_TRACKER.csv",
+        "../../TikTok-Lead-Gen-WestAfrica/TIKTOK_PLAYBOOK.md"
+      ],
+      "what_happened": "Ben sourced 45 real estate, fintech and e-commerce businesses selling through TikTok in Cameroon, Nigeria, Côte d'Ivoire, Senegal and Guinea. 44 of the 45 had no website; many ran high-value sales through captions and hand-typed WhatsApp, often listing two or three phone numbers in one caption.",
+      "people_involved": "45 businesses (must stay anonymous — sector and country only)",
+      "problem": "Serious businesses with no owned web presence that AI or search could read.",
+      "discovery": "The storefront is a caption plus a WhatsApp number; multiple unrouted phone numbers is common.",
+      "result": "A lead tracker and playbook; fintech yielded few SMBs.",
+      "lesson": "For West African SMBs, 'get a website' is step zero of AI visibility, and unrouted phone numbers are a missed-call problem.",
+      "proof_available": true,
+      "permission_status": "ANONYMIZE_ONLY",
+      "sensitivity": "MEDIUM",
+      "unverified_claims": [],
+      "possible_topics": [
+        "44 of 45 had no website",
+        "TikTok as the whole storefront",
+        "why AI can't recommend a caption"
+      ],
+      "possible_content_formats": [
+        "proof",
+        "observation",
+        "opinion"
+      ],
+      "checks": [
+        {
+          "evidence": "../../TikTok-Lead-Gen-WestAfrica/TIKTOK_LEADS_TRACKER.csv",
+          "exists": true
+        },
+        {
+          "evidence": "../../TikTok-Lead-Gen-WestAfrica/TIKTOK_PLAYBOOK.md",
+          "exists": true
+        }
+      ],
+      "verification_status": "VERIFIED_FROM_SOURCE",
+      "uses": [],
+      "added_at": "2026-09-14T15:03:59.289Z"
+    },
+    {
+      "story_id": "AFR-STORY-000006",
+      "date": "2026-09-01",
+      "source": "AfriShield market dossier research process",
+      "evidence": [
+        "~/.claude/projects/C--Users-hp-Documents-AFRISHIELD-02-Services-ai-seo/memory/project-market-dossier.md",
+        "~/.claude/projects/C--Users-hp-Documents-AFRISHIELD-02-Services-ai-seo/memory/reference-apollo-connector.md"
+      ],
+      "what_happened": "While building a prospect dossier, the paid-data tool's free plan blocked people search, so AfriShield scraped company websites instead. One scraped 'team list' turned out to be fabricated, and was caught and discarded during verification.",
+      "people_involved": "AfriShield; the affected company must not be named",
+      "problem": "AI-assisted research can return confident, invented names.",
+      "discovery": "Every scraped person had to be checked against the public record; generic inboxes were the reliable output.",
+      "result": "23 verified company emails, 34 verified target companies; one fabricated list removed.",
+      "lesson": "Verify every name AI or a scraper gives you before you email a stranger.",
+      "proof_available": true,
+      "permission_status": "OWN_WORK",
+      "sensitivity": "MEDIUM",
+      "unverified_claims": [],
+      "possible_topics": [
+        "AI FAILS: the fake team list",
+        "how we verify AI research",
+        "prospecting in Africa without paid data"
+      ],
+      "possible_content_formats": [
+        "failure",
+        "lesson",
+        "behind-the-scenes"
+      ],
+      "checks": [
+        {
+          "evidence": "~/.claude/projects/C--Users-hp-Documents-AFRISHIELD-02-Services-ai-seo/memory/project-market-dossier.md",
+          "exists": true
+        },
+        {
+          "evidence": "~/.claude/projects/C--Users-hp-Documents-AFRISHIELD-02-Services-ai-seo/memory/reference-apollo-connector.md",
+          "exists": true
+        }
+      ],
+      "verification_status": "VERIFIED_FROM_SOURCE",
+      "uses": [],
+      "added_at": "2026-09-14T15:03:59.290Z"
+    },
+    {
+      "story_id": "AFR-STORY-000007",
+      "date": "2026-09-09",
+      "source": "Founder's published TikTok about building 'Eva', an AI WhatsApp receptionist",
+      "evidence": [
+        "data/performance/raw/metricool-tiktok-2026-09-14.json",
+        "https://www.tiktok.com/@enyongnjock723/video/7683446307687714069"
+      ],
+      "what_happened": "Ben published a build-in-public video about Eva, an AI WhatsApp assistant he built with Supabase, the WhatsApp API, Claude and Fapshi, which replies in French, English and Pidgin and books appointments.",
+      "people_involved": "Ben; a salon referred to in the caption (not named, permission not recorded)",
+      "problem": "Custom apps looked out of reach for a non-developer.",
+      "discovery": "Describing the system to an AI coding tool produced working code.",
+      "result": "118 views, 6 likes, 2 comments, 2 shares (Metricool, pulled 2026-09-14).",
+      "lesson": "A small business can own an AI receptionist stack without a development agency.",
+      "proof_available": true,
+      "permission_status": "OWN_WORK",
+      "sensitivity": "MEDIUM",
+      "unverified_claims": [
+        "'booking real salon clients right now' — confirm with a real booking record and the salon's permission before repeating",
+        "'a dev quoted me $20,000 two years ago' — founder to confirm"
+      ],
+      "possible_topics": [
+        "building an AI receptionist with no code",
+        "the Eva stack",
+        "Pidgin-speaking AI assistant"
+      ],
+      "possible_content_formats": [
+        "behind-the-scenes",
+        "tutorial",
+        "story"
+      ],
+      "checks": [
+        {
+          "evidence": "data/performance/raw/metricool-tiktok-2026-09-14.json",
+          "exists": true
+        },
+        {
+          "evidence": "https://www.tiktok.com/@enyongnjock723/video/7683446307687714069",
+          "exists": "url"
+        }
+      ],
+      "verification_status": "VERIFIED_FROM_SOURCE",
+      "uses": [],
+      "added_at": "2026-09-14T15:03:59.290Z"
+    },
+    {
+      "story_id": "AFR-STORY-000008",
+      "date": "2026-09-14",
+      "source": "Content Autopilot first gap analysis of AfriShield's own 180-day calendar",
+      "evidence": [
+        "reports/gap-analysis-2026-09-14.md"
+      ],
+      "what_happened": "Building the Content Autopilot, Ben ran its first audit on his own 180-day content calendar. It found calendar rows narrating events with no evidence behind them, 29 past-due days with nothing published against them while 6 posts went out off-plan, and Cameroon in only 4 of 195 items despite being the home market.",
+      "people_involved": "AfriShield (own work)",
+      "problem": "A plan written in one sitting drifts from reality and invents convenient stories.",
+      "discovery": "The calendar needed receipts, not more ideas.",
+      "result": "Flags on every unevidenced row and a rule: link a real story, perform it on camera, or label it hypothetical.",
+      "lesson": "Audit the plan against reality before adding to it.",
+      "proof_available": true,
+      "permission_status": "OWN_WORK",
+      "sensitivity": "LOW",
+      "unverified_claims": [],
+      "possible_topics": [
+        "I audited my own content calendar",
+        "why content plans invent stories",
+        "receipts over ideas"
+      ],
+      "possible_content_formats": [
+        "behind-the-scenes",
+        "failure",
+        "lesson"
+      ],
+      "checks": [
+        {
+          "evidence": "reports/gap-analysis-2026-09-14.md",
+          "exists": true
+        }
+      ],
+      "verification_status": "VERIFIED_FROM_SOURCE",
+      "uses": [],
+      "added_at": "2026-09-14T15:03:59.291Z"
+    },
+    {
+      "story_id": "AFR-STORY-000009",
+      "date": "2026-08-30",
+      "source": "AfriShield published two GEO pages to become citable",
+      "evidence": [
+        "../../../ai-seo/marketing-site/app/blog/top-geo-ai-seo-agencies-africa-2026",
+        "../../../ai-seo/marketing-site/app/blog/enterprise-geo-launch-africa"
+      ],
+      "what_happened": "After measuring zero AI citations, AfriShield published a comparative guide to GEO/AI-SEO agencies in Africa and an entity-dense launch announcement, both with structured data, as the first step of its own citation plan.",
+      "people_involved": "AfriShield (own work)",
+      "problem": "AI engines had no citable source describing AfriShield.",
+      "discovery": "Pending — the 48–72h indexation check and engine benchmark have not been run.",
+      "result": "Pages live; citation outcome not yet measured.",
+      "lesson": "Too early to call — this is an experiment in progress, and must be presented as one.",
+      "proof_available": true,
+      "permission_status": "OWN_WORK",
+      "sensitivity": "LOW",
+      "unverified_claims": [
+        "No citation result yet — do not imply it worked"
+      ],
+      "possible_topics": [
+        "30-day experiment: getting our own company cited",
+        "what a citable page looks like"
+      ],
+      "possible_content_formats": [
+        "experiment",
+        "tutorial",
+        "behind-the-scenes"
+      ],
+      "checks": [
+        {
+          "evidence": "../../../ai-seo/marketing-site/app/blog/top-geo-ai-seo-agencies-africa-2026",
+          "exists": true
+        },
+        {
+          "evidence": "../../../ai-seo/marketing-site/app/blog/enterprise-geo-launch-africa",
+          "exists": true
+        }
+      ],
+      "verification_status": "VERIFIED_FROM_SOURCE",
+      "uses": [],
+      "added_at": "2026-09-14T15:03:59.292Z"
+    },
+    {
+      "story_id": "AFR-STORY-000010",
+      "date": "2026-09-09",
+      "source": "AfriShield cold-email list verification",
+      "evidence": [
+        "~/.claude/projects/C--Users-hp-Documents-AFRISHIELD-02-Services-ai-seo/memory/reference-local-smtp-verification.md"
+      ],
+      "what_happened": "Ben verified a 500-lead cold-email list locally before paying for a verification service. 209 of 500 addresses were settled for free; a large share stayed unknown because the office internet connection's IP is on a spam blocklist that Microsoft 365 and Mimecast servers check.",
+      "people_involved": "AfriShield (own work); no leads identified",
+      "problem": "Paying to verify every address, and mistaking 'unknown' for 'invalid'.",
+      "discovery": "Unknown results on corporate mail servers were caused by the sender's IP reputation, not bad addresses.",
+      "result": "About 42% of the list verified with zero credits; paid credits spent only on the unknowns.",
+      "lesson": "Know why a tool says 'unknown' before you throw away a third of your leads.",
+      "proof_available": true,
+      "permission_status": "OWN_WORK",
+      "sensitivity": "LOW",
+      "unverified_claims": [],
+      "possible_topics": [
+        "verify leads before paying for tools",
+        "residential IP realities in Africa"
+      ],
+      "possible_content_formats": [
+        "lesson",
+        "behind-the-scenes",
+        "tutorial"
+      ],
+      "checks": [
+        {
+          "evidence": "~/.claude/projects/C--Users-hp-Documents-AFRISHIELD-02-Services-ai-seo/memory/reference-local-smtp-verification.md",
+          "exists": true
+        }
+      ],
+      "verification_status": "VERIFIED_FROM_SOURCE",
+      "uses": [],
+      "added_at": "2026-09-14T15:03:59.292Z"
+    },
+    {
+      "story_id": "AFR-STORY-000011",
+      "date": "UNKNOWN",
+      "source": "NJ's Accounting & Tax Services — live AI SEO deployment (client)",
+      "evidence": [
+        "../../../../03 Clients nj accounting tax"
+      ],
+      "what_happened": "AfriShield built and runs the AI website + SEO deployment for NJ's Accounting & Tax Services, the build that became the AI SEO product template.",
+      "people_involved": "NJ's Accounting & Tax Services (client)",
+      "problem": "UNKNOWN — founder to document the starting situation from the client file.",
+      "discovery": "UNKNOWN",
+      "result": "UNKNOWN — no outcome may be cited until documented with the client's data.",
+      "lesson": "UNKNOWN",
+      "proof_available": false,
+      "permission_status": "PENDING",
+      "sensitivity": "HIGH",
+      "unverified_claims": [
+        "Any result, metric or quote from this deployment"
+      ],
+      "possible_topics": [
+        "professional-services AI SEO case study (after permission)"
+      ],
+      "possible_content_formats": [
+        "case study"
+      ],
+      "checks": [
+        {
+          "evidence": "../../../../03 Clients nj accounting tax",
+          "exists": true
+        }
+      ],
+      "verification_status": "VERIFIED_FROM_SOURCE",
+      "uses": [],
+      "added_at": "2026-09-14T15:03:59.292Z"
+    }
+  ]
+}

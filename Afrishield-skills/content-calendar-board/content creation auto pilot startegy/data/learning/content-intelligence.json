@@ -1,0 +1,340 @@
+{
+  "generated_at": "2026-09-14T14:52:51.533Z",
+  "observations": 6,
+  "platforms": {
+    "tiktok": {
+      "posts": 6,
+      "scored": 6,
+      "overall_mean": 0.5,
+      "metrics_used": [
+        "reach",
+        "shares",
+        "comments"
+      ],
+      "top": [
+        {
+          "content_id": "AFR-CONTENT-000198",
+          "score": 0.856,
+          "views": 139,
+          "comments": 4,
+          "caption": "Is a website really necessary in 2026? White House restaurant in Douala shows why a strong"
+        },
+        {
+          "content_id": "AFR-CONTENT-000201",
+          "score": 0.598,
+          "views": 125,
+          "comments": 0,
+          "caption": "Discover #ai search #visibility engine making you discoverable in #search engines like #ch"
+        },
+        {
+          "content_id": "AFR-CONTENT-000196",
+          "score": 0.492,
+          "views": 118,
+          "comments": 2,
+          "caption": "I built an AI receptionist with zero coding experience — and she's booking real salon clie"
+        }
+      ],
+      "dimensions": {
+        "duration_bucket": {
+          "61–90s": {
+            "n": 1,
+            "mean_score": 0.492,
+            "lift_vs_overall": -0.008,
+            "avg_views": 118,
+            "avg_comments": 2,
+            "confidence": "anecdotal"
+          },
+          "8–29s": {
+            "n": 1,
+            "mean_score": 0.492,
+            "lift_vs_overall": -0.008,
+            "avg_views": 124,
+            "avg_comments": 0,
+            "confidence": "anecdotal"
+          },
+          ">90s": {
+            "n": 1,
+            "mean_score": 0.856,
+            "lift_vs_overall": 0.356,
+            "avg_views": 139,
+            "avg_comments": 4,
+            "confidence": "anecdotal"
+          },
+          "30–60s": {
+            "n": 3,
+            "mean_score": 0.386,
+            "lift_vs_overall": -0.114,
+            "avg_views": 117,
+            "avg_comments": 1,
+            "confidence": "emerging"
+          }
+        },
+        "weekday": {
+          "Wed": {
+            "n": 2,
+            "mean_score": 0.333,
+            "lift_vs_overall": -0.167,
+            "avg_views": 112,
+            "avg_comments": 1.5,
+            "confidence": "anecdotal"
+          },
+          "Sun": {
+            "n": 2,
+            "mean_score": 0.439,
+            "lift_vs_overall": -0.061,
+            "avg_views": 123,
+            "avg_comments": 1,
+            "confidence": "anecdotal"
+          },
+          "Sat": {
+            "n": 1,
+            "mean_score": 0.856,
+            "lift_vs_overall": 0.356,
+            "avg_views": 139,
+            "avg_comments": 4,
+            "confidence": "anecdotal"
+          },
+          "Fri": {
+            "n": 1,
+            "mean_score": 0.598,
+            "lift_vs_overall": 0.098,
+            "avg_views": 125,
+            "avg_comments": 0,
+            "confidence": "anecdotal"
+          }
+        },
+        "hour_bucket": {
+          "08:00": {
+            "n": 1,
+            "mean_score": 0.492,
+            "lift_vs_overall": -0.008,
+            "avg_views": 118,
+            "avg_comments": 2,
+            "confidence": "anecdotal"
+          },
+          "11:00": {
+            "n": 1,
+            "mean_score": 0.492,
+            "lift_vs_overall": -0.008,
+            "avg_views": 124,
+            "avg_comments": 0,
+            "confidence": "anecdotal"
+          },
+          "21:00": {
+            "n": 1,
+            "mean_score": 0.856,
+            "lift_vs_overall": 0.356,
+            "avg_views": 139,
+            "avg_comments": 4,
+            "confidence": "anecdotal"
+          },
+          "04:00": {
+            "n": 1,
+            "mean_score": 0.174,
+            "lift_vs_overall": -0.326,
+            "avg_views": 105,
+            "avg_comments": 1,
+            "confidence": "anecdotal"
+          },
+          "23:00": {
+            "n": 1,
+            "mean_score": 0.386,
+            "lift_vs_overall": -0.114,
+            "avg_views": 122,
+            "avg_comments": 2,
+            "confidence": "anecdotal"
+          },
+          "19:00": {
+            "n": 1,
+            "mean_score": 0.598,
+            "lift_vs_overall": 0.098,
+            "avg_views": 125,
+            "avg_comments": 0,
+            "confidence": "anecdotal"
+          }
+        },
+        "product_first_opener": {
+          "no": {
+            "n": 5,
+            "mean_score": 0.48,
+            "lift_vs_overall": -0.02,
+            "avg_views": 122,
+            "avg_comments": 1.8,
+            "confidence": "emerging"
+          },
+          "yes": {
+            "n": 1,
+            "mean_score": 0.598,
+            "lift_vs_overall": 0.098,
+            "avg_views": 125,
+            "avg_comments": 0,
+            "confidence": "anecdotal"
+          }
+        },
+        "inline_hashtags": {
+          "no": {
+            "n": 2,
+            "mean_score": 0.674,
+            "lift_vs_overall": 0.174,
+            "avg_views": 129,
+            "avg_comments": 3,
+            "confidence": "anecdotal"
+          },
+          "yes": {
+            "n": 4,
+            "mean_score": 0.413,
+            "lift_vs_overall": -0.087,
+            "avg_views": 119,
+            "avg_comments": 0.8,
+            "confidence": "emerging"
+          }
+        },
+        "story_signal": {
+          "yes": {
+            "n": 2,
+            "mean_score": 0.674,
+            "lift_vs_overall": 0.174,
+            "avg_views": 129,
+            "avg_comments": 3,
+            "confidence": "anecdotal"
+          },
+          "no": {
+            "n": 4,
+            "mean_score": 0.413,
+            "lift_vs_overall": -0.087,
+            "avg_views": 119,
+            "avg_comments": 0.8,
+            "confidence": "emerging"
+          }
+        }
+      }
+    }
+  },
+  "data_quality": {
+    "metrics_available": [
+      "reach",
+      "shares",
+      "comments"
+    ],
+    "metrics_missing": [
+      "retention",
+      "follows",
+      "saves",
+      "keyword_comments",
+      "dms",
+      "clicks",
+      "leads",
+      "conversions"
+    ]
+  },
+  "findings": [
+    {
+      "platform": "tiktok",
+      "dimension": "duration_bucket",
+      "value": "30–60s",
+      "lift": -0.114,
+      "n": 3,
+      "confidence": "emerging",
+      "statement": "tiktok: duration_bucket = 30–60s scores below average (lift -0.114, n=3)."
+    }
+  ],
+  "hypotheses": [
+    {
+      "platform": "tiktok",
+      "dimension": "duration_bucket",
+      "value": ">90s",
+      "lift": 0.356,
+      "n": 1,
+      "confidence": "anecdotal",
+      "statement": "tiktok: duration_bucket = >90s scores above average (lift 0.356, n=1)."
+    },
+    {
+      "platform": "tiktok",
+      "dimension": "weekday",
+      "value": "Wed",
+      "lift": -0.167,
+      "n": 2,
+      "confidence": "anecdotal",
+      "statement": "tiktok: weekday = Wed scores below average (lift -0.167, n=2)."
+    },
+    {
+      "platform": "tiktok",
+      "dimension": "weekday",
+      "value": "Sat",
+      "lift": 0.356,
+      "n": 1,
+      "confidence": "anecdotal",
+      "statement": "tiktok: weekday = Sat scores above average (lift 0.356, n=1)."
+    },
+    {
+      "platform": "tiktok",
+      "dimension": "hour_bucket",
+      "value": "21:00",
+      "lift": 0.356,
+      "n": 1,
+      "confidence": "anecdotal",
+      "statement": "tiktok: hour_bucket = 21:00 scores above average (lift 0.356, n=1)."
+    },
+    {
+      "platform": "tiktok",
+      "dimension": "hour_bucket",
+      "value": "04:00",
+      "lift": -0.326,
+      "n": 1,
+      "confidence": "anecdotal",
+      "statement": "tiktok: hour_bucket = 04:00 scores below average (lift -0.326, n=1)."
+    },
+    {
+      "platform": "tiktok",
+      "dimension": "hour_bucket",
+      "value": "23:00",
+      "lift": -0.114,
+      "n": 1,
+      "confidence": "anecdotal",
+      "statement": "tiktok: hour_bucket = 23:00 scores below average (lift -0.114, n=1)."
+    },
+    {
+      "platform": "tiktok",
+      "dimension": "inline_hashtags",
+      "value": "no",
+      "lift": 0.174,
+      "n": 2,
+      "confidence": "anecdotal",
+      "statement": "tiktok: inline_hashtags = no scores above average (lift 0.174, n=2)."
+    },
+    {
+      "platform": "tiktok",
+      "dimension": "story_signal",
+      "value": "yes",
+      "lift": 0.174,
+      "n": 2,
+      "confidence": "anecdotal",
+      "statement": "tiktok: story_signal = yes scores above average (lift 0.174, n=2)."
+    }
+  ],
+  "balance_adjustments": {},
+  "qualitative_observations": [
+    {
+      "source": "../deliverables/tiktok-analysis/obi2026-tiktok-hook-retention-analysis.md",
+      "observation": "Every product-first opener (Elodie, AfriShield, 'AI solutions') stayed in the ~100–150-view first FYP bucket.",
+      "confidence": "qualitative"
+    },
+    {
+      "source": "../deliverables/tiktok-analysis/obi2026-tiktok-hook-retention-analysis.md",
+      "observation": "The story-led White House Douala post drew the most comments of the batch.",
+      "confidence": "qualitative"
+    },
+    {
+      "source": "../deliverables/tiktok-analysis/obi2026-tiktok-hook-retention-analysis.md",
+      "observation": "Typos in on-screen text and inline hashtags inside caption sentences correlated with the weakest posts.",
+      "confidence": "qualitative"
+    }
+  ],
+  "rules_in_tension": [
+    {
+      "rule": "afrishield-tiktok-video-script: runtime 52–60s, never over 60s",
+      "data": "Posts over 60s: 61–90s n=1 mean 0.492, avg comments 2; >90s n=1 mean 0.856, avg comments 4. 30–60s: n=3 mean 0.386.",
+      "verdict": "Anecdotal — keep the rule, but A/B test one 75–90s story cut before treating 60s as a hard cap."
+    }
+  ]
+}

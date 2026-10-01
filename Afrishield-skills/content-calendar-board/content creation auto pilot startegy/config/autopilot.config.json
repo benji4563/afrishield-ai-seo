@@ -1,0 +1,188 @@
+{
+  "_doc": "AfriShield Content Autopilot configuration. Every tunable lives here — agents and engine scripts read this file, never hard-code these values. Paths are relative to the autopilot root (the folder containing /config).",
+  "version": 1,
+  "brand": {
+    "name": "AfriShield AI",
+    "website": "https://afrishieldai.com",
+    "tagline": "Be the Answer.",
+    "founder_on_camera": "Ben (Benjamin Njock / Enyong Njock)",
+    "timezone": "Africa/Douala"
+  },
+  "paths": {
+    "calendar_csv_dir": "../../Afrishield content startegy plan/180-day-calendar",
+    "calendar_csv_glob": "calendar-month-*.csv",
+    "freestyle_js": "../content-freestyle-data.js",
+    "content_db": "data/content-db.json",
+    "idea_bank": "data/idea-bank.json",
+    "story_bank": "data/story-bank.json",
+    "performance_dir": "data/performance",
+    "intelligence": "data/learning/content-intelligence.json",
+    "runs_dir": "data/runs",
+    "reports_dir": "reports",
+    "exports_dir": "exports",
+    "production_dir": "production",
+    "guides_dir": "guides",
+    "signal_editor": "signal-editor",
+    "tiktok_script_skill": "~/.claude/skills/afrishield-tiktok-video-script/SKILL.md",
+    "tiktok_retention_analysis": "../deliverables/tiktok-analysis/obi2026-tiktok-hook-retention-analysis.md"
+  },
+  "id": {
+    "prefix": "AFR-CONTENT-",
+    "pad": 6,
+    "story_prefix": "AFR-STORY-",
+    "idea_prefix": "AFR-IDEA-"
+  },
+  "statuses": ["IDEA", "SCORED", "APPROVED", "SCRIPTED", "RECORDED", "EDITING", "QA", "SCHEDULED", "PUBLISHED", "ANALYZED", "ARCHIVED"],
+  "status_transitions": {
+    "IDEA": ["SCORED", "ARCHIVED"],
+    "SCORED": ["APPROVED", "IDEA", "ARCHIVED"],
+    "APPROVED": ["SCRIPTED", "SCORED", "ARCHIVED"],
+    "SCRIPTED": ["RECORDED", "APPROVED", "ARCHIVED"],
+    "RECORDED": ["EDITING", "SCRIPTED", "ARCHIVED"],
+    "EDITING": ["QA", "RECORDED", "ARCHIVED"],
+    "QA": ["SCHEDULED", "EDITING", "ARCHIVED"],
+    "SCHEDULED": ["PUBLISHED", "QA", "ARCHIVED"],
+    "PUBLISHED": ["ANALYZED", "ARCHIVED"],
+    "ANALYZED": ["ARCHIVED"],
+    "ARCHIVED": ["IDEA"]
+  },
+  "legacy_status_map": {
+    "_doc": "How existing calendar 'Status' strings map onto the living-DB lifecycle. Existing calendar rows were planned and approved by the founder when the 180-day plan was written, so 'Not Started' = APPROVED (not yet scripted).",
+    "Not Started": "APPROVED",
+    "Scripted": "SCRIPTED",
+    "Recorded": "RECORDED",
+    "Editing": "EDITING",
+    "Scheduled": "SCHEDULED",
+    "Published": "PUBLISHED",
+    "Posted": "PUBLISHED",
+    "Done": "PUBLISHED"
+  },
+  "scoring": {
+    "dimensions": [
+      "business_relevance",
+      "audience_pain",
+      "curiosity",
+      "novelty",
+      "story_potential",
+      "educational_value",
+      "platform_potential",
+      "brand_alignment",
+      "proof_availability",
+      "cta_potential"
+    ],
+    "bands": [
+      { "min": 90, "label": "PRIORITY", "action": "propose for the next open calendar slot" },
+      { "min": 80, "label": "STRONG", "action": "propose for the calendar" },
+      { "min": 70, "label": "IDEA_BANK", "action": "keep in the idea bank; re-score when context changes" },
+      { "min": 0, "label": "REJECT_OR_REWORK", "action": "reject, or reframe and re-score" }
+    ],
+    "rescore_triggers": ["new_evidence", "news_event", "audience_interest_spike", "strategic_priority_change", "reframed_story"]
+  },
+  "dedupe": {
+    "_doc": "Similarity is a decision aid. >= duplicate → reject unless the idea declares a new_angle (research/proof/story/application). Between related and duplicate → human/LLM review with the reason.",
+    "duplicate_threshold": 0.62,
+    "related_threshold": 0.4,
+    "new_angle_types": ["NEW_INFORMATION", "NEW_ANGLE", "NEW_PROOF", "NEW_STORY", "NEW_APPLICATION"]
+  },
+  "balance": {
+    "_doc": "Targets come from 00-MASTER-BRIEF.md. They are the starting prior — performance learning adjusts them (see intelligence.balance_adjustments). Tolerance = how far (percentage points) a share may drift before it is flagged.",
+    "tolerance_pp": 5,
+    "pillar_targets": {
+      "AI Search / AI SEO": 20,
+      "GEO": 20,
+      "AI Agents / Voice Agents": 15,
+      "Virtual Executive Assistant": 10,
+      "DIY Tutorials": 15,
+      "Industry Stories / Case Studies": 15,
+      "AfriShield AI / Founder / Brand": 5
+    },
+    "industry_targets": {
+      "Tourism & Hospitality": 57,
+      "Professional Services": 25,
+      "Real Estate": 10,
+      "Beauty & Skincare": 5,
+      "Cross-Industry": 3
+    },
+    "max_consecutive_same_cta": 1,
+    "hook_opener_repeat_limit": 6
+  },
+  "production": {
+    "target_outputs_6_months": 1600,
+    "target_is_arithmetic_not_quota": true,
+    "platforms": ["tiktok", "instagram", "facebook", "linkedin", "youtube", "threads"],
+    "output_types": {
+      "_doc": "Every platform-native output the autopilot can produce from one core idea. Key = platform_versions key on the content object. per_week = default cadence used for volume arithmetic and planning (not a quota). Style rules live in guides/platform-guide.md.",
+      "tiktok": { "platform": "tiktok", "kind": "video", "aspect": "9:16", "size": [1080, 1920], "per_week": 3 },
+      "instagram_reel": { "platform": "instagram", "kind": "video", "aspect": "9:16", "size": [1080, 1920], "per_week": 5 },
+      "instagram_carousel": { "platform": "instagram", "kind": "carousel", "aspect": "4:5", "size": [1080, 1350], "slides": [6, 10], "per_week": 2 },
+      "instagram_story": { "platform": "instagram", "kind": "story", "aspect": "9:16", "size": [1080, 1920], "per_week": 7 },
+      "threads": { "platform": "threads", "kind": "text", "max_chars_per_post": 500, "thread_posts": [1, 6], "per_week": 5 },
+      "facebook_reel": { "platform": "facebook", "kind": "video", "aspect": "9:16", "size": [1080, 1920], "per_week": 5 },
+      "facebook_story": { "platform": "facebook", "kind": "story", "aspect": "9:16", "size": [1080, 1920], "per_week": 7 },
+      "linkedin": { "platform": "linkedin", "kind": "text", "max_chars": 3000, "hook_chars_before_fold": 210, "per_week": 4 },
+      "linkedin_carousel": { "platform": "linkedin", "kind": "document", "aspect": "4:5", "size": [1080, 1350], "slides": [7, 12], "per_week": 1 },
+      "youtube_short": { "platform": "youtube", "kind": "video", "aspect": "9:16", "size": [1080, 1920], "per_week": 5 },
+      "youtube_long": { "platform": "youtube", "kind": "video", "aspect": "16:9", "size": [1920, 1080], "per_week": 1 }
+    },
+    "counts_toward_target": ["tiktok", "instagram_reel", "instagram_carousel", "threads", "facebook_reel", "linkedin", "linkedin_carousel", "youtube_short", "youtube_long"],
+    "max_quality_posts_per_week_tiktok": 3,
+    "_tiktok_cadence_note": "The afrishield-tiktok-video-script standing rule caps TikTok at 3 posts/week at current follower count. The other platforms still receive daily adaptations. Revisit once TikTok passes 500 followers AND a post breaks wave 2."
+  },
+  "approval": {
+    "_doc": "Modes: USER_APPROVAL_REQUIRED (default) | WEEKLY_BATCH_APPROVAL | AUTONOMOUS_LOW_RISK. Autonomous mode is refused by the engine until autonomy_gate is satisfied.",
+    "mode": "USER_APPROVAL_REQUIRED",
+    "calendar_insertion": "USER_APPROVAL_REQUIRED",
+    "autonomy_gate": {
+      "min_published_with_clean_qa": 30,
+      "max_factuality_flags_last_30": 0,
+      "low_risk_formats": ["behind-the-scenes", "Q&A", "myth"],
+      "never_autonomous": ["case study", "proof", "news reaction", "any item naming a real third-party business"]
+    }
+  },
+  "scheduling": {
+    "_doc": "Initial windows are HYPOTHESES to test, not rules. Local times, Africa/Douala (WAT, UTC+1). East-Africa audiences (EAT) are +2h from these. Replace with the learned model once a bucket has >= min_samples_per_bucket posts.",
+    "min_samples_per_bucket": 4,
+    "exploration_share": 0.2,
+    "initial_test_windows": {
+      "tiktok": ["07:00", "12:30", "19:30"],
+      "instagram": ["08:00", "13:00", "20:00"],
+      "facebook": ["09:00", "13:00", "20:30"],
+      "linkedin": ["08:00", "12:00", "17:30"],
+      "youtube": ["12:00", "18:00"]
+    }
+  },
+  "analytics": {
+    "metricool_brand_id": "6770128",
+    "metricool_tiktok_fields": {
+      "published_at": "TKPO02",
+      "url": "TKPO03",
+      "description": "TKPO05",
+      "duration_s": "TKPO06",
+      "views": "TKPO07",
+      "likes": "TKPO08",
+      "comments": "TKPO09",
+      "shares": "TKPO10",
+      "reach": "TKPO11",
+      "full_watch_rate": "TKPO13",
+      "avg_watch_s": "TKPO15",
+      "for_you_share": "TKPO16",
+      "search_share": "TKPO21"
+    },
+    "objective_weights": {
+      "_doc": "Learning never optimizes views alone. Each objective scores content on the metrics that matter for it.",
+      "awareness": { "reach": 0.35, "retention": 0.35, "shares": 0.2, "follows": 0.1 },
+      "education": { "retention": 0.4, "saves": 0.35, "shares": 0.15, "comments": 0.1 },
+      "engagement": { "comments": 0.45, "shares": 0.25, "retention": 0.3 },
+      "lead_generation": { "keyword_comments": 0.3, "dms": 0.3, "clicks": 0.2, "leads": 0.2 },
+      "conversion": { "leads": 0.5, "conversions": 0.5 }
+    }
+  },
+  "quality": {
+    "tiktok_min_runtime_s": 30,
+    "tiktok_target_runtime_s": [52, 60],
+    "caption_words_per_burst": [2, 5],
+    "max_hashtags": 5,
+    "comment_cta_times_s": [3, 55],
+    "pattern_break_times_s": [8, 25]
+  }
+}

@@ -1,0 +1,15 @@
+{"at":"2026-09-14T14:52:49.200Z","command":"ingest","added":195,"unchanged":0,"updated":0,"source_status_changes":0,"missing_from_source":0,"files":[{"file":"calendar-month-1.csv","rows":30},{"file":"calendar-month-2.csv","rows":30},{"file":"calendar-month-3.csv","rows":30},{"file":"calendar-month-4.csv","rows":30},{"file":"calendar-month-5.csv","rows":30},{"file":"calendar-month-6.csv","rows":30},{"file":"content-freestyle-data.js","rows":15}]}
+{"at":"2026-09-14T14:52:50.914Z","command":"analytics:import-metricool","file":"C:\\Users\\hp\\Documents\\AFRISHIELD\\02 Services ai seo\\Afrishieldai SEO SALES AND MARKETING\\content-calendar-board\\content creation auto pilot startegy\\data\\performance\\raw\\metricool-tiktok-2026-09-14.json","created":6,"updated":0}
+{"at":"2026-09-14T14:52:51.786Z","command":"learn","observations":6,"findings":1,"hypotheses":8}
+{"at":"2026-09-14T14:52:55.485Z","command":"gaps","items":195,"gaps":19,"applied_flags":true}
+{"at":"2026-09-14T14:52:56.545Z","command":"export","rows":195}
+{"at":"2026-09-14T14:52:56.547Z","command":"prepare"}
+{"at":"2026-09-14T14:52:57.517Z","command":"ingest","added":0,"unchanged":195,"updated":0,"source_status_changes":0,"missing_from_source":0,"files":[{"file":"calendar-month-1.csv","rows":30},{"file":"calendar-month-2.csv","rows":30},{"file":"calendar-month-3.csv","rows":30},{"file":"calendar-month-4.csv","rows":30},{"file":"calendar-month-5.csv","rows":30},{"file":"calendar-month-6.csv","rows":30},{"file":"content-freestyle-data.js","rows":15}]}
+{"at":"2026-09-14T14:53:15.080Z","command":"ingest","added":0,"unchanged":195,"updated":0,"source_status_changes":0,"missing_from_source":0,"files":[{"file":"calendar-month-1.csv","rows":30},{"file":"calendar-month-2.csv","rows":30},{"file":"calendar-month-3.csv","rows":30},{"file":"calendar-month-4.csv","rows":30},{"file":"calendar-month-5.csv","rows":30},{"file":"calendar-month-6.csv","rows":30},{"file":"content-freestyle-data.js","rows":15}]}
+{"at":"2026-09-14T15:00:18.583Z","command":"gaps","items":195,"gaps":18,"applied_flags":true}
+{"at":"2026-09-14T15:03:59.326Z","command":"story:add","file":"data/inbox/seed-stories-2026-09-14.json","count":11}
+{"at":"2026-09-14T15:26:38.189Z","command":"ideas:check","file":"data/inbox/ideas-2026-09-14.json","checked":10,"decisions":["STRONG","STRONG","STRONG","STRONG","IDEA_BANK","IDEA_BANK","IDEA_BANK","IDEA_BANK","IDEA_BANK","IDEA_BANK"]}
+{"at":"2026-09-14T15:28:45.967Z","command":"ideas:check","file":"data/inbox/ideas-2026-09-14.json","checked":10,"decisions":["STRONG","STRONG","STRONG","STRONG","IDEA_BANK","IDEA_BANK","IDEA_BANK","IDEA_BANK","IDEA_BANK","IDEA_BANK"]}
+{"at":"2026-09-14T15:34:08.520Z","command":"ideas:check","file":"data/inbox/ideas-2026-09-14.json","checked":10,"decisions":["STRONG","STRONG","STRONG","STRONG","IDEA_BANK","IDEA_BANK","IDEA_BANK","IDEA_BANK","IDEA_BANK","IDEA_BANK"]}
+{"at":"2026-09-14T15:34:29.633Z","command":"ideas:propose","proposed":["AFR-CONTENT-000202","AFR-CONTENT-000203","AFR-CONTENT-000204","AFR-CONTENT-000205"]}
+{"at":"2026-09-14T15:50:23.272Z","command":"export","rows":199}
