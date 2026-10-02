@@ -91,6 +91,36 @@ Non-negotiables:
   industry, never in the ShortAnswer, H2 opener sentences, FAQ answers, or
   metadata.
 - **6 FAQ entries**, drawn from real "People also ask", 2–4 sentences each.
+- **FAQ answers are independently retrievable chunks too (board: Mike King,
+  2026-10-02).** `faqPageJsonLd` exposes each FAQ Q/A as its own citable passage,
+  separate from the `ShortAnswer`. For any post written under the 2026-09-24
+  African-market/geo-pivot rule (`content-queue.md`), every FAQ answer — not just
+  the ShortAnswer — must name the target market and, where a price or cost
+  comparison is discussed, the local currency. Confirmed failing on the first post
+  written under the pivot (`how-much-does-seo-cost-in-nigeria`): FAQ #3 ("is SEO
+  worth it compared to ads") answered with no "Nigeria" and no ₦, identical in
+  shape to the pre-pivot content the rule exists to stop. Add this to the
+  liftable-opener self-audit below: list every FAQ question *and* answer alongside
+  the H2 sweep, not separately.
+- **Geo-localized rows need a structurally distinct brief, not a reskinned parent
+  (board: Koray, 2026-10-02).** When the primary keyword is a city/country-
+  qualified variant of an already-published generic post (e.g. "X in Lagos" vs. a
+  live "X"), the differentiation-angle check above (title/description overlap in
+  `lib/posts.ts`) is insufficient — the titles legitimately differ while the body
+  can still be an 80%-identical reskin with the city name swapped in, which is
+  exactly the anti-pattern Koray's doctrine warns against for multi-location
+  content. Before drafting a geo-qualified row, identify at least 3 structural
+  elements that must come from the target market specifically and set the post's
+  organizing H2 sequence (not just decorate it) — e.g. real districts with
+  distinct search behaviour, a local addressing/administrative quirk, a local
+  contact-channel norm (WhatsApp), local pricing tied to a previously published
+  same-market post. Pull this detail from the site's own `lib/cities.ts` /
+  `lib/structured-data.ts` city data, not from the generic parent post. If the
+  drafted H2 sequence is a 1:1 reorder of the generic parent's sequence with only
+  the city name substituted, the draft fails this check and must be restructured
+  before registration. Passing example once published: `how-much-does-seo-cost-
+  in-nigeria`. Applies to every row in `content-queue.md`'s African-commercial
+  cluster (33–48), not just the next one taken.
 - **Liftable H2 openers (board: Mike King / retrieval).** The first sentence under
   every `<h2>` must answer that heading's implicit question outright, before any
   framing or warm-up — the same BLUF discipline the `ShortAnswer` uses, applied per
