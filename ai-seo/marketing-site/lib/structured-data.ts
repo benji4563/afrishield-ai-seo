@@ -19,6 +19,7 @@ export const organizationJsonLd = {
     { '@type': 'Country', name: 'Ghana' },
     { '@type': 'Country', name: 'Kenya' },
     { '@type': 'Country', name: 'South Africa' },
+    { '@type': 'Country', name: 'Cameroon' },
   ],
 };
 
