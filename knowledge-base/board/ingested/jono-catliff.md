@@ -10,6 +10,9 @@ transcript) / `shallow` (title+description fallback).
 | 2026-08-05 | 8VyHKDSyCCo | Claude Code Local Google Ads: Automate Everything ($730K Earned) | ingested | deep |
 | 2026-08-05 | LabRBZp2ODk | Claude Code WordPress SEO: Automate Everything ($500K+ Earned) | ingested | deep |
 | 2026-08-05 | 0f3KbpW8TBk | Anthropic Just Dropped Fable 5: Everything You Need To Know | ingested | deep |
+| 2026-09-30 | R3mx8XHX8ns | FULL CLAUDE CODE MASTERCLASS: Beginner To Expert In 2 Hours (2026) | ingested | deep |
+| 2026-09-30 | j1tcmbOHYZY | Claude Code Google Ads Audit: Fix Your Account In 1 Prompt (Steal This) | ingested | deep |
+| 2026-09-30 | _0wKlt1vHLY | Claude Code SEO Agent: Automate Everything ($500K+ Earned) | ingested | deep |
 
 Note: `8VyHKDSyCCo` and `LabRBZp2ODk` were first logged 2026-07-29 at `shallow`
 depth (both `ingested`); the 2026-08-05 run re-read them at `deep` depth with a

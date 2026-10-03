@@ -75,3 +75,26 @@ context · "Koraynese" (his precise, coined terminology).
   progressive: a domain earns "rankability" through accumulated click/engagement
   satisfaction over time rather than ranking outright from day one. —
   https://www.youtube.com/watch?v=WrU25krFCtk
+- **2026-09-30** — Frames ranking (and LLM citation) as a "cost of retrieval"
+  problem: once Google or an LLM already trusts one source to satisfy a topic
+  cheaply, it resists paying to find or trust a second one, so a page should
+  telegraph its purpose and answer with minimal friction as early as possible.
+  Details that GPT, Claude and Perplexity retrieve pages differently (GPT reads
+  shallow and favors the first-listed item plus recent dates in the URL; Claude
+  reads deeper and is less date-sensitive; Perplexity sits between the two) and
+  describes serving a distinct LLM-only markdown version per user-agent to match
+  each pattern, plus a launch trick of blocking Googlebot until roughly 80-90
+  pages exist so the resulting index gap versus Bing/social speeds up Google's
+  trust once it's unblocked. — https://www.youtube.com/watch?v=VLDa_RoczYI
+- **2026-09-30** — Argues LLM-era SEO increasingly means getting an entity
+  "assigned" to specific attributes inside an AI answer (e.g. "best design,"
+  "cheapest") via third-party mentions and declarations rather than your own
+  content alone — he seeds "best X for Y" pages, then tracks which sources LLMs
+  cite over about a week to find leverage points. Also describes a three-tier
+  off-page domain strategy for biasing AI answers (a main brand domain,
+  narrow-niche "extension" exact-match domains, and disposable "wasteful"
+  domains built solely to match a query phrase, often riding on aged pre-2019
+  news sites), and notes that publishing many pages with consistent phrasing
+  about an entity can shift Google's autocomplete/entity definitions, since
+  autocomplete draws partly on ranking-document title text rather than only
+  query logs. — https://www.youtube.com/watch?v=3ncQHJuQaDM
