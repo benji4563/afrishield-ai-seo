@@ -119,6 +119,17 @@ Non-negotiables:
   angle (e.g. make it the synthesis/decision layer that links out to the posts owning
   the granular detail) rather than re-deriving material that already exists elsewhere
   on the site.
+  - **Section-level check, not just page-level (board: 2026-08-21).** Two posts can
+    pass the `cardTitle`/`description` check — genuinely different angles at the
+    page level — and still duplicate each other inside a shared evergreen sub-topic
+    (e.g. "Google's three local-ranking factors: relevance, distance, prominence"
+    recurring across every GBP/Maps/local post). `how-to-appear-on-google-maps` and
+    `google-business-profile-optimization` did exactly this: different overall
+    angles, near-identical "three factors" section. Before publish, for any sub-topic
+    this post explains that is *evergreen and likely to recur* across the local/GBP/
+    Maps/schema cluster, grep sibling posts' H2 text for the same explainer. If one
+    already owns it, state the sub-topic in a sentence or two and link to the
+    sibling as the canonical source instead of re-deriving it in full.
 - **Skip-count escalation (board: Dan Martell, 2026-09-22).** If a `queued` row fails
   the differentiation-angle check, log the skip note as usual and move to the next
   `queued` row — but on the **third consecutive skip of the same row**, do not log a
