@@ -119,6 +119,16 @@ Non-negotiables:
   angle (e.g. make it the synthesis/decision layer that links out to the posts owning
   the granular detail) rather than re-deriving material that already exists elsewhere
   on the site.
+- **City-qualified keyword grounding (board: Koray, 2026-10-06).** For any keyword
+  that localises a generic topic to a specific city (e.g. "how to appear on google
+  maps **in lagos**" against the already-published generic
+  `how-to-appear-on-google-maps`), the cardTitle/description duplication scan above
+  is not enough on its own — a straight "same post + city name" reskin is exactly the
+  swapped-city-name dilution Koray's wiki warns against. Before drafting, read the
+  matching entry in `lib/cities.ts` (districts, local search behaviour, sectors) and
+  weave at least two of its genuinely distinguishing details into non-swappable H2
+  content (a named district, a local traffic/search-behaviour pattern, a real local
+  pain point the generic post never covers) — not invented local colour.
 - **Skip-count escalation (board: Dan Martell, 2026-09-22).** If a `queued` row fails
   the differentiation-angle check, log the skip note as usual and move to the next
   `queued` row — but on the **third consecutive skip of the same row**, do not log a
