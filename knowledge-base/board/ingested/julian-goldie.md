@@ -12,6 +12,9 @@ transcript) / `shallow` (title+description fallback).
 | 2026-08-05 | rTSHFy9Lwlg | How I Ranked #1 in 7 Hours with Qwen 3.8 Max (FREE!) | ingested | shallow |
 | 2026-08-05 | ut_PeUbmk4c | This NEW Agent Operating System is INSANE! | ingested | shallow |
 | 2026-08-05 | PYbBddbflRo | Qwen 3.8 Max is NOW COMPLETELY FREE! Here's How.. | ingested | shallow |
+| 2026-10-07 | LTn2FB-m_5M | New Antigravity Updates Are ABSURD! | ingested | deep |
+| 2026-10-07 | AAF1WPuxhCg | Google's AI Voice Update Just Changes Everything! | skipped-off-niche | deep |
+| 2026-10-07 | YylX3w9QyIA | Gemini Live Just Got CRAZY Powerful | skipped-off-niche | deep |
 
 Note: depth is `shallow` for all entries — the environment's network policy
 blocks direct access to youtube.com (yt-dlp/direct curl get a 403 at the
@@ -21,3 +24,13 @@ via Firecrawl, which reaches YouTube through separate infrastructure). This
 channel posts several times a day; only the 3 newest were reviewed per run
 per the per-advisor cap. No videoId overlap between the 2026-07-29 and
 2026-08-05 runs.
+
+Note (2026-10-07): full transcripts were obtainable this run via Firecrawl's
+YouTube postprocessor (direct youtube.com/yt-dlp access remains blocked by
+this environment's egress policy). This channel posts many times a day on
+generic AI-model news; of the 3 newest, only the Anti-Gravity agent-OS update
+had a genuine automation/agency angle (plan-mode review gates, sub-agent
+messaging). The Google Keep voice-notes and Gemini camera-guidance videos are
+consumer productivity/accessibility features with no SEO/GEO/agency-scaling
+hook beyond generic "AI Profit Boardroom" plugs — judged off-niche. No
+videoId overlap with prior runs.

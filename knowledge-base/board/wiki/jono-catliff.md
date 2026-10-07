@@ -66,3 +66,25 @@ clicks/month as the scoreboard.
   to review agent-made changes/logs rather than trust unattended agent runs
   blindly, relevant to any agency running Claude Code against live client
   sites/accounts. — https://www.youtube.com/watch?v=0f3KbpW8TBk
+- **2026-10-07** — His free "local SEO agent" Claude Code skill now pulls real
+  Semrush search-volume data to algorithmically rank-order which GBP category,
+  services, and service-area cities to target — replacing guesswork with
+  actual local demand data before any page gets built — and layers in
+  auto-publishing a month of GBP posts plus Make.com auto-replies to 4-5★
+  reviews on top of the review-funnel pattern already logged above. Also
+  chains blog-post output straight into LinkedIn/X posts via a social-posting
+  tool (Blotato), closing the loop from local content to social distribution
+  in one pipeline. — https://www.youtube.com/watch?v=vwzV-YsVswA
+- **2026-10-07** — Ships a single `/audit` Claude Code skill running 200+
+  automated checks across a Google Ads account (account, campaigns/ad groups,
+  ads, landing pages, keywords) that both reports and auto-fixes findings on
+  approval — concrete recurring money-leaks it catches: Google Maps ads not
+  configured despite ~8.4x the clicks of regular search ads, phone calls never
+  wired to conversion tracking, Google's own "optimization score" nudging
+  toward recommendations that increase Google's revenue more than the
+  advertiser's, a non-obvious location-targeting default ("presence or
+  interest" vs. "presence") that bills clicks from other countries, and
+  broad-match keywords quietly paying for services the business doesn't even
+  offer. Extends the existing Google-Ads-automation entry above with a
+  dedicated audit/fix workflow rather than a campaign-build one. —
+  https://www.youtube.com/watch?v=j1tcmbOHYZY

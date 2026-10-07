@@ -12,6 +12,9 @@ transcript) / `shallow` (title+description fallback).
 | 2026-08-05 | UvDgL8ShgXs | You're only 6 months away from changing your entire life | skipped-off-niche | deep |
 | 2026-08-05 | xj5gZq159lM | If I Wanted to Make My First $100K/Month, I'd Do This | ingested | deep |
 | 2026-08-05 | Bm84BAtOfQw | You're Not Behind (Yet): How to Build Your First AI Agent (Full Guide) | ingested | deep |
+| 2026-10-07 | wtaRjOFqdyU | How to Make AI Sound EXACTLY Like you | ingested | deep |
+| 2026-10-07 | aPSbZbOzB4s | These Are the Best AI Tools in 2026 | ingested | deep |
+| 2026-10-07 | 4_urJ17Rx8s | Give me 57 sec... I'll DELETE your need for perfection | skipped-off-niche | shallow |
 
 Note (2026-07-29, shallow pass): the environment's network policy blocked
 direct access to youtube.com, so no auto-transcript could be fetched;
@@ -24,3 +27,11 @@ the title repeated back with no extractable detail — no wiki update that run.
 Note (2026-08-05, deep pass): full transcripts were available this run. The 3
 newest uploads had moved on from the prior run's short-form clips to
 longer-form business/AI-leverage content — first wiki update logged this run.
+
+Note (2026-10-07): full transcripts were obtained for the two longer uploads
+via Firecrawl's YouTube postprocessor (direct youtube.com access is still
+blocked by this environment's egress policy — yt-dlp confirmed a 403 at the
+proxy — but Firecrawl fetches server-side). `4_urJ17Rx8s` is a 57-second Short
+whose content is pure personal-perfectionism motivational copy with no
+AI/SEO/business angle — off-niche per the routine's own filter, and no
+transcript body rendered for it (title+description judged sufficient).

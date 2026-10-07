@@ -59,3 +59,12 @@ links · topical relevance of links.
   in content/site generation. Worth watching for cost impact on our generation
   pipeline, but needs independent verification before changing our model stack. —
   https://www.youtube.com/watch?v=PYbBddbflRo
+- **2026-10-07** — Google's Anti-Gravity 2.0 agent-coding tool added a "/plan"
+  review gate — the agent writes and shows its step-by-step plan before
+  touching anything, with a per-task choice of always-review, auto-review, or
+  skip-review — a direct, external answer to the "agent ran off and did the
+  wrong thing for 10 minutes" failure mode. Also added direct @-addressed
+  messaging to individual sub-agents (bypassing a lossy main-agent relay) and
+  fully offline local-model execution via its SDK — both relevant patterns for
+  any Claude-Code-style agent workflow we run for clients. —
+  https://www.youtube.com/watch?v=LTn2FB-m_5M

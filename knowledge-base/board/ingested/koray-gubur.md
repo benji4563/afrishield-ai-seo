@@ -11,6 +11,8 @@ transcript) / `shallow` (title+description fallback).
 | 2026-08-05 | mD51uM8v_bw | Topical Authority and Semantic SEO for Local Rankings (Law and Beyond) | ingested | shallow |
 | 2026-08-05 | AlHiLfYah74 | How to Rank in AI Search with Semantic SEO and Topical Authority (Navneet interview) | skipped-nothing-new | shallow |
 | 2026-08-05 | WrU25krFCtk | Topical Authority with 1 Page Exact Match Domain: 8,000 Clicks a Day - Learn Visual Semantics | ingested | deep |
+| 2026-10-07 | VLDa_RoczYI | Topical Authority and Answer Engine Optimization: How LLMs Actually Retrieve Content | ingested | deep |
+| 2026-10-07 | 3ncQHJuQaDM | Semantic SEO and Topical Authority for Large Language Models (LLMs) - Koray GUBUR and Jabez Ruben | ingested | deep |
 
 Note: `Mq0umjlnnUM` is already listed as a source in `wiki/koray-gubur.md` from
 an earlier (pre-ledger) seeding pass — logged here now so it isn't re-flagged
@@ -27,3 +29,13 @@ Note (unresolved disagreement, not deduped): `AlHiLfYah74` was judged
 other. Both rows are kept as-is; the 2026-07-29 verdict is what the existing
 wiki entry for this video reflects. A future `deep` pass on this video would
 be the tiebreaker.
+
+Note (2026-10-07): this channel uploads infrequently, so only 2 videos were
+genuinely new since the 2026-08-05 run (`VLDa_RoczYI` at ~1mo old,
+`3ncQHJuQaDM` at ~3mo old) — both were deep-analyzed, under the per-run cap of
+3. The channel listing's remaining videos are all ~1y+ old and were part of
+the original pre-ledger wiki seeding, not new uploads, so they were not
+re-flagged as new this run. `3ncQHJuQaDM`'s content (domain-manipulation /
+LLM-consensus-gaming tactics) was judged on-niche but grey/black-hat — logged
+as competitive intelligence with an explicit caveat in the wiki rather than
+as an endorsed tactic.

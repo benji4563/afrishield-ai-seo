@@ -9,6 +9,9 @@ transcript) / `shallow` (title+description fallback).
 | 2026-08-05 | RwEs5VdH_ZQ | It's Boring, But THIS YouTube Funnel Can Triple Your Business | ingested | deep |
 | 2026-08-05 | HsLLTvosGJw | Big YouTubers Are Down 50% and It's Your Best Chance to Start | ingested | deep |
 | 2026-08-05 | yuVlHAKbnMQ | Claude Just Changed Making YouTube Videos Again (7 Use Cases) | ingested | deep |
+| 2026-10-07 | auN5ZjQLs6w | If you still have a job, start a YouTube channel before 2027 | ingested | deep |
+| 2026-10-07 | bjIL9qoRHds | The NEW Way to Make YouTube Videos FAST (Start to Finish) | ingested | deep |
+| 2026-10-07 | VXGDHZIGf40 | Your Website Won't Matter in 2027. Prepare Now. | ingested | deep |
 
 Note (dedup, 2026-08-05 run): all three videoIds above were first logged
 2026-07-29 at `shallow` depth (`RwEs5VdH_ZQ` and `HsLLTvosGJw` as `ingested`;
@@ -17,3 +20,10 @@ at `deep` depth with full transcripts and found materially more — including
 real substance in `yuVlHAKbnMQ` that the shallow title/description pass
 missed — so the deep entries above are what's kept; the shallow duplicates
 were dropped.
+
+Note (2026-10-07): all 3 newest uploads were genuinely new (no overlap with
+prior runs) and full transcripts were obtained via Firecrawl's YouTube
+postprocessor. `VXGDHZIGf40` is flagged as particularly relevant to
+AfriShield's own business model, not just client tactics — it documents
+YouTube overtaking Reddit as the top-cited AI Overview source and argues a
+business website's role is shrinking to the final conversion step.

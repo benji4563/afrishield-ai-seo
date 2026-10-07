@@ -87,3 +87,24 @@ synthesis-first discovery.
   based on real user behavior (bounce/dwell time) — so generic AI-written pages
   with poor UX get demoted regardless of how they were produced. —
   https://www.youtube.com/watch?v=dTHuLMWDFWo
+- **2026-10-07** — An analytics-focused SEO Week guest flags that a growing
+  share of "direct" traffic in GA4 is actually non-agentic scraper bots (not
+  retrieval/agent bots) harvesting site content to train third-party LLMs —
+  visible as session-source-medium "not set" plus near-zero time-on-site,
+  originating heavily from Singapore/China since October 2025 with no platform
+  fix yet — meaning AI-era analytics needs active, repeated bot-filtering or
+  every engagement metric silently skews optimistic. Also reinforces
+  (independently of our own GEO stance) that LLM-attributed traffic is still a
+  small slice even for AI-forward clients (cited ceiling ~12% for one client),
+  and that the real craft now is proving a channel's downstream contribution
+  to the whole user journey, not raw channel attribution. —
+  https://www.youtube.com/watch?v=578yMDdaGEA
+- **2026-10-07** — Argues a brand's visibility inside an LLM's *training data
+  itself* (distinct from live RAG/retrieval grounding) is becoming an
+  independent ranking multiplier — when a query doesn't trigger a live web
+  search, the model answers straight from memorized training data, so being
+  well-represented in Common Crawl (the dataset nearly every major LLM trains
+  on) gives a persistent advantage unrelated to a page's current retrieval
+  score. Notes some major publishers now block the CommonCrawl bot outright,
+  which is itself a visibility lever worth checking for client sites. —
+  https://www.youtube.com/watch?v=VBH9Od_OL1Q
