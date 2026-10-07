@@ -62,3 +62,23 @@ work on it vs. in it · leverage.
   models for high-volume simple sorting, top-tier reserved for orchestration) to cut
   agent operating cost roughly 100x on routine work. —
   https://www.youtube.com/watch?v=Bm84BAtOfQw
+- **2026-10-07** — Builds an AI "voice" pipeline from two documents: a "Brain
+  System" (built by feeding the AI years of recorded meetings/emails/Slack/past
+  content, then having it interview him across 4 rounds to fill gaps) that
+  captures how he thinks, and a separate "Voice Style Guide" (built by having AI
+  analyze his last 20 emails, 20 Slack messages, and 20 documents *per medium
+  separately* — sentence length, banned words, open/close patterns) that
+  captures how he writes. Cites rising consumer distrust of AI-sounding content
+  (self-reported dislike up from 20% to 40% in a year, 54% among Gen Z) as the
+  business case for de-slopping AI output rather than avoiding AI. —
+  https://www.youtube.com/watch?v=wtaRjOFqdyU
+- **2026-10-07** — Routes a computer-use agent ("ChatGPT Astra," which operates
+  the whole OS, not just a chat window) as the coordinating "chief of staff"
+  that hands specialist work to a multi-agent platform (each bot gets its own
+  virtual computer, is spun up via a plain-English role description, and can be
+  taught a new task by recording a screen demo) — explicitly to avoid vendor
+  lock-in as frontier models leapfrog monthly. The fix for switching-cost pain
+  is a centralized "second brain" (his own product) holding all
+  meetings/chats/decisions once, wired into whichever model is current, so a
+  tool switch never means re-teaching the AI from scratch. —
+  https://www.youtube.com/watch?v=aPSbZbOzB4s

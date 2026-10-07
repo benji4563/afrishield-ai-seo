@@ -65,3 +65,35 @@ message-first design · social proof · local SEO tier list.
   and proven hooks as house style, and use it to auto-generate on-brand b-roll
   graphics and a lead-magnet PDF straight from a finished script. —
   https://www.youtube.com/watch?v=yuVlHAKbnMQ
+- **2026-10-07** — Lays out four monetization tiers for an expert's YouTube
+  side-channel, cheapest-to-build first: a one-time low-ticket product, a
+  recurring membership/community, 1:1 coaching, and — the newest tier — a
+  personal "AI tool" built by voice-dumping your domain rules once, which then
+  answers a visitor's specific situation in your own reasoning/voice without
+  you being in the room. Also flags a concrete tax angle (the "Augusta rule":
+  renting your own home to your own content business as a filming location a
+  few weeks a year) as a reason a views-light first year still pays for
+  itself. — https://www.youtube.com/watch?v=auN5ZjQLs6w
+- **2026-10-07** — Demonstrates a 5-day, 1-hour-a-day video production system:
+  Monday pairs a YouTube-data tool with an AI model (the tool pulls
+  search/competitor numbers, the model reasons on them) to pick an
+  already-searched topic and generate thumbnail concepts; Tuesday feeds the
+  topic into an AI audio-overview tool with an explicit prompt to surface
+  "what nobody else is saying" as the differentiation angle; Wednesday
+  voice-dictates a brain dump into a persistent AI project (pre-loaded with
+  house style) that interviews the creator until a unique angle emerges, then
+  drafts the script; Friday extracts a one-time brand design system from an
+  existing site and auto-generates matched animated graphics from the script,
+  leaving only basic cutting for a cheap outsourced editor. —
+  https://www.youtube.com/watch?v=bjIL9qoRHds
+- **2026-10-07** — Documents that YouTube has overtaken Reddit as the single
+  most-cited source inside Google's AI Overviews (~30% of AI answers cite a
+  YouTube video) and, per a SimilarWeb tracking study, is the #1 destination
+  people land on after clicking out of an AI chatbot (more than Facebook +
+  Wikipedia + Reddit combined, ~75% of that referral traffic from ChatGPT) —
+  his read is that AI engines trust YouTube because, unlike a self-published
+  website, no single business can fully game it. Argues this demotes a
+  website's job to just the final conversion step (booking link/contact form)
+  once trust is already built on video — directly relevant to us as a company
+  that sells website builds as part of the AI SEO product. —
+  https://www.youtube.com/watch?v=VXGDHZIGf40

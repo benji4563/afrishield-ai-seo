@@ -75,3 +75,25 @@ context · "Koraynese" (his precise, coined terminology).
   progressive: a domain earns "rankability" through accumulated click/engagement
   satisfaction over time rather than ranking outright from day one. —
   https://www.youtube.com/watch?v=WrU25krFCtk
+- **2026-10-07** — Reframes ranking/retrieval economics as a "cost of
+  retrieval" problem: Google and LLMs must minimize what it costs them to
+  crawl, trust, and serve an answer, so content that explains itself with
+  minimal hints as early as possible can beat "better" content that's more
+  expensive to verify — a page with zero clicks won't even get expensive
+  re-ranking algorithms run against it. Documents that major LLMs retrieve
+  differently enough (GPT weights recent dates/first-listed items heavily,
+  Claude reads further into a document, Perplexity sits between) to justify
+  serving different machine-readable markdown per LLM crawler — not cloaking,
+  since that markdown isn't Google-indexed. —
+  https://www.youtube.com/watch?v=VLDa_RoczYI
+- **2026-10-07** — Describes a three-tier domain strategy some practitioners
+  use to influence LLM answers — a main site, "extension" exact-match domains
+  that penetrate one query cluster, and disposable "wasteful" domains
+  (including aged pre-2019 news sites) whose only job is seeding a phrase into
+  the open web so an LLM's consensus-building picks it up — plus Reddit/Quora
+  karma farming and PBN-style third-party mentions via proxy/multi-account
+  tooling to manufacture "declarations" about a brand. Logging this as
+  grey/black-hat competitive intelligence, not a recommended AfriShield
+  tactic — useful for recognizing manipulated consensus in a niche, not for
+  replicating; any adoption would need full board reconciliation first. —
+  https://www.youtube.com/watch?v=3ncQHJuQaDM
