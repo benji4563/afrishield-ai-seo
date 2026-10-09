@@ -59,3 +59,18 @@ Wikis are seeded from verified public sources (channels, talks, articles) and ou
 own synthesis. Depth grows over time via the learn-in-the-repo protocol. The
 general-SEO seat is filled by Jono Catliff (automation/local); a separate
 Brand & Editorial and Risk/Compliance lens can be added as internal agents.
+
+**Known gap (business-lens review, 2026-10-09): no doer agent exists.** The board
+is advisory by design (see top of this file) and hands its execution to-do list to
+"the doer/execution agent" per `ask-the-board/SKILL.md` step 4 — but no skill,
+routine, or scheduled agent in this repo actually consumes that hand-off. The
+2026-09-29 review's to-do list went completely unexecuted for a full cycle as a
+direct result. This is a founder-level decision, not something a review run should
+self-authorize: either (a) collapse "write the to-do" and "ship the fix" into one
+routine, (b) stand up a separate, explicitly scheduled doer/builder agent that runs
+immediately after every board review and is graded by the next one, or (c) accept
+that the board stays pure-advisory and have a human pull from the report manually
+on a known cadence. Until Ben decides, each board-review run should keep shipping
+whatever small, mechanically-verifiable fixes it safely can itself (per the
+`ask-the-board` skill note), and should track carry-over counts rather than let
+the gap repeat silently.

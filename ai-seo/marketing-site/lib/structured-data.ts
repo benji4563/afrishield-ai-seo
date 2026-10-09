@@ -5,6 +5,7 @@ const abs = (path: string) => `${SITE_URL}${path.startsWith('/') ? path : `/${pa
 export const organizationJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
+  '@id': abs('/#organization'),
   name: SITE.name,
   legalName: SITE.legalName,
   url: SITE_URL,
@@ -82,7 +83,7 @@ export const servicesJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   serviceType: 'AI SEO',
-  provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+  provider: { '@id': abs('/#organization') },
   areaServed: [
     { '@type': 'Place', name: 'Africa' },
     ...SERVED_CITIES.map((city) => ({ '@type': 'City', name: city.name })),
@@ -96,7 +97,7 @@ export const tourismHospitalityServiceJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   serviceType: 'Hospitality SEO services',
-  provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+  provider: { '@id': abs('/#organization') },
   areaServed: [
     { '@type': 'Place', name: 'Africa' },
     ...SERVED_CITIES.map((city) => ({ '@type': 'City', name: city.name })),
@@ -110,7 +111,7 @@ export const safariOperatorsServiceJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   serviceType: 'SEO for safari operators',
-  provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+  provider: { '@id': abs('/#organization') },
   areaServed: [
     { '@type': 'Place', name: 'Africa' },
     { '@type': 'Country', name: 'Kenya' },
@@ -128,7 +129,7 @@ export const lodgesHotelsServiceJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   serviceType: 'SEO for lodges and hotels',
-  provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+  provider: { '@id': abs('/#organization') },
   areaServed: [
     { '@type': 'Place', name: 'Africa' },
     ...SERVED_CITIES.map((city) => ({ '@type': 'City', name: city.name })),
@@ -142,7 +143,7 @@ export const geoServicesJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   serviceType: 'Generative engine optimization',
-  provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+  provider: { '@id': abs('/#organization') },
   areaServed: [
     { '@type': 'Place', name: 'Africa' },
     ...SERVED_CITIES.map((city) => ({ '@type': 'City', name: city.name })),
@@ -151,13 +152,19 @@ export const geoServicesJsonLd = {
     'Generative engine optimization services — AI-crawler allowlists, answer-first content blocks, a structured-data engine, Ask-AI prompts, and a monthly AI-citation benchmark across ChatGPT, Claude, Perplexity, and Gemini.',
 };
 
-/** Founder, for the About page. */
+/**
+ * Founder, for the About page. `@id`-bearing so other pages (e.g. a blog post
+ * crediting the founder) can reference this node by `@id` instead of
+ * redeclaring a second, thinner `Person` stub — board review 2026-09-29 found
+ * `enterprise-geo-launch-africa` doing exactly that.
+ */
 export const founderJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
+  '@id': abs('/about#founder'),
   name: 'Benjamin Njock',
   jobTitle: 'Founder, AfriShield AI',
-  worksFor: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+  worksFor: { '@id': abs('/#organization') },
   description:
     'Insurance executive with over 18 years of corporate experience and co-founder of Tataachi Network Insurance and Optimere, operating across 40+ African countries.',
   knowsAbout: ['Insurance', 'African financial services', 'AI adoption', 'Search visibility'],
@@ -170,7 +177,7 @@ export function aboutPageJsonLd() {
     name: `About ${SITE.name}`,
     url: abs('/about'),
     mainEntity: founderJsonLd,
-    publisher: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+    publisher: { '@id': abs('/#organization') },
   };
 }
 
@@ -218,8 +225,8 @@ export function blogPostingJsonLd(post: {
     datePublished: post.published,
     dateModified: post.modified ?? post.published,
     ...(post.image ? { image: abs(post.image.src) } : {}),
-    author: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
-    publisher: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+    author: { '@id': abs('/#organization') },
+    publisher: { '@id': abs('/#organization') },
   };
 }
 
@@ -246,7 +253,7 @@ export const blogIndexJsonLd = {
   name: `${SITE.name} — Blog`,
   url: abs('/blog'),
   description: 'Plain-English writing on search visibility, content, and what it actually costs.',
-  publisher: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+  publisher: { '@id': abs('/#organization') },
 };
 
 /**
