@@ -164,18 +164,30 @@ listed its three launch capabilities as plain `<li>` prose with no matching
 `Service` entities.
 
 **One canonical `Organization` node, referenced not redeclared (board: Mike King,
-2026-09-29).** The sitewide `organizationJsonLd` (`lib/structured-data.ts`, injected
-via the root layout on every page) is the single canonical Organization entity —
-give it a stable `@id` (`${SITE_URL}/#organization`). Any page that needs to add
-attributes the sitewide node lacks (e.g. a launch post adding `address`/`knowsAbout`)
-must extend that same object or reference it by `@id`, never declare a second,
-divergent `Organization` node with its own `@id`. Same rule for the founder `Person`
-entity — reference the canonical `founderJsonLd` (used on `/about`) by `@id` rather
-than restating a bare `{ name: ... }` stub. Two un-merged nodes for the same real-
-world entity is the opposite of the disambiguation this SOP exists to build; found
-on `enterprise-geo-launch-africa` (own `Organization` node, own `@id`, divergent
-shape from the sitewide one; a bare-stub founder `Person` with no link to
-`founderJsonLd`).
+2026-09-29; shipped in code 2026-10-09).** The sitewide `organizationJsonLd`
+(`lib/structured-data.ts`, injected via the root layout on every page) is the single
+canonical Organization entity and now carries a stable `@id`
+(`${SITE_URL}/#organization`). The founder `Person` entity (`founderJsonLd`, used on
+`/about`) now carries its own stable `@id` (`${SITE_URL}/about#founder`) for the same
+reason. Every helper in `lib/structured-data.ts` that previously redeclared a bare
+`{ '@type': 'Organization', name, url }`/`{ '@type': 'Person', name }` stub
+(`founderJsonLd.worksFor`, `blogPostingJsonLd`'s `author`/`publisher`,
+`blogIndexJsonLd.publisher`, `aboutPageJsonLd.publisher`, and every `*ServiceJsonLd`
+helper's `provider`) now references the canonical node by `{ '@id': ... }` instead.
+Any page that needs to add attributes the sitewide node lacks (e.g. a launch post
+adding `address`/`knowsAbout`) must extend that same object or reference it by `@id`,
+never declare a second, divergent `Organization`/`Person` node with its own `@id` or
+no `@id` at all. Two un-merged nodes for the same real-world entity is the opposite
+of the disambiguation this SOP exists to build; found on `enterprise-geo-launch-africa`
+(own `Organization` node, own `@id`, divergent shape from the sitewide one; a
+bare-stub founder `Person` with no link to `founderJsonLd`) and, independently, on
+`/about` itself at the 2026-10-09 review (`founderJsonLd`/`organizationJsonLd` had
+no `@id` to reference in the first place, making the rule above unimplementable
+until this fix). **Verification, not trust:** before marking an `@id`/entity-reference
+fix `[Applied]`, `grep -n "'@id'" lib/structured-data.ts` and confirm the specific
+node changed, per the B.7 rule below — this exact paragraph was written once on
+2026-09-29 and sat unimplemented for 11 days and two further page reviews before
+anyone grepped the file to check.
 
 **Cross-link the core money pages in body copy (board: Koray).** Solutions, Pricing,
 and How it Works must link each other contextually from within the page content
@@ -357,16 +369,25 @@ Run before calling any build done:
       both `top-geo-ai-seo-agencies-africa-2026` and `enterprise-geo-launch-africa`
       as of this review, one week after the requirement was first written as B.8
       prose alone — see B.8 point 4.
-- [ ] **Money-page link/schema gate is a script, not a memory (board, 2026-09-29).**
-      The bullet above ("Money-page schema/link gate") has now gone unenforced on
-      three consecutive reviews despite existing in writing since 2026-09-22
-      (`/how-it-works` was even flagged by name in advance and still shipped with
-      zero in-body links). Author `scripts/verify-money-page-links.sh`: curl
-      `/solutions`, `/pricing`, `/how-it-works` and grep for the same two
-      conditions this bullet already states, with a non-zero exit code on
-      failure. Wire it into the same step that runs `npm audit`/Lighthouse so it
-      runs automatically instead of depending on a reviewer remembering to check
-      by hand.
+- [ ] **Money-page link/schema gate is a script, not a memory (board, 2026-09-29;
+      shipped 2026-10-09).** The bullet above ("Money-page schema/link gate") went
+      unenforced on three consecutive reviews despite existing in writing since
+      2026-09-22 (`/how-it-works` was even flagged by name in advance and still
+      shipped with zero in-body links), and the script this bullet called for was
+      itself still unwritten 11 days later at the next review — a to-do about a
+      to-do, unexecuted the same way. `scripts/verify-money-page-links.sh` now
+      exists: it curls `/solutions`, `/pricing`, `/how-it-works` and checks the
+      same two conditions this bullet states, non-zero exit on any failure. Run it
+      against a local `next build && next start` (`BASE_URL=http://localhost:3000
+      ./scripts/verify-money-page-links.sh`) before calling a build done, and wire
+      it into CI/the `npm audit`/Lighthouse step next so it stops depending on
+      someone remembering to run it by hand — that wiring is still a to-do.
+      **First run (2026-10-09) already found a new violation this bullet's own
+      text didn't name explicitly**: `/solutions` has no `Offer`/`hasOfferCatalog`
+      schema either (it ships `servicesJsonLd`, a plain `Service`, with no
+      tier/price entities at all) — `/pricing` passes both checks,
+      `/how-it-works` still fails both. Fixing `/solutions` and `/how-it-works` is
+      an execution to-do, not a doctrine gap; see this run's board report.
 
 ### B.8 — GEO Citation, PR Wire Syndication & Co-Occurrence SOP
 

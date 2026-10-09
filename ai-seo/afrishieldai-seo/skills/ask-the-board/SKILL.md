@@ -61,6 +61,22 @@ Produce one ordered checklist of concrete actions **for the doer/execution agent
 each action attributable to a lens, highest-leverage first, and each independently
 shippable and build-verifiable. This is the hand-off; the doer does not re-derive it.
 
+**Board, 2026-10-09 — no doer agent currently exists to receive this hand-off.**
+A business-lens review this date confirmed: no skill under `ai-seo/afrishieldai-seo/
+skills/` consumes "execution to-do" output, there is no scheduled builder/doer
+routine, and the 2026-09-29 review's own to-do list (page fixes to `/how-it-works`,
+a verification script, a syndication log) sat completely unexecuted for 11 days and
+a full review cycle — not mislabeled, not partially done, *untouched* — until this
+review checked the working tree directly. Writing a good to-do list is not the same
+as it being done. Until a doer agent exists (see `knowledge-base/board/README.md`
+status note), **this skill's own run should ship whatever small, mechanically
+verifiable fixes it safely can in the same session** (schema/entity fixes, small
+scripts, skill-doc edits) rather than only adding another paragraph to a report, and
+must explicitly carry forward, with a visible count, any item it could not ship.
+Two consecutive carry-overs of the same item is itself a HOLD-level finding on the
+board process, not just on the page — escalate it as such rather than logging a
+third identical note.
+
 ## 5. Learn in the repo
 
 If a fix would recur on every task of this type, open a **PR** against the relevant
