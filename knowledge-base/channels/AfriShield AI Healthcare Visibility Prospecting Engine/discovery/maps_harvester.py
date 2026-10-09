@@ -1,6 +1,6 @@
 # discovery/maps_harvester.py
 """
-Verified Lead Harvester — Google Maps via DataForSEO.
+Verified Lead Harvester — Google Maps via Google Places API, Apify or DataForSEO.
 
 Replaces generate_200_cameroon_leads.py and
 MetaAdDiscoveryEngine._generate_verified_catalog_prospects(), both of which
@@ -10,11 +10,15 @@ result and is traceable to a place_id.
 
 Two operating modes:
 
-  1. DIRECT   — if DATAFORSEO_LOGIN / DATAFORSEO_PASSWORD are in the
-                environment, queries the API itself. Use for unattended cron.
-  2. INGEST   — accepts DataForSEO `items` JSON captured by an authenticated
-                caller (e.g. the MCP connection) and writes it to the DB.
-                Use when no raw credentials are stored on the host.
+  1. DIRECT   — queries the source itself (--harvest or --query, with --source).
+                google      Google Places API (New) Text Search; needs
+                            GOOGLE_PLACES_API_KEY. One request per page of 20.
+                apify       Apify Google Maps scraper; needs APIFY_TOKEN. Bills
+                            $0.004 per place on the free plan.
+                dataforseo  needs DATAFORSEO_LOGIN / DATAFORSEO_PASSWORD.
+  2. INGEST   — accepts results captured elsewhere and writes them to the DB:
+                DataForSEO `items` JSON (e.g. from the MCP connection) or a
+                saved Apify dataset (a JSON list of places).
 
 Nothing here invents a value. If Google Maps does not report a field, it is
 stored as NULL and downstream messaging must not claim anything about it.
@@ -33,6 +37,25 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DB_PATH = BASE_DIR / "healthcare_prospecting.db"
 
 PROVENANCE = "DATAFORSEO_GOOGLE_MAPS"
+PROVENANCE_APIFY = "APIFY_GOOGLE_MAPS"
+PROVENANCE_GOOGLE = "GOOGLE_PLACES_API"
+
+GOOGLE_PLACES_URL = "https://places.googleapis.com/v1/places:searchText"
+# Exactly these fields: adding any other can move the request to a dearer billing tier.
+GOOGLE_FIELD_MASK = ("places.id,places.displayName,places.formattedAddress,places.websiteUri,"
+                     "places.nationalPhoneNumber,places.rating,places.userRatingCount,"
+                     "places.primaryType,places.types,nextPageToken")
+GOOGLE_PAGE_SIZE = 20
+GOOGLE_MAX_PAGES = 3             # Text Search returns at most 60 results per query
+GOOGLE_FREE_REQUESTS_PER_MONTH = 1000
+google_requests_made = 0         # Places API calls in this run
+GOOGLE_OPTICAL_TYPES = {"health", "store"}
+GOOGLE_NOT_OPTICAL_TYPES = {"pharmacy", "drugstore", "medical_supply_store", "supermarket",
+                            "grocery_store", "cosmetics_store", "beauty_salon", "veterinary_care"}
+
+APIFY_ACTOR = "compass/crawler-google-places"
+APIFY_COST_PER_PLACE_USD = 0.004
+APIFY_MIN_RUN_CAP_USD = 0.50     # Apify rejects a per-run spend cap below this
 
 # ---------------------------------------------------------------------------
 # Search plan — health niche first, per Ben's sequencing.
@@ -132,6 +155,11 @@ def classify_niche(item: Dict[str, Any]) -> Optional[str]:
     for niche, plan in SEARCH_PLAN.items():
         if cats & plan["accept_category_ids"]:
             return niche
+    # Google Places has no optician type: an optical shop is typed health + store.
+    # Pharmacies carry the same pair, so they are excluded by their own types.
+    if (item.get("_provenance") == PROVENANCE_GOOGLE and GOOGLE_OPTICAL_TYPES <= cats
+            and not cats & GOOGLE_NOT_OPTICAL_TYPES):
+        return "optical"
     return None
 
 
@@ -187,7 +215,7 @@ def parse_item(item: Dict[str, Any], niche: str, country: str, city: str,
         "is_suppressed": 0,
         "opt_out": 0,
         "uncertain_duplicate": 0,
-        "data_provenance": PROVENANCE,
+        "data_provenance": item.get("_provenance") or PROVENANCE,
         "quarantined": 0,
         "quarantine_reason": None,
         # provenance detail
@@ -258,7 +286,7 @@ def ensure_columns(conn: sqlite3.Connection) -> None:
                  "ON businesses(place_id) WHERE place_id IS NOT NULL")
 
 
-def upsert_leads(records: Iterable[Dict[str, Any]]) -> Dict[str, int]:
+def upsert_leads(records: Iterable[Dict[str, Any]], max_new: Optional[int] = None) -> Dict[str, int]:
     conn = _connect()
     ensure_columns(conn)
     stats = {"inserted": 0, "dup_place_id": 0, "dup_phone": 0, "no_phone": 0, "suppressed": 0}
@@ -272,6 +300,8 @@ def upsert_leads(records: Iterable[Dict[str, Any]]) -> Dict[str, int]:
                   conn.execute("select identifier_value from suppression_list")}
 
     for rec in records:
+        if max_new is not None and stats["inserted"] >= max_new:
+            break
         pid = rec.pop("_place_id", None)
         cid = rec.pop("_cid", None)
         rank = rec.pop("_rank", None)
@@ -347,21 +377,209 @@ def fetch_direct(keyword: str, country: str, lang: str, depth: int = 20) -> List
 
 
 # ---------------------------------------------------------------------------
+# Mode 1: DIRECT via Apify (needs APIFY_TOKEN)
+# ---------------------------------------------------------------------------
+
+def env_value(name: str) -> Optional[str]:
+    """
+    A credential from the environment, else from this engine's git-ignored
+    .env, else from AfriShield's shared keyword tooling .env
+    (`00 Knowledge/Keyword Finder/.env`) found by walking up from this file.
+    """
+    if os.getenv(name):
+        return os.getenv(name)
+    here = Path(__file__).resolve()
+    candidates = [BASE_DIR / ".env"] + [parent / "00 Knowledge" / "Keyword Finder" / ".env"
+                                        for parent in here.parents]
+    for env in candidates:
+        if env.is_file():
+            for line in env.read_text(encoding="utf-8").splitlines():
+                key, sep, value = line.strip().partition("=")
+                value = value.strip().strip("\"'")
+                if sep and key.strip() == name and value:
+                    return value
+    return None
+
+
+def apify_token() -> Optional[str]:
+    return env_value("APIFY_TOKEN")
+
+
+def website_host(website: Optional[str]) -> Optional[str]:
+    return re.sub(r"^www\.", "", website.split("//")[-1].split("/")[0].lower()) if website else None
+
+
+def category_id(name: str) -> str:
+    """'Walk-in clinic' -> 'walk_in_clinic', the form Google's category ids take."""
+    return re.sub(r"[^a-z0-9]+", "_", (name or "").lower()).strip("_")
+
+
+def apify_to_item(place: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Reshapes one Apify Google Maps place into the maps_search item parse_item()
+    reads, so both providers share one parsing and validation path. Fields
+    Google Maps did not report stay None.
+    """
+    website = place.get("website") or None
+    categories = place.get("categories") or ([place["categoryName"]] if place.get("categoryName") else [])
+    return {
+        "type": "maps_search",
+        "title": place.get("title"),
+        "phone": place.get("phoneUnformatted") or place.get("phone") or None,
+        "rating": {"value": place.get("totalScore"), "votes_count": place.get("reviewsCount")},
+        "address_info": {"city": place.get("city")},
+        "address": place.get("address"),
+        "url": website,
+        "domain": website_host(website),
+        "place_id": place.get("placeId"),
+        "cid": place.get("cid"),
+        "category": place.get("categoryName"),
+        "category_ids": [category_id(c) for c in categories],
+        "rank_absolute": place.get("rank"),
+        "_provenance": PROVENANCE_APIFY,
+    }
+
+
+def fetch_apify(keywords: List[str], city: str, country: str, depth: int = 20,
+                max_cost: float = 1.00) -> List[Dict[str, Any]]:
+    """
+    One actor run per city covering every keyword. Results are requested in
+    English so category names match Google's category ids whatever language
+    the keywords are in.
+    """
+    from datetime import timedelta
+    from decimal import Decimal
+    from apify_client import ApifyClient
+
+    token = apify_token()
+    if not token:
+        raise SystemExit("APIFY_TOKEN not set (environment or 00 Knowledge/Keyword Finder/.env).")
+    client = ApifyClient(token)
+    run = client.actor(APIFY_ACTOR).call(
+        run_input={"searchStringsArray": keywords, "locationQuery": f"{city}, {country}",
+                   "maxCrawledPlacesPerSearch": depth, "language": "en", "skipClosedPlaces": True},
+        max_total_charge_usd=Decimal(str(max(max_cost, APIFY_MIN_RUN_CAP_USD))),
+        run_timeout=timedelta(seconds=900),
+        logger=None,
+    )
+    status = getattr(run, "status", None)
+    status = getattr(status, "value", status)
+    if status != "SUCCEEDED":
+        raise RuntimeError(f"Apify run ended with status {status}")
+    places = client.dataset(run.default_dataset_id).list_items(clean=True).items
+    return [apify_to_item(p) for p in places]
+
+
+# ---------------------------------------------------------------------------
+# Mode 1: DIRECT via Google Places API (New) (needs GOOGLE_PLACES_API_KEY)
+# ---------------------------------------------------------------------------
+
+def international_phone(national: Optional[str], dial: Optional[str]) -> Optional[str]:
+    """
+    Places returns the number in national format ('6 93 92 77 66'). The rest of
+    the engine validates and dedupes on the international form, so the market's
+    dial code is prefixed when the number does not already carry it.
+    """
+    digits = re.sub(r"[^0-9]", "", national or "")
+    if not digits:
+        return None
+    if not dial or (national or "").strip().startswith("+"):
+        return f"+{digits}"
+    code = dial.lstrip("+")
+    return f"+{digits}" if digits.startswith(code) else f"+{code}{digits.lstrip('0')}"
+
+
+def google_to_item(place: Dict[str, Any], rank: int, dial: Optional[str]) -> Dict[str, Any]:
+    """Reshapes one Places API (New) place into the maps_search item parse_item() reads."""
+    website = place.get("websiteUri") or None
+    primary = place.get("primaryType")
+    return {
+        "type": "maps_search",
+        "title": (place.get("displayName") or {}).get("text"),
+        "phone": international_phone(place.get("nationalPhoneNumber"), dial),
+        "rating": {"value": place.get("rating"), "votes_count": place.get("userRatingCount")},
+        "address_info": {},
+        "address": place.get("formattedAddress"),
+        "url": website,
+        "domain": website_host(website),
+        "place_id": place.get("id"),
+        "cid": None,
+        "category": primary,
+        # primaryType is broad (an optician is a 'store'); types carries the specific ones.
+        "category_ids": list(dict.fromkeys(([primary] if primary else []) + (place.get("types") or []))),
+        "rank_absolute": rank,
+        "_provenance": PROVENANCE_GOOGLE,
+    }
+
+
+def fetch_google(keyword: str, city: str, limit: int = 20,
+                 dial: Optional[str] = None) -> List[Dict[str, Any]]:
+    """Text Search for '<keyword> in <city>', following nextPageToken for up to 3 pages."""
+    global google_requests_made
+    import requests
+
+    key = env_value("GOOGLE_PLACES_API_KEY")
+    if not key:
+        raise SystemExit("GOOGLE_PLACES_API_KEY not set (environment or this engine's .env).")
+    headers = {"Content-Type": "application/json", "X-Goog-Api-Key": key,
+               "X-Goog-FieldMask": GOOGLE_FIELD_MASK}
+    body: Dict[str, Any] = {"textQuery": f"{keyword} in {city}", "pageSize": GOOGLE_PAGE_SIZE}
+
+    places: List[Dict[str, Any]] = []
+    for _ in range(GOOGLE_MAX_PAGES):
+        resp = requests.post(GOOGLE_PLACES_URL, headers=headers, json=body, timeout=60)
+        google_requests_made += 1
+        if not resp.ok:
+            try:
+                message = (resp.json().get("error") or {}).get("message")
+            except ValueError:
+                message = resp.reason
+            raise RuntimeError(f"Places API {resp.status_code}: {message}")
+        payload = resp.json()
+        places += payload.get("places") or []
+        token = payload.get("nextPageToken")
+        if not token or len(places) >= limit:
+            break
+        body["pageToken"] = token
+    return [google_to_item(p, rank, dial) for rank, p in enumerate(places[:limit], 1)]
+
+
+def log_google_requests() -> None:
+    """Records this run's Places API calls and prints the month-to-date total."""
+    if not google_requests_made:
+        return
+    now = datetime.now(UTC)
+    conn = _connect()
+    conn.execute("INSERT INTO system_logs (timestamp, action, result) VALUES (?,?,?)",
+                 (now.isoformat(), "google_places_requests",
+                  json.dumps({"requests": google_requests_made})))
+    conn.commit()
+    month = sum(json.loads(r["result"])["requests"] for r in conn.execute(
+        "select result from system_logs where action = 'google_places_requests' "
+        "and timestamp >= ?", (now.strftime("%Y-%m-01"),)))
+    conn.close()
+    print(f"Google Places API requests: {google_requests_made} this run, {month} this month "
+          f"logged in this database (free tier: {GOOGLE_FREE_REQUESTS_PER_MONTH}/month).")
+
+
+# ---------------------------------------------------------------------------
 # Mode 2: INGEST (items JSON supplied by an authenticated caller / MCP)
 # ---------------------------------------------------------------------------
 
 def extract_items(payload: Any) -> List[Dict[str, Any]]:
     """
-    Pulls maps_search items out of a DataForSEO payload, accepting either shape
-    the API returns:
+    Pulls maps_search items out of a saved payload, accepting:
 
-      * AI-optimized subset -> {"items": [...]}
-      * full response schema -> {"tasks": [{"result": [{"items": [...]}]}]}
+      * DataForSEO AI-optimized subset -> {"items": [...]}
+      * DataForSEO full response schema -> {"tasks": [{"result": [{"items": [...]}]}]}
+      * a saved Apify dataset -> [{"placeId": ..., "title": ...}, ...]
 
     The full schema arrives whenever the caller disables the AI-optimized subset
     (noAiMode), so both must ingest identically. Returning [] here is what makes
     a payload "empty"; callers are expected to say so rather than skip quietly.
     """
+    if isinstance(payload, list):
+        return [apify_to_item(p) for p in payload if isinstance(p, dict) and p.get("placeId")]
     if not isinstance(payload, dict):
         return []
     items = payload.get("items")
@@ -378,15 +596,18 @@ def extract_items(payload: Any) -> List[Dict[str, Any]]:
 
 
 def ingest_items(items: List[Dict[str, Any]], niche: Optional[str], country: str,
-                 city: str) -> Dict[str, int]:
+                 city: str, max_new: Optional[int] = None,
+                 only_niche: Optional[str] = None) -> Dict[str, int]:
     """
     `niche` may be None, in which case each item is classified from its own
     Google category_ids. Items that match no target niche are skipped.
+    `only_niche` keeps just the items whose own category places them in that
+    niche, with no fallback to the searched niche.
     """
     recs, skipped = [], 0
     for it in items:
-        resolved = classify_niche(it) or niche
-        if resolved not in SEARCH_PLAN:
+        resolved = classify_niche(it) if only_niche else classify_niche(it) or niche
+        if resolved not in SEARCH_PLAN or (only_niche and resolved != only_niche):
             skipped += 1
             continue
         plan = SEARCH_PLAN[resolved]
@@ -395,7 +616,7 @@ def ingest_items(items: List[Dict[str, Any]], niche: Optional[str], country: str
                          plan["campaign_id"])
         if rec:
             recs.append(rec)
-    stats = upsert_leads(recs)
+    stats = upsert_leads(recs, max_new)
     stats["off_niche_skipped"] = skipped
     return stats
 
@@ -446,17 +667,127 @@ def ingest_file(path: str) -> Dict[str, int]:
     return total
 
 
+ADHOC_COLUMNS = ["rank", "business_name", "category", "address", "phone", "website",
+                 "rating", "review_count", "place_id", "niche", "source"]
+
+
+def country_of(city: str, default: str) -> str:
+    """The configured market a city belongs to, else the --country given."""
+    for country, market in MARKETS.items():
+        if city.lower() in (c.lower() for c in market["cities"]):
+            return country
+    return default
+
+
+def run_query(args, niche: Optional[str] = None) -> None:
+    """
+    One free-text search (--query / --location). Every result goes to a CSV;
+    only results in a configured niche are also written to the lead database.
+    Places reports broad types (an optician is a 'store'), so pass --niche to
+    file results the category alone cannot place.
+    """
+    import csv
+    country = country_of(args.location, args.country)
+    dial = MARKETS[country]["dial"]
+    if args.provider == "google":
+        items = fetch_google(args.query, args.location, args.limit, dial)
+    elif args.provider == "apify":
+        items = fetch_apify([args.query], args.location, country, args.limit, args.max_cost)[:args.limit]
+    else:
+        if not has_direct_credentials():
+            raise SystemExit("DATAFORSEO_LOGIN / DATAFORSEO_PASSWORD not set.")
+        items = fetch_direct(f"{args.query} {args.location}", country,
+                             MARKETS[country]["lang"], args.limit)[:args.limit]
+
+    rows = [{"rank": it.get("rank_absolute"), "business_name": it.get("title"),
+             "category": it.get("category"), "address": it.get("address"),
+             "phone": it.get("phone"), "website": it.get("url"),
+             "rating": (it.get("rating") or {}).get("value"),
+             "review_count": (it.get("rating") or {}).get("votes_count"),
+             "place_id": it.get("place_id"), "niche": classify_niche(it) or "",
+             "source": it.get("_provenance") or PROVENANCE} for it in items]
+
+    slug = re.sub(r"[^a-z0-9]+", "-", f"{args.query} {args.location}".lower()).strip("-")
+    out = Path(args.csv) if args.csv else (
+        BASE_DIR / "LEAD_LISTS" / f"query-{slug}-{datetime.now(UTC):%Y-%m-%d}.csv")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    with out.open("w", newline="", encoding="utf-8-sig") as f:
+        w = csv.DictWriter(f, fieldnames=ADHOC_COLUMNS)
+        w.writeheader()
+        w.writerows(rows)
+
+    print(f"\n{len(rows)} result(s) for '{args.query} in {args.location}' via {args.provider}:")
+    for r in rows:
+        print(f"  {r['rank']:>2}. {r['business_name']} | {r['category'] or '-'} | "
+              f"{r['phone'] or 'no phone'} | {r['website'] or 'no website'} | "
+              f"{r['rating'] or '-'} ({r['review_count'] or 0})")
+    print(f"CSV written: {out}")
+    stats = ingest_items(items, niche, country, args.location)
+    print(f"Database ({DB_PATH.name}): {stats}")
+
+
 def main() -> None:
+    global DB_PATH
     import argparse
     ap = argparse.ArgumentParser(description="Verified Google Maps lead harvester")
     ap.add_argument("--ingest", metavar="FILE", help="Ingest a harvest manifest JSON")
     ap.add_argument("--ingest-dir", metavar="DIR",
                     help="Ingest every DataForSEO maps payload in DIR, self-classifying by category")
     ap.add_argument("--harvest", action="store_true", help="Direct API harvest (needs credentials)")
-    ap.add_argument("--niche", default="dental", choices=list(SEARCH_PLAN))
+    ap.add_argument("--provider", "--source", dest="provider", default="google",
+                    choices=["google", "places", "apify", "dataforseo"],
+                    help="Source for --harvest / --query: google (alias places) = Google Places "
+                         "API (New), apify, or dataforseo (default google)")
+    ap.add_argument("--query", help="Free-text search, e.g. \"tax consultants\" (use with --location)")
+    ap.add_argument("--location", help="City for --query, e.g. Douala")
+    ap.add_argument("--limit", type=int, default=20, help="Max results for --query (default 20, max 60)")
+    ap.add_argument("--csv", metavar="FILE", help="CSV path for --query (default: LEAD_LISTS/query-...csv)")
+    ap.add_argument("--db", metavar="FILE", help="Use this SQLite database instead of the live one")
+    ap.add_argument("--niche", default=None, choices=list(SEARCH_PLAN),
+                    help="--harvest: niche to search (default dental). --query: niche to file "
+                         "results under when their own category matches none")
     ap.add_argument("--country", default="Cameroon", choices=list(MARKETS))
-    ap.add_argument("--depth", type=int, default=20)
+    ap.add_argument("--depth", type=int, default=20, help="Places per keyword per city (default 20)")
+    ap.add_argument("--target-new", type=int, metavar="N",
+                    help="google --harvest: stop once N new leads of --niche are stored")
+    ap.add_argument("--cities", nargs="+", metavar="CITY",
+                    help="google --harvest: search these cities instead of the market's defaults")
+    ap.add_argument("--max-cost", type=float, default=1.00,
+                    help="apify: refuse to start if the estimate exceeds this, in USD (default 1.00)")
     args = ap.parse_args()
+    query_niche, args.niche = args.niche, args.niche or "dental"
+    if args.provider == "places":
+        args.provider = "google"
+    if args.db:
+        DB_PATH = Path(args.db)
+
+    if args.query:
+        if not args.location:
+            raise SystemExit("--query needs --location (the city to search in).")
+        run_query(args, query_niche)
+        log_google_requests()
+        return
+
+    if args.harvest and args.provider == "google":
+        market = MARKETS[args.country]
+        plan = SEARCH_PLAN[args.niche]
+        kws = plan["keywords_fr"] if market["lang"] == "fr" else plan["keywords_en"]
+        grand: Dict[str, int] = {}
+        cities = args.cities or market["cities"]
+        for city, kw in ((c, k) for c in cities for k in kws):
+            left = None if args.target_new is None else args.target_new - grand.get("inserted", 0)
+            if left is not None and left <= 0:
+                break
+            items = fetch_google(kw, city, args.depth, market["dial"])
+            # With a target, only leads Google itself places in the niche count toward it.
+            s = ingest_items(items, args.niche, args.country, city, left,
+                             args.niche if args.target_new is not None else None)
+            print(f"  {kw} / {city}: {len(items)} places -> {s}")
+            for k, v in s.items():
+                grand[k] = grand.get(k, 0) + v
+        print(json.dumps(grand, indent=2))
+        log_google_requests()
+        return
 
     if args.ingest:
         print(json.dumps(ingest_file(args.ingest), indent=2))
@@ -464,6 +795,27 @@ def main() -> None:
 
     if args.ingest_dir:
         print(json.dumps(ingest_dir(args.ingest_dir, args.country), indent=2))
+        return
+
+    if args.harvest and args.provider == "apify":
+        market = MARKETS[args.country]
+        plan = SEARCH_PLAN[args.niche]
+        kws = plan["keywords_fr"] if market["lang"] == "fr" else plan["keywords_en"]
+        estimate = len(market["cities"]) * len(kws) * args.depth * APIFY_COST_PER_PLACE_USD
+        print(f"Apify harvest: {len(kws)} keyword(s) x {len(market['cities'])} city(ies) x "
+              f"{args.depth} places, estimated cost up to ${estimate:.2f}")
+        if estimate > args.max_cost:
+            raise SystemExit(f"Estimate exceeds --max-cost ${args.max_cost:.2f}; "
+                             "lower --depth or raise --max-cost.")
+        grand: Dict[str, int] = {}
+        for city in market["cities"]:
+            items = fetch_apify(kws, city, args.country, args.depth,
+                                args.max_cost / len(market["cities"]))
+            s = ingest_items(items, args.niche, args.country, city)
+            print(f"  {city}: {len(items)} places -> {s}")
+            for k, v in s.items():
+                grand[k] = grand.get(k, 0) + v
+        print(json.dumps(grand, indent=2))
         return
 
     if args.harvest:

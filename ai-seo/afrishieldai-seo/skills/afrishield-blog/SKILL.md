@@ -3,7 +3,7 @@ name: afrishield-blog
 description: >
   Write and publish one complete, build-verified blog post for an AfriShield AI-SEO
   marketing site (Next.js App Router), end to end: pick the next keyword (from the
-  repo's content-queue.md, or from DataForSEO in an interactive session), write it in
+  repo's content-queue.md, or from the AfriShield keyword engine in an interactive session), write it in
   the established AfriShield voice on the fixed post template, register it, verify with
   next build, and publish (push to master, or open a PR for review). This is the
   generic, reusable adaptation of the NJ nj-seo pipeline for the AI-SEO product line.
@@ -33,15 +33,17 @@ All paths below are relative to the **marketing site root** (e.g.
 
 Two sources, depending on where you are running:
 
-- **Interactive session with DataForSEO** — do real research. Use
-  `dataforseo_labs_google_keyword_overview` / `_keyword_ideas` (location a real
-  target market, e.g. South Africa, `en`). Avoid seeding on the bare word "ai" — it
-  explodes into AI-tool noise (humanizer, image generator). Weigh low competition,
-  commercial value, brand fit, and early-mover AI-answer terms over raw volume;
-  single African markets show low absolute volume (10–40) by nature. Drop terms
-  DataForSEO returns no data for — too new to target yet (park them on the queue
-  watchlist).
-- **Automated / cloud run (no DataForSEO)** — take the **first `queued` row** from
+- **Interactive session** — do real research with AfriShield's keyword engine
+  (the `keyword-finder` skill: `keyword_orchestrator.py` for ideas, volume, CPC and
+  ad competition, then `serp_competition.py` for who ranks on page one), with a
+  real target market, e.g. `--country za --lang en`. Do not use DataForSEO for
+  keyword ideas or metrics; it is retired for keyword research. Avoid seeding on
+  the bare word "ai" — it explodes into AI-tool noise (humanizer, image
+  generator). Weigh low competition, commercial value, brand fit, and early-mover
+  AI-answer terms over raw volume; single African markets show low absolute
+  volume (10–40) by nature. Drop terms the engine returns no volume data for —
+  too new to target yet (park them on the queue watchlist).
+- **Automated / cloud run (no keyword engine)** — take the **first `queued` row** from
   `content-queue.md`. That file is the decoupled research handoff. Never invent a
   keyword when the queue is empty — stop and report.
 

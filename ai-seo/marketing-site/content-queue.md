@@ -9,12 +9,13 @@
 The **blog auto-poster** (scheduled cloud routine) consumes this file. Each run it
 takes the **top `queued` keyword**, writes the post, then marks it `claimed`.
 
-Why this file exists: the cloud routine has **no DataForSEO MCP**, so it cannot do
-keyword research itself. Research is done in an interactive session that *does* have
-DataForSEO, and the vetted keywords are dropped here as a queue. The **weekly
-queue-keeper routine** appends *candidate* rows and audits depth, but only a
-DataForSEO pass (a human/agent in an interactive session) promotes a candidate to
-`vetted`. **Do not let the poster invent keywords.**
+Why this file exists: the cloud routine has **no keyword research tooling**, so it
+cannot do keyword research itself. Research is done in an interactive session with
+AfriShield's keyword engine (the `keyword-finder` skill; DataForSEO is retired for
+keyword research as of 2026-10-09), and the vetted keywords are dropped here as a
+queue. The **weekly queue-keeper routine** appends *candidate* rows and audits
+depth, but only a keyword-engine pass (a human/agent in an interactive session)
+promotes a candidate to `vetted`. **Do not let the poster invent keywords.**
 
 Rules for the poster:
 - Take the **first row whose status is `queued`**. One keyword per post, ever.
@@ -37,7 +38,9 @@ Rules for the poster:
 Vetting note: all volumes below are **DataForSEO, South Africa, en** — a single
 African market, so absolute volumes are low (10–40) by nature. Selection weighs
 low competition, commercial value, brand fit, and being an early mover on AI-answer
-terms, not raw volume. `vetted` = confirmed via DataForSEO. `candidate` = plausible
+terms, not raw volume. `vetted` = confirmed with volume data (DataForSEO for the
+rows below; the keyword engine from 2026-10-09 on, where "DataForSEO pass" in the
+notes further down now means a keyword-engine pass). `candidate` = plausible
 but volume **not yet confirmed** — leave out of the active list until checked.
 
 | # | Primary keyword | Cluster | Vetting (SA/en) | Status |
