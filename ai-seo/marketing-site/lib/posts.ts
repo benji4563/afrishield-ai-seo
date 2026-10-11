@@ -19,6 +19,18 @@ export type PostMeta = {
    * sourced via `scripts/pull-pexels.mjs`.
    */
   image?: { src: string; alt: string };
+  /**
+   * The LinkedIn copy posted to the AfriShield AI company page (id
+   * `146729948`) when this post went live. Stored here so there is a record of
+   * what actually went out, and so the feed can carry it later as
+   * `<content:encoded>`.
+   *
+   * Constraints, learned on the NJ pipeline: max 3,000 characters, and **no
+   * unescaped parentheses** — LinkedIn's Little Text Format treats `(` and `)`
+   * as reserved. Writing around them is cleaner than escaping them. This is a
+   * template literal, so escape any backtick or `${`.
+   */
+  linkedin?: string;
 };
 
 /** Default social share image used when a page/post has none of its own. */
