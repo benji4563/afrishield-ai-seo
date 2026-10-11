@@ -26,6 +26,22 @@ export const SITE = {
       process.env.NEXT_PUBLIC_VAPI_ASSISTANT_ID ?? '5456b332-d9ba-4928-a978-0a4f3c407a24',
     publicKey: process.env.NEXT_PUBLIC_VAPI_PUBLIC_KEY ?? '00c9535c-aa2a-45b6-bacb-69174343d0a4',
   },
+  /**
+   * Google Business Profile "write a review" link, surfaced on /review as the
+   * primary call to action. Empty until the GBP is claimed and verified — the
+   * page detects that and leads with the on-site form instead, so the link is
+   * safe to share before the profile exists.
+   *
+   * Set NEXT_PUBLIC_GOOGLE_REVIEW_URL to the short link GBP hands you
+   * (`https://g.page/r/<id>/review`) or the Place ID form
+   * (`https://search.google.com/local/writereview?placeid=<PLACE_ID>`).
+   *
+   * Why the Google link outranks the on-site form: Google ignores Review and
+   * AggregateRating markup a site publishes about itself, so on-site reviews
+   * never produce stars in search results. GBP reviews do, and they feed Maps
+   * and the AI answer engines as well.
+   */
+  googleReviewUrl: process.env.NEXT_PUBLIC_GOOGLE_REVIEW_URL ?? '',
   /** Public-facing one-liner. Company brand guidelines, verbatim. */
   tagline: 'Search visibility, run by agents. Reported in plain numbers.',
   description:
