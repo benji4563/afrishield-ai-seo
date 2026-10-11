@@ -13,6 +13,10 @@ export const organizationJsonLd = {
   // E.164 (from the tel: href) rather than the display formatting.
   ...(SITE.phone ? { telephone: SITE.phoneHref.replace('tel:', '') } : {}),
   description: SITE.description,
+  // Entity disambiguation. Omitted entirely rather than emitted empty when no
+  // profile is confirmed yet — an empty sameAs is a wasted signal, not a
+  // neutral one. See SITE.profiles for what is allowed in here.
+  ...(SITE.profiles.length ? { sameAs: SITE.profiles } : {}),
   areaServed: [
     { '@type': 'Place', name: 'Africa' },
     { '@type': 'Country', name: 'Nigeria' },
@@ -45,6 +49,9 @@ export const professionalServiceJsonLd = {
   description: SITE.description,
   serviceType: 'Search engine optimisation',
   priceRange: '$$',
+  // Same profiles as the Organization node, so both entities resolve to one
+  // company rather than reading as two.
+  ...(SITE.profiles.length ? { sameAs: SITE.profiles } : {}),
   areaServed: [
     { '@type': 'Place', name: 'Africa' },
     ...SERVED_CITIES.map((city) => ({ '@type': 'City', name: city.name })),

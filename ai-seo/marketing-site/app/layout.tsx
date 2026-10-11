@@ -38,7 +38,10 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.name}`,
   },
   description: SITE.description,
-  alternates: { canonical: '/' },
+  alternates: {
+    canonical: '/',
+    types: { 'application/rss+xml': [{ url: '/rss.xml', title: `${SITE.name} — Blog` }] },
+  },
   openGraph: {
     type: 'website',
     siteName: SITE.name,

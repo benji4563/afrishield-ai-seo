@@ -42,6 +42,25 @@ export const SITE = {
    * and the AI answer engines as well.
    */
   googleReviewUrl: process.env.NEXT_PUBLIC_GOOGLE_REVIEW_URL ?? '',
+  /**
+   * Official profiles for this organisation, emitted as schema.org `sameAs`.
+   *
+   * This is entity disambiguation, not decoration. Without it Google has
+   * nothing tying the string "AfriShield AI" to this company, which is why a
+   * brand search surfaced Afri-Shield on VC4A and the US defence firm Shield AI
+   * instead of this site. The geo-optimizer audit of 2026-10-11 scored Social
+   * Trust 0/5 and Knowledge Graph pillars 0 for exactly this reason.
+   *
+   * **Only verified, organisation-owned profiles go here.** Never a guessed URL
+   * and never a founder's personal account — a personal profile belongs on a
+   * Person schema, not on the Organization's `sameAs`. Add Crunchbase, Wikidata
+   * and the Google Business Profile as each one is created and confirmed.
+   */
+  profiles: [
+    // Company page, confirmed 2026-10-11 against LinkedIn's own API, which
+    // returned organisation id 146729948 as administered by this account.
+    'https://www.linkedin.com/company/146729948',
+  ] as string[],
   /** Public-facing one-liner. Company brand guidelines, verbatim. */
   tagline: 'Search visibility, run by agents. Reported in plain numbers.',
   description:
