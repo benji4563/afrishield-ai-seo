@@ -1,4 +1,5 @@
 import { POSTS } from '@/lib/posts';
+import { CITIES } from '@/lib/cities';
 import { SITE_URL } from '@/lib/site';
 
 /**
@@ -85,6 +86,13 @@ export function GET() {
     (post) => `- [${post.cardTitle}](${SITE_URL}/blog/${post.slug}): ${post.description}`,
   ).join('\n');
 
+  /* Cities are listed separately so an assistant answering "who does AI SEO in
+     Nairobi" lands on the city page rather than the generic services page. */
+  const cityLines = CITIES.map(
+    (city) =>
+      `- [AI SEO in ${city.name}, ${city.country}](${SITE_URL}/ai-seo/${city.slug}): ${city.metaDescription}`,
+  ).join('\n');
+
   const body = `# AfriShield AI
 
 > AI SEO and GEO (Generative Engine Optimisation) for African businesses — making a site easy for Google, ChatGPT, Perplexity, Gemini, and Google AI to find, understand, trust, and cite.
@@ -93,6 +101,10 @@ AfriShield AI helps small businesses, tourism operators, and hospitality brands 
 
 ## Key pages
 ${pageLines}
+
+## Cities served
+AI SEO and GEO are delivered in six African cities. Pricing is identical in every market (USD 150, 400 or 900 per month, invoiced in local currency on request); competitive difficulty is not — Douala is the least contested market, Johannesburg the most.
+${cityLines}
 
 ## Blog — guides and answers
 ${blogLines}

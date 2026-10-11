@@ -6,7 +6,7 @@ import { Faq } from '@/components/ui/Faq';
 import { Bluf } from '@/components/ui/Bluf';
 import { CtaDrop } from '@/components/home/CtaDrop';
 import { StructuredData } from '@/components/seo/StructuredData';
-import { breadcrumbJsonLd, faqPageJsonLd } from '@/lib/structured-data';
+import { breadcrumbJsonLd, faqPageJsonLd, pricingOffersJsonLd } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/site';
 import { cn } from '@/lib/utils';
 
@@ -108,6 +108,7 @@ const PRICING_FAQ = [
 export default function PricingPage() {
   return (
     <>
+      <StructuredData data={pricingOffersJsonLd} />
       <StructuredData data={faqPageJsonLd(PRICING_FAQ)} />
       <StructuredData
         data={breadcrumbJsonLd([
@@ -176,8 +177,16 @@ export default function PricingPage() {
         </div>
 
         <p className="mx-auto mt-12 max-w-prose text-center text-small body-dim-light">
-          Every tier includes the technical work. There is no version of this service where
-          we publish content onto a site we have not fixed first.
+          Every tier includes the technical work — the same{' '}
+          <a href="/solutions">three continuous services</a> at every price, run to the{' '}
+          <a href="/how-it-works">ninety-day process</a> we publish in full. There is no version of
+          this service where we publish content onto a site we have not fixed first, and no tier
+          where the local pages are a different product: see what that looks like in{' '}
+          <a href="/ai-seo/lagos">Lagos</a>, <a href="/ai-seo/nairobi">Nairobi</a> or{' '}
+          <a href="/ai-seo">any of the six markets we work in</a>. If you would rather read the
+          arithmetic before the tiers, we wrote{' '}
+          <a href="/blog/what-seo-actually-costs">what SEO actually costs</a> and{' '}
+          <a href="/blog/is-seo-worth-it">whether it is worth it</a> without flattering ourselves.
         </p>
       </Section>
 

@@ -31,6 +31,19 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'how-much-does-seo-cost-in-nigeria',
+    title: 'How much does SEO cost in Nigeria? Real naira prices for 2026',
+    cardTitle: 'How much SEO costs in Nigeria, in naira',
+    metaTitle: 'How Much Does SEO Cost in Nigeria? (2026)',
+    description:
+      'Real 2026 SEO prices in Nigeria, in naira: what freelancers, Lagos and Abuja agencies and foreign firms charge, what each price band buys, the exchange-rate clause to insist on, and when not to pay at all.',
+    category: 'Money',
+    published: '2026-09-30',
+    modified: '2026-09-30',
+    readingMinutes: 10,
+    primaryKeyword: 'how much does seo cost in nigeria',
+  },
+  {
     slug: 'top-geo-ai-seo-agencies-africa-2026',
     title:
       'The 2026 guide to Generative Engine Optimization (GEO) and AI search agencies in Africa',
