@@ -38,10 +38,12 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.name}`,
   },
   description: SITE.description,
-  alternates: {
-    canonical: '/',
-    types: { 'application/rss+xml': [{ url: '/rss.xml', title: `${SITE.name} — Blog` }] },
-  },
+  // Feed autodiscovery is NOT declared here. Next merges metadata one key deep,
+  // so a child route's `alternates` replaces this object wholesale — and all 41
+  // pages set their own `alternates.canonical`, which silently dropped the feed
+  // link from every page. It is rendered as a real <link> in the layout body
+  // instead, where nothing can override it.
+  alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
     siteName: SITE.name,
@@ -73,6 +75,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${sora.variable} ${inter.variable} ${mono.variable}`}
     >
       <body>
+        {/*
+          Feed autodiscovery. React hoists this into <head> on every page, which
+          is the point: the metadata API could not carry it, because each route
+          overrides `alternates` with its own canonical. Readers and AI crawlers
+          both look for this tag, and the geo-optimizer audit flags its absence.
+        */}
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title={`${SITE.name} — Blog`}
+          href={`${SITE_URL}/rss.xml`}
+        />
         <StructuredData data={organizationJsonLd} />
         <a
           href="#main"
