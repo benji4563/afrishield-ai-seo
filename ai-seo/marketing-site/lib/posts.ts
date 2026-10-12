@@ -5,7 +5,15 @@ export type PostMeta = {
   cardTitle: string;
   /** ≤44 chars: the SERP <title> (brand suffix keeps it under 60). H1 stays `title`. */
   metaTitle: string;
+  /** 50–160 chars: the meta description, the card blurb and the feed summary. */
   description: string;
+  /**
+   * 40–70 words of plain fact, shown under the H1 in place of `description`.
+   * It is the first paragraph an answer engine reads after the heading, and a
+   * meta-description-length sentence is too short to be lifted as a definition.
+   * Optional: a post without one falls back to `description`.
+   */
+  lede?: string;
   category: string;
   published: string;
   modified?: string;
@@ -48,7 +56,9 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'How much SEO costs in Nigeria, in naira',
     metaTitle: 'How Much Does SEO Cost in Nigeria? (2026)',
     description:
-      'Real 2026 SEO prices in Nigeria, in naira: what freelancers, Lagos and Abuja agencies and foreign firms charge, what each price band buys, the exchange-rate clause to insist on, and when not to pay at all.',
+      'Real 2026 SEO prices in Nigeria, in naira: what freelancers, Lagos and Abuja agencies and foreign firms charge, and what each price band buys.',
+    lede:
+      'SEO in Nigeria costs most small and mid-sized businesses between ₦200,000 and ₦1,500,000 a month in 2026. This guide sets out what freelancers, Lagos and Abuja agencies and foreign firms charge in naira, what each price band buys, the exchange-rate clause to insist on, and when not to pay at all.',
     category: 'Money',
     published: '2026-09-30',
     modified: '2026-09-30',

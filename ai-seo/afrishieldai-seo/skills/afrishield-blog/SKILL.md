@@ -211,7 +211,10 @@ auto-map from `POSTS`** — do not touch them. You only:
 1. `lib/posts.ts` — prepend a `PostMeta` to the `POSTS` array (newest first).
    `metaTitle` ≤ 44 chars (brand suffix keeps the SERP title < 60); `published` =
    today; set `cardTitle`, `description`, `category`, `readingMinutes`,
-   `primaryKeyword`.
+   `primaryKeyword`. `description` is the meta description — **50–160 characters**.
+   Also set `lede`: **40–70 words** of plain fact shown under the H1 (no marketing
+   adjectives, no humor). The two were one field until 2026-10-12, which forced every
+   post to miss one target or the other.
 2. `used-keywords.md` — append a row so the keyword is never targeted twice.
 3. `content-queue.md` — if the keyword came from the queue, move its row to
    `claimed`.

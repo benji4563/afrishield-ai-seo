@@ -117,7 +117,7 @@ export function PostShell({
             </nav>
             <p className="mt-8 eyebrow-dark">{post.category}</p>
             <h1 className="h1 mt-5 max-w-[22ch]">{post.title}</h1>
-            <p className="mt-7 max-w-[60ch] text-lead body-dim">{post.description}</p>
+            <p className="mt-7 max-w-[60ch] text-lead body-dim">{post.lede ?? post.description}</p>
             <p className="mt-8 font-mono text-label uppercase text-white/35">
               <time dateTime={post.published}>{published}</time>
               <span aria-hidden="true"> · </span>
