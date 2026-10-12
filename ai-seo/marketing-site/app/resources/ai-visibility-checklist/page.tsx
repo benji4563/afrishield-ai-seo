@@ -142,7 +142,7 @@ export default function AIVisibilityChecklistPage() {
       <PageHero
         eyebrow="Free checklist"
         title="Test your own AI visibility in 15 minutes"
-        blurb="The exact prompts to paste into ChatGPT, Perplexity, and Gemini, how to score what comes back, and the five technical checks that decide whether AI engines can find, read, and cite your business."
+        blurb="The exact prompts to paste into ChatGPT, Perplexity, and Gemini, how to score what comes back, and the five technical checks that decide whether AI engines can find, read, and cite your business. It is free, and it takes about fifteen minutes."
       />
 
       <Section tone="light">

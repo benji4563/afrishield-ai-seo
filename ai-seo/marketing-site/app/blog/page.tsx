@@ -40,7 +40,7 @@ export default function BlogIndexPage() {
       <PageHero
         eyebrow="Blog"
         title="Written to be read, not to be ranked at you"
-        blurb="Each piece covers something the other results on that search quietly skip — usually the price, and usually the part where you should not buy this yet."
+        blurb="Each piece covers something the other results on that search quietly skip — usually the price, and usually the part where you should not buy this yet. The guides cover SEO, local search and AI answer engines for African businesses, and each one answers its question in the first paragraph."
       />
 
       <Section tone="light">

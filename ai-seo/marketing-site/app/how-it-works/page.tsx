@@ -66,7 +66,7 @@ export default function HowItWorksPage() {
       <PageHero
         eyebrow="How it works"
         title="No discovery phase that quietly eats a quarter"
-        blurb="Four stages, each with something you can hold at the end of it. If a week passes and you cannot name what arrived, something has gone wrong and we would rather you tell us."
+        blurb="Four stages, each with something you can hold at the end of it. If a week passes and you cannot name what arrived, something has gone wrong and we would rather you tell us. The first report arrives at day thirty."
       />
 
       <Process />

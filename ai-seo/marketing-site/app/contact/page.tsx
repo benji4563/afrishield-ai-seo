@@ -48,7 +48,9 @@ export default function ContactPage() {
                 <h1 className="h1 mt-6 max-w-[14ch]">Tell us what you sell</h1>
                 <p className="mt-7 max-w-[46ch] text-lead body-dim">
                   One reply from a person, within a working day. No sequence, no
-                  newsletter, no calendar link that opens onto three qualification forms.
+                  newsletter, no calendar link that opens onto three qualification forms. You can
+                  also email us directly or call the phone line, and both are listed below on this
+                  page.
                 </p>
 
                 <p className="mt-10 eyebrow-dark">What the call covers</p>

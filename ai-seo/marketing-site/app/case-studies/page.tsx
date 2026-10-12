@@ -73,7 +73,7 @@ export default function CaseStudiesPage() {
       <PageHero
         eyebrow="Case study"
         title="One accounting firm, one working day, git init to live"
-        blurb="NJ's Accounting & Tax Services went from an empty repository to a deployed site on a custom domain with full schema markup inside a single working day. Here is what shipped and what we decided along the way."
+        blurb="NJ's Accounting & Tax Services went from an empty repository to a deployed site on a custom domain with full schema markup inside a single working day. Here is what shipped and what we decided along the way, itemised from the commit history."
       />
 
       <Section tone="light">
