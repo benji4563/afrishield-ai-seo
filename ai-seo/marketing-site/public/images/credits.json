@@ -313,5 +313,16 @@
     "photographerUrl": "https://www.pexels.com/@silverkblack",
     "alt": "Two businessmen concentrating on a tablet, collaborating in a modern office setting.",
     "avgColor": "#606964"
+  },
+  {
+    "slot": "home-hero",
+    "file": "images/home-hero-nairobi.webp",
+    "query": "nairobi skyline",
+    "pexelsId": 29069329,
+    "pexelsUrl": "https://www.pexels.com/photo/stunning-nairobi-skyline-at-dusk-29069329/",
+    "photographer": "Ken Mwaura",
+    "photographerUrl": "https://www.pexels.com/@mwauraken",
+    "alt": "The Nairobi skyline at dusk, with office towers lit against a deep blue sky.",
+    "avgColor": "#4B6F89"
   }
 ]
