@@ -43,7 +43,7 @@ Two sources, depending on where you are running:
   AI-answer terms over raw volume; single African markets show low absolute
   volume (10–40) by nature. Drop terms the engine returns no volume data for —
   too new to target yet (park them on the queue watchlist).
-- **Automated / cloud run (no keyword engine)** — take the **first `queued` row** from
+- **Automated / scheduled run (no keyword engine)** — take the **first `queued` row** from
   `content-queue.md`. That file is the decoupled research handoff. Never invent a
   keyword when the queue is empty — stop and report.
 
@@ -69,8 +69,8 @@ table (`<figure><table>`) → the FAQ (rendered by `PostShell`).
 
 Components live in `components/blog/PostLayout.tsx` (`PostShell`, `ShortAnswer`,
 `Scene`); JSON-LD helpers in `lib/structured-data.ts`; `PostMeta` in `lib/posts.ts`.
-Posts are **text-only** — there is no per-post hero image field, so no image
-generation is required.
+Every post also carries one hero image, wired in the page itself rather than
+through a `PostMeta` field — see "Hero image" below.
 
 Non-negotiables:
 
@@ -199,7 +199,7 @@ className="my-10" />` immediately after `</ShortAnswer>`, and add
 describes the picture plainly — no keyword stuffing.
 
 Runs unattended given `PEXELS_API_KEY` in the environment (Source A) and/or Higgsfield
-access (Source B). The cloud auto-poster follows this step directly — it is multimodal,
+access (Source B). The scheduled auto-poster follows this step directly — it is multimodal,
 so it performs the Source-B verification itself; with neither source reachable it
 degrades to text-only.
 
@@ -231,8 +231,14 @@ server first. Fix every failure. Never commit a failing build.
 
 ## 6. Publish
 
-- **Direct (default):** commit all changes and push to `master` — the GitHub→Vercel
-  hook auto-deploys. Commit message: `Add blog post: <keyword>`.
+- **Direct (default):** stage **only this post's files** (`lib/posts.ts`,
+  `used-keywords.md`, `content-queue.md`, `app/blog/<slug>/`, any new image and
+  `public/images/credits.json`) — never `git add -A`, the repo may carry unrelated
+  dirty files. Commit `Add blog post: <keyword>`, then get it onto `master`, which is
+  what the GitHub→Vercel hook deploys. If the working branch is not `master`, a plain
+  `git push` deploys nothing: confirm `origin/master` is an ancestor of HEAD
+  (`git merge-base --is-ancestor origin/master HEAD`), then `git push origin
+  HEAD:master` and `git push origin HEAD`. Never force-push.
 - **Review gate:** create a branch, push it, and open a PR with `gh pr create`
   instead. Use this when a human should read the post before it goes live (e.g. the
   first automated post, or any run you are unsure about).
@@ -242,10 +248,23 @@ Then confirm the route is live: `curl -s -o /dev/null -w '%{http_code}' <site>/b
 ## Scope
 
 This skill writes **blog posts** for an AI-SEO marketing site. It is driven on a
-schedule by the **AfriShield blog auto-poster** cloud routine, which runs a condensed
-form of steps 1, 3–6 against `content-queue.md`. The **weekly queue-keeper routine**
-tops up and audits `content-queue.md`. Every run — scheduled or interactive, own
+schedule by a **local scheduled task** in the Claude desktop app (for AfriShield's own
+site: `afrishield-blog-post`), which runs steps 1–6 against `content-queue.md`. It is
+deliberately not a cloud routine — the cloud agent environment could not reach the
+production host, so it could neither confirm a post was live nor push to `master`.
+Nothing tops up `content-queue.md` automatically: new rows come from a keyword-engine
+pass in an interactive session, and the weekly site-health task reports queue depth so
+that pass is scheduled before the queue runs dry. Every run — scheduled or interactive, own
 site or client — writes with the locked-in humor reference
 `../humor-writing/SKILL.md`; the auto-poster applies it as-is. City/service landing
 pages are a different shape — see the sibling build SOP `../afrishieldai-seo/SKILL.md`
 and the `client-ops-automation` skill for the deploy/DNS/ops layer.
+
+**Precedence against the `local-seo` suite.** The company-wide `local-seo` skill has
+its own `/blog-post` module. **This skill wins for any site it already governs** —
+`local-seo /blog-post` is for a local business with no dedicated blog skill. Do not
+switch procedures mid-site. The rest of `local-seo` is complementary and is the
+standard for work this skill does not do at all: Google Business Profile, the review
+engine, GBP posts, NAP and citation audits, Service × City matrix pages, and social
+syndication. Its shared rules still bind here — never invent data, dry-run anything
+that leaves the machine, and no doorway pages. Root `CLAUDE.md` holds the full table.
