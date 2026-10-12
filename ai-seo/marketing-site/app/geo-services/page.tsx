@@ -10,7 +10,7 @@ import { SITE_URL } from '@/lib/site';
 
 const TITLE = 'Generative engine optimization services';
 const DESCRIPTION =
-  'Generative engine optimization (GEO) services for African businesses — AI-crawler access, answer-first content, structured data, and a monthly benchmark of what ChatGPT, Claude, Perplexity, and Gemini say about you.';
+  'Generative engine optimization (GEO) for African businesses — AI-crawler access, answer-first content, structured data, and a monthly AI-citation benchmark.';
 
 export const metadata: Metadata = {
   title: TITLE,

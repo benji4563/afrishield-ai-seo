@@ -10,7 +10,7 @@ import { SITE_URL } from '@/lib/site';
 
 const TITLE = 'Hospitality SEO services in Africa';
 const DESCRIPTION =
-  'SEO and AI-search visibility for African safari operators, lodges, hotels, and tour companies — built to move bookings off OTA commissions and onto direct channels.';
+  'SEO and AI-search visibility for African safari operators, lodges, hotels and tour companies — built to move bookings off OTA commissions to direct channels.';
 
 export const metadata: Metadata = {
   title: TITLE,

@@ -11,7 +11,7 @@ import { SITE_URL } from '@/lib/site';
 
 const TITLE = 'AI SEO by city — where we work across Africa';
 const DESCRIPTION =
-  'AI SEO and generative engine optimisation in Lagos, Abuja, Accra, Nairobi, Johannesburg and Douala. What each market costs, how contested it is, and how buyers there actually search.';
+  'AI SEO and generative engine optimisation in Lagos, Abuja, Accra, Nairobi, Johannesburg and Douala. What each market costs and how contested it is.';
 
 export const metadata: Metadata = {
   title: TITLE,

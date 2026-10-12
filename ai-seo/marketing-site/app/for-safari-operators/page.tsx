@@ -10,7 +10,7 @@ import { SITE_URL } from '@/lib/site';
 
 const TITLE = 'SEO for safari operators';
 const DESCRIPTION =
-  'SEO for safari operators and African tour companies — built to reach the international buyers who plan on Google and inside AI assistants, without burning cash on ads.';
+  'SEO for safari operators and African tour companies — built to reach international buyers who plan on Google and in AI assistants, without burning cash on ads.';
 
 export const metadata: Metadata = {
   title: TITLE,

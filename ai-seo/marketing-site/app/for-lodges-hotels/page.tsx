@@ -10,7 +10,7 @@ import { SITE_URL } from '@/lib/site';
 
 const TITLE = 'SEO for lodges and hotels in Africa';
 const DESCRIPTION =
-  'SEO for lodges, hotels, and guest houses in Africa — direct-booking visibility that cuts the 15–25% OTA commission, plus AI search optimization so ChatGPT and Perplexity name your property.';
+  'SEO for lodges, hotels and guest houses in Africa — direct-booking visibility that cuts the 15–25% OTA commission, and AI search work so assistants name you.';
 
 export const metadata: Metadata = {
   title: TITLE,

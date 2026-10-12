@@ -51,7 +51,7 @@ export const CITIES: City[] = [
     currency: 'NGN',
     metaTitle: 'AI SEO Agency in Lagos, Nigeria',
     metaDescription:
-      'AI SEO and GEO for Lagos businesses — Victoria Island, Lekki, Ikeja and Yaba. Get found on Google, Google Maps, and inside ChatGPT and Perplexity answers. From $150/month, invoiced in NGN.',
+      'AI SEO and GEO for Lagos businesses — Victoria Island, Lekki, Ikeja and Yaba. Get found on Google, Maps and in AI answers. From $150/month, invoiced in NGN.',
     title: 'AI SEO in Lagos, for businesses that need the phone to ring',
     heroBlurb:
       'Search visibility for Lagos businesses across Victoria Island, Lekki, Ikeja and Yaba — run by agents, edited by people, reported in numbers you can check.',
@@ -103,7 +103,7 @@ export const CITIES: City[] = [
     currency: 'NGN',
     metaTitle: 'AI SEO Agency in Abuja, Nigeria',
     metaDescription:
-      'AI SEO and GEO for Abuja businesses — Maitama, Wuse II, Garki and the Central Business District. Built for professional practices, contractors and NGOs. From $150/month, invoiced in NGN.',
+      'AI SEO and GEO for Abuja businesses — Maitama, Wuse II, Garki and the CBD. For professional practices, contractors and NGOs. From $150/month, invoiced in NGN.',
     title: 'AI SEO in Abuja, built for a professional-services capital',
     heroBlurb:
       'Search visibility for Abuja firms across Maitama, Wuse II, Garki and the CBD — the practices, contractors and organisations that win work on credibility.',
@@ -154,7 +154,7 @@ export const CITIES: City[] = [
     currency: 'GHS',
     metaTitle: 'AI SEO Agency in Accra, Ghana',
     metaDescription:
-      'AI SEO and GEO for Accra businesses — Osu, East Legon, Airport Residential, Cantonments and Tema. Get found on Google, Maps and in AI answers. From $150/month, invoiced in GHS.',
+      'AI SEO and GEO for Accra businesses — Osu, East Legon, Cantonments and Tema. Get found on Google, Maps and in AI answers. From $150/month, invoiced in GHS.',
     title: 'AI SEO in Accra, for businesses selling to Ghana and the diaspora',
     heroBlurb:
       'Search visibility for Accra businesses across Osu, East Legon, Airport Residential and Tema — including the diaspora traffic most Ghanaian sites never capture.',
@@ -205,7 +205,7 @@ export const CITIES: City[] = [
     currency: 'KES',
     metaTitle: 'AI SEO Agency in Nairobi, Kenya',
     metaDescription:
-      'AI SEO and GEO for Nairobi businesses — Westlands, Upper Hill, Kilimani, Karen and Gigiri. Built for safari operators, SaaS and professional firms. From $150/month, invoiced in KES.',
+      'AI SEO and GEO for Nairobi businesses — Westlands, Upper Hill, Kilimani and Karen. For safari operators, SaaS and professional firms. From $150/month, in KES.',
     title: 'AI SEO in Nairobi, for the businesses buyers compare before they call',
     heroBlurb:
       'Search visibility for Nairobi businesses across Westlands, Upper Hill, Kilimani and Karen — including the safari and travel operators losing bookings to OTAs.',
@@ -257,7 +257,7 @@ export const CITIES: City[] = [
     currency: 'ZAR',
     metaTitle: 'AI SEO Agency in Johannesburg, South Africa',
     metaDescription:
-      'AI SEO and GEO for Johannesburg businesses — Sandton, Rosebank, Braamfontein and Midrand. The most competitive search market in Africa, handled honestly. From $150/month, invoiced in ZAR.',
+      'AI SEO and GEO for Johannesburg businesses — Sandton, Rosebank, Braamfontein and Midrand. The most competitive search market in Africa. From $150/month, in ZAR.',
     title: 'AI SEO in Johannesburg, where the search market is already grown up',
     heroBlurb:
       'Search visibility for Johannesburg businesses across Sandton, Rosebank, Braamfontein and Midrand — in the most competitive search market on the continent.',
@@ -302,7 +302,7 @@ export const CITIES: City[] = [
     currency: 'XAF',
     metaTitle: 'AI SEO Agency in Douala, Cameroon',
     metaDescription:
-      'AI SEO and GEO for Douala businesses — Akwa, Bonanjo, Bonapriso and Bonabéri. Bilingual French and English search, in Central Africa’s least contested market. From $150/month, invoiced in XAF.',
+      'AI SEO and GEO for Douala businesses — Akwa, Bonanjo, Bonapriso and Bonabéri. Bilingual French and English search. From $150/month, invoiced in XAF.',
     title: 'AI SEO in Douala, where almost nobody has done this work yet',
     heroBlurb:
       'Search visibility for Douala businesses across Akwa, Bonanjo, Bonapriso and Bonabéri — bilingual, and in the least contested market we operate in.',

@@ -88,6 +88,7 @@ export const professionalServiceJsonLd = {
 export const servicesJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
+  name: 'AI SEO',
   serviceType: 'AI SEO',
   provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
   areaServed: [
@@ -102,6 +103,7 @@ export const servicesJsonLd = {
 export const tourismHospitalityServiceJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
+  name: 'Hospitality SEO services',
   serviceType: 'Hospitality SEO services',
   provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
   areaServed: [
@@ -116,6 +118,7 @@ export const tourismHospitalityServiceJsonLd = {
 export const safariOperatorsServiceJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
+  name: 'SEO for safari operators',
   serviceType: 'SEO for safari operators',
   provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
   areaServed: [
@@ -134,6 +137,7 @@ export const safariOperatorsServiceJsonLd = {
 export const lodgesHotelsServiceJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
+  name: 'SEO for lodges and hotels',
   serviceType: 'SEO for lodges and hotels',
   provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
   areaServed: [
@@ -148,6 +152,7 @@ export const lodgesHotelsServiceJsonLd = {
 export const geoServicesJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
+  name: 'Generative engine optimization',
   serviceType: 'Generative engine optimization',
   provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
   areaServed: [

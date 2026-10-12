@@ -7,9 +7,9 @@ import { StructuredData } from '@/components/seo/StructuredData';
 import { breadcrumbJsonLd, howToJsonLd } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/site';
 
-const TITLE = 'The AI-Visibility Checklist — test your own business in 15 minutes';
+const TITLE = 'AI-Visibility Checklist: a 15-minute test';
 const DESCRIPTION =
-  'A free DIY checklist: the exact prompts to paste into ChatGPT, Perplexity, and Gemini, how to score the answers, and the five technical checks that decide whether AI engines can find, read, and cite your business.';
+  'A free DIY checklist: the prompts to paste into ChatGPT, Perplexity and Gemini, how to score the answers, and five technical checks for AI visibility.';
 
 export const metadata: Metadata = {
   title: TITLE,

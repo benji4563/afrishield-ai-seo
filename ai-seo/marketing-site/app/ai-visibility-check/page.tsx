@@ -4,7 +4,7 @@ import { StructuredData } from '@/components/seo/StructuredData';
 import { breadcrumbJsonLd, faqPageJsonLd } from '@/lib/structured-data';
 import { SITE, SITE_URL } from '@/lib/site';
 
-const TITLE = 'Free AI-visibility check — what do ChatGPT, Perplexity and Gemini say about you?';
+const TITLE = 'Free AI-visibility check for your business';
 const DESCRIPTION =
   'We ask ChatGPT, Perplexity and Gemini the questions your buyers ask, screenshot the answers, and send you a one-page result within 48 hours. Free, no lock-in.';
 
