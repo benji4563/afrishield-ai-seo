@@ -151,8 +151,11 @@ export default function Post() {
           We took one plain, high-intent search — <em>best {`{service}`} in {`{city}`}</em> — and
           ran it for two categories across five African cities: <strong>boutique hotels and
           safari operators</strong> (travel and hospitality) and <strong>accounting firms</strong>{' '}
-          (professional services), in Nairobi, Lagos, Accra, Johannesburg and Arusha. For each of
-          the nine searches we recorded every result on page one and classified it: the
+          (professional services), in Nairobi, Lagos, Accra, Johannesburg and Arusha.
+        </p>
+
+        <p>
+          For each of the nine searches we recorded every result on page one and classified it: the
           business&rsquo;s <strong>own website</strong>, an <strong>aggregator</strong> (an OTA,
           directory, or marketplace like Booking.com, TripAdvisor, or Clutch), <strong>media</strong>{' '}
           (a listicle or blog), or <strong>UGC</strong> (Reddit, Instagram, YouTube). We also noted
@@ -234,7 +237,11 @@ export default function Post() {
           Accounting told the opposite story. Across the four cities, roughly two-thirds of page-one
           results were local firms&rsquo; <em>own</em> websites — Elixir Audits in Accra, MGK
           Consulting and Hamo &amp; Associates in Nairobi, SIAO in Lagos, MMS Group and RAiN in
-          Johannesburg. The map pack was full of real local firms, not platforms. The aggregators
+          Johannesburg.
+        </p>
+
+        <p>
+          The map pack was full of real local firms, not platforms. The aggregators
           that did appear were the professional-services kind (Clutch, national directories, a
           regulator&rsquo;s list) and the global &ldquo;Big 4,&rdquo; not a booking platform sitting
           between the firm and its customer.
@@ -271,7 +278,11 @@ export default function Post() {
         <p>
           If you are in travel or hospitality, the takeaway is uncomfortable but useful: winning
           the AI answer is not the same job as being on the OTAs, and doing the first does not
-          happen automatically from the second. The moves that shift it are unglamorous and mostly
+          happen automatically from the second.
+        </p>
+
+        <p>
+          The moves that shift it are unglamorous and mostly
           free — state your facts plainly on your own site, add structured data, keep one
           consistent name, address and phone everywhere, and let the AI crawlers read you. That is
           precisely the{' '}

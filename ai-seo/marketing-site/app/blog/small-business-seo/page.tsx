@@ -261,7 +261,11 @@ export default function Post() {
           The content that works for a small business is narrow and specific: one page per
           real service, one page per real city or neighbourhood served, each answering a
           question a genuine customer has actually asked, not a broad guide written to rank
-          for a broad term nobody with buying intent is searching. Specificity is the entire
+          for a broad term nobody with buying intent is searching.
+        </p>
+
+        <p>
+          Specificity is the entire
           advantage a small business has over a national competitor, and most small business
           content throws it away by trying to sound bigger than it is.
         </p>
@@ -278,7 +282,11 @@ export default function Post() {
           Three technical basics matter for a small business site, and almost nothing past
           them does: the page loads quickly on a mid-range phone on an ordinary connection,
           every page has one clear heading and a working sitemap, and nothing important
-          depends on JavaScript a crawler cannot reliably execute. A five-to-twenty-page site
+          depends on JavaScript a crawler cannot reliably execute.
+        </p>
+
+        <p>
+          A five-to-twenty-page site
           does not need the technical apparatus a publisher with ten thousand pages needs, and
           building it anyway is money and attention spent on a problem the business does not
           have.
@@ -318,7 +326,11 @@ export default function Post() {
           assistant such as ChatGPT, Claude, Perplexity, or Google&rsquo;s AI Overview gives,
           which rewards the same clear, specific writing that ranks on Google but adds a
           premium on being the original, checkable source rather than the fortieth summary of
-          a generic definition. A customer who asks ChatGPT or Google&rsquo;s AI Overview which
+          a generic definition.
+        </p>
+
+        <p>
+          A customer who asks ChatGPT or Google&rsquo;s AI Overview which
           print shop handles wedding invitations locally gets a named answer, not a list of
           links to scroll — and a small, thinly documented market is often where an assistant
           has the least to work with, which cuts in the small business&rsquo;s favour rather
@@ -338,7 +350,11 @@ export default function Post() {
         <p>
           A small business with one owner, a handful of services, and a few hours a week can do
           the Google Business Profile, the on-page basics, and a slow trickle of content alone,
-          and should. Hiring an agency before the offer is settled and there is a clear list of
+          and should.
+        </p>
+
+        <p>
+          Hiring an agency before the offer is settled and there is a clear list of
           services to write about is usually money spent describing something that has not
           stabilised yet. That is the honest, against-interest part of this piece: if the
           business itself is still changing shape month to month, SEO work done now will need

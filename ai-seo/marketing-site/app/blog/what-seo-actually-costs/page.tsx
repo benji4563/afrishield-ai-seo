@@ -115,6 +115,12 @@ export default function Post() {
 
         <h2 id="the-ranges">The ranges, without the throat-clearing</h2>
 
+        <p>
+          Monthly SEO pricing falls into five bands, from under $300, which buys little more
+          than a rank report and light edits, to $10,000 and up for enterprise work. A
+          single-location business with one core service sits at $400 to $800 a month.
+        </p>
+
         <figure>
           <table>
             <thead>
@@ -296,6 +302,13 @@ export default function Post() {
 
         <h2 id="models">Retainer, project, or hourly</h2>
 
+        <p>
+          SEO is sold in four ways: a monthly retainer of $400 to $5,000, a one-off project
+          of $1,500 to $10,000, hourly consulting at $75 to $300, or performance-based
+          pricing. A retainer fits ongoing content and ranking work; a project fits work
+          that finishes.
+        </p>
+
         <figure>
           <table>
             <thead>
@@ -371,7 +384,10 @@ export default function Post() {
 
         <h2 id="dont-buy">When you should not buy this at all</h2>
 
-        <p>Genuinely, do not spend money on SEO this quarter if:</p>
+        <p>
+          Do not spend money on SEO this quarter if any one of the following is true of the
+          business:
+        </p>
 
         <ul>
           <li>
@@ -396,6 +412,11 @@ export default function Post() {
         </ul>
 
         <h2 id="questions">Five questions before you sign anything</h2>
+
+        <p>
+          Before signing with any SEO provider, ask these five questions about output, scope,
+          contract terms, ownership and expectations.
+        </p>
 
         <ol>
           <li>How many pages publish each month, and who writes them?</li>
