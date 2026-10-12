@@ -252,9 +252,10 @@ schedule by a **local scheduled task** in the Claude desktop app (for AfriShield
 site: `afrishield-blog-post`), which runs steps 1–6 against `content-queue.md`. It is
 deliberately not a cloud routine — the cloud agent environment could not reach the
 production host, so it could neither confirm a post was live nor push to `master`.
-Nothing tops up `content-queue.md` automatically: new rows come from a keyword-engine
-pass in an interactive session, and the weekly site-health task reports queue depth so
-that pass is scheduled before the queue runs dry. Every run — scheduled or interactive, own
+A second local task (for AfriShield: `afrishield-queue-topup`, weekly) refills
+`content-queue.md` when fewer than 8 rows are queued, by running the keyword engine
+under a fixed Apify spending cap and adding only rows with engine-verified volume. The
+weekly site-health task reports queue depth and whether the top-up ran. Every run — scheduled or interactive, own
 site or client — writes with the locked-in humor reference
 `../humor-writing/SKILL.md`; the auto-poster applies it as-is. City/service landing
 pages are a different shape — see the sibling build SOP `../afrishieldai-seo/SKILL.md`
