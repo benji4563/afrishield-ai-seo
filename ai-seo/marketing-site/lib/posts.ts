@@ -72,7 +72,9 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'Top GEO & AI search agencies in Africa (2026)',
     metaTitle: 'Top GEO Agencies in Africa (2026)',
     description:
-      'An objective comparison of the leading Generative Engine Optimization (GEO) and AI search visibility agencies serving African enterprises in 2026 — the evaluation framework, a provider matrix, and when GEO beats local SEO.',
+      'The leading Generative Engine Optimization agencies serving African businesses in 2026: how to evaluate them, a provider matrix, and when GEO beats local SEO.',
+    lede:
+      'Generative Engine Optimization agencies in Africa help businesses win brand citations inside AI engines such as Perplexity, ChatGPT Search, Google Gemini and Claude. This guide compares the providers serving Central and East Africa in 2026, sets out the framework used to evaluate them, and explains when GEO is a better investment than local SEO.',
     category: 'Comparison',
     published: '2026-08-30',
     modified: '2026-08-30',
@@ -90,7 +92,9 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'AfriShield AI launches enterprise GEO in Africa',
     metaTitle: 'Enterprise GEO Launches in Africa',
     description:
-      'AfriShield AI is launching an enterprise Generative Engine Optimization (GEO) and Answer Engine Optimization service across Central, East, and West Africa — getting brands named inside AI answers, the honest way.',
+      'AfriShield AI is launching an enterprise GEO and Answer Engine Optimization service across Central, East and West Africa, to get brands named inside AI answers.',
+    lede:
+      'AfriShield AI is launching an enterprise Generative Engine Optimization and Answer Engine Optimization service for African businesses, run from hubs in Douala and Nairobi. The work gets a brand named inside the answers given by Perplexity, ChatGPT Search, Google Gemini and Claude, using clean entity data, structured markup and third-party corroboration. No placement is guaranteed.',
     category: 'Announcements',
     published: '2026-08-30',
     modified: '2026-08-30',
@@ -108,7 +112,9 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'Who AI recommends in African cities (a study)',
     metaTitle: 'Who AI names when Africa searches',
     description:
-      'We ran real searches across Nairobi, Lagos, Accra, Johannesburg and Arusha. In travel, a business’s own website was just 23% of page one; in professional services, 68%. Google served an AI answer on every single query.',
+      'Nine real searches in five African cities: a business’s own site was 23% of page one in travel and 68% in professional services. The raw data is published.',
+    lede:
+      'We ran nine real searches across Nairobi, Lagos, Accra, Johannesburg and Arusha. In travel and hospitality, a business’s own website was 23% of page-one organic results; in professional services, local firms’ own sites were 68%. Google served an AI-generated answer on all nine searches. The raw data is published in this study.',
     category: 'Original research',
     published: '2026-08-28',
     modified: '2026-08-28',
@@ -126,6 +132,8 @@ export const POSTS: PostMeta[] = [
     metaTitle: 'Content Marketing For Small Business',
     description:
       'What content marketing actually means for a small business, the content worth the time, how often to publish, and how to tell whether any of it is working.',
+    lede:
+      'Content marketing for a small business means publishing the guides, comparisons, pricing pages and answers a future customer searches for before buying. This guide covers which content is worth the time, how often to publish on a schedule the business can sustain, and how to tell whether any of it is working.',
     category: 'Content strategy',
     published: '2026-08-23',
     readingMinutes: 10,
@@ -141,7 +149,9 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'How to get more website traffic, honestly',
     metaTitle: 'How To Get More Website Traffic',
     description:
-      'Why a higher Google ranking does not automatically mean more visitors, the five traffic channels a small business actually controls, and how to tell which one is working.',
+      'Why a higher Google ranking does not always mean more visitors, the five traffic channels a small business controls, and how to tell which one is working.',
+    lede:
+      'A website gets more traffic by working several channels at once: organic search, mentions in AI-assistant answers, referral links from other sites, local and Maps visibility, and repeat visits from email or brand recall. This guide explains why a higher ranking alone does not always raise traffic, and how to measure which channel is carrying visitors.',
     category: 'Traffic growth',
     published: '2026-08-22',
     readingMinutes: 10,
@@ -157,7 +167,9 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'How to appear on Google Maps, explained',
     metaTitle: 'How To Appear On Google Maps',
     description:
-      'Why a business does not show on Google Maps at all, the three ranking factors Google actually uses, and the concrete profile fixes that move a listing into the map pack.',
+      'Why a business does not show on Google Maps, the three ranking factors Google uses, and the profile fixes that move a listing into the map pack.',
+    lede:
+      'A business appears on Google Maps by having a verified Google Business Profile whose category, location and reviews match the search. Google ranks listings on relevance, distance and prominence. This guide covers why a business is missing from the map, usually an unverified profile, the wrong primary category or too few reviews, and the fixes for each.',
     category: 'Local visibility',
     published: '2026-08-21',
     readingMinutes: 10,
@@ -173,7 +185,9 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'How to improve Google ranking, the plain checklist',
     metaTitle: 'How To Improve Your Google Ranking',
     description:
-      'The technical fixes, on-page basics, content, and trust signals that actually move a Google ranking, in the order that matters, plus how long each layer realistically takes to show.',
+      'The technical fixes, on-page basics, content and trust signals that move a Google ranking, in the order that matters, and how long each takes to show.',
+    lede:
+      'Improving a Google ranking means working through four layers in order: technical health, on-page fundamentals, content depth, and trust signals such as reviews, links and mentions. This guide explains what to fix in each layer, how long each one realistically takes to show, and why starting with backlinks on a slow site is the most common reason ranking work stalls.',
     category: 'Fundamentals',
     published: '2026-08-20',
     readingMinutes: 11,
@@ -189,7 +203,9 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'How to do keyword research, the real method',
     metaTitle: 'How To Do Keyword Research, Explained',
     description:
-      'Finding the exact words customers use before they buy, without a paid tool: where to look, how to read low African search volumes, matching intent, and a five-step process for one afternoon.',
+      'How to find the words customers use before they buy, without a paid tool: where to look, how to read low African search volumes, and a five-step process.',
+    lede:
+      'Keyword research is finding the exact words and phrases customers type or say before they buy, then sorting them by relevance, competition and closeness to a decision. This guide shows where to look without a paid tool, how to read low African search volumes, how to match intent, and a five-step process that takes one afternoon.',
     category: 'Research',
     published: '2026-08-19',
     readingMinutes: 10,
@@ -205,7 +221,9 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'SEO vs Google Ads, the honest breakdown',
     metaTitle: 'SEO vs Google Ads: The Honest Breakdown',
     description:
-      'Google Ads buys clicks the day you launch; SEO earns them for free after months of work. The real comparison on cost, speed, and durability, and which one a small business should fund first.',
+      'Google Ads buys clicks the day you launch; SEO earns them after months of work. The comparison on cost, speed and durability, and which to fund first.',
+    lede:
+      'Google Ads buys placement at the top of the results page for as long as you keep paying, and usually produces clicks within hours. SEO earns placement through pages Google judges relevant and trustworthy, usually takes three to six months to show movement, and keeps producing traffic after spending stops. This guide compares cost, speed and durability, and which to fund first.',
     category: 'Comparison',
     published: '2026-08-18',
     readingMinutes: 10,
@@ -221,7 +239,9 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'Local SEO for small business, the real checklist',
     metaTitle: 'Local SEO For Small Business, Explained',
     description:
-      'What local SEO actually is, how it differs from general SEO, and the concrete, mostly-free work — Google Business Profile, NAP consistency, citations, and reviews — that moves the map pack.',
+      'What local SEO is, how it differs from general SEO, and the mostly free work that moves the map pack: Google Business Profile, NAP, citations and reviews.',
+    lede:
+      'Local SEO for a small business is the work that gets it found when someone nearby searches for what it sells: a complete Google Business Profile, the same name, address and phone number on every listing, a steady flow of real reviews, and pages built for near-me searches. This guide explains how it differs from general SEO and what to do first.',
     category: 'Local visibility',
     published: '2026-08-17',
     readingMinutes: 10,
@@ -237,7 +257,9 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'How long does SEO take? A realistic timeline',
     metaTitle: 'How Long Does SEO Take? A Realistic Timeline',
     description:
-      'Most small business sites see the first ranking movement in three to six months, and real traffic in six to twelve. The honest month-by-month timeline, what speeds it up, and what does not.',
+      'Most small business sites see ranking movement in three to six months and real traffic in six to twelve. The month-by-month timeline and what speeds it up.',
+    lede:
+      'Most small business websites see the first measurable ranking movement within three to six months of consistent SEO work, and organic traffic that produces enquiries within six to twelve months. This guide gives the month-by-month timeline, what speeds it up, what does not, and why competitive keywords and brand-new sites take longer.',
     category: 'Fundamentals',
     published: '2026-08-14',
     readingMinutes: 10,
@@ -253,7 +275,9 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'Is SEO worth it? An honest answer',
     metaTitle: 'Is SEO Worth It? The Honest Answer',
     description:
-      'SEO is worth it for most small businesses, but not on every timeline or budget. The real return, what it costs to get there, and the honest case for skipping it.',
+      'SEO is worth it for most small businesses, but not on every timeline or budget. The real return, what it costs, and the honest case for skipping it.',
+    lede:
+      'SEO is worth it for most small businesses that plan to still be trading in a year, because the visitors it earns keep arriving after the work is paid for. It is not worth it for a business that needs revenue this month or cannot fund three to six quiet months first. This guide covers the return, the cost and when to skip it.',
     category: 'Money',
     published: '2026-08-13',
     readingMinutes: 10,
@@ -271,6 +295,8 @@ export const POSTS: PostMeta[] = [
     metaTitle: 'How to rank on ChatGPT, explained',
     description:
       'There is no ChatGPT ranking algorithm to climb. Here is the concrete, checkable work that actually gets a business named in a ChatGPT answer instead.',
+    lede:
+      'There is no ChatGPT ranking algorithm to climb, and nothing assigns a business position one, two or three. What decides whether ChatGPT names a business is whether the model finds it described clearly, specifically and corroborated elsewhere. This guide covers the work that achieves that: a crawlable page, a plain answer near the top, matching structured data and outside mentions.',
     category: 'AI answers',
     published: '2026-08-12',
     readingMinutes: 10,
@@ -286,7 +312,9 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'Google Business Profile optimization, done right',
     metaTitle: 'Google Business Profile Optimization',
     description:
-      'The ranking factors, category and attribute choices, photo and Posts cadence, and review habits that actually move a Google Business Profile once it is already set up.',
+      'The category and attribute choices, photo and Posts cadence, and review habits that move a Google Business Profile once it is already set up.',
+    lede:
+      'Google Business Profile optimization is the ongoing work of improving a profile that is already claimed and verified: choosing the correct category and attributes, adding real photos and short Posts every week, answering every review and question, and checking Insights monthly. This guide covers each of those and explains how optimization differs from the one-time job of setup.',
     category: 'Local visibility',
     published: '2026-08-11',
     readingMinutes: 10,
@@ -302,7 +330,9 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'How to get your hotel cited by ChatGPT',
     metaTitle: 'Get your hotel cited by ChatGPT',
     description:
-      'Travelers now ask ChatGPT, Perplexity and Gemini where to stay — here is how to rank inside those AI answers. What actually gets a hotel named: crawler access, answer-first content, structured data, and one consistent identity across the web.',
+      'What gets a hotel named in ChatGPT, Perplexity and Gemini answers: crawler access, answer-first content, structured data and one consistent identity.',
+    lede:
+      'Getting a hotel cited by ChatGPT means making the property the easiest correct answer for an AI assistant to give. That takes five things: letting AI crawlers read the site, a plain answer at the top of each key page, structured data stating what and where the property is, identical details across every listing, and a monthly check of what the assistants say.',
     category: 'AI answers',
     published: '2026-08-10',
     readingMinutes: 10,
@@ -318,7 +348,9 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'How to reduce OTA commission',
     metaTitle: 'How to reduce OTA commission',
     description:
-      'OTA commissions run 10–25% of every booking. A practical playbook for African lodges and hotels to shift reservations onto direct channels — mostly arithmetic and consistency, no magic.',
+      'OTA commissions run 10–25% of every booking. A practical playbook for African lodges and hotels to move reservations onto direct channels.',
+    lede:
+      'Reducing OTA commission means moving part of a property’s bookings from platforms that charge 10–25 percent per reservation to channels it owns. This playbook for African lodges and hotels sets out the order that works: fix the booking path, win the specific searches travelers run, get cited by AI assistants, then rebook past guests directly.',
     category: 'Direct bookings',
     published: '2026-08-10',
     readingMinutes: 11,
@@ -335,7 +367,9 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'What is schema markup, explained plainly',
     metaTitle: 'What is schema markup? A plain answer',
     description:
-      'What schema markup actually is, the handful of schema.org types worth using on a small business site, and the honest limits of what a few lines of JSON-LD can do for you.',
+      'What schema markup is, the schema.org types worth using on a small business site, and the limits of what a few lines of JSON-LD can do.',
+    lede:
+      'Schema markup is structured code, usually written in JSON-LD, added to a web page so a search engine or AI assistant can read what the page is about instead of guessing from the visible text. This guide explains how it works, which schema.org types are worth using on a small business site, and what it cannot do.',
     category: 'Technical SEO',
     published: '2026-08-10',
     readingMinutes: 9,
@@ -353,6 +387,8 @@ export const POSTS: PostMeta[] = [
     metaTitle: 'Get your business on Google, step by step',
     description:
       'The three separate ways a business shows up on Google — Maps, organic search, and AI answers — and the concrete, mostly-free steps for each, cheapest first.',
+    lede:
+      'Getting a business onto Google is three separate jobs: claiming and verifying a Google Business Profile so it appears in Maps and the local pack, getting the website crawled and indexed so it appears in search results, and writing pages clearly enough for an AI assistant to quote. This guide covers the steps for each, cheapest first.',
     category: 'Local visibility',
     published: '2026-08-10',
     readingMinutes: 10,
@@ -368,7 +404,9 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'Small business SEO, without the agency budget',
     metaTitle: 'Small business SEO, explained',
     description:
-      'What small business SEO actually is, why it is not scaled-down enterprise SEO, and the specific, mostly-free moves that matter before you consider hiring anyone.',
+      'What small business SEO is, why it is not scaled-down enterprise SEO, and the mostly free moves that matter before you consider hiring anyone.',
+    lede:
+      'Small business SEO is the practice of making a small, owner-run business easy for a search engine or an AI assistant to find, trust and recommend, using the time and budget it actually has. In practice that means a complete Google Business Profile, a handful of accurate service and city pages, and content that answers the questions customers already ask.',
     category: 'Fundamentals',
     published: '2026-08-05',
     readingMinutes: 10,
@@ -385,6 +423,8 @@ export const POSTS: PostMeta[] = [
     metaTitle: 'Answer engine optimization explained',
     description:
       'What it takes to be named inside an AI assistant’s answer — not just listed underneath it — and why the gap is wider, and more winnable, in African markets.',
+    lede:
+      'Answer engine optimization is the work of getting a business named inside the answer an AI assistant gives, from ChatGPT, Claude, Perplexity or Google’s AI overview, and not only in the list of links underneath. This guide explains how the tactics relate to SEO, what a model needs in order to quote a business, and why the gap is more winnable in African markets.',
     category: 'AI answers',
     published: '2026-07-29',
     readingMinutes: 9,
@@ -401,6 +441,8 @@ export const POSTS: PostMeta[] = [
     metaTitle: 'What an AI SEO agency does all day',
     description:
       'A plain, slightly unflattering tour of the work behind an AI SEO retainer — the clustering, the writing, the schema, and the parts nobody photographs.',
+    lede:
+      'An AI SEO agency spends most of its week on three things: deciding what to target, writing pages that answer those questions better than the current top results, and checking the technical setup that lets search engines understand them. Agents handle keyword clustering, research drafts and schema validation. A human decides what to skip, edits every published word and signs the report.',
     category: 'The work',
     published: '2026-07-24',
     readingMinutes: 9,
@@ -417,6 +459,8 @@ export const POSTS: PostMeta[] = [
     metaTitle: 'What SEO actually costs, explained',
     description:
       'Real ranges, what sits behind each one, and the four months of paying before earning that nobody puts on the pricing page.',
+    lede:
+      'Most small businesses pay between $500 and $2,000 a month for SEO. Published industry pricing surveys for 2026 put the broad market at roughly $500 to $3,000 a month, with freelancers lower and enterprise work at $10,000 and up. This guide explains what sits behind each range and the four to six months of paying before the return starts.',
     category: 'Money',
     published: '2026-07-24',
     readingMinutes: 10,
@@ -433,6 +477,8 @@ export const POSTS: PostMeta[] = [
     metaTitle: 'AI SEO vs traditional SEO: a fair fight',
     description:
       'Where automation genuinely wins, where it quietly loses, and the specific jobs you should never hand to a machine without a human reading the output.',
+    lede:
+      'AI SEO and traditional SEO are the same strategy with a different division of labour. Both aim at pages that rank because they answer a question properly. AI SEO hands repetitive work such as keyword clustering, competitive summaries, first drafts and technical validation to agents, and keeps strategy, editing and judgement with a person. This guide covers where automation wins and where it loses.',
     category: 'Comparison',
     published: '2026-07-24',
     readingMinutes: 9,
