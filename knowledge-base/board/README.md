@@ -42,15 +42,19 @@ transcripts or articles verbatim; we link them and summarise.
    board's doctrine. Conflicting or hype-y tactics (esp. anything sourced from a
    single volume-first creator) must survive the more rigorous lenses
    (Mike King, Koray) before use.
-4. **Learn in the repo.** When a reconciliation produces a durable new insight,
-   the agent opens a **PR** updating the advisor wiki here (or the affected skill).
-   The system's knowledge lives in git, not in anyone's head.
+4. **Learn in the repo.** A durable new insight is written into the advisor wiki
+   here and committed to `master`. A change to a skill is a **rule**: it needs a
+   full-transcript source plus corroboration, is logged in `CHANGELOG.md` with a
+   review date, and is retired if it shows no benefit. A change to site code or
+   page copy is only ever a **proposal** for Ben. No PR branches — 29 of the 34
+   opened between July and October 2026 were never merged. The weekly local task
+   `afrishield-board-update` runs this loop.
 
 ## Board-review loop (for drafts)
 
 A board-review agent takes a draft (post, page, or plan), loads its lens's
 wiki, and returns: a **score**, a list of **concrete fixes**, and any **recurring
-drift** worth turning into a skill edit (opened as a PR). See
+drift** worth turning into a skill rule (see protocol step 4). See
 `02 Services ai seo/.claude/agents/board-geo-reviewer.md` for the first lens.
 
 ## Status

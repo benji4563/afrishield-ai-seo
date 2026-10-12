@@ -1,6 +1,15 @@
 # Board channels — sources for the evolving-knowledge ingestion
 
-The weekly ingestion routine reads each member's latest uploads via the YouTube
+> **Updated 2026-10-12.** Ingestion now runs in the local scheduled task
+> `afrishield-board-update` (Saturdays), not in a cloud routine. From that PC the RSS
+> feeds below return 404, so new uploads are listed with
+> `yt-dlp --flat-playlist --playlist-end 6 --print "%(id)s | %(duration_string)s | %(title)s" https://www.youtube.com/channel/<channel_id>/videos`.
+> Transcripts come from a Firecrawl scrape of the watch URL (yt-dlp `en-orig`
+> captions as fallback), and on-screen material from the `/watch` skill, for a
+> chosen section only. Changes are committed to `master` directly — no PR branch.
+> The channel ids, the ledger and the copyright rule below are unchanged.
+
+The original design read each member's latest uploads via the YouTube
 **RSS feed** (curl-fetchable, no API key):
 
 ```

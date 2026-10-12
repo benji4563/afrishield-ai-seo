@@ -63,9 +63,12 @@ shippable and build-verifiable. This is the hand-off; the doer does not re-deriv
 
 ## 5. Learn in the repo
 
-If a fix would recur on every task of this type, open a **PR** against the relevant
-skill (as the GEO reviewer did for `afrishield-blog`). If a lens surfaces a durable new
-principle, open a PR updating that advisor's wiki. Knowledge grows in git.
+If a fix would recur on every task of this type, it is a candidate **skill rule**. In an
+interactive session, propose it to the user and apply it on their yes. In the scheduled
+run it must meet the evidence test in the `afrishield-board-update` task (full-transcript
+source plus corroboration, at most two a week) and is logged in
+`knowledge-base/board/CHANGELOG.md`. If a lens surfaces a durable new principle, add it to
+that advisor's wiki. Commit to `master`; do not open PR branches. Knowledge grows in git.
 
 ## 6. Summarise
 
@@ -79,5 +82,5 @@ weekly Saturday board digest.
   return the execution to-do the doer should follow.
 - **Post-task (before publish):** run the relevant lens over the *draft*; block publish
   on any RED finding; apply fixes; then ship.
-- **Scheduled:** the twice-weekly board routine runs this over the week's artifacts;
-  the Saturday digest rolls up the summaries.
+- **Scheduled:** the local task `afrishield-board-update` (Saturdays) runs the GEO lens
+  over the week's published posts and writes `reports/board-update-<date>.md`.
