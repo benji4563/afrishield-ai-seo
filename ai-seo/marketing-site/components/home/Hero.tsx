@@ -23,7 +23,7 @@ export function Hero() {
         />
         <div
           aria-hidden="true"
-          className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/85 to-ink/20"
+          className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/90 to-ink/65 md:via-ink/85 md:to-ink/20"
         />
         <div
           aria-hidden="true"
