@@ -152,7 +152,7 @@ export default function Post() {
           Cluster N (Nigeria commercial) back-fill: when these queue rows publish, add
           in-body links from this post to them —
             row 35 /blog/how-long-does-seo-take-in-nigeria  (from #break-even, ramp months)
-            row 33 /blog/how-to-appear-on-google-maps-in-lagos (from #dont-pay, GBP point)
+            row 33 /blog/how-to-appear-on-google-maps-in-lagos — DONE 2026-10-12 (#dont-pay)
             row 43 /blog/best-seo-agency-in-nigeria          (from #before-signing)
             row 44 /blog/digital-marketing-vs-seo-for-nigerian-businesses (from #dont-pay)
         */}
@@ -461,7 +461,12 @@ export default function Post() {
             Business Profile, reviews and consistent contact details. That is a weekend of
             work, and{' '}
             <a href="/blog/local-seo-for-small-business">the local SEO checklist</a> walks
-            through it for nothing.
+            through it for nothing. For the Lagos specifics, from landmark addresses to
+            video verification, see{' '}
+            <a href="/blog/how-to-appear-on-google-maps-in-lagos">
+              how to appear on Google Maps in Lagos
+            </a>
+            .
           </li>
           <li>
             <strong>Your website cannot take an enquiry.</strong> If the contact form is

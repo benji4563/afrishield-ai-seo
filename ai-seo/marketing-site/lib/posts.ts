@@ -51,6 +51,49 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'how-to-appear-on-google-maps-in-lagos',
+    title: 'How to appear on Google Maps in Lagos: the address, the pin and the video',
+    cardTitle: 'How to appear on Google Maps in Lagos',
+    metaTitle: 'How to Appear on Google Maps in Lagos',
+    description:
+      'How a Lagos business gets on Google Maps: a free verified profile, a pin on the right building, video verification, and showing up for area searches.',
+    lede:
+      'A Lagos business appears on Google Maps by creating a free Google Business Profile, verifying it, placing the map pin on the actual building and choosing a category that matches what customers search for. This guide covers landmark addresses, plaza units, home-based businesses, video verification, district-level searches and reviews, using the rules Google publishes.',
+    category: 'Local visibility',
+    published: '2026-10-12',
+    modified: '2026-10-12',
+    readingMinutes: 10,
+    primaryKeyword: 'how to appear on google maps in lagos',
+    image: {
+      src: '/images/blog-how-to-appear-on-google-maps-in-lagos.webp',
+      alt: 'A busy Nigerian street lined with small shops and signboards, with yellow keke tricycles queued along the road.',
+    },
+    linkedin: `"Opposite the filling station, after the second bus stop, the blue gate."
+
+Every dispatch rider in Lagos can work with that address. Google cannot.
+
+That is the real reason so many good Lagos businesses are missing from Google Maps, or sitting on it with the pin in the middle of the road two streets away. Nothing is wrong with the business. The form just expects a street number that half the city was never issued.
+
+Think of Google as a new rider on his first day. He does not know the filling station. He has never seen the blue gate. He only arrives if you drop the pin for him and prove the place exists.
+
+So the fix is unglamorous:
+
+1. Enter whatever official address exists, shop number on line two, then move the pin onto your actual entrance by hand. Google allows this.
+2. Expect to verify by video. One continuous take, at least 30 seconds, recorded live: the street, your signboard, you unlocking the door.
+3. Use the name on your signboard. Adding "Best Cakes Lekki Ikeja Lagos" to it is how listings get suspended.
+4. You show up near where you are. An Ikeja shop does not rank in Lekki, whatever the person selling the package says.
+
+The whole thing costs ₦0. We run an SEO agency and have just explained that the first step is free and takes an afternoon, which tells you everything about our commercial instincts.
+
+The full Lagos walkthrough, plazas and home businesses included:
+
+https://afrishieldai.com/blog/how-to-appear-on-google-maps-in-lagos
+
+#Lagos #GoogleMaps #LocalSEO #NigerianBusiness #SmallBusiness
+
+Do it this week and the next rider may find you without calling. You might even miss the calls.`,
+  },
+  {
     slug: 'how-much-does-seo-cost-in-nigeria',
     title: 'How much does SEO cost in Nigeria? Real naira prices for 2026',
     cardTitle: 'How much SEO costs in Nigeria, in naira',

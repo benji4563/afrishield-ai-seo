@@ -179,6 +179,16 @@ export default function Post() {
           problem, and it is the one the rest of this piece is mostly about.
         </p>
 
+        <p>
+          For a business in Nigeria, the first complaint often has a more local cause: an
+          address described by landmark rather than street number, or a pin dropped on the
+          wrong building. That case has its own walkthrough in{' '}
+          <a href="/blog/how-to-appear-on-google-maps-in-lagos">
+            how to appear on Google Maps in Lagos
+          </a>
+          , covering plaza units, home-based businesses and video verification.
+        </p>
+
         <h2 id="three-factors">The three factors Google Maps actually uses</h2>
 
         <p>

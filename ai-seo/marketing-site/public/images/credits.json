@@ -324,5 +324,17 @@
     "photographerUrl": "https://www.pexels.com/@mwauraken",
     "alt": "The Nairobi skyline at dusk, with office towers lit against a deep blue sky.",
     "avgColor": "#4B6F89"
+  },
+  {
+    "slot": "blog-how-to-appear-on-google-maps-in-lagos",
+    "file": "images/blog-how-to-appear-on-google-maps-in-lagos.webp",
+    "source": "Pexels",
+    "query": "lagos nigeria street shop",
+    "pexelsId": 27536227,
+    "pexelsUrl": "https://www.pexels.com/photo/a-busy-street-with-many-people-walking-and-driving-27536227/",
+    "photographer": "Muhammad-Taha Ibrahim",
+    "photographerUrl": "https://www.pexels.com/@planeteelevene",
+    "alt": "Lively street scene with rickshaws and shops in an urban environment.",
+    "avgColor": "#72635C"
   }
 ]
