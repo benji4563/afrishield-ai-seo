@@ -87,3 +87,14 @@ synthesis-first discovery.
   based on real user behavior (bounce/dwell time) — so generic AI-written pages
   with poor UX get demoted regardless of how they were produced. —
   https://www.youtube.com/watch?v=dTHuLMWDFWo
+- **2026-10-12** — From an iPullRank content strategist (not Mike King himself):
+  when anyone can generate a competent explainer, the question for a topic stops
+  being "is it good" and becomes "could a competitor publish the same thing". Her
+  sources for content only one firm can write are its own data, a named expert, and
+  the questions real prospects ask just before they buy (sales calls, inbox, site
+  chatbot). She also treats the article as one format among several — a comparison
+  table or a checklist may answer the question better. This matches Wes McDowell's
+  "Scar Scale" in his wiki. For AfriShield, whose first-hand material is thin, the
+  honest sources are the AI-visibility study dataset, measured audits and real
+  prospect questions; a candidate rule, held until there are posts to test it on. —
+  https://www.youtube.com/watch?v=6qF8mRrtTms

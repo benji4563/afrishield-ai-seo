@@ -66,3 +66,14 @@ clicks/month as the scoreboard.
   to review agent-made changes/logs rather than trust unattended agent runs
   blindly, relevant to any agency running Claude Code against live client
   sites/accounts. — https://www.youtube.com/watch?v=0f3KbpW8TBk
+- **2026-10-12** — Two newer videos (https://www.youtube.com/watch?v=vwzV-YsVswA,
+  https://www.youtube.com/watch?v=_0wKlt1vHLY) repackage his local-SEO and SEO
+  workflows as slash commands — the same set already installed here as the
+  `local-seo` suite — so they add nothing new. One point worth restating: a generic
+  how-to post draws readers who can never hire a local business, so city-qualified
+  informational topics come first; this agrees with the Africa-qualified queue.
+  - *not adopted: manipulative* — his review form still asks for a score first and
+    sends only 4–5★ customers to Google, routing the rest to a private channel. That
+    is review gating, which Google's review policy forbids. The same pipeline appears
+    in the 2026-08-05 entry above and is not adopted there either: the company rule
+    is that the Google review link is offered to every customer whatever they score.

@@ -65,3 +65,16 @@ message-first design · social proof · local SEO tier list.
   and proven hooks as house style, and use it to auto-generate on-brand b-roll
   graphics and a lead-magnet PDF straight from a finished script. —
   https://www.youtube.com/watch?v=yuVlHAKbnMQ
+- **2026-10-12** — Argues the website is moving from first impression to last step:
+  buyers ask an AI assistant for a shortlist, check the names somewhere else, and
+  arrive at the site only to book, so the site can be smaller and its one job is not
+  to get in the way of contact. He credits video with most of the trust-building and
+  cites third-party figures for how often AI answers lean on YouTube (his numbers,
+  not checked here). The transferable part is his list of what to answer, one
+  question per piece: price or what drives it, this-versus-that comparisons, what
+  the process looks like, how long results take, and how to choose a provider. He
+  adds that a narrow, repeated statement of who you serve is what makes a firm the
+  answer to a specific prompt. For AfriShield the blog already covers cost, timeline
+  and comparison; "how to choose" and "what the first month looks like" are the
+  gaps. **Tension with the settled strategy:** he would put the effort into video
+  rather than three blog posts a week — flagged to Ben, not acted on. — https://www.youtube.com/watch?v=VXGDHZIGf40

@@ -1,7 +1,8 @@
 # Julian Goldie — ingestion ledger
 
 Tracks processed videoIds so nothing is re-ingested. Verdicts:
-`ingested` / `skipped-off-niche` / `skipped-nothing-new`. Depth: `deep` (full
+`ingested` / `skipped-off-niche` / `skipped-nothing-new` / `skipped-backlog`
+(older than 60 days and not reached). Depth: `deep` (full
 transcript) / `shallow` (title+description fallback).
 
 | Date | videoId | Title | Verdict | Depth |
@@ -12,6 +13,12 @@ transcript) / `shallow` (title+description fallback).
 | 2026-08-05 | rTSHFy9Lwlg | How I Ranked #1 in 7 Hours with Qwen 3.8 Max (FREE!) | ingested | shallow |
 | 2026-08-05 | ut_PeUbmk4c | This NEW Agent Operating System is INSANE! | ingested | shallow |
 | 2026-08-05 | PYbBddbflRo | Qwen 3.8 Max is NOW COMPLETELY FREE! Here's How.. | ingested | shallow |
+| 2026-10-12 | k07iVkL1et8 | NEW Gemini Agent is Absolutely WILD! | skipped-off-niche | shallow |
+| 2026-10-12 | eW1YKawY66Q | NEW Hermes Kanban Agent is CRAZY GOOD! | skipped-off-niche | shallow |
+| 2026-10-12 | CmvFxu5aoUQ | Antigravity Just Built an Android App From ONE Prompt | skipped-off-niche | shallow |
+| 2026-10-12 | uRw7zRiKmpg | Google Gemini NEW Updates Are CRAZY! | skipped-off-niche | shallow |
+| 2026-10-12 | J3QsCAiIvOY | Perplexity Just Dropped Its New Embedding Models | skipped-off-niche | shallow |
+| 2026-10-12 | 67LTrHDt8bA | Free Claude Code + OmniRoute is WILD! | skipped-off-niche | shallow |
 
 Note: depth is `shallow` for all entries — the environment's network policy
 blocks direct access to youtube.com (yt-dlp/direct curl get a 403 at the
@@ -21,3 +28,5 @@ via Firecrawl, which reaches YouTube through separate infrastructure). This
 channel posts several times a day; only the 3 newest were reviewed per run
 per the per-advisor cap. No videoId overlap between the 2026-07-29 and
 2026-08-05 runs.
+
+Note (2026-10-12, local weekly task): all six newest uploads are AI-tool launch or agent-demo videos, filtered on title before any credit was spent. Nothing read.

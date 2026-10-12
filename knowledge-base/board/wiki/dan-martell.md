@@ -62,3 +62,13 @@ work on it vs. in it · leverage.
   models for high-volume simple sorting, top-tier reserved for orchestration) to cut
   agent operating cost roughly 100x on routine work. —
   https://www.youtube.com/watch?v=Bm84BAtOfQw
+- **2026-10-12** — On AI-assisted writing that still reads as the founder: keep one
+  store of your own past material, have the model analyse real samples per medium
+  (email, chat, scripts are different voices) into a style guide plus a list of
+  words and sentence patterns you never use, and have it interview you rather than
+  suggest topics — the idea starts with the person and the tool speeds up the draft.
+  He insists on reading everything before it goes out and quotes surveys on falling
+  trust in visibly AI-made marketing (his figures, not checked here). For AfriShield
+  this is the same design as the humor/voice reference the blog skill already loads;
+  the addition worth keeping is a per-channel voice note (blog, LinkedIn, outreach)
+  instead of one voice for all. — https://www.youtube.com/watch?v=wtaRjOFqdyU

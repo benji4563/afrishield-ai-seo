@@ -75,3 +75,37 @@ context · "Koraynese" (his precise, coined terminology).
   progressive: a domain earns "rankability" through accumulated click/engagement
   satisfaction over time rather than ranking outright from day one. —
   https://www.youtube.com/watch?v=WrU25krFCtk
+- **2026-10-12** — Design as an effort signal. His argument: expert-sounding text
+  is now free to produce, so layout and above-the-fold structure carry more of the
+  originality judgement, and a page should state its main entity and key attributes
+  in its first lines with little padding around them. He also ties safe publishing
+  volume to the age of the section: a new subfolder earns click history for a few
+  months before volume rises, and he blames one large brand's traffic loss on
+  publishing thousands of AI pages in a day (his reading, not verified here). For
+  planning he sorts each query into "deserves a page, a heading, or a sentence" and
+  aims to cover roughly a fifth more of the topic than the main competitors. For
+  writing he separates factual sections (definition first, then what it does, then
+  an attribute) from opinion sections (loose, first-person, expert voice) and likes
+  both on one page. For a low-authority African agency site: three posts a week sits
+  well inside his tolerance, and the page/heading/sentence sort is a useful check
+  before a queue row becomes its own post. — https://www.youtube.com/watch?v=Af9rvlVPQCQ
+  - *not adopted: manipulative* — rewriting markup and cutting word count to slip
+    past AI-content detection; ageing Reddit accounts and subreddits through proxies
+    before seeding them; secondary exact-match domains, book and podcast listings
+    built to manufacture an AI "consensus"; dressing an affiliate page as a shop.
+- **2026-10-12** — "Cost of retrieval". He frames ranking as a cost decision: an
+  engine spends its expensive evaluation only on sources that already show
+  impressions and clicks, so a new site has to earn a first trickle of demand before
+  quality is even measured, and a site that covers one topic completely is cheaper
+  to trust than several partial ones. He describes three gates in order — the
+  document ranks, a passage is indexed, the generated answer cites it — and says
+  skipping the first loses the other two. Small sites should stay on one topic
+  (big brands get away with sprawl), and what an engine associates with a brand
+  follows how often the brand and the topic appear together across the web, kept
+  recent. For AfriShield: this supports Africa-qualified, low-competition terms as
+  the way to earn the first clicks, and it explains why being named alongside
+  "SEO/GEO in Cameroon/Nigeria" off-site matters as much as the posts. — https://www.youtube.com/watch?v=VLDa_RoczYI
+  - *not adopted: manipulative* — serving a different markdown version of a page to
+    each AI crawler by user agent (cloaking-style); backdating a new document and
+    linking it from expired domains so it reads as old; hiding a site from Googlebot
+    while building links, as a launch trick.
