@@ -117,6 +117,9 @@ export default function AIVisibilityCheckPage() {
           <div className="container-inner">
             <p className="eyebrow-light">Questions</p>
             <h2 className="h2 mt-5 max-w-[20ch]">What people ask before they send the form</h2>
+            <p className="mt-5 max-w-[60ch] text-lead body-dim-light">
+              Short answers to what people ask before they request the free AI-visibility check.
+            </p>
             <dl className="mt-12 grid gap-px bg-ink/10 lg:grid-cols-2">
               {FAQ.map((item) => (
                 <div key={item.q} className="bg-white p-7">

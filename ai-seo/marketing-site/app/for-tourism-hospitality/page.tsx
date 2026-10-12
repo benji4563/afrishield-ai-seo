@@ -4,6 +4,7 @@ import { Section, SectionHeader } from '@/components/ui/Section';
 import { Bluf } from '@/components/ui/Bluf';
 import { Faq } from '@/components/ui/Faq';
 import { CtaDrop } from '@/components/home/CtaDrop';
+import { PlansSection } from '@/components/ui/PlansSection';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { breadcrumbJsonLd, faqPageJsonLd, tourismHospitalityServiceJsonLd } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/site';
@@ -201,6 +202,8 @@ export default function ForTourismHospitalityPage() {
           <Faq items={FAQ} tone="light" />
         </div>
       </Section>
+
+      <PlansSection tone="light" className="border-t border-ink/10" />
 
       <CtaDrop
         title="See what the AI says about you first"

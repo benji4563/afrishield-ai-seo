@@ -148,6 +148,9 @@ export function PostShell({
 
                 <section id="faq" className="mt-16">
                   <h2 className="h2">Questions people actually ask</h2>
+                  <p className="mt-4 text-small body-dim-light">
+                    Short, direct answers to the questions people ask most often about this topic.
+                  </p>
                   <div className="mt-8">
                     <Faq items={faq} />
                   </div>

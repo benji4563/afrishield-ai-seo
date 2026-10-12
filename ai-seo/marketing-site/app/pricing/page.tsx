@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/Button';
 import { Faq } from '@/components/ui/Faq';
 import { Bluf } from '@/components/ui/Bluf';
 import { CtaDrop } from '@/components/home/CtaDrop';
+import { PlansSection } from '@/components/ui/PlansSection';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { breadcrumbJsonLd, faqPageJsonLd, pricingOffersJsonLd } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/site';
@@ -32,7 +33,7 @@ const TIERS = [
     name: 'Foundation',
     price: '$150',
     cadence: 'per month',
-    forWho: 'One location, one core service, starting from roughly zero.',
+    forWho: 'For a business with one location and one core service, starting from roughly zero.',
     includes: [
       'Technical audit and fixes',
       'Full keyword map with skip list',
@@ -146,10 +147,10 @@ export default function PricingPage() {
                 </p>
               ) : null}
               <h2 className="h3">{tier.name}</h2>
-              <p className="mt-5 flex items-baseline gap-2">
+              <div className="mt-5 flex items-baseline gap-2">
                 <span className="font-display text-[40px] font-bold leading-none">{tier.price}</span>
                 <span className="font-mono text-label uppercase text-mute">{tier.cadence}</span>
-              </p>
+              </div>
               <p className="mt-5 text-small body-dim-light">{tier.forWho}</p>
 
               <ul className="mt-7 space-y-2.5 border-t border-ink/10 pt-7">
@@ -190,12 +191,15 @@ export default function PricingPage() {
         </p>
       </Section>
 
+      <PlansSection tone="light" showLink={false} className="border-t border-ink/10" />
+
       <Section tone="dark">
         <div className="grid gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
           <SectionHeader
             eyebrow="Pricing questions"
             tone="dark"
             title="Including the ones that cost us money to answer honestly"
+            blurb="Six direct answers on price, minimum term, what is not included, and what happens if it is not working after three months."
           />
           <Faq items={PRICING_FAQ} tone="dark" />
         </div>

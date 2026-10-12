@@ -4,6 +4,7 @@ import { PageHero } from '@/components/ui/PageHero';
 import { Section, SectionHeader } from '@/components/ui/Section';
 import { Button } from '@/components/ui/Button';
 import { Faq } from '@/components/ui/Faq';
+import { PlansSection } from '@/components/ui/PlansSection';
 import { Bluf } from '@/components/ui/Bluf';
 import { CtaDrop } from '@/components/home/CtaDrop';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -86,6 +87,7 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
           eyebrow="The market"
           tone="light"
           title={`What selling in ${city.name} actually looks like`}
+          blurb={`How ${city.name} businesses sell, and how their buyers actually search for them.`}
         />
         <div className="mt-8 grid gap-10 lg:grid-cols-[1.25fr_0.75fr]">
           <div className="max-w-prose space-y-6 text-lead body-dim-light">
@@ -156,19 +158,27 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
         </div>
       </Section>
 
+      <PlansSection tone="light" className="border-t border-ink/10" />
+
       <Section tone="dark">
         <div className="grid gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
           <SectionHeader
             eyebrow={`${city.name} questions`}
             tone="dark"
             title="The ones worth asking before you spend anything"
+            blurb={`Direct answers to what ${city.name} businesses ask us most often before they commit any budget.`}
           />
           <Faq items={city.faq} tone="dark" />
         </div>
       </Section>
 
       <Section tone="light">
-        <SectionHeader eyebrow="Other markets" tone="light" title="We work in these cities too" />
+        <SectionHeader
+          eyebrow="Other markets"
+          tone="light"
+          title="We work in these cities too"
+          blurb="AfriShield AI runs the same service in five other African cities, each with its own page and market notes."
+        />
         <ul className="mt-8 flex flex-wrap gap-3">
           {others.map((entry) => (
             <li key={entry.slug}>

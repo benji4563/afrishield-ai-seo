@@ -4,14 +4,35 @@ import { Section, SectionHeader } from '@/components/ui/Section';
 import { Button } from '@/components/ui/Button';
 import { Bluf } from '@/components/ui/Bluf';
 import { CtaDrop } from '@/components/home/CtaDrop';
+import { Faq } from '@/components/ui/Faq';
+import { PlansSection } from '@/components/ui/PlansSection';
 import { StructuredData } from '@/components/seo/StructuredData';
-import { breadcrumbJsonLd, cityIndexJsonLd } from '@/lib/structured-data';
+import { breadcrumbJsonLd, cityIndexJsonLd, faqPageJsonLd } from '@/lib/structured-data';
 import { CITIES } from '@/lib/cities';
 import { SITE_URL } from '@/lib/site';
 
 const TITLE = 'AI SEO by city — where we work across Africa';
 const DESCRIPTION =
   'AI SEO and generative engine optimisation in Lagos, Abuja, Accra, Nairobi, Johannesburg and Douala. What each market costs and how contested it is.';
+
+const FAQ = [
+  {
+    q: 'Which African cities does AfriShield AI work in?',
+    a: 'Six: Lagos and Abuja in Nigeria, Accra in Ghana, Nairobi in Kenya, Johannesburg in South Africa, and Douala in Cameroon. Each city has its own page with the districts covered and an honest note on how contested that market is.',
+  },
+  {
+    q: 'Does the price change from city to city?',
+    a: 'No. Pricing is USD 150, 400 or 900 a month in every market, invoiced in local currency on request. What changes by market is the keyword map, the local signals, and how long results are likely to take.',
+  },
+  {
+    q: 'Which market is the hardest, and which is the least contested?',
+    a: 'Johannesburg is the hardest of the six, the most contested search market on the continent. Douala is the thinnest, where most competitors have no structured data at all.',
+  },
+  {
+    q: 'Why does each city have its own page?',
+    a: 'Because a swapped city name is not a local page. Each page carries the real districts, the actual business mix, how buyers there search, and how hard that market is. Where a market is a bad fit for a budget, the page says so.',
+  },
+] as const;
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -30,6 +51,7 @@ export default function CityIndexPage() {
   return (
     <>
       <StructuredData data={cityIndexJsonLd} />
+      <StructuredData data={faqPageJsonLd(FAQ)} />
       <StructuredData
         data={breadcrumbJsonLd([
           { name: 'Home', path: '/' },
@@ -69,9 +91,9 @@ export default function CityIndexPage() {
                   AI SEO in {city.name}
                 </a>
               </h2>
-              <p className="mt-2 font-mono text-label uppercase tracking-[0.1em] text-mute">
+              <div className="mt-2 font-mono text-label uppercase tracking-[0.1em] text-mute">
                 {city.country} · invoiced in {city.currency}
-              </p>
+              </div>
               <p className="mt-5 max-w-prose text-small body-dim-light">{city.competitiveNote}</p>
               <p className="mt-6">
                 <a href={`/ai-seo/${city.slug}`} className="text-small font-semibold">
@@ -82,6 +104,8 @@ export default function CityIndexPage() {
           ))}
         </ul>
       </Section>
+
+      <PlansSection tone="light" className="border-t border-ink/10" />
 
       <Section tone="dark">
         <SectionHeader
@@ -105,6 +129,18 @@ export default function CityIndexPage() {
             <a href="/pricing">the three prices</a> do not change by market — only the keyword map,
             the local signals, and how long it is likely to take.
           </p>
+        </div>
+      </Section>
+
+      <Section tone="light">
+        <div className="grid gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+          <SectionHeader
+            eyebrow="Questions"
+            tone="light"
+            title="What buyers ask before choosing a market"
+            blurb="Direct answers on which cities we cover, what it costs in each, and why every market has its own page."
+          />
+          <Faq items={FAQ} tone="light" />
         </div>
       </Section>
 
