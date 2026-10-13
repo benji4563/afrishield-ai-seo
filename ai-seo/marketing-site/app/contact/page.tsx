@@ -76,13 +76,31 @@ export default function ContactPage() {
                 {SITE.phone ? (
                   <>
                     <p className="mt-10 font-mono text-label uppercase text-white/40">
-                      Or call — answered 24/7 by our AI
+                      Or call us in Cameroon
                     </p>
                     <a
                       href={SITE.phoneHref}
                       className="mt-2 inline-block font-display text-[19px] font-semibold text-green-300 hover:text-green-200"
                     >
                       {SITE.phone}
+                    </a>
+                    <p className="mt-3 max-w-[46ch] text-small body-dim">
+                      The same number on WhatsApp, so call or message — whichever
+                      suits you.
+                    </p>
+                  </>
+                ) : null}
+
+                {SITE.aiCallLine ? (
+                  <>
+                    <p className="mt-8 font-mono text-label uppercase text-white/40">
+                      Or our AI line — answered 24/7
+                    </p>
+                    <a
+                      href={SITE.aiCallLineHref}
+                      className="mt-2 inline-block font-display text-[19px] font-semibold text-green-300 hover:text-green-200"
+                    >
+                      {SITE.aiCallLine}
                     </a>
                     <p className="mt-3 max-w-[46ch] text-small body-dim">
                       Our AI assistant answers every call, in English or French, and

@@ -22,12 +22,26 @@ export function Footer() {
               >
                 {SITE.email}
               </a>
+              {/*
+                Two numbers, labelled apart on purpose. `SITE.phone` is the
+                business line that must match the Google Business Profile and
+                every directory. Only `SITE.aiCallLine` is AI-answered, so the
+                "24/7" claim stays attached to that one.
+              */}
               {SITE.phone ? (
                 <a
                   href={SITE.phoneHref}
                   className="mt-3 block font-mono text-label uppercase text-white/60 transition-colors hover:text-white"
                 >
-                  {SITE.phone} — answered 24/7 by our AI
+                  {SITE.phone} — Cameroon
+                </a>
+              ) : null}
+              {SITE.aiCallLine ? (
+                <a
+                  href={SITE.aiCallLineHref}
+                  className="mt-2 block font-mono text-label uppercase text-white/60 transition-colors hover:text-white"
+                >
+                  {SITE.aiCallLine} — answered 24/7 by our AI
                 </a>
               ) : null}
             </div>

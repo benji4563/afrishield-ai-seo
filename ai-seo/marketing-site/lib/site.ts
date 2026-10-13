@@ -6,16 +6,35 @@ export const SITE = {
   domain: 'afrishieldai.com',
   url: SITE_URL,
   email: 'benji@afrishieldai.com',
-  /** WhatsApp click-to-chat link (Cameroon +237). */
+  /** WhatsApp click-to-chat link (Cameroon +237) — same line as `phone`. */
   whatsapp: 'https://wa.me/237688099752',
   /**
-   * Inbound AI call line (Vapi + Twilio). NEXT_PUBLIC_PHONE overrides the
-   * display value if the number ever changes; phoneHref is derived with the
-   * formatting stripped.
+   * **The business phone number, and the one that must match everywhere.**
+   * This is the number on the Google Business Profile, in `local-seo/
+   * business.json`, in the JSON-LD `telephone`, and on every directory
+   * listing. Google cross-checks all of those against each other, and a
+   * mismatch is the most common reason a new local profile stays flat.
+   *
+   * It is a Cameroon number on purpose, changed 2026-10-13: the profile is
+   * anchored on Douala, and a US number on a Cameroon business is both a
+   * verification mismatch and a trust problem for a local buyer. It is also
+   * the WhatsApp line, so a prospect can call or message the same number.
+   *
+   * **Do not point this at the US AI line again** without also changing the
+   * Google profile, `business.json` and the directory listings in step.
    */
-  phone: process.env.NEXT_PUBLIC_PHONE ?? '+1 (559) 543-5844',
+  phone: process.env.NEXT_PUBLIC_PHONE ?? '+237 688 099 752',
   /** tel: href derived from `phone`, with display formatting stripped. */
-  phoneHref: `tel:${(process.env.NEXT_PUBLIC_PHONE ?? '+1 (559) 543-5844').replace(/[^+\d]/g, '')}`,
+  phoneHref: `tel:${(process.env.NEXT_PUBLIC_PHONE ?? '+237 688 099 752').replace(/[^+\d]/g, '')}`,
+  /**
+   * Inbound AI call line (Vapi + Twilio) — the US number that "Elodie"
+   * answers 24/7. Kept as a **separate, secondary** number rather than the
+   * site's main one, because only this line is AI-answered: any copy that
+   * says "answered 24/7 by our AI" must reference `aiCallLine`, never
+   * `phone`, or the site claims something untrue about the WhatsApp number.
+   */
+  aiCallLine: process.env.NEXT_PUBLIC_AI_CALL_LINE ?? '+1 (559) 543-5844',
+  aiCallLineHref: `tel:${(process.env.NEXT_PUBLIC_AI_CALL_LINE ?? '+1 (559) 543-5844').replace(/[^+\d]/g, '')}`,
   /**
    * On-page voice assistant (Vapi web calls — the same "Elodie" assistant that
    * answers the phone line). The public key is designed for browser exposure;
