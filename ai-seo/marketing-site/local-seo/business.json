@@ -1,0 +1,106 @@
+{
+  "name": "AfriShield AI",
+  "legal_name": "AfriShield",
+  "description": "AfriShield AI runs search visibility for African businesses — keyword research, content, technical SEO, and AI-answer-engine visibility (ChatGPT, Claude, Perplexity, Google) handled by agents, edited by people, and reported in numbers you can check.",
+  "schema_type": "ProfessionalService",
+  "website": "https://afrishieldai.com",
+  "phone": "+237-688-099-752",
+  "phone_country_code": "237",
+  "expected_area_codes": ["65", "66", "67", "68", "69"],
+  "email": "benji@afrishieldai.com",
+  "address": {
+    "street": "",
+    "locality": "Douala",
+    "region": "Littoral",
+    "postal_code": "",
+    "country": "CM"
+  },
+  "service_area_business": true,
+  "hide_address": true,
+  "geo": { "lat": null, "lng": null },
+  "primary_metro": "Douala, Littoral",
+  "country_code": "cm",
+  "language": "en",
+  "secondary_languages": ["fr"],
+  "timezone": "Africa/Douala",
+  "price_range": "$$",
+  "opening_hours": [],
+  "services": [
+    {
+      "slug": "ai-seo",
+      "name": "AI SEO",
+      "keywords": ["ai seo", "agence seo cameroun", "référencement naturel douala", "seo agency africa"],
+      "description": "Keyword research, content production, technical SEO and reporting, run by agents and edited by people."
+    },
+    {
+      "slug": "generative-engine-optimization",
+      "name": "Generative engine optimization",
+      "keywords": ["generative engine optimization", "geo agency africa", "ai search visibility", "rank on chatgpt"],
+      "description": "Getting a business named and cited inside ChatGPT, Claude, Perplexity and Google AI answers."
+    },
+    {
+      "slug": "hospitality-seo",
+      "name": "Hospitality SEO services",
+      "keywords": ["hotel seo", "lodge seo", "safari operator seo", "direct booking visibility"],
+      "description": "Direct-booking visibility for African lodges, hotels, guest houses, safari and tour operators."
+    },
+    {
+      "slug": "local-seo",
+      "name": "Local SEO and Google Business Profile",
+      "keywords": ["local seo", "google business profile optimization", "google maps ranking"],
+      "description": "Google Business Profile setup and optimisation, reviews, NAP consistency and local landing pages."
+    }
+  ],
+  "service_areas": [
+    "Douala, Cameroon",
+    "Yaoundé, Cameroon",
+    "Lagos, Nigeria",
+    "Abuja, Nigeria",
+    "Accra, Ghana",
+    "Nairobi, Kenya",
+    "Johannesburg, South Africa"
+  ],
+  "money_page_paths": [
+    "ai-seo",
+    "pricing",
+    "geo-services",
+    "for-lodges-hotels",
+    "for-safari-operators",
+    "for-tourism-hospitality"
+  ],
+  "competitors": [
+    { "domain": "didacweb.com", "market": "Douala", "note": "Ranks page one for agence SEO Douala. WordPress site, local web agency." },
+    { "domain": "excellencedigitale.com", "market": "Douala / Yaoundé", "note": "Page one for agence référencement SEO Douala." },
+    { "domain": "jainliconsulting.com", "market": "Douala", "note": "Page one, general web agency with SEO as a line item." },
+    { "domain": "numerix-info.com", "market": "Cameroon", "note": "Page one, publishes two phone numbers as its trust signal." },
+    { "domain": "menadigitalagency.com", "market": "Cameroon", "note": "Page one for agence SEO au Cameroun." },
+    { "domain": "empiredigitalafrica.com", "market": "Francophone Africa", "note": "Page one, positions on francophone Africa broadly." },
+    { "domain": "thatware.co", "market": "Africa-wide", "note": "Ranks for AI SEO / AEO / GEO South Africa. Established, heavy link profile." },
+    { "domain": "woww.co.za", "market": "South Africa", "note": "Earned a BusinessTech placement that itself ranks page one — the placement play worth copying." },
+    { "domain": "designzeen.com", "market": "Johannesburg", "note": "Displays Bark, Upwork, Clutch, The Manifest and DesignRush badges. The directory strategy, executed." },
+    { "domain": "plus27digital.com", "market": "South Africa", "note": "SEO + AI search, Johannesburg and Cape Town." }
+  ],
+  "gbp": {
+    "profile_url": "",
+    "review_link": "",
+    "primary_category": "Internet marketing service",
+    "secondary_categories": [
+      "Marketing agency",
+      "Website designer",
+      "Business to business service"
+    ]
+  },
+  "citations": [
+    { "name": "Sortlist", "url": "https://www.sortlist.com/fr/seo/douala-littoral-cm", "status": "todo", "priority": 1, "note": "Holds two page-one slots for agence SEO Douala." },
+    { "name": "Go Africa Online", "url": "https://www.goafricaonline.com/cm/annuaire/internet", "status": "todo", "priority": 1, "note": "Page one, Cameroon web/SEO directory." },
+    { "name": "Protaiin", "url": "https://www.protaiin.com/meilleures-agences-de-marketing-digital/", "status": "todo", "priority": 2, "note": "Page one listicle for Douala digital agencies." },
+    { "name": "Clutch", "url": "https://clutch.co", "status": "todo", "priority": 1, "note": "Backlink + review surface + sameAs entry." },
+    { "name": "Bark", "url": "https://www.bark.com", "status": "todo", "priority": 2 },
+    { "name": "DesignRush", "url": "https://www.designrush.com", "status": "todo", "priority": 2 },
+    { "name": "The Manifest", "url": "https://themanifest.com", "status": "todo", "priority": 3 },
+    { "name": "Semrush Agency Partners", "url": "https://agencies.semrush.com", "status": "todo", "priority": 2 }
+  ],
+  "same_as": [
+    "https://www.linkedin.com/company/146729948"
+  ]
+}

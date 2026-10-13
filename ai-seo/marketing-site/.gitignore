@@ -9,3 +9,9 @@ build/
 *.tsbuildinfo
 next-env.d.ts
 .DS_Store
+
+# local-seo engine output. `geo_audit.py` rewrites this every week from the
+# afrishield-site-health routine; it is a generated report, not source.
+# `local-seo/business.json` is deliberately NOT ignored — it is the single
+# source of truth for Name, Address and Phone and must be versioned.
+local-seo/output/
