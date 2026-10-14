@@ -41,6 +41,7 @@ reconcile.
 | generative engine optimization agencies africa | A — hire a provider (GEO) | `/blog/top-geo-ai-seo-agencies-africa-2026` | 2026-08-30 | Live |
 | how much does seo cost in nigeria | N — Nigeria commercial | `/blog/how-much-does-seo-cost-in-nigeria` | 2026-09-30 | Live |
 | how to appear on google maps in lagos | N — Nigeria local / GBP | `/blog/how-to-appear-on-google-maps-in-lagos` | 2026-10-12 | Live |
+| how to get more google reviews in nigeria | N — Nigeria local / GBP | `/blog/how-to-get-more-google-reviews-in-nigeria` | 2026-10-14 | Live |
 
 ## Deliberately not targeted
 

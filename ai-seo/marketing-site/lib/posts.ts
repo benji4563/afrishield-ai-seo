@@ -51,6 +51,49 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'how-to-get-more-google-reviews-in-nigeria',
+    title: 'How to get more Google reviews in Nigeria: the link, the WhatsApp message and the rules',
+    cardTitle: 'How to get more Google reviews in Nigeria',
+    metaTitle: 'How to Get More Google Reviews in Nigeria',
+    description:
+      'How Nigerian businesses get more Google reviews: the free review link, a WhatsApp request at the right moment, and the rules that get profiles restricted.',
+    lede:
+      'A Nigerian business gets more Google reviews by sending every customer its free Google review link on WhatsApp when the service is finished, printing the review QR code on receipts and at the counter, and replying to every review. This guide covers the link, the message, timing by business type, and the Google rules on incentives, gating and fake reviews.',
+    category: 'Local visibility',
+    published: '2026-10-14',
+    modified: '2026-10-14',
+    readingMinutes: 10,
+    primaryKeyword: 'how to get more google reviews in nigeria',
+    image: {
+      src: '/images/blog-how-to-get-more-google-reviews-in-nigeria.webp',
+      alt: 'A smiling shopkeeper in a red T-shirt leans on a wooden counter in front of shelves of toiletries and household goods.',
+    },
+    linkedin: `"I will do it later."
+
+Every Nigerian business owner who has ever asked a happy customer for a Google review has heard this sentence. Warmly. Sincerely. Forty times a month.
+
+Later, it turns out, is a place. Nobody has ever come back from it with a review.
+
+Think of a review request like asking a guest to drop something at your house on their way home. If you give them directions, they will mean to. If you put the thing in their hand at the gate, it actually arrives.
+
+The review link is the thing in their hand. A few points that make the difference:
+
+1. Your Google Business Profile has a free review link and QR code under Read reviews, then Get more reviews. It opens the review box directly, so nobody has to search for you and land on a competitor.
+2. Send it on WhatsApp, by name, the moment the job is done. Google itself lists WhatsApp as a channel for this.
+3. Ask every customer, not only the smiling ones. Asking only happy customers is review gating, and Google prohibits it.
+4. No discounts, no free items, no staff quotas. Google can block a profile from receiving new reviews, unpublish the existing ones, or show customers a warning that fake reviews were removed.
+
+All of it costs ₦0. We are an SEO agency writing a full guide to something free, which our finance team has noted with some concern.
+
+The full routine, with timing by business type and a 30-day plan:
+
+https://afrishieldai.com/blog/how-to-get-more-google-reviews-in-nigeria
+
+#Nigeria #GoogleReviews #LocalSEO #SmallBusiness #WhatsAppBusiness
+
+Send the link today. Later will still be there, but at least this time your customers will have something to do when they get to it.`,
+  },
+  {
     slug: 'how-to-appear-on-google-maps-in-lagos',
     title: 'How to appear on Google Maps in Lagos: the address, the pin and the video',
     cardTitle: 'How to appear on Google Maps in Lagos',

@@ -161,7 +161,7 @@ on, which makes them the lowest-risk rows in the file.
 |---|---|---|---|---|
 | 32 | how much does seo cost in nigeria | N — Nigeria commercial | `gsc-evidenced` — the generic parent (`what-seo-actually-costs`) holds 26 impressions at pos 59.0; `why is seo so expensive` already surfaces this domain. Commercial, decision-stage, NGN-qualified. | claimed |
 | 33 | how to appear on google maps in lagos | N — Nigeria local / GBP | `gsc-evidenced` — strongest page on the site by impressions (233 @ pos 69.0) but the demand is UK/AUS. Same topic, Lagos-qualified, near-zero local competition. | claimed |
-| 34 | how to get more google reviews in nigeria | N — Nigeria local / GBP | `serp-verified` — review-velocity is the top local ranking factor (Jono Catliff doctrine) and no Nigerian site owns this term. | queued |
+| 34 | how to get more google reviews in nigeria | N — Nigeria local / GBP | `serp-verified` — review-velocity is the top local ranking factor (Jono Catliff doctrine) and no Nigerian site owns this term. | claimed |
 | 35 | how long does seo take in nigeria | N — Nigeria expectations | `gsc-evidenced` — generic parent holds 181 impressions at pos 74.7 from the UK/AU. Nigeria-qualified cut inherits the topical relevance without the unwinnable competition. | queued |
 | 36 | référencement naturel douala | CM — Cameroon FR (priority) | `gsc-evidenced` + `serp-verified` — Cameroon is the site's best market (pos 3.7, 1 of 2 total clicks). French commercial terms here are close to uncontested. **Write in French.** | queued |
 | 37 | agence seo cameroun | CM — Cameroon FR (priority) | `serp-verified` — francophone Central Africa has almost no optimised competition. Commercial intent, direct fit to `/ai-seo/douala`. **Write in French.** | queued |
@@ -314,3 +314,4 @@ periodically; promote to the table above once they show real volume.
 | how to get more website traffic | `/blog/how-to-get-more-website-traffic` | 2026-08-22 |
 | how much does seo cost in nigeria | `/blog/how-much-does-seo-cost-in-nigeria` | 2026-09-30 |
 | how to appear on google maps in lagos | `/blog/how-to-appear-on-google-maps-in-lagos` | 2026-10-12 |
+| how to get more google reviews in nigeria | `/blog/how-to-get-more-google-reviews-in-nigeria` | 2026-10-14 |

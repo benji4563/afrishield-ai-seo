@@ -163,9 +163,8 @@ export default function Post() {
         </p>
 
         {/*
-          Cluster N (Nigeria local / GBP) back-fill: when these queue rows publish, add
-          in-body links from this post to them —
-            row 34 /blog/how-to-get-more-google-reviews-in-nigeria (from #reviews)
+          Cluster N (Nigeria local / GBP) back-fill: when this queue row publishes, add
+          an in-body link from this post to it —
             row 42 /blog/why-is-my-business-not-showing-on-google-maps-nigeria (from #what-fails)
         */}
 
@@ -389,7 +388,12 @@ export default function Post() {
           the review link by WhatsApp, because that is where the conversation with a Lagos
           customer is already happening. Google confirms that more reviews and positive
           ratings can help a business&rsquo;s local ranking, and it lets a business create a
-          review link or QR code from the profile to share with customers.
+          review link or QR code from the profile to share with customers. The full routine,
+          including the message to send and the timing for each type of business, is in{' '}
+          <a href="/blog/how-to-get-more-google-reviews-in-nigeria">
+            our guide to getting more Google reviews in Nigeria
+          </a>
+          .
         </p>
 
         <p>
