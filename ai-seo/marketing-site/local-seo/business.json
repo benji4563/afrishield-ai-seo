@@ -24,7 +24,10 @@
   "secondary_languages": ["fr"],
   "timezone": "Africa/Douala",
   "price_range": "$$",
-  "opening_hours": [],
+  "opening_hours": [
+    "Mo-Fr 00:00-24:00",
+    "Sa 09:00-15:30"
+  ],
   "services": [
     {
       "slug": "ai-seo",
