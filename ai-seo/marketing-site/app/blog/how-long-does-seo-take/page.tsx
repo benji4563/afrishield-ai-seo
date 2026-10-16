@@ -214,7 +214,13 @@ export default function Post() {
           None of these is exotic, and none of them can be substituted for by spending more
           money on the wrong lever. A business with a fast site, a sensible publishing rhythm,
           and a handful of honest mentions elsewhere will consistently outpace a rival that
-          simply outspent it on ad-hoc content with no cadence behind it.
+          simply outspent it on ad-hoc content with no cadence behind it. In markets where
+          local competition is thin, the timeline depends even more on which search you judge; the
+          Nigerian version is set out in{' '}
+          <a href="/blog/how-long-does-seo-take-in-nigeria">
+            how long SEO takes in Nigeria
+          </a>
+          .
         </p>
 
         <h2 id="month-by-month">A realistic month-by-month timeline</h2>

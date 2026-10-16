@@ -51,6 +51,50 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'how-long-does-seo-take-in-nigeria',
+    title: 'How long does SEO take in Nigeria? The three clocks, month by month',
+    cardTitle: 'How long SEO takes in Nigeria, honestly',
+    metaTitle: 'How Long Does SEO Take in Nigeria?',
+    description:
+      'How long SEO takes in Nigeria: weeks for Google Maps, three to six months for area searches, six to twelve for city-wide terms, and how to check progress.',
+    lede:
+      'SEO in Nigeria usually takes three to six months to move area-level searches such as a service plus Lekki or Wuse, and six to twelve months or longer for city-wide and national terms. A verified Google Business Profile can appear on Maps within weeks. This guide covers the month-by-month timeline, what slows Nigerian sites down, the naira budget for the wait, and monthly progress checks.',
+    category: 'Fundamentals',
+    published: '2026-10-16',
+    modified: '2026-10-16',
+    readingMinutes: 10,
+    primaryKeyword: 'how long does seo take in nigeria',
+    image: {
+      src: '/images/blog-how-long-does-seo-take-in-nigeria.webp',
+      alt: 'Two smiling women sit at a round table with a laptop in a bright Lagos cafe.',
+    },
+    linkedin: `Month two of SEO. You search your own business on Google. Nothing.
+
+You try your phone instead of the laptop. Then your spouse's phone, in case yours is hiding you from yourself. Still nothing.
+
+Every Nigerian business owner who has paid for SEO knows this ritual. It is the single most common reason good SEO gets cancelled in month three.
+
+Here is the thing nobody explains on the sales call. SEO in Nigeria does not run on one clock. It runs on three, like a Lagos bus park: the danfo, the BRT and the long-distance bus all leave from the same place, at very different times.
+
+The danfo is Google Maps. A verified Business Profile can start showing for nearby searches within weeks, and Google says verification takes up to five business days.
+
+The BRT is the area search. Physiotherapy Yaba. Dentist in Wuse 2. These usually move in three to six months, because fewer competitors bothered to write a page for them.
+
+The long-distance bus is the city-wide term. Physiotherapy clinic Lagos. Six to twelve months, often longer in crowded categories like fintech, real estate and law.
+
+Most owners stand at the long-distance bay on day 30, watching the danfo leave without them.
+
+We have the receipts on this ourselves. Over 90 days, our own site averaged position 61.9 on Google, mostly for searchers in the UK. For the handful of searchers in Ghana and Cameroon, it sat at 7.0 and 3.7. Aimed at the whole world, a young site waits. Aimed at a market with thin competition, it moves. We would love to tell you we planned that.
+
+The full Nigerian timeline, with what slows it down, a naira budget for the wait and a month-by-month progress check:
+
+https://afrishieldai.com/blog/how-long-does-seo-take-in-nigeria
+
+#Nigeria #SEO #LocalSEO #SmallBusiness #Lagos
+
+Check the right bay this month. The danfo may already have left with your first customer on it.`,
+  },
+  {
     slug: 'how-to-get-more-google-reviews-in-nigeria',
     title: 'How to get more Google reviews in Nigeria: the link, the WhatsApp message and the rules',
     cardTitle: 'How to get more Google reviews in Nigeria',

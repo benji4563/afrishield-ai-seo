@@ -348,5 +348,17 @@
     "photographerUrl": "https://www.pexels.com/@hashtag-melvin-1163687",
     "alt": "A smiling shopkeeper in a red T-shirt leans on a wooden counter in front of shelves of toiletries and household goods.",
     "avgColor": "#8D5D46"
+  },
+  {
+    "slot": "blog-how-long-does-seo-take-in-nigeria",
+    "file": "images/blog-how-long-does-seo-take-in-nigeria.webp",
+    "source": "Pexels",
+    "query": "nigerian businesswoman laptop",
+    "pexelsId": 30690399,
+    "pexelsUrl": "https://www.pexels.com/photo/businesswomen-collaborating-in-lagos-cafe-30690399/",
+    "photographer": "Ninthgrid",
+    "photographerUrl": "https://www.pexels.com/@ninthgrid-2149521550",
+    "alt": "Two smiling women sit at a round table with a laptop in a bright Lagos cafe.",
+    "avgColor": "#858681"
   }
 ]
