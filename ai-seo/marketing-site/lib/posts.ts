@@ -72,7 +72,7 @@ export const POSTS: PostMeta[] = [
 
 You try your phone instead of the laptop. Then your spouse's phone, in case yours is hiding you from yourself. Still nothing.
 
-Every Nigerian business owner who has paid for SEO knows this ritual. It is the single most common reason good SEO gets cancelled in month three.
+Every Nigerian business owner who has paid for SEO knows this ritual. In our experience, it is the most common reason good SEO gets cancelled in month three.
 
 Here is the thing nobody explains on the sales call. SEO in Nigeria does not run on one clock. It runs on three, like a Lagos bus park: the danfo, the BRT and the long-distance bus all leave from the same place, at very different times.
 
