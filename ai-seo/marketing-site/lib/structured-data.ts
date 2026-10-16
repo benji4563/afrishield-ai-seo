@@ -2,9 +2,41 @@ import { SITE, SITE_URL } from './site';
 
 const abs = (path: string) => `${SITE_URL}${path.startsWith('/') ? path : `/${path}`}`;
 
+/**
+ * Stable node identities, so the Organization and the founder resolve to one
+ * linked pair rather than two loose nodes. Follows the `abs('/path#fragment')`
+ * convention already used by the service and itemlist nodes below.
+ */
+export const ORGANIZATION_ID = abs('/#organization');
+export const FOUNDER_ID = abs('/#founder');
+
+/**
+ * Postal address, **city-level on purpose**.
+ *
+ * `local-seo/business.json` is the source of truth for NAP and carries
+ * `service_area_business: true` with `hide_address: true`. The Google Business
+ * Profile is a service-area listing: it uses the street line for verification
+ * and geocoding, but does not display it publicly. Asserting the street here
+ * would therefore *diverge* from the profile Google compares this against —
+ * and would publish a physical address on all 41 pages, permanently.
+ *
+ * City, region and country are what a service-area business is meant to
+ * publish, and they still anchor the entity to Douala for local relevance.
+ *
+ * If `hide_address` is ever set to false, add `streetAddress` here from
+ * `business.json.address.street` — do not retype it from memory.
+ */
+const BUSINESS_ADDRESS = {
+  '@type': 'PostalAddress',
+  addressLocality: 'Douala',
+  addressRegion: 'Littoral',
+  addressCountry: 'CM',
+} as const;
+
 export const organizationJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
+  '@id': ORGANIZATION_ID,
   name: SITE.name,
   legalName: SITE.legalName,
   url: SITE_URL,
@@ -17,13 +49,50 @@ export const organizationJsonLd = {
   // profile is confirmed yet — an empty sameAs is a wasted signal, not a
   // neutral one. See SITE.profiles for what is allowed in here.
   ...(SITE.profiles.length ? { sameAs: SITE.profiles } : {}),
+  // Google reads `logo` for the knowledge-panel image, and it is one of the
+  // few Organization properties it documents explicitly. Rendered from the
+  // SignalNode mark — see scripts note in public/logo.png's commit.
+  logo: abs('/logo.png'),
+  address: BUSINESS_ADDRESS,
   areaServed: [
     { '@type': 'Place', name: 'Africa' },
+    // Cameroon is the head office, so it leads the list. It was missing here
+    // while SERVED_CITIES already carried Douala — the two now agree.
+    { '@type': 'Country', name: 'Cameroon' },
     { '@type': 'Country', name: 'Nigeria' },
     { '@type': 'Country', name: 'Ghana' },
     { '@type': 'Country', name: 'Kenya' },
     { '@type': 'Country', name: 'South Africa' },
   ],
+  /**
+   * The founder, asserted first-party.
+   *
+   * This exists because Google's AI Overview for "AfriShield AI" (checked
+   * 2026-10-16) stated "Founded by ... Benjamin Enyong Njock" and cited
+   * LinkedIn — it had learned the fact from a third party, because this site
+   * never said it in a machine-readable way. Everything below is already
+   * claimed in prose on /about; this only makes it legible to a parser.
+   *
+   * Nested rather than referenced by @id on purpose: the Organization renders
+   * in the root layout on all 41 pages, so a bare {'@id'} pointer would dangle
+   * on every page that is not /about.
+   *
+   * `alternateName` reconciles the split between the name this site uses and
+   * the fuller one LinkedIn carries, so both strings resolve to one person.
+   */
+  founder: {
+    '@type': 'Person',
+    '@id': FOUNDER_ID,
+    // The verified public LinkedIn profile carries the full form, so that is
+    // the primary name; the shorter form the site's prose uses is kept as the
+    // alternate so both strings resolve to one person.
+    name: 'Benjamin Enyong Njock',
+    alternateName: 'Benjamin Njock',
+    jobTitle: 'Founder',
+    image: abs('/team/benjamin-njock.jpg'),
+    url: abs('/about'),
+    worksFor: { '@id': ORGANIZATION_ID },
+  },
 };
 
 /**
@@ -49,6 +118,7 @@ export const professionalServiceJsonLd = {
   description: SITE.description,
   serviceType: 'Search engine optimisation',
   priceRange: '$$',
+  address: BUSINESS_ADDRESS,
   // Same profiles as the Organization node, so both entities resolve to one
   // company rather than reading as two.
   ...(SITE.profiles.length ? { sameAs: SITE.profiles } : {}),
