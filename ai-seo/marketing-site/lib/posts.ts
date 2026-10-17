@@ -14,6 +14,22 @@ export type PostMeta = {
    * Optional: a post without one falls back to `description`.
    */
   lede?: string;
+  /**
+   * **The language the post is written in.** Omitted means English.
+   *
+   * This is not decoration. The root layout hardcodes `<html lang="en">`, so a
+   * French post with no `lang` ships declared as English - wrong for a reader
+   * using a screen reader, wrong for Google, and wrong for the AI engines this
+   * site is optimised for. `PostShell` reads this onto the `<article>` element
+   * and formats the date with it; `blogPostingJsonLd` emits it as
+   * `inLanguage`.
+   *
+   * Francophone Cameroon is the priority market per the content queue's
+   * 2026-09-24 geographic pivot - the site's best position (3.7) and one of
+   * its two clicks - so French posts are written in French, never translated
+   * from an English draft. See content-queue.md rows 36, 37 and 47.
+   */
+  lang?: 'en' | 'fr';
   category: string;
   published: string;
   modified?: string;
