@@ -85,13 +85,17 @@ export const SITE = {
     // /person/benjamin-njock. Second Knowledge Graph pillar after LinkedIn.
     'https://www.crunchbase.com/organization/afrishield-ai',
     // Facebook Page, confirmed by the account owner 2026-10-17 as the company
-    // Page and not a personal profile - which is the distinction that decides
-    // whether a URL belongs on this Organization or on the founder's Person
-    // schema. The `profile.php?id=` form is deliberate: it is stable, whereas
-    // the /people/<name>/<id>/ URL Facebook redirects to embeds the display
-    // name and breaks on rename. Replace with https://www.facebook.com/<name>
-    // once a Page username is set.
-    'https://www.facebook.com/profile.php?id=61593013063982',
+    // Page and not a personal profile - the distinction that decides whether a
+    // URL belongs on this Organization or on the founder's Person schema.
+    //
+    // The username was claimed the same day, replacing the numeric
+    // `profile.php?id=61593013063982` form this briefly carried. The vanity
+    // path matches the domain exactly - facebook.com/afrishieldai against
+    // afrishieldai.com - which is the strongest available signal that the two
+    // are one organisation, and that is the precise question afrishield.org
+    // currently wins. Facebook usernames take no hyphens, so the run-together
+    // spelling is both the only option and the better one.
+    'https://www.facebook.com/afrishieldai',
   ] as string[],
   /** Public-facing one-liner. Company brand guidelines, verbatim. */
   tagline: 'Search visibility, run by agents. Reported in plain numbers.',
