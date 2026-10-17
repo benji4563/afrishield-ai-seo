@@ -34,8 +34,14 @@ export function Hero() {
           <div className="container-inner">
             <div className="animate-rise-in max-w-[640px]">
               <p className="eyebrow-dark">AI SEO · Built for African markets</p>
-              <h1 className="h1 mt-6 max-w-[15ch]">
-                Everything your customers search. Answered by your site.
+              {/*
+               * The brand name is load-bearing here, not decorative. Google
+               * resolves "AfriShield AI" to afrishield.org - a different company
+               * - partly because this page's primary heading never said the
+               * name. Keep "AfriShield AI" as the subject of this sentence.
+               */}
+              <h1 className="h1 mt-6 max-w-[19ch]">
+                AfriShield AI makes your site the answer your customers search for.
               </h1>
               <p className="mt-7 max-w-[52ch] text-lead text-white/85">
                 We run the keyword research, the writing, and the technical work on a

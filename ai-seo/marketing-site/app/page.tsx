@@ -14,9 +14,16 @@ import { HomeFaq, HOME_FAQ } from '@/components/home/HomeFaq';
 import { CtaDrop } from '@/components/home/CtaDrop';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { faqPageJsonLd, professionalServiceJsonLd } from '@/lib/structured-data';
-import { SITE_URL } from '@/lib/site';
+import { SITE, SITE_URL } from '@/lib/site';
+import { DEFAULT_OG_IMAGE } from '@/lib/posts';
 
-const TITLE = 'AI SEO services for African businesses';
+// Brand first, on purpose. `title.template` in app/layout.tsx does NOT apply
+// to this segment - Next templates child segments only - so the homepage
+// renders whatever is set here verbatim, with no ` | AfriShield AI` suffix.
+// Shipping the bare tagline is what left the brand name absent from the one
+// page that should own it, while afrishield.org (an unrelated company) holds
+// positions 1 and 2 for "AfriShield AI".
+const TITLE = 'AfriShield AI — AI SEO services for African businesses';
 const DESCRIPTION =
   'Keyword research, weekly publishing, and technical SEO on a schedule — with a one-page report naming every keyword and position. Month to month, no lock-in.';
 
@@ -24,13 +31,24 @@ export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: { canonical: '/' },
+  // Next merges metadata one key deep, so this object REPLACES the layout's
+  // openGraph rather than extending it. Every field the layout set has to be
+  // repeated here or it vanishes from the homepage alone - `images` and
+  // `siteName` were both lost that way, which is why shares rendered blank.
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
     url: SITE_URL,
     type: 'website',
+    siteName: SITE.name,
+    images: [DEFAULT_OG_IMAGE],
   },
-  twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION },
+  twitter: {
+    card: 'summary_large_image',
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [DEFAULT_OG_IMAGE],
+  },
 };
 
 export default function HomePage() {
