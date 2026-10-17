@@ -1,4 +1,5 @@
 import { SITE, SITE_URL } from './site';
+import { POSTS } from './posts';
 
 const abs = (path: string) => `${SITE_URL}${path.startsWith('/') ? path : `/${path}`}`;
 
@@ -321,6 +322,45 @@ export function howToJsonLd(
     })),
   };
 }
+
+/**
+ * The site itself, as a `WebSite` node.
+ *
+ * Two reasons it exists, both from the GEO audit:
+ *
+ * 1. `WebSite` was simply absent. It is the node that ties the domain to the
+ *    publishing Organization, so AI answer engines resolving "who runs
+ *    afrishieldai.com" had only the Organization to go on.
+ * 2. `dateModified` had nowhere valid to live. It is a `CreativeWork`
+ *    property - **`Organization` does not support it** - so asserting it on
+ *    the Organization node would have emitted invalid markup to satisfy a
+ *    scoring heuristic. `WebSite` is a CreativeWork, so it belongs here.
+ *
+ * The date is derived from the newest post rather than hardcoded, because a
+ * hand-written date is wrong the day after it is written. Google treats a
+ * stale or fabricated freshness signal worse than an absent one.
+ *
+ * No `potentialAction`/`SearchAction` here on purpose: the site has no search
+ * endpoint, and declaring one that does not exist is a broken promise to a
+ * crawler. Add it the day /search ships, not before.
+ */
+export const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': abs('/#website'),
+  name: SITE.name,
+  url: SITE_URL,
+  description: SITE.description,
+  inLanguage: 'en',
+  publisher: { '@id': ORGANIZATION_ID },
+  dateModified: POSTS.reduce(
+    (latest, post) => {
+      const touched = post.modified ?? post.published;
+      return touched > latest ? touched : latest;
+    },
+    POSTS[0]?.modified ?? POSTS[0]?.published ?? '',
+  ),
+};
 
 export const blogIndexJsonLd = {
   '@context': 'https://schema.org',

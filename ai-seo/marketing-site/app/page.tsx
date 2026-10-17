@@ -13,7 +13,7 @@ import { BlogTeaser } from '@/components/home/BlogTeaser';
 import { HomeFaq, HOME_FAQ } from '@/components/home/HomeFaq';
 import { CtaDrop } from '@/components/home/CtaDrop';
 import { StructuredData } from '@/components/seo/StructuredData';
-import { faqPageJsonLd, professionalServiceJsonLd } from '@/lib/structured-data';
+import { faqPageJsonLd, professionalServiceJsonLd, websiteJsonLd } from '@/lib/structured-data';
 import { SITE, SITE_URL } from '@/lib/site';
 import { DEFAULT_OG_IMAGE } from '@/lib/posts';
 
@@ -24,8 +24,9 @@ import { DEFAULT_OG_IMAGE } from '@/lib/posts';
 // page that should own it, while afrishield.org (an unrelated company) holds
 // positions 1 and 2 for "AfriShield AI".
 const TITLE = 'AfriShield AI — AI SEO services for African businesses';
-const DESCRIPTION =
-  'Keyword research, weekly publishing, and technical SEO on a schedule — with a one-page report naming every keyword and position. Month to month, no lock-in.';
+// Shared with the Organization JSON-LD rather than written twice - see the note
+// on SITE.description. Two strings for one entity is what the audit flagged.
+const DESCRIPTION = SITE.description;
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -54,6 +55,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
+      <StructuredData data={websiteJsonLd} />
       <StructuredData data={professionalServiceJsonLd} />
       <StructuredData data={faqPageJsonLd(HOME_FAQ)} />
 
