@@ -79,6 +79,19 @@ export const SITE = {
     // Company page, confirmed 2026-10-11 against LinkedIn's own API, which
     // returned organisation id 146729948 as administered by this account.
     'https://www.linkedin.com/company/146729948',
+    // Crunchbase, created and confirmed live 2026-10-17: name, description,
+    // Douala/Littoral/CM, headcount and the four industries all render as
+    // submitted, and the founder resolves to its own linked Person entity at
+    // /person/benjamin-njock. Second Knowledge Graph pillar after LinkedIn.
+    'https://www.crunchbase.com/organization/afrishield-ai',
+    // Facebook Page, confirmed by the account owner 2026-10-17 as the company
+    // Page and not a personal profile - which is the distinction that decides
+    // whether a URL belongs on this Organization or on the founder's Person
+    // schema. The `profile.php?id=` form is deliberate: it is stable, whereas
+    // the /people/<name>/<id>/ URL Facebook redirects to embeds the display
+    // name and breaks on rename. Replace with https://www.facebook.com/<name>
+    // once a Page username is set.
+    'https://www.facebook.com/profile.php?id=61593013063982',
   ] as string[],
   /** Public-facing one-liner. Company brand guidelines, verbatim. */
   tagline: 'Search visibility, run by agents. Reported in plain numbers.',
