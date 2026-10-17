@@ -82,8 +82,21 @@ export const SITE = {
   ] as string[],
   /** Public-facing one-liner. Company brand guidelines, verbatim. */
   tagline: 'Search visibility, run by agents. Reported in plain numbers.',
+  /**
+   * **One description, used by both the meta tag and the Organization node.**
+   *
+   * These were two different strings: a 249-character entity description in
+   * schema and a 156-character sales line in the homepage meta tag. The GEO
+   * audit read that as a brand-consistency failure, and it was right - the two
+   * described the same entity differently, and the meta version named neither
+   * the company nor the continent.
+   *
+   * This one is 157 characters, so it survives a SERP snippet intact, and it
+   * leads with the brand name, which is the same reason the homepage title and
+   * H1 do. Keep it under 160 and keep "AfriShield AI" first.
+   */
   description:
-    'AfriShield AI runs search visibility for African businesses — keyword research, content, technical SEO, and AI-answer-engine visibility (ChatGPT, Claude, Perplexity, Google) handled by agents, edited by people, and reported in numbers you can check.',
+    'AfriShield AI runs search visibility for African businesses — keyword research, content, technical SEO, and AI-answer visibility. Month to month, no lock-in.',
 } as const;
 
 export const NAV_LINKS = [
