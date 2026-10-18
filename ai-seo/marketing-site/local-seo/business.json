@@ -95,6 +95,7 @@
   },
   "citations": [
     { "name": "Sortlist", "url": "https://www.sortlist.com/agency/afrishield-ai", "status": "live", "priority": 1, "note": "Live 2026-10-16. Claimed profile, 5 services (SEO primary, Content Strategy, Digital Strategy, Artificial Intelligence, Marketing), 2 verified client reviews averaging 4.38/5. Sortlist also holds two page-one slots for agence SEO Douala at /fr/seo/douala-littoral-cm. Profile shows name as \"Afrishield AI\" and headquarters as \"N3, Douala, Cameroon\" - both differ from the canonical NAP." },
+    { "name": "Crunchbase", "url": "https://www.crunchbase.com/organization/afrishield-ai", "status": "live", "priority": 1, "note": "Live 2026-10-17. Knowledge Graph pillar 2 of 4 after LinkedIn. Name, 132-char description, Douala/Littoral/CM, headcount 1-10 and four industries (AI, Digital Marketing, SEO, Software) all render as submitted. Founder Benjamin Njock resolves to a linked Person entity at /person/benjamin-njock. Outstanding: an \"Also Known As: Afrishield AI\" variant with a lowercase s needs removing." },
     { "name": "Go Africa Online", "url": "https://www.goafricaonline.com/cm/annuaire/internet", "status": "todo", "priority": 1, "note": "Page one, Cameroon web/SEO directory." },
     { "name": "Protaiin", "url": "https://www.protaiin.com/meilleures-agences-de-marketing-digital/", "status": "todo", "priority": 2, "note": "Page one listicle for Douala digital agencies." },
     { "name": "Clutch", "url": "https://clutch.co", "status": "todo", "priority": 1, "note": "Backlink + review surface + sameAs entry." },
@@ -107,6 +108,8 @@
     { "name": "BusinessList Cameroun", "url": "https://fr.businesslist.co.cm", "status": "todo", "priority": 2, "note": "Verified 2026-10-16: position 19 for agence seo douala cameroun." }
   ],
   "same_as": [
-    "https://www.linkedin.com/company/146729948"
+    "https://www.linkedin.com/company/146729948",
+    "https://www.crunchbase.com/organization/afrishield-ai",
+    "https://www.facebook.com/profile.php?id=61593013063982"
   ]
 }
