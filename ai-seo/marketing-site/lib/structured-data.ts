@@ -289,6 +289,7 @@ export function blogPostingJsonLd(post: {
   description: string;
   published: string;
   modified?: string;
+  lang?: 'en' | 'fr';
   image?: { src: string; alt: string };
 }) {
   return {
@@ -300,6 +301,10 @@ export function blogPostingJsonLd(post: {
     mainEntityOfPage: { '@type': 'WebPage', '@id': abs(`/blog/${post.slug}`) },
     datePublished: post.published,
     dateModified: post.modified ?? post.published,
+    // Stated explicitly rather than left to language detection, which is a
+    // guess on short pages. Defaults to English so the 27 existing posts are
+    // unaffected.
+    inLanguage: post.lang ?? 'en',
     ...(post.image ? { image: abs(post.image.src) } : {}),
     author: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
     publisher: { '@type': 'Organization', name: SITE.name, url: SITE_URL },

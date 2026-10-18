@@ -95,14 +95,22 @@ export function PostShell({
   faq: ReadonlyArray<{ q: string; a: string }>;
   children: React.ReactNode;
 }) {
-  const published = new Date(post.published).toLocaleDateString('en-GB', {
+  // A French post formatted with an English locale renders "16 October 2026"
+  // under a French headline, which is the kind of detail a francophone reader
+  // notices immediately and a crawler reads as a language mismatch.
+  const locale = post.lang === 'fr' ? 'fr-FR' : 'en-GB';
+  const published = new Date(post.published).toLocaleDateString(locale, {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
   });
 
   return (
-    <article>
+    // `lang` belongs on the article, not the document: the root layout declares
+    // `en` for the site chrome, which stays accurate, while the post's own
+    // prose declares its real language. HTML allows `lang` on any element and
+    // the nearest ancestor wins, so this correctly scopes French content.
+    <article lang={post.lang ?? 'en'}>
       <header className="surface-dark pb-[70px] pt-[140px]">
         <div className="container-page">
           <div className="container-inner">
