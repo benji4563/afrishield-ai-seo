@@ -1,0 +1,144 @@
+{
+  "study": "Who does AI recommend when someone searches for an African business?",
+  "wave": 2,
+  "publisher": "AfriShield AI",
+  "collected": "2026-10-17",
+  "compares_with": "/data/ai-visibility-study-2026-08.json",
+  "method": {
+    "source": "Google organic SERP retrieved via the Firecrawl search API with country-level location targeting.",
+    "instrument_change": "Wave 1 used the DataForSEO SERP API. That account has no balance and the sanctioned Apify replacement had insufficient credit, so wave 2 used Firecrawl. Share-of-page-one figures remain comparable; AI Overview presence could NOT be captured in wave 2 because Firecrawl does not return SERP features. The wave 1 figure for that metric was 100%.",
+    "query_template": "best {service} in {city}, {country}",
+    "cities": [
+      "Nairobi, Kenya",
+      "Lagos, Nigeria",
+      "Accra, Ghana",
+      "Johannesburg, South Africa",
+      "Arusha, Tanzania"
+    ],
+    "categories": {
+      "hospitality_travel": [
+        "boutique hotel",
+        "safari operator"
+      ],
+      "professional_services": [
+        "accounting firm"
+      ]
+    },
+    "classification": "Each page-one organic result classified as OWN (the business's own website, including a multinational network's own page for its local office), AGGREGATOR (OTA / directory / marketplace / regulator list), MEDIA (editorial listicle or blog) or UGC (Reddit / Instagram / Facebook / Wikipedia).",
+    "limitations": "Pilot sample of 9 searches, desktop, English-language, country-level geolocation. Wave 1 returned 9-10 organic results per query; wave 2 returned 10 uniformly, so shares are comparable but raw counts are not. Different retrieval instrument from wave 1 - see instrument_change."
+  },
+  "queries": [
+    {
+      "city": "Arusha",
+      "service": "safari operator",
+      "category": "hospitality_travel",
+      "organic_total": 10,
+      "own_site": 4,
+      "first_organic": "own site (safarisolestours.com)",
+      "google_surface": "not captured",
+      "ai_element": null
+    },
+    {
+      "city": "Nairobi",
+      "service": "boutique hotel",
+      "category": "hospitality_travel",
+      "organic_total": 10,
+      "own_site": 4,
+      "first_organic": "aggregator (tripadvisor.com)",
+      "google_surface": "not captured",
+      "ai_element": null
+    },
+    {
+      "city": "Lagos",
+      "service": "boutique hotel",
+      "category": "hospitality_travel",
+      "organic_total": 10,
+      "own_site": 1,
+      "first_organic": "aggregator (tripadvisor.com)",
+      "google_surface": "not captured",
+      "ai_element": null
+    },
+    {
+      "city": "Accra",
+      "service": "boutique hotel",
+      "category": "hospitality_travel",
+      "organic_total": 10,
+      "own_site": 1,
+      "first_organic": "aggregator (tripadvisor.com)",
+      "google_surface": "not captured",
+      "ai_element": null
+    },
+    {
+      "city": "Johannesburg",
+      "service": "boutique hotel",
+      "category": "hospitality_travel",
+      "organic_total": 10,
+      "own_site": 4,
+      "first_organic": "aggregator (tripadvisor.co.za)",
+      "google_surface": "not captured",
+      "ai_element": null
+    },
+    {
+      "city": "Nairobi",
+      "service": "accounting firm",
+      "category": "professional_services",
+      "organic_total": 10,
+      "own_site": 7,
+      "first_organic": "media (listicle)",
+      "google_surface": "not captured",
+      "ai_element": null
+    },
+    {
+      "city": "Lagos",
+      "service": "accounting firm",
+      "category": "professional_services",
+      "organic_total": 10,
+      "own_site": 5,
+      "first_organic": "media (listicle)",
+      "google_surface": "not captured",
+      "ai_element": null
+    },
+    {
+      "city": "Accra",
+      "service": "accounting firm",
+      "category": "professional_services",
+      "organic_total": 10,
+      "own_site": 6,
+      "first_organic": "aggregator (icagh.org regulator list)",
+      "google_surface": "not captured",
+      "ai_element": null
+    },
+    {
+      "city": "Johannesburg",
+      "service": "accounting firm",
+      "category": "professional_services",
+      "organic_total": 10,
+      "own_site": 7,
+      "first_organic": "aggregator (brendmo.com)",
+      "google_surface": "not captured",
+      "ai_element": null
+    }
+  ],
+  "results": {
+    "hospitality_travel": {
+      "queries": 5,
+      "organic_total": 50,
+      "own_site": 14,
+      "own_site_share_pct": 28,
+      "first_result_aggregator_pct": 80
+    },
+    "professional_services": {
+      "queries": 4,
+      "organic_total": 40,
+      "own_site": 25,
+      "own_site_share_pct": 62
+    },
+    "all": {
+      "queries": 9,
+      "organic_total": 90,
+      "own_site": 39,
+      "own_site_share_pct": 43,
+      "ai_element_present_pct": null
+    }
+  }
+}
