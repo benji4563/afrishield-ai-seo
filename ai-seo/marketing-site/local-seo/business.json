@@ -9,7 +9,7 @@
   "expected_area_codes": ["65", "66", "67", "68", "69"],
   "email": "benji@afrishieldai.com",
   "address": {
-    "street": "Kotto Village, Douala V",
+    "street": "Rue 5N.488, Kotto Village, Douala V",
     "locality": "Douala",
     "region": "Littoral",
     "postal_code": "",
@@ -104,7 +104,7 @@
     { "name": "The Manifest", "url": "https://themanifest.com", "status": "todo", "priority": 3 },
     { "name": "Semrush Agency Partners", "url": "https://agencies.semrush.com", "status": "todo", "priority": 2 },
     { "name": "TechBehemoths", "url": "https://techbehemoths.com/companies/seo/douala", "status": "todo", "priority": 1, "note": "Verified 2026-10-16: position 7 for agence seo douala." },
-    { "name": "StarOfService Cameroun", "url": "https://www.starofservice.cm/annubis/littoral/sanaga-maritime/douala/marketing-digital", "status": "todo", "priority": 1, "note": "Verified 2026-10-16: holds positions 9, 12 and 38 for Douala SEO terms." },
+    { "name": "StarOfService Cameroun", "url": "https://www.starofservice.cm/p/1ea48e6b-2e47-e283-ffb4-e1dfad1d26bd", "status": "live", "priority": 2, "note": "Live 2026-10-19, entirely in French. Services: Marketing digital, Optimisation du referencement, Marketing. Hours and French description render correctly. NOTE: the profile page itself is robots noindex, nofollow, so it passes no link equity and will never rank. Its only value is inclusion in the indexed category page /annubis/littoral/sanaga-maritime/douala/marketing-digital, which holds positions 9, 12 and 38 for Douala SEO terms. Priority dropped from 1 to 2 for that reason. Street address was entered but is not displayed publicly - only Douala, Sanaga-Maritime, which is StarOfService's own mistaken department for Douala (it is Wouri)." },
     { "name": "BusinessList Cameroun", "url": "https://fr.businesslist.co.cm", "status": "todo", "priority": 2, "note": "Verified 2026-10-16: position 19 for agence seo douala cameroun." }
   ],
   "same_as": [
