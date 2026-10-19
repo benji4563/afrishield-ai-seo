@@ -306,6 +306,17 @@ export default function Post() {
         </p>
 
         <p>
+          <strong>Update, October 2026:</strong> we re-ran these nine searches seven weeks later.
+          One of the five hospitality searches no longer had an aggregator in position one — a
+          locally-owned operator in Arusha took it. The follow-up, with both datasets side by
+          side, is{' '}
+          <a href="/blog/ai-search-visibility-study-october-2026">
+            the first crack in the aggregator wall
+          </a>
+          .
+        </p>
+
+        <p>
           The limits, stated plainly so nobody has to guess: it is nine searches, not nine hundred.
           It is desktop and English only. Google&rsquo;s AI Overview text is served asynchronously,
           so we recorded whether an AI answer <em>appeared</em> rather than parsing every word it
