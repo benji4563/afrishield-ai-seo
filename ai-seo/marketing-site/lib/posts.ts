@@ -139,6 +139,35 @@ Prochaine édition : octobre 2027, même protocole. Si une seule organisation ca
       src: '/images/blog-ai-search-visibility-study-october-2026.webp',
       alt: 'A smiling safari guide seated on an open safari vehicle with a giraffe behind him.',
     },
+    linkedin: `In August we ran nine searches across five African cities and found something bleak.
+
+In every single hotel and safari search, the number one organic result belonged to an aggregator. TripAdvisor. Booking. A "top 20 operators" listicle written on another continent. Never the business itself.
+
+We said we would re-run it rather than let that harden into a talking point. So we did, seven weeks later, same nine searches.
+
+This time one of them broke.
+
+A locally-owned operator in Arusha, Tanzania, took position one — displacing the directory that held that spot in August.
+
+So we went and read their site, because "a local business won" is only interesting if you can say how.
+
+An FAQ on the homepage answering seven real questions. A section headed "Your Tanzanian safari in numbers" with actual figures on it. Organization and Article schema. A Trustpilot profile they point at themselves.
+
+And two things almost nobody does. A real llms.txt file. And a robots.txt that names GPTBot, OAI-SearchBot, PerplexityBot and ClaudeBot explicitly.
+
+Now the honest part, because you will not get it anywhere else. This does not prove causation. Google has never said it reads llms.txt, and we have no evidence that file moved a Google ranking. It is a correlation with a sample size of one.
+
+Here is what makes it worth your time anyway.
+
+The same week, we audited 30 of Cameroon's largest organisations. Not one publishes an llms.txt. Not one names a single AI crawler.
+
+The two things the operator who beat the directories did are the two things an entire national economy has not done.
+
+Both studies, with the raw data published for anyone to check:
+
+https://afrishieldai.com/blog/ai-search-visibility-study-october-2026
+
+#SEO #Africa #Tanzania #AISearch #Hospitality`,
   },
   {
     slug: 'how-long-does-seo-take-in-nigeria',
