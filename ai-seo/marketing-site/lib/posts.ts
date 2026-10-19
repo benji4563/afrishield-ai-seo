@@ -86,6 +86,39 @@ export const POSTS: PostMeta[] = [
       src: '/images/blog-barometre-ia-cameroun-2026.webp',
       alt: 'Vue aérienne de Douala au coucher du soleil, avec le tissu urbain et le port.',
     },
+    linkedin: `Nous avons vérifié les sites de 30 des plus grandes organisations du Cameroun, une par une.
+
+Nous cherchions huit choses qu'un robot d'IA regarde avant de citer une entreprise. Banques, télécoms, énergie, universités, médias.
+
+Deux des huit cases sont restées vides. Pas majoritairement vides. Vides.
+
+Zéro sur 26 sites fonctionnels publient un fichier llms.txt — le document qui présente une entreprise aux modèles d'IA.
+
+Zéro nomment un seul robot d'IA dans leur robots.txt. Nous avons cherché GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot, Google-Extended. Aucune occurrence. Sur aucun site.
+
+Lisez ce second zéro dans les deux sens. Personne n'interdit l'accès aux robots d'IA : le terrain est libre. Et personne ne les guide : le terrain est vide.
+
+Ces deux critères valent 25 points sur 100 dans notre grille. Moins d'une demi-journée de travail. C'est pourquoi le meilleur score du pays plafonne à 75 sur 100.
+
+Trois autres chiffres :
+
+Score moyen de préparation à l'IA : 46,3 sur 100.
+
+4 organisations sur 30 n'ont aucun site accessible.
+
+Les télécoms et l'énergie — les secteurs les plus capitalisés et les plus techniques du pays — sont les derniers, à 36 sur 100.
+
+Et un détail qui nous a arrêtés net. En vérifiant les domaines, cinq des six adresses que nous pensions correctes se sont révélées fausses ou mortes. ccabank.cm n'existe pas. lessabc.com non plus. camrail.net sert un certificat auto-signé.
+
+Si une équipe qui cherche volontairement, avec des outils et du temps, se trompe cinq fois sur six, un robot d'IA n'a aucune chance de faire mieux.
+
+L'étude complète, la grille des 8 critères et les données brutes en JSON et CSV, sous licence libre :
+
+https://afrishieldai.com/blog/barometre-ia-cameroun-2026
+
+Prochaine édition : octobre 2027, même protocole. Si une seule organisation camerounaise publie un llms.txt d'ici là, elle aura douze mois d'avance sur les vingt-neuf autres.
+
+#Cameroun #IA #SEO #Douala #Yaoundé #TransformationDigitale`,
   },
   {
     slug: 'ai-search-visibility-study-october-2026',
