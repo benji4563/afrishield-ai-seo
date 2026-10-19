@@ -547,6 +547,12 @@ export default function Post() {
           ouvert indéfiniment.
         </p>
 
+        <p>
+          Pour une PME de Douala qui part de zéro, l&rsquo;ordre de travail complet, de la fiche
+          Google aux pages par quartier dans les deux langues, est détaillé dans notre{' '}
+          <a href="/blog/referencement-naturel-douala">guide du référencement naturel à Douala</a>.
+        </p>
+
         <h2 id="methode">Méthodologie et limites</h2>
 
         <p>

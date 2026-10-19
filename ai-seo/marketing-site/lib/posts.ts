@@ -67,6 +67,54 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'referencement-naturel-douala',
+    title:
+      'Référencement naturel à Douala : le guide pour être trouvé sur Google, en français et en anglais',
+    cardTitle: 'Référencement naturel à Douala, le guide',
+    metaTitle: 'Référencement naturel à Douala : le guide',
+    description:
+      'Référencement naturel à Douala : fiche Google, pages par quartier, français et anglais, délais réels, prix en FCFA, et quand il vaut mieux attendre.',
+    lede:
+      'Le référencement naturel à Douala fait apparaître une entreprise gratuitement dans Google quand un client cherche son service, en français ou en anglais. Une fiche Google validée peut apparaître sur la carte en quelques semaines, une page par service et par quartier progresse en général en deux à quatre mois, et une recherche à l’échelle de la ville en six à douze mois.',
+    lang: 'fr',
+    category: 'Référencement local',
+    published: '2026-10-19',
+    modified: '2026-10-19',
+    readingMinutes: 10,
+    primaryKeyword: 'référencement naturel douala',
+    image: {
+      src: '/images/blog-referencement-naturel-douala.webp',
+      alt: 'Des motos et un tricycle jaune circulent devant la mairie de Douala 5e, sous un ciel dégagé.',
+    },
+    linkedin: `Vous tapez votre métier et « Douala » sur Google. Vous voyez un annuaire, deux concurrents, et un site qui ne s'ouvre pas.
+
+Vous retapez en anglais. Autres résultats. Toujours pas vous.
+
+Pourtant votre entreprise existe depuis des années, avec une enseigne que tout le quartier connaît.
+
+Le problème n'est pas l'entreprise. C'est que sur Google, l'enseigne n'a jamais été posée.
+
+Le référencement naturel, c'est exactement ça : poser l'enseigne là où les clients cherchent maintenant. À Douala, il y a trois endroits où la poser.
+
+La fiche Google Maps. La plus rapide. Google indique que la validation prend jusqu'à cinq jours ouvrés, et qu'aucun paiement ne permet d'être mieux classé sur la carte.
+
+Une vraie page par service et par quartier. « Cabinet comptable Bonanjo » se gagne en général en quelques mois. « Cabinet comptable Douala » demande plutôt six à douze mois.
+
+Les deux langues. « Transitaire Douala » et « clearing agent Douala » ne donnent pas les mêmes résultats. Une seule langue, c'est la moitié de la rue.
+
+Et un détail qui change tout : la concurrence optimisée est encore rare ici. Dans notre baromètre d'octobre, aucune des 26 grandes organisations camerounaises au site fonctionnel ne publiait de fichier llms.txt.
+
+Pour être honnêtes, notre propre site, vu depuis le Royaume-Uni, se classait en moyenne autour de la 74e position sur 90 jours. Vu depuis le Cameroun, autour de la 4e. Nous aimerions dire que c'était prévu.
+
+Le guide complet, en français : par où commencer, combien de temps, combien ça coûte, et quand il vaut mieux ne pas encore dépenser.
+
+https://afrishieldai.com/blog/referencement-naturel-douala
+
+#Douala #Cameroun #SEO #RéférencementLocal #PME
+
+Votre quartier connaît déjà votre enseigne. Il reste à la montrer à Google.`,
+  },
+  {
     slug: 'barometre-ia-cameroun-2026',
     title:
       'Baromètre IA Cameroun 2026 : aucune grande entreprise n\u2019est prête pour les moteurs de réponse',

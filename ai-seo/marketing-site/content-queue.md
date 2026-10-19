@@ -163,7 +163,7 @@ on, which makes them the lowest-risk rows in the file.
 | 33 | how to appear on google maps in lagos | N — Nigeria local / GBP | `gsc-evidenced` — strongest page on the site by impressions (233 @ pos 69.0) but the demand is UK/AUS. Same topic, Lagos-qualified, near-zero local competition. | claimed |
 | 34 | how to get more google reviews in nigeria | N — Nigeria local / GBP | `serp-verified` — review-velocity is the top local ranking factor (Jono Catliff doctrine) and no Nigerian site owns this term. | claimed |
 | 35 | how long does seo take in nigeria | N — Nigeria expectations | `gsc-evidenced` — generic parent holds 181 impressions at pos 74.7 from the UK/AU. Nigeria-qualified cut inherits the topical relevance without the unwinnable competition. | claimed |
-| 36 | référencement naturel douala | CM — Cameroon FR (priority) | `gsc-evidenced` + `serp-verified` — Cameroon is the site's best market (pos 3.7, 1 of 2 total clicks). French commercial terms here are close to uncontested. **Write in French.** | queued |
+| 36 | référencement naturel douala | CM — Cameroon FR (priority) | `gsc-evidenced` + `serp-verified` — Cameroon is the site's best market (pos 3.7, 1 of 2 total clicks). French commercial terms here are close to uncontested. **Write in French.** | claimed |
 | 37 | agence seo cameroun | CM — Cameroon FR (priority) | `serp-verified` — francophone Central Africa has almost no optimised competition. Commercial intent, direct fit to `/ai-seo/douala`. **Write in French.** | queued |
 | 38 | seo agency nairobi cost | K — Kenya commercial | `serp-verified` — Nairobi SERP is local agencies (SEO Smart, SEO Kenya, Kwetu), not global domains. Kenya already ranks pos 17.3 for this domain. | queued |
 | 39 | how to get a safari company recommended by ai | K — Kenya × GEO × tourism | `gsc-evidenced` — `how-to-get-hotel-cited-by-chatgpt` sits at pos 6.7. Nearest-neighbour topic, proven position, high commercial value. | queued |
@@ -316,3 +316,4 @@ periodically; promote to the table above once they show real volume.
 | how to appear on google maps in lagos | `/blog/how-to-appear-on-google-maps-in-lagos` | 2026-10-12 |
 | how to get more google reviews in nigeria | `/blog/how-to-get-more-google-reviews-in-nigeria` | 2026-10-14 |
 | how long does seo take in nigeria | `/blog/how-long-does-seo-take-in-nigeria` | 2026-10-16 |
+| référencement naturel douala | `/blog/referencement-naturel-douala` | 2026-10-19 |

@@ -384,5 +384,17 @@
     "photographerUrl": "https://www.pexels.com/@messina",
     "alt": "Breathtaking aerial shot of Douala, Cameroon showcasing cityscape and vibrant sunset.",
     "avgColor": "#836F64"
+  },
+  {
+    "slot": "blog-referencement-naturel-douala",
+    "file": "images/blog-referencement-naturel-douala.webp",
+    "source": "Pexels",
+    "query": "douala cameroon street",
+    "pexelsId": 12303100,
+    "pexelsUrl": "https://www.pexels.com/photo/people-riding-motorcycles-on-road-near-building-12303100/",
+    "photographer": "Xavier Messina",
+    "photographerUrl": "https://www.pexels.com/@messina",
+    "alt": "Des motos et un tricycle jaune circulent devant la mairie de Douala 5e, sous un ciel dégagé.",
+    "avgColor": "#B7AF9C"
   }
 ]

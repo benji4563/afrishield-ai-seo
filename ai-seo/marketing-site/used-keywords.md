@@ -43,6 +43,7 @@ reconcile.
 | how to appear on google maps in lagos | N — Nigeria local / GBP | `/blog/how-to-appear-on-google-maps-in-lagos` | 2026-10-12 | Live |
 | how to get more google reviews in nigeria | N — Nigeria local / GBP | `/blog/how-to-get-more-google-reviews-in-nigeria` | 2026-10-14 | Live |
 | how long does seo take in nigeria | N — Nigeria expectations | `/blog/how-long-does-seo-take-in-nigeria` | 2026-10-16 | Live |
+| référencement naturel douala | CM — Cameroon FR (priority) | `/blog/referencement-naturel-douala` | 2026-10-19 | Live |
 
 ## Deliberately not targeted
 
