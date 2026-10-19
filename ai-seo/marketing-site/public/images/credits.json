@@ -360,5 +360,29 @@
     "photographerUrl": "https://www.pexels.com/@ninthgrid-2149521550",
     "alt": "Two smiling women sit at a round table with a laptop in a bright Lagos cafe.",
     "avgColor": "#858681"
+  },
+  {
+    "slot": "blog-ai-search-visibility-study-october-2026",
+    "file": "images/blog-ai-search-visibility-study-october-2026.webp",
+    "source": "Pexels",
+    "query": "tanzania safari guide vehicle tourists",
+    "pexelsId": 32957448,
+    "pexelsUrl": "https://www.pexels.com/photo/african-safari-adventure-with-jeeps-and-wildlife-32957448/",
+    "photographer": "Dennis  Julius",
+    "photographerUrl": "https://www.pexels.com/@dxstudiostz",
+    "alt": "Smiling man seated on safari jeep, ready for adventure with giraffe nearby.",
+    "avgColor": "#7B865E"
+  },
+  {
+    "slot": "blog-barometre-ia-cameroun-2026",
+    "file": "images/blog-barometre-ia-cameroun-2026.webp",
+    "source": "Pexels",
+    "query": "douala cameroon city business district",
+    "pexelsId": 12251155,
+    "pexelsUrl": "https://www.pexels.com/photo/city-houses-and-buildings-during-sunset-12251155/",
+    "photographer": "Xavier Messina",
+    "photographerUrl": "https://www.pexels.com/@messina",
+    "alt": "Breathtaking aerial shot of Douala, Cameroon showcasing cityscape and vibrant sunset.",
+    "avgColor": "#836F64"
   }
 ]

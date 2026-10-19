@@ -67,6 +67,47 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'barometre-ia-cameroun-2026',
+    title:
+      'Baromètre IA Cameroun 2026 : aucune grande entreprise n\u2019est prête pour les moteurs de réponse',
+    cardTitle: 'Baromètre IA Cameroun 2026',
+    metaTitle: 'Baromètre IA Cameroun 2026',
+    description:
+      'Baromètre 2026 : sur 30 grandes organisations camerounaises, aucune ne publie de llms.txt et aucune ne nomme un robot d\u2019IA. Score moyen : 46,3 sur 100.',
+    lede:
+      'Nous avons audité 30 des plus grandes organisations camerounaises sur une grille publique de 8 critères et 100 points. Aucune des 26 au site fonctionnel ne publie de fichier llms.txt, et aucune ne nomme un seul robot d\u2019IA dans son robots.txt. Le score moyen de préparation à l\u2019IA est de 46,3 sur 100, et quatre organisations n\u2019ont aucun site accessible.',
+    lang: 'fr',
+    category: 'Étude originale',
+    published: '2026-10-19',
+    modified: '2026-10-19',
+    readingMinutes: 11,
+    primaryKeyword: 'visibilité IA entreprises camerounaises',
+    image: {
+      src: '/images/blog-barometre-ia-cameroun-2026.webp',
+      alt: 'Vue aérienne de Douala au coucher du soleil, avec le tissu urbain et le port.',
+    },
+  },
+  {
+    slug: 'ai-search-visibility-study-october-2026',
+    title:
+      'The first crack in the aggregator wall: our AI visibility study, seven weeks on',
+    cardTitle: 'The first crack in the aggregator wall',
+    metaTitle: 'A Local Operator Beat the Directories',
+    description:
+      'We re-ran nine searches in five African cities. One locally-owned operator took position one from the directories — the first crack in the aggregator wall.',
+    lede:
+      'In August, an aggregator held the number-one organic result in every hotel and safari search we ran across five African cities. Re-running the same nine searches on 17 October 2026, one did not: a locally-owned operator in Arusha took the top spot. Businesses\u2019 own sites rose from 23% to 28% of page one in hospitality. Both datasets are published.',
+    category: 'Original research',
+    published: '2026-10-19',
+    modified: '2026-10-19',
+    readingMinutes: 9,
+    primaryKeyword: 'ai search visibility africa study 2026',
+    image: {
+      src: '/images/blog-ai-search-visibility-study-october-2026.webp',
+      alt: 'A smiling safari guide seated on an open safari vehicle with a giraffe behind him.',
+    },
+  },
+  {
     slug: 'how-long-does-seo-take-in-nigeria',
     title: 'How long does SEO take in Nigeria? The three clocks, month by month',
     cardTitle: 'How long SEO takes in Nigeria, honestly',
@@ -263,7 +304,7 @@ Do it this week and the next rider may find you without calling. You might even 
       'We ran nine real searches across Nairobi, Lagos, Accra, Johannesburg and Arusha. In travel and hospitality, a business’s own website was 23% of page-one organic results; in professional services, local firms’ own sites were 68%. Google served an AI-generated answer on all nine searches. The raw data is published in this study.',
     category: 'Original research',
     published: '2026-08-28',
-    modified: '2026-08-28',
+    modified: '2026-10-19',
     readingMinutes: 8,
     primaryKeyword: 'ai search visibility for african businesses',
     image: {

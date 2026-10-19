@@ -1,0 +1,639 @@
+{
+  "etude": "Barometre AfriShield de la visibilite IA des entreprises camerounaises",
+  "edition": "2026-10",
+  "editeur": "AfriShield AI",
+  "date_mesure": "2026-10-18",
+  "date_mesure_complement": "2026-10-19",
+  "licence": "https://creativecommons.org/licenses/by/4.0/",
+  "grille": {
+    "total_points": 100,
+    "criteres": [
+      {
+        "critere": "Site fonctionnel",
+        "points": 20,
+        "verifie": "Page d'accueil accessible en HTTPS, hors maintenance"
+      },
+      {
+        "critere": "robots.txt",
+        "points": 10,
+        "verifie": "Fichier present a la racine, servi en texte"
+      },
+      {
+        "critere": "Sitemap XML",
+        "points": 15,
+        "verifie": "Plan de site valide, declare dans robots.txt ou aux adresses standard"
+      },
+      {
+        "critere": "Meta-description presente",
+        "points": 10,
+        "verifie": "Balise presente sur la page d'accueil"
+      },
+      {
+        "critere": "Meta-description de longueur optimale",
+        "points": 5,
+        "verifie": "120 a 160 caracteres"
+      },
+      {
+        "critere": "Regles explicites pour les robots d'IA",
+        "points": 10,
+        "verifie": "Au moins un robot d'IA nomme dans robots.txt"
+      },
+      {
+        "critere": "llms.txt",
+        "points": 15,
+        "verifie": "Vrai fichier texte a la racine, pas une page HTML"
+      },
+      {
+        "critere": "Article Wikipedia en francais",
+        "points": 15,
+        "verifie": "Article consacre a l'organisation"
+      }
+    ]
+  },
+  "methode": {
+    "echantillon": "30 organisations camerounaises de premier plan, 10 par secteur.",
+    "protocole": "Chaque domaine est sollicite en HTTPS, d'abord sur l'apex puis sur le sous-domaine www en cas d'echec, avec trois tentatives espacees. Le critere Wikipedia est verifie via l'API MediaWiki : une reponse vide n'est jamais interpretee comme une absence d'article.",
+    "correction_domaines": "Le premier passage s'est execute derriere un proxy qui a renvoye 502 sur six organisations. Au second passage, cinq des six domaines de l'echantillon se sont reveles errones ou morts et ont ete corriges contre une source primaire. Le detail figure dans corrections_domaines.",
+    "limites": "Le barometre mesure la preparation technique des sites a etre lus par des robots d'IA. Il ne mesure pas si une IA donnee cite effectivement une organisation, ce qui varie selon la question posee et l'utilisateur. La meta-description est relevee sur la page d'accueil uniquement."
+  },
+  "corrections_domaines": [
+    {
+      "organisation": "Camrail",
+      "domaine_echantillon": "camrail.net",
+      "domaine_retenu": "camrail.cm",
+      "motif": "camrail.net: apex sans enregistrement A; www sert un certificat auto-signe CN=System Default Cert. Site reel sur camrail.cm, certificat valide."
+    },
+    {
+      "organisation": "CCA Bank",
+      "domaine_echantillon": "ccabank.cm",
+      "domaine_retenu": "cca-bank.com",
+      "motif": "ccabank.cm: NXDOMAIN. Site reel sur cca-bank.com (titre: Le Credit Communautaire d'Afrique-Bank | CCA BANK)."
+    },
+    {
+      "organisation": "Express Union",
+      "domaine_echantillon": "expressunion.cm",
+      "domaine_retenu": "expressunion.net",
+      "motif": "expressunion.cm: www pointe en boucle vers l'apex, sans enregistrement A. Site reel sur expressunion.net."
+    },
+    {
+      "organisation": "SABC",
+      "domaine_echantillon": "lessabc.com",
+      "domaine_retenu": "boissonsducameroun.com",
+      "motif": "lessabc.com: NXDOMAIN. Domaine officiel boissonsducameroun.com, confirme par l'infobox Wikipedia et le site lui-meme."
+    },
+    {
+      "organisation": "Cimencam",
+      "domaine_echantillon": "cimencam.cm",
+      "domaine_retenu": "cimencam.com",
+      "motif": "cimencam.cm: NXDOMAIN. Site reel sur cimencam.com (groupe Holcim)."
+    }
+  ],
+  "resultats": {
+    "organisations_mesurees": 30,
+    "sites_fonctionnels": 26,
+    "score_moyen": 46.3,
+    "score_median": 45.0,
+    "score_max": 75,
+    "criteres": {
+      "llms_txt": {
+        "n": 0,
+        "base": 26,
+        "pct": 0.0
+      },
+      "regles_robots_ia": {
+        "n": 0,
+        "base": 26,
+        "pct": 0.0
+      },
+      "robots_txt": {
+        "n": 15,
+        "base": 26,
+        "pct": 57.7
+      },
+      "sitemap_xml": {
+        "n": 13,
+        "base": 26,
+        "pct": 50.0
+      },
+      "meta_description": {
+        "n": 11,
+        "base": 26,
+        "pct": 42.3
+      },
+      "meta_description_optimale": {
+        "n": 2,
+        "base": 26,
+        "pct": 7.7
+      },
+      "titre": {
+        "n": 22,
+        "base": 26,
+        "pct": 84.6
+      },
+      "wikipedia_fr": {
+        "n": 27,
+        "base": 30,
+        "pct": 90.0
+      }
+    },
+    "par_secteur": [
+      {
+        "secteur": "Telecoms, energie & transport",
+        "organisations": 10,
+        "score_moyen": 36.0,
+        "sites_non_fonctionnels": 4
+      },
+      {
+        "secteur": "Banque, finance & assurance",
+        "organisations": 10,
+        "score_moyen": 50.0,
+        "sites_non_fonctionnels": 0
+      },
+      {
+        "secteur": "Distribution, agro, education & medias",
+        "organisations": 10,
+        "score_moyen": 53.0,
+        "sites_non_fonctionnels": 0
+      }
+    ],
+    "tranches": {
+      "70_a_100": 4,
+      "50_a_69": 10,
+      "moins_de_50": 16
+    },
+    "sites_non_fonctionnels": [
+      {
+        "organisation": "Nexttel",
+        "domaine": "nexttel.cm",
+        "motif": "Le domaine officiel ne resout pas : SERVFAIL sur deux resolveurs independants (18-19 octobre 2026)."
+      },
+      {
+        "organisation": "Camwater",
+        "domaine": "camwater.cm",
+        "motif": "Chaine de certification TLS incomplete : le certificat ne peut pas etre valide."
+      },
+      {
+        "organisation": "SONARA",
+        "domaine": "sonara.cm",
+        "motif": "Handshake TLS interrompu par le serveur (EOF en violation du protocole)."
+      },
+      {
+        "organisation": "Camair-Co",
+        "domaine": "camair-co.cm",
+        "motif": "Chaine de certification TLS incomplete : le certificat ne peut pas etre valide."
+      }
+    ]
+  },
+  "organisations": [
+    {
+      "nom": "SOCAPALM",
+      "domaine": "socapalm.com",
+      "secteur": "Distribution, agro, education & medias",
+      "score": 75,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": true,
+      "sitemap_xml": true,
+      "meta_description": true,
+      "meta_description_optimale": true,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "CRTV",
+      "domaine": "crtv.cm",
+      "secteur": "Distribution, agro, education & medias",
+      "score": 70,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": true,
+      "sitemap_xml": true,
+      "meta_description": true,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "Ecobank Cameroun",
+      "domaine": "ecobank.com",
+      "secteur": "Banque, finance & assurance",
+      "score": 70,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": true,
+      "sitemap_xml": true,
+      "meta_description": true,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "Orange Cameroun",
+      "domaine": "www.orange.cm",
+      "secteur": "Telecoms, energie & transport",
+      "score": 70,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": true,
+      "sitemap_xml": true,
+      "meta_description": true,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "Afriland First Bank",
+      "domaine": "www.afrilandfirstbank.com",
+      "secteur": "Banque, finance & assurance",
+      "score": 60,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": true,
+      "sitemap_xml": true,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "CNPS",
+      "domaine": "www.cnps.cm",
+      "secteur": "Banque, finance & assurance",
+      "score": 60,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": false,
+      "sitemap_xml": true,
+      "meta_description": true,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "Camrail",
+      "domaine": "camrail.cm",
+      "secteur": "Telecoms, energie & transport",
+      "score": 60,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": true,
+      "sitemap_xml": true,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "Express Union",
+      "domaine": "expressunion.net",
+      "secteur": "Banque, finance & assurance",
+      "score": 60,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": true,
+      "sitemap_xml": true,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "SABC",
+      "domaine": "boissonsducameroun.com",
+      "secteur": "Distribution, agro, education & medias",
+      "score": 60,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": true,
+      "sitemap_xml": true,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "UBA Cameroun",
+      "domaine": "ubagroup.com",
+      "secteur": "Banque, finance & assurance",
+      "score": 60,
+      "site_fonctionnel": true,
+      "titre_present": false,
+      "robots_txt": true,
+      "sitemap_xml": true,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "Université de Buea",
+      "domaine": "ubuea.cm",
+      "secteur": "Distribution, agro, education & medias",
+      "score": 60,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": true,
+      "sitemap_xml": true,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "Université de Yaoundé I",
+      "domaine": "uy1.uninet.cm",
+      "secteur": "Distribution, agro, education & medias",
+      "score": 60,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": true,
+      "sitemap_xml": true,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "Cameroon Tribune",
+      "domaine": "cameroon-tribune.cm",
+      "secteur": "Distribution, agro, education & medias",
+      "score": 55,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": true,
+      "sitemap_xml": false,
+      "meta_description": true,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "MTN Cameroon",
+      "domaine": "mtn.cm",
+      "secteur": "Telecoms, energie & transport",
+      "score": 50,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": false,
+      "sitemap_xml": true,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "Activa Assurances",
+      "domaine": "group-activa.com",
+      "secteur": "Banque, finance & assurance",
+      "score": 45,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": true,
+      "sitemap_xml": false,
+      "meta_description": true,
+      "meta_description_optimale": true,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": false
+    },
+    {
+      "nom": "BICEC",
+      "domaine": "bicec.com",
+      "secteur": "Banque, finance & assurance",
+      "score": 45,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": false,
+      "sitemap_xml": false,
+      "meta_description": true,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "CCA Bank",
+      "domaine": "cca-bank.com",
+      "secteur": "Banque, finance & assurance",
+      "score": 45,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": false,
+      "sitemap_xml": false,
+      "meta_description": true,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "Camtel",
+      "domaine": "camtel.cm",
+      "secteur": "Telecoms, energie & transport",
+      "score": 45,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": true,
+      "sitemap_xml": false,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "Cimencam",
+      "domaine": "cimencam.com",
+      "secteur": "Distribution, agro, education & medias",
+      "score": 45,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": false,
+      "sitemap_xml": false,
+      "meta_description": true,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "SNH",
+      "domaine": "snh.cm",
+      "secteur": "Telecoms, energie & transport",
+      "score": 45,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": true,
+      "sitemap_xml": false,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "CDC (Cameroon Development Corp.)",
+      "domaine": "cdc-cameroon.net",
+      "secteur": "Distribution, agro, education & medias",
+      "score": 35,
+      "site_fonctionnel": true,
+      "titre_present": false,
+      "robots_txt": false,
+      "sitemap_xml": false,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "Campost",
+      "domaine": "campost.cm",
+      "secteur": "Distribution, agro, education & medias",
+      "score": 35,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": false,
+      "sitemap_xml": false,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "Société Générale Cameroun",
+      "domaine": "societegenerale.cm",
+      "secteur": "Banque, finance & assurance",
+      "score": 35,
+      "site_fonctionnel": true,
+      "titre_present": false,
+      "robots_txt": false,
+      "sitemap_xml": false,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "Université de Douala",
+      "domaine": "univ-douala.cm",
+      "secteur": "Distribution, agro, education & medias",
+      "score": 35,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": false,
+      "sitemap_xml": false,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "ENEO Cameroon",
+      "domaine": "eneocameroon.cm",
+      "secteur": "Telecoms, energie & transport",
+      "score": 30,
+      "site_fonctionnel": true,
+      "titre_present": true,
+      "robots_txt": false,
+      "sitemap_xml": false,
+      "meta_description": true,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": false
+    },
+    {
+      "nom": "Commercial Bank of Cameroon",
+      "domaine": "cbc-bank.com",
+      "secteur": "Banque, finance & assurance",
+      "score": 20,
+      "site_fonctionnel": true,
+      "titre_present": false,
+      "robots_txt": false,
+      "sitemap_xml": false,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": false
+    },
+    {
+      "nom": "Camair-Co",
+      "domaine": "camair-co.cm",
+      "secteur": "Telecoms, energie & transport",
+      "score": 15,
+      "site_fonctionnel": false,
+      "titre_present": false,
+      "robots_txt": false,
+      "sitemap_xml": false,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "Camwater",
+      "domaine": "camwater.cm",
+      "secteur": "Telecoms, energie & transport",
+      "score": 15,
+      "site_fonctionnel": false,
+      "titre_present": false,
+      "robots_txt": false,
+      "sitemap_xml": false,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "Nexttel",
+      "domaine": "nexttel.cm",
+      "secteur": "Telecoms, energie & transport",
+      "score": 15,
+      "site_fonctionnel": false,
+      "titre_present": false,
+      "robots_txt": false,
+      "sitemap_xml": false,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    },
+    {
+      "nom": "SONARA",
+      "domaine": "sonara.cm",
+      "secteur": "Telecoms, energie & transport",
+      "score": 15,
+      "site_fonctionnel": false,
+      "titre_present": false,
+      "robots_txt": false,
+      "sitemap_xml": false,
+      "meta_description": false,
+      "meta_description_optimale": false,
+      "regles_robots_ia": false,
+      "llms_txt": false,
+      "wikipedia_fr": true
+    }
+  ]
+}

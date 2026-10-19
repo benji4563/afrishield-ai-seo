@@ -1,0 +1,31 @@
+﻿nom;domaine;secteur;score;site_fonctionnel;titre_present;robots_txt;sitemap_xml;meta_description;meta_description_optimale;regles_robots_ia;llms_txt;wikipedia_fr
+SOCAPALM;socapalm.com;Distribution, agro, education & medias;75;True;True;True;True;True;True;False;False;True
+CRTV;crtv.cm;Distribution, agro, education & medias;70;True;True;True;True;True;False;False;False;True
+Ecobank Cameroun;ecobank.com;Banque, finance & assurance;70;True;True;True;True;True;False;False;False;True
+Orange Cameroun;www.orange.cm;Telecoms, energie & transport;70;True;True;True;True;True;False;False;False;True
+Afriland First Bank;www.afrilandfirstbank.com;Banque, finance & assurance;60;True;True;True;True;False;False;False;False;True
+CNPS;www.cnps.cm;Banque, finance & assurance;60;True;True;False;True;True;False;False;False;True
+Camrail;camrail.cm;Telecoms, energie & transport;60;True;True;True;True;False;False;False;False;True
+Express Union;expressunion.net;Banque, finance & assurance;60;True;True;True;True;False;False;False;False;True
+SABC;boissonsducameroun.com;Distribution, agro, education & medias;60;True;True;True;True;False;False;False;False;True
+UBA Cameroun;ubagroup.com;Banque, finance & assurance;60;True;False;True;True;False;False;False;False;True
+Université de Buea;ubuea.cm;Distribution, agro, education & medias;60;True;True;True;True;False;False;False;False;True
+Université de Yaoundé I;uy1.uninet.cm;Distribution, agro, education & medias;60;True;True;True;True;False;False;False;False;True
+Cameroon Tribune;cameroon-tribune.cm;Distribution, agro, education & medias;55;True;True;True;False;True;False;False;False;True
+MTN Cameroon;mtn.cm;Telecoms, energie & transport;50;True;True;False;True;False;False;False;False;True
+Activa Assurances;group-activa.com;Banque, finance & assurance;45;True;True;True;False;True;True;False;False;False
+BICEC;bicec.com;Banque, finance & assurance;45;True;True;False;False;True;False;False;False;True
+CCA Bank;cca-bank.com;Banque, finance & assurance;45;True;True;False;False;True;False;False;False;True
+Camtel;camtel.cm;Telecoms, energie & transport;45;True;True;True;False;False;False;False;False;True
+Cimencam;cimencam.com;Distribution, agro, education & medias;45;True;True;False;False;True;False;False;False;True
+SNH;snh.cm;Telecoms, energie & transport;45;True;True;True;False;False;False;False;False;True
+CDC (Cameroon Development Corp.);cdc-cameroon.net;Distribution, agro, education & medias;35;True;False;False;False;False;False;False;False;True
+Campost;campost.cm;Distribution, agro, education & medias;35;True;True;False;False;False;False;False;False;True
+Société Générale Cameroun;societegenerale.cm;Banque, finance & assurance;35;True;False;False;False;False;False;False;False;True
+Université de Douala;univ-douala.cm;Distribution, agro, education & medias;35;True;True;False;False;False;False;False;False;True
+ENEO Cameroon;eneocameroon.cm;Telecoms, energie & transport;30;True;True;False;False;True;False;False;False;False
+Commercial Bank of Cameroon;cbc-bank.com;Banque, finance & assurance;20;True;False;False;False;False;False;False;False;False
+Camair-Co;camair-co.cm;Telecoms, energie & transport;15;False;False;False;False;False;False;False;False;True
+Camwater;camwater.cm;Telecoms, energie & transport;15;False;False;False;False;False;False;False;False;True
+Nexttel;nexttel.cm;Telecoms, energie & transport;15;False;False;False;False;False;False;False;False;True
+SONARA;sonara.cm;Telecoms, energie & transport;15;False;False;False;False;False;False;False;False;True

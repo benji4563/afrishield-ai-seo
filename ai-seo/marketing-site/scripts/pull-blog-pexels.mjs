@@ -50,6 +50,8 @@ const SLOTS = [
   { slug: 'how-to-rank-on-chatgpt', queries: ['african professional using smartphone technology', 'african person phone ai assistant'] },
   { slug: 'google-business-profile-optimization', queries: ['african shop owner smartphone storefront', 'african business owner phone shop counter'] },
   { slug: 'ai-search-visibility-study', queries: ['african business owner laptop search results', 'african entrepreneur phone laptop research office'] },
+  { slug: 'ai-search-visibility-study-october-2026', queries: ['tanzania safari guide vehicle tourists', 'safari guide jeep savannah tourists', 'african safari tour guide vehicle'] },
+  { slug: 'barometre-ia-cameroun-2026', queries: ['douala cameroon city business district', 'cameroon office professionals meeting', 'african business team office central africa'] },
 ];
 
 async function search(query) {
