@@ -67,6 +67,56 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'agence-seo-cameroun',
+    title:
+      'Agence SEO au Cameroun : comment choisir, quoi exiger et ce que cela coûte vraiment',
+    cardTitle: 'Agence SEO au Cameroun, comment choisir',
+    metaTitle: 'Agence SEO au Cameroun : comment choisir',
+    description:
+      'Choisir une agence SEO au Cameroun : les 7 questions de Google, les signaux d’alerte, qui garde la fiche Google, et les prix réels en FCFA.',
+    lede:
+      'Une agence SEO au Cameroun se choisit sur des preuves vérifiables : des résultats visibles dans Google Search Console, la liste écrite des modifications prévues, un rapport mensuel lisible et un accès délégué qui laisse l’entreprise propriétaire de sa fiche Google. Google écrit que personne ne peut garantir la première position, et les forfaits publiés au Cameroun commencent autour de 70 000 FCFA par mois.',
+    lang: 'fr',
+    category: 'Référencement local',
+    published: '2026-10-22',
+    modified: '2026-10-22',
+    readingMinutes: 10,
+    primaryKeyword: 'agence seo cameroun',
+    image: {
+      src: '/images/blog-agence-seo-cameroun.webp',
+      alt: 'Deux professionnels en chemise et cravate discutent devant leurs ordinateurs portables, à une table de réunion.',
+    },
+    linkedin: `Trois devis de référencement arrivent la même semaine.
+
+Le premier promet la première page de Google en trente jours.
+Le deuxième tient en une ligne et un montant.
+Le troisième commence par vous demander le mot de passe du compte Google de l'entreprise.
+
+Si vous dirigez une PME à Douala ou à Yaoundé, vous avez probablement déjà reçu au moins l'un des trois.
+
+Choisir une agence SEO, c'est un peu comme choisir un garagiste. On lui confie les clés de la voiture. On ne lui confie jamais la carte grise.
+
+Sur Google, la carte grise, c'est la propriété de votre fiche d'établissement et de votre Search Console. Google prévoit pour cela un rôle d'administrateur : l'agence gère la fiche, mais ne peut ni supprimer d'utilisateurs, ni supprimer la fiche. Vous restez propriétaire.
+
+Trois autres points qui départagent les offres au Cameroun :
+
+Une promesse de position est un signal d'alerte, pas un argument. Google écrit lui-même que personne ne peut garantir la première place.
+
+Google publie sept questions à poser à un prestataire avant de signer. Résultats attendus et délai, mesure de la réussite, liste des modifications apportées au site. Une agence sérieuse y répond par écrit.
+
+Testez le site de l'agence elle-même. Tapez son métier et sa ville sur Google, en français puis en anglais. Puis ajoutez /llms.txt à son adresse.
+
+Nous sommes nous-mêmes une agence SEO basée à Douala. Nous avons donc appliqué chaque critère du guide à notre propre offre avant de le publier. Nous avons survécu, mais le passage sur les études de cas nous a demandé un peu plus de courage que prévu.
+
+Le guide complet, en français : le marché camerounais en 2026, les sept questions, les signaux d'alerte, les prix réels et quand il vaut mieux ne pas encore prendre d'agence.
+
+https://afrishieldai.com/blog/agence-seo-cameroun
+
+#Cameroun #SEO #Douala #Yaoundé #PME
+
+Donnez les clés. Gardez la carte grise.`,
+  },
+  {
     slug: 'referencement-naturel-douala',
     title:
       'Référencement naturel à Douala : le guide pour être trouvé sur Google, en français et en anglais',

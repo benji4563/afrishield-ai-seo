@@ -164,7 +164,7 @@ on, which makes them the lowest-risk rows in the file.
 | 34 | how to get more google reviews in nigeria | N — Nigeria local / GBP | `serp-verified` — review-velocity is the top local ranking factor (Jono Catliff doctrine) and no Nigerian site owns this term. | claimed |
 | 35 | how long does seo take in nigeria | N — Nigeria expectations | `gsc-evidenced` — generic parent holds 181 impressions at pos 74.7 from the UK/AU. Nigeria-qualified cut inherits the topical relevance without the unwinnable competition. | claimed |
 | 36 | référencement naturel douala | CM — Cameroon FR (priority) | `gsc-evidenced` + `serp-verified` — Cameroon is the site's best market (pos 3.7, 1 of 2 total clicks). French commercial terms here are close to uncontested. **Write in French.** | claimed |
-| 37 | agence seo cameroun | CM — Cameroon FR (priority) | `serp-verified` — francophone Central Africa has almost no optimised competition. Commercial intent, direct fit to `/ai-seo/douala`. **Write in French.** | queued |
+| 37 | agence seo cameroun | CM — Cameroon FR (priority) | `serp-verified` — francophone Central Africa has almost no optimised competition. Commercial intent, direct fit to `/ai-seo/douala`. **Write in French.** | claimed |
 | 38 | seo agency nairobi cost | K — Kenya commercial | `serp-verified` — Nairobi SERP is local agencies (SEO Smart, SEO Kenya, Kwetu), not global domains. Kenya already ranks pos 17.3 for this domain. | queued |
 | 39 | how to get a safari company recommended by ai | K — Kenya × GEO × tourism | `gsc-evidenced` — `how-to-get-hotel-cited-by-chatgpt` sits at pos 6.7. Nearest-neighbour topic, proven position, high commercial value. | queued |
 | 40 | how to check if chatgpt recommends your business in africa | AF — GEO diagnostic (Africa) | `gsc-evidenced` — `how-to-rank-on-chatgpt` holds 40 impressions; Africa-qualified cut ties it to `/ai-visibility-check`. | queued |
@@ -317,3 +317,4 @@ periodically; promote to the table above once they show real volume.
 | how to get more google reviews in nigeria | `/blog/how-to-get-more-google-reviews-in-nigeria` | 2026-10-14 |
 | how long does seo take in nigeria | `/blog/how-long-does-seo-take-in-nigeria` | 2026-10-16 |
 | référencement naturel douala | `/blog/referencement-naturel-douala` | 2026-10-19 |
+| agence seo cameroun | `/blog/agence-seo-cameroun` | 2026-10-22 |

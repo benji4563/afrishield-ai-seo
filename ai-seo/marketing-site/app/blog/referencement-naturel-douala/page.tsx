@@ -370,7 +370,9 @@ export default function Post() {
           Le détail de ce que couvre chaque niveau est sur la <a href="/pricing">page des
           tarifs</a>. Quel que soit le prestataire, trois questions départagent les offres : qui
           écrit le contenu, dans quelles langues, et quel rapport vous recevez chaque mois. Une
-          promesse de première page en trente jours n’est pas une quatrième question. Google
+          promesse de première page en trente jours n’est pas une quatrième question. La grille
+          complète pour comparer les prestataires est dans notre guide{' '}
+          <a href="/blog/agence-seo-cameroun">pour choisir une agence SEO au Cameroun</a>. Google
           écrit que personne ne peut garantir la première position ; l’agence qui la promet
           dispose apparemment d’autres informations.
         </p>

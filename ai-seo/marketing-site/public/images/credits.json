@@ -396,5 +396,17 @@
     "photographerUrl": "https://www.pexels.com/@messina",
     "alt": "Des motos et un tricycle jaune circulent devant la mairie de Douala 5e, sous un ciel dégagé.",
     "avgColor": "#B7AF9C"
+  },
+  {
+    "slot": "blog-agence-seo-cameroun",
+    "file": "images/blog-agence-seo-cameroun.webp",
+    "source": "Pexels",
+    "query": "african business meeting laptop",
+    "pexelsId": 7993903,
+    "pexelsUrl": "https://www.pexels.com/photo/men-with-laptop-discussing-with-each-other-7993903/",
+    "photographer": "Thirdman",
+    "photographerUrl": "https://www.pexels.com/@thirdman",
+    "alt": "Deux professionnels en chemise et cravate discutent devant leurs ordinateurs portables, à une table de réunion.",
+    "avgColor": "#A6A7A9"
   }
 ]
