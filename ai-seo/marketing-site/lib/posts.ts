@@ -67,6 +67,54 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'seo-agency-nairobi-cost',
+    title: 'How much does an SEO agency in Nairobi cost? Real KES prices for 2026',
+    cardTitle: 'What an SEO agency in Nairobi costs, in KES',
+    metaTitle: 'SEO Agency Nairobi Cost: KES Prices (2026)',
+    description:
+      'What Nairobi SEO agencies charge in 2026, in shillings: published package prices, what each band buys, the 16% VAT line and how to compare quotes.',
+    lede:
+      'An SEO agency in Nairobi typically costs between KES 40,000 and KES 250,000 a month in 2026, and a review of 56 published Kenyan packages found an average of KSh 82,570. This guide sets out the shilling price bands, what each one buys, how VAT changes a quote, how to compare two quotes by what they publish, and when not to hire yet.',
+    category: 'Money',
+    published: '2026-10-23',
+    modified: '2026-10-23',
+    readingMinutes: 9,
+    primaryKeyword: 'seo agency nairobi cost',
+    image: {
+      src: '/images/blog-seo-agency-nairobi-cost.webp',
+      alt: 'The Nairobi city skyline seen across Uhuru Park under a cloudy sky, with office towers behind the trees.',
+    },
+    linkedin: `Three SEO quotes land in the same Nairobi inbox.
+
+The first promises 30 keywords for KES 12,000 a month.
+The second promises four articles a month for KES 95,000.
+The third arrives from abroad, priced in dollars, with a slide about the Nairobi skyline. Just in case.
+
+If you run a business in Westlands, Kilimani or off Mombasa Road, you have probably received at least one of these.
+
+Comparing SEO packages by keyword count is like comparing restaurants by the length of the menu. A long menu tells you what the kitchen is willing to write down. It does not tell you what comes out of it.
+
+What actually separates Nairobi quotes:
+
+Published Kenyan packages run from about KES 8,000 to well past KES 250,000 a month. One review of 56 of them put the average at KSh 82,570.
+
+Divide each monthly fee by the number of pages it actually publishes. One package offers eight blog posts for KES 25,000, which leaves about KES 3,100 per post before anything else is paid for.
+
+Ask whether the price includes 16 percent VAT. Two quotes KES 10,000 apart can be level once one of them adds it.
+
+And walk away from guaranteed rankings. Google says plainly that no one can guarantee a number one position.
+
+We sell SEO in Nairobi ourselves, so we put our own prices through the same division before publishing. They survived. The spreadsheet looked at us for a while first.
+
+The full guide, in shillings: the price bands, what each one buys, the VAT line, and when a Nairobi business should not hire an agency yet.
+
+https://afrishieldai.com/blog/seo-agency-nairobi-cost
+
+#Nairobi #Kenya #SEO #SmallBusiness #DigitalMarketing
+
+Frame the skyline slide if you like. Then ask how many pages it publishes.`,
+  },
+  {
     slug: 'agence-seo-cameroun',
     title:
       'Agence SEO au Cameroun : comment choisir, quoi exiger et ce que cela coûte vraiment',

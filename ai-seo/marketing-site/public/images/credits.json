@@ -408,5 +408,17 @@
     "photographerUrl": "https://www.pexels.com/@thirdman",
     "alt": "Deux professionnels en chemise et cravate discutent devant leurs ordinateurs portables, à une table de réunion.",
     "avgColor": "#A6A7A9"
+  },
+  {
+    "slot": "blog-seo-agency-nairobi-cost",
+    "file": "images/blog-seo-agency-nairobi-cost.webp",
+    "source": "Pexels",
+    "query": "nairobi skyline",
+    "pexelsId": 9833514,
+    "pexelsUrl": "https://www.pexels.com/photo/view-of-the-uhuru-park-in-nairobi-kenya-9833514/",
+    "photographer": "Justin Brian",
+    "photographerUrl": "https://www.pexels.com/@amurephotography",
+    "alt": "The Nairobi city skyline seen across Uhuru Park under a cloudy sky, with office towers behind the trees.",
+    "avgColor": "#A9A599"
   }
 ]

@@ -146,6 +146,8 @@ export default function Post() {
           <a href="/blog/what-seo-actually-costs">our general guide to what SEO actually costs</a>,
           which works in dollars and global averages. Here the numbers are in naira, the
           examples are Nigerian, and the exchange rate gets the attention it deserves.
+          The Kenyan version, in shillings, is
+          <a href="/blog/seo-agency-nairobi-cost">what an SEO agency in Nairobi costs</a>.
         </p>
 
         {/*
