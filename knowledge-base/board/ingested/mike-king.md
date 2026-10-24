@@ -13,6 +13,7 @@ transcript) / `shallow` (title+description fallback).
 | 2026-08-05 | JjPfPT37li0 | Your Inbox Might Be the Next AI Search Signal | ingested | deep |
 | 2026-08-05 | dTHuLMWDFWo | Search 2026 Halftime Show: What Happened and What's Next (w/ Mike King) | ingested | deep |
 | 2026-08-05 | cDuoGFq0hj8 | AI Personalization: How Your Gmail Now Shapes Search Results | skipped-nothing-new | deep |
+| 2026-10-24 | 95pZgi3Ax3U | How Do We Move Forward if the SERP Is Generative? | ingested | deep |
 | 2026-10-12 | 578yMDdaGEA | SEO Value Happens After the Click - Brie Anderson - Inside SEO Week | skipped-nothing-new | deep |
 | 2026-10-12 | 6qF8mRrtTms | Content Strategy Is Now a Differentiation Problem - Angela Clark - Inside SEO Week | ingested | deep |
 | 2026-10-12 | VBH9Od_OL1Q | Training Data Is Quietly Deciding Winners in AI Search - Inside SEO Week - Metehan Yesilyurt | skipped-backlog | shallow |
