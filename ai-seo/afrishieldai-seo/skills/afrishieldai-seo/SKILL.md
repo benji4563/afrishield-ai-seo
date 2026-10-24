@@ -177,6 +177,17 @@ on `enterprise-geo-launch-africa` (own `Organization` node, own `@id`, divergent
 shape from the sitewide one; a bare-stub founder `Person` with no link to
 `founderJsonLd`).
 
+**The founder `Person` entity's own affiliations need the same entity-linking
+(board: Mike King, 2026-10-02).** `founderJsonLd` (`lib/structured-data.ts`) is the
+canonical node the rule above asks other pages to reference — but it currently
+folds its own named affiliations ("co-founder of Tataachi Network Insurance and
+Optimere") into a single free-text `description` field, the exact prose-blob
+pattern this section already bans for sub-offerings. Add discrete
+`affiliation`/`alumniOf` `Organization` nodes (`{"@type":"Organization","name":
+"Tataachi Network Insurance"}`, etc.) and a `sameAs` array (LinkedIn or other
+disambiguating profile, where one is real) to `founderJsonLd`, so the reference
+example other pages are told to link to is itself fully entity-linked.
+
 **Cross-link the core money pages in body copy (board: Koray).** Solutions, Pricing,
 and How it Works must link each other contextually from within the page content
 (e.g. a pricing mention on Solutions links to `/pricing`, a "weekly publishing" claim
@@ -327,8 +338,10 @@ Run before calling any build done:
 - [ ] `npm audit` clean; Lighthouse near-100 (and the Aramis `seo-audit` reads 100/100/100/100 · GEO 100)
 - [ ] Baseline GEO benchmark: query ChatGPT / Claude / Perplexity with
       "top [service] in [city]" and record whether the site is cited. Re-check monthly.
-- [ ] **Money-page schema/link gate (board: King + Koray, 2026-09-22).** For each of
-      `/solutions`, `/pricing`, `/how-it-works`: `curl` the raw HTML and grep for
+- [ ] **Money-page schema/link gate (board: King + Koray, 2026-09-22; scope extended
+      to `/about` 2026-10-02 — reviewed with one in-body link vs. the others' zero,
+      same family of drift, now in scope going forward).** For each of
+      `/solutions`, `/pricing`, `/how-it-works`, `/about`: `curl` the raw HTML and grep for
       `"@type":"Offer"` (or `hasOfferCatalog`) where the page shows priced/named
       entities, and for at least one `<a href="/solutions|/pricing|/how-it-works|
       /case-studies">` inside the body copy — not just inside a nav, `Button`, or
@@ -340,17 +353,31 @@ Run before calling any build done:
       count, case-study link, testimonial, or a concrete number) somewhere in the
       body — not just self-reported capability claims.
 - [ ] **"Applied" means verified in code, not described in a skill edit (board,
-      2026-09-29).** The 2026-09-22 review marked the CTA-reachability and
-      trust-signal fixes `[Applied]` because this doc was edited to specify
-      `ctaHref`/`ctaLabel` and `proof`/`proofStat` props on `PageHero`/`CtaDrop`.
-      The 2026-09-29 review read the actual component source
-      (`components/ui/PageHero.tsx`, `components/home/CtaDrop.tsx`) and found
-      neither prop exists — the doc-only edit had been silently treated as a
-      shipped fix for a full review cycle, long enough for `/how-it-works` to
-      repeat the identical gap a third time. Before any future report marks a
-      component-level fix `[Applied]`, grep the named prop in the component file
-      itself and cite the line; a sentence in this doc describing an intended
-      prop is not evidence the prop exists.
+      2026-09-29; STILL UNSHIPPED as of 2026-10-02 — fourth consecutive review).**
+      The 2026-09-22 review marked the CTA-reachability and trust-signal fixes
+      `[Applied]` because this doc was edited to specify `ctaHref`/`ctaLabel` and
+      `proof`/`proofStat` props on `PageHero`/`CtaDrop`. The 2026-09-29 review read
+      the actual component source (`components/ui/PageHero.tsx`,
+      `components/home/CtaDrop.tsx`) and found neither prop exists — the doc-only
+      edit had been silently treated as a shipped fix for a full review cycle,
+      long enough for `/how-it-works` to repeat the identical gap a third time.
+      **Re-checked again 2026-10-02 on `/about` (the fourth page reviewed under
+      this rule): `components/ui/PageHero.tsx` still has only
+      `eyebrow`/`title`/`blurb` props, `components/home/CtaDrop.tsx` has a
+      `ctaLabel` prop but still no `ctaHref` (the button target is hard-coded to
+      `/contact`) and no `proof`/`proofStat` prop at all.** `/about` doesn't even
+      use `PageHero` — it has a bespoke hero, so once the props above ship they
+      must also be wired into every custom-hero page, not only `PageHero`
+      consumers, or this keeps recurring on pages outside the literal grep target.
+      Three consecutive reviews finding the same gap in writing with no code
+      change is a process failure, not a content one (board: Dan Martell) — a
+      fix that only ever gets *described* never buys back anyone's time; it just
+      moves the cost from "build it" to "re-discover it's missing" every two
+      weeks. This is no longer a checklist reminder: the next PR that touches
+      `PageHero.tsx`, `CtaDrop.tsx`, or any page using either must ship the actual
+      props (rendering nothing when omitted, per the original spec) before being
+      marked done — a sentence in this doc describing an intended prop is still
+      not evidence the prop exists.
 - [ ] **B.8 syndication log gate (board, 2026-09-29).** For any blog post published
       under the B.8 GEO-citation SOP, `reports/pr-syndication-log.md` has an entry
       naming that post's slug before it is considered done. Confirmed empty for
