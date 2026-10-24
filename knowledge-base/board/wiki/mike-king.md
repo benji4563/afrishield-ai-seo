@@ -98,3 +98,19 @@ synthesis-first discovery.
   honest sources are the AI-visibility study dataset, measured audits and real
   prospect questions; a candidate rule, held until there are posts to test it on. —
   https://www.youtube.com/watch?v=6qF8mRrtTms
+- **2026-10-24** — His first new upload in ~3.5 months (last was 2026-06-29).
+  Demos "Genraggle," a proof-of-concept showing Google's "generative UI" could move
+  from AI Overviews into the core SERP itself — interactive calculators, comparison
+  tools, and route planners generated on the fly for a query, built from a random
+  subset of the top-10-30 results rather than a fixed ranking. Cites a paper finding
+  90% of users preferred this generative experience over the #1 organic result, and
+  notes Google already serves rank-tracking bots a different, reordered SERP
+  ("poisoned SERPs," per Nozzle's Derek Perkin) — meaning point-in-time rank checks
+  are becoming unreliable even before generative UI lands. His prescription: shift
+  AI-visibility measurement from a single rank number to a *distribution* from
+  repeated sampling, cross-checked against Google Search Console's own impression
+  data, and make content earn the click for whatever traffic still reaches a
+  website rather than assuming a ranking guarantees one. Directly extends his
+  existing retrieval-eligibility doctrine — the chunk/passage logic now has to
+  survive being reassembled into a generated UI component, not just a citation. —
+  https://www.youtube.com/watch?v=95pZgi3Ax3U
