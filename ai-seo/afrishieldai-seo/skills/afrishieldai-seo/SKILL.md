@@ -186,7 +186,46 @@ links to `/how-it-works`) — not only via the closing CTA block. Reviewed 2026-
 CTA buttons) and also shipped without the Offers schema this same table already
 specifies below — the rule existing in this doc did not stop it recurring on the
 very next money page reviewed. See the B.7 enforcement checklist below, added for
-this reason.
+this reason. **Extend the same rule to `/about` (board, 2026-10-06):** a trust
+page that builds credibility and then never links to `/case-studies` leaves that
+trust nowhere to land — `/about` reviewed this date had exactly one in-body link
+(to `/how-it-works`, buried in the closing section) and none to `/case-studies` or
+`/pricing` despite natural anchor points in the founder-story prose. Not a repeat
+of the strict money-page gate above (About isn't one of the three named pages),
+but the same underlying failure mode — weave 2–3 contextual links into the
+narrative itself, not just a single closing `Button`.
+
+**Blog post entity markup, not headline-only (board: Mike King, 2026-10-06).**
+`blogPostingJsonLd` (`lib/structured-data.ts`) carries no `about`/`mentions` field
+on any post — confirmed on `how-much-does-seo-cost-in-nigeria`, a post whose entire
+value is named entities (Nigeria, Naira, Lagos, Abuja) with zero entity markup to
+show for it. Extend `blogPostingJsonLd` to accept an optional `about`/`mentions`
+entity array, and require every new post's `lib/posts.ts` entry to populate it
+alongside the `image` field — both currently optional and both silently degrade
+GEO retrieval eligibility when omitted.
+
+**Founder/Organization entity completeness — `@id`, `sameAs`, areaServed
+consistency (board: Mike King + Koray, 2026-10-06).** `founderJsonLd`
+(`lib/structured-data.ts`) has no `@id` and no `sameAs` — this makes the
+2026-09-29 rule above ("reference the canonical `founderJsonLd` by `@id`")
+unsatisfiable, since the canonical node itself has no `@id` to reference. Give it
+`'@id': abs('/about#founder')` and a `sameAs` array once real profile URLs exist.
+Separately, `organizationJsonLd.areaServed` lists Nigeria/Ghana/Kenya/South Africa
+but omits Cameroon, while `/about` markets directly to a business owner "in Douala
+or Accra" and `SERVED_CITIES` already lists Douala — the site's own entity data
+contradicts its own prose. Add Cameroon. Named affiliated entities on `/about`
+(Tataachi Network Insurance, Optimere) should also get at minimum an `affiliation`
+reference rather than appearing only as plain text.
+
+**About-page narrative depth — at least one falsifiable incident, not only
+credentials (board: Wes McDowell, 2026-10-06).** A founder/about narrative that
+only lists credentials and competence statements (years of experience, countries
+served, companies founded) sits on the Scar Scale's Competence rung — content AI
+chat can already produce. Require at least one specific, checkable incident in the
+story — a named-but-anonymized outcome, a number, a mistake made and fixed —
+before publishing an About/founder page. Found generic on AfriShield's own
+`/about` ("the gap he could not unsee" section): describes the industry's failure
+pattern abstractly, never a specific one Benjamin lived through.
 
 **On-page Offer entities, not just the homepage (board: Mike King, 2026-09-22).**
 The Pricing row's "`FAQPage` (+ Offers with price/currency)" spec means **on
@@ -335,6 +374,14 @@ Run before calling any build done:
       `CtaDrop` block. Fail the build-verification step if either check comes back
       empty; this is the same rule B.3 already states, made mechanically checkable
       after it went unenforced twice (`/solutions` 2026-08-04, `/pricing` 2026-09-22).
+- [ ] **Schema `@id`/`sameAs` completeness check (board, 2026-10-06).** `grep
+      '"@id"'` against `organizationJsonLd` and `founderJsonLd` in
+      `lib/structured-data.ts` and fail if either is absent — the same
+      doc-vs-code drift already caught twice on the money-page link gate
+      (CTA/trust props described in this doc but not shipped in the component)
+      recurred on `/about` on a different field (`founderJsonLd`'s missing
+      `@id`); a mechanical grep catches what a prose-only rule has twice failed
+      to.
 - [ ] **Trust-signal check (board: Wes McDowell, 2026-09-22).** Every page built on
       `PageHero`/`CtaDrop` carries at least one trust/social-proof element (client
       count, case-study link, testimonial, or a concrete number) somewhere in the
