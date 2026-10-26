@@ -72,7 +72,7 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'How to get a safari company recommended by AI',
     metaTitle: 'Get Your Safari Company Recommended by AI',
     description:
-      'How Kenyan safari operators get named by ChatGPT, Perplexity and Gemini: published credentials, itinerary pages, detailed reviews, crawler access and monthly tests.',
+      'How Kenyan safari operators get named by ChatGPT, Perplexity and Gemini: licences, itinerary pages, detailed reviews, crawler access and monthly tests.',
     lede:
       'A safari company gets recommended by AI assistants when it is the easiest operator to verify. For a Kenyan operator that means publishing its TRA licence and KATO membership, giving each itinerary its own page with parks, days and an itemised price, collecting detailed reviews, allowing AI search crawlers, and testing the assistants monthly. This guide covers each step.',
     category: 'AI answers',
