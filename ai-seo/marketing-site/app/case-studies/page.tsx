@@ -6,9 +6,9 @@ import { StructuredData } from '@/components/seo/StructuredData';
 import { breadcrumbJsonLd } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/site';
 
-const TITLE = 'Case study: a site built in a day';
+const TITLE = 'Case studies: what we built, and what it did';
 const DESCRIPTION =
-  'What actually shipped on the NJ Accounting build — the stack, the schema, the keyword discipline — and why there are no traffic numbers on this page yet.';
+  'Four engagements across Cameroon — an eye clinic in Douala, an optician in Yaoundé, a reinsurance network, and an accounting firm. What shipped, what we decided, and where the numbers are.';
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -24,21 +24,97 @@ export const metadata: Metadata = {
 };
 
 /*
- * TODO(ben): traffic, ranking and lead figures for NJ's are deliberately absent.
- * Per the folder CLAUDE.md, client metrics are read-only reference material and
- * must be cleared for public use before they appear here. Once cleared, add a
- * "Results" section below "What shipped" — do not edit the claims elsewhere on
- * this page to imply outcomes in the meantime.
+ * CLIENT NAMING: Jackson Eye Clinic, Niss Optique Médical and Tataachi Network
+ * are cleared by Ben to be named here (2026-10-26). Do not add a fifth client
+ * without the same explicit clearance.
+ *
+ * RESULTS: every `results` array below is intentionally empty. Per the folder
+ * CLAUDE.md, client traffic, ranking and lead figures are read-only reference
+ * material and must be cleared for public use — in writing, by the client —
+ * before they appear on this page. A case with an empty `results` array simply
+ * renders no results block, so nothing half-finished can leak to production.
+ *
+ * TO ADD NUMBERS: put them in `results` as short factual strings, e.g.
+ *   results: ['42 pages indexed by 2026-11-30', 'Position 4 for "opticien yaoundé"']
+ * Never estimate, never round up, and date every figure.
  */
 
-const SHIPPED = [
-  'Next.js App Router site, seven routes, custom-domain HTTPS',
-  'Organization, ProfessionalService, Service and FAQPage schema across the site',
-  'A researched pillar blog post with BlogPosting, FAQPage and BreadcrumbList markup',
-  'One city landing page with genuinely local content, not a find-and-replace',
-  'Dynamic sitemap and a robots.txt pointing at it',
-  'Search Console property verified and sitemap submitted',
-  'A keyword log with one entry per targeted primary, no duplicates',
+type CaseStudy = {
+  client: string;
+  what: string;
+  where: string;
+  site?: string;
+  live: string;
+  scope: string;
+  shipped: string[];
+  results: string[];
+};
+
+const CASES: CaseStudy[] = [
+  {
+    client: 'Jackson Eye Clinic',
+    what: 'Optometrist-led eye clinic, founded 2020',
+    where: 'Kotto-Bonamoussadi, Douala',
+    site: 'jacksoneyeclinic.com',
+    live: 'Live and open to Google since 8 October 2026',
+    scope: 'Bilingual site build, technical SEO, GEO, and an ongoing blog',
+    shipped: [
+      'Bilingual site, French and English, with a separate indexable URL per language',
+      '32 URLs in the sitemap, every one returning 200',
+      'JSON-LD structured data describing the clinic, its hours and its services',
+      'Service pages for eye examinations, glasses, prices, location and FAQs',
+      'A patient-facing journal publishing on a running cadence',
+      'Prices stated on the page — 2,000 FCFA for an eye test — rather than hidden behind a call',
+    ],
+    results: [],
+  },
+  {
+    client: 'Niss Optique Médical',
+    what: 'ONOC-licensed optical practice',
+    where: 'Mvog-Ada, Yaoundé',
+    site: 'nissoptiquemedical.com',
+    live: 'Live and open to Google since 13 October 2026',
+    scope: 'Bilingual site build, SEO, GEO, and a citation and NAP programme',
+    shipped: [
+      'Bilingual site, French and English, 18 URLs in the sitemap',
+      'JSON-LD structured data, including the practice’s ONOC accreditation',
+      'A blog answering the questions patients actually ask about price and repairs',
+      'Citations audited and corrected across twelve directories, including the ONOC register',
+      'One canonical name, address and phone number enforced across every listing',
+    ],
+    results: [],
+  },
+  {
+    client: 'Tataachi Network',
+    what: 'Insurance and reinsurance network across 40+ African markets',
+    where: 'Douala, operating continent-wide',
+    site: 'tataachi.com',
+    live: 'Audit delivered; remediation in progress',
+    scope: 'Full scored audit — technical, on-page, off-page, GEO and trust',
+    shipped: [
+      'Scored audit across five pillars, benchmarked against real competitors',
+      'Conflicting addresses and three different phone numbers identified across the site',
+      'A page titled for one subject while describing another, found and flagged',
+      'Thirteen broken links found, including an admin URL exposed in the public footer',
+      'A regulatory wording risk identified in how the business described itself',
+    ],
+    results: [],
+  },
+  {
+    client: 'NJ’s Accounting & Tax Services',
+    what: 'Accounting and tax practice',
+    where: 'United States',
+    live: 'Built from empty repository to live site in a single working day',
+    scope: 'Site build, schema, one city page, one researched pillar post',
+    shipped: [
+      'Next.js App Router site, seven routes, custom-domain HTTPS',
+      'Organization, ProfessionalService, Service and FAQPage schema across the site',
+      'A researched pillar post with BlogPosting, FAQPage and BreadcrumbList markup',
+      'One city landing page with genuinely local content, not a find-and-replace',
+      'Dynamic sitemap, robots.txt pointing at it, Search Console verified',
+    ],
+    results: [],
+  },
 ];
 
 const DECISIONS = [
@@ -47,18 +123,60 @@ const DECISIONS = [
     body: 'The raw export was full of career searches, software login queries, and government lookups that Google answers with a .gov result. Targeting those would have produced pages that rank for nothing anybody would buy.',
   },
   {
-    title: 'The city page got three brand-new components',
-    body: 'Named neighbourhoods, county framing, and local regulatory notes — not the home page with the city name swapped in. Thin location pages are detectable and they drag the rest of the site with them.',
+    title: 'City pages get new components, not a find-and-replace',
+    body: 'Named neighbourhoods, local framing, and real regulatory notes. Thin location pages are detectable and they drag the rest of the site down with them.',
   },
   {
-    title: 'Tax specifics were hedged on purpose',
-    body: 'Thresholds and local rates change. The page gives general guidance and says the exact figure gets confirmed on the call. A confidently stale number is worse than an honest deferral.',
+    title: 'Prices go on the page',
+    body: 'Both clinics publish what an eye test costs. It loses the occasional lead who was only ever price-checking, and it wins the ones who were deciding between you and silence.',
   },
   {
-    title: 'The blog post opens with a named character who does not exist',
-    body: 'Clearly framed as an illustrative composite, never as a testimonial. Invented client quotes are a reputation risk that pays for itself exactly once.',
+    title: 'No invented people, ever',
+    body: 'Where a blog post uses a character, it is framed as an illustrative composite and never as a testimonial. Invented client quotes are a reputation risk that pays for itself exactly once.',
   },
 ];
+
+function CaseCard({ item }: { item: CaseStudy }) {
+  return (
+    <article className="border border-ink/10 bg-white p-7">
+      <h3 className="h3">{item.client}</h3>
+      <p className="mt-2 text-small body-dim-light">
+        {item.what} · {item.where}
+      </p>
+      <p className="mt-4 font-mono text-label uppercase text-green-700">{item.live}</p>
+      {item.site ? (
+        <p className="mt-1 font-mono text-label uppercase text-ink/40">{item.site}</p>
+      ) : null}
+
+      <p className="mt-6 text-small body-dim-light">
+        <span className="font-semibold">Scope.</span> {item.scope}
+      </p>
+
+      <ul className="mt-5 space-y-2.5">
+        {item.shipped.map((line) => (
+          <li key={line} className="flex gap-3 text-small body-dim-light">
+            <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-green-600" />
+            {line}
+          </li>
+        ))}
+      </ul>
+
+      {/* Renders only once the client has cleared figures for publication. */}
+      {item.results.length > 0 ? (
+        <div className="mt-6 border-t border-ink/10 pt-5">
+          <p className="eyebrow-light">Results</p>
+          <ul className="mt-3 space-y-2">
+            {item.results.map((line) => (
+              <li key={line} className="text-small body-dim-light">
+                {line}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+    </article>
+  );
+}
 
 export default function CaseStudiesPage() {
   return (
@@ -66,41 +184,35 @@ export default function CaseStudiesPage() {
       <StructuredData
         data={breadcrumbJsonLd([
           { name: 'Home', path: '/' },
-          { name: 'Case study', path: '/case-studies' },
+          { name: 'Case studies', path: '/case-studies' },
         ])}
       />
 
       <PageHero
-        eyebrow="Case study"
-        title="One accounting firm, one working day, git init to live"
-        blurb="NJ's Accounting & Tax Services went from an empty repository to a deployed site on a custom domain with full schema markup inside a single working day. Here is what shipped and what we decided along the way, itemised from the commit history."
+        eyebrow="Case studies"
+        title="Four engagements, and what actually shipped on each"
+        blurb="Two clinics in Cameroon, a reinsurance network operating across the continent, and an accounting practice. Every line below is checkable — visit the sites, read the schema, count the pages in the sitemap."
       />
 
       <Section tone="light">
         <SectionHeader
-          eyebrow="What shipped"
+          eyebrow="The work"
           tone="light"
-          title="The build, itemised"
-          blurb="Every line below is verifiable from the repository's own commit history. Nothing here is an estimate."
+          title="What was built"
+          blurb="Itemised from what is live and public. Nothing here is an estimate."
         />
-        <ul className="mt-12 grid gap-3 md:grid-cols-2">
-          {SHIPPED.map((item) => (
-            <li
-              key={item}
-              className="flex gap-4 border border-ink/10 bg-white p-5 text-small body-dim-light"
-            >
-              <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-green-600" />
-              {item}
-            </li>
+        <div className="mt-12 grid gap-6 lg:grid-cols-2">
+          {CASES.map((item) => (
+            <CaseCard key={item.client} item={item} />
           ))}
-        </ul>
+        </div>
       </Section>
 
       <Section tone="dark">
         <SectionHeader
           eyebrow="Judgement calls"
           tone="dark"
-          title="The four decisions that shaped the build"
+          title="The decisions that shaped these builds"
           blurb="These are the choices that separate a site that ranks from a site that merely exists. Each one cost something to make."
         />
         <div className="mt-12 grid gap-5 md:grid-cols-2">
@@ -115,23 +227,25 @@ export default function CaseStudiesPage() {
 
       <Section tone="light">
         <div className="mx-auto max-w-prose">
-          <p className="eyebrow-light">Why there are no numbers on this page</p>
-          <h2 className="h2 mt-5">The results section is empty, and that is deliberate</h2>
+          <p className="eyebrow-light">Why there are no traffic charts here</p>
+          <h2 className="h2 mt-5">The results sections are empty, and that is deliberate</h2>
           <p className="mt-6 text-lead body-dim-light">
-            A case study with traffic charts is worth more to us than one without. We have
-            not published them for two reasons, and both of them will still be true next
-            month if we have not fixed them.
+            A case study with real numbers is worth more than one without. We have not
+            published them for two reasons, and both will still be true next month if we
+            have not fixed them.
           </p>
           <p className="mt-5 text-body body-dim-light">
             First, client performance data belongs to the client. It gets published when
             they have cleared it for public use, in writing, and not before. Second, a site
-            that launched recently does not yet have a fair sample. Reading three weeks of
+            that launched in October does not yet have a fair sample. Reading three weeks of
             search data and calling it a result is how agencies end up quoting a spike that
             was one journalist and a slow news day.
           </p>
           <p className="mt-5 text-body body-dim-light">
-            When there is a clean quarter and written approval, the numbers go here — the
-            flat months included.
+            What you can check today is everything above: the sites are live, the pages are
+            indexed, the schema is in the markup, the blogs are publishing. When there is a
+            clean quarter and written approval, the numbers go here — the flat months
+            included.
           </p>
         </div>
       </Section>
