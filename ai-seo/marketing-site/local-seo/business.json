@@ -15,6 +15,18 @@
     "postal_code": "",
     "country": "CM"
   },
+  "citation_nap": {
+    "decided": "2026-10-22",
+    "name": "AfriShield AI",
+    "street": "Rue 5N.488, Kotto Village, Douala V",
+    "city": "Douala",
+    "region": "Littoral",
+    "country": "Cameroon",
+    "phone": "+237688099752",
+    "postal_code_when_required": "0000",
+    "note": "Type the street as one string in the form's Address field - never split it across Postcode. Use 0000 for Postcode only where the form refuses to save without it; leave it blank wherever it is optional. address.postal_code stays empty so the site's JSON-LD never emits a postal code that does not exist. GBP is a service-area business with the address hidden, so this street address is published on directories only, not on the Google profile.",
+    "map_pin": "UNSET - drag to Kotto, then record lat/lng in the geo field"
+  },
   "service_area_business": true,
   "hide_address": true,
   "geo": { "lat": null, "lng": null },
@@ -103,7 +115,7 @@
     { "name": "DesignRush", "url": "https://www.designrush.com", "status": "todo", "priority": 2 },
     { "name": "The Manifest", "url": "https://themanifest.com", "status": "todo", "priority": 3 },
     { "name": "Semrush Agency Partners", "url": "https://agencies.semrush.com", "status": "todo", "priority": 2 },
-    { "name": "TechBehemoths", "url": "https://techbehemoths.com/companies/seo/douala", "status": "todo", "priority": 1, "note": "Verified 2026-10-16: position 7 for agence seo douala." },
+    { "name": "TechBehemoths", "url": "https://techbehemoths.com/company/afrishield-ai", "status": "live", "priority": 1, "note": "Live 2026-10-24, verified by fetching the public profile. Renders the locked citation_nap exactly as submitted: +237688099752 and 'Rue 5N.488, Kotto Village, Douala V, Douala 0000 Cameroon'. 4 services, 23 focus areas, 1 portfolio case (Jackson Eye Clinic), 0 reviews, EXO Score 41/100 'Average'. Reciprocal: their verification badge is in the site footer and the profile URL is on SITE.profiles, so it emits as schema.org sameAs - that is the entity signal; the badge alone is only a backlink. Two open items: the profile is manager-claimed but NOT domain-verified (verifying lifts the Claimed sub-score from 50/100), and the map pin was saved unverified near Bonamoussadi rather than Kotto - correct it and record lat/lng in geo." },
     { "name": "StarOfService Cameroun", "url": "https://www.starofservice.cm/p/1ea48e6b-2e47-e283-ffb4-e1dfad1d26bd", "status": "live", "priority": 2, "note": "Live 2026-10-19, entirely in French. Services: Marketing digital, Optimisation du referencement, Marketing. Hours and French description render correctly. NOTE: the profile page itself is robots noindex, nofollow, so it passes no link equity and will never rank. Its only value is inclusion in the indexed category page /annubis/littoral/sanaga-maritime/douala/marketing-digital, which holds positions 9, 12 and 38 for Douala SEO terms. Priority dropped from 1 to 2 for that reason. Street address was entered but is not displayed publicly - only Douala, Sanaga-Maritime, which is StarOfService's own mistaken department for Douala (it is Wouri)." },
     { "name": "BusinessList Cameroun", "url": "https://fr.businesslist.co.cm", "status": "todo", "priority": 2, "note": "Verified 2026-10-16: position 19 for agence seo douala cameroun." }
   ],

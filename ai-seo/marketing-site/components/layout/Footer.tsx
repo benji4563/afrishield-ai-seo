@@ -44,6 +44,36 @@ export function Footer() {
                   {SITE.aiCallLine} — answered 24/7 by our AI
                 </a>
               ) : null}
+              {/*
+                TechBehemoths verification badge, profile live 2026-10-24.
+                Their checker looks for this anchor as they supply it - the
+                `data-techbehemoths-verification` attribute plus an href to our
+                own profile - so the markup is left alone rather than tidied.
+
+                A plain <img> on purpose: next/image would rewrite the src
+                through /_next/image and serve it from this domain, hiding the
+                CDN URL their check expects to find.
+
+                The badge wordmark is #242F46, which is invisible on this dark
+                footer, so it sits on a light chip. Recolouring their SVG is
+                not an option - it is their trust mark, not our asset.
+              */}
+              <a
+                href="https://techbehemoths.com/company/afrishield-ai"
+                target="_blank"
+                rel="noopener"
+                data-techbehemoths-verification
+                className="mt-6 inline-flex rounded-lg bg-white px-3 py-2 transition-opacity hover:opacity-90"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://cdn.techbehemoths.com/public/static/validation/tb-verified-logo.svg"
+                  alt="AfriShield AI, verified on TechBehemoths"
+                  width={123}
+                  height={40}
+                  loading="lazy"
+                />
+              </a>
             </div>
 
             {FOOTER_COLUMNS.map((column) => (

@@ -96,6 +96,14 @@ export const SITE = {
     // currently wins. Facebook usernames take no hyphens, so the run-together
     // spelling is both the only option and the better one.
     'https://www.facebook.com/afrishieldai',
+    // TechBehemoths, submitted 2026-10-23 and confirmed live 2026-10-24: the
+    // profile renders the locked citation NAP exactly as submitted - phone
+    // +237688099752 and 'Rue 5N.488, Kotto Village, Douala V, Douala 0000
+    // Cameroon' - which is what makes it usable as an entity signal rather
+    // than just a backlink. The reciprocal verification badge sits in the
+    // footer, so the claim is two-way: the directory points here and this
+    // site points back.
+    'https://techbehemoths.com/company/afrishield-ai',
   ] as string[],
   /** Public-facing one-liner. Company brand guidelines, verbatim. */
   tagline: 'Search visibility, run by agents. Reported in plain numbers.',
