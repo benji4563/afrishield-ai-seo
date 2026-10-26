@@ -420,5 +420,17 @@
     "photographerUrl": "https://www.pexels.com/@amurephotography",
     "alt": "The Nairobi city skyline seen across Uhuru Park under a cloudy sky, with office towers behind the trees.",
     "avgColor": "#A9A599"
+  },
+  {
+    "slot": "blog-how-to-get-a-safari-company-recommended-by-ai",
+    "file": "images/blog-how-to-get-a-safari-company-recommended-by-ai.webp",
+    "source": "Pexels",
+    "query": "masai mara safari vehicle",
+    "pexelsId": 36026724,
+    "pexelsUrl": "https://www.pexels.com/photo/lioness-in-maasai-mara-with-safari-vehicle-36026724/",
+    "photographer": "Sanjeed Quazi",
+    "photographerUrl": "https://www.pexels.com/@sanjeed-quazi-50261515",
+    "alt": "A lioness stands in the long grass of the Maasai Mara beside an open safari vehicle, its driver smiling behind the wheel.",
+    "avgColor": "#81844F"
   }
 ]

@@ -46,6 +46,7 @@ reconcile.
 | référencement naturel douala | CM — Cameroon FR (priority) | `/blog/referencement-naturel-douala` | 2026-10-19 | Live |
 | agence seo cameroun | CM — Cameroon FR (priority) | `/blog/agence-seo-cameroun` | 2026-10-22 | Live |
 | seo agency nairobi cost | K — Kenya commercial | `/blog/seo-agency-nairobi-cost` | 2026-10-23 | Live |
+| how to get a safari company recommended by ai | K — Kenya × GEO × tourism | `/blog/how-to-get-a-safari-company-recommended-by-ai` | 2026-10-26 | Live |
 
 ## Deliberately not targeted
 

@@ -67,6 +67,52 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'how-to-get-a-safari-company-recommended-by-ai',
+    title: 'How to get a safari company recommended by AI: a guide for Kenyan operators',
+    cardTitle: 'How to get a safari company recommended by AI',
+    metaTitle: 'Get Your Safari Company Recommended by AI',
+    description:
+      'How Kenyan safari operators get named by ChatGPT, Perplexity and Gemini: published credentials, itinerary pages, detailed reviews, crawler access and monthly tests.',
+    lede:
+      'A safari company gets recommended by AI assistants when it is the easiest operator to verify. For a Kenyan operator that means publishing its TRA licence and KATO membership, giving each itinerary its own page with parks, days and an itemised price, collecting detailed reviews, allowing AI search crawlers, and testing the assistants monthly. This guide covers each step.',
+    category: 'AI answers',
+    published: '2026-10-26',
+    modified: '2026-10-26',
+    readingMinutes: 9,
+    primaryKeyword: 'how to get a safari company recommended by ai',
+    image: {
+      src: '/images/blog-how-to-get-a-safari-company-recommended-by-ai.webp',
+      alt: 'A lioness stands in the long grass of the Maasai Mara beside an open safari vehicle, its driver smiling behind the wheel.',
+    },
+    linkedin: `A family in Munich asks ChatGPT for a reliable safari company for the Maasai Mara.
+
+It names three. One of them is not a company at all. It is a "top 15 operators" list written on another continent.
+
+Meanwhile the homepage of a perfectly good operator in Karen describes its trips as "unforgettable" four times, and never once says which parks, how many days, or that the company is licensed.
+
+An AI assistant choosing a safari company works like a friend vouching for a mechanic. The friend does not care how shiny the sign is. They want to see the licence on the wall, hear from people who had good work done, and read a price list that makes sense.
+
+What that means for a Kenyan operator:
+
+Publish your TRA licence number, KATO listing and your guides' KPSGA levels as plain sentences, not footer logos.
+
+Give every itinerary its own page: parks, days, season and an itemised price.
+
+Ask guests for reviews that name the park, the guide and the trip length. That is what an assistant can repeat.
+
+Read your robots.txt. OpenAI says sites that block OAI-SearchBot are not shown in ChatGPT search answers.
+
+In fairness to everyone, when we checked our own AI visibility in August, AfriShield came up in none of the four African regions we tested. We are working through the same list.
+
+The full guide, including a ten-question monthly test you can run for free:
+
+https://afrishieldai.com/blog/how-to-get-a-safari-company-recommended-by-ai
+
+#Kenya #Safari #TourOperators #AISearch #TravelMarketing
+
+Keep one "unforgettable" if you must. Just put the licence number next to it.`,
+  },
+  {
     slug: 'seo-agency-nairobi-cost',
     title: 'How much does an SEO agency in Nairobi cost? Real KES prices for 2026',
     cardTitle: 'What an SEO agency in Nairobi costs, in KES',

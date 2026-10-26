@@ -166,7 +166,7 @@ on, which makes them the lowest-risk rows in the file.
 | 36 | référencement naturel douala | CM — Cameroon FR (priority) | `gsc-evidenced` + `serp-verified` — Cameroon is the site's best market (pos 3.7, 1 of 2 total clicks). French commercial terms here are close to uncontested. **Write in French.** | claimed |
 | 37 | agence seo cameroun | CM — Cameroon FR (priority) | `serp-verified` — francophone Central Africa has almost no optimised competition. Commercial intent, direct fit to `/ai-seo/douala`. **Write in French.** | claimed |
 | 38 | seo agency nairobi cost | K — Kenya commercial | `serp-verified` — Nairobi SERP is local agencies (SEO Smart, SEO Kenya, Kwetu), not global domains. Kenya already ranks pos 17.3 for this domain. | claimed |
-| 39 | how to get a safari company recommended by ai | K — Kenya × GEO × tourism | `gsc-evidenced` — `how-to-get-hotel-cited-by-chatgpt` sits at pos 6.7. Nearest-neighbour topic, proven position, high commercial value. | queued |
+| 39 | how to get a safari company recommended by ai | K — Kenya × GEO × tourism | `gsc-evidenced` — `how-to-get-hotel-cited-by-chatgpt` sits at pos 6.7. Nearest-neighbour topic, proven position, high commercial value. | claimed |
 | 40 | how to check if chatgpt recommends your business in africa | AF — GEO diagnostic (Africa) | `gsc-evidenced` — `how-to-rank-on-chatgpt` holds 40 impressions; Africa-qualified cut ties it to `/ai-visibility-check`. | queued |
 | 41 | seo company accra ghana | GH — Ghana commercial | `gsc-evidenced` — Ghana ranks pos 7.0 already on 2 impressions. Commercial, direct fit to `/ai-seo/accra`. | queued |
 | 42 | why is my business not showing on google maps nigeria | N — Nigeria problem-aware | `serp-verified` — high-intent troubleshooting query, thin local competition, natural bridge to GBP work. | queued |
@@ -319,3 +319,4 @@ periodically; promote to the table above once they show real volume.
 | référencement naturel douala | `/blog/referencement-naturel-douala` | 2026-10-19 |
 | agence seo cameroun | `/blog/agence-seo-cameroun` | 2026-10-22 |
 | seo agency nairobi cost | `/blog/seo-agency-nairobi-cost` | 2026-10-23 |
+| how to get a safari company recommended by ai | `/blog/how-to-get-a-safari-company-recommended-by-ai` | 2026-10-26 |

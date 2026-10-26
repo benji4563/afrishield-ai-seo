@@ -209,6 +209,16 @@ export default function Post() {
           inventing anything. A property with none is a rumour.
         </p>
 
+        <p>
+          Safari operators face a sharper version of this, because the traveller is choosing
+          whom to trust with a deposit rather than where to sleep. The operator playbook,
+          including which Kenyan licences and listings to publish, is in{' '}
+          <a href="/blog/how-to-get-a-safari-company-recommended-by-ai">
+            how to get a safari company recommended by AI
+          </a>
+          .
+        </p>
+
         <h2 id="benchmark">Ask the AI about yourself, every month</h2>
 
         <p>
