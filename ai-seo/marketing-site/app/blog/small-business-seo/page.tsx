@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { EditorialImage } from '@/components/ui/EditorialImage';
@@ -396,7 +397,9 @@ export default function Post() {
           None of this is exotic. It is a complete profile, a handful of honest pages, a site
           that loads on a cheap phone, and enough consistency to let a search engine or an AI
           assistant learn to trust what is written — which is the same short list whether the
-          business sells wedding invitations in Accra or anything else, anywhere.
+          business sells wedding invitations in Accra or anything else, anywhere. The same
+          short list, run monthly by somebody else, is what we sell as{' '}
+          <Link href="/ai-seo">AI SEO across six African cities</Link>.
         </p>
       </PostShell>
     </>

@@ -259,8 +259,9 @@ export default function Post() {
           <a href="/for-lodges-hotels">SEO for lodges and hotels</a> and the background in{' '}
           <a href="/blog/answer-engine-optimization">answer engine optimization</a>. The
           starting point costs nothing: a{' '}
-          <a href="/contact">free AI-visibility check</a> that shows you what the assistants
-          say about your property today.
+          <a href="/ai-visibility-check">free AI-visibility check</a> that shows you what the
+          assistants say about your property today. The wider tourism offer, operators
+          included, is <a href="/for-tourism-hospitality">hospitality SEO across Africa</a>.
         </p>
       </PostShell>
     </>

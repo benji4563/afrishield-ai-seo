@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -400,8 +401,8 @@ export default function Post() {
 
         <p>
           For businesses that can wait the six months and want help, our{' '}
-          <a href="/ai-seo/lagos">Lagos SEO service</a> and{' '}
-          <a href="/ai-seo/abuja">Abuja SEO service</a> are built around the area-first
+          <Link href="/ai-seo/lagos">Lagos SEO service</Link> and{' '}
+          <Link href="/ai-seo/abuja">Abuja SEO service</Link> are built around the area-first
           approach in this guide.
         </p>
 

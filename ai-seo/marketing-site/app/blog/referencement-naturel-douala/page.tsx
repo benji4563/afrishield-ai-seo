@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -399,7 +400,7 @@ export default function Post() {
 
         <p>
           Pour les entreprises prêtes à tenir six mois et qui veulent être accompagnées, notre{' '}
-          <a href="/ai-seo/douala">service de référencement à Douala</a> est construit sur
+          <Link href="/ai-seo/douala">service de référencement à Douala</Link> est construit sur
           l’approche de ce guide : fiche Google, pages service et quartier, les deux langues, et
           la visibilité dans les réponses d’IA.
         </p>

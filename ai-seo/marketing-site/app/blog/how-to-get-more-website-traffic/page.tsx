@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -379,6 +380,12 @@ export default function Post() {
           traffic as five separate, checkable pipes instead of one mysterious total that either
           rises or does not — and, most months, at least one of the five will need attention long
           before the ranking number does.
+        </p>
+
+        <p>
+          Which of the five needs attention first is the question{' '}
+          <Link href="/ai-seo">AI SEO work in your city</Link> starts by answering, rather than
+          assuming the answer is always more content.
         </p>
       </PostShell>
     </>

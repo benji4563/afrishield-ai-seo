@@ -412,7 +412,8 @@ export default function Post() {
           in the first place — which is most of what{' '}
           <a href="/blog/what-ai-seo-actually-does">an AI SEO agency actually does all week</a>,
           alongside the writing, the clustering, and the parts that never show up in a
-          screenshot.
+          screenshot. The engine that writes and rechecks this markup on every page is part
+          of <a href="/geo-services">our generative engine optimization service</a>.
         </p>
       </PostShell>
     </>

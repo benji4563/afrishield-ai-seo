@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -437,7 +438,9 @@ export default function Post() {
 
         <p>
           Five questions. Ask your current provider, or ask us. Each should get a direct
-          answer inside a minute, and the ones that do not are the interesting ones.
+          answer inside a minute, and the ones that do not are the interesting ones. Our own
+          answers, market by market, are on{' '}
+          <Link href="/ai-seo">the AI SEO service pages</Link>.
         </p>
 
         <ol>
@@ -458,6 +461,12 @@ export default function Post() {
           The work itself is not glamorous and it is not mysterious. It is a keyword list,
           a publishing rhythm, a checklist run properly every week, and a report that
           includes the bad news. Everything else is packaging.
+        </p>
+
+        <p>
+          What that looks like on four real engagements — what shipped, what we decided, and
+          which numbers are still unpublished — is in{' '}
+          <a href="/case-studies">our case studies</a>.
         </p>
       </PostShell>
     </>

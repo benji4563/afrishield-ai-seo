@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -491,7 +492,7 @@ export default function Post() {
 
         <p>
           Pour les entreprises de Douala qui veulent être accompagnées sur cette base, notre{' '}
-          <a href="/ai-seo/douala">service de référencement à Douala</a> applique ces critères
+          <Link href="/ai-seo/douala">service de référencement à Douala</Link> applique ces critères
           à lui-même : propriété des accès au nom du client, rapport d’une page, et ni
           garantie de position ni engagement de durée.
         </p>

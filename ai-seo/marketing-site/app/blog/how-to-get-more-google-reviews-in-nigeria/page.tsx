@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -437,8 +438,8 @@ export default function Post() {
           that each need a profile and a routine, a crowded category where every competitor
           already has hundreds of reviews and the difference is the website and content around
           the profile, or a profile that has been restricted and needs a careful appeal. That
-          is the work our <a href="/ai-seo/lagos">Lagos SEO service</a> and{' '}
-          <a href="/ai-seo/abuja">Abuja SEO service</a> do. Our plans start at USD 150 a
+          is the work our <Link href="/ai-seo/lagos">Lagos SEO service</Link> and{' '}
+          <Link href="/ai-seo/abuja">Abuja SEO service</Link> do. Our plans start at USD 150 a
           month, about ₦205,000 at the end-of-September rate used in{' '}
           <a href="/blog/how-much-does-seo-cost-in-nigeria">
             our guide to what SEO costs in Nigeria

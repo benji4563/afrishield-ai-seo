@@ -438,6 +438,11 @@ export default function Post() {
           to make this decision — not by asking whether SEO is expensive, but by working out
           exactly how little it has to do to be worth it.
         </p>
+
+        <p>
+          For what the money buys in practice, <a href="/case-studies">our case studies</a>{' '}
+          itemise what shipped on four engagements, line by line.
+        </p>
       </PostShell>
     </>
   );

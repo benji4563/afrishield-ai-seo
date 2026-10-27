@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -401,7 +402,8 @@ export default function Post() {
           <a href="/blog/small-business-seo">what small business SEO covers beyond location</a>
           . The pattern underneath all of it is the same one this whole site keeps returning
           to: a clear, correct, checkable fact, stated once and kept consistent everywhere, is
-          worth more than any amount of clever.
+          worth more than any amount of clever. Where the local layer sits inside{' '}
+          <Link href="/ai-seo">the full AI SEO engagement</Link> is set out market by market.
         </p>
       </PostShell>
     </>

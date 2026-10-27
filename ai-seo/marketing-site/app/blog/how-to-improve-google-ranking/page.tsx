@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -446,7 +447,9 @@ export default function Post() {
           None of the work above requires a special relationship with Google or a tool nobody
           else has access to. It requires doing the four layers in order, being patient with
           the layers that are genuinely slow, and being suspicious of anyone offering to skip
-          straight to the fourth one.
+          straight to the fourth one. Run as an ongoing engagement rather than a one-off
+          push, that is <Link href="/ai-seo">the AI SEO service</Link>, priced separately for each
+          market.
         </p>
       </PostShell>
     </>

@@ -358,6 +358,9 @@ export default function Post() {
           gets a great deal less confusing. For a business that wants this run as an ongoing
           discipline rather than a once-off fix, that is the job our{' '}
           <a href="/geo-services">generative engine optimization service</a> does every month.
+          The starting point costs nothing: a{' '}
+          <a href="/ai-visibility-check">free AI-visibility check</a> showing what the
+          assistants say about the business today.
         </p>
       </PostShell>
     </>

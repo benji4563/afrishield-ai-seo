@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -388,7 +389,7 @@ export default function Post() {
           panel. Our page on{' '}
           <a href="/for-safari-operators">AI search and SEO for safari operators</a> sets out the
           full service, and{' '}
-          <a href="/ai-seo/nairobi">AI SEO in Nairobi</a> covers operators based in Karen,
+          <Link href="/ai-seo/nairobi">AI SEO in Nairobi</Link> covers operators based in Karen,
           Westlands and the rest of the city. For the general version of this problem, see{' '}
           <a href="/blog/how-to-rank-on-chatgpt">how to rank on ChatGPT</a>.
         </p>
@@ -421,6 +422,11 @@ export default function Post() {
           asked about a family trip to the Mara, it will find a licensed operator, a matching
           itinerary and a price it can check. She kept one &ldquo;unforgettable&rdquo; on the
           homepage, for sentimental reasons.
+        </p>
+
+        <p>
+          The operator-and-property version of this work — both segments under one umbrella —
+          is <a href="/for-tourism-hospitality">hospitality SEO across Africa</a>.
         </p>
       </PostShell>
     </>

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -290,10 +291,10 @@ export default function Post() {
           Area-level terms like these are much cheaper to win than a city-wide head term, so a
           Lagos business can often start in the ₦300,000 band by targeting its own district
           first. Our{' '}
-          <a href="/ai-seo/lagos">Lagos SEO page</a> sets out how that works across Victoria
+          <Link href="/ai-seo/lagos">Lagos SEO page</Link> sets out how that works across Victoria
           Island, Lekki, Ikeja, Yaba and Surulere. Abuja is generally less contested for
           commercial terms, which is why{' '}
-          <a href="/ai-seo/abuja">SEO in Abuja</a> often shows results sooner for the same
+          <Link href="/ai-seo/abuja">SEO in Abuja</Link> often shows results sooner for the same
           spend.
         </p>
 
@@ -517,6 +518,11 @@ export default function Post() {
           appointment card. That is the right way to make this decision: not by asking
           whether ₦380,000 is a lot of money, but by working out how little the work has to
           do to be worth it. Her nephew has been reassigned to the clinic&rsquo;s printer.
+        </p>
+
+        <p>
+          For what a budget at this level actually produces, <a href="/case-studies">our case
+          studies</a> itemise what shipped on four engagements, two of them clinics.
         </p>
       </PostShell>
     </>

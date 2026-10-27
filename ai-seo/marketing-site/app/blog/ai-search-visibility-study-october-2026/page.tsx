@@ -404,6 +404,12 @@ export default function Post() {
           recommend when someone searches for an African business?&rdquo;, wave 2, October
           2026</em>, with a link to this page.
         </p>
+
+        <p>
+          To see where one business sits against these numbers, run the{' '}
+          <a href="/ai-visibility-check">free AI-visibility check</a> — the same method,
+          applied to a single name.
+        </p>
       </PostShell>
     </>
   );

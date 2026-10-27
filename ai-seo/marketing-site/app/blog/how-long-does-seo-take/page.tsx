@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -405,6 +406,11 @@ export default function Post() {
           in month three for the crime of taking exactly as long as it was always going to
           take, and then paying for a &ldquo;faster&rdquo; version of the same wait somewhere
           else.
+        </p>
+
+        <p>
+          The monthly report that prevents that — one page, bad news included — is part of{' '}
+          <Link href="/ai-seo">every AI SEO engagement we run</Link>.
         </p>
       </PostShell>
     </>

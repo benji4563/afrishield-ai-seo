@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { EditorialImage } from '@/components/ui/EditorialImage';
@@ -405,7 +406,9 @@ export default function Post() {
           website that is actually submitted rather than left to be discovered, facts stated
           plainly enough for a machine to lift, and enough patience to let both surfaces build
           trust on their own separate schedules — the same short list whether the business is a
-          bridal makeup studio in Johannesburg or anything else, anywhere.
+          bridal makeup studio in Johannesburg or anything else, anywhere. For an owner who
+          would rather not run it themselves, that is{' '}
+          <Link href="/ai-seo">AI SEO as a managed service</Link> — Johannesburg included.
         </p>
       </PostShell>
     </>

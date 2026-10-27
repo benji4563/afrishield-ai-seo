@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -372,7 +373,7 @@ export default function Post() {
             <strong>A website page for your district.</strong> Prominence draws on the wider
             web, so a page that says what you do in Surulere, with the same address and
             phone number, supports the profile. This is the part of the job our{' '}
-            <a href="/ai-seo/lagos">Lagos SEO service</a> spends most of its time on.
+            <Link href="/ai-seo/lagos">Lagos SEO service</Link> spends most of its time on.
           </li>
           <li>
             <strong>A real second location, if you want a second area.</strong> One profile

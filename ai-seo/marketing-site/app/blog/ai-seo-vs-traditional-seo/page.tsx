@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -402,7 +403,8 @@ export default function Post() {
           a person do, and who reads every page before it publishes. A provider running this
           well will answer in about fifteen seconds, because they have had to decide it
           deliberately. A provider who is either hiding automation or hiding behind it will
-          give you a paragraph about their process.
+          give you a paragraph about their process. Our own split, and what it costs, is set
+          out city by city on <Link href="/ai-seo">our AI SEO service pages</Link>.
         </p>
 
         <p>
@@ -410,7 +412,8 @@ export default function Post() {
           The first added continuous technical monitoring. The second added a human editor
           with actual industry knowledge and cut publishing from sixty pages to twenty. They
           arrived at nearly the same place from opposite directions, which is the most
-          useful thing in this entire comparison.
+          useful thing in this entire comparison. Four engagements where that balance landed
+          differently are written up in <a href="/case-studies">our case studies</a>.
         </p>
       </PostShell>
     </>

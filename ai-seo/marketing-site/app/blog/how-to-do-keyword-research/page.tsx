@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -382,7 +383,8 @@ export default function Post() {
         <p>
           None of this is exotic. It is a list, honestly gathered, sorted by three plain
           criteria, and revisited before it goes stale — the same unglamorous groundwork every
-          page on this site was built on.
+          page on this site was built on. It is also the first month of{' '}
+          <Link href="/ai-seo">an AI SEO engagement</Link>, before a single page gets written.
         </p>
       </PostShell>
     </>

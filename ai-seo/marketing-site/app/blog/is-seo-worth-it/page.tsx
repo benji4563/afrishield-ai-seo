@@ -367,6 +367,12 @@ export default function Post() {
           regardless of how thin the competition is standing beside it &mdash; a business still
           has to be able to wait for it.
         </p>
+
+        <p>
+          What that wait actually bought on four engagements — and which figures are still
+          unpublished because the client has not cleared them — is in{' '}
+          <a href="/case-studies">our case studies</a>.
+        </p>
       </PostShell>
     </>
   );

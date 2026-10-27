@@ -376,6 +376,11 @@ export default function Post() {
           longer treats the day it ends as the day the business goes quiet, because by the
           third year, it was not the only thing making the phone ring.
         </p>
+
+        <p>
+          What the organic half of that mix looks like when it is built from nothing is in{' '}
+          <a href="/case-studies">our case studies</a>.
+        </p>
       </PostShell>
     </>
   );

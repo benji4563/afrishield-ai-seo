@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -434,6 +435,12 @@ export default function Post() {
           fastest single lever a local business has for showing up first — before the website
           ranks, before the AI assistant learns the name, and often before the competitor across
           the road remembers their login password.
+        </p>
+
+        <p>
+          Run every month by somebody else rather than whenever it gets remembered, the
+          profile work sits inside <Link href="/ai-seo">our AI SEO engagements</Link>, alongside
+          the site and the schema.
         </p>
       </PostShell>
     </>

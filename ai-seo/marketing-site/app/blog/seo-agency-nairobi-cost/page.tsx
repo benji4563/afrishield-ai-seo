@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -354,7 +355,7 @@ export default function Post() {
         </ul>
 
         <p>
-          Our <a href="/ai-seo/nairobi">AI SEO service in Nairobi</a> page sets out how this
+          Our <Link href="/ai-seo/nairobi">AI SEO service in Nairobi</Link> page sets out how this
           works across Westlands, Upper Hill, Kilimani, Karen and Gigiri, including for
           safari and travel operators.
         </p>
@@ -457,6 +458,11 @@ export default function Post() {
           KES 65,000 each. The Westlands agency came out at roughly KES 27,500 per published
           page including VAT, with the technical work included. He signed month to month and
           kept the skyline slide, because it was a genuinely good photograph.
+        </p>
+
+        <p>
+          For what that monthly fee buys page by page, <a href="/case-studies">our case
+          studies</a> itemise what shipped on four engagements.
         </p>
       </PostShell>
     </>

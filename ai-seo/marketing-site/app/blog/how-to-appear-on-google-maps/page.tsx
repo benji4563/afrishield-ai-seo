@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -437,7 +438,8 @@ export default function Post() {
           <a href="/blog/how-to-get-my-business-on-google">the fuller walkthrough on getting a
           business onto Google</a> covers end to end. None of it is exotic. It is the same short
           list of unglamorous fields, kept current, for longer than the competitor down the road
-          is willing to bother.
+          is willing to bother. Kept current by somebody else, every month, it sits inside{' '}
+          <Link href="/ai-seo">the AI SEO service, city by city</Link>.
         </p>
       </PostShell>
     </>

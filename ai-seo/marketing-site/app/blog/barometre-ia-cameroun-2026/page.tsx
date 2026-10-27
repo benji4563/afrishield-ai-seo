@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { EditorialImage } from '@/components/ui/EditorialImage';
@@ -663,6 +664,12 @@ export default function Post() {
           échantillon, pour mesurer l&rsquo;évolution. Si une seule organisation camerounaise
           publie un <code>llms.txt</code> d&rsquo;ici là, elle aura douze mois d&rsquo;avance sur
           les vingt-neuf autres — et nous le dirons.
+        </p>
+
+        <p>
+          Pour les entreprises de Douala qui veulent corriger ces points chez elles, notre{' '}
+          <Link href="/ai-seo/douala">offre de référencement IA à Douala</Link> applique le même
+          protocole que celui de ce baromètre.
         </p>
       </PostShell>
     </>

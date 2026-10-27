@@ -391,6 +391,11 @@ export default function Post() {
           That is the reassuring part: there is no separate dark art to learn — only the
           ordinary discipline, done for a second reader.
         </p>
+
+        <p>
+          Run monthly as a service rather than a once-off fix, that discipline is{' '}
+          <a href="/geo-services">generative engine optimization</a>.
+        </p>
       </PostShell>
     </>
   );

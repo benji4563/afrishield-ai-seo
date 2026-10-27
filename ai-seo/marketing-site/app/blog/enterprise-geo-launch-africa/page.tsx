@@ -334,6 +334,11 @@ export default function Post() {
           ordinary discipline, done for a second reader who does not scroll and quotes you
           verbatim or not at all.
         </p>
+
+        <p>
+          What the work has produced so far, engagement by engagement, is in{' '}
+          <a href="/case-studies">our case studies</a>.
+        </p>
       </PostShell>
     </>
   );

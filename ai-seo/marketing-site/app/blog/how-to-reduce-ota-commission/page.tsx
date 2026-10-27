@@ -217,7 +217,9 @@ export default function Post() {
           The full version of what an engagement like this includes — research, the content
           engine, the reporting — is on{' '}
           <a href="/solutions">the solutions page</a>, and the lodge-specific offer is on{' '}
-          <a href="/for-lodges-hotels">SEO for lodges and hotels</a>.
+          <a href="/for-lodges-hotels">SEO for lodges and hotels</a>. The wider tourism offer,
+          covering operators as well as properties, is{' '}
+          <a href="/for-tourism-hospitality">hospitality SEO across Africa</a>.
         </p>
 
         <h2 id="ai-answers">Get named in the AI answer</h2>
@@ -289,7 +291,7 @@ export default function Post() {
           agency&rsquo;s renewal, not your occupancy. If you want the work run for you with
           the numbers kept honest, the tiers are published on{' '}
           <a href="/pricing">the pricing page</a> and the starting point is a{' '}
-          <a href="/contact">free AI-visibility check</a> — what the assistants say about your
+          <a href="/ai-visibility-check">free AI-visibility check</a> — what the assistants say about your
           property today, before anyone invoices anyone.
         </p>
       </PostShell>

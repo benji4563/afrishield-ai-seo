@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
 import { StructuredData } from '@/components/seo/StructuredData';
@@ -404,6 +405,12 @@ export default function Post() {
           down once, in one place, months before Grace did. That is the whole discipline behind
           content marketing for a small business &mdash; not cleverness, just answers, written
           down, before somebody else gets there first.
+        </p>
+
+        <p>
+          If writing one a week is the step that never actually happens, that publishing
+          rhythm is the core of what{' '}
+          <Link href="/ai-seo">the AI SEO service we run</Link> does for clients every month.
         </p>
       </PostShell>
     </>

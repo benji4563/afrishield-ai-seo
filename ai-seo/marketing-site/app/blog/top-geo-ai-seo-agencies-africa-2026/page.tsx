@@ -448,6 +448,12 @@ export default function Post() {
           agency you pick should be judged on how well it does that, not on how confidently
           it promises a ranking no one can actually guarantee.
         </p>
+
+        <p>
+          Our own answer to that test — the baseline audit, the answer blocks, the monthly
+          citation benchmark — is set out on{' '}
+          <a href="/geo-services">the GEO services page</a>.
+        </p>
       </PostShell>
     </>
   );
