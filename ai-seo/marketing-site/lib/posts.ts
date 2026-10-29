@@ -67,6 +67,57 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'how-to-check-if-chatgpt-recommends-your-business-in-africa',
+    title:
+      'How to check if ChatGPT recommends your business in Africa: a clean, repeatable test',
+    cardTitle: 'How to check if ChatGPT recommends your business',
+    metaTitle: 'Does ChatGPT Recommend Your Business?',
+    description:
+      'A repeatable test for African businesses: clean sessions, location, local-language prompts, three runs per question, and what each result means.',
+    lede:
+      'To check whether ChatGPT recommends a business in Africa, ask it the questions customers ask, naming the city, in a clean session that is logged out or unpersonalized, with web search on. Ask each question three times, record who is named and which sources are cited, and repeat in Perplexity and Gemini. The share of answers naming the business is the result.',
+    category: 'AI answers',
+    published: '2026-10-29',
+    modified: '2026-10-29',
+    readingMinutes: 9,
+    primaryKeyword: 'how to check if chatgpt recommends your business in africa',
+    image: {
+      src: '/images/blog-how-to-check-if-chatgpt-recommends-your-business-in-africa.webp',
+      alt: 'A woman in a white shirt and glasses reads her phone beside a tall office window overlooking a red and orange building.',
+    },
+    linkedin: `You asked ChatGPT for the best clinic in your area. It named yours first. You screenshotted it and sent it to the family WhatsApp group.
+
+Eleven thumbs-up. One uncle asking whether ChatGPT is a new bank.
+
+Then your niece asked the same question on her phone and got three other clinics.
+
+Nothing was broken. You asked once, logged in, to an assistant that has spent months helping you write your clinic newsletter. It knew whose clinic you were hoping to see.
+
+Checking whether ChatGPT recommends you from your own account is like asking your mother whether your cooking is good. Warm, consistent, and of limited commercial use.
+
+A test that actually tells you something:
+
+Use ChatGPT logged out, or a temporary chat set to Unpersonalized, with Search on.
+
+Name the place in every question. "Near me" only tests where you are standing. ChatGPT estimates your location from your IP address.
+
+Ask each question three times. The same question can name you on one run and skip you on the next.
+
+Open the sources. If it keeps citing the same two directories, your listing on those two directories is the fix.
+
+Your score is the share of answers that name you. Four out of thirty is a real number. One screenshot is not.
+
+For balance: when we ran this on ourselves in August, AfriShield was named in none of the four African regions we tested. We now run it every month, from a clean session.
+
+The full test, with the ten-question method and what each result means:
+
+https://afrishieldai.com/blog/how-to-check-if-chatgpt-recommends-your-business-in-africa
+
+#AISearch #ChatGPT #SmallBusiness #Nigeria #Kenya
+
+Keep the screenshot. Just send it to the family group after the third run.`,
+  },
+  {
     slug: 'how-to-get-a-safari-company-recommended-by-ai',
     title: 'How to get a safari company recommended by AI: a guide for Kenyan operators',
     cardTitle: 'How to get a safari company recommended by AI',

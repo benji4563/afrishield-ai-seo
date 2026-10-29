@@ -432,5 +432,17 @@
     "photographerUrl": "https://www.pexels.com/@sanjeed-quazi-50261515",
     "alt": "A lioness stands in the long grass of the Maasai Mara beside an open safari vehicle, its driver smiling behind the wheel.",
     "avgColor": "#81844F"
+  },
+  {
+    "slot": "blog-how-to-check-if-chatgpt-recommends-your-business-in-africa",
+    "file": "images/blog-how-to-check-if-chatgpt-recommends-your-business-in-africa.webp",
+    "source": "Pexels",
+    "query": "african business owner smartphone",
+    "pexelsId": 9479828,
+    "pexelsUrl": "https://www.pexels.com/photo/woman-reading-a-document-9479828/",
+    "photographer": "Monstera Production",
+    "photographerUrl": "https://www.pexels.com/@gabby-k",
+    "alt": "A woman in a white shirt and glasses reads her phone beside a tall office window overlooking a red and orange building.",
+    "avgColor": "#947B77"
   }
 ]

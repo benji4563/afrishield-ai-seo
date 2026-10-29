@@ -355,7 +355,12 @@ export default function Post() {
           A business that gets named in three phrasings out of five is in a genuinely different
           position than one that gets named once out of five, even though a single screenshot
           from either would look identical. Track the ratio, not the anecdote, and the picture
-          gets a great deal less confusing. For a business that wants this run as an ongoing
+          gets a great deal less confusing. The full method, including clean sessions, location
+          and local-language questions, is in{' '}
+          <a href="/blog/how-to-check-if-chatgpt-recommends-your-business-in-africa">
+            how to check if ChatGPT recommends your business in Africa
+          </a>
+          . For a business that wants this run as an ongoing
           discipline rather than a once-off fix, that is the job our{' '}
           <a href="/geo-services">generative engine optimization service</a> does every month.
           The starting point costs nothing: a{' '}

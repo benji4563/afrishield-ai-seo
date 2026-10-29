@@ -167,7 +167,7 @@ on, which makes them the lowest-risk rows in the file.
 | 37 | agence seo cameroun | CM — Cameroon FR (priority) | `serp-verified` — francophone Central Africa has almost no optimised competition. Commercial intent, direct fit to `/ai-seo/douala`. **Write in French.** | claimed |
 | 38 | seo agency nairobi cost | K — Kenya commercial | `serp-verified` — Nairobi SERP is local agencies (SEO Smart, SEO Kenya, Kwetu), not global domains. Kenya already ranks pos 17.3 for this domain. | claimed |
 | 39 | how to get a safari company recommended by ai | K — Kenya × GEO × tourism | `gsc-evidenced` — `how-to-get-hotel-cited-by-chatgpt` sits at pos 6.7. Nearest-neighbour topic, proven position, high commercial value. | claimed |
-| 40 | how to check if chatgpt recommends your business in africa | AF — GEO diagnostic (Africa) | `gsc-evidenced` — `how-to-rank-on-chatgpt` holds 40 impressions; Africa-qualified cut ties it to `/ai-visibility-check`. | queued |
+| 40 | how to check if chatgpt recommends your business in africa | AF — GEO diagnostic (Africa) | `gsc-evidenced` — `how-to-rank-on-chatgpt` holds 40 impressions; Africa-qualified cut ties it to `/ai-visibility-check`. | claimed |
 | 41 | seo company accra ghana | GH — Ghana commercial | `gsc-evidenced` — Ghana ranks pos 7.0 already on 2 impressions. Commercial, direct fit to `/ai-seo/accra`. | queued |
 | 42 | why is my business not showing on google maps nigeria | N — Nigeria problem-aware | `serp-verified` — high-intent troubleshooting query, thin local competition, natural bridge to GBP work. | queued |
 | 43 | best seo agency in nigeria | N — Nigeria commercial (head) | `serp-verified` — contested by Clutch/TopSEOs directories plus local agencies. Hard but valuable; write as an honest comparative guide per skill B.8, not a self-promotion piece. | queued |
@@ -320,3 +320,4 @@ periodically; promote to the table above once they show real volume.
 | agence seo cameroun | `/blog/agence-seo-cameroun` | 2026-10-22 |
 | seo agency nairobi cost | `/blog/seo-agency-nairobi-cost` | 2026-10-23 |
 | how to get a safari company recommended by ai | `/blog/how-to-get-a-safari-company-recommended-by-ai` | 2026-10-26 |
+| how to check if chatgpt recommends your business in africa | `/blog/how-to-check-if-chatgpt-recommends-your-business-in-africa` | 2026-10-29 |

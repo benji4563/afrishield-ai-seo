@@ -47,6 +47,7 @@ reconcile.
 | agence seo cameroun | CM — Cameroon FR (priority) | `/blog/agence-seo-cameroun` | 2026-10-22 | Live |
 | seo agency nairobi cost | K — Kenya commercial | `/blog/seo-agency-nairobi-cost` | 2026-10-23 | Live |
 | how to get a safari company recommended by ai | K — Kenya × GEO × tourism | `/blog/how-to-get-a-safari-company-recommended-by-ai` | 2026-10-26 | Live |
+| how to check if chatgpt recommends your business in africa | AF — GEO diagnostic (Africa) | `/blog/how-to-check-if-chatgpt-recommends-your-business-in-africa` | 2026-10-29 | Live |
 
 ## Deliberately not targeted
 
