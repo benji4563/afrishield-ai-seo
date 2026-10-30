@@ -67,6 +67,50 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'seo-company-accra-ghana',
+    title: 'How to choose an SEO company in Accra, Ghana: cedi prices and four checks',
+    cardTitle: 'How to choose an SEO company in Accra',
+    metaTitle: 'SEO Company in Accra, Ghana: How to Choose',
+    description:
+      'How to choose an SEO company in Accra, Ghana: the cedi prices agencies publish, the 20% VAT and levy line, and four checks you can run in an afternoon.',
+    lede:
+      'The right SEO company in Accra, Ghana publishes its price in cedis, names the people who write and fix, gives you ownership of your Google accounts and promises work rather than a ranking. Ghanaian agencies publish retainers from about GHS 1,500 to GHS 18,000 and above a month in 2026, with VAT and levies of about 20 percent added where the company is registered.',
+    category: 'Money',
+    published: '2026-10-30',
+    modified: '2026-10-30',
+    readingMinutes: 9,
+    primaryKeyword: 'seo company accra ghana',
+    image: {
+      src: '/images/blog-seo-company-accra-ghana.webp',
+      alt: 'People walking together along a busy street in Accra, Ghana, with market stalls and buildings behind them.',
+    },
+    linkedin: `You type "SEO company Accra" into Google and every result is number one.
+
+This is statistically remarkable. It is also how a lot of Accra business owners start their search, and how a lot of them end up choosing on confidence instead of evidence.
+
+Hiring an SEO company because it says it is number one is like hiring a mechanic whose own car is up on bricks. Sure, the sign is nice. Now look at the car.
+
+Here is what actually separates the companies:
+
+Ghanaian agencies publish retainers from about GHS 1,500 to GHS 18,000 and above a month. The gap is scope, not size. A GHS 1,500 retainer that also promises four articles, technical work and reporting deserves a question.
+
+A VAT-registered company adds 15 percent VAT, 2.5 percent NHIL and 2.5 percent GETFund levy. That is about 20 percent. A GHS 5,000 quote lands closer to GHS 6,000 on the invoice.
+
+A directory list of nine Ghanaian SEO companies had reviews on three of them. Six had none. A profile is not a result.
+
+So run four checks. Search for the thing the company says it is best at. Convert the quote to cedis with tax. Divide the fee by the pages it publishes. Ask for two named references and a sample report.
+
+We sell SEO in Accra ourselves, so every check on that list applies to us as well, and we would rather you ran them.
+
+The full guide, with the price table, the tax line, and when an Accra business should not hire anyone yet:
+
+https://afrishieldai.com/blog/seo-company-accra-ghana
+
+#Accra #Ghana #SEO #SmallBusiness #DigitalMarketing
+
+Check the car before you admire the sign.`,
+  },
+  {
     slug: 'how-to-check-if-chatgpt-recommends-your-business-in-africa',
     title:
       'How to check if ChatGPT recommends your business in Africa: a clean, repeatable test',

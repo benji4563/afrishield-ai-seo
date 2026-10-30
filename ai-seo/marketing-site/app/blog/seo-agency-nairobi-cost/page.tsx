@@ -150,6 +150,8 @@ export default function Post() {
           <a href="/blog/how-much-does-seo-cost-in-nigeria">
             what SEO costs in Nigeria
           </a>
+          , and for Ghana in{' '}
+          <a href="/blog/seo-company-accra-ghana">how to choose an SEO company in Accra</a>
           . This is the Kenyan version: shilling prices that Nairobi agencies actually
           publish, the VAT line most quotes leave out, and a way to compare two quotes that
           do not describe the same thing.

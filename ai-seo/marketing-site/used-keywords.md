@@ -48,6 +48,7 @@ reconcile.
 | seo agency nairobi cost | K — Kenya commercial | `/blog/seo-agency-nairobi-cost` | 2026-10-23 | Live |
 | how to get a safari company recommended by ai | K — Kenya × GEO × tourism | `/blog/how-to-get-a-safari-company-recommended-by-ai` | 2026-10-26 | Live |
 | how to check if chatgpt recommends your business in africa | AF — GEO diagnostic (Africa) | `/blog/how-to-check-if-chatgpt-recommends-your-business-in-africa` | 2026-10-29 | Live |
+| seo company accra ghana | GH — Ghana commercial | `/blog/seo-company-accra-ghana` | 2026-10-30 | Live |
 
 ## Deliberately not targeted
 

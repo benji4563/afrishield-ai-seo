@@ -444,5 +444,17 @@
     "photographerUrl": "https://www.pexels.com/@gabby-k",
     "alt": "A woman in a white shirt and glasses reads her phone beside a tall office window overlooking a red and orange building.",
     "avgColor": "#947B77"
+  },
+  {
+    "slot": "blog-seo-company-accra-ghana",
+    "file": "images/blog-seo-company-accra-ghana.webp",
+    "source": "Pexels",
+    "query": "Accra Ghana",
+    "pexelsId": 13699253,
+    "pexelsUrl": "https://www.pexels.com/photo/people-walking-on-the-street-13699253/",
+    "photographer": "Michael Quaynor",
+    "photographerUrl": "https://www.pexels.com/@outfunstudios",
+    "alt": "People walking together along a busy street in Accra, Ghana, with market stalls and buildings behind them.",
+    "avgColor": "#7A6F6B"
   }
 ]
