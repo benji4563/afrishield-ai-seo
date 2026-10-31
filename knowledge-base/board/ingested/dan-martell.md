@@ -33,3 +33,13 @@ newest uploads had moved on from the prior run's short-form clips to
 longer-form business/AI-leverage content — first wiki update logged this run.
 
 Note (2026-10-12): `wtaRjOFqdyU` read in full from yt-dlp `en-orig` captions and kept because it bears on producing content for this service. The other five are motivation or tool round-ups.
+
+| 2026-10-31 | QVLmhx4jHa0 | How to Work with an Executive Assistant | skipped-off-niche | shallow |
+| 2026-10-31 | SJywU4UQryQ | How to Build an AI Agent for Every Part of Your Life | skipped-off-niche | shallow |
+| 2026-10-31 | bN5Fr9s5Rvc | What would you do if you had 10 extra hours? #AIFS Day 2 | skipped-off-niche | shallow |
+| 2026-10-31 | QxB85TXE7Oc | Simple AI tip to get you better results #AIFS | skipped-off-niche | shallow |
+| 2026-10-31 | iLbvTcRuipY | From Prison to Programming: My Journey to AI | skipped-off-niche | shallow |
+
+Note (2026-10-31): all five newest uploads are founder-productivity/delegation and
+general-AI-life content (conference clips, personal story) with no SEO/GEO/content
+angle, filtered on title + description before spending a deep read.

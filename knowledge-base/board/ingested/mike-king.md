@@ -34,3 +34,7 @@ no new content beyond what's already logged there. No videoId overlap with
 the 2026-07-29 run.
 
 Note (2026-10-12): the two newest unread uploads were read in full (Firecrawl transcripts). Both are short pre-conference interviews from April 2026. The three older April uploads are marked `skipped-backlog` unread: older than 60 days and outside this run's cap.
+
+| 2026-10-31 | NVcLF2reldk | The GEO Operating System | ingested | deep |
+
+Note (2026-10-31): his first upload since 95pZgi3Ax3U (2026-10-15) — a 57-minute CMO Alliance webinar read in full via Firecrawl. Posted on the iPullRank company channel, not his personal one (see CHANNELS.md note).
