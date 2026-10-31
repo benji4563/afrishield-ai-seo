@@ -30,3 +30,14 @@ per the per-advisor cap. No videoId overlap between the 2026-07-29 and
 2026-08-05 runs.
 
 Note (2026-10-12, local weekly task): all six newest uploads are AI-tool launch or agent-demo videos, filtered on title before any credit was spent. Nothing read.
+
+| 2026-10-31 | tCwbbgGaPt0 | How Did Claude AI Rank My Website #1 in Only 15 Hours? | ingested | deep |
+| 2026-10-31 | a9ViLQj9YyU | Vercel Just Brought Its Open-Source AI Agent to T3 Code! | skipped-off-niche | shallow |
+| 2026-10-31 | pvBshUti3Ks | NEW Google Updates are CRAZY GOOD! | skipped-off-niche | shallow |
+| 2026-10-31 | MKHaOb7Y7cQ | NEW Fern : Mirendil's first model Just Dropped! | skipped-off-niche | shallow |
+| 2026-10-31 | le88iQm0T58 | NEW AgentOS Changes Google Search! | skipped-off-niche | shallow |
+
+Note (2026-10-31): `tCwbbgGaPt0` read in full via Firecrawl (transcript available
+this run, unlike the 2026-10-12/08-05 `shallow` runs). The other four newest
+uploads are general AI-tool/model-launch news with no SEO/GEO tactic in the title
+or description, filtered before spending a read.

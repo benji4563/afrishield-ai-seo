@@ -59,3 +59,20 @@ links · topical relevance of links.
   in content/site generation. Worth watching for cost impact on our generation
   pipeline, but needs independent verification before changing our model stack. —
   https://www.youtube.com/watch?v=PYbBddbflRo
+- **2026-10-31** — "Hidden keyword" method: a page that already shows Search
+  Console impressions with near-zero clicks means Google already judges the site
+  relevant to that exact query but has no dedicated page for it — the lowest-effort
+  ranking opportunity there is, because the page doesn't have to earn relevance
+  from zero. His system feeds the Search Console API to Claude to surface these
+  impression-no-click gaps across *several* sites at once (a keyword surfaced on
+  one site becomes a page built on another), then uses a saved Claude skill — a
+  100-point on-page/AEO checklist baked in once — to draft and auto-publish the
+  page to WordPress without a human logging in. Claims one page reached #1 within
+  15 hours this way, and one site climbed to 1,300 clicks/day running the same
+  loop repeatedly. The transferable part isn't the automation (we already auto-
+  publish); it's the specific *source* of the keyword — Search Console
+  impressions with low CTR — as a sharper prioritization signal than DataForSEO
+  volume alone, since it's demand Google has already connected to us. Needs
+  independent verification: claims are his own, unlabelled as sponsored, and no
+  screenshot beyond a blurred "created X hours ago" Google result is shown. —
+  https://www.youtube.com/watch?v=tCwbbgGaPt0
