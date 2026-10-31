@@ -41,7 +41,13 @@ const datasetJsonLd = {
     'Audit de 30 grandes organisations camerounaises sur une grille publique de 8 critères et 100 points mesurant leur préparation technique à être lues et citées par les moteurs de réponse (ChatGPT, Gemini, Claude, Perplexity). Mesure du 18 octobre 2026.',
   inLanguage: 'fr',
   creator: { '@type': 'Organization', name: 'AfriShield AI', url: SITE_URL },
-  spatialCoverage: { '@type': 'Country', name: 'Cameroun' },
+  // Place, not Country: schema.org makes Country a subtype of Place, but
+  // Google's Dataset parser rejects it here. The bounding box is Cameroon's.
+  spatialCoverage: {
+    '@type': 'Place',
+    name: 'Cameroun',
+    geo: { '@type': 'GeoShape', box: '1.65 8.49 13.08 16.19' },
+  },
   dateCreated: '2026-10-18',
   datePublished: post.published,
   license: 'https://creativecommons.org/licenses/by/4.0/',
