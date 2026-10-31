@@ -104,6 +104,14 @@ export const SITE = {
     // footer, so the claim is two-way: the directory points here and this
     // site points back.
     'https://techbehemoths.com/company/afrishield-ai',
+    // Clutch, submitted 2026-10-29 and confirmed publicly live 2026-10-31:
+    // clutch.co/profile/afrishield-ai returns 200 with `robots: index,
+    // follow`, so it is indexable and usable as sameAs. Carries one
+    // Clutch-verified review (Tataachi Network, 4.5/5, 29 Oct) - the first
+    // third-party-verified client review this entity has anywhere. The free
+    // tier gives no backlink from the directory, so the value here is the
+    // entity claim and the review surface, not link equity.
+    'https://clutch.co/profile/afrishield-ai',
   ] as string[],
   /** Public-facing one-liner. Company brand guidelines, verbatim. */
   tagline: 'Search visibility, run by agents. Reported in plain numbers.',

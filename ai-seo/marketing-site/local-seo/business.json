@@ -36,6 +36,25 @@
   "secondary_languages": ["fr"],
   "timezone": "Africa/Douala",
   "price_range": "$$",
+  "pricing": {
+    "decided": "2026-10-29",
+    "model": "monthly retainer",
+    "source_of_truth": "https://afrishieldai.com/pricing - published with ProfessionalService + OfferCatalog schema, priceRange 'USD 150-900 per month'",
+    "tiers": [
+      { "name": "Foundation", "usd_per_month": 150 },
+      { "name": "Engine", "usd_per_month": 400 },
+      { "name": "Operation", "usd_per_month": 900 }
+    ],
+    "terms": "Month to month, 30 days notice, no setup fee, no minimum term. Invoiced in NGN, GHS, KES, ZAR or XAF on request.",
+    "hourly_rate": null,
+    "directory_values": {
+      "min_project_size_usd": 1000,
+      "hourly_band_when_forced": "$25 - $49 / hr",
+      "why": "Directory 'minimum project size' means minimum TOTAL ENGAGEMENT value, not the monthly rate - a different unit, so $1,000+ and $150/month are both true at once. Foundation over seven months is about $1,050; Engine over three is $1,200. B2B directories also treat a low minimum as a quality signal against you, and several do not offer a bracket below $1,000 at all. So: state $1,000+ on directories, keep the real monthly tiers public on the site, and never raise the published monthly price to make a directory field agree.",
+      "hourly_note": "We do not bill hourly. Choose 'Undisclosed' or 'N/A' wherever a platform allows it; use the band above only when the field is mandatory."
+    },
+    "known_inconsistency": "Sortlist currently shows 'A partir de 1 000 EUR' (~USD 1,080). That is the right ORDER but the wrong unit and currency - it reads as a price floor rather than an engagement minimum, on the profile that ranks #2 for 'agence SEO Douala'. Review the field wording and set it in USD if the platform allows."
+  },
   "opening_hours": [
     "Mo-Fr 08:00-18:00",
     "Sa 09:00-13:00"
@@ -110,11 +129,11 @@
     { "name": "Crunchbase", "url": "https://www.crunchbase.com/organization/afrishield-ai", "status": "live", "priority": 1, "note": "Live 2026-10-17. Knowledge Graph pillar 2 of 4 after LinkedIn. Name, 132-char description, Douala/Littoral/CM, headcount 1-10 and four industries (AI, Digital Marketing, SEO, Software) all render as submitted. Founder Benjamin Njock resolves to a linked Person entity at /person/benjamin-njock. Outstanding: an \"Also Known As: Afrishield AI\" variant with a lowercase s needs removing." },
         { "name": "Go Africa Online", "url": "https://www.goafricaonline.com/cm/1368319-afrishield-ai-agences-web-seo-sea-douala-cameroun", "status": "live", "priority": 1, "note": "Registered 2026-10-17, company id 1368319, record complete with category Agences web SEO SEA, Douala Cameroon, French presentation. Still 404 on 2026-10-18 and still absent from its own category listing /cm/directory/web-agencies-seo-sea. The dashboard offers Devenir premium, so a public page appears to be gated behind the paid tier. Deprioritised rather than retired - recheck in a month in case it is a slow moderation queue. [note lost when an uncommitted edit was reverted 2026-10-26 - reason not recovered, re-verify before acting]" },
     { "name": "Protaiin", "url": "https://www.protaiin.com/meilleures-agences-de-marketing-digital/", "status": "todo-cleared", "priority": 2, "note": "Page one listicle for Douala digital agencies. [note lost when an uncommitted edit was reverted 2026-10-26 - reason not recovered, re-verify before acting]" },
-    { "name": "Clutch", "url": "https://clutch.co", "status": "todo-verify-cost", "priority": 2, "note": "Backlink + review surface + sameAs entry. [note lost when an uncommitted edit was reverted 2026-10-26 - reason not recovered, re-verify before acting]" },
+    { "name": "Clutch", "url": "https://clutch.co/profile/afrishield-ai", "status": "live", "priority": 1, "note": "LIVE 2026-10-31, confirmed logged-out: HTTP 200 and robots 'index, follow'. Provider id 2761475; review link https://review.clutch.co/review/?provider_id=2761475. Basic profile is free; Clutch Verified is $499/yr and optional. The FREE TIER GIVES NO BACKLINK from directory pages and no AI Visibility module - the value is the sameAs entity claim and the review surface, not link equity. Carries 1 Clutch-VERIFIED review: Tataachi Network, Benjamin Njock, 4.5/5, 29 Oct 2026, which publicly states a 5-10% traffic increase - the first client result attributable in public, in the client's own words. Service lines SEO 40 / Content Marketing 20 / Digital Strategy 20 / Generative AI 20. Clutch DOES carry 'Generative Engine Optimization' as a service tag (it is on the Tataachi review), which answers the open question from 2026-10-29. STILL OPEN: (a) the company description was retyped by hand and carries 6 spelling errors - accross, wether x2, describle, custommer, kkind - plus 'core audit' for 'scored audit'; fix before any review request goes out. (b) Focus areas, Industries and Clients are all empty."},
     { "name": "Bark", "url": "https://www.bark.com", "status": "retired", "priority": 9 },
     { "name": "DesignRush", "url": "https://www.designrush.com", "status": "todo-cleared", "priority": 2 },
-    { "name": "The Manifest", "url": "https://themanifest.com", "status": "todo-verify-cost", "priority": 3 },
-    { "name": "Semrush Agency Partners", "url": "https://agencies.semrush.com", "status": "todo-cleared", "priority": 1 },
+    { "name": "The Manifest", "url": "https://themanifest.com", "status": "todo-cleared", "priority": 3, "note": "COST RESOLVED 2026-10-29: free. Clutch-owned and largely fed from the Clutch profile, so do Clutch first. robots.txt allows every major AI crawler." },
+    { "name": "Semrush Agency Partners", "url": "https://agencies.semrush.com", "status": "paid-deferred", "priority": 8, "note": "NOT FREE - $90/month, confirmed by Ben 2026-10-29. Previously mis-filed as todo-cleared. Deferred until there is budget; do the free directories first. Paste-ready fields remain in site-health-2026-10-26.md section 5." },
     { "name": "TechBehemoths", "url": "https://techbehemoths.com/company/afrishield-ai", "status": "live-verified", "priority": 1, "note": "Live 2026-10-24, DOMAIN-VERIFIED 2026-10-26 via the reciprocal badge in the site footer - their bot fetched afrishieldai.com, found the data-techbehemoths-verification anchor in the server-rendered HTML and passed. An earlier attempt failed only because the badge had not been deployed yet: the commit was on the feature branch, which builds a PREVIEW; production deploys from master. Carries the locked citation_nap exactly: +237688099752 and 'Rue 5N.488, Kotto Village, Douala V, Douala 0000 Cameroon'. 4 services, 23 focus areas, 1 portfolio case (Jackson Eye Clinic), 0 reviews. The profile URL is on SITE.profiles so it emits as schema.org sameAs - that is the entity signal; the badge alone is only a backlink. EXO Score was 41/100 with Claimed 50/100 pre-verification; re-read it to confirm the lift. Still open: the map pin was saved unverified near Bonamoussadi rather than Kotto - correct it and record lat/lng in geo." },
     { "name": "StarOfService Cameroun", "url": "https://www.starofservice.cm/p/1ea48e6b-2e47-e283-ffb4-e1dfad1d26bd", "status": "live", "priority": 2, "note": "Live 2026-10-19, entirely in French. Services: Marketing digital, Optimisation du referencement, Marketing. Hours and French description render correctly. NOTE: the profile page itself is robots noindex, nofollow, so it passes no link equity and will never rank. Its only value is inclusion in the indexed category page /annubis/littoral/sanaga-maritime/douala/marketing-digital, which holds positions 9, 12 and 38 for Douala SEO terms. Priority dropped from 1 to 2 for that reason. Street address was entered but is not displayed publicly - only Douala, Sanaga-Maritime, which is StarOfService's own mistaken department for Douala (it is Wouri)." },
     { "name": "BusinessList Cameroun", "url": "https://fr.businesslist.co.cm", "status": "todo-cleared", "priority": 2, "note": "Verified 2026-10-16: position 19 for agence seo douala cameroun. [note lost when an uncommitted edit was reverted 2026-10-26 - reason not recovered, re-verify before acting]" }
@@ -122,6 +141,8 @@
   "same_as": [
     "https://www.linkedin.com/company/146729948",
     "https://www.crunchbase.com/organization/afrishield-ai",
-    "https://www.facebook.com/afrishieldai"
+    "https://www.facebook.com/afrishieldai",
+    "https://techbehemoths.com/company/afrishield-ai",
+    "https://clutch.co/profile/afrishield-ai"
   ]
 }
