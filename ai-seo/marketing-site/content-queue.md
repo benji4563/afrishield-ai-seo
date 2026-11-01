@@ -176,6 +176,29 @@ on, which makes them the lowest-risk rows in the file.
 | 46 | seo for hotels in kenya | K — Kenya × tourism | `needs-volume` — confirm with DataForSEO. | candidate |
 | 47 | comment apparaître sur google maps au cameroun | CM — Cameroon FR local | `needs-volume` — confirm with DataForSEO. **French.** | candidate |
 | 48 | seo agency johannesburg pricing | ZA — South Africa commercial | `needs-volume` — hardest market on the list; confirm volume and expect a long runway. | candidate |
+| 49 | how to rank on google maps in abuja | N — Nigeria local visibility (Abuja) | candidate - verify volume (DataForSEO) | queued |
+| 50 | how to get more customers from google in uganda | UG — Uganda local / commercial | candidate - verify volume (DataForSEO) | queued |
+| 51 | seo agency in dar es salaam cost | TZ — Tanzania commercial | candidate - verify volume (DataForSEO) | queued |
+| 52 | comment améliorer son référencement local à abidjan | CI — Côte d'Ivoire FR local SEO | candidate - verify volume (DataForSEO) | queued |
+| 53 | how to show up in ai search results in south africa | ZA — GEO diagnostic | candidate - verify volume (DataForSEO) | queued |
+| 54 | seo agency in kigali rwanda | RW — Rwanda commercial | candidate - verify volume (DataForSEO) | queued |
+| 55 | how to appear on google maps in accra | GH — Ghana local visibility | candidate - verify volume (DataForSEO) | queued |
+| 56 | why is my business not showing on google search in kenya | K — Kenya problem-aware | candidate - verify volume (DataForSEO) | queued |
+| 57 | how to get more google reviews in ghana | GH — Ghana local / GBP | candidate - verify volume (DataForSEO) | queued |
+
+> **Queue top-up (queue-keeper, 2026-11-01):** audited the queue — only 3 `queued`
+> rows remained (42, 43, 44), below the 6-row floor. No DataForSEO access in this
+> session, so added rows 49–57 as 9 **candidate** keywords (buyer-intent /
+> honest-question phrasing, single primary intent each) across markets with no or
+> thin existing coverage (Abuja, Uganda, Tanzania, Côte d'Ivoire, South Africa,
+> Rwanda, Ghana, Kenya). Checked against every live post in `lib/posts.ts`,
+> every row already in this file (any status), and `used-keywords.md` — no
+> duplicates found. Per this run's instructions, rows are appended with
+> `Status = queued` (not the file's usual `candidate` pick-pool convention) so a
+> human DataForSEO/intent pass can promote survivors to `vetted` from the review
+> PR before merge — **none of these volumes are confirmed; none are `vetted`.**
+> Opened as a PR, not pushed to master, specifically so that pass happens before
+> these ever reach the auto-poster.
 
 > **Queue top-up (queue-keeper, 2026-08-30):** audited the queue — only row 9
 > (`what is local seo`) remained `queued` (1 row, below the 6-row floor). Added
