@@ -163,12 +163,6 @@ export default function Post() {
           addresses, shared plazas, home-run businesses and customers who search by district.
         </p>
 
-        {/*
-          Cluster N (Nigeria local / GBP) back-fill: when this queue row publishes, add
-          an in-body link from this post to it —
-            row 42 /blog/why-is-my-business-not-showing-on-google-maps-nigeria (from #what-fails)
-        */}
-
         <h2 id="what-it-takes">What it takes to appear on Google Maps in Lagos</h2>
 
         <p>
@@ -418,6 +412,11 @@ export default function Post() {
           business name, a virtual office used as the address, duplicate profiles for one
           location, and a pin placed in the wrong spot. The first three break Google&rsquo;s
           guidelines and can lead to suspension; the fourth simply sends customers elsewhere.
+          If a listing is already missing or misbehaving, our{' '}
+          <a href="/blog/why-is-my-business-not-showing-on-google-maps-nigeria">
+            diagnosis of why a Nigerian business is not showing on Google Maps
+          </a>{' '}
+          sorts the problem by symptom.
         </p>
 
         <ul>

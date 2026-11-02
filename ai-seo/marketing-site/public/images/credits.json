@@ -456,5 +456,17 @@
     "photographerUrl": "https://www.pexels.com/@outfunstudios",
     "alt": "People walking together along a busy street in Accra, Ghana, with market stalls and buildings behind them.",
     "avgColor": "#7A6F6B"
+  },
+  {
+    "slot": "blog-why-is-my-business-not-showing-on-google-maps-nigeria",
+    "file": "images/blog-why-is-my-business-not-showing-on-google-maps-nigeria.webp",
+    "source": "Pexels",
+    "query": "Lagos street shops",
+    "pexelsId": 39308542,
+    "pexelsUrl": "https://www.pexels.com/photo/vibrant-market-scene-in-lagos-nigeria-39308542/",
+    "photographer": "Ademola Adeola",
+    "photographerUrl": "https://www.pexels.com/@ademola-adeola-2148696501",
+    "alt": "Bustling street market in Lagos, Nigeria with people and rickshaws.",
+    "avgColor": "#65604D"
   }
 ]

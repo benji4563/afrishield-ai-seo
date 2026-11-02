@@ -67,6 +67,46 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'why-is-my-business-not-showing-on-google-maps-nigeria',
+    title: 'Why is my business not showing on Google Maps in Nigeria? A diagnosis by symptom',
+    cardTitle: 'Why your business is not on Google Maps',
+    metaTitle: 'Business Not Showing on Google Maps: Nigeria',
+    description:
+      'Business not showing on Google Maps in Nigeria? Diagnose it by symptom: missing, unverified, suspended, not ranking or wrong pin, and fix each one.',
+    lede:
+      'A business is not showing on Google Maps in Nigeria because its Business Profile is missing, unverified, suspended, ranking below nearer competitors or pinned in the wrong place. This guide sorts the problem by symptom, starting with one search for the exact business name, and sets out the fix for each case using the rules Google publishes.',
+    category: 'Local visibility',
+    published: '2026-11-02',
+    modified: '2026-11-02',
+    readingMinutes: 9,
+    primaryKeyword: 'why is my business not showing on google maps nigeria',
+    image: {
+      src: '/images/blog-why-is-my-business-not-showing-on-google-maps-nigeria.webp',
+      alt: 'A crowded street market in Lagos, Nigeria, with yellow tricycles, vendors under umbrellas and shop signboards.',
+    },
+    linkedin: `Search your own business name on Google Maps. Go on. We will wait.
+
+If you found a florist two streets over, a dry cleaner and a tailor in another city, but not you, you are in good company. It is almost never the work that is wrong.
+
+Think of an unverified Google profile as a shop with a signboard and no key. The sign is up. Nobody can walk in. Google says a profile must be verified before it shows on Search and Maps, and a website does not count as verification.
+
+Where that one search leaves you decides the fix:
+
+1. Nothing found: the profile is missing, unverified or suspended. If suspended, appeal. Do not start a new profile, Google says so in writing.
+2. Found by name only: the profile is live and losing on category, reviews or distance.
+3. Wrong place: move the pin by hand and claim the duplicate instead of making a third.
+
+Google also says there is no way to pay for a better local ranking. We sell SEO and are telling you that most of this is a free twenty minute checklist, so please do not mention it to our sales team.
+
+The full diagnosis, step by step:
+
+https://afrishieldai.com/blog/why-is-my-business-not-showing-on-google-maps-nigeria
+
+#GoogleMaps #LocalSEO #Nigeria #SmallBusiness #GoogleBusinessProfile
+
+Go and search. The florist is lovely, but she is not who your customers came for.`,
+  },
+  {
     slug: 'seo-company-accra-ghana',
     title: 'How to choose an SEO company in Accra, Ghana: cedi prices and four checks',
     cardTitle: 'How to choose an SEO company in Accra',
