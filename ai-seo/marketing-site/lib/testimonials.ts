@@ -10,8 +10,11 @@
  * - A review that is not about AfriShield's work does not go here. Jackson
  *   Fon's 4-star Google review describes his clinic, not our service, so it
  *   is left out even though it counts toward the 4.5 average.
- * - Any relationship between the reviewer and AfriShield is disclosed on the
- *   card itself (`disclosure`), not in a footnote.
+ * - No review from anyone with an ownership or family link to AfriShield.
+ *   The Clutch review by Tataachi Network was removed on 2026-11-03 for this
+ *   reason: Tataachi shares a founder with AfriShield, so it is a self-review,
+ *   however it is disclosed. Tataachi appears on /case-studies as an internal
+ *   engagement instead, with no quote and no rating.
  *
  * No Review or AggregateRating JSON-LD is emitted from these. Google ignores
  * review markup a business publishes about itself, and marking it up anyway is
@@ -21,23 +24,19 @@
 export type Testimonial = {
   quote: string;
   name: string;
-  role?: string;
   rating: number;
-  platform: 'Google' | 'Clutch';
+  platform: 'Google';
   url: string;
   date: string;
   translated?: boolean;
-  disclosure?: string;
 };
 
 export const GOOGLE_PROFILE_URL = 'https://www.google.com/maps?cid=10050195790891044224';
-export const CLUTCH_PROFILE_URL = 'https://clutch.co/profile/afrishield-ai';
 
 /** Platform totals as displayed on 2026-11-03. Update the date with the numbers. */
 export const REVIEW_TOTALS = {
   asOf: '3 November 2026',
   google: { rating: 4.5, count: 4 },
-  clutch: { rating: 4.5, count: 1 },
 };
 
 export const TESTIMONIALS: Testimonial[] = [
@@ -68,16 +67,5 @@ export const TESTIMONIALS: Testimonial[] = [
     url: GOOGLE_PROFILE_URL,
     date: 'October 2026',
     translated: true,
-  },
-  {
-    quote: 'AfriShield AI’s communication is excellent and spot-on.',
-    name: 'Benjamin Njock',
-    role: 'CEO & Founder, Tataachi Network',
-    rating: 4.5,
-    platform: 'Clutch',
-    url: CLUTCH_PROFILE_URL,
-    date: '29 October 2026',
-    disclosure:
-      'Tataachi Network and AfriShield AI share a founder. Clutch verified the review; weigh it with that in mind.',
   },
 ];

@@ -88,7 +88,7 @@ export function Commitments() {
         eyebrow="Reviews and commitments"
         tone="dark"
         title="What clients say, and what we put in writing"
-        blurb="Quoted word for word from our Google and Clutch profiles, with links so you can check each one. Below them, the terms you can hold us to from day one."
+        blurb="Quoted word for word from our Google Business Profile, with a link so you can check each one. Below them, the terms you can hold us to from day one."
       />
 
       <div className="mt-14">

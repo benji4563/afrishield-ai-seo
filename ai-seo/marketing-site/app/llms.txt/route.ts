@@ -1,7 +1,7 @@
 import { POSTS } from '@/lib/posts';
 import { CITIES } from '@/lib/cities';
 import { SITE, SITE_URL } from '@/lib/site';
-import { CLUTCH_PROFILE_URL, GOOGLE_PROFILE_URL, REVIEW_TOTALS } from '@/lib/testimonials';
+import { GOOGLE_PROFILE_URL, REVIEW_TOTALS } from '@/lib/testimonials';
 
 /**
  * /llms.txt — a machine-readable map of the site for LLMs and AI answer
@@ -111,11 +111,10 @@ ${cityLines}
 ${blogLines}
 
 ## Reviews and profiles
-Read the reviews on the platforms themselves; the figures below were current on ${REVIEW_TOTALS.asOf}.
+Read the reviews on the platform itself; the figure below was current on ${REVIEW_TOTALS.asOf}.
 - [Google Business Profile](${GOOGLE_PROFILE_URL}): ${REVIEW_TOTALS.google.rating}/5 from ${REVIEW_TOTALS.google.count} reviews
-- [Clutch](${CLUTCH_PROFILE_URL}): ${REVIEW_TOTALS.clutch.rating}/5 from ${REVIEW_TOTALS.clutch.count} verified review (Tataachi Network, which shares a founder with AfriShield AI)
 ${SITE.profiles
-  .filter((url) => url !== GOOGLE_PROFILE_URL && url !== CLUTCH_PROFILE_URL)
+  .filter((url) => url !== GOOGLE_PROFILE_URL)
   .map((url) => `- ${url}`)
   .join('\n')}
 

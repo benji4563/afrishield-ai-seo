@@ -38,3 +38,13 @@ No Review or AggregateRating schema was added. Google ignores review markup a bu
 3. **Courtesy permission.** The reviews are public, but a WhatsApp message to the three Google reviewers ("we've quoted your review on our site, okay?") is good practice.
 4. **Deploy, then re-test**: Rich Results Test on `/` and `/about`, and resubmit the sitemap in Search Console and Bing Webmaster Tools. Neither needs to happen for indexing, but it speeds up the recrawl.
 5. **TechBehemoths and other profiles**: add the Clutch profile link in their portfolio or social fields. This has to be done by hand in each dashboard.
+
+## Update, same day: Clutch quote removed
+
+Ben asked for the Tataachi Clutch review to come off the site, because it is a self-review (shared founder). Done:
+- **Homepage:** shows the three Google reviews only. The Clutch quote, its stars and the "Clutch 4.5/5" total are gone.
+- **/case-studies:** Tataachi is now an internal engagement (audit plus site, schema and business-information restructuring), listing the work shipped only. The quote, the "problem" text and the client-reported 5–10% figure are gone.
+- **llms.txt:** the Clutch rating line is gone; the profile URL stays in the profile list.
+- **Kept on Ben's instruction:** the Clutch badge in the footer, and the Clutch URL in `sameAs`.
+
+Google risk: there was none from Google's side, because no Review or AggregateRating markup was ever emitted. The removal deals with credibility and Clutch-policy risk, not a Google penalty.
