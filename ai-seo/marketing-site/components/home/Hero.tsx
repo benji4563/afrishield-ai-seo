@@ -4,36 +4,20 @@ import { Bluf } from '@/components/ui/Bluf';
 
 export function Hero() {
   return (
-    <section className="surface-dark pb-[80px]">
+    <section className="surface-light pb-[72px]">
       {/*
-       * Panoramic hero: the Nairobi skyline at dusk runs edge to edge behind the
-       * headline. The photo is confined to this band so it stays wide rather than
-       * tall, and two gradients keep the copy readable — a wash under the text
-       * column, and a fade into the page colour so the block below meets it
-       * without a seam.
+       * Light hero since 2026-11-04. A client review on a directory called the
+       * site "dark", and the old dusk-skyline hero plus the dark strip under it
+       * made the entire first screen near-black. Copy, buttons and the H1 are
+       * unchanged; only the surface and the photo moved. The photo sits in its
+       * own column rather than behind the text, so no overlay is needed for
+       * contrast and the headline stays the first thing read.
        */}
-      <div className="relative isolate overflow-hidden pb-[120px] pt-[152px]">
-        <Image
-          src="/images/home-hero-nairobi.webp"
-          alt="The Nairobi skyline at dusk, with office towers lit against a deep blue sky."
-          fill
-          priority
-          sizes="100vw"
-          className="-z-20 object-cover object-bottom"
-        />
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/90 to-ink/65 md:via-ink/85 md:to-ink/20"
-        />
-        <div
-          aria-hidden="true"
-          className="absolute inset-x-0 bottom-0 -z-10 h-1/3 bg-gradient-to-t from-ink to-transparent"
-        />
-
-        <div className="container-page">
-          <div className="container-inner">
-            <div className="animate-rise-in max-w-[640px]">
-              <p className="eyebrow-dark">AI SEO · Built for African markets</p>
+      <div className="container-page pt-[132px] md:pt-[150px]">
+        <div className="container-inner">
+          <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
+            <div className="animate-rise-in">
+              <p className="eyebrow-light">AI SEO · Built for African markets</p>
               {/*
                * The brand name is load-bearing here, not decorative. Google
                * resolves "AfriShield AI" to afrishield.org - a different company
@@ -43,30 +27,39 @@ export function Hero() {
               <h1 className="h1 mt-6 max-w-[19ch]">
                 AfriShield AI makes your site the answer your customers search for.
               </h1>
-              <p className="mt-7 max-w-[52ch] text-lead text-white/85">
+              <p className="mt-7 max-w-[52ch] text-lead body-dim-light">
                 We run the keyword research, the writing, and the technical work on a
                 weekly schedule — and hand you a report that names every page, every
                 keyword, and every position. AI does the volume; a person edits every
                 word. No dashboard mysteries.
               </p>
               <div className="mt-9 flex flex-wrap gap-3">
-                <Button href="/contact">Book a call</Button>
-                <Button href="/how-it-works" variant="ghost-dark">
+                <Button href="/contact" variant="accent-light">
+                  Book a call
+                </Button>
+                <Button href="/how-it-works" variant="ghost-light">
                   See how it works
                 </Button>
               </div>
-              <p className="mt-7 font-mono text-label uppercase text-white/55">
+              <p className="mt-7 font-mono text-label uppercase text-ink/50">
                 No lock-in · Month to month · Keyword list shared before we write
               </p>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div className="container-page">
-        <div className="container-inner">
+            <div className="relative aspect-[1200/627] overflow-hidden rounded-card border border-ink/10">
+              <Image
+                src="/images/home-band.jpg"
+                alt="Two professional women collaborating with laptops in Lagos, Nigeria."
+                fill
+                priority
+                sizes="(min-width: 1024px) 560px, 100vw"
+                className="object-cover"
+              />
+            </div>
+          </div>
+
           {/* GEO answer block — factual, entity-dense, in the server HTML. */}
-          <Bluf className="max-w-[70ch]" tone="dark">
+          <Bluf className="mt-14 max-w-[70ch]" tone="light">
             AfriShield AI provides AI SEO and local search optimisation for businesses
             across West, Central, East, and Southern Africa. We handle keyword research,
             content, technical SEO, and visibility in AI answer engines — ChatGPT, Claude,

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Hero } from '@/components/home/Hero';
 import { TrustStrip } from '@/components/home/TrustStrip';
+import { FeaturedBand } from '@/components/home/FeaturedBand';
 import { Challenge } from '@/components/home/Challenge';
 import { Solutions } from '@/components/home/Solutions';
 import { Capabilities } from '@/components/home/Capabilities';
@@ -63,6 +64,7 @@ export default function HomePage() {
           topology — see docs/research/AGENTFLOW-CLONE-SPEC.md. */}
       <Hero />
       <TrustStrip />
+      <FeaturedBand />
       <Challenge />
       <Solutions />
       <Capabilities />

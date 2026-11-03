@@ -23,16 +23,16 @@ const SEGMENTS = [
 
 export function WhoWeServe() {
   return (
-    <Section tone="dark">
+    <Section tone="light">
       <SectionHeader
         eyebrow="Who we serve"
-        tone="dark"
+        tone="light"
         title="Built for African businesses, at every size"
         blurb="From a single kiosk to a firm across several markets — the same three loops, priced so the smallest business can start."
       />
       <div className="mt-12 grid gap-5 md:grid-cols-3">
         {SEGMENTS.map((segment) => (
-          <article key={segment.label} className="overflow-hidden border border-white/10 bg-white/[0.02]">
+          <article key={segment.label} className="overflow-hidden border border-ink/10 bg-white">
             <div className="aspect-[1200/720] overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -46,8 +46,8 @@ export function WhoWeServe() {
               />
             </div>
             <div className="p-6">
-              <h3 className="font-display text-[17px] font-semibold text-white">{segment.label}</h3>
-              <p className="mt-3 text-small body-dim">{segment.body}</p>
+              <h3 className="font-display text-[17px] font-semibold text-ink">{segment.label}</h3>
+              <p className="mt-3 text-small body-dim-light">{segment.body}</p>
             </div>
           </article>
         ))}

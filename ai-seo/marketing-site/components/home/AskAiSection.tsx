@@ -3,8 +3,8 @@ import { AskAi } from '@/components/ui/AskAi';
 
 export function AskAiSection() {
   return (
-    <Section tone="dark">
-      <AskAi tone="dark" />
+    <Section tone="light">
+      <AskAi tone="light" />
     </Section>
   );
 }

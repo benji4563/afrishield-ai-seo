@@ -26,7 +26,10 @@ export function Nav() {
     <header
       className={cn(
         'fixed inset-x-0 top-0 z-50 transition-colors duration-300',
-        scrolled ? 'border-b border-white/10 bg-ink/85 backdrop-blur-md' : 'border-b border-transparent',
+        // Solid ink at scroll 0 too, not transparent: the homepage hero is light
+        // since 2026-11-04, and white links over it would vanish. Over the dark
+        // PageHero on every other route the bar looks the same as before.
+        scrolled ? 'border-b border-white/10 bg-ink/85 backdrop-blur-md' : 'border-b border-transparent bg-ink',
       )}
     >
       <div className="container-page">

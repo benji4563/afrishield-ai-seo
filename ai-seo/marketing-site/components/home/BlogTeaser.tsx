@@ -3,6 +3,10 @@ import { Button } from '@/components/ui/Button';
 import { PostCard } from '@/components/blog/PostCard';
 import { POSTS } from '@/lib/posts';
 
+// The latest six, not all of them: the homepage listed every post (39 by
+// November 2026), which made it long and heavy. /blog carries the full list.
+const LATEST = [...POSTS].sort((a, b) => b.published.localeCompare(a.published)).slice(0, 6);
+
 export function BlogTeaser() {
   return (
     <Section tone="light">
@@ -19,7 +23,7 @@ export function BlogTeaser() {
       </div>
 
       <div className="mt-14 grid gap-5 md:grid-cols-3">
-        {POSTS.map((post) => (
+        {LATEST.map((post) => (
           <div key={post.slug} className="relative">
             <PostCard post={post} />
           </div>
