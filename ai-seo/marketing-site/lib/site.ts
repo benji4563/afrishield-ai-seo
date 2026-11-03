@@ -62,6 +62,13 @@ export const SITE = {
    */
   googleReviewUrl: process.env.NEXT_PUBLIC_GOOGLE_REVIEW_URL ?? '',
   /**
+   * Clutch provider id, from the embed code Clutch generates on the profile
+   * dashboard - their identifier for this company, not something derived from
+   * the profile slug. Read by `ClutchWidget`, which carries the full note on
+   * what that badge is and is not worth.
+   */
+  clutchCompanyId: '2761475',
+  /**
    * Official profiles for this organisation, emitted as schema.org `sameAs`.
    *
    * This is entity disambiguation, not decoration. Without it Google has
@@ -112,6 +119,18 @@ export const SITE = {
     // tier gives no backlink from the directory, so the value here is the
     // entity claim and the review surface, not link equity.
     'https://clutch.co/profile/afrishield-ai',
+    // GoodFirms, submitted 2026-11-01 and confirmed publicly live
+    // 2026-11-03: HTTP 200 with `robots: index, follow`, company id
+    // 235631. The website link is `rel="nofollow noopener"`, so this is
+    // no more a backlink than Clutch was - but it is the strongest entity
+    // signal of the three directories, because the profile emits a
+    // schema.org LocalBusiness node whose `@id` and `url` are both
+    // afrishieldai.com, carrying the locked NAP (+237688099752, Rue
+    // 5N.488, Kotto Village, Douala, Littoral, CM) and an OfferCatalog
+    // naming Generative Engine Optimization as a service. That is a third
+    // party stating, in machine-readable form, the same facts this site
+    // states about itself - which is exactly what `sameAs` is for.
+    'https://www.goodfirms.co/company/afrishield-ai',
   ] as string[],
   /** Public-facing one-liner. Company brand guidelines, verbatim. */
   tagline: 'Search visibility, run by agents. Reported in plain numbers.',
