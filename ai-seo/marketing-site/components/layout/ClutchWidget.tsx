@@ -1,7 +1,6 @@
 'use client';
 
-import Script from 'next/script';
-import { useCallback, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { SITE } from '@/lib/site';
 
 declare global {
@@ -16,15 +15,21 @@ declare global {
  *
  * **Why this needs a component and an explicit Init call.** Clutch's embed is
  * a bare div plus their script, and the script auto-paints the div off the
- * page load event. `next/script` loads it *after* that event has fired, so the
- * listener never runs: the script arrives, `window.CLUTCHCO` is defined, and
- * the container stays 0x0 forever. Dropping in their copy-paste snippet gives
- * you a silently empty footer - verified in the browser before this was
- * written, which is the only reason it was caught.
+ * page load event. Any deferred loader fetches it *after* that event has
+ * fired, so the listener never runs: the script arrives, `window.CLUTCHCO` is
+ * defined, and the container stays 0x0 forever. Their copy-paste snippet gives
+ * you a silently empty footer here - no error, no warning, nothing in the
+ * console. `Init()` has to be called by hand once the script is in.
  *
- * `onReady` rather than `onLoad`, because onLoad fires once per page load
- * while onReady fires on load *and* on every remount - that is what keeps the
- * badge painted across client-side navigations.
+ * **Why the script is injected here instead of through `next/script`.** It was
+ * written that way first, with `strategy="lazyOnload"` and an `onReady` hook.
+ * It worked in dev and injected *nothing* in the production build on Next
+ * 16.3.8: the div hydrated (React fiber present on it), `requestIdleCallback`
+ * fired normally, and still no script tag and no `data-nscript` marker
+ * anywhere on the page. Rather than keep guessing at that scheduler, this
+ * appends the tag itself from an effect - which also runs after hydration, so
+ * nothing is blocked, and is one less moving part between us and a badge that
+ * fails invisibly when it breaks.
  *
  * The markup keeps Clutch's own data-* attribute names: the script reads them,
  * so they are their API and not ours to tidy. `data-nofollow="true"` is on
@@ -56,32 +61,46 @@ declare global {
  * When CSP headers land, widget.clutch.co needs allowing in both `script-src`
  * and `frame-src` or this goes back to rendering empty.
  */
+const SRC = 'https://widget.clutch.co/static/js/widget.js';
+
 export function ClutchWidget() {
   const container = useRef<HTMLDivElement>(null);
 
-  const paint = useCallback(() => {
+  useEffect(() => {
     // Init() paints every .clutch-widget on the page, so calling it when ours
-    // already holds an iframe would stack a second copy.
-    if (container.current?.querySelector('iframe')) return;
-    window.CLUTCHCO?.Init();
+    // already holds an iframe would stack a second copy. That is the guard
+    // that makes this safe to re-run on a remount.
+    const paint = () => {
+      if (container.current?.querySelector('iframe')) return;
+      window.CLUTCHCO?.Init();
+    };
+
+    // Already loaded by an earlier mount: just repaint.
+    if (window.CLUTCHCO) {
+      paint();
+      return;
+    }
+
+    let script = document.querySelector<HTMLScriptElement>(`script[src="${SRC}"]`);
+    if (!script) {
+      script = document.createElement('script');
+      script.src = SRC;
+      script.async = true;
+      document.body.appendChild(script);
+    }
+    script.addEventListener('load', paint);
+    return () => script?.removeEventListener('load', paint);
   }, []);
 
   return (
-    <>
-      <div
-        ref={container}
-        className="clutch-widget rounded-lg bg-white px-3 py-2"
-        data-url="https://widget.clutch.co"
-        data-widget-type="1"
-        data-height="40"
-        data-nofollow="true"
-        data-clutchcompany-id={SITE.clutchCompanyId}
-      />
-      <Script
-        src="https://widget.clutch.co/static/js/widget.js"
-        strategy="lazyOnload"
-        onReady={paint}
-      />
-    </>
+    <div
+      ref={container}
+      className="clutch-widget rounded-lg bg-white px-3 py-2"
+      data-url="https://widget.clutch.co"
+      data-widget-type="1"
+      data-height="40"
+      data-nofollow="true"
+      data-clutchcompany-id={SITE.clutchCompanyId}
+    />
   );
 }
