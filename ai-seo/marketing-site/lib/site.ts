@@ -131,6 +131,11 @@ export const SITE = {
     // party stating, in machine-readable form, the same facts this site
     // states about itself - which is exactly what `sameAs` is for.
     'https://www.goodfirms.co/company/afrishield-ai',
+    // Google Business Profile, by its stable cid (`business.json`
+    // gbp.profile_url). Confirmed live 2026-11-03: the listing shows
+    // AfriShield AI, afrishieldai.com and +237 6 88 09 97 52, rated 4.5 from
+    // four reviews. It was the one owned profile missing from this list.
+    'https://www.google.com/maps?cid=10050195790891044224',
   ] as string[],
   /** Public-facing one-liner. Company brand guidelines, verbatim. */
   tagline: 'Search visibility, run by agents. Reported in plain numbers.',

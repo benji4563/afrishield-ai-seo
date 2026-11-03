@@ -114,6 +114,10 @@ export const SERVED_CITIES = [
 export const professionalServiceJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
+  // The Organization's @id, on purpose. Without one this node was a second,
+  // unlinked company entity on the homepage (audit 2026-11-03); sharing the id
+  // lets parsers merge it into the single AfriShield AI entity instead.
+  '@id': ORGANIZATION_ID,
   name: SITE.name,
   url: SITE_URL,
   description: SITE.description,
@@ -161,7 +165,7 @@ export const servicesJsonLd = {
   '@type': 'Service',
   name: 'AI SEO',
   serviceType: 'AI SEO',
-  provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+  provider: { '@id': ORGANIZATION_ID },
   areaServed: [
     { '@type': 'Place', name: 'Africa' },
     ...SERVED_CITIES.map((city) => ({ '@type': 'City', name: city.name })),
@@ -176,7 +180,7 @@ export const tourismHospitalityServiceJsonLd = {
   '@type': 'Service',
   name: 'Hospitality SEO services',
   serviceType: 'Hospitality SEO services',
-  provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+  provider: { '@id': ORGANIZATION_ID },
   areaServed: [
     { '@type': 'Place', name: 'Africa' },
     ...SERVED_CITIES.map((city) => ({ '@type': 'City', name: city.name })),
@@ -191,7 +195,7 @@ export const safariOperatorsServiceJsonLd = {
   '@type': 'Service',
   name: 'SEO for safari operators',
   serviceType: 'SEO for safari operators',
-  provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+  provider: { '@id': ORGANIZATION_ID },
   areaServed: [
     { '@type': 'Place', name: 'Africa' },
     { '@type': 'Country', name: 'Kenya' },
@@ -210,7 +214,7 @@ export const lodgesHotelsServiceJsonLd = {
   '@type': 'Service',
   name: 'SEO for lodges and hotels',
   serviceType: 'SEO for lodges and hotels',
-  provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+  provider: { '@id': ORGANIZATION_ID },
   areaServed: [
     { '@type': 'Place', name: 'Africa' },
     ...SERVED_CITIES.map((city) => ({ '@type': 'City', name: city.name })),
@@ -225,7 +229,7 @@ export const geoServicesJsonLd = {
   '@type': 'Service',
   name: 'Generative engine optimization',
   serviceType: 'Generative engine optimization',
-  provider: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+  provider: { '@id': ORGANIZATION_ID },
   areaServed: [
     { '@type': 'Place', name: 'Africa' },
     ...SERVED_CITIES.map((city) => ({ '@type': 'City', name: city.name })),
@@ -234,13 +238,20 @@ export const geoServicesJsonLd = {
     'Generative engine optimization services — AI-crawler allowlists, answer-first content blocks, a structured-data engine, Ask-AI prompts, and a monthly AI-citation benchmark across ChatGPT, Claude, Perplexity, and Gemini.',
 };
 
-/** Founder, for the About page. */
+/**
+ * Founder, for the About page. Same @id and names as the `founder` nested in
+ * the Organization, so /about extends that Person instead of declaring a
+ * second, unlinked "Benjamin Njock" (audit 2026-11-03).
+ */
 export const founderJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
-  name: 'Benjamin Njock',
+  '@id': FOUNDER_ID,
+  name: 'Benjamin Enyong Njock',
+  alternateName: 'Benjamin Njock',
   jobTitle: 'Founder, AfriShield AI',
-  worksFor: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+  url: abs('/about'),
+  worksFor: { '@id': ORGANIZATION_ID },
   description:
     'Insurance executive with over 18 years of corporate experience and co-founder of Tataachi Network Insurance and Optimere, operating across 40+ African countries.',
   knowsAbout: ['Insurance', 'African financial services', 'AI adoption', 'Search visibility'],
@@ -253,7 +264,7 @@ export function aboutPageJsonLd() {
     name: `About ${SITE.name}`,
     url: abs('/about'),
     mainEntity: founderJsonLd,
-    publisher: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+    publisher: { '@id': ORGANIZATION_ID },
   };
 }
 
@@ -307,7 +318,7 @@ export function blogPostingJsonLd(post: {
     inLanguage: post.lang ?? 'en',
     ...(post.image ? { image: abs(post.image.src) } : {}),
     author: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
-    publisher: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+    publisher: { '@id': ORGANIZATION_ID },
   };
 }
 
@@ -373,7 +384,7 @@ export const blogIndexJsonLd = {
   name: `${SITE.name} — Blog`,
   url: abs('/blog'),
   description: 'Plain-English writing on search visibility, content, and what it actually costs.',
-  publisher: { '@type': 'Organization', name: SITE.name, url: SITE_URL },
+  publisher: { '@id': ORGANIZATION_ID },
 };
 
 /**
@@ -468,12 +479,7 @@ export function cityServiceJsonLd(city: {
     url: abs(`/ai-seo/${city.slug}`),
     serviceType: 'Search engine optimisation',
     description: city.metaDescription,
-    provider: {
-      '@type': 'Organization',
-      name: SITE.name,
-      url: SITE_URL,
-      email: SITE.email,
-    },
+    provider: { '@id': ORGANIZATION_ID },
     areaServed: {
       '@type': 'City',
       name: city.name,

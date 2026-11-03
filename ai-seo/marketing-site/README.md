@@ -62,7 +62,8 @@ used-keywords.md   one row per claimed keyword. Check before writing.
   export was supplied, and backfilling from memory poisons the audit trail.
 - **No content hidden behind animation.** Nothing renders `opacity:0` into the
   server HTML. Motion is an enhancement; if it never runs, the page still reads.
-- **No testimonials until real ones exist.** Blog opening scenes are labelled
+- **Testimonials are real public reviews only** (`lib/testimonials.ts`), quoted
+  verbatim with a link and any relationship disclosed. Blog opening scenes are labelled
   illustrative composites in the markup itself.
 - **Green is never a full-bleed background** — company brand rule.
 

@@ -4,11 +4,13 @@ import { useInView, useReducedMotion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { Section, SectionHeader } from '@/components/ui/Section';
 
+import { Testimonials } from '@/components/home/Testimonials';
+
 /**
- * AgentFlow puts testimonials + counting stat cards in this slot. We have no
- * real client quotes yet, and inventing them is an explicit anti-pattern, so
- * this block carries service commitments instead — every figure below is a
- * fact about how we work, not a claimed client outcome.
+ * AgentFlow puts testimonials + counting stat cards in this slot. The quotes
+ * are real public reviews (lib/testimonials.ts, added 2026-11-03); the stats
+ * and commitments below them are facts about how we work, not claimed client
+ * outcomes.
  */
 
 const STATS = [
@@ -83,11 +85,15 @@ export function Commitments() {
   return (
     <Section tone="dark">
       <SectionHeader
-        eyebrow="Commitments"
+        eyebrow="Reviews and commitments"
         tone="dark"
-        title="What we will put in writing"
-        blurb="We have no client quotes to show you yet, and we are not going to invent any. These are the terms instead — the things you can hold us to from day one."
+        title="What clients say, and what we put in writing"
+        blurb="Quoted word for word from our Google and Clutch profiles, with links so you can check each one. Below them, the terms you can hold us to from day one."
       />
+
+      <div className="mt-14">
+        <Testimonials />
+      </div>
 
       {/* No entry fade: it renders opacity:0 into the server HTML, which would
           ship these commitments invisible to anything not running our JS. */}

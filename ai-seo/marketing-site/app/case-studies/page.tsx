@@ -28,7 +28,9 @@ export const metadata: Metadata = {
  * are cleared by Ben to be named here (2026-10-26). Do not add a fifth client
  * without the same explicit clearance.
  *
- * RESULTS: every `results` array below is intentionally empty. Per the folder
+ * RESULTS: `results` stays empty unless the client has published or cleared
+ * the figure. Tataachi's one line is the client's own public Clutch figure,
+ * labelled as client-reported. Per the folder
  * CLAUDE.md, client traffic, ranking and lead figures are read-only reference
  * material and must be cleared for public use — in writing, by the client —
  * before they appear on this page. A case with an empty `results` array simply
@@ -48,6 +50,10 @@ type CaseStudy = {
   scope: string;
   shipped: string[];
   results: string[];
+  /** The client's own account, quoted from a public review. */
+  inTheirWords?: { challenge: string; quote: string; source: string; url: string };
+  /** Any relationship between the client and AfriShield, shown on the card. */
+  disclosure?: string;
 };
 
 const CASES: CaseStudy[] = [
@@ -97,8 +103,22 @@ const CASES: CaseStudy[] = [
       'A page titled for one subject while describing another, found and flagged',
       'Thirteen broken links found, including an admin URL exposed in the public footer',
       'A regulatory wording risk identified in how the business described itself',
+      'Business information being aligned across the website, Facebook and the Google Business Profile',
     ],
-    results: [],
+    // Client-reported in the public Clutch review, not measured by us. Kept
+    // labelled that way until there is a dated Search Console baseline.
+    results: [
+      'Website traffic up 5–10% since the work began in September 2026, as reported by the client on Clutch, 29 October 2026. Not yet independently measured.',
+    ],
+    inTheirWords: {
+      challenge:
+        'Our website had issues with our niche keywords and phrases. We also had scattered information that kept our traffic down, resulting in zero clients.',
+      quote: 'AfriShield AI’s communication is excellent and spot-on.',
+      source: 'Benjamin Njock, CEO & Founder, Tataachi Network — verified Clutch review, 4.5/5',
+      url: 'https://clutch.co/profile/afrishield-ai',
+    },
+    disclosure:
+      'Tataachi Network and AfriShield AI share a founder, Benjamin Njock. We state it here so you can weigh this case accordingly.',
   },
   {
     client: 'NJ’s Accounting & Tax Services',
@@ -161,6 +181,21 @@ function CaseCard({ item }: { item: CaseStudy }) {
         ))}
       </ul>
 
+      {item.inTheirWords ? (
+        <div className="mt-6 border-t border-ink/10 pt-5">
+          <p className="eyebrow-light">In the client’s words</p>
+          <p className="mt-3 text-small body-dim-light">
+            <span className="font-semibold">The problem.</span> “{item.inTheirWords.challenge}”
+          </p>
+          <blockquote className="mt-3 text-small body-dim-light">“{item.inTheirWords.quote}”</blockquote>
+          <p className="mt-2 font-mono text-label uppercase text-ink/40">
+            <a href={item.inTheirWords.url} target="_blank" rel="noopener" className="hover:underline">
+              {item.inTheirWords.source}
+            </a>
+          </p>
+        </div>
+      ) : null}
+
       {/* Renders only once the client has cleared figures for publication. */}
       {item.results.length > 0 ? (
         <div className="mt-6 border-t border-ink/10 pt-5">
@@ -173,6 +208,12 @@ function CaseCard({ item }: { item: CaseStudy }) {
             ))}
           </ul>
         </div>
+      ) : null}
+
+      {item.disclosure ? (
+        <p className="mt-6 border-l-2 border-green-600 pl-3 text-small body-dim-light">
+          <span className="font-semibold">Disclosure.</span> {item.disclosure}
+        </p>
       ) : null}
     </article>
   );
@@ -228,11 +269,12 @@ export default function CaseStudiesPage() {
       <Section tone="light">
         <div className="mx-auto max-w-prose">
           <p className="eyebrow-light">Why there are no traffic charts here</p>
-          <h2 className="h2 mt-5">The results sections are empty, and that is deliberate</h2>
+          <h2 className="h2 mt-5">Most results sections are empty, and that is deliberate</h2>
           <p className="mt-6 text-lead body-dim-light">
-            A case study with real numbers is worth more than one without. We have not
-            published them for two reasons, and both will still be true next month if we
-            have not fixed them.
+            A case study with real numbers is worth more than one without. Apart from the
+            one figure Tataachi Network published itself on Clutch, we have not published
+            any, for two reasons that will still be true next month if we have not fixed
+            them.
           </p>
           <p className="mt-5 text-body body-dim-light">
             First, client performance data belongs to the client. It gets published when

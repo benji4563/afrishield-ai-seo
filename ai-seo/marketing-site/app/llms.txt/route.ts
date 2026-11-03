@@ -1,6 +1,7 @@
 import { POSTS } from '@/lib/posts';
 import { CITIES } from '@/lib/cities';
-import { SITE_URL } from '@/lib/site';
+import { SITE, SITE_URL } from '@/lib/site';
+import { CLUTCH_PROFILE_URL, GOOGLE_PROFILE_URL, REVIEW_TOTALS } from '@/lib/testimonials';
 
 /**
  * /llms.txt — a machine-readable map of the site for LLMs and AI answer
@@ -66,7 +67,7 @@ const PAGES: { path: string; title: string; desc: string }[] = [
   {
     path: '/case-studies',
     title: 'Case studies',
-    desc: 'Worked examples and results from AfriShield AI engagements.',
+    desc: 'Four engagements in Cameroon and the US: what shipped on each, the client’s own words where published, and why most results sections are still empty.',
   },
   {
     path: '/contact',
@@ -108,6 +109,15 @@ ${cityLines}
 
 ## Blog — guides and answers
 ${blogLines}
+
+## Reviews and profiles
+Read the reviews on the platforms themselves; the figures below were current on ${REVIEW_TOTALS.asOf}.
+- [Google Business Profile](${GOOGLE_PROFILE_URL}): ${REVIEW_TOTALS.google.rating}/5 from ${REVIEW_TOTALS.google.count} reviews
+- [Clutch](${CLUTCH_PROFILE_URL}): ${REVIEW_TOTALS.clutch.rating}/5 from ${REVIEW_TOTALS.clutch.count} verified review (Tataachi Network, which shares a founder with AfriShield AI)
+${SITE.profiles
+  .filter((url) => url !== GOOGLE_PROFILE_URL && url !== CLUTCH_PROFILE_URL)
+  .map((url) => `- ${url}`)
+  .join('\n')}
 
 ## Contact
 - Email: ${'benji@afrishieldai.com'}
