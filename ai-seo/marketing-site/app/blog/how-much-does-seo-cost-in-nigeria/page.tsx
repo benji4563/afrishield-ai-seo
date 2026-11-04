@@ -156,7 +156,7 @@ export default function Post() {
           in-body links from this post to them —
             row 35 /blog/how-long-does-seo-take-in-nigeria  (from #break-even, ramp months)
             row 33 /blog/how-to-appear-on-google-maps-in-lagos — DONE 2026-10-12 (#dont-pay)
-            row 43 /blog/best-seo-agency-in-nigeria          (from #before-signing)
+            row 43 /blog/best-seo-agency-in-nigeria — DONE 2026-11-04 (#before-signing)
             row 44 /blog/digital-marketing-vs-seo-for-nigerian-businesses (from #dont-pay)
         */}
 
@@ -488,7 +488,13 @@ export default function Post() {
         <p>
           Before signing with any SEO provider in Nigeria, ask five questions: what publishes
           each month, which exchange rate applies, who owns the domain and hosting, how
-          WhatsApp and phone enquiries are tracked, and what you keep if you leave.
+          WhatsApp and phone enquiries are tracked, and what you keep if you leave. Before
+          you get that far, the checks for narrowing down a field of self-declared number
+          ones are in{' '}
+          <a href="/blog/best-seo-agency-in-nigeria">
+            how to judge the best SEO agency in Nigeria
+          </a>
+          .
         </p>
 
         <ol>

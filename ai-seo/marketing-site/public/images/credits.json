@@ -468,5 +468,17 @@
     "photographerUrl": "https://www.pexels.com/@ademola-adeola-2148696501",
     "alt": "Bustling street market in Lagos, Nigeria with people and rickshaws.",
     "avgColor": "#65604D"
+  },
+  {
+    "slot": "blog-best-seo-agency-in-nigeria",
+    "file": "images/blog-best-seo-agency-in-nigeria.webp",
+    "source": "Pexels",
+    "query": "nigerian business meeting office",
+    "pexelsId": 30689114,
+    "pexelsUrl": "https://www.pexels.com/photo/team-collaboration-meeting-in-lagos-office-30689114/",
+    "photographer": "Ninthgrid",
+    "photographerUrl": "https://www.pexels.com/@ninthgrid-2149521550",
+    "alt": "Three colleagues in a Lagos office looking at a laptop together while one points at the screen.",
+    "avgColor": "#B9A793"
   }
 ]

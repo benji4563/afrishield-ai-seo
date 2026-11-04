@@ -170,7 +170,7 @@ on, which makes them the lowest-risk rows in the file.
 | 40 | how to check if chatgpt recommends your business in africa | AF — GEO diagnostic (Africa) | `gsc-evidenced` — `how-to-rank-on-chatgpt` holds 40 impressions; Africa-qualified cut ties it to `/ai-visibility-check`. | claimed |
 | 41 | seo company accra ghana | GH — Ghana commercial | `gsc-evidenced` — Ghana ranks pos 7.0 already on 2 impressions. Commercial, direct fit to `/ai-seo/accra`. | claimed |
 | 42 | why is my business not showing on google maps nigeria | N — Nigeria problem-aware | `serp-verified` — high-intent troubleshooting query, thin local competition, natural bridge to GBP work. | claimed |
-| 43 | best seo agency in nigeria | N — Nigeria commercial (head) | `serp-verified` — contested by Clutch/TopSEOs directories plus local agencies. Hard but valuable; write as an honest comparative guide per skill B.8, not a self-promotion piece. | queued |
+| 43 | best seo agency in nigeria | N — Nigeria commercial (head) | `serp-verified` — contested by Clutch/TopSEOs directories plus local agencies. Hard but valuable; write as an honest comparative guide per skill B.8, not a self-promotion piece. | claimed |
 | 44 | digital marketing vs seo for nigerian businesses | N — Nigeria comparison | `gsc-evidenced` — `seo vs google ads nigeria` already surfaces this domain at pos 31 on a single impression. Proven Nigerian demand shape. | queued |
 | 45 | how to rank on google in kenya | K — Kenya how-to | `needs-volume` — on-strategy, confirm with DataForSEO before writing. | candidate |
 | 46 | seo for hotels in kenya | K — Kenya × tourism | `needs-volume` — confirm with DataForSEO. | candidate |
@@ -323,3 +323,4 @@ periodically; promote to the table above once they show real volume.
 | how to check if chatgpt recommends your business in africa | `/blog/how-to-check-if-chatgpt-recommends-your-business-in-africa` | 2026-10-29 |
 | seo company accra ghana | `/blog/seo-company-accra-ghana` | 2026-10-30 |
 | why is my business not showing on google maps nigeria | `/blog/why-is-my-business-not-showing-on-google-maps-nigeria` | 2026-11-02 |
+| best seo agency in nigeria | `/blog/best-seo-agency-in-nigeria` | 2026-11-04 |

@@ -50,6 +50,7 @@ reconcile.
 | how to check if chatgpt recommends your business in africa | AF — GEO diagnostic (Africa) | `/blog/how-to-check-if-chatgpt-recommends-your-business-in-africa` | 2026-10-29 | Live |
 | seo company accra ghana | GH — Ghana commercial | `/blog/seo-company-accra-ghana` | 2026-10-30 | Live |
 | why is my business not showing on google maps nigeria | N — Nigeria problem-aware | `/blog/why-is-my-business-not-showing-on-google-maps-nigeria` | 2026-11-02 | Live |
+| best seo agency in nigeria | N — Nigeria commercial (head) | `/blog/best-seo-agency-in-nigeria` | 2026-11-04 | Live |
 
 ## Deliberately not targeted
 
