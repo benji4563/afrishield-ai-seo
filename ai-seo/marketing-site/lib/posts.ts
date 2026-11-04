@@ -58,7 +58,9 @@ export type PostMeta = {
 };
 
 /** Default social share image used when a page/post has none of its own. */
-export const DEFAULT_OG_IMAGE = '/images/home-band.jpg';
+// The daylight Lagos skyline from the homepage hero (2026-11-04), cropped to
+// 1200x630 so WhatsApp, LinkedIn and Facebook previews match the site.
+export const DEFAULT_OG_IMAGE = '/images/og-home-lagos.jpg';
 
 /** OG/Twitter image list for a post — its own image, or the site default. */
 export function postOgImages(post: PostMeta) {

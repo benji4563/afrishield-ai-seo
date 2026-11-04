@@ -1,9 +1,53 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/Button';
 import { Bluf } from '@/components/ui/Bluf';
+import { SITE } from '@/lib/site';
+import { GOOGLE_PROFILE_URL, REVIEW_TOTALS } from '@/lib/testimonials';
 
 /** The engines our work targets. A statement of scope, not a ranking claim. */
 const ENGINES = ['Google', 'ChatGPT', 'Perplexity', 'Gemini', 'Claude'];
+
+/**
+ * Thin proof row under the hero. Every item links to something public and
+ * checkable; nothing here is a claim the visitor has to take on trust.
+ */
+const DIRECTORIES = [
+  { name: 'Clutch', url: 'https://clutch.co/profile/afrishield-ai' },
+  { name: 'GoodFirms', url: 'https://www.goodfirms.co/company/afrishield-ai' },
+  { name: 'TechBehemoths', url: 'https://techbehemoths.com/company/afrishield-ai' },
+].filter((d) => SITE.profiles.includes(d.url));
+
+function ProofRow() {
+  const link = 'underline-offset-4 hover:text-ink hover:underline';
+  return (
+    <div className="border-y border-ink/10 py-5">
+      <ul className="flex flex-wrap items-center gap-x-8 gap-y-3 font-mono text-label uppercase text-ink/60">
+        <li>
+          <a href={GOOGLE_PROFILE_URL} target="_blank" rel="noopener" className={link}>
+            <span className="text-green-600" aria-hidden="true">★</span> {REVIEW_TOTALS.google.rating} on
+            Google · {REVIEW_TOTALS.google.count} reviews
+          </a>
+        </li>
+        <li>
+          Listed on{' '}
+          {DIRECTORIES.map((d, i) => (
+            <span key={d.name}>
+              {i > 0 ? ' · ' : ''}
+              <a href={d.url} target="_blank" rel="noopener" className={link}>
+                {d.name}
+              </a>
+            </span>
+          ))}
+        </li>
+        <li>
+          <a href="/blog/barometre-ia-cameroun-2026" className={link}>
+            Authors of the Baromètre IA Cameroun 2026
+          </a>
+        </li>
+      </ul>
+    </div>
+  );
+}
 
 function EngineCard({ className }: { className: string }) {
   return (
@@ -38,19 +82,20 @@ export function Hero() {
        */}
       <div className="relative isolate overflow-hidden pb-[56px] pt-[132px] lg:pb-[120px] lg:pt-[160px]">
         {/*
-         * On large screens the photo fills only the right 62%, so the Civic
+         * On large screens the photo fills only the right 55-62%, so the Civic
          * Centre tower lands beside the headline rather than behind it; a
          * full-width photo put the busiest part of the skyline under the H1.
-         * Its left edge feathers into the cream page colour.
+         * Its left edge feathers into the cream page colour. overflow-hidden keeps
+         * the load-in zoom (scale 1.06) from spilling past that feather.
          */}
-        <div className="absolute inset-y-0 right-0 -z-20 hidden w-[62%] lg:block">
+        <div className="absolute inset-y-0 right-0 -z-20 hidden overflow-hidden lg:block lg:w-[55%] xl:w-[62%]">
           <Image
             src="/images/home-hero-lagos.webp"
             alt="The Lagos skyline in daylight across the lagoon, with the Civic Centre tower and a speedboat on the water."
             fill
             priority
-            sizes="(min-width: 1024px) 62vw, 100vw"
-            className="object-cover object-[50%_40%]"
+            sizes="(min-width: 1280px) 62vw, (min-width: 1024px) 55vw, 100vw"
+            className="animate-hero-settle object-cover object-[50%_40%]"
           />
           <div
             aria-hidden="true"
@@ -94,8 +139,9 @@ export function Hero() {
               </p>
             </div>
 
-            {/* Large screens: frosted card floating over the skyline. */}
-            <EngineCard className="hidden lg:absolute lg:bottom-[56px] lg:right-[max(70px,calc((100vw-1264px)/2+70px))] lg:block" />
+            {/* Frosted card: floats over the skyline from xl up; below the buttons on lg,
+                where floating it would collide with the small print. */}
+            <EngineCard className="hidden lg:mt-10 lg:block xl:absolute xl:bottom-[56px] xl:right-[max(70px,calc((100vw-1264px)/2+70px))] xl:mt-0" />
 
             {/*
              * Below lg the text spans the whole width, so a photo behind it
@@ -103,13 +149,13 @@ export function Hero() {
              * its own full-bleed, full-colour band under the buttons. Same src
              * and sizes as the desktop image, so the browser fetches it once.
              */}
-            <div className="relative -mx-[30px] mt-12 aspect-[4/3] md:-mx-[70px] lg:hidden">
+            <div className="relative -mx-[30px] mt-12 aspect-[4/3] overflow-hidden md:-mx-[70px] lg:hidden">
               <Image
                 src="/images/home-hero-lagos.webp"
                 alt="The Lagos skyline in daylight across the lagoon, with the Civic Centre tower and a speedboat on the water."
                 fill
-                sizes="(min-width: 1024px) 62vw, 100vw"
-                className="object-cover object-[45%_40%]"
+                sizes="(min-width: 1280px) 62vw, (min-width: 1024px) 55vw, 100vw"
+                className="animate-hero-settle object-cover object-[45%_40%]"
               />
             </div>
             <EngineCard className="mt-5 lg:hidden" />
@@ -120,7 +166,8 @@ export function Hero() {
       <div className="container-page">
         <div className="container-inner">
           {/* GEO answer block — factual, entity-dense, in the server HTML. */}
-          <Bluf className="max-w-[70ch]" tone="light">
+          <ProofRow />
+          <Bluf className="mt-10 max-w-[70ch]" tone="light">
             AfriShield AI provides AI SEO and local search optimisation for businesses
             across West, Central, East, and Southern Africa. We handle keyword research,
             content, technical SEO, and visibility in AI answer engines — ChatGPT, Claude,

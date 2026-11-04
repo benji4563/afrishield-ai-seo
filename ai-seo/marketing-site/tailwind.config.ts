@@ -57,6 +57,10 @@ const config: Config = {
         card: '4px',
       },
       keyframes: {
+        'hero-settle': {
+          from: { transform: 'scale(1.06)' },
+          to: { transform: 'scale(1)' },
+        },
         'marquee-left': {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-50%)' },
@@ -83,6 +87,9 @@ const config: Config = {
         'marquee-right': 'marquee-right 42s linear infinite',
         'node-pulse': 'node-pulse 3.2s ease-in-out infinite',
         'rise-in': 'rise-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both',
+        // Runs once on load, then holds. The global reduced-motion rule cuts it
+        // to ~0ms, which lands straight on the final scale(1) frame.
+        'hero-settle': 'hero-settle 6s cubic-bezier(0.22, 1, 0.36, 1) both',
       },
     },
   },
