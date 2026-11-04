@@ -480,5 +480,15 @@
     "photographerUrl": "https://www.pexels.com/@ninthgrid-2149521550",
     "alt": "Three colleagues in a Lagos office looking at a laptop together while one points at the screen.",
     "avgColor": "#B9A793"
+  },
+  {
+    "slot": "home-hero-lagos",
+    "file": "images/home-hero-lagos.webp",
+    "query": "lagos skyline",
+    "pexelsId": 37405043,
+    "pexelsUrl": "https://www.pexels.com/photo/modern-lagos-skyline-with-watercraft-in-lagoon-37405043/",
+    "photographer": "Fawaz Onakoya",
+    "photographerUrl": "https://www.pexels.com/@farscalgraphy",
+    "alt": "The Lagos skyline in daylight across the lagoon, with the Civic Centre tower and a speedboat on the water."
   }
 ]
