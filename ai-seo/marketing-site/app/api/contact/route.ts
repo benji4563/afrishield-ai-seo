@@ -1,15 +1,27 @@
 import { NextResponse } from 'next/server';
+import { SITE } from '@/lib/site';
 
 /**
- * Lead capture. HubSpot is the intended destination (see the folder CLAUDE.md)
- * but no token is provisioned yet, so the call is skipped gracefully rather
- * than failing the submission. Set HUBSPOT_TOKEN to switch it on — nothing
- * else needs to change.
+ * Lead capture for every site form (/contact, /ai-visibility-check, /review),
+ * forwarded to HubSpot as a contact.
+ *
+ * **Why only standard HubSpot properties.** Until 2026-11-05 this route also
+ * sent `afrishield_tier_interest` and `afrishield_source_page`, two custom
+ * properties that were never created in the portal. HubSpot rejects the whole
+ * create when any property is unknown, so every lead failed, the visitor still
+ * saw the thank-you page, and the only copy was a server log Vercel's Hobby
+ * plan keeps for one hour. Tier, source page, business type and WhatsApp now
+ * travel inside `message`, which exists on every portal.
+ *
+ * **Why a failure is shown to the visitor.** A lead that cannot be saved now
+ * returns an error with the WhatsApp number and email, so the visitor can send
+ * it another way, instead of a thank-you page for a message nobody received.
  */
 
 type Payload = {
   name?: string;
   email?: string;
+  phone?: string;
   company?: string;
   website?: string;
   tier?: string;
@@ -20,6 +32,10 @@ type Payload = {
 };
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// Digits, spaces and the usual separators; at least 7 digits (checked below).
+const PHONE_PATTERN = /^\+?[\d\s().-]{7,20}$/;
+
+const FALLBACK = `We could not save that just now. Please send it on WhatsApp (${SITE.phone}) or email ${SITE.email}, and we will reply the same way.`;
 
 export async function POST(request: Request) {
   let body: Payload;
@@ -31,82 +47,99 @@ export async function POST(request: Request) {
   }
 
   const name = body.name?.trim();
-  const email = body.email?.trim();
-  // The visibility-check form sends a business type instead of free text, so a
-  // message is only required when neither is present.
-  const details = [
-    body.businessType?.trim() ? `Business type: ${body.businessType.trim()}` : '',
-    body.whatsapp?.trim() ? `WhatsApp: ${body.whatsapp.trim()}` : '',
+  const email = body.email?.trim() ?? '';
+  // The contact form sends `phone`, the visibility check sends `whatsapp`.
+  const phone = (body.phone?.trim() || body.whatsapp?.trim()) ?? '';
+
+  if (!name) {
+    return NextResponse.json({ error: 'Add your name so we know who to reply to.' }, { status: 400 });
+  }
+
+  if (!email && !phone) {
+    return NextResponse.json(
+      { error: 'Add a WhatsApp or phone number, or an email, so we can reach you.' },
+      { status: 400 },
+    );
+  }
+
+  if (email && !EMAIL_PATTERN.test(email)) {
+    return NextResponse.json(
+      { error: 'That email address does not look complete. Check it and resend.' },
+      { status: 400 },
+    );
+  }
+
+  if (phone && (!PHONE_PATTERN.test(phone) || phone.replace(/\D/g, '').length < 7)) {
+    return NextResponse.json(
+      { error: 'That number does not look complete. Include the country code, e.g. +237.' },
+      { status: 400 },
+    );
+  }
+
+  const sourcePage = body.source?.trim() || request.headers.get('referer') || '/contact';
+
+  // Everything that is not a standard HubSpot field rides in `message`, so a
+  // missing custom property can never sink a lead again.
+  const message = [
+    body.message?.trim(),
+    [
+      body.businessType?.trim() ? `Business type: ${body.businessType.trim()}` : '',
+      body.tier?.trim() ? `Tier interest: ${body.tier.trim()}` : '',
+      phone ? `WhatsApp/phone: ${phone}` : '',
+      `Source: ${sourcePage}`,
+      `Received: ${new Date().toISOString()}`,
+    ]
+      .filter(Boolean)
+      .join('\n'),
   ]
     .filter(Boolean)
-    .join('\n');
-  const message = [body.message?.trim(), details].filter(Boolean).join('\n\n');
+    .join('\n\n');
 
-  if (!name || !email || !message) {
-    return NextResponse.json(
-      { error: 'Name, email and a short description are all needed before we can reply.' },
-      { status: 400 },
-    );
-  }
-
-  if (!EMAIL_PATTERN.test(email)) {
-    return NextResponse.json(
-      { error: 'That email address does not look complete — check it and resend.' },
-      { status: 400 },
-    );
-  }
-
-  const lead = {
-    name,
-    email,
-    company: body.company?.trim() ?? '',
-    website: body.website?.trim() ?? '',
-    tier: body.tier?.trim() ?? '',
+  const properties: Record<string, string> = {
+    firstname: name,
     message,
-    // An explicit `source` from the form wins over the referer, which browsers
-    // can strip. Keeps leads attributable to the page that captured them.
-    sourcePage: body.source?.trim() || request.headers.get('referer') || '/contact',
-    receivedAt: new Date().toISOString(),
+    hs_lead_status: 'NEW',
   };
+  if (email) properties.email = email;
+  if (phone) properties.phone = phone;
+  if (body.company?.trim()) properties.company = body.company.trim();
+  if (body.website?.trim()) properties.website = body.website.trim();
 
+  const lead = JSON.stringify({ name, email, phone, sourcePage });
   const token = process.env.HUBSPOT_TOKEN;
 
   if (!token) {
-    console.info('[contact] HUBSPOT_TOKEN unset — lead accepted, not forwarded:', lead.email);
-    return NextResponse.json({ ok: true, forwarded: false });
+    console.error('[contact] HUBSPOT_TOKEN unset, lead NOT saved:', lead, message);
+    return NextResponse.json({ error: FALLBACK }, { status: 503 });
   }
 
+  const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' };
+
   try {
-    const response = await fetch('https://api.hubapi.com/crm/v3/objects/contacts', {
+    let response = await fetch('https://api.hubapi.com/crm/v3/objects/contacts', {
       method: 'POST',
-      headers: {
-        Authorization: `Bearer ${token}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        properties: {
-          email: lead.email,
-          firstname: lead.name,
-          company: lead.company,
-          website: lead.website,
-          message: lead.message,
-          hs_lead_status: 'NEW',
-          afrishield_tier_interest: lead.tier,
-          afrishield_source_page: lead.sourcePage,
-        },
-      }),
+      headers,
+      body: JSON.stringify({ properties }),
     });
 
-    if (!response.ok) {
-      // The lead is still captured in logs — never lose it to a CRM outage.
-      const errorBody = await response.json().catch(() => null);
-      console.error('[contact] HubSpot rejected the lead:', response.status, lead.email, errorBody);
-      return NextResponse.json({ ok: true, forwarded: false });
+    // A returning visitor's email already exists: update that contact with the
+    // new message rather than dropping it.
+    if (response.status === 409 && email) {
+      response = await fetch(
+        `https://api.hubapi.com/crm/v3/objects/contacts/${encodeURIComponent(email)}?idProperty=email`,
+        { method: 'PATCH', headers, body: JSON.stringify({ properties }) },
+      );
     }
 
-    return NextResponse.json({ ok: true, forwarded: true });
+    if (!response.ok) {
+      const errorBody = await response.json().catch(() => null);
+      console.error('[contact] HubSpot rejected the lead:', response.status, lead, message, errorBody);
+      return NextResponse.json({ error: FALLBACK }, { status: 502 });
+    }
+
+    return NextResponse.json({ ok: true });
   } catch (error) {
-    console.error('[contact] HubSpot request failed:', error, lead.email);
-    return NextResponse.json({ ok: true, forwarded: false });
+    console.error('[contact] HubSpot request failed:', error, lead, message);
+    return NextResponse.json({ error: FALLBACK }, { status: 502 });
   }
 }

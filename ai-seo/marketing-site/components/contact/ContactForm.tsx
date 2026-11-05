@@ -6,8 +6,15 @@ import { useState } from 'react';
 type Status = 'idle' | 'sending' | 'error';
 
 const FIELD =
-  'w-full border border-white/15 bg-white/[0.03] px-4 py-3 text-body text-white placeholder:text-white/30 focus:border-green-300 focus:outline-none';
+  'w-full border border-ink/15 bg-white px-4 py-3.5 text-body text-ink placeholder:text-ink/35 focus:border-green-600 focus:outline-none focus:ring-2 focus:ring-green-600/20';
+const LABEL = 'block text-small font-medium text-ink';
 
+/**
+ * Four fields, two required (2026-11-05 rebuild). Name, plus a WhatsApp number
+ * OR an email: most prospects in Cameroon and Nigeria answer WhatsApp first, so
+ * forcing an email lost them. The tier dropdown and the required "what do you
+ * sell" essay are gone; the call settles both.
+ */
 export function ContactForm() {
   const router = useRouter();
   const [status, setStatus] = useState<Status>('idle');
@@ -15,25 +22,30 @@ export function ContactForm() {
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const data = Object.fromEntries(new FormData(event.currentTarget)) as Record<string, string>;
+
+    if (!data.phone?.trim() && !data.email?.trim()) {
+      setStatus('error');
+      setMessage('Add a WhatsApp number or an email, so we know where to reply.');
+      return;
+    }
+
     setStatus('sending');
     setMessage('');
-
-    const data = Object.fromEntries(new FormData(event.currentTarget));
 
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, source: '/contact' }),
       });
 
       if (!response.ok) {
         const body = await response.json().catch(() => ({}));
         setStatus('error');
-        // Errors say what went wrong and how to fix it — never just "failed".
         setMessage(
           body.error ??
-            'That did not send. Check the required fields and try again, or email benji@afrishieldai.com directly.',
+            'That did not send. Try again, or message us on WhatsApp or email benji@afrishieldai.com.',
         );
         return;
       }
@@ -42,71 +54,64 @@ export function ContactForm() {
     } catch {
       setStatus('error');
       setMessage(
-        'The request could not reach us — usually a network drop. Try again, or email benji@afrishieldai.com.',
+        'The request could not reach us, usually a network drop. Try again, or message us on WhatsApp.',
       );
     }
   }
 
   return (
     <form onSubmit={onSubmit} className="space-y-5">
-      <div className="grid gap-5 sm:grid-cols-2">
-        <div>
-          <label htmlFor="name" className="block font-mono text-label uppercase text-white/50">
-            Your name
-          </label>
-          <input id="name" name="name" required autoComplete="name" className={`${FIELD} mt-2.5`} />
-        </div>
-        <div>
-          <label htmlFor="email" className="block font-mono text-label uppercase text-white/50">
-            Email
-          </label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            required
-            autoComplete="email"
-            className={`${FIELD} mt-2.5`}
-          />
-        </div>
-      </div>
-
-      <div className="grid gap-5 sm:grid-cols-2">
-        <div>
-          <label htmlFor="company" className="block font-mono text-label uppercase text-white/50">
-            Business name
-          </label>
-          <input id="company" name="company" autoComplete="organization" className={`${FIELD} mt-2.5`} />
-        </div>
-        <div>
-          <label htmlFor="website" className="block font-mono text-label uppercase text-white/50">
-            Website (if you have one)
-          </label>
-          <input id="website" name="website" inputMode="url" className={`${FIELD} mt-2.5`} />
-        </div>
+      <div>
+        <label htmlFor="name" className={LABEL}>
+          Your name
+        </label>
+        <input id="name" name="name" required autoComplete="name" className={`${FIELD} mt-2`} />
       </div>
 
       <div>
-        <label htmlFor="tier" className="block font-mono text-label uppercase text-white/50">
-          Which tier are you looking at?
+        <label htmlFor="phone" className={LABEL}>
+          WhatsApp number
         </label>
-        <select id="tier" name="tier" defaultValue="Not sure yet" className={`${FIELD} mt-2.5`}>
-          <option>Not sure yet</option>
-          <option>Foundation — $150/mo</option>
-          <option>Engine — $400/mo</option>
-          <option>Operation — $900/mo</option>
-        </select>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          inputMode="tel"
+          autoComplete="tel"
+          placeholder="+237 6XX XX XX XX"
+          className={`${FIELD} mt-2`}
+        />
       </div>
 
       <div>
-        <label htmlFor="message" className="block font-mono text-label uppercase text-white/50">
-          What do you sell, and to whom?
+        <label htmlFor="email" className={LABEL}>
+          Email <span className="font-normal text-ink/50">(or leave blank if you gave WhatsApp)</span>
         </label>
-        <textarea id="message" name="message" rows={5} required className={`${FIELD} mt-2.5`} />
+        <input
+          id="email"
+          name="email"
+          type="email"
+          autoComplete="email"
+          placeholder="you@business.com"
+          className={`${FIELD} mt-2`}
+        />
+      </div>
+
+      <div>
+        <label htmlFor="company" className={LABEL}>
+          Your business <span className="font-normal text-ink/50">(optional)</span>
+        </label>
+        <input
+          id="company"
+          name="company"
+          autoComplete="organization"
+          placeholder="Name, or what you do and where"
+          className={`${FIELD} mt-2`}
+        />
       </div>
 
       {status === 'error' ? (
-        <p role="alert" className="border border-white/20 bg-white/[0.04] p-4 text-small text-white">
+        <p role="alert" className="rounded-[10px] border border-red-300 bg-red-50 p-4 text-small text-red-900">
           {message}
         </p>
       ) : null}
@@ -114,13 +119,13 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={status === 'sending'}
-        className="inline-flex h-10 items-center justify-center bg-green-300 px-6 font-mono text-label uppercase text-ink transition-colors hover:bg-green-200 disabled:opacity-60"
+        className="flex h-14 w-full items-center justify-center bg-green-600 px-6 font-mono text-label uppercase text-white transition-colors hover:bg-green-500 disabled:opacity-60"
       >
-        {status === 'sending' ? 'Sending' : 'Send message'}
+        {status === 'sending' ? 'Sending…' : 'Get my free visibility review'}
       </button>
 
-      <p className="text-small text-white/40">
-        We reply within one working day. No sequence, no newsletter — just a reply.
+      <p className="text-center text-small text-ink/55">
+        A person replies within one working day. No newsletter, no sales sequence.
       </p>
     </form>
   );
