@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { readRefInBrowser } from '@/lib/affiliate';
 
 type Status = 'idle' | 'sending' | 'error';
 
@@ -37,7 +38,7 @@ export function ContactForm() {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...data, source: '/contact' }),
+        body: JSON.stringify({ ...data, source: '/contact', ref: readRefInBrowser() }),
       });
 
       if (!response.ok) {
