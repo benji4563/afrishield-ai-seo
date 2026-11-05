@@ -490,5 +490,17 @@
     "photographer": "Fawaz Onakoya",
     "photographerUrl": "https://www.pexels.com/@farscalgraphy",
     "alt": "The Lagos skyline in daylight across the lagoon, with the Civic Centre tower and a speedboat on the water."
+  },
+  {
+    "slot": "blog-digital-marketing-vs-seo-for-nigerian-businesses",
+    "file": "images/blog-digital-marketing-vs-seo-for-nigerian-businesses.webp",
+    "source": "Pexels",
+    "query": "nigerian business owner phone",
+    "pexelsId": 10376238,
+    "pexelsUrl": "https://www.pexels.com/photo/man-with-braided-hair-leaning-over-desk-while-talking-on-the-phone-10376238/",
+    "photographer": "RDNE Stock project",
+    "photographerUrl": "https://www.pexels.com/@rdne",
+    "alt": "A man in a suit on a phone call leans over his desk and laptop, with a written plan for the day on the whiteboard behind him.",
+    "avgColor": "#AAA2A0"
   }
 ]

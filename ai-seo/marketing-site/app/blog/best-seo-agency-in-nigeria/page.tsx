@@ -412,7 +412,12 @@ export default function Post() {
         <ul>
           <li>
             <strong>You need customers in weeks.</strong> That is a paid-search job, and the
-            trade-offs are in <a href="/blog/seo-vs-google-ads">SEO vs Google Ads</a>.
+            trade-offs are in <a href="/blog/seo-vs-google-ads">SEO vs Google Ads</a>. If your
+            customers find you by scrolling rather than searching, read{' '}
+            <a href="/blog/digital-marketing-vs-seo-for-nigerian-businesses">
+              digital marketing vs SEO for Nigerian businesses
+            </a>{' '}
+            first.
           </li>
           <li>
             <strong>You cannot commit past month four.</strong> The early months are close to

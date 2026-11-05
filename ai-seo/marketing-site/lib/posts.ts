@@ -69,6 +69,57 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'digital-marketing-vs-seo-for-nigerian-businesses',
+    title: 'Digital marketing vs SEO for Nigerian businesses: which channel does which job',
+    cardTitle: 'Digital marketing vs SEO for Nigerian businesses',
+    metaTitle: 'Digital Marketing vs SEO in Nigeria',
+    description:
+      'Digital marketing vs SEO for Nigerian businesses: SEO is one channel inside digital marketing. Which channel suits which business, and in what order.',
+    lede:
+      'SEO is one channel within digital marketing, so the real choice for a Nigerian business is which digital channel to put first. This guide compares SEO, Google Ads, paid and organic social media, and WhatsApp, shows each platform’s 2026 advertising reach in Nigeria, and sets out which kinds of business should lead with search and which with social media.',
+    category: 'Money',
+    published: '2026-11-05',
+    modified: '2026-11-05',
+    readingMinutes: 9,
+    primaryKeyword: 'digital marketing vs seo for nigerian businesses',
+    image: {
+      src: '/images/blog-digital-marketing-vs-seo-for-nigerian-businesses.webp',
+      alt: 'A man in a suit on a phone call leans over his desk and laptop, with a written plan for the day on the whiteboard behind him.',
+    },
+    linkedin: `Every Nigerian business owner has received this proposal. "360-degree digital marketing." Twenty Instagram posts a month. The word synergy, twice, on page one.
+
+Then a second agency sends an SEO proposal and the question begins: digital marketing or SEO?
+
+It is the wrong question. SEO is part of digital marketing. Asking which is better is like asking whether Balogun Market is better than the tomato stall inside it. The market has more things. The stall may have the one thing you came for.
+
+The question that actually decides it: do your customers search for you, or do they scroll past you?
+
+A clinic, school, law firm or haulage company is searched for. Nobody discovers they need a haulage company on TikTok. They need one on a Wednesday and they Google it. Lead with SEO.
+
+A cake shop, a fashion label or an event is discovered. Nobody searches for a cake design they have not seen yet. Lead with social media.
+
+Some numbers worth knowing, from DataReportal's Digital 2026 Nigeria report, based on each platform's own ad tools:
+
+TikTok ad reach: 47.8 million adults.
+Facebook: 38.0 million.
+YouTube: 30.5 million.
+Instagram: 10.0 million, about a quarter of Facebook.
+
+So if your entire plan is Instagram, you are talking to a smaller room than you think.
+
+Whichever you lead with, complete your Google Business Profile. It is free, and the person who saw your TikTok will search your name before ordering.
+
+We sell SEO, so telling some of you to start with TikTok is a little like a baker recommending the bread from the shop next door. It is still the right advice.
+
+The full guide, with a channel-by-channel table and a sensible order for a small budget:
+
+https://afrishieldai.com/blog/digital-marketing-vs-seo-for-nigerian-businesses
+
+#Nigeria #DigitalMarketing #SEO #SmallBusiness #Lagos
+
+The twenty Instagram posts can wait. The synergy can wait longer.`,
+  },
+  {
     slug: 'best-seo-agency-in-nigeria',
     title: 'The best SEO agency in Nigeria: how to judge the claim, and who suits which business',
     cardTitle: 'How to find the best SEO agency in Nigeria',

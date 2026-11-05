@@ -171,7 +171,7 @@ on, which makes them the lowest-risk rows in the file.
 | 41 | seo company accra ghana | GH — Ghana commercial | `gsc-evidenced` — Ghana ranks pos 7.0 already on 2 impressions. Commercial, direct fit to `/ai-seo/accra`. | claimed |
 | 42 | why is my business not showing on google maps nigeria | N — Nigeria problem-aware | `serp-verified` — high-intent troubleshooting query, thin local competition, natural bridge to GBP work. | claimed |
 | 43 | best seo agency in nigeria | N — Nigeria commercial (head) | `serp-verified` — contested by Clutch/TopSEOs directories plus local agencies. Hard but valuable; write as an honest comparative guide per skill B.8, not a self-promotion piece. | claimed |
-| 44 | digital marketing vs seo for nigerian businesses | N — Nigeria comparison | `gsc-evidenced` — `seo vs google ads nigeria` already surfaces this domain at pos 31 on a single impression. Proven Nigerian demand shape. | queued |
+| 44 | digital marketing vs seo for nigerian businesses | N — Nigeria comparison | `gsc-evidenced` — `seo vs google ads nigeria` already surfaces this domain at pos 31 on a single impression. Proven Nigerian demand shape. | claimed |
 | 45 | how to rank on google in kenya | K — Kenya how-to | `needs-volume` — on-strategy, confirm with DataForSEO before writing. · engine pass 2026-11-05: no volume returned (ke/en) | candidate |
 | 46 | seo for hotels in kenya | K — Kenya × tourism | `needs-volume` — confirm with DataForSEO. · engine pass 2026-11-05: no volume returned (ke/en) | candidate |
 | 47 | comment apparaître sur google maps au cameroun | CM — Cameroon FR local | `needs-volume` — confirm with DataForSEO. **French.** · engine pass 2026-11-05: no volume returned (cm/fr) | candidate |
@@ -329,3 +329,4 @@ periodically; promote to the table above once they show real volume.
 | seo company accra ghana | `/blog/seo-company-accra-ghana` | 2026-10-30 |
 | why is my business not showing on google maps nigeria | `/blog/why-is-my-business-not-showing-on-google-maps-nigeria` | 2026-11-02 |
 | best seo agency in nigeria | `/blog/best-seo-agency-in-nigeria` | 2026-11-04 |
+| digital marketing vs seo for nigerian businesses | `/blog/digital-marketing-vs-seo-for-nigerian-businesses` | 2026-11-05 |

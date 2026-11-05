@@ -51,6 +51,7 @@ reconcile.
 | seo company accra ghana | GH — Ghana commercial | `/blog/seo-company-accra-ghana` | 2026-10-30 | Live |
 | why is my business not showing on google maps nigeria | N — Nigeria problem-aware | `/blog/why-is-my-business-not-showing-on-google-maps-nigeria` | 2026-11-02 | Live |
 | best seo agency in nigeria | N — Nigeria commercial (head) | `/blog/best-seo-agency-in-nigeria` | 2026-11-04 | Live |
+| digital marketing vs seo for nigerian businesses | N — Nigeria comparison | `/blog/digital-marketing-vs-seo-for-nigerian-businesses` | 2026-11-05 | Live |
 
 ## Deliberately not targeted
 
