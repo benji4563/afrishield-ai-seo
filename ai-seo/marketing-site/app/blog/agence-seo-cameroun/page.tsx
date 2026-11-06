@@ -203,7 +203,12 @@ export default function Post() {
           Deux traits ressortent de cette liste. D’abord, la plupart de ces agences font aussi
           de la création de site, de la publicité et de la gestion des réseaux sociaux : le
           référencement est souvent une ligne parmi d’autres, pas un métier à part entière.
-          Ensuite, beaucoup affichent un nombre d’avis vérifiés très faible, parfois zéro. Ce
+          Pour savoir quand une agence complète convient mieux qu’un spécialiste, voir notre
+          guide{' '}
+          <a href="/blog/agence-marketing-digital-douala">
+            pour choisir une agence de marketing digital à Douala
+          </a>
+          . Ensuite, beaucoup affichent un nombre d’avis vérifiés très faible, parfois zéro. Ce
           n’est pas un défaut en soi, le marché est jeune. Mais cela signifie que l’avis client
           ne suffit pas pour trier, et que les preuves doivent venir d’ailleurs.
         </p>

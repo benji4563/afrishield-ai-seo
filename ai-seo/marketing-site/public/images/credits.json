@@ -502,5 +502,17 @@
     "photographerUrl": "https://www.pexels.com/@rdne",
     "alt": "A man in a suit on a phone call leans over his desk and laptop, with a written plan for the day on the whiteboard behind him.",
     "avgColor": "#AAA2A0"
+  },
+  {
+    "slot": "blog-agence-marketing-digital-douala",
+    "file": "images/blog-agence-marketing-digital-douala.webp",
+    "source": "Pexels",
+    "query": "african marketing team laptop meeting",
+    "pexelsId": 3894376,
+    "pexelsUrl": "https://www.pexels.com/photo/women-smiling-at-the-camera-3894376/",
+    "photographer": "PICHA Stock",
+    "photographerUrl": "https://www.pexels.com/@picha-stock-2210122",
+    "alt": "Quatre femmes dans un bureau, trois debout et souriantes autour d’une collègue assise devant un ordinateur portable, avec des étagères de livres en arrière-plan.",
+    "avgColor": "#9F9096"
   }
 ]

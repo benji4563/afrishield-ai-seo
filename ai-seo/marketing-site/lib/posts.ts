@@ -69,6 +69,54 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'agence-marketing-digital-douala',
+    title:
+      'Agence marketing digital à Douala : agence complète ou spécialiste, et comment vérifier l’offre',
+    cardTitle: 'Agence marketing digital à Douala, le guide',
+    metaTitle: 'Agence marketing digital à Douala',
+    description:
+      'Agence marketing digital à Douala : quand prendre une agence complète, quand un spécialiste SEO suffit, quels comptes garder et quoi payer.',
+    lede:
+      'Une agence de marketing digital gère plusieurs canaux à la fois : site, réseaux sociaux, publicité Facebook et Google, contenu. Ce guide explique quand une entreprise de Douala a besoin d’une agence complète et quand un spécialiste du référencement suffit, quels comptes doivent rester à son nom, et pourquoi honoraires et budget publicitaire doivent être séparés.',
+    lang: 'fr',
+    category: 'Référencement local',
+    published: '2026-11-06',
+    modified: '2026-11-06',
+    readingMinutes: 9,
+    primaryKeyword: 'agence marketing digital douala',
+    image: {
+      src: '/images/blog-agence-marketing-digital-douala.webp',
+      alt: 'Quatre femmes dans un bureau, trois debout et souriantes autour d’une collègue assise devant un ordinateur portable, avec des étagères de livres en arrière-plan.',
+    },
+    linkedin: `Vingt publications par mois. Des milliers de vues. Des centaines de « j'aime ».
+
+Et quand on tape « meubles Douala » sur Google, le showroom n'apparaît nulle part.
+
+Si vous dirigez une entreprise à Douala, ce rapport mensuel vous dit peut-être quelque chose.
+
+Choisir entre une agence de marketing digital complète et un spécialiste, c'est comme choisir entre un médecin généraliste et un dentiste. Le généraliste voit tout le corps. Pour une rage de dents, on va quand même chez le dentiste.
+
+La question qui tranche : vos clients vous cherchent-ils, ou vous découvrent-ils ?
+
+Une clinique, un transitaire, un cabinet comptable sont cherchés sur Google. Commencez par le référencement et la fiche Google.
+
+Une pâtisserie, une marque de mode, un événement sont découverts dans le fil. Commencez par les réseaux sociaux et la publicité.
+
+Un repère chiffré, tiré du rapport Digital 2026 de DataReportal, d'après les outils publicitaires des plateformes fin 2025 : au Cameroun, la publicité Facebook atteint 5,90 millions de personnes. Instagram, 611 000. Environ un dixième.
+
+Et dans tous les cas, la page Facebook, le compte publicitaire, le nom de domaine et la fiche Google restent au nom de l'entreprise. L'agence reçoit un accès partenaire, pas la propriété. Les honoraires et le budget publicitaire sont deux lignes séparées sur la facture.
+
+Précision honnête : nous sommes un spécialiste du référencement, pas une agence complète. Nous ne gérons pas vos publications Instagram, et nous l'avons écrit dans l'article avant que quiconque ne le demande. Il paraît que c'est une forme de publicité.
+
+Le guide complet, en français : le tableau « quelle entreprise a besoin de quoi », les comptes à garder, les six questions à poser avant de signer.
+
+https://afrishieldai.com/blog/agence-marketing-digital-douala
+
+#Douala #Cameroun #MarketingDigital #PME #SEO
+
+Les « j'aime » font plaisir. Les appels paient le loyer.`,
+  },
+  {
     slug: 'digital-marketing-vs-seo-for-nigerian-businesses',
     title: 'Digital marketing vs SEO for Nigerian businesses: which channel does which job',
     cardTitle: 'Digital marketing vs SEO for Nigerian businesses',
