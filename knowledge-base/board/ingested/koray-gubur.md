@@ -32,3 +32,11 @@ wiki entry for this video reflects. A future `deep` pass on this video would
 be the tiebreaker.
 
 Note (2026-10-12): both videos read in full from yt-dlp `en-orig` captions. The Firecrawl scrape of each watch URL returned a cached page with the chapter list but no transcript. Each video mixes usable ideas with tactics recorded in the wiki as `not adopted: manipulative`.
+
+| 2026-11-07 | zmBPOI9k7r8 | Why the Same Content Ranks Differently: Visual Semantics | ingested | deep |
+
+Note (2026-11-07): full transcript read via Firecrawl. A Julian Goldie-hosted
+interview, same format as `Af9rvlVPQCQ` and `D7P6-b1XtxE`; content is Koray's.
+Third wiki entry on visual semantics specifically — this one names the
+underlying research (WebRef) and gives the clearest mechanics yet, so it's kept
+as its own dated entry rather than folded into an earlier one.

@@ -26,3 +26,15 @@ missed — so the deep entries above are what's kept; the shallow duplicates
 were dropped.
 
 Note (2026-10-12): the five skipped uploads are about making or growing a YouTube channel, not about a website, conversion or search. `VXGDHZIGf40` read in full from yt-dlp `en-orig` captions (Firecrawl returned no transcript).
+
+| 2026-11-07 | DOA2SXz-XGA | The New Era of 'Expert Branding' Has Just Begun | ingested | shallow |
+| 2026-11-07 | xnqmiEz9-fA | The New Rules of Digital Marketing (Ranked for 2027) | ingested | shallow |
+
+Note (2026-11-07): `DOA2SXz-XGA` is carried over from last run's 2026-10-31
+ledger (recorded there under this same slug's file before this week's branch
+was cut from an earlier master — see commit history, same pattern as the
+10-24/10-31 carryover on other advisors' files). `xnqmiEz9-fA`: Firecrawl
+returned a 401 on the transcript; Apple Podcasts show notes gave the thesis
+only, no list of the 20 ranked strategies. Both advisor videos since
+`VXGDHZIGf40` have now failed transcript retrieval — worth checking next run
+whether this is a persistent block on his channel specifically.

@@ -30,3 +30,16 @@ per the per-advisor cap. No videoId overlap between the 2026-07-29 and
 2026-08-05 runs.
 
 Note (2026-10-12, local weekly task): all six newest uploads are AI-tool launch or agent-demo videos, filtered on title before any credit was spent. Nothing read.
+
+| 2026-11-07 | M532DfwIVnY | Grok Bot Limits? Move Your Bots to Hermes! | skipped-off-niche | shallow |
+| 2026-11-07 | G0WqLjlSXNo | DeepSeek + REA Is INSANE | skipped-off-niche | shallow |
+| 2026-11-07 | yvRLyJk_VTU | DeepSeek Harness Creator Mode Is Actually INSANE! | skipped-off-niche | shallow |
+| 2026-11-07 | y11eideTqE8 | NEW Google AI Just Got Massive Upgrades! | skipped-off-niche | shallow |
+| 2026-11-07 | 0Cog6GN26w4 | Google Genie 4 Can Now Create Interactive AI Worlds! | skipped-off-niche | shallow |
+
+Note (2026-11-07): this channel posts multiple times a day; the 5 newest at
+check time are all general AI-tool/model-launch news (Grok/Hermes, DeepSeek,
+Google AI, Genie 4) with no SEO/GEO angle, filtered before spending a read.
+Last run's `tCwbbgGaPt0` ("hidden keyword" method) is not re-listed here — it
+is logged in this same file on the `board/ingest-2026-10-31` branch (PR #101,
+still open); this branch was cut from master before that PR merged.
