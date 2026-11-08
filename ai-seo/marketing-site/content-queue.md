@@ -181,7 +181,28 @@ on, which makes them the lowest-risk rows in the file.
 | 51 | seo company in kenya | K — Kenya commercial | engine-verified 2026-11-05 · ke/en · SV 110 · CI 6 · SERP MODERATE 45.3 — page one is local agencies, no authority domains; angle is how to verify a Kenyan SEO company (who holds page one, registration, account ownership), not prices, which `seo-agency-nairobi-cost` already owns. Secondary: `best seo company in kenya` (SV 40 · CI 4 · SERP MODERATE 42.8). Fits `/ai-seo/nairobi`. | queued |
 | 52 | seo consultant kenya | K — Kenya decision | engine-verified 2026-11-05 · ke/en · SV 10 · CI 1 · SERP MODERATE 45.8 — freelance consultant versus agency in Kenya, a decision no live post covers. Fits `/ai-seo/nairobi`. | queued |
 | 53 | seo services in kenya | K — Kenya commercial (head) | engine-verified 2026-11-05 · ke/en · SV 390 · CI 2 · SERP MODERATE 54.2 — highest-volume African-qualified term found so far; hardest row added, so it goes last. Angle is what each service line contains and which Kenyan business needs which, linking to `seo-agency-nairobi-cost` for prices. Secondaries: `seo services kenya` (SV 390 · CI 2), `seo services in nairobi` (SV 70 · CI 1 · SERP MODERATE 45.8). Fits `/ai-seo/nairobi`. | queued |
+| 54 | seo company in abuja | N — Abuja commercial | candidate - verify volume (DataForSEO) — no live post targets Abuja; distinct from `best-seo-agency-in-nigeria` (national head term, no city angle). Fits `/ai-seo/abuja`. | queued |
+| 55 | how to rank on google maps in abuja | N — Abuja local / Maps | candidate - verify volume (DataForSEO) — localizes the Maps cluster (rows 13, 33, 42) to a second Nigerian city; distinct from the Lagos post and the generic/problem-aware Maps posts. Fits `/ai-seo/abuja`. | queued |
+| 56 | how much does seo cost in ghana | GH — Ghana cost / ROI | candidate - verify volume (DataForSEO) — localizes the Nigeria cost post (`how-much-does-seo-cost-in-nigeria`) to Ghana per the "localize proven performers" rule; no existing Ghana cost keyword. Fits `/ai-seo/accra`. | queued |
+| 57 | how to get more google reviews in ghana | GH — Ghana local / GBP | candidate - verify volume (DataForSEO) — localizes the Nigeria reviews post (`how-to-get-more-google-reviews-in-nigeria`) to Ghana; `seo-company-accra-ghana` is an agency-choice piece, not a reviews how-to. Fits `/ai-seo/accra`. | queued |
+| 58 | google business profile optimization in kenya | K — Kenya local / GBP | candidate - verify volume (DataForSEO) — a DIY-optimization angle, distinct from the hire-an-agency intent of the queued Nairobi/Kenya rows (50–53); localizes the generic GBP post. Fits `/ai-seo/nairobi`. | queued |
+| 59 | why isn't my business showing up in ai search results in kenya | K — Kenya GEO diagnostic | candidate - verify volume (DataForSEO) — localizes the Africa-wide GEO diagnostic post (`how-to-check-if-chatgpt-recommends-your-business-in-africa`) to Kenya, general-business angle (not the tourism/safari angle already covered). Fits `/ai-seo/nairobi` and `/ai-visibility-check`. | queued |
+| 60 | is seo worth it for a small business in south africa | ZA — South Africa decision / ROI | candidate - verify volume (DataForSEO) — localizes the generic `is-seo-worth-it` post to a market with no decision-stage content yet. Fits `/ai-seo/johannesburg`. | queued |
+| 61 | how to rank on google maps in johannesburg | ZA — South Africa local / Maps | candidate - verify volume (DataForSEO) — a ranking how-to, distinct from row 48's pricing angle (`seo agency johannesburg pricing`). Fits `/ai-seo/johannesburg`. | queued |
+| 62 | local seo checklist for small business in ghana | GH — Ghana local / commercial | candidate - verify volume (DataForSEO) — a DIY-checklist angle localizing `local-seo-for-small-business`, distinct from `seo-company-accra-ghana`'s hire-an-agency angle. Fits `/ai-seo/accra`. | queued |
 
+> **Queue top-up (queue-keeper, 2026-11-08):** audited the queue — only rows 50–53
+> remained `queued` (4 rows, below the 6-row floor). Added rows 54–62 as 9 new
+> candidates for the AI-SEO/GEO/answer-engine/local-SEO/small-business-search
+> vertical, checked against every live post in `lib/posts.ts`, every page under
+> `app/`, and `used-keywords.md` for duplicates. All nine localize a cluster the
+> domain already proves out (cost, reviews, GBP, Maps, GEO diagnostic, "is it
+> worth it") into a market or city angle not yet covered — Abuja, Ghana, and a
+> DIY (not hire-an-agency) cut of Kenya and South Africa. This session has no
+> DataForSEO access, so none of these are vetted — every row needs a volume/
+> intent pass before it should be trusted as a real pick. Before/after: 4 → 13
+> `queued` rows.
+>
 > **Queue top-up (queue-keeper, 2026-08-30):** audited the queue — only row 9
 > (`what is local seo`) remained `queued` (1 row, below the 6-row floor). Added
 > rows 22–31 as candidates for the general AI-SEO/GEO/AEO/local-SEO vertical,
