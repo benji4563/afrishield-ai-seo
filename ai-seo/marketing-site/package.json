@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@vapi-ai/web": "^2.6.1",
+    "@vercel/analytics": "^1.5.0",
     "framer-motion": "^12.42.2",
     "next": "^16.2.11",
     "react": "^19.2.8",

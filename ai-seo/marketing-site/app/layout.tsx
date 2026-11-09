@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, JetBrains_Mono, Sora } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import { Nav } from '@/components/layout/Nav';
 import { Footer } from '@/components/layout/Footer';
@@ -99,6 +100,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <WhatsAppFloat />
         <VoiceCallButton />
+        {/*
+          Visitor analytics. Until 2026-11-09 the site loaded no analytics at all
+          (confirmed with REA), so Vercel's dashboard showed zero rows even with
+          Web Analytics switched on. The script posts to /_vercel/insights on our
+          own domain and sets no cookies.
+        */}
+        <Analytics />
       </body>
     </html>
   );
