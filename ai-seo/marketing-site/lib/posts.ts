@@ -69,6 +69,60 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'marketing-agencies-in-nairobi',
+    title:
+      'Marketing agencies in Nairobi: the seven types, and which one your business actually needs',
+    cardTitle: 'Marketing agencies in Nairobi, sorted by type',
+    metaTitle: 'Marketing Agencies in Nairobi: 7 Types',
+    description:
+      'Marketing agencies in Nairobi sorted into seven types, what each one does, which Kenyan businesses need which, and how to shortlist one.',
+    lede:
+      'Marketing agencies in Nairobi range from full-service firms running radio and outdoor campaigns to small studios that only post on social media. This guide sorts them into seven types, shows which job each type does, sets out where Kenyan customers can be reached in 2026, and explains how to shortlist an agency and which accounts must stay in your name.',
+    category: 'Comparison',
+    published: '2026-11-09',
+    modified: '2026-11-09',
+    readingMinutes: 9,
+    primaryKeyword: 'marketing agencies in nairobi',
+    image: {
+      src: '/images/blog-marketing-agencies-in-nairobi.webp',
+      alt: 'A woman in an orange suit writes on a whiteboard covered in charts and sticky notes while four colleagues watch from a meeting table with laptops and glasses of water.',
+    },
+    linkedin: `Three marketing agencies pitch a physiotherapy clinic in Kilimani.
+
+The first proposes a weekend activation at a Westlands mall. Tents, branding, a DJ.
+The second proposes twenty Instagram posts a month and two influencers.
+The third proposes all of that, plus radio, plus a jingle.
+
+Nobody asks the only question that matters: how do your patients find you now?
+
+Most of them type "physiotherapist near me" into Google.
+
+Choosing a marketing agency by the label is like choosing a doctor because the sign says "Medical". A surgeon, a dentist and a physiotherapist all qualify. Your back only needs one of them.
+
+Marketing agencies in Nairobi come in roughly seven types: full-service, digital, paid media, social and content, SEO and GEO, branding, and PR or events. Same title, very different jobs.
+
+The question that sorts them: do your customers search for you, or discover you while scrolling? Clinics, law firms, schools and safari operators are searched for. Fashion, food and events are discovered.
+
+Some Kenyan numbers from DataReportal's Digital 2026 report, based on each platform's own ad tools:
+
+TikTok ad reach equals 78.5 percent of internet users.
+Facebook reaches 17.0 million.
+LinkedIn has 6.30 million members.
+Instagram reaches 3.95 million, fewer than LinkedIn.
+
+And whichever agency you hire, the pages, ad accounts, domain and Google Business Profile stay in your name. The agency gets access, not ownership.
+
+In fairness, we are one of the seven types: search and AI visibility only. We do not post on Instagram, shoot video or write jingles, and we wrote that into the article before anyone could ask. Our marketing department reviewed it and said it was very honest. Our marketing department is also us.
+
+The full guide, with a table of all seven types and a six-step shortlist:
+
+https://afrishieldai.com/blog/marketing-agencies-in-nairobi
+
+#Nairobi #Kenya #Marketing #SME #SEO
+
+The DJ was very good, by all accounts. The patients still arrived through Google.`,
+  },
+  {
     slug: 'agence-marketing-digital-douala',
     title:
       'Agence marketing digital à Douala : agence complète ou spécialiste, et comment vérifier l’offre',

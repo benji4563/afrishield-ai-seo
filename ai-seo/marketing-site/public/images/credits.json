@@ -514,5 +514,17 @@
     "photographerUrl": "https://www.pexels.com/@picha-stock-2210122",
     "alt": "Quatre femmes dans un bureau, trois debout et souriantes autour d’une collègue assise devant un ordinateur portable, avec des étagères de livres en arrière-plan.",
     "avgColor": "#9F9096"
+  },
+  {
+    "slot": "blog-marketing-agencies-in-nairobi",
+    "file": "images/blog-marketing-agencies-in-nairobi.webp",
+    "source": "Pexels",
+    "query": "african marketing whiteboard strategy",
+    "pexelsId": 5439487,
+    "pexelsUrl": "https://www.pexels.com/photo/woman-showing-her-presentation-by-writing-on-a-white-board-5439487/",
+    "photographer": "Tima Miroshnichenko",
+    "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+    "alt": "A woman in an orange suit writes on a whiteboard covered in charts and sticky notes while four colleagues watch from a meeting table with laptops and glasses of water.",
+    "avgColor": "#929897"
   }
 ]

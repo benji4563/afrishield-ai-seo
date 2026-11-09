@@ -53,6 +53,7 @@ reconcile.
 | best seo agency in nigeria | N — Nigeria commercial (head) | `/blog/best-seo-agency-in-nigeria` | 2026-11-04 | Live |
 | digital marketing vs seo for nigerian businesses | N — Nigeria comparison | `/blog/digital-marketing-vs-seo-for-nigerian-businesses` | 2026-11-05 | Live |
 | agence marketing digital douala | CM — Cameroon FR commercial | `/blog/agence-marketing-digital-douala` | 2026-11-06 | Live |
+| marketing agencies in nairobi | K — Kenya commercial | `/blog/marketing-agencies-in-nairobi` | 2026-11-09 | Live |
 
 ## Deliberately not targeted
 

@@ -398,7 +398,12 @@ export default function Post() {
           <li>
             <strong>Your buyers do not search.</strong> Plenty of Nairobi firms run on
             referrals and WhatsApp groups. If nobody types what you sell into Google, an
-            agency cannot create the demand.
+            agency cannot create the demand, and a different kind of agency may fit better:
+            the seven types are compared in{' '}
+            <a href="/blog/marketing-agencies-in-nairobi">
+              marketing agencies in Nairobi, sorted by type
+            </a>
+            .
           </li>
           <li>
             <strong>A free profile would do.</strong> A single-location salon, clinic or
