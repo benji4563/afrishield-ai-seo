@@ -29,5 +29,20 @@
 
 ## Quick wins on existing pages (no new posts)
 
-- Add a prominent "In Nigeria / au Cameroun / in Kenya" box linking to the city versions on `/blog/how-to-appear-on-google-maps` (527 impressions) and `/blog/how-long-does-seo-take` (315), so the traffic Google already sends finds the pages that win.
+- **DONE 2026-11-12:** Add a prominent "In Nigeria / au Cameroun / in Kenya" box linking to the city versions on `/blog/how-to-appear-on-google-maps` (527 impressions) and `/blog/how-long-does-seo-take` (315), so the traffic Google already sends finds the pages that win.
 - Query "google maps visibility tool" (32 impressions): consider a Google Maps check on `/ai-visibility-check`. A product decision for Ben.
+
+
+## Update 12 Nov 2026 (Search Console with positions, from Ben)
+
+- **Generic posts rank 62–70 worldwide:** Google Maps 69.1 (529 impressions), how long SEO takes 68.1 (316), AI SEO vs traditional 69.5 (112), rank on ChatGPT 62.1 (84). Top generic queries sit at 49–88. All 0 clicks.
+- **Local and brand pages are on page 1:** /about 5.2, homepage 7.2, Lagos Maps 7.5, top agencies Africa 9.9. Near misses: /blog/ai-search-visibility-study 16.0, /ai-seo/douala 36.0 (2 clicks).
+- **By country:** US + UK + AU + CA = 1,025 impressions at 56–70, 0 clicks. Cameroon 9 clicks / 112 impressions at 16.1; Nigeria 1 / 87 at 36.9; South Africa 51 at 62.9.
+- **Cameroon queries** (country filter): only 6 listed, ~11 impressions, 0 clicks; buyer terms rank 61–91 ("seo services in cameroon" 91, "local seo cameroon" 61). The 9 Cameroon clicks come from searches Google hides for privacy, so their source is not known. A query filter for "afrishield" returned 0, which does not settle it (query filters drop hidden searches). Next check: Pages tab with Country = Cameroon.
+- **Cameroon search demand is tiny** (~10 impressions in 3 months on SEO terms), so leads there will come from Maps/GBP, Bing Places, directories, social and referrals; Nigeria carries the search demand.
+
+**Actions taken 12 Nov:**
+1. `components/blog/LocalVersions.tsx` added; the box "Reading from Africa? Start with your market." now sits under the Short answer on `/blog/how-to-appear-on-google-maps` and `/blog/how-long-does-seo-take`, linking Nigeria, Cameroon (FR), Kenya, Ghana and South Africa pages.
+2. `content-queue.md` queued rows re-ordered to rotate markets (63 Nigeria Maps first); Tanzania (68) and South Africa Maps (69) added as candidates.
+3. **Blocked:** the Apify token for the keyword engine was rejected on 12 Nov, so Tanzania/South Africa volumes could not be checked. Renew the token in `00 Knowledge/Keyword Finder/.env`, then promote 68/69.
+4. Every new local post that goes live gets added to the box on the matching generic post.

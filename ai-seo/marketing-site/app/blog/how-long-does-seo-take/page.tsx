@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
+import { LocalVersions } from '@/components/blog/LocalVersions';
 import { StructuredData } from '@/components/seo/StructuredData';
 import {
   blogPostingJsonLd,
@@ -120,6 +121,40 @@ export default function Post() {
           with no history takes longer than an established one. There is no accelerant that
           collapses this into weeks; anyone selling one is selling something else.
         </ShortAnswer>
+
+        <LocalVersions
+          markets={[
+            {
+              market: 'In Nigeria',
+              links: [
+                { href: '/blog/how-long-does-seo-take-in-nigeria', label: 'How long SEO takes in Nigeria, honestly' },
+                { href: '/blog/how-much-does-seo-cost-in-nigeria', label: 'How much SEO costs in Nigeria, in naira' },
+              ],
+            },
+            {
+              market: 'Au Cameroun',
+              lang: 'fr',
+              links: [
+                { href: '/blog/agence-seo-cameroun', label: 'Agence SEO au Cameroun, comment choisir', lang: 'fr' },
+                { href: '/blog/referencement-naturel-douala', label: 'Référencement naturel à Douala, le guide', lang: 'fr' },
+              ],
+            },
+            {
+              market: 'In Kenya',
+              links: [
+                { href: '/blog/seo-agency-nairobi-cost', label: 'What an SEO agency in Nairobi costs, in KES' },
+                { href: '/ai-seo/nairobi', label: 'AI SEO in Nairobi' },
+              ],
+            },
+            {
+              market: 'In Ghana and South Africa',
+              links: [
+                { href: '/blog/seo-company-accra-ghana', label: 'How to choose an SEO company in Accra' },
+                { href: '/ai-seo/johannesburg', label: 'AI SEO in Johannesburg' },
+              ],
+            },
+          ]}
+        />
 
         <EditorialImage
           src={post.image!.src}

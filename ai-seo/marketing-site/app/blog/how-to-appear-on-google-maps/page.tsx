@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PostShell, ShortAnswer, Scene } from '@/components/blog/PostLayout';
+import { LocalVersions } from '@/components/blog/LocalVersions';
 import { StructuredData } from '@/components/seo/StructuredData';
 import {
   blogPostingJsonLd,
@@ -126,6 +127,40 @@ export default function Post() {
           them outright: an unverified profile, the wrong primary category, or too few reviews
           to be trusted over a competitor.
         </ShortAnswer>
+
+        <LocalVersions
+          markets={[
+            {
+              market: 'In Nigeria',
+              links: [
+                { href: '/blog/how-to-appear-on-google-maps-in-lagos', label: 'How to appear on Google Maps in Lagos' },
+                { href: '/blog/why-is-my-business-not-showing-on-google-maps-nigeria', label: 'Why your business is not on Google Maps in Nigeria' },
+              ],
+            },
+            {
+              market: 'Au Cameroun',
+              lang: 'fr',
+              links: [
+                { href: '/blog/referencement-naturel-douala', label: 'Référencement naturel à Douala, le guide', lang: 'fr' },
+                { href: '/ai-seo/douala', label: 'AI SEO in Douala' },
+              ],
+            },
+            {
+              market: 'In Kenya',
+              links: [
+                { href: '/ai-seo/nairobi', label: 'AI SEO in Nairobi' },
+                { href: '/blog/seo-company-in-kenya', label: 'How to verify an SEO company in Kenya' },
+              ],
+            },
+            {
+              market: 'In Ghana and South Africa',
+              links: [
+                { href: '/ai-seo/accra', label: 'AI SEO in Accra' },
+                { href: '/ai-seo/johannesburg', label: 'AI SEO in Johannesburg' },
+              ],
+            },
+          ]}
+        />
 
         <EditorialImage
           src={post.image!.src}
