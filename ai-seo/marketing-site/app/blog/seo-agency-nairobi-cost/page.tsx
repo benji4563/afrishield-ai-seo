@@ -434,6 +434,9 @@ export default function Post() {
           are counted, and what you keep if you leave. Google&rsquo;s own hiring guide
           suggests similar questions, including what results to expect and in what
           timeframe, and whether the agency will share every change it makes to your site.
+          Before any of that, confirm the company is real: the registration, KRA PIN and data
+          protection checks are set out in{' '}
+          <a href="/blog/seo-company-in-kenya">how to verify an SEO company in Kenya</a>.
         </p>
 
         <ol>

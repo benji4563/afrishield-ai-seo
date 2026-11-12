@@ -69,6 +69,53 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'seo-company-in-kenya',
+    title:
+      'SEO company in Kenya: how to verify one before you sign, in six checks',
+    cardTitle: 'How to verify an SEO company in Kenya',
+    metaTitle: 'SEO Company in Kenya: How to Verify One',
+    description:
+      'How to verify an SEO company in Kenya before paying: BRS and KRA PIN checks, ODPC registration, results you can test, and accounts to keep in your name.',
+    lede:
+      'An SEO company in Kenya can be checked in an afternoon, mostly for free. This guide covers who holds page one for the term, what the Clutch Kenya list does and does not show, how to confirm registration through BRS on eCitizen, how to check a KRA PIN on iTax, when ODPC registration applies, and which accounts must stay in your name.',
+    category: 'Guide',
+    published: '2026-11-12',
+    modified: '2026-11-12',
+    readingMinutes: 9,
+    primaryKeyword: 'seo company in kenya',
+    image: {
+      src: '/images/blog-seo-company-in-kenya.webp',
+      alt: 'A young man in a dark blazer reads through a stack of papers at a white table, pen in hand, with a glass water bottle in front of him.',
+    },
+    linkedin: `The contract says one company name.
+The invoice says another.
+The bank account says a third.
+
+Every Kenyan business owner who has hired a supplier in a hurry knows this moment. It usually arrives when the accountant asks a polite question at year end.
+
+Hiring an SEO company in Kenya without checking it is like buying a used car for its paint job. Nobody sensible skips the logbook.
+
+The logbook checks for an SEO company are short, and most of them are free:
+
+Run a BRS official search on eCitizen. For a limited company, the CR12 confirms it exists and lists the directors.
+Check the KRA PIN on the free iTax PIN Checker. The name should match the invoice and the status should be active.
+Ask about ODPC registration. The exemption only applies below KES 5 million turnover AND under 10 employees, and direct marketing must register regardless of size.
+Ask for two Kenyan client sites and run their searches yourself, on your own phone.
+Put in the contract that your domain, analytics and Google Business Profile stay in your name.
+
+One more thing we found: on the Clutch list of SEO companies in Kenya, six of the first ten positions were sponsored entries for firms serving Kenya, not based in it. Clutch says so openly. It is still worth knowing before you call it a ranking.
+
+In the interest of fairness, we are an SEO company too, so we have just published a checklist for vetting us. Our sales team described this as a bold strategy. Our sales team is also us.
+
+The full guide, with a table of all six checks:
+
+https://afrishieldai.com/blog/seo-company-in-kenya
+
+#Kenya #Nairobi #SEO #SME #DueDiligence
+
+Check the logbook before the paint. The paint can wait.`,
+  },
+  {
     slug: 'marketing-agencies-in-nairobi',
     title:
       'Marketing agencies in Nairobi: the seven types, and which one your business actually needs',

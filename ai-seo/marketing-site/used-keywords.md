@@ -54,6 +54,7 @@ reconcile.
 | digital marketing vs seo for nigerian businesses | N — Nigeria comparison | `/blog/digital-marketing-vs-seo-for-nigerian-businesses` | 2026-11-05 | Live |
 | agence marketing digital douala | CM — Cameroon FR commercial | `/blog/agence-marketing-digital-douala` | 2026-11-06 | Live |
 | marketing agencies in nairobi | K — Kenya commercial | `/blog/marketing-agencies-in-nairobi` | 2026-11-09 | Live |
+| seo company in kenya | K — Kenya commercial | `/blog/seo-company-in-kenya` | 2026-11-12 | Live |
 
 ## Deliberately not targeted
 

@@ -526,5 +526,17 @@
     "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
     "alt": "A woman in an orange suit writes on a whiteboard covered in charts and sticky notes while four colleagues watch from a meeting table with laptops and glasses of water.",
     "avgColor": "#929897"
+  },
+  {
+    "slot": "blog-seo-company-in-kenya",
+    "file": "images/blog-seo-company-in-kenya.webp",
+    "source": "Pexels",
+    "query": "african businessman reviewing documents",
+    "pexelsId": 8730857,
+    "pexelsUrl": "https://www.pexels.com/photo/a-man-reading-documents-8730857/",
+    "photographer": "Mikhail Nilov",
+    "photographerUrl": "https://www.pexels.com/@mikhail-nilov",
+    "alt": "A young man in a dark blazer reads through a stack of papers at a white table, pen in hand, with a glass water bottle in front of him.",
+    "avgColor": "#C3BFBE"
   }
 ]
