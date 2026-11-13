@@ -69,6 +69,54 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'how-to-put-your-business-on-google-maps-in-nigeria',
+    title:
+      'How to put your business on Google Maps in Nigeria: claim, create and verify it',
+    cardTitle: 'How to put your business on Google Maps in Nigeria',
+    metaTitle: 'Put Your Business on Google Maps: Nigeria',
+    description:
+      'How to put your business on Google Maps in Nigeria for ₦0: claim or create the profile, pin an address with no street number, and get verified.',
+    lede:
+      'A Nigerian business gets onto Google Maps by owning a verified Google Business Profile. This guide covers which Google account should own it, how to claim a listing someone else added, how to request access from a current owner, how to enter an address with no street number, what verification involves and how long it takes, using the rules Google publishes.',
+    category: 'Local visibility',
+    published: '2026-11-13',
+    modified: '2026-11-13',
+    readingMinutes: 9,
+    primaryKeyword: 'how to put your business on google maps in nigeria',
+    image: {
+      src: '/images/blog-how-to-put-your-business-on-google-maps-in-nigeria.webp',
+      alt: 'A man in a blue kaftan and embroidered cap sits outside a building looking at his phone, beside a To Let sign offering one and two rooms.',
+    },
+    linkedin: `A customer asks for your Google Maps location so her driver can pick up an order.
+
+You search. You are there. Sort of.
+Pinned on the wrong side of the road, with opening hours you have never kept, added two years ago by somebody you have never met.
+
+You can see it. You cannot change any of it.
+
+A Google Maps listing you do not own is like a shop key held by a cousin who moved to Abuja. Everyone agrees it belongs to you. Nobody can open the door.
+
+Getting the key back is free, and most of it fits in an afternoon:
+
+Search Maps first. If the listing exists, claim it instead of creating a second one. Google wants one profile per business.
+If someone else verified it, use Request access. Google gives the current owner 3 days to respond.
+No street number? Google lets you pin the location directly on the map. Put the pin on the entrance, not the road.
+Use a Google account the business controls, then add a second owner or manager so the profile never lives in one phone again.
+Verification reviews take up to 5 business days, and Google decides which method you get.
+
+It costs ₦0. Google says so in writing. If someone on WhatsApp offers to register you on Google for a fee, they are selling a free form with a delivery charge.
+
+We sell SEO, and we have just published a full guide on skipping us for this step. Our accountant has been told and is being very brave about it.
+
+The full step by step guide, with the Nigerian address rules:
+
+https://afrishieldai.com/blog/how-to-put-your-business-on-google-maps-in-nigeria
+
+#GoogleMaps #Nigeria #SmallBusiness #LocalSEO #GoogleBusinessProfile
+
+Get the key back from your cousin. He has had it long enough.`,
+  },
+  {
     slug: 'seo-company-in-kenya',
     title:
       'SEO company in Kenya: how to verify one before you sign, in six checks',

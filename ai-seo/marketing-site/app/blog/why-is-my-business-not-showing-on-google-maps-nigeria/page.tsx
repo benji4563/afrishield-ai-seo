@@ -240,7 +240,12 @@ export default function Post() {
           <li>
             <strong>No profile exists.</strong> Before creating one, search for an existing
             listing and claim it. Google&rsquo;s guidelines say there should be only one
-            profile per business, so a second one creates the next problem.
+            profile per business, so a second one creates the next problem. The full
+            setup, from choosing the owning account to verification, is in{' '}
+            <a href="/blog/how-to-put-your-business-on-google-maps-in-nigeria">
+              our guide to putting a business on Google Maps in Nigeria
+            </a>
+            .
           </li>
           <li>
             <strong>A profile exists but was never verified.</strong> This is the most common

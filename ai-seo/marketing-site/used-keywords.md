@@ -55,6 +55,7 @@ reconcile.
 | agence marketing digital douala | CM — Cameroon FR commercial | `/blog/agence-marketing-digital-douala` | 2026-11-06 | Live |
 | marketing agencies in nairobi | K — Kenya commercial | `/blog/marketing-agencies-in-nairobi` | 2026-11-09 | Live |
 | seo company in kenya | K — Kenya commercial | `/blog/seo-company-in-kenya` | 2026-11-12 | Live |
+| how to put your business on google maps in nigeria | N — Nigeria local / Maps setup | `/blog/how-to-put-your-business-on-google-maps-in-nigeria` | 2026-11-13 | Live |
 
 ## Deliberately not targeted
 
