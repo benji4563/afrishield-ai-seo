@@ -32,3 +32,10 @@ wiki entry for this video reflects. A future `deep` pass on this video would
 be the tiebreaker.
 
 Note (2026-10-12): both videos read in full from yt-dlp `en-orig` captions. The Firecrawl scrape of each watch URL returned a cached page with the chapter list but no transcript. Each video mixes usable ideas with tactics recorded in the wiki as `not adopted: manipulative`.
+
+| 2026-11-14 | D9vOo4ZrkR4 | How Many Pages Per Day Before Google Kills Your Site? | ingested | deep |
+
+Note (2026-11-14): full transcript read via Firecrawl. A James Dooley-hosted
+interview; content is Koray's. Direct follow-up to the 10-12 "design as an
+effort signal" entry's publishing-volume point — names the BrowserStack and
+BlackTailNYC case studies behind that claim and gives a concrete ramp method.

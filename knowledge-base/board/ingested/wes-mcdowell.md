@@ -26,3 +26,14 @@ missed — so the deep entries above are what's kept; the shallow duplicates
 were dropped.
 
 Note (2026-10-12): the five skipped uploads are about making or growing a YouTube channel, not about a website, conversion or search. `VXGDHZIGf40` read in full from yt-dlp `en-orig` captions (Firecrawl returned no transcript).
+
+| 2026-11-14 | DOA2SXz-XGA | The New Era of 'Expert Branding' Has Just Begun | ingested | shallow |
+| 2026-11-14 | xnqmiEz9-fA | The New Rules of Digital Marketing (Ranked for 2027) | ingested | shallow |
+| 2026-11-14 | O4IuiMx6kjc | It's Boring, But It'll Blow Up Your Business on YouTube in 2027 | ingested | deep |
+
+Note (2026-11-14): `DOA2SXz-XGA` and `xnqmiEz9-fA` are carried over from the
+2026-10-31/11-07 ledgers on this same slug (see commit history; this branch was
+cut before PRs #101/#103 merged). `O4IuiMx6kjc` is a new upload, full transcript
+read via Firecrawl (succeeded this run, after two straight weeks of 401s on this
+channel) — a complete 6-step system, the richest single entry yet for this
+advisor.
