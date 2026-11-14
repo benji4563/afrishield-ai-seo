@@ -28,3 +28,13 @@ the 2026-07-29 run's `skipped-off-niche` call on the other ID — both rows are
 kept since they're technically different videoIds.
 
 Note (2026-10-12): both SEO videos read in full from yt-dlp `en-orig` captions. They walk through the same commands that already exist here as the `local-seo` suite, so nothing new. The Google Ads videos and the general Claude Code masterclass are outside the SEO/GEO niche. `M2KJ5-sFbbg` (SEO audit, 2026-08-30) was not reached and is left unlogged for the next run.
+
+| 2026-11-07 | gdbgSsSSDGE | Echo 3 Turns Your House Into a 3D Copy You Can Walk In | skipped-off-niche | shallow |
+| 2026-11-07 | otaLYGJvfvk | Parallel AI Researched 500 Leads in 9 Seconds | skipped-off-niche | shallow |
+| 2026-11-07 | AL3b4kmgsb4 | Claude Code Google Ads: Steal Your Competitor's Best Ads ($730K Earned) | skipped-off-niche | shallow |
+
+Note (2026-11-07): a 3D-scanning tool demo, a lead-research tool demo, and a
+Google Ads automation video — none is SEO/GEO. Last run's `PvGnb8tKtgw`
+(competitor-citation-tracking workflow) and the `yjOj5ZFybZI` skip are not
+re-listed here; both are logged in this file on the still-open
+`board/ingest-2026-10-31` branch (PR #101), cut before this branch.

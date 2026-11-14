@@ -33,3 +33,13 @@ newest uploads had moved on from the prior run's short-form clips to
 longer-form business/AI-leverage content — first wiki update logged this run.
 
 Note (2026-10-12): `wtaRjOFqdyU` read in full from yt-dlp `en-orig` captions and kept because it bears on producing content for this service. The other five are motivation or tool round-ups.
+
+| 2026-11-07 | 1I4FkOlAe0k | Which CEO are you? | skipped-off-niche | shallow |
+| 2026-11-07 | oMvaTK163HA | How to prompt AI in 2027 | skipped-off-niche | shallow |
+| 2026-11-07 | CV1MOXZtdh8 | POV: you get to workout with your 9 figure mentor | skipped-off-niche | shallow |
+| 2026-11-07 | UB_ZIWrsnfs | 3 skills AI will never replace | skipped-off-niche | shallow |
+| 2026-11-07 | nsFKkeQg-V0 | If you only watch one sales video, make it this one | skipped-off-niche | shallow |
+
+Note (2026-11-07): five newest uploads reviewed by title/description — founder
+personality/productivity content, general AI-prompting advice, and a sales
+pitch video. None has an SEO/GEO/content-production angle for this niche.
