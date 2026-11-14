@@ -91,6 +91,7 @@ const itemListJsonLd = {
       item: {
         '@type': 'Organization',
         name: 'Nairobi Marketing',
+        url: 'https://nairobimarketing.com',
         description:
           'Local business schema and Google Gemini search optimisation for East African hospitality and professional services.',
       },
@@ -101,6 +102,7 @@ const itemListJsonLd = {
       item: {
         '@type': 'Organization',
         name: 'SEO Smart Limited',
+        url: 'https://www.seosmart.co.ke',
         description:
           'A layered AI-visibility stack and continuous large-language-model share-of-voice tracking for technology and performance brands.',
       },
@@ -111,8 +113,9 @@ const itemListJsonLd = {
       item: {
         '@type': 'Organization',
         name: 'Digital 4 Africa',
+        url: 'https://digital4africa.com',
         description:
-          'Enterprise SEO-to-GEO migration and structured content auditing for corporate and financial organisations.',
+          'Established Nairobi digital agency, known for enterprise web and data-analytics work for major regional brands, extending into structured content and AI-search readiness for large organisations.',
       },
     },
   ],
@@ -163,9 +166,9 @@ export default function Post() {
           <strong>AfriShield AI</strong> (multi-layer GEO, entity knowledge graphs, and
           conversational voice agents), <strong>Nairobi Marketing</strong> (local schema
           and Gemini indexing), <strong>SEO Smart Limited</strong> (layered AI-visibility
-          tracking), and <strong>Digital 4 Africa</strong> (SEO-to-GEO migration for
-          established brands). The right choice depends on your sector and how your buyers
-          actually search.
+          tracking), and <strong>Digital 4 Africa</strong> (enterprise web and analytics
+          relationships extending into AI-search readiness for established brands). The
+          right choice depends on your sector and how your buyers actually search.
         </ShortAnswer>
 
         <EditorialImage
@@ -299,9 +302,9 @@ export default function Post() {
               <tr>
                 <td><strong>Digital 4 Africa</strong></td>
                 <td>Nairobi, Kenya</td>
-                <td>Hybrid SEO-to-GEO migration, content auditing</td>
+                <td>Enterprise web, data analytics, and AI-readiness for legacy brands</td>
                 <td>Established corporates and legacy brands</td>
-                <td>Modernising deep legacy authority into AI-readable structure</td>
+                <td>Existing enterprise relationships with major regional brands</td>
               </tr>
             </tbody>
           </table>
@@ -349,13 +352,14 @@ export default function Post() {
 
         <h3>Digital 4 Africa</h3>
         <p>
-          Digital 4 Africa specialises in guiding large, established brands with years of
-          traditional web equity into AI-search readiness. Rather than rebuilding from
-          scratch, it audits existing content, restructures information hierarchies, and
-          embeds structured data so legacy portals become crawlable by modern answer bots.
-          The methodology suits banks, insurers, telecoms, and educational institutions
-          protecting category leadership. Best fit: corporates, financial institutions,
-          and legacy brands.
+          Digital 4 Africa is a Nairobi agency with an established track record in
+          enterprise web design and data analytics for major regional brands. Its core
+          business is not GEO specifically, but the enterprise relationships and legacy
+          web equity it already holds are a real starting point for AI-search readiness —
+          restructuring existing content and information hierarchies so large, established
+          portals become crawlable by modern answer bots. Best fit: corporates and legacy
+          brands that want to extend an existing agency relationship into GEO rather than
+          hire a specialist from scratch.
         </p>
 
         <h2 id="blueprint">A four-phase GEO blueprint</h2>
