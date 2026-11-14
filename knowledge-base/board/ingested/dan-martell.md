@@ -33,3 +33,12 @@ newest uploads had moved on from the prior run's short-form clips to
 longer-form business/AI-leverage content — first wiki update logged this run.
 
 Note (2026-10-12): `wtaRjOFqdyU` read in full from yt-dlp `en-orig` captions and kept because it bears on producing content for this service. The other five are motivation or tool round-ups.
+
+| 2026-11-14 | n6xoJp-aFjc | Signs you are NOT leading your team properly | skipped-off-niche | shallow |
+| 2026-11-14 | 00JUEqv2E9Y | Do you think AI should be allowed in schools? | skipped-off-niche | shallow |
+| 2026-11-14 | TSr_qLZ-8YY | It took me 30 harsh years to learn what I'll teach you in just 27 minutes | skipped-off-niche | shallow |
+| 2026-11-14 | b1-eoqApztM | As business owners, have this conversation with your best employees | skipped-off-niche | shallow |
+| 2026-11-14 | 0u2g0smcRRo | Which boss are you? | skipped-off-niche | shallow |
+
+Note (2026-11-14): five newest uploads are leadership/management and general
+AI-opinion content with no SEO/GEO/content-production angle.

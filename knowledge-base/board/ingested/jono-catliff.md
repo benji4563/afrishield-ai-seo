@@ -28,3 +28,13 @@ the 2026-07-29 run's `skipped-off-niche` call on the other ID — both rows are
 kept since they're technically different videoIds.
 
 Note (2026-10-12): both SEO videos read in full from yt-dlp `en-orig` captions. They walk through the same commands that already exist here as the `local-seo` suite, so nothing new. The Google Ads videos and the general Claude Code masterclass are outside the SEO/GEO niche. `M2KJ5-sFbbg` (SEO audit, 2026-08-30) was not reached and is left unlogged for the next run.
+
+| 2026-11-14 | cnhQMoAqYtg | Claude AI Meeting Notes Just Killed Fireflies and Otter | skipped-off-niche | shallow |
+| 2026-11-14 | TXCbbK5ncGU | Claude Meetings Just Dropped: What To Know (This Kills Otter & Fireflies) | skipped-off-niche | shallow |
+| 2026-11-14 | wOgcnXUPSoI | My Mac Storage Is Full, So Claude Code Found 190 GB | skipped-off-niche | shallow |
+| 2026-11-14 | IPw9JEYYOWk | DeepTutor AI Turns Any Question Into a Video Lesson | skipped-off-niche | shallow |
+| 2026-11-14 | gRvut_6SEto | Free Offline AI That Works in Airplane Mode | skipped-off-niche | shallow |
+
+Note (2026-11-14): five newest uploads are general AI-tool/product news
+(Claude Meetings, a Mac-storage utility use of Claude Code, a video-lesson
+tool, an offline-AI tool) with no SEO/GEO angle. `M2KJ5-sFbbg` still unreached.
