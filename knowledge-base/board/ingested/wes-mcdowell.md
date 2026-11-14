@@ -16,6 +16,8 @@ transcript) / `shallow` (title+description fallback).
 | 2026-10-12 | zGfjuwDKrro | The NEW ChatGPT Just Killed Claude at Making YouTube Videos | skipped-off-niche | shallow |
 | 2026-10-12 | i1fLRypxgjU | Hormozi's New YouTube Strategy Is Genius (but Dangerous) | skipped-off-niche | shallow |
 | 2026-10-12 | JJTFLkD9NxU | How 'Everyday Experts' Are Getting Famous on YouTube | skipped-off-niche | shallow |
+| 2026-10-24 | mmIWpdXk_wQ | Nobody Wants Your Free Advice on YouTube | ingested | deep |
+| 2026-10-24 | MqQAt48v298 | This coach had no time for youtube (so we fixed it) | skipped-nothing-new | deep |
 
 Note (dedup, 2026-08-05 run): all three videoIds above were first logged
 2026-07-29 at `shallow` depth (`RwEs5VdH_ZQ` and `HsLLTvosGJw` as `ingested`;

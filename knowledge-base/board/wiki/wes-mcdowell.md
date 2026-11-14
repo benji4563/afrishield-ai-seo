@@ -78,3 +78,22 @@ message-first design · social proof · local SEO tier list.
   and comparison; "how to choose" and "what the first month looks like" are the
   gaps. **Tension with the settled strategy:** he would put the effort into video
   rather than three blog posts a week — flagged to Ben, not acted on. — https://www.youtube.com/watch?v=VXGDHZIGf40
+- **2026-10-24** — "The free line": plain advice/how-to content (the Surface/
+  Competence tiers on his own Scar Scale) is now worthless as a differentiator
+  since an AI assistant gives the same explanation away for free in seconds — so a
+  channel's library of "how to do X" videos stops converting viewers into clients
+  even if it still gets views. What still converts is "proof" content that shows the
+  expert actually doing the work on camera where a result is on the line: teardowns/
+  audits of a real prospect's site or page, a working session, a documented case
+  study, or going live — anything AI cannot fake because it requires a visible,
+  specific act of expertise rather than a recitable explanation. This sharpens his
+  existing Scar Scale (Adversity/Reframe content converts, Surface/Competence
+  doesn't) into a concrete test for AfriShield's own content: a generic "what is
+  GEO" explainer is a free-line post; a live schema audit of a named Cameroonian or
+  Kenyan competitor's site, on camera or in a post, is a proof post. —
+  https://www.youtube.com/watch?v=mmIWpdXk_wQ
+  - Minor note (same date, `MqQAt48v298`, mostly repackages ideas already logged
+    above): release a "yearly tentpole" overview/roundup video in November or
+    December, timed to rank and get discovered before competitors post their own
+    January recap — a small scheduling tactic worth carrying into AfriShield's own
+    annual content calendar.
