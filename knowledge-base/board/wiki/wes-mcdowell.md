@@ -78,3 +78,16 @@ message-first design · social proof · local SEO tier list.
   and comparison; "how to choose" and "what the first month looks like" are the
   gaps. **Tension with the settled strategy:** he would put the effort into video
   rather than three blog posts a week — flagged to Ben, not acted on. — https://www.youtube.com/watch?v=VXGDHZIGf40
+- **2026-10-31** — "The New Era of 'Expert Branding'": argues from the title/
+  description (no transcript was retrievable this run — logged shallow, flagged
+  for a deeper pass if the point recurs) that a conventional personal brand isn't
+  the best way for a coach, consultant or service-business owner to win high-
+  paying clients, and proposes building something else instead — the description
+  doesn't say what. The podcast feed's episode order confirms this directly
+  follows last week's `mmIWpdXk_wQ` finding (there titled "Nobody Wants Your Free
+  Advice on YouTube" on YouTube, "Advice is Dead, Here's What Clients Will
+  (Actually) Pay For" on his own podcast feed — same video, A/B-tested titles,
+  not a separate upload), so this looks like the next step in the same argument:
+  if generic advice no longer differentiates, a generic "personal brand" built on
+  that advice doesn't either. Worth a deep pass next run to capture what he says
+  to build instead. — https://www.youtube.com/watch?v=DOA2SXz-XGA

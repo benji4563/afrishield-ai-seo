@@ -109,3 +109,23 @@ context · "Koraynese" (his precise, coined terminology).
     each AI crawler by user agent (cloaking-style); backdating a new document and
     linking it from expired domains so it reads as old; hiding a site from Googlebot
     while building links, as a launch trick.
+- **2026-10-31** — "Algorithmic authorship": write so a system can process, embed
+  and relate text to a query, not just so a person can read it. He splits content
+  into factual vs. opinionated, each as structured or unstructured — and most pages
+  need a deliberate mix, not one register throughout. His worked example: an
+  AC-repair FAQ answered in a forum subsection (Google tolerates nonsense in an
+  opinion venue), a price question answered from a directory merged with a
+  paragraph (to win the featured snippet), and a factual page that still carries a
+  Q&A or voting component lower down for the opinion-seeking slice of the same
+  query — "query deserves a page" generalized: don't open a new page per city or
+  variant unless search demand or distinct entities justify it; combine components
+  on one URL instead. Cites "Are Large Language Models Reliable Rankers?" showing a
+  specific material attribute (e.g. "steel" on a coffee-machine page) measurably
+  raises relevance in both LLMs and Google — a concrete instance of the micro-
+  semantics already in this wiki. Repeats and sharpens the centerpiece-annotation
+  point: the first six or seven sentences carry the relevance threshold, so the
+  opening predicate and definition quality matter more than anything deeper on the
+  page. For AfriShield: our FAQ/BLUF blocks already split factual from narrative:
+  this says to also check whether a given post should carry a visible opinion/
+  review component (e.g. "which agency fits your case" reader input) rather than
+  staying purely factual throughout. — https://www.youtube.com/watch?v=dEUHYzBRI0w

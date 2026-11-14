@@ -98,3 +98,34 @@ synthesis-first discovery.
   honest sources are the AI-visibility study dataset, measured audits and real
   prospect questions; a candidate rule, held until there are posts to test it on. —
   https://www.youtube.com/watch?v=6qF8mRrtTms
+- **2026-10-31** — A CMO Alliance webinar laying out a full "GEO operating system"
+  for brands standing up a program from scratch. Headline stats: 50% of US
+  consumers now intentionally use AI-powered search, 68% of Google searches end
+  without a click, and ~40% of people who leave ChatGPT go to Google afterward to
+  verify — so classic search isn't dying, it's becoming a verification layer
+  behind AI search. Mechanically: a prompt gets fanned out into sub-queries, each
+  sub-query pulls ranked classic-search results, components get extracted from
+  those (a pricing table, a setup-steps list) and re-ranked before the language
+  model drafts an answer — reinforcing query fan-out and chunk retrieval already in
+  this wiki, but now framed as a pipeline to design content *components* around,
+  not just passages. His operating cycle is assess → prioritize → activate, run on
+  a review cadence (monthly for clients, he'd suggest bi-weekly in-house) with
+  explicit change management, because GEO touches brand, product and PR, not just
+  an SEO team. Three concrete projects he'd start before year-end: (1) a
+  measurement baseline using a tool that samples each prompt 5–20 times a day
+  rather than once — a single daily check is "not telling you much of anything" in
+  a probabilistic environment, which sharpens last week's "distribution, not a
+  rank number" finding into a specific sampling-frequency bar; (2) expanding the
+  brand's presence into the content ecosystem AI search actually pulls from —
+  partner/affiliate sites, Reddit, LinkedIn, YouTube — not just the owned site,
+  and flags video as still the easiest format to become "the answer" because many
+  queries have no video competing for the slot at all; (3) piloting narrow agentic
+  workflows (content-brief research, drafting, a judge-agent checking the draft
+  against the brief) rather than handing an AI the whole content process. For
+  measurement he stratifies into input metrics (what you shipped) → channel
+  metrics (share of voice, citation rate, citation *accuracy*) → performance
+  metrics (referral traffic, conversion) as a cascade, and treats citation
+  accuracy as a brand-safety issue, not just a visibility one. His four questions
+  for vetting any GEO partner — how do you measure, what will you change, who
+  implements it, what infrastructure do we own after 90 days — double as a
+  self-check for AfriShield's own client deliverables. — https://www.youtube.com/watch?v=NVcLF2reldk

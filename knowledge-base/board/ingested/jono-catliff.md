@@ -28,3 +28,13 @@ the 2026-07-29 run's `skipped-off-niche` call on the other ID — both rows are
 kept since they're technically different videoIds.
 
 Note (2026-10-12): both SEO videos read in full from yt-dlp `en-orig` captions. They walk through the same commands that already exist here as the `local-seo` suite, so nothing new. The Google Ads videos and the general Claude Code masterclass are outside the SEO/GEO niche. `M2KJ5-sFbbg` (SEO audit, 2026-08-30) was not reached and is left unlogged for the next run.
+
+| 2026-10-31 | PvGnb8tKtgw | Claude Code SEO: Steal Your Competitor's Traffic (5 Prompts) | ingested | shallow |
+| 2026-10-31 | yjOj5ZFybZI | Claude Code Removed The Last Reason To Use WordPress (And Elementor) | skipped-off-niche | shallow |
+
+Note (2026-10-31): `PvGnb8tKtgw` — Firecrawl returned a 401 on the transcript
+endpoint, but the full chaptered description (itself a thorough walkthrough) was
+readable and is what the wiki entry is built from; logged `shallow` since no
+spoken transcript was read. `yjOj5ZFybZI` is about replacing WordPress page-building
+with Claude Code generally — a web-dev/tooling topic, not SEO/GEO specifically.
+`M2KJ5-sFbbg` remains unreached.
