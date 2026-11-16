@@ -269,7 +269,11 @@ export default function Post() {
         </p>
 
         <p>
-          La méthode complète, étape par étape, est dans notre guide{' '}
+          La création et la validation, étape par étape et en français, sont détaillées dans{' '}
+          <a href="/blog/creer-sa-fiche-etablissement-google-au-cameroun">
+            notre guide pour créer sa fiche d’établissement Google au Cameroun
+          </a>
+          . L’optimisation qui suit est dans notre guide{' '}
           <a href="/blog/google-business-profile-optimization">
             d’optimisation de la fiche d’établissement Google
           </a>

@@ -550,5 +550,17 @@
     "photographerUrl": "https://www.pexels.com/@tosin-olowoleni-2148141635",
     "alt": "A man in a blue kaftan and embroidered cap sits outside a building looking at his phone, beside a To Let sign offering one and two rooms.",
     "avgColor": "#435350"
+  },
+  {
+    "slot": "blog-creer-sa-fiche-etablissement-google-au-cameroun",
+    "file": "images/blog-creer-sa-fiche-etablissement-google-au-cameroun.webp",
+    "source": "Pexels",
+    "query": "douala",
+    "pexelsId": 16883960,
+    "pexelsUrl": "https://www.pexels.com/photo/back-view-of-man-sitting-with-bags-on-motor-scooter-16883960/",
+    "photographer": "Aymar Ngahan",
+    "photographerUrl": "https://www.pexels.com/@aymar-ngahan-10237170",
+    "alt": "Un homme vu de dos roule à moto dans une rue de Douala, avec des sacs et un bidon accrochés de chaque côté.",
+    "avgColor": "#7E7976"
   }
 ]

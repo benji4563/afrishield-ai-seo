@@ -69,6 +69,57 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'creer-sa-fiche-etablissement-google-au-cameroun',
+    title:
+      'Créer sa fiche d’établissement Google au Cameroun : revendiquer, créer et valider',
+    cardTitle: 'Créer sa fiche Google au Cameroun',
+    metaTitle: 'Fiche d’établissement Google au Cameroun',
+    description:
+      'Créer sa fiche d’établissement Google au Cameroun pour 0 FCFA : revendiquer ou créer la fiche, adresse sans numéro de rue, nom bilingue et validation.',
+    lede:
+      'Une entreprise camerounaise apparaît sur Google Maps quand elle possède une fiche d’établissement Google validée. Ce guide explique quel compte doit en être propriétaire, comment revendiquer une fiche créée par quelqu’un d’autre, comment saisir une adresse sans numéro de rue, pourquoi le nom doit tenir dans une seule langue, et ce que la validation demande, selon les règles publiées par Google.',
+    lang: 'fr',
+    category: 'Référencement local',
+    published: '2026-11-16',
+    modified: '2026-11-16',
+    readingMinutes: 9,
+    primaryKeyword: 'créer sa fiche d’établissement google au cameroun',
+    image: {
+      src: '/images/blog-creer-sa-fiche-etablissement-google-au-cameroun.webp',
+      alt: 'Un homme vu de dos roule à moto dans une rue de Douala, avec des sacs et un bidon accrochés de chaque côté.',
+    },
+    linkedin: `« Madame, je suis devant la pharmacie. Mais quelle pharmacie ? »
+
+Si vous avez déjà guidé un moto-taxi au téléphone jusqu'à votre boutique, carrefour par carrefour, vous connaissez ce moment.
+
+Vous ouvrez Google Maps pour lui envoyer la position. Votre boutique y est. Plus ou moins.
+Ajoutée il y a deux ans par quelqu'un que vous ne connaissez pas, avec le repère de l'autre côté du carrefour et des horaires que vous n'avez jamais tenus.
+
+Vous pouvez la voir. Vous ne pouvez rien y changer.
+
+Une fiche Google que vous ne possédez pas, c'est un titre foncier rangé chez un cousin. Tout le monde sait à qui appartient le terrain. Personne n'a le papier.
+
+Récupérer le papier est gratuit, et tient en un après-midi :
+
+Cherchez d'abord la boutique sur Maps. Si la fiche existe, revendiquez-la au lieu d'en créer une deuxième. Google veut une seule fiche par établissement.
+Si quelqu'un d'autre l'a validée, utilisez Demander l'accès. Le propriétaire actuel a trois jours pour répondre.
+Pas de numéro de rue ? Google permet de placer le repère directement sur la carte. Posez-le sur la porte, pas sur le carrefour.
+Le nom tient dans une seule langue. Google interdit de répéter le même nom en français et en anglais, même si l'enseigne le fait.
+L'examen de validation prend jusqu'à cinq jours ouvrés, et c'est Google qui choisit la méthode.
+
+Coût : 0 FCFA. Google l'écrit noir sur blanc. Si un démarcheur vous propose de « vous inscrire sur Google » contre paiement, il vous vend un formulaire gratuit.
+
+Nous vendons du référencement, et nous venons de publier un guide complet pour se passer de nous à cette étape. Notre service commercial a été prévenu. Il fait bonne figure.
+
+Le guide complet, en français, avec les règles d'adresse camerounaises :
+
+https://afrishieldai.com/blog/creer-sa-fiche-etablissement-google-au-cameroun
+
+#Cameroun #Douala #GoogleMaps #PME #RéférencementLocal
+
+La prochaine fois, le moto-taxi saura de quelle pharmacie il s'agit.`,
+  },
+  {
     slug: 'how-to-put-your-business-on-google-maps-in-nigeria',
     title:
       'How to put your business on Google Maps in Nigeria: claim, create and verify it',
