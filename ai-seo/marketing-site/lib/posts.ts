@@ -69,6 +69,48 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'africa-safari-hotel-ai-visibility-index-2026',
+    title:
+      'Africa Safari & Hotel AI Visibility Index 2026: seven audits, four countries',
+    cardTitle: 'Safari & Hotel AI Visibility Index 2026',
+    metaTitle: 'Safari & Hotel AI Visibility Index 2026',
+    description:
+      'We audited 7 safari operators and hotels in 4 African countries. Five rank first for their own name. Five reach page one for nothing they sell.',
+    lede:
+      'Seven safari operators and hotels in Tanzania, Kenya, Uganda and South Africa were audited between 14 September and 14 October 2026. Five rank first on Google for their own name, and five reach page one for none of the trips or rooms they sell. The mean overall GEO score was 45 out of 100. Four publish an llms.txt file, and none of the four describes the business.',
+    category: 'Original research',
+    published: '2026-11-17',
+    modified: '2026-11-17',
+    readingMinutes: 10,
+    primaryKeyword: 'safari and hotel ai visibility index africa',
+    image: {
+      src: '/images/blog-africa-safari-hotel-ai-visibility-index-2026.webp',
+      alt: 'A safari vehicle drives towards the camera along a dusty track through dry Tanzanian savannah, acacia trees on either side.',
+    },
+    linkedin: `Search for your own safari company on Google. There you are, position one. Lovely.
+
+Now ask an assistant for a five day Serengeti safari with a good local operator, and do not mention your name.
+
+That second search is the one a new customer makes. We ran both kinds across seven safari operators and hotels in Tanzania, Kenya, Uganda and South Africa.
+
+Five of the seven rank first for their own name.
+Five of the seven reach page one for none of the trips or rooms they actually sell.
+The operator with more than 2,500 TripAdvisor reviews reached page one for zero of eight commercial searches.
+Four publish an llms.txt file for AI assistants. One of them is 34 words long and none of the four says who the business is.
+
+It is a bit like having the best table in the restaurant and no sign on the street. The regulars are very happy. Nobody else knows there is a restaurant.
+
+We should admit that seven businesses is a pilot and not a census. We called it an Index anyway, because Pilot Spreadsheet did not have the same ring.
+
+The anonymised dataset is public, and the scores are exact.
+
+https://afrishieldai.com/blog/africa-safari-hotel-ai-visibility-index-2026
+
+#SafariMarketing #HotelMarketing #GEO #AfricaTourism #AISearch
+
+If you run a lodge and you are position one for your own name, congratulations. The regulars found the table.`,
+  },
+  {
     slug: 'creer-sa-fiche-etablissement-google-au-cameroun',
     title:
       'Créer sa fiche d’établissement Google au Cameroun : revendiquer, créer et valider',

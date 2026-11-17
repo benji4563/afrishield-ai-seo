@@ -57,6 +57,7 @@ reconcile.
 | seo company in kenya | K — Kenya commercial | `/blog/seo-company-in-kenya` | 2026-11-12 | Live |
 | how to put your business on google maps in nigeria | N — Nigeria local / Maps setup | `/blog/how-to-put-your-business-on-google-maps-in-nigeria` | 2026-11-13 | Live |
 | créer sa fiche d'établissement google au cameroun | CM — Cameroon FR local / GBP | `/blog/creer-sa-fiche-etablissement-google-au-cameroun` | 2026-11-16 | Live |
+| safari and hotel ai visibility index africa | AF — original research (hospitality) | `/blog/africa-safari-hotel-ai-visibility-index-2026` | 2026-11-17 | Live |
 
 ## Deliberately not targeted
 

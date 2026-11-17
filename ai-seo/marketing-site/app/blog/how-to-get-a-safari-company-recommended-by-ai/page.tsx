@@ -182,6 +182,15 @@ export default function Post() {
           checkable that the directory does not have.
         </p>
 
+        <p>
+          We later looked at this from the operator&rsquo;s side. In our{' '}
+          <a href="/blog/africa-safari-hotel-ai-visibility-index-2026">
+            audit index of seven safari operators and hotels
+          </a>
+          , five ranked first for their own name and five reached page one for none of the trips
+          or rooms they sell.
+        </p>
+
         <h2 id="credentials">Publish the credentials a traveller would check</h2>
 
         <p>
