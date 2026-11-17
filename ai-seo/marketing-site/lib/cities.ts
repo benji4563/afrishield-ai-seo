@@ -340,6 +340,96 @@ export const CITIES: City[] = [
       },
     ],
   },
+  {
+    slug: 'yaounde',
+    name: 'Yaoundé',
+    country: 'Cameroon',
+    currency: 'XAF',
+    metaTitle: 'AI SEO Agency in Yaoundé, Cameroon',
+    metaDescription:
+      'AI SEO and GEO for Yaoundé businesses — Bastos, Centre-ville, Essos, Mvan and Biyem-Assi. French first, English alongside. From $150/month, invoiced in XAF.',
+    title: 'AI SEO in Yaoundé, for the clinics, hotels and firms the capital runs on',
+    heroBlurb:
+      'Search and AI visibility for Yaoundé businesses across Bastos, Centre-ville, Essos, Mvan and Biyem-Assi — written in French first, in a capital where most competitors have no search presence to speak of.',
+    bluf: 'AfriShield AI provides AI SEO and generative engine optimisation for businesses in Yaoundé, Cameroon — covering Bastos, Centre-ville, Essos, Mvog-Ada, Mvan and Biyem-Assi. The service covers technical fixes, a French-first keyword map with English alongside, published content, Google Business Profile work, and visibility inside ChatGPT, Perplexity and Google AI answers. From USD 150 per month, invoiced in XAF.',
+    districts: ['Bastos', 'Centre-ville', 'Essos', 'Mvog-Ada', 'Mvan', 'Biyem-Assi'],
+    marketReality:
+      'Yaoundé is Cameroon’s political capital: the ministries, the embassies in Bastos, the international organisations and the country’s oldest university are all here. That shapes what sells. The city’s private economy is built around the people those institutions bring in and employ — private clinics, opticians and dental practices, hotels and guest houses for delegations and conference travellers, private schools, and the law, audit and consulting firms that work with government and donors. It is a quieter commercial market than Douala and a steadier one, because the demand does not depend on the port.',
+    searchBehaviour:
+      'Yaoundé searches in French before anything else: “opticien Yaoundé”, “clinique dentaire Bastos”, “hôtel près du Palais des Congrès”. English matters for the diplomatic and NGO community, who search for the same services with different words and usually have no local network to ask instead. That second group increasingly asks an AI assistant first, and the assistant can only answer from what local businesses have published — which, for most Yaoundé categories, is a directory entry and a Facebook page. We already do this work here: one of our published case studies is an optician in Mvog-Ada.',
+    sectors: [
+      'Private clinics, opticians and dental practices',
+      'Hotels, guest houses and conference venues',
+      'Law, audit and consulting firms',
+      'Private schools and training institutes',
+      'Restaurants and catering',
+    ],
+    competitiveNote:
+      'Yaoundé is lightly contested, but it is not empty. A few established opticians and clinics already hold the first results for their own category, usually on the strength of age and a Google Business Profile rather than any deliberate search work. Displacing them on French commercial terms is realistic inside two to three months. Search volumes here are small, so expect a steady trickle of well-matched enquiries rather than a flood.',
+    faq: [
+      {
+        q: 'Combien coûte le référencement à Yaoundé ?',
+        a: 'Les trois formules sont à USD 150, 400 ou 900 par mois, facturées en XAF si vous le souhaitez. Sans frais de mise en service, sans engagement de durée, avec un préavis de trente jours. Le travail se fait en français, avec l’anglais en complément lorsque votre clientèle le demande.',
+      },
+      {
+        q: 'Travaillez-vous déjà avec des entreprises à Yaoundé ?',
+        a: 'Oui. L’une de nos études de cas publiées concerne un opticien installé à Mvog-Ada. Nous y décrivons ce qui a été mis en ligne, les choix qui ont été faits et les résultats mesurés, sans les arrondir.',
+      },
+      {
+        q: 'Is Yaoundé a different market from Douala for search?',
+        a: 'Yes. Douala is a trading and logistics market and searches in both languages about equally. Yaoundé is an administrative and services market that searches in French first, with a distinct English-speaking audience of diplomats, NGO staff and visitors. A keyword map built for Douala does not transfer; the categories that matter and the words people use are different.',
+      },
+      {
+        q: 'Can you help a clinic or optician in Yaoundé appear in ChatGPT answers?',
+        a: 'That is the work we do most here. An assistant recommends a practice when it can verify what the practice does, where it is, when it is open and what patients say about it. Most Yaoundé practices publish none of that on a site of their own, so the assistant falls back on the professional register and directories. Publishing those facts properly is usually the whole gap.',
+      },
+    ],
+  },
+  {
+    slug: 'buea',
+    name: 'Buea',
+    country: 'Cameroon',
+    currency: 'XAF',
+    metaTitle: 'AI SEO Specialist in Buea, Cameroon',
+    metaDescription:
+      'AI SEO and GEO for Buea businesses — Molyko, Great Soppo, Bonduma and Buea Town. English-language search, small market, almost no competition. From $150/month.',
+    title: 'AI SEO in Buea, the English-speaking market nobody has optimised for',
+    heroBlurb:
+      'Search and AI visibility for Buea businesses across Molyko, Great Soppo, Bonduma and Buea Town — a small English-language market where being first costs very little.',
+    bluf: 'AfriShield AI provides AI SEO and generative engine optimisation for businesses in Buea, in Cameroon’s South-West Region — covering Molyko, Great Soppo, Bonduma, Buea Town and Mile 17. The service covers technical fixes, an English-language keyword map, published content, Google Business Profile work, and visibility inside ChatGPT, Perplexity and Google AI answers. From USD 150 per month, invoiced in XAF.',
+    districts: ['Molyko', 'Great Soppo', 'Bonduma', 'Buea Town', 'Mile 17'],
+    marketReality:
+      'Buea is the capital of the South-West Region and sits on the slopes of Mount Cameroon. It is a university town before it is anything else: the University of Buea and the colleges around Molyko set the rhythm of the local economy, from student housing to clinics to printing shops. It is also where Cameroon’s “Silicon Mountain” technology community started, so software studios and startups are part of the ordinary business mix here. Visitors come for the mountain and the annual Race of Hope, and Limbe and its beaches are a short drive down the hill.',
+    searchBehaviour:
+      'Buea searches in English, which sets it apart from almost every other Cameroonian market we work in. The phrases are plain and local: “hotel in Buea”, “clinic in Molyko”, “schools in Buea”. Volumes are small and we will not pretend otherwise. What makes the market worth working is that a parent abroad choosing a school, a climber choosing a guest house or a new lecturer looking for a clinic has no local network to ask, and the search results they get are thin. Search Console has already shown this site appearing for an SEO search that named Buea, before this page existed.',
+    sectors: [
+      'Private clinics, pharmacies and opticians',
+      'Hotels, guest houses and mountain tourism',
+      'Private schools, colleges and training institutes',
+      'Technology startups and software studios',
+      'Student housing and real estate',
+    ],
+    competitiveNote:
+      'Buea is lightly contested and it is also the smallest market we cover. Very few local businesses have a website that states what they do, and almost none have done any search work, so a properly built page can reach the first results within weeks. The honest limit is demand: if your customers all live within walking distance and already know you, search will add little. It pays when the customer is new to town or is not in town yet.',
+    faq: [
+      {
+        q: 'How much does SEO cost in Buea?',
+        a: 'The three plans are USD 150, 400 or 900 per month, invoiced in XAF if you prefer. There is no setup fee and no minimum term, with thirty days’ notice to stop. For most Buea businesses the USD 150 plan covers what the market needs.',
+      },
+      {
+        q: 'Is there enough search demand in Buea to justify SEO?',
+        a: 'For some businesses, no. Search volumes in Buea are small, and a shop whose customers all walk past it will gain little. It is worth doing when your customers come from outside: students and parents choosing a school, visitors booking a room, patients looking for a specialist, or clients abroad looking for a Buea software team.',
+      },
+      {
+        q: 'Do you work in English for Buea and the South-West?',
+        a: 'Yes. Buea searches in English, so the keyword map, the pages and the Google Business Profile are written in English from the start rather than translated from French. Where a business also serves Douala or Yaoundé, we add French pages for those customers.',
+      },
+      {
+        q: 'Can a Buea hotel or guest house appear in AI answers about Mount Cameroon?',
+        a: 'It can, and very few are trying. An assistant asked where to stay before climbing Mount Cameroon needs a page that states the location, the rooms, the price range and how to book. Most Buea properties are described only by booking platforms and review sites, so those are what the assistant quotes. A clear page of your own gives it something better to cite.',
+      },
+    ],
+  },
 ];
 
 export const getCity = (slug: string) => CITIES.find((city) => city.slug === slug);
