@@ -37,6 +37,7 @@ const ROUTES = [
   { path: '/ai-visibility-check', priority: '0.9', changefreq: 'monthly', lastmod: '2026-10-12' },
   { path: '/about', priority: '0.8', changefreq: 'monthly', lastmod: '2026-07-29' },
   { path: '/case-studies', priority: '0.8', changefreq: 'monthly', lastmod: '2026-10-12' },
+  { path: '/research', priority: '0.9', changefreq: 'monthly', lastmod: '2026-11-18' },
   { path: '/resources/ai-visibility-checklist', priority: '0.7', changefreq: 'monthly', lastmod: '2026-10-12' },
   { path: '/contact', priority: '0.7', changefreq: 'yearly', lastmod: '2026-10-12' },
 ];
