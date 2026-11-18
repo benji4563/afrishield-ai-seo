@@ -175,7 +175,12 @@ export default function Post() {
           <a href="/blog/agence-seo-cameroun">
             notre guide pour choisir une agence SEO au Cameroun
           </a>
-          . Les étapes ci-dessous valent de Douala à Garoua.
+          . Les étapes ci-dessous valent de Douala à Garoua. Pour un cabinet d’optique, la suite
+          est détaillée dans{' '}
+          <a href="/blog/visibilite-google-opticien-douala">
+            notre guide de la visibilité Google pour un opticien à Douala
+          </a>
+          .
         </p>
 
         <h2 id="lieu-ou-fiche">Un lieu sur la carte ou une fiche qui vous appartient</h2>

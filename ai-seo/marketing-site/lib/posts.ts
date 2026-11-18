@@ -69,6 +69,54 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'visibilite-google-opticien-douala',
+    title:
+      'Visibilité Google pour un opticien à Douala : passer devant les annuaires, puis être cité par l’IA',
+    cardTitle: 'Visibilité Google d’un opticien à Douala',
+    metaTitle: 'Visibilité Google d’un opticien à Douala',
+    description:
+      'Visibilité Google pour un opticien à Douala : pourquoi les annuaires passent devant le cabinet, et ce que Google et ChatGPT demandent, dans l’ordre.',
+    lede:
+      'Un cabinet d’optique à Douala apparaît sur Google quand sa fiche d’établissement est validée et complète, qu’il reçoit des avis réguliers et que son site décrit chaque service. Google classe les résultats locaux selon la pertinence, la distance et la notoriété. Ce guide explique pourquoi les listes et les annuaires passent souvent devant les cabinets, et dans quel ordre corriger la situation.',
+    lang: 'fr',
+    category: 'Référencement local',
+    published: '2026-11-18',
+    modified: '2026-11-18',
+    readingMinutes: 9,
+    primaryKeyword: 'visibilité google pour opticien à douala',
+    image: {
+      src: '/images/blog-visibilite-google-opticien-douala.webp',
+      alt: 'Des montures de lunettes exposées sur un présentoir mural à l’entrée d’un magasin d’optique, le reste de la boutique flou en arrière-plan.',
+    },
+    linkedin: `« Bonjour, vous êtes bien l'opticien de Bonapriso ? »
+« Non madame, ici c'est une quincaillerie. Le numéro a changé de propriétaire en 2021. »
+
+Si votre cabinet d'optique apparaît dans un annuaire en ligne avec un ancien numéro, quelqu'un vient peut-être d'avoir cette conversation. Sans vous.
+
+Cherchez « opticien Douala » sur Google. En haut, souvent : une liste d'opticiens en PDF, des annuaires, puis quelques cabinets. Pas forcément le vôtre, même avec le meilleur équipement du quartier.
+
+Google ressemble à un patient qui ne peut pas entrer dans la boutique. Il ne voit ni votre salle d'examen ni votre mur de montures. Il lit ce qui est écrit sur vous, et il croit ce qu'il lit.
+
+Ce qu'il lui faut, dans l'ordre :
+
+Une fiche Google revendiquée et validée, dans la catégorie Opticien, avec le repère posé sur votre porte et les horaires que vous tenez vraiment.
+Des avis demandés à chaque patient au retrait des lunettes, par WhatsApp. À tous, pas seulement aux plus contents : Google interdit de trier.
+Une page par service sur votre site : examen de vue, verres progressifs, lentilles, lunettes pour enfants.
+Votre inscription à l'Ordre National des Opticiens du Cameroun, écrite noir sur blanc. Le patient peut la vérifier, et c'est une phrase qu'un assistant d'IA peut reprendre.
+
+Google l'écrit lui-même : aucun paiement ne fait monter dans le classement local.
+
+Nous vendons du référencement, et une bonne moitié de ce guide se fait gratuitement en une semaine. Nous avons vérifié deux fois. C'était toujours gratuit.
+
+Le guide complet, en français :
+
+https://afrishieldai.com/blog/visibilite-google-opticien-douala
+
+#Cameroun #Douala #Opticien #SantéVisuelle #GoogleMaps
+
+Et pensez à mettre à jour ce numéro. La quincaillerie commence à connaître vos patients.`,
+  },
+  {
     slug: 'africa-safari-hotel-ai-visibility-index-2026',
     title:
       'Africa Safari & Hotel AI Visibility Index 2026: seven audits, four countries',

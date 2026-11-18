@@ -58,6 +58,7 @@ reconcile.
 | how to put your business on google maps in nigeria | N — Nigeria local / Maps setup | `/blog/how-to-put-your-business-on-google-maps-in-nigeria` | 2026-11-13 | Live |
 | créer sa fiche d'établissement google au cameroun | CM — Cameroon FR local / GBP | `/blog/creer-sa-fiche-etablissement-google-au-cameroun` | 2026-11-16 | Live |
 | safari and hotel ai visibility index africa | AF — original research (hospitality) | `/blog/africa-safari-hotel-ai-visibility-index-2026` | 2026-11-17 | Live |
+| visibilité google pour opticien à douala | NICHE — clinics × Douala × FR | `/blog/visibilite-google-opticien-douala` | 2026-11-18 | Live |
 
 ## Deliberately not targeted
 

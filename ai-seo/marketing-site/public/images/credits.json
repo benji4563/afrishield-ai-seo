@@ -573,5 +573,17 @@
     "photographer": "Mark",
     "photographerUrl": "https://www.pexels.com/@mark-391112938",
     "alt": "A safari vehicle drives towards the camera along a dusty track through dry Tanzanian savannah, acacia trees on either side."
+  },
+  {
+    "slot": "blog-visibilite-google-opticien-douala",
+    "file": "images/blog-visibilite-google-opticien-douala.webp",
+    "source": "Pexels",
+    "query": "optician eyeglasses display",
+    "pexelsId": 5201933,
+    "pexelsUrl": "https://www.pexels.com/photo/eyeglasses-on-display-5201933/",
+    "photographer": "Karola G (Kaboompics)",
+    "photographerUrl": "https://www.pexels.com/@karola-g",
+    "alt": "Des montures de lunettes exposées sur un présentoir mural à l’entrée d’un magasin d’optique, le reste de la boutique flou en arrière-plan.",
+    "avgColor": "#9C968E"
   }
 ]
