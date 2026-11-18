@@ -8,7 +8,7 @@ import { StructuredData } from '@/components/seo/StructuredData';
 import { breadcrumbJsonLd, ORGANIZATION_ID } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/site';
 
-const TITLE = 'AfriShield Research: AI visibility in Africa, measured';
+const TITLE = 'AI Visibility Research in Africa';
 const DESCRIPTION =
   'Original studies of how African businesses appear in Google and AI answers. Methods and limits published, datasets open under CC BY 4.0. One new study a month.';
 
