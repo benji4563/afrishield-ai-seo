@@ -34,3 +34,10 @@ no new content beyond what's already logged there. No videoId overlap with
 the 2026-07-29 run.
 
 Note (2026-10-12): the two newest unread uploads were read in full (Firecrawl transcripts). Both are short pre-conference interviews from April 2026. The three older April uploads are marked `skipped-backlog` unread: older than 60 days and outside this run's cap.
+
+| 2026-11-07 | xg5Sy5S-OU8 | Why an RFP Is the Wrong Way to Hire an AI Search Agency \| Mike King | skipped-nothing-new | deep |
+
+Note (2026-11-07): a 56-second YouTube Short. Read in full — it's a verbatim
+re-cut of the RFP passage from `NVcLF2reldk` ("The GEO Operating System"),
+already logged in full last run (2026-10-31). No new content; promotional
+clip only, not a separate upload.

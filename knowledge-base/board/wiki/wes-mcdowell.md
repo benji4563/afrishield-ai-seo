@@ -78,3 +78,14 @@ message-first design · social proof · local SEO tier list.
   and comparison; "how to choose" and "what the first month looks like" are the
   gaps. **Tension with the settled strategy:** he would put the effort into video
   rather than three blog posts a week — flagged to Ben, not acted on. — https://www.youtube.com/watch?v=VXGDHZIGf40
+- **2026-11-07** — "The New Rules of Digital Marketing (Ranked for 2027)": he
+  ranks 20 popular marketing strategies best-to-worst for 2027, arguing some that
+  worked a year ago are already losing their edge as AI reshapes how people find
+  businesses. Logged shallow again — Firecrawl returned no transcript (401, same
+  as last run's `DOA2SXz-XGA`), and no third-party recap was found, so only the
+  framing is captured, not which 20 tactics or where he ranks them. Format matches
+  the "SEO Tier List" video already listed as a wiki source, just widened from
+  SEO specifically to marketing broadly. Worth a deep pass if a transcript source
+  becomes reachable, since a ranked list of what he thinks is declining vs.
+  rising is directly actionable for AfriShield's own channel-mix decisions. —
+  https://www.youtube.com/watch?v=xnqmiEz9-fA
