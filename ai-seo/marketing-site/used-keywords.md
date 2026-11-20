@@ -59,6 +59,7 @@ reconcile.
 | créer sa fiche d'établissement google au cameroun | CM — Cameroon FR local / GBP | `/blog/creer-sa-fiche-etablissement-google-au-cameroun` | 2026-11-16 | Live |
 | safari and hotel ai visibility index africa | AF — original research (hospitality) | `/blog/africa-safari-hotel-ai-visibility-index-2026` | 2026-11-17 | Live |
 | visibilité google pour opticien à douala | NICHE — clinics × Douala × FR | `/blog/visibilite-google-opticien-douala` | 2026-11-18 | Live |
+| visibilité ia pour espace de coworking à yaoundé | NICHE — coworking × Yaoundé × FR | `/blog/visibilite-ia-coworking-yaounde` | 2026-11-20 | Live |
 
 ## Deliberately not targeted
 

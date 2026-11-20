@@ -69,6 +69,55 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'visibilite-ia-coworking-yaounde',
+    title:
+      'Visibilité IA pour un espace de coworking à Yaoundé : être trouvé sur Google Maps et recommandé par ChatGPT',
+    cardTitle: 'Visibilité IA d’un coworking à Yaoundé',
+    metaTitle: 'Visibilité IA d’un coworking à Yaoundé',
+    description:
+      'Visibilité IA pour un espace de coworking à Yaoundé : la fiche Google, les prix publiés et les pages que ChatGPT doit lire pour recommander un espace.',
+    lede:
+      'Un espace de coworking à Yaoundé est recommandé par Google et par les assistants d’IA quand sa fiche d’établissement est validée et complète et que son site publie en texte ses formules et ses prix en FCFA. Google classe les résultats locaux selon la pertinence, la distance et la popularité. Ce guide explique ce que chaque type de client cherche, et dans quel ordre faire le travail.',
+    lang: 'fr',
+    category: 'Référencement local',
+    published: '2026-11-20',
+    modified: '2026-11-20',
+    readingMinutes: 9,
+    primaryKeyword: 'visibilité ia pour espace de coworking à yaoundé',
+    image: {
+      src: '/images/blog-visibilite-ia-coworking-yaounde.webp',
+      alt: 'Une jeune femme assise devant un ordinateur portable sur une petite table ronde, un collègue penché à côté d’elle, dans un espace de travail lumineux avec un comptoir de café en arrière-plan.',
+    },
+    linkedin: `« C'est combien la journée ? »
+
+Si vous gérez un espace de coworking à Yaoundé, vous recevez ce message sur WhatsApp plusieurs fois par semaine. Et vous savez qu'il y en a d'autres qui ne vous arrivent jamais.
+
+Parce que la personne qui l'aurait envoyé a d'abord tapé « coworking Bastos » sur Google, puis posé la question à ChatGPT depuis son hôtel. Elle a trouvé un réseau international, un annuaire mondial, et la page Facebook d'un voisin.
+
+Nous avons regardé la première page de Google pour « espace de coworking Yaoundé » ce 20 novembre. Deux résultats sur dix affichaient un prix dans l'extrait. Les autres promettaient surtout des tarifs « abordables et flexibles ».
+
+Google, c'est un client qui ne peut pas passer à l'accueil. Il ne voit ni votre groupe électrogène ni votre salle de réunion. Il lit ce qui est écrit sur vous, et il croit ce qu'il lit. ChatGPT aussi.
+
+Ce qu'il leur faut :
+
+Une fiche Google validée, avec le repère sur la bonne porte, les vrais horaires, l'attribut Wi-Fi et des photos des bureaux un jour de semaine.
+Vos prix en FCFA écrits sur votre site, à l'heure, à la journée, au mois. Pas dans la fiche : Google y interdit les prix.
+Une page de questions fréquentes : débit, électricité de secours, week-end, facture au nom de l'entreprise.
+Un avis demandé à chaque membre après sa première semaine. À tous, sans cadeau, sans tri.
+
+Google l'écrit lui-même : aucun paiement ne fait monter dans le classement local.
+
+Nous vendons de la visibilité, et nous venons d'expliquer gratuitement comment faire les deux premières étapes. Notre service commercial a pris la nouvelle avec beaucoup de dignité.
+
+Le guide complet, en français :
+
+https://afrishieldai.com/blog/visibilite-ia-coworking-yaounde
+
+#Yaoundé #Cameroun #Coworking #GoogleMaps #VisibilitéIA
+
+Et la prochaine fois qu'on vous demandera « c'est combien la journée ? », la réponse sera déjà écrite sur le site.`,
+  },
+  {
     slug: 'visibilite-google-opticien-douala',
     title:
       'Visibilité Google pour un opticien à Douala : passer devant les annuaires, puis être cité par l’IA',

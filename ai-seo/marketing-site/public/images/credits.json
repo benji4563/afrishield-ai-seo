@@ -585,5 +585,17 @@
     "photographerUrl": "https://www.pexels.com/@karola-g",
     "alt": "Des montures de lunettes exposées sur un présentoir mural à l’entrée d’un magasin d’optique, le reste de la boutique flou en arrière-plan.",
     "avgColor": "#9C968E"
+  },
+  {
+    "slot": "blog-visibilite-ia-coworking-yaounde",
+    "file": "images/blog-visibilite-ia-coworking-yaounde.webp",
+    "source": "Pexels",
+    "query": "coworking space laptop africa",
+    "pexelsId": 30678875,
+    "pexelsUrl": "https://www.pexels.com/photo/team-collaboration-in-a-modern-lagos-cafe-30678875/",
+    "photographer": "Ninthgrid",
+    "photographerUrl": "https://www.pexels.com/@ninthgrid-2149521550",
+    "alt": "Une jeune femme assise devant un ordinateur portable sur une petite table ronde, un collègue penché à côté d’elle, dans un espace de travail lumineux avec un comptoir de café en arrière-plan.",
+    "avgColor": "#928E83"
   }
 ]

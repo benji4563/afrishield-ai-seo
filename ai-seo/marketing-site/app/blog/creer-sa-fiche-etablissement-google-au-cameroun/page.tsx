@@ -384,7 +384,11 @@ export default function Post() {
             <strong>Pas de bureau virtuel.</strong> Google n’accepte pas une adresse de
             domiciliation où l’entreprise ne travaille pas. Un espace de coworking n’est accepté
             que s’il est clairement signalé, que vous y recevez des clients et que votre personnel
-            y est présent pendant les horaires d’ouverture.
+            y est présent pendant les horaires d’ouverture. Si c’est vous qui gérez l’espace, voyez{' '}
+            <a href="/blog/visibilite-ia-coworking-yaounde">
+              notre guide de la visibilité IA d’un espace de coworking à Yaoundé
+            </a>
+            .
           </li>
           <li>
             <strong>Gardez une enseigne fixe.</strong> Google exige que les entreprises qui
