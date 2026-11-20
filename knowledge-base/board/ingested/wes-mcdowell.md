@@ -26,3 +26,14 @@ missed — so the deep entries above are what's kept; the shallow duplicates
 were dropped.
 
 Note (2026-10-12): the five skipped uploads are about making or growing a YouTube channel, not about a website, conversion or search. `VXGDHZIGf40` read in full from yt-dlp `en-orig` captions (Firecrawl returned no transcript).
+
+| 2026-10-31 | mmIWpdXk_wQ | Nobody Wants Your Free Advice on YouTube | ingested | deep |
+| 2026-10-31 | MqQAt48v298 | This coach had no time for youtube (so we fixed it) | skipped-nothing-new | deep |
+| 2026-10-31 | DOA2SXz-XGA | The New Era of 'Expert Branding' Has Just Begun | ingested | shallow |
+
+Note (2026-10-31): `mmIWpdXk_wQ` and `MqQAt48v298` are carried over from last run's
+2026-10-24 ledger (recorded there under this same slug's file before this week's
+branch was cut from an earlier master — see commit history). `DOA2SXz-XGA`: Firecrawl
+returned no transcript (401 on the watch page); the Apple Podcasts show-notes page
+for the same episode gave the full description, which is what the wiki entry is
+built from. No chapter list or transcript was available anywhere reached this run.

@@ -32,3 +32,7 @@ wiki entry for this video reflects. A future `deep` pass on this video would
 be the tiebreaker.
 
 Note (2026-10-12): both videos read in full from yt-dlp `en-orig` captions. The Firecrawl scrape of each watch URL returned a cached page with the chapter list but no transcript. Each video mixes usable ideas with tactics recorded in the wiki as `not adopted: manipulative`.
+
+| 2026-10-31 | dEUHYzBRI0w | How Google and LLMs Decide Which Page Deserves the Query | ingested | deep |
+
+Note (2026-10-31): full transcript read via Firecrawl (succeeded this run, unlike 2026-10-12's cached-page misses). A Julian Goldie-hosted interview; content and delivery are entirely Koray's.

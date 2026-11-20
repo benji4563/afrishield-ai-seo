@@ -77,3 +77,20 @@ clicks/month as the scoreboard.
     is review gating, which Google's review policy forbids. The same pipeline appears
     in the 2026-08-05 entry above and is not adopted there either: the company rule
     is that the Google review link is offered to every customer whatever they score.
+- **2026-10-31** — Wires Claude Code to a Semrush connector to pull a competitor's
+  top pages, keyword gap (searches that find them and never find you), and
+  backlink gap, then has Claude clone his own site's blueprint and rebuild a
+  *better* version of the competitor's best-performing service page and blog post
+  — not a copy, same topic. For local citations, he has Claude (via Firecrawl)
+  search the competitor's phone number in quotation marks to surface every
+  directory that lists them, then pull their Google Business Profile categories —
+  a concrete way to find the citation sources a competitor already has that a new
+  entrant is missing, beyond generic "submit to directories" advice. The AI-search
+  piece: Claude in Chrome asks ChatGPT, Claude, Perplexity and Gemini "who's the
+  best [service] in [city]" repeatedly, and logs which sites each answer cites —
+  get listed on those cited sites and you become eligible to be named the same
+  way. This is the first concrete *workflow* for the citation-tracking idea Koray
+  and Mike King's wikis argue for in the abstract (corroboration, "cost of
+  retrieval," citation accuracy) — worth trialing against AfriShield's own
+  Nairobi/Douala/Accra competitor set. Explicitly flags directory sign-up itself
+  as still manual (Claude fills the form, a human clicks create). — https://www.youtube.com/watch?v=PvGnb8tKtgw
