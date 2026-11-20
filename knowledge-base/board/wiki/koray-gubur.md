@@ -109,3 +109,21 @@ context · "Koraynese" (his precise, coined terminology).
     each AI crawler by user agent (cloaking-style); backdating a new document and
     linking it from expired domains so it reads as old; hiding a site from Googlebot
     while building links, as a launch trick.
+- **2026-10-24** — "External topical maps": third-party sites you don't own that
+  link, mention, or make an explicit claim about your brand (e.g. "the biggest law
+  firm in Houston"). Mentions and claims matter more than the link itself — repeated,
+  consistent mentions across independent sources build the "consensus" an engine
+  needs before it will cite a numeric or superlative claim, and he ties this to a
+  2009 research paper (Mindy Vu / Yahoo) on "truth range": engines accept a claimed
+  value (a price, a stat) only if it falls within a plausible range versus other
+  sources, and reject outliers regardless of source authority. Distinguishes this
+  from "extension domains" (secondary exact-match domains you own and control) as a
+  separate, fourth layer of visibility architecture. Directly extends the existing
+  "cost of retrieval"/corroboration entries below — this is the concrete mechanics
+  of how that consensus actually gets built off-site, and is squarely relevant to
+  AfriShield's own PR-syndication-log effort (same goal: independent third-party
+  mentions, not just backlinks). — https://www.youtube.com/watch?v=D7P6-b1XtxE
+  - *not adopted: manipulative* — paying/convincing third-party "award" or review
+    sites to publish fabricated statistics or unearned awards that then get cited
+    as if independently verified; deliberate cross-site content duplication
+    ("cannibalization on purpose") to manufacture apparent consensus.

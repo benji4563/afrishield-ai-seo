@@ -14,6 +14,7 @@ transcript) / `shallow` (title+description fallback).
 | 2026-08-05 | WrU25krFCtk | Topical Authority with 1 Page Exact Match Domain: 8,000 Clicks a Day - Learn Visual Semantics | ingested | deep |
 | 2026-10-12 | Af9rvlVPQCQ | Google's Ranking Secret? Julian Goldie Interviews Koray Tugberk Gubur on Visual Semantics | ingested | deep |
 | 2026-10-12 | VLDa_RoczYI | Topical Authority and Answer Engine Optimization: How LLMs Actually Retrieve Content | ingested | deep |
+| 2026-10-24 | D7P6-b1XtxE | How to Get Cited by AI: External Topical Maps Explained | ingested | deep |
 
 Note: `Mq0umjlnnUM` is already listed as a source in `wiki/koray-gubur.md` from
 an earlier (pre-ledger) seeding pass — logged here now so it isn't re-flagged
