@@ -30,3 +30,15 @@ per the per-advisor cap. No videoId overlap between the 2026-07-29 and
 2026-08-05 runs.
 
 Note (2026-10-12, local weekly task): all six newest uploads are AI-tool launch or agent-demo videos, filtered on title before any credit was spent. Nothing read.
+
+| 2026-11-14 | 6ixnrldW84w | Google AI Mode Just Got Hydrogen (SEO Is Changing) | ingested | shallow |
+
+Note (2026-11-14): `6ixnrldW84w` — Firecrawl returned a 401 on the transcript
+endpoint, but the full chapter list, description and cited sources were
+readable and are what the wiki entry is built from; logged `shallow` since no
+spoken transcript was read. `CkjWtplSWdU` ("AI SEO Full Course: 98% of It in 20
+Minutes") was attempted but returned no transcript and no usable description —
+left unreached and unlogged for a future run, same treatment as `M2KJ5-sFbbg`
+on the Jono Catliff ledger. The other four newest uploads at check time
+(Grok/Hermes routing, Higgsfield, a Gemini update, Fable+Blender) are general
+AI-tool news with no SEO/GEO angle.

@@ -59,3 +59,22 @@ links · topical relevance of links.
   in content/site generation. Worth watching for cost impact on our generation
   pipeline, but needs independent verification before changing our model stack. —
   https://www.youtube.com/watch?v=PYbBddbflRo
+- **2026-11-14** — News item: Google made Gemini 4 "Hydrogen" the default model
+  behind AI Mode (per Google's own 2026-11-12 blog posts, cited in the
+  description, plus third-party coverage — TechCrunch, 9to5Google, Search Engine
+  Roundtable/Journal). Four changes he demonstrates live in AI Mode: better query-
+  intent reading, wider query fan-out with more links surfaced per answer, more
+  visual answers/tables, and better non-English handling. His six recommended
+  moves, several of which just restate existing board doctrine rather than add to
+  it: map your own topic's query fan-out (Mike King), check which sites currently
+  get cited for your money queries (the citation-tracking idea Jono's workflow
+  already operationalizes), make pages easy to extract/cite (Koray's chunk/
+  centerpiece work), show real first-hand experience, track AI Mode appearances
+  via Search Console, and — his one actual caution — skip "AI SEO hacks" chasing
+  this specific model update, since the underlying ranking fundamentals (a normal
+  core update was running at the same time) didn't change. Signal-only per this
+  advisor's standing caveat: no independent verification here that Hydrogen
+  behaves as described, and the "six moves" are mostly a repackaging of other
+  advisors' already-logged ideas under a timely news hook — logged for the
+  specific, dated fact (Hydrogen is now AI Mode's default model as of 2026-11-12)
+  rather than for new tactics. — https://www.youtube.com/watch?v=6ixnrldW84w

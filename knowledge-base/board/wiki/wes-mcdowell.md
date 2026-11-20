@@ -78,3 +78,39 @@ message-first design · social proof · local SEO tier list.
   and comparison; "how to choose" and "what the first month looks like" are the
   gaps. **Tension with the settled strategy:** he would put the effort into video
   rather than three blog posts a week — flagged to Ben, not acted on. — https://www.youtube.com/watch?v=VXGDHZIGf40
+- **2026-11-14** — A full 6-step system, the most concrete end-to-end version of
+  his funnel logic yet. (1) **Topic selection via the "big bad":** pick one person
+  and their single overarching problem (not three audiences), then derive video
+  topics as that problem's sub-questions; start with "pull" videos built around
+  terms the person is already searching (trains YouTube's recommendation data on
+  who the channel is for) before "push" videos aimed at an existing audience — a
+  new channel making only push-style videos it "feels like making" gets no
+  search-matched first views and confuses YouTube about who to show it to. (2)
+  **Packaging:** the title restates the search term plus one "spice" clause (what
+  the other results leave out); the thumbnail must add a different element than
+  the title, not repeat it — stakes/drama, not brand consistency, is the job of a
+  thumbnail. (3) **Scripting via a "bookend" AI method:** voice-ramble every point
+  into a pre-loaded Claude/ChatGPT project (tone, past scripts, hooks already
+  stored), have it research gaps, then have it *interview you* in voice mode
+  before drafting — human does the first and last 10%, AI the middle 80%. Ties
+  directly to last week's point and his existing "Scar Scale": once AI gives the
+  information layer away free, the teaching segment has to go past information
+  into opinion/experience ("what would you do and why") or a live demonstration,
+  not a repeated instruction list. (4) **Shooting:** script fully, read it off a
+  teleprompter rather than freestyling from an outline — reduces rambling/re-takes
+  more than it costs naturalness; gear/lighting/background are explicitly not
+  where new channels should spend effort. (5) **Conversion:** most videos end by
+  pointing to the next video (building a "binge session," which itself trains
+  YouTube's distribution); only some videos end with a lead magnet or direct
+  booking CTA, and a lead magnet must be narrow enough that only someone who could
+  actually become a client would want it — a generic resume template pulls in
+  everyone and converts no one, versus "a guide to negotiating an executive offer"
+  for his worked example. Every video description leads with the booking/lead-
+  magnet link, not buried underneath. (6) **Iterate on own data:** compare video-
+  by-video performance and feed it back into topic selection; this is the step
+  that makes the system compound rather than reset each time. For AfriShield:
+  this is a complete, specific execution model (not just a "video matters" claim)
+  that could inform a future YouTube pilot if the settled text-first strategy is
+  ever revisited — the "big bad" framing in particular is a sharper way to pick a
+  city/service page's angle than the current keyword-engine-first approach. —
+  https://www.youtube.com/watch?v=O4IuiMx6kjc
