@@ -28,3 +28,15 @@ the 2026-07-29 run's `skipped-off-niche` call on the other ID — both rows are
 kept since they're technically different videoIds.
 
 Note (2026-10-12): both SEO videos read in full from yt-dlp `en-orig` captions. They walk through the same commands that already exist here as the `local-seo` suite, so nothing new. The Google Ads videos and the general Claude Code masterclass are outside the SEO/GEO niche. `M2KJ5-sFbbg` (SEO audit, 2026-08-30) was not reached and is left unlogged for the next run.
+
+| 2026-11-21 | 35UOT2I9dz0 | Claude Video Generation Makes Your Site Look Like $10,000 | skipped-off-niche | shallow |
+| 2026-11-21 | UkM5Ty5HScc | Fix Ugly Claude Code Website Design With 4 Free Tools | skipped-off-niche | shallow |
+| 2026-11-21 | XxB7IGUyJHg | Over 1,100 Passwords Leaked in Claude Code GitHub Repos | skipped-off-niche | shallow |
+| 2026-11-21 | OkW90jcYUuk | 6 AI Apps Better Than ChatGPT, One Clones Your Voice | skipped-off-niche | shallow |
+| 2026-11-21 | oewrREL3-Sco | Reverse Engineer Any Website in 4 Steps With Claude Code | skipped-off-niche | shallow |
+
+Note (2026-11-21): five newest uploads are web-design/dev tooling (site design
+fixes, website reverse-engineering, video generation for sites), a security-
+news item, and a general AI-apps roundup — web-dev tooling, not SEO/GEO
+specifically, consistent with the WordPress/Elementor skip pattern from
+2026-10-31. `M2KJ5-sFbbg` still unreached.

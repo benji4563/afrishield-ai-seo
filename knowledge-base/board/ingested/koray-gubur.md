@@ -32,3 +32,12 @@ wiki entry for this video reflects. A future `deep` pass on this video would
 be the tiebreaker.
 
 Note (2026-10-12): both videos read in full from yt-dlp `en-orig` captions. The Firecrawl scrape of each watch URL returned a cached page with the chapter list but no transcript. Each video mixes usable ideas with tactics recorded in the wiki as `not adopted: manipulative`.
+
+| 2026-11-21 | JjRqqRKjdkA | Topical Authority in 2027 and How Google Ranks Websites Now | ingested | deep |
+
+Note (2026-11-21): a 58-minute "Chat with Sha" interview, read in full via
+Firecrawl (large enough to need offset reads of the saved transcript file).
+Heavy iGaming-industry content throughout, almost all of which is `not
+adopted: manipulative` — see the wiki entry. The legitimate, adoptable part
+(predictive information retrieval, the 14MB→2MB HTML limit claim, the source-
+context worked example) is a small fraction of the runtime.

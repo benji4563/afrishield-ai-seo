@@ -26,3 +26,20 @@ missed — so the deep entries above are what's kept; the shallow duplicates
 were dropped.
 
 Note (2026-10-12): the five skipped uploads are about making or growing a YouTube channel, not about a website, conversion or search. `VXGDHZIGf40` read in full from yt-dlp `en-orig` captions (Firecrawl returned no transcript).
+
+| 2026-11-21 | DOA2SXz-XGA | The New Era of 'Expert Branding' Has Just Begun | ingested | shallow |
+| 2026-11-21 | xnqmiEz9-fA | The New Rules of Digital Marketing (Ranked for 2027) | ingested | shallow |
+| 2026-11-21 | O4IuiMx6kjc | It's Boring, But It'll Blow Up Your Business on YouTube in 2027 | ingested | deep |
+| 2026-11-21 | yZ_rf78zjsw | Why YouTube Suddenly Wants Experts Over 40 | ingested | deep |
+
+Note (2026-11-21): the first three rows are carried over from the
+2026-10-31/11-07/11-14 ledgers on this same slug (see commit history; this
+branch was cut before PRs #101/#103/#105 merged). `yZ_rf78zjsw` is this week's
+new upload, full transcript read via Firecrawl. `cATcTCqF5h4` ("The EXACT
+YouTube System I'm Betting It All On in 2027") appeared in this week's RSS
+check but is an unreleased scheduled premiere (airs 2026-11-24) — no
+transcript exists yet; left unlogged for next run, same treatment as
+`M2KJ5-sFbbg` on the Jono Catliff ledger. Its RSS "uploaded" date (2026-10-28,
+when the premiere was scheduled/created) is why it appeared with an odd date
+relative to newer videos — a variant of the "updated vs. published" timestamp
+quirk noted on Koray's ledger in earlier weeks.
