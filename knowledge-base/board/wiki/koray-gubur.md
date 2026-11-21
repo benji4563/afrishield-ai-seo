@@ -109,3 +109,38 @@ context · "Koraynese" (his precise, coined terminology).
     each AI crawler by user agent (cloaking-style); backdating a new document and
     linking it from expired domains so it reads as old; hiding a site from Googlebot
     while building links, as a launch trick.
+- **2026-11-21** — A long-form "state of the methodology" interview. The clearest
+  mechanics yet for "cost of retrieval": he names the underlying idea **predictive
+  information retrieval** (credits Google engineer Tristan Upstill) — Google's own
+  research found that judging only the first few sentences or sections of a page
+  predicts final quality almost as well as evaluating the whole document, so it
+  runs the full expensive ranking pipeline only on pages that clear this cheap
+  initial pass. His summary line: "cost of ranking a site can't be higher than
+  cost of not ranking it." He ties this to a dated, checkable claim worth
+  verifying independently: Google cut the HTML size it will crawl/process per page
+  from 14MB to 2MB (he says this was announced about a week before this interview,
+  i.e. early/mid November 2026) — a further cost-cutting move in the same
+  direction, and a reason front-loaded, lean HTML matters even more now. Restates
+  "source context" with a clean worked example: four different site *types* (an
+  HR site, a university, a developer forum, a course site) can all legitimately
+  rank for the same query ("PHP developer salary") because Google clusters
+  competing sources by type before ranking within each cluster — so part of
+  topical-map planning is identifying which source-context cluster a page is
+  competing in, not just covering the topic. For AfriShield: reinforces leading
+  every page with its answer in the first few sentences (already our BLUF
+  pattern) as literally the section Google's cheap first pass reads, and is a
+  reason to keep page HTML lean. — https://www.youtube.com/watch?v=JjRqqRKjdkA
+  - *not adopted: manipulative* — this interview also covers his iGaming-industry
+    work in detail, entirely in the "not adopted" category: cloaking an expired
+    Google Business Profile domain's highest-traffic page with casino content
+    while leaving the rest of the site looking legitimate (medical sites, fake
+    e-commerce "buy buttons" that route to a casino); buying "cross canonicals"
+    (paying for a canonical tag pointing at your page to inherit another site's
+    ranking signals) instead of a real link; manufacturing brand-search and click
+    data to force an exact-match domain's branded-term ranking. Also describes an
+    "external topical map" as a predetermined *paid-link-buying* schedule (which
+    links, what anchor text, what velocity, from which sites) — a materially more
+    manipulative use of the same term than the 10-17 entry's "external topical
+    maps" (earning independent third-party mentions), worth noting as a real
+    terminology collision: the same phrase covers both an earned-mentions
+    strategy and a link-buying schedule depending on who's using it.

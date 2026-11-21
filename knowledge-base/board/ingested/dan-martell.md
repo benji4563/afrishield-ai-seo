@@ -33,3 +33,12 @@ newest uploads had moved on from the prior run's short-form clips to
 longer-form business/AI-leverage content — first wiki update logged this run.
 
 Note (2026-10-12): `wtaRjOFqdyU` read in full from yt-dlp `en-orig` captions and kept because it bears on producing content for this service. The other five are motivation or tool round-ups.
+
+| 2026-11-21 | HxBCyL6AVpE | Default to action! | skipped-off-niche | shallow |
+| 2026-11-21 | sD4tYFxblLs | Stop babysitting your new hires | skipped-off-niche | shallow |
+| 2026-11-21 | YD8uRumP8cM | How to Build a 1-Person Business with AI Agents | skipped-off-niche | shallow |
+| 2026-11-21 | XdTRtDENf6w | Build a vision big enough for everyone on your team to fit inside | skipped-off-niche | shallow |
+| 2026-11-21 | ty_mkAGcjlA | This one word has completely changed my perspective on life | skipped-off-niche | shallow |
+
+Note (2026-11-21): five newest uploads are leadership/management and general
+AI-agent/productivity content with no SEO/GEO/content-production angle.

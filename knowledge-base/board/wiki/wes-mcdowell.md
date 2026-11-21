@@ -78,3 +78,30 @@ message-first design · social proof · local SEO tier list.
   and comparison; "how to choose" and "what the first month looks like" are the
   gaps. **Tension with the settled strategy:** he would put the effort into video
   rather than three blog posts a week — flagged to Ben, not acted on. — https://www.youtube.com/watch?v=VXGDHZIGf40
+- **2026-11-21** — "The experience grid": plots years of real-world expertise
+  (x-axis) against years of time-on-camera (y-axis). The top-left box — lots of
+  YouTube reps, little real expertise, generic "5 tips" content — won for most of
+  YouTube's history, but two things just closed it: AI now gives that same
+  information away free (restates last week's point, with the sharper line "AI
+  gives the textbook, you give the trench work"), and YouTube itself is doubling
+  the watch-time bar for new-channel ad eligibility from 4,000 to 8,000 hours/year
+  starting February 2027 — a dated, checkable claim worth watching rather than
+  independently verified here. Money and attention are both shifting to the
+  opposite corner: his own channel's viewer data (50%+ aged 35-54, biggest single
+  bucket 45-54) and a cited stat that US adults 55+ hold ~73% of national wealth
+  argue that an *older*, more experienced creator is now better positioned, not
+  worse — the audience able to pay is the audience that relates to them. Three
+  new case studies for "proof video" (extends the existing Scar Scale doctrine
+  with concrete, attributable examples rather than the framework alone): Noel
+  Randall (real-estate coaching) switched from YouTube-style videos to directly
+  answering her buyers' actual questions and grew from ~$5k-program sales via
+  Facebook ads to $6M/year; Jeff Hampton (a landlord-defense lawyer) debunked a
+  viral-in-his-niche forum myth on camera, piece by piece, and that single video
+  brought in a quarter-million dollars of business; Eric Reinhold (an architect)
+  posted simple drafting-table videos filmed on a phone and reached financial
+  independence converting viewers into clients and productized plans/courses.
+  For AfriShield: the "experience grid" framing is a sharper way to think about
+  *why* a founder-led or named-expert video would out-convert a generic AI-SEO
+  explainer, if a video pilot is ever revisited — direct, attributable proof
+  (a named audit, a real before/after) rather than general advice. —
+  https://www.youtube.com/watch?v=yZ_rf78zjsw

@@ -30,3 +30,13 @@ per the per-advisor cap. No videoId overlap between the 2026-07-29 and
 2026-08-05 runs.
 
 Note (2026-10-12, local weekly task): all six newest uploads are AI-tool launch or agent-demo videos, filtered on title before any credit was spent. Nothing read.
+
+| 2026-11-21 | UNskDAoZIII | New ChatGPT-6.2 Astra Is NEXT LEVEL! | skipped-off-niche | shallow |
+| 2026-11-21 | _FidUQboRMM | Hermes Obsidian is INSANE! | skipped-off-niche | shallow |
+| 2026-11-21 | JJe25cuVeac | OpenCode Just Made Hy4 Flash FREE for 2 Weeks! | skipped-off-niche | shallow |
+| 2026-11-21 | WOVWsnyoqhY | OpenCode Browse Just Got 25X LIGHTER?! | skipped-off-niche | shallow |
+| 2026-11-21 | EE4jUqNB4V8 | Devin Bots: The End of Coding Alone?! | skipped-off-niche | shallow |
+
+Note (2026-11-21): five newest uploads at check time are all general AI-model/
+coding-tool launch news (ChatGPT, Hermes, OpenCode, Devin) with no SEO/GEO
+angle. `CkjWtplSWdU` remains unreached from last week.
