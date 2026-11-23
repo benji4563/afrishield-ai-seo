@@ -219,7 +219,9 @@ export function generateInsights(period: Period, crm: CrmBundle | null, ga4: Ga4
   }
 
   // ── Revenue ───────────────────────────────────────────────────────────────
-  if (crm) {
+  if (crm && !crm.dealsAvailable) {
+    thin.push({ category: 'Revenue', note: 'The HubSpot token cannot read deals yet, so revenue cannot be analysed.' });
+  } else if (crm) {
     const allWon = crm.deals.filter((d) => d.isWon);
     if (!allWon.length) {
       add({

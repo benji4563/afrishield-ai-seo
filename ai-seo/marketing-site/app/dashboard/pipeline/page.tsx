@@ -24,7 +24,13 @@ export default async function Pipeline({ searchParams }: PageProps) {
   return (
     <Shell title="Sales pipeline" intro="HubSpot's own pipeline and stages, unchanged. Reporting categories are shown next to each stage." period={period}>
       <SourceBar sources={[['HubSpot', crmResult]]} />
-      {crm && crm.deals.length === 0 && (
+      {crm && !crm.dealsAvailable && (
+        <Notice tone="warn">
+          The HubSpot token on the server cannot read deals or pipelines yet, so this page cannot show real pipeline figures. Add the scopes
+          crm.objects.deals.read and crm.schemas.deals.read to the HubSpot private app.
+        </Notice>
+      )}
+      {crm && crm.dealsAvailable && crm.deals.length === 0 && (
         <Notice tone="warn">
           HubSpot has no deals yet. Create a deal in HubSpot when a lead books a consultation, and move it through the stages; this page fills itself.
           Nothing is invented to fill it.

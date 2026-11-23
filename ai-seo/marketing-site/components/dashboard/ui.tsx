@@ -26,12 +26,22 @@ export function Section({ title, note, children, right }: { title: string; note?
 
 /** Freshness line for one source: fetched time, not configured, or error. */
 export function SourceStatus({ name, result }: { name: string; result: SourceResult<unknown> }) {
-  if (result.status === 'ok')
+  if (result.status === 'ok') {
+    const warnings = (result.data as { warnings?: string[] } | null)?.warnings ?? [];
     return (
-      <span className="inline-flex items-center gap-1.5 text-small text-slate">
-        <span className="h-2 w-2 rounded-full bg-green-500" aria-hidden /> {name}: updated {fmtTime(result.fetchedAt)} (refreshes every 15 min)
+      <span className="inline-flex flex-col gap-0.5 text-small text-slate">
+        <span className="inline-flex items-center gap-1.5">
+          <span className={`h-2 w-2 rounded-full ${warnings.length ? 'bg-amber-500' : 'bg-green-500'}`} aria-hidden /> {name}: updated{' '}
+          {fmtTime(result.fetchedAt)} (refreshes every 15 min)
+        </span>
+        {warnings.map((w) => (
+          <span key={w} className="pl-3.5 text-amber-800">
+            {w}
+          </span>
+        ))}
       </span>
     );
+  }
   if (result.status === 'not_configured')
     return (
       <span className="inline-flex items-center gap-1.5 text-small text-amber-800">

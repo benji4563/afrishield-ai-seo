@@ -25,7 +25,13 @@ export default async function Revenue({ searchParams }: PageProps) {
   return (
     <Shell title="Revenue" intro="Verified revenue comes only from closed-won HubSpot deals. Open pipeline is shown apart and is never counted as revenue." period={period}>
       <SourceBar sources={[['HubSpot', crmResult]]} />
-      {crm && !crm.deals.some((d) => d.isWon) && (
+      {crm && !crm.dealsAvailable && (
+        <Notice tone="warn">
+          Revenue is unavailable: the HubSpot token on the server cannot read deals yet (missing scope crm.objects.deals.read). Figures below are
+          blank, not zero.
+        </Notice>
+      )}
+      {crm && crm.dealsAvailable && !crm.deals.some((d) => d.isWon) && (
         <Notice tone="warn">
           No closed-won deals in HubSpot yet, so verified revenue is empty. Paying clients are currently recorded only in the finance register; once they are
           entered as Closed Won deals (amount, currency, close date, service), this page reports them.

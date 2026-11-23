@@ -55,7 +55,7 @@ export type Deal = {
 
 export type Stage = { id: string; label: string; order: number; isClosed: boolean; probability: number | null };
 
-export type CrmBundle = { contacts: Contact[]; deals: Deal[]; stages: Stage[] };
+export type CrmBundle = { contacts: Contact[]; deals: Deal[]; stages: Stage[]; dealsAvailable: boolean; warnings: string[] };
 
 const CONTACT_PROPS = [
   'firstname',
@@ -153,14 +153,57 @@ function readMessage(message: string | null) {
   return { form, serviceInterest: tier || businessType || '' };
 }
 
+type PipelineList = {
+  results: { id: string; label: string; stages: { id: string; label: string; displayOrder: number; metadata: Record<string, string> }[] }[];
+};
+
+/** HubSpot's default deal pipeline, used only when the token cannot read pipelines. */
+const DEFAULT_PIPELINE: PipelineList = {
+  results: [
+    {
+      id: 'default',
+      label: 'Sales Pipeline',
+      stages: [
+        ['appointmentscheduled', 'Appointment Scheduled', 'false', '0.2'],
+        ['qualifiedtobuy', 'Qualified To Buy', 'false', '0.4'],
+        ['presentationscheduled', 'Presentation Scheduled', 'false', '0.6'],
+        ['decisionmakerboughtin', 'Decision Maker Bought-In', 'false', '0.8'],
+        ['contractsent', 'Contract Sent', 'false', '0.9'],
+        ['closedwon', 'Closed Won', 'true', '1.0'],
+        ['closedlost', 'Closed Lost', 'true', '0.0'],
+      ].map(([id, label, isClosed, probability], displayOrder) => ({ id, label, displayOrder, metadata: { isClosed, probability } })),
+    },
+  ],
+};
+
+const isScopeError = (error: unknown) => error instanceof Error && /HubSpot 403/.test(error.message);
+
 async function fetchCrm(): Promise<CrmBundle> {
-  const [contactRows, dealRows, pipelines] = await Promise.all([
+  // Contacts are required. Deals and pipelines are optional: a token without
+  // deal scopes still yields a working leads dashboard, with a clear warning.
+  const warnings: string[] = [];
+  const [contactRows, dealResult, pipelineResult] = await Promise.all([
     searchAll('contacts', CONTACT_PROPS),
-    searchAll('deals', DEAL_PROPS),
-    hubspot<{ results: { id: string; label: string; stages: { id: string; label: string; displayOrder: number; metadata: Record<string, string> }[] }[] }>(
-      '/crm/v3/pipelines/deals',
+    searchAll('deals', DEAL_PROPS).then(
+      (rows) => ({ ok: true as const, rows }),
+      (error: unknown) => ({ ok: false as const, error }),
+    ),
+    hubspot<PipelineList>('/crm/v3/pipelines/deals').then(
+      (list) => ({ ok: true as const, list }),
+      (error: unknown) => ({ ok: false as const, error }),
     ),
   ]);
+  for (const result of [dealResult, pipelineResult]) {
+    if (!result.ok && !isScopeError(result.error)) throw result.error;
+  }
+  const dealsAvailable = dealResult.ok;
+  const dealRows = dealResult.ok ? dealResult.rows : [];
+  const pipelines = pipelineResult.ok ? pipelineResult.list : DEFAULT_PIPELINE;
+  if (!dealResult.ok || !pipelineResult.ok) {
+    warnings.push(
+      'The HubSpot token on the server cannot read deals or pipelines (missing scopes crm.objects.deals.read and crm.schemas.deals.read). Leads still work; pipeline and revenue figures are unavailable until those scopes are added to the private app.',
+    );
+  }
 
   const stages: Stage[] = pipelines.results.flatMap((pipeline) =>
     pipeline.stages.map((stage) => ({
@@ -225,10 +268,10 @@ async function fetchCrm(): Promise<CrmBundle> {
     contactIds: dealContacts.get(id) ?? [],
   }));
 
-  return { contacts, deals, stages };
+  return { contacts, deals, stages, dealsAvailable, warnings };
 }
 
-const cachedCrm = cachedSource('hubspot', ['crm-v1'], fetchCrm);
+const cachedCrm = cachedSource('hubspot', ['crm-v2'], fetchCrm);
 
 export function hubspotConfigured(): boolean {
   return Boolean(process.env.HUBSPOT_TOKEN);

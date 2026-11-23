@@ -63,7 +63,10 @@ export default async function Overview({ searchParams }: PageProps) {
           <Kpi label="Closed-won clients" value={s?.won.length ?? null} definition={D.closedWon} source="HubSpot" unavailable={noCrm} />
           <Kpi label="Closed-lost" value={s?.lost.length ?? null} definition={D.closedLost} source="HubSpot" unavailable={noCrm} />
         </KpiGrid>
-        {crm && crm.deals.length === 0 && (
+        {crm && !crm.dealsAvailable && (
+          <p className="mt-3 text-small text-amber-800">Deal figures are unavailable: the HubSpot token on the server cannot read deals yet.</p>
+        )}
+        {crm && crm.dealsAvailable && crm.deals.length === 0 && (
           <p className="mt-3 text-small text-mute">HubSpot has no deals yet, so sales and revenue figures are zero rather than missing.</p>
         )}
       </Section>
