@@ -7,6 +7,9 @@ import { Footer } from '@/components/layout/Footer';
 import { WhatsAppFloat } from '@/components/layout/WhatsAppFloat';
 import { VoiceCallButton } from '@/components/layout/VoiceCallButton';
 import { PublicOnly } from '@/components/layout/PublicOnly';
+import { CookieBanner } from '@/components/consent/CookieBanner';
+import { HubSpotTracking } from '@/components/consent/HubSpotTracking';
+import { CONSENT_DEFAULT_SCRIPT } from '@/lib/consent';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { organizationJsonLd } from '@/lib/structured-data';
 import { SITE, SITE_URL } from '@/lib/site';
@@ -87,6 +90,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${sora.variable} ${inter.variable} ${mono.variable}`}
     >
       <head>
+        {/*
+          Consent Mode v2 defaults, before GTM: analytics and ad storage are
+          denied until the visitor accepts in <CookieBanner>; a saved choice is
+          re-applied here on every page load. See lib/consent.ts.
+        */}
+        <script id="consent-default" dangerouslySetInnerHTML={{ __html: CONSENT_DEFAULT_SCRIPT }} />
         {/* Google Tag Manager — official snippet, as high in <head> as possible. */}
         <script
           id="gtm-head"
@@ -97,19 +106,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','${GTM_ID}');`,
           }}
-        />
-        {/*
-          HubSpot tracking code (portal 148875549, EU1). Lets HubSpot record page
-          views and the traffic source of each contact; until now every form lead
-          showed "OFFLINE" as its source. The lead route in app/api/contact is
-          unchanged and still creates the contact itself.
-        */}
-        <script
-          type="text/javascript"
-          id="hs-script-loader"
-          async
-          defer
-          src="https://js-eu1.hs-scripts.com/148875549.js"
         />
       </head>
       <body>
@@ -158,6 +154,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         */}
         <PublicOnly>
           <Analytics />
+          {/* HubSpot tracking (portal 148875549, EU1), loaded only after marketing consent. */}
+          <HubSpotTracking />
+          <CookieBanner />
         </PublicOnly>
       </body>
     </html>

@@ -40,6 +40,7 @@ const ROUTES = [
   { path: '/research', priority: '0.9', changefreq: 'monthly', lastmod: '2026-11-18' },
   { path: '/resources/ai-visibility-checklist', priority: '0.7', changefreq: 'monthly', lastmod: '2026-10-12' },
   { path: '/contact', priority: '0.7', changefreq: 'yearly', lastmod: '2026-10-12' },
+  { path: '/privacy', priority: '0.3', changefreq: 'yearly', lastmod: '2026-11-24' },
 ];
 
 /**
