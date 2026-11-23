@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { readRefInBrowser } from '@/lib/affiliate';
+import { trackLead } from '@/lib/analytics';
 
 type Status = 'idle' | 'sending' | 'error';
 
@@ -44,6 +45,7 @@ export function AIVisibilityCheckForm() {
         return;
       }
 
+      trackLead('ai_visibility_check');
       router.push('/thank-you?from=ai-visibility-check');
     } catch {
       setStatus('error');
