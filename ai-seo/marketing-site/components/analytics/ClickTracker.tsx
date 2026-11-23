@@ -2,6 +2,14 @@
 
 import { useEffect } from 'react';
 import { trackCta, trackWhatsApp } from '@/lib/analytics';
+import { SITE } from '@/lib/site';
+
+/**
+ * Only links that open a chat with OUR number count. The blog's share buttons
+ * use `https://wa.me/?text=...` to share a post, which is not an enquiry, so a
+ * bare `wa.me/` match would have counted every share as a WhatsApp lead click.
+ */
+const OUR_WHATSAPP = SITE.whatsapp.replace(/^https?:\/\//, '');
 
 /**
  * One delegated click listener for the whole site, so buttons and links stay
@@ -9,8 +17,9 @@ import { trackCta, trackWhatsApp } from '@/lib/analytics';
  *
  * - any element with `data-cta-location` pushes `cta_click`
  *   (with `data-cta-target`);
- * - any link to wa.me pushes `whatsapp_click` instead, located by its
- *   `data-cta-location` or as `floating` (the sitewide button).
+ * - any link to our WhatsApp number (SITE.whatsapp) pushes `whatsapp_click`
+ *   instead, located by its `data-cta-location` or as `floating` (the
+ *   sitewide button). Blog "share on WhatsApp" links are ignored.
  *
  * It renders nothing and never sends personal data.
  */
@@ -20,7 +29,7 @@ export function ClickTracker() {
       const target = event.target as Element | null;
       if (!target?.closest) return;
 
-      const whatsapp = target.closest<HTMLAnchorElement>('a[href*="wa.me/"]');
+      const whatsapp = target.closest<HTMLAnchorElement>(`a[href*="${OUR_WHATSAPP}"]`);
       if (whatsapp) {
         trackWhatsApp(whatsapp.dataset.ctaLocation ?? 'floating');
         return;
