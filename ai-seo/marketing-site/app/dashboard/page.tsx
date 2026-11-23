@@ -78,7 +78,7 @@ export default async function Overview({ searchParams }: PageProps) {
           <Kpi
             label="Top service by revenue"
             value={s && crm && s.won.length ? revenueBy(crm, s.won, (d) => d.service || 'Unspecified')[0].name : '—'}
-            definition="Service (HubSpot deal type) with the most closed-won deals in the period."
+            definition="Service (the Service line in the deal description) with the most closed-won deals in the period."
             source="HubSpot"
             unavailable={noCrm}
           />

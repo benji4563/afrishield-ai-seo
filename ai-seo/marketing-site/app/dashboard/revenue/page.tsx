@@ -58,7 +58,7 @@ export default async function Revenue({ searchParams }: PageProps) {
             empty="No closed-won deals."
           />
         </Section>
-        <Section title="Revenue by service" note="HubSpot deal type, in the period.">
+        <Section title="Revenue by service" note="From the &quot;Service:&quot; line in each deal description, in the period.">
           <Table head={['Service', 'Deals', 'Revenue']} rows={crm && s ? revenueBy(crm, s.won, (d) => d.service || 'Unspecified').map((g) => [g.name, num(g.deals), formatMoney(g.money)]) : []} empty="No won deals in this period." />
         </Section>
         <Section title="Revenue by acquisition source" note="First touch: original source of the contact linked to each deal.">

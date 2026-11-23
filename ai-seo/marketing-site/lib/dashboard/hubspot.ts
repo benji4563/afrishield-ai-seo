@@ -254,7 +254,8 @@ async function fetchCrm(): Promise<CrmBundle> {
     id,
     name: p.dealname ?? '(unnamed deal)',
     amount: p.amount ? Number(p.amount) : null,
-    currency: p.deal_currency_code || 'USD', // portal company currency when unset
+    // Company currency is XAF since 2026-11-24; a deal without its own code uses it.
+    currency: p.deal_currency_code || 'XAF',
     stage: p.dealstage ?? '',
     stageLabel: stageLabel.get(p.dealstage ?? '') ?? p.dealstage ?? '',
     pipeline: p.pipeline ?? '',
@@ -264,7 +265,9 @@ async function fetchCrm(): Promise<CrmBundle> {
     closeDate: p.closedate || null,
     enteredStageAt: p.hs_date_entered_closedwon || null,
     lastModified: p.hs_lastmodifieddate || null,
-    service: p.dealtype || '',
+    // HubSpot Free has no service field on deals: the service is written as a
+    // "Service: …" line in the description; deal type is the fallback.
+    service: p.description?.match(/Service:\s*([^\n]+)/i)?.[1]?.trim() || p.dealtype || '',
     contactIds: dealContacts.get(id) ?? [],
   }));
 
