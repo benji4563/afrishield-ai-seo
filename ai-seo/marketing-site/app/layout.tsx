@@ -11,6 +11,16 @@ import { organizationJsonLd } from '@/lib/structured-data';
 import { SITE, SITE_URL } from '@/lib/site';
 import { DEFAULT_OG_IMAGE } from '@/lib/posts';
 
+/**
+ * Google Tag Manager container. Installed once, here, so it covers every route.
+ * It loads a single time per visit and keeps running across client-side
+ * navigation; page views on those navigations come from a History Change
+ * trigger inside GTM, not from code here. GA4 and every event are configured in
+ * the GTM workspace, so no GA4 tag is loaded directly by the site. Public by
+ * design: the ID ships in every page's HTML.
+ */
+const GTM_ID = 'GTM-WJN8ML48';
+
 const sora = Sora({
   subsets: ['latin'],
   weight: ['600', '700'],
@@ -75,7 +85,42 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       data-scroll-behavior="smooth"
       className={`${sora.variable} ${inter.variable} ${mono.variable}`}
     >
+      <head>
+        {/* Google Tag Manager — official snippet, as high in <head> as possible. */}
+        <script
+          id="gtm-head"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','${GTM_ID}');`,
+          }}
+        />
+        {/*
+          HubSpot tracking code (portal 148875549, EU1). Lets HubSpot record page
+          views and the traffic source of each contact; until now every form lead
+          showed "OFFLINE" as its source. The lead route in app/api/contact is
+          unchanged and still creates the contact itself.
+        */}
+        <script
+          type="text/javascript"
+          id="hs-script-loader"
+          async
+          defer
+          src="https://js-eu1.hs-scripts.com/148875549.js"
+        />
+      </head>
       <body>
+        {/* Google Tag Manager (noscript) — immediately after the opening <body>. */}
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         {/*
           Feed autodiscovery. React hoists this into <head> on every page, which
           is the point: the metadata API could not carry it, because each route
