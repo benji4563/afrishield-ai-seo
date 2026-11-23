@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ClutchWidget } from '@/components/layout/ClutchWidget';
+import { CookieSettingsLink } from '@/components/consent/CookieSettingsLink';
 import { SignalNodeMark } from '@/components/signature/SignalNode';
 import { FOOTER_COLUMNS, SITE } from '@/lib/site';
 
@@ -102,9 +103,15 @@ export function Footer() {
           </div>
 
           <div className="mt-14 flex flex-col gap-3 border-t border-white/10 pt-7 sm:flex-row sm:items-center sm:justify-between">
-            <p className="font-mono text-label uppercase text-white/35">
-              © {new Date().getFullYear()} {SITE.legalName}
-            </p>
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+              <p className="font-mono text-label uppercase text-white/35">
+                © {new Date().getFullYear()} {SITE.legalName}
+              </p>
+              <Link href="/privacy" className="font-mono text-label uppercase text-white/50 transition-colors hover:text-white">
+                Privacy &amp; cookies
+              </Link>
+              <CookieSettingsLink className="font-mono text-label uppercase text-white/50 transition-colors hover:text-white" />
+            </div>
             <p className="font-mono text-label uppercase text-white/35">
               Built by Africans, for African screens
             </p>
