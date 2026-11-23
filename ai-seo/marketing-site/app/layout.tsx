@@ -6,6 +6,7 @@ import { Nav } from '@/components/layout/Nav';
 import { Footer } from '@/components/layout/Footer';
 import { WhatsAppFloat } from '@/components/layout/WhatsAppFloat';
 import { VoiceCallButton } from '@/components/layout/VoiceCallButton';
+import { PublicOnly } from '@/components/layout/PublicOnly';
 import { StructuredData } from '@/components/seo/StructuredData';
 import { organizationJsonLd } from '@/lib/structured-data';
 import { SITE, SITE_URL } from '@/lib/site';
@@ -134,24 +135,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           href={`${SITE_URL}/rss.xml`}
         />
         <StructuredData data={organizationJsonLd} />
-        <a
-          href="#main"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:bg-green-300 focus:px-4 focus:py-2 focus:font-mono focus:text-label focus:uppercase focus:text-ink"
-        >
-          Skip to content
-        </a>
-        <Nav />
+        <PublicOnly>
+          <a
+            href="#main"
+            className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:bg-green-300 focus:px-4 focus:py-2 focus:font-mono focus:text-label focus:uppercase focus:text-ink"
+          >
+            Skip to content
+          </a>
+          <Nav />
+        </PublicOnly>
         <main id="main">{children}</main>
-        <Footer />
-        <WhatsAppFloat />
-        <VoiceCallButton />
+        <PublicOnly>
+          <Footer />
+          <WhatsAppFloat />
+          <VoiceCallButton />
+        </PublicOnly>
         {/*
           Visitor analytics. Until 2026-11-09 the site loaded no analytics at all
           (confirmed with REA), so Vercel's dashboard showed zero rows even with
           Web Analytics switched on. The script posts to /_vercel/insights on our
           own domain and sets no cookies.
         */}
-        <Analytics />
+        <PublicOnly>
+          <Analytics />
+        </PublicOnly>
       </body>
     </html>
   );

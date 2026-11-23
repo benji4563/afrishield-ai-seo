@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /thank-you
+Disallow: /dashboard
 
 # AI search & retrieval crawlers — explicitly allowed so answer engines
 # (ChatGPT, Perplexity, Claude, Google AI) can index and cite this content.
