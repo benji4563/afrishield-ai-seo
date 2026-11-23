@@ -1,10 +1,11 @@
+/** The verticals in the GEO plan agreed on 2026-11-18, in priority order. */
 const SECTORS = [
-  'Accounting & tax',
-  'Legal practices',
-  'Fintech',
-  'Logistics',
-  'Health clinics',
-  'Professional services',
+  'Eye clinics & opticians',
+  'Private clinics',
+  'Hotels & lodges',
+  'Safari operators',
+  'Spas & salons',
+  'Coworking spaces',
 ];
 
 export function TrustStrip() {

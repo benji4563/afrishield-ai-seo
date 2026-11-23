@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, JetBrains_Mono, Sora } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
+import { ClickTracker } from '@/components/analytics/ClickTracker';
 import './globals.css';
 import { Nav } from '@/components/layout/Nav';
 import { Footer } from '@/components/layout/Footer';
@@ -152,6 +153,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           own domain and sets no cookies.
         */}
         <Analytics />
+        {/* CTA and WhatsApp click events for GTM (see lib/analytics.ts). */}
+        <ClickTracker />
       </body>
     </html>
   );

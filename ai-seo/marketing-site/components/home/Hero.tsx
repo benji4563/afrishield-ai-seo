@@ -80,7 +80,7 @@ export function Hero() {
        * the city stays clear on the right. Copy, buttons and the H1 are
        * unchanged from the original hero.
        */}
-      <div className="relative isolate overflow-hidden pb-[56px] pt-[132px] lg:pb-[120px] lg:pt-[160px]">
+      <div className="relative isolate overflow-hidden pb-[56px] pt-[108px] md:pt-[132px] lg:pb-[120px] lg:pt-[160px]">
         {/*
          * On large screens the photo fills only the right 55-62%, so the Civic
          * Centre tower lands beside the headline rather than behind it; a
@@ -110,32 +110,54 @@ export function Hero() {
         <div className="container-page">
           <div className="container-inner">
             <div className="animate-rise-in max-w-[640px]">
-              <p className="eyebrow-light">AI SEO · Built for African markets</p>
               {/*
-               * The brand name is load-bearing here, not decorative. Google
+               * Conversion rework, 2026-11 (reports/homepage-conversion-audit-2026-11-23.md):
+               * the free AI-visibility check is the first step, the call second.
+               *
+               * The brand name stays inside the H1, on its own line. Google
                * resolves "AfriShield AI" to afrishield.org - a different company
-               * - partly because this page's primary heading never said the
-               * name. Keep "AfriShield AI" as the subject of this sentence.
+               * - partly because this page's primary heading once never said the
+               * name. The question is the headline; the name keeps the entity.
                */}
-              <h1 className="h1 mt-6 max-w-[19ch]">
-                AfriShield AI makes your site the answer your customers search for.
+              <h1 className="mt-0">
+                <span className="eyebrow-light block">
+                  AfriShield AI<span className="hidden sm:inline"> · AI visibility for African businesses</span>
+                </span>
+                <span className="sr-only">: </span>
+                <span className="h1 mt-4 block max-w-[19ch] sm:mt-6">
+                  Are your customers finding your business on Google and AI search?
+                </span>
               </h1>
-              <p className="mt-7 max-w-[52ch] text-lead text-ink/75">
-                We run the keyword research, the writing, and the technical work on a
-                weekly schedule — and hand you a report that names every page, every
-                keyword, and every position. AI does the volume; a person edits every
-                word. No dashboard mysteries.
+              <p className="mt-5 max-w-[52ch] text-lead text-ink/75 sm:mt-7">
+                Discover whether ChatGPT, Gemini, Perplexity and Google can find and
+                recommend your business. Get a clear assessment of your online
+                visibility and what to improve to attract more customers.
               </p>
-              <div className="mt-9 flex flex-wrap gap-3">
-                <Button href="/contact" variant="accent-light">
-                  Book a call
+              <div className="mt-7 flex flex-wrap gap-3 sm:mt-9">
+                <Button
+                  href="/ai-visibility-check"
+                  variant="accent-light"
+                  className="h-12 w-full px-4 text-[12.5px] sm:w-auto sm:px-7 sm:text-[14px]"
+                  cta={{ location: 'hero', target: 'free_check' }}
+                >
+                  Get my free AI visibility check
                 </Button>
-                <Button href="/how-it-works" variant="ghost-light" className="bg-white/70 backdrop-blur-sm">
-                  See how it works
+                <Button
+                  href="/contact"
+                  variant="ghost-light"
+                  className="h-12 bg-white/70 backdrop-blur-sm"
+                  cta={{ location: 'hero', target: 'consultation' }}
+                >
+                  Book a consultation
                 </Button>
               </div>
-              <p className="mt-7 font-mono text-label uppercase text-ink/55">
-                No lock-in · Month to month · Keyword list shared before we write
+              <p className="mt-6 font-mono text-label uppercase text-ink/60">
+                Free · One-page visibility report · Delivered within 48 hours
+              </p>
+              <p className="mt-3 text-small text-ink/60">
+                <span className="text-green-600" aria-hidden="true">★</span>{' '}
+                {REVIEW_TOTALS.google.rating} on Google from {REVIEW_TOTALS.google.count} reviews ·
+                Publisher of the Baromètre IA Cameroun 2026
               </p>
             </div>
 
@@ -168,11 +190,14 @@ export function Hero() {
           {/* GEO answer block — factual, entity-dense, in the server HTML. */}
           <ProofRow />
           <Bluf className="mt-10 max-w-[70ch]" tone="light">
-            AfriShield AI provides AI SEO and local search optimisation for businesses
-            across West, Central, East, and Southern Africa. We handle keyword research,
-            content, technical SEO, and visibility in AI answer engines — ChatGPT, Claude,
-            Perplexity, and Google — for small businesses, e-commerce brands, and
-            professional firms, from USD 150 a month, reported monthly in plain numbers.
+            AfriShield AI is an AI visibility (GEO) and AI SEO firm for African
+            businesses, focused on private clinics and hospitality. Through
+            AfriShield Research it publishes the Africa AI Visibility Index series,
+            including the Baromètre IA Cameroun 2026. Its work covers visibility in
+            ChatGPT, Gemini, Perplexity, Claude and Google, technical SEO and AI-crawler
+            access, content and local search across West, Central, East and Southern
+            Africa, from USD 150 a month, reported monthly in plain numbers. It also
+            runs EVA, an AI assistant that answers customers on WhatsApp.
           </Bluf>
         </div>
       </div>

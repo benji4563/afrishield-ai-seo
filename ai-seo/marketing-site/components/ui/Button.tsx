@@ -17,6 +17,11 @@ type Props = {
   children: string;
   variant?: Variant;
   className?: string;
+  /**
+   * Click tracking: rendered as data-cta-* attributes and picked up by
+   * components/analytics/ClickTracker, which pushes `cta_click` to GTM.
+   */
+  cta?: { location: string; target: string };
 };
 
 /**
@@ -24,7 +29,7 @@ type Props = {
  * On hover the first copy slides up and out while the duplicate slides up into
  * its place. Measured button box: 40px tall, padding 9px 24px 7px, radius 0.
  */
-export function Button({ href, children, variant = 'accent', className }: Props) {
+export function Button({ href, children, variant = 'accent', className, cta }: Props) {
   const external = href.startsWith('http');
   const inner = (
     <span className="relative block h-[1em] overflow-hidden">
@@ -46,16 +51,18 @@ export function Button({ href, children, variant = 'accent', className }: Props)
     className,
   );
 
+  const data = cta ? { 'data-cta-location': cta.location, 'data-cta-target': cta.target } : {};
+
   if (external) {
     return (
-      <a href={href} className={classes} target="_blank" rel="noreferrer">
+      <a href={href} className={classes} target="_blank" rel="noreferrer" {...data}>
         {inner}
       </a>
     );
   }
 
   return (
-    <Link href={href} className={classes}>
+    <Link href={href} className={classes} {...data}>
       {inner}
     </Link>
   );

@@ -46,6 +46,8 @@ export function Nav() {
               <Link
                 key={link.href}
                 href={link.href}
+                data-cta-location="navigation"
+                data-cta-target={link.label.toLowerCase()}
                 className="font-mono text-label uppercase text-white/60 transition-colors hover:text-white"
               >
                 {link.label}
@@ -62,7 +64,7 @@ export function Nav() {
                 {SITE.phone}
               </a>
             ) : null}
-            <Button href="/contact">Book a call</Button>
+            <Button href="/contact" cta={{ location: 'navigation', target: 'consultation' }}>Book a call</Button>
           </div>
 
           <button
@@ -99,6 +101,8 @@ export function Nav() {
                 <Link
                   key={link.href}
                   href={link.href}
+                data-cta-location="navigation"
+                data-cta-target={link.label.toLowerCase()}
                   onClick={() => setOpen(false)}
                   className="font-mono text-label uppercase text-white/70"
                 >
@@ -116,7 +120,7 @@ export function Nav() {
                   Call: {SITE.phone}
                 </a>
               ) : null}
-              <Button href="/contact">Book a call</Button>
+              <Button href="/contact" cta={{ location: 'navigation', target: 'consultation' }}>Book a call</Button>
             </div>
           </div>
         </div>

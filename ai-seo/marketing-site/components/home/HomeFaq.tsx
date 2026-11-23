@@ -3,6 +3,10 @@ import { Faq } from '@/components/ui/Faq';
 
 export const HOME_FAQ = [
   {
+    q: 'What happens after I request the free AI visibility check?',
+    a: 'We ask ChatGPT, Gemini and Perplexity the questions your customers ask, record the answers, and send you a one-page report within 48 hours. It shows whether you were named, who was named instead, and the two or three gaps that explain it. There is no card and no obligation, and a follow-up call is optional.',
+  },
+  {
     q: 'How long before this shows up in the numbers?',
     a: 'Technical fixes can move things within weeks. New content usually takes two to four months to settle into a stable position, and competitive commercial phrases take longer than that. If someone quotes you thirty days for a competitive term, ask what happens in month two when it has not happened.',
   },
