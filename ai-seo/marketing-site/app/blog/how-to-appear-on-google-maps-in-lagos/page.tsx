@@ -511,6 +511,15 @@ export default function Post() {
         </ol>
 
         <p>
+          Running an eye clinic or optical centre? The clinic version of this guide, with
+          the HEFAMAA and ODORBN registrations worth stating, is{' '}
+          <a href="/blog/ai-visibility-for-opticians-in-lagos">
+            AI visibility for opticians in Lagos
+          </a>
+          .
+        </p>
+
+        <p>
           Kemi moved her pin onto the blue gate, recorded the video before the street woke
           up, and was verified four days later. Her listing now shows the right building, and
           the one-star review has company. Last week a new dispatch rider found the bakery

@@ -69,6 +69,55 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'ai-visibility-for-opticians-in-lagos',
+    title:
+      'AI Visibility for Opticians in Lagos: Getting Recommended by Google Maps and ChatGPT',
+    cardTitle: 'AI visibility for opticians in Lagos',
+    metaTitle: 'AI Visibility for Opticians in Lagos',
+    description:
+      'AI visibility for opticians in Lagos: the Google profile, HEFAMAA and ODORBN proof, and naira-priced service pages ChatGPT needs to name a clinic.',
+    lede:
+      'An optical centre in Lagos is recommended by Google and AI assistants when its Google Business Profile is verified and complete, its website states services and naira prices in text, and patients leave reviews steadily. Google ranks local results on relevance, distance and prominence. This guide covers what Lagos patients see today, the HEFAMAA and ODORBN registrations worth stating, and the order of work.',
+    category: 'Local visibility',
+    published: '2026-11-23',
+    modified: '2026-11-23',
+    readingMinutes: 9,
+    primaryKeyword: 'ai visibility for opticians in lagos',
+    image: {
+      src: '/images/blog-ai-visibility-for-opticians-in-lagos.webp',
+      alt: 'A smiling man in a beige sweater wears an optometrist’s trial frame while a clinician adjusts it from behind, with a slit lamp in the background of a bright examination room.',
+    },
+    linkedin: `"Do you have a website?"
+"We have Instagram."
+
+If you run an eye clinic in Lagos, you have had this conversation. Possibly with yourself.
+
+Here is what happens next. A new patient in Surulere asks ChatGPT for a good optician nearby. It names a chain, a hospital on the Island and a clinic in Ikeja. Then it helpfully suggests checking that the clinic is properly registered.
+
+Your certificates are framed behind the counter. Your prices live in a lovely carousel from February. To a machine, that carousel is a picture of a font.
+
+Think of an AI assistant as a patient who will never walk into reception. It cannot see the slit lamp or the frame wall. It reads what is written about you, and it believes what it reads.
+
+So write it down:
+
+A verified Google Business Profile in the right category, with the same hours HEFAMAA already makes you display at the entrance.
+One page per service on your own website, in text, with a starting price in naira.
+One sentence saying the premises are registered with HEFAMAA and your optometrists with ODORBN. Two checkable proofs most competitors never mention.
+A review request to every patient when they collect their glasses. Every patient, nothing in exchange.
+
+On 23 November we read page one of Google for this topic from Nigeria. Clinics, an Instagram profile, the HEFAMAA registration page. Not one guide written for the clinic owner. That gap will not last.
+
+We sell this work, and we have just explained the first three steps for free. Our sales team calls it a bold strategy. Quietly.
+
+The full guide:
+
+https://afrishieldai.com/blog/ai-visibility-for-opticians-in-lagos
+
+#Lagos #Optometry #EyeCare #GoogleMaps #AIVisibility
+
+Keep the Instagram. Just give it a website to point at.`,
+  },
+  {
     slug: 'visibilite-ia-coworking-yaounde',
     title:
       'Visibilité IA pour un espace de coworking à Yaoundé : être trouvé sur Google Maps et recommandé par ChatGPT',

@@ -597,5 +597,17 @@
     "photographerUrl": "https://www.pexels.com/@ninthgrid-2149521550",
     "alt": "Une jeune femme assise devant un ordinateur portable sur une petite table ronde, un collègue penché à côté d’elle, dans un espace de travail lumineux avec un comptoir de café en arrière-plan.",
     "avgColor": "#928E83"
+  },
+  {
+    "slot": "blog-ai-visibility-for-opticians-in-lagos",
+    "file": "images/blog-ai-visibility-for-opticians-in-lagos.webp",
+    "source": "Pexels",
+    "query": "optometrist eye exam african",
+    "pexelsId": 6749729,
+    "pexelsUrl": "https://www.pexels.com/photo/man-in-brown-crew-neck-shirt-getting-his-eyes-checks-6749729/",
+    "photographer": "Antoni Shkraba",
+    "photographerUrl": "https://www.pexels.com/@shkrabaanthony",
+    "alt": "A smiling man in a beige sweater wears an optometrist’s trial frame while a clinician adjusts it from behind, with a slit lamp in the background of a bright examination room.",
+    "avgColor": "#CABFB5"
   }
 ]
