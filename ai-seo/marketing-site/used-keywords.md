@@ -61,6 +61,7 @@ reconcile.
 | visibilité google pour opticien à douala | NICHE — clinics × Douala × FR | `/blog/visibilite-google-opticien-douala` | 2026-11-18 | Live |
 | visibilité ia pour espace de coworking à yaoundé | NICHE — coworking × Yaoundé × FR | `/blog/visibilite-ia-coworking-yaounde` | 2026-11-20 | Live |
 | ai visibility for opticians in lagos | NICHE — clinics × Lagos | `/blog/ai-visibility-for-opticians-in-lagos` | 2026-11-23 | Live |
+| seo for safari companies in tanzania | NICHE — hospitality × Arusha/Tanzania | `/blog/seo-for-safari-companies-in-tanzania` | 2026-11-24 | Live |
 
 ## Deliberately not targeted
 

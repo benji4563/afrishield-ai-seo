@@ -609,5 +609,17 @@
     "photographerUrl": "https://www.pexels.com/@shkrabaanthony",
     "alt": "A smiling man in a beige sweater wears an optometrist’s trial frame while a clinician adjusts it from behind, with a slit lamp in the background of a bright examination room.",
     "avgColor": "#CABFB5"
+  },
+  {
+    "slot": "blog-seo-for-safari-companies-in-tanzania",
+    "file": "images/blog-seo-for-safari-companies-in-tanzania.webp",
+    "source": "Pexels",
+    "query": "arusha safari guide",
+    "pexelsId": 31206127,
+    "pexelsUrl": "https://www.pexels.com/photo/entrance-to-arusha-national-park-tanzania-31206127/",
+    "photographer": "Alex Levis",
+    "photographerUrl": "https://www.pexels.com/@droneafrica",
+    "alt": "Safari vehicles parked under a cloudy sky outside the green entrance gate of the Ngorongoro Conservation Area in Tanzania, with drivers and visitors standing nearby.",
+    "avgColor": "#8A8A7E"
   }
 ]

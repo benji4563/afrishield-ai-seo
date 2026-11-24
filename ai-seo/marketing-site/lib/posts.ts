@@ -69,6 +69,51 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'seo-for-safari-companies-in-tanzania',
+    title: 'SEO for Safari Companies in Tanzania: What Our Arusha and Moshi Audits Found',
+    cardTitle: 'SEO for safari companies in Tanzania',
+    metaTitle: 'SEO for Safari Companies in Tanzania',
+    description:
+      'SEO for safari companies in Tanzania: why Arusha and Moshi operators rank for their name but not their trips, and the order of work that fixes it.',
+    lede:
+      'Three Tanzanian safari operators in Arusha and Moshi were audited between September and October 2026. All three ranked first on Google for their own name, and none reached page one for any of 20 commercial searches. This guide sets out which searches a Tanzanian operator can win, why the TALA licence belongs on the website, and the order of work.',
+    category: 'Local visibility',
+    published: '2026-11-24',
+    modified: '2026-11-24',
+    readingMinutes: 9,
+    primaryKeyword: 'seo for safari companies in tanzania',
+    image: {
+      src: '/images/blog-seo-for-safari-companies-in-tanzania.webp',
+      alt: 'Safari vehicles parked under a cloudy sky outside the green entrance gate of the Ngorongoro Conservation Area in Tanzania, with drivers and visitors standing nearby.',
+    },
+    linkedin: `Every Tanzanian safari operator has done this search. Your own company name, typed into Google, just to check.
+
+Position one. The logo, the reviews, the map pin. Lovely. Somewhere in Arusha, a Land Cruiser gets washed in celebration.
+
+Now search for what you actually sell, the way a stranger would. A six day Serengeti and Ngorongoro safari from Arusha. An eight day Lemosho climb, with a price.
+
+We audited three operators in Arusha and Moshi this autumn. All three were first for their own name. Across 20 searches for the trips they sell, none of them reached page one. One operator with more than 2,500 TripAdvisor reviews did not appear once.
+
+Think of your website as a shop with a beautiful window and no shelves. People who already know you walk in and ask. People walking past see the window, and nothing they can pick up.
+
+The shelves are pages:
+
+One page per itinerary, naming the parks, the days, the start point and a price in USD.
+Your TALA licence number on the website. The regulations already put it on your office wall and on every vehicle. The one place a traveller abroad can see is the one place it is missing.
+A page for every lodge and camp you own, so you stop paying commission on guests you are already driving around.
+Specific searches, not Tanzania safari on its own. The directories own that phrase. Nobody owns your eight day Lemosho page yet.
+
+We are an AI visibility company writing a 2,000 word article to tell people to write more pages. We are aware.
+
+The full guide, with the order of work:
+
+https://afrishieldai.com/blog/seo-for-safari-companies-in-tanzania
+
+#Tanzania #SafariMarketing #Arusha #TourOperators #SEO
+
+Keep washing the Land Cruisers. Just give the website something to show them off with.`,
+  },
+  {
     slug: 'ai-visibility-for-opticians-in-lagos',
     title:
       'AI Visibility for Opticians in Lagos: Getting Recommended by Google Maps and ChatGPT',

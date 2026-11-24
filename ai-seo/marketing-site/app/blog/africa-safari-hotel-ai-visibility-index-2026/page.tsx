@@ -408,7 +408,9 @@ export default function Post() {
           <a href="/for-safari-operators">for safari operators</a> and{' '}
           <a href="/for-lodges-hotels">for lodges and hotels</a>, and none of the seven
           businesses needed a new website to do it. Operators in Kenya can start from the{' '}
-          <a href="/ai-seo/nairobi">Nairobi page</a>.
+          <a href="/ai-seo/nairobi">Nairobi page</a>; operators in Arusha and Moshi, from our guide
+          to <a href="/blog/seo-for-safari-companies-in-tanzania">SEO for safari companies in
+          Tanzania</a>.
         </p>
 
         <h2 id="not-yet">When this is not your problem</h2>
