@@ -2,6 +2,7 @@ import { Shell } from '@/components/dashboard/Shell';
 import { Section, SourceStatus, Table } from '@/components/dashboard/ui';
 import { requireSession } from '@/lib/dashboard/auth';
 import { ga4Configured, getGa4 } from '@/lib/dashboard/ga4';
+import { gscConfigured } from '@/lib/dashboard/gsc';
 import { getCrm, hubspotConfigured } from '@/lib/dashboard/hubspot';
 import { DEFINITIONS } from '@/lib/dashboard/metrics';
 import { resolvePeriod } from '@/lib/dashboard/period';
@@ -26,6 +27,7 @@ export default async function Settings() {
             head={['Source', 'Role', 'Server setting', 'Status']}
             rows={[
               ['GA4 Data API', 'Traffic, pages, events', 'GA4_PROPERTY_ID, GA4_SERVICE_ACCOUNT_KEY', yes(ga4Configured())],
+              ['Search Console API', 'Google clicks, impressions, positions, queries', 'GA4_SERVICE_ACCOUNT_KEY (same account, added as a user on the property); optional GSC_SITE_URL', yes(gscConfigured())],
               ['HubSpot CRM API', 'Contacts, deals, pipeline (read-only)', 'HUBSPOT_TOKEN', yes(hubspotConfigured())],
               ['Supabase', 'Recommendation statuses', 'SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY', yes(storeConfigured())],
               ['Vercel Analytics', 'Site monitoring (stays in Vercel)', '—', 'Not imported'],

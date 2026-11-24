@@ -1,4 +1,5 @@
 import type { Ga4Bundle } from './ga4';
+import type { GscBundle } from './gsc';
 import { sourceLabel, type CrmBundle } from './hubspot';
 import { inRange, type Period } from './period';
 import { crmSummary, formatMoney, revenueBy } from './metrics';
@@ -10,8 +11,8 @@ import { crmSummary, formatMoney, revenueBy } from './metrics';
  * of a conclusion. Nothing here acts on its own: the owner sets the status.
  */
 
-export type Category = 'Acquisition' | 'Content' | 'Conversion' | 'Sales' | 'Revenue';
-export const CATEGORIES: Category[] = ['Acquisition', 'Content', 'Conversion', 'Sales', 'Revenue'];
+export type Category = 'Acquisition' | 'Search' | 'Content' | 'Conversion' | 'Sales' | 'Revenue';
+export const CATEGORIES: Category[] = ['Acquisition', 'Search', 'Content', 'Conversion', 'Sales', 'Revenue'];
 
 export type Recommendation = {
   id: string;
@@ -35,7 +36,7 @@ export type InsightResult = {
 const NON_CONTENT = ['/contact', '/ai-visibility-check', '/thank-you', '/dashboard', '/review'];
 const DAY = 86_400_000;
 
-export function generateInsights(period: Period, crm: CrmBundle | null, ga4: Ga4Bundle | null): InsightResult {
+export function generateInsights(period: Period, crm: CrmBundle | null, ga4: Ga4Bundle | null, gsc: GscBundle | null = null): InsightResult {
   const recs: Recommendation[] = [];
   const thin: InsightResult['notEnoughData'] = [];
   const today = new Date().toISOString().slice(0, 10);
@@ -114,6 +115,62 @@ export function generateInsights(period: Period, crm: CrmBundle | null, ga4: Ga4
       }
     }
   }
+
+  // ── Search (Google Search Console) ────────────────────────────────────────
+  // Any change to an existing URL must respect the freeze rule in the GEO plan
+  // skill (afrishield-geo-plan): during a core update, only internal links from
+  // old pages to new ones are allowed.
+  if (gsc) {
+    const path = (url: string) => url.replace(/^https?:\/\/[^/]+/, '') || '/';
+    const striking = gsc.queries.filter((q) => q.position > 10.5 && q.position <= 20 && q.impressions >= 10).sort((a, b) => b.impressions - a.impressions);
+    if (striking.length) {
+      add({
+        id: `search-striking-${striking[0].key.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 60)}`,
+        title: `"${striking[0].key}" is on page two of Google`,
+        category: 'Search',
+        observation: `${striking.length} ${striking.length === 1 ? 'query sits' : 'queries sit'} at positions 11 to 20 with 10+ impressions in ${period.label.toLowerCase()}.`,
+        evidence: striking.slice(0, 5).map((q) => `${q.key}: position ${q.position.toFixed(1)}, ${q.impressions} impressions, ${q.clicks} clicks`),
+        implication: 'Page two gets almost no clicks. These are the cheapest page-one wins the site has.',
+        action: 'Find the page that ranks (Search Console page), add internal links to it from related posts with the query as anchor text, and strengthen the section that answers it. Check the freeze rule in the GEO plan before editing an existing page.',
+        priority: 'Medium',
+        measurement: 'Average position and clicks for these queries next period.',
+        why: 'Fires when a query has an average position between 11 and 20 and at least 10 impressions.',
+      });
+    }
+    const unclicked = gsc.pages.filter((r) => r.impressions >= 50 && r.clicks === 0).sort((a, b) => b.impressions - a.impressions);
+    if (unclicked.length) {
+      add({
+        id: `search-unclicked-${path(unclicked[0].key).replace(/[^a-z0-9]+/gi, '-').slice(0, 60)}`,
+        title: `${path(unclicked[0].key)} is seen in Google but never clicked`,
+        category: 'Search',
+        observation: `${unclicked.length} ${unclicked.length === 1 ? 'page has' : 'pages have'} 50+ impressions and no click.`,
+        evidence: unclicked.slice(0, 5).map((r) => `${path(r.key)}: ${r.impressions} impressions, average position ${r.position.toFixed(1)}`),
+        implication: 'Either the page ranks too low to be clicked, or its title and description do not match what people searched.',
+        action: 'Compare the page title and meta description with its top queries in Search Console and rewrite them to answer the query. Wait for the freeze to end before editing.',
+        priority: 'Low',
+        measurement: 'CTR for the page next period.',
+        why: 'Fires when a page has at least 50 impressions and zero clicks in the period.',
+      });
+    }
+    const falling = gsc.queries.filter((q) => q.impressions >= 10 && q.prevPosition != null && q.position - q.prevPosition >= 3).sort((a, b) => b.impressions - a.impressions);
+    if (falling.length) {
+      add({
+        id: `search-falling-${falling[0].key.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 60)}`,
+        title: `"${falling[0].key}" dropped in Google`,
+        category: 'Search',
+        observation: `${falling.length} ${falling.length === 1 ? 'query' : 'queries'} with 10+ impressions lost 3 or more positions against the previous period.`,
+        evidence: falling.slice(0, 5).map((q) => `${q.key}: ${q.prevPosition!.toFixed(1)} → ${q.position.toFixed(1)}`),
+        implication: 'A competitor page or a Google update may have overtaken the page. Core-update volatility is normal for weeks; act only if the drop persists.',
+        action: 'Re-check next week. If the drop holds two weeks in a row, look at who now ranks above and what their page covers that ours does not.',
+        priority: 'Low',
+        measurement: 'Position for these queries over the next two weekly checks.',
+        why: 'Fires when a query with at least 10 impressions loses 3+ positions against the previous period.',
+      });
+    }
+    if (!striking.length && !unclicked.length && !falling.length) {
+      thin.push({ category: 'Search', note: 'No query on page two with 10+ impressions, no page with 50+ unclicked impressions, and no query that fell 3+ positions.' });
+    }
+  } else thin.push({ category: 'Search', note: 'Search Console is not connected yet, so there are no search recommendations.' });
 
   // ── Content ───────────────────────────────────────────────────────────────
   if (ga4) {

@@ -2,6 +2,7 @@ import { setRecommendationStatus } from '@/app/dashboard/actions';
 import { Shell } from '@/components/dashboard/Shell';
 import { Notice, Section, SourceBar } from '@/components/dashboard/ui';
 import { CATEGORIES, generateInsights } from '@/lib/dashboard/insights';
+import { getGsc } from '@/lib/dashboard/gsc';
 import { loadDashboard, type PageProps } from '@/lib/dashboard/load';
 import { STATUSES, STATUS_LABEL, readStatuses } from '@/lib/dashboard/store';
 
@@ -9,7 +10,8 @@ const PRIORITY_STYLE = { High: 'bg-red-100 text-red-800', Medium: 'bg-amber-100 
 
 export default async function Recommendations({ searchParams }: PageProps) {
   const { period, ga4, crm, ga4Result, crmResult } = await loadDashboard(searchParams);
-  const { recommendations, notEnoughData } = generateInsights(period, crm, ga4);
+  const gscResult = await getGsc(period.start, period.end, period.prevStart, period.prevEnd);
+  const { recommendations, notEnoughData } = generateInsights(period, crm, ga4, gscResult.status === 'ok' ? gscResult.data : null);
   const store = await readStatuses();
 
   return (
@@ -18,7 +20,7 @@ export default async function Recommendations({ searchParams }: PageProps) {
       intro="What to do next to win more qualified leads and revenue, generated from the numbers on this dashboard. Nothing is executed automatically: you review and set the status."
       period={period}
     >
-      <SourceBar sources={[['GA4', ga4Result], ['HubSpot', crmResult]]} />
+      <SourceBar sources={[['GA4', ga4Result], ['HubSpot', crmResult], ['Search Console', gscResult]]} />
       <Notice>
         Each recommendation comes from a fixed rule with a minimum sample size, applied to real GA4 and HubSpot data. No statistic is estimated or invented,
         and no external AI service receives your data. When a rule lacks data it says so below instead of guessing.

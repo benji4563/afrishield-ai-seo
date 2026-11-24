@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 const LINKS = [
   ['/dashboard', 'Overview'],
   ['/dashboard/acquisition', 'Acquisition'],
+  ['/dashboard/search', 'Search Console'],
   ['/dashboard/website', 'Website performance'],
   ['/dashboard/funnel', 'Conversion funnel'],
   ['/dashboard/leads', 'Leads'],

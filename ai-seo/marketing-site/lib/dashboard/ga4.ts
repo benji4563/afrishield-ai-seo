@@ -12,9 +12,10 @@ import { cachedSource, type SourceResult } from './source';
  *   GA4_SERVICE_ACCOUNT_FILE   path to the key JSON (local development only)
  */
 
-type ServiceAccount = { client_email: string; private_key: string };
+export type ServiceAccount = { client_email: string; private_key: string };
 
-function serviceAccount(): ServiceAccount | null {
+/** Also used by Search Console (gsc.ts): one service account for both APIs. */
+export function serviceAccount(): ServiceAccount | null {
   try {
     const encoded = process.env.GA4_SERVICE_ACCOUNT_KEY;
     const raw = encoded
@@ -34,15 +35,17 @@ export function ga4Configured(): boolean {
   return Boolean(process.env.GA4_PROPERTY_ID && serviceAccount());
 }
 
-let token: { value: string; expiresAt: number } | null = null;
+const tokens = new Map<string, { value: string; expiresAt: number }>();
+const ANALYTICS_SCOPE = 'https://www.googleapis.com/auth/analytics.readonly';
 
-async function accessToken(account: ServiceAccount): Promise<string> {
+export async function accessToken(account: ServiceAccount, scope = ANALYTICS_SCOPE): Promise<string> {
+  const token = tokens.get(scope);
   if (token && token.expiresAt > Date.now() + 60_000) return token.value;
   const b64 = (value: object) => Buffer.from(JSON.stringify(value)).toString('base64url');
   const now = Math.floor(Date.now() / 1000);
   const unsigned = `${b64({ alg: 'RS256', typ: 'JWT' })}.${b64({
     iss: account.client_email,
-    scope: 'https://www.googleapis.com/auth/analytics.readonly',
+    scope,
     aud: 'https://oauth2.googleapis.com/token',
     iat: now,
     exp: now + 3600,
@@ -59,8 +62,8 @@ async function accessToken(account: ServiceAccount): Promise<string> {
   });
   const body = (await response.json()) as { access_token?: string; expires_in?: number; error_description?: string };
   if (!body.access_token) throw new Error(`Google sign-in failed: ${body.error_description ?? response.status}`);
-  token = { value: body.access_token, expiresAt: Date.now() + (body.expires_in ?? 3600) * 1000 };
-  return token.value;
+  tokens.set(scope, { value: body.access_token, expiresAt: Date.now() + (body.expires_in ?? 3600) * 1000 });
+  return body.access_token;
 }
 
 type ReportRequest = {
