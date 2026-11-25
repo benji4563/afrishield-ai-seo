@@ -1,17 +1,21 @@
 import { Section, SectionHeader } from '@/components/ui/Section';
 
+/**
+ * The problem from the owner's side. No statistics on purpose: a figure here
+ * would need a source the visitor can check, and the point stands without one.
+ */
 const PROBLEMS = [
   {
-    title: 'The agency retainer that bought silence',
-    body: 'Twelve months, a monthly invoice, and a dashboard nobody could read. When you asked which page moved, the answer was a screenshot of a line going up and to the right with no axis labels.',
+    title: 'They ask an assistant before they ask a friend',
+    body: 'Customers now type their question into Google, ChatGPT or Gemini to find a clinic, compare hotels or check who is good. The shortlist forms before anyone visits your website.',
   },
   {
-    title: 'The website nobody searches for',
-    body: 'It looks fine. It loads fast. It has never appeared for a single phrase a customer would actually type, because nobody ever wrote down what those phrases were.',
+    title: 'The answer names somebody',
+    body: 'If your business is hard to find, hard to understand or hard to trust online, the answer names a competitor instead. That enquiry goes to them, and you never see it.',
   },
   {
-    title: 'The content that stopped in March',
-    body: 'Three posts in January, two in February, one in March, then nothing. Not because it was not working — because writing is the first thing to fall off a busy desk.',
+    title: 'Your best services stay invisible',
+    body: 'Often the business is listed but the services that pay the bills are not. Weak or missing pages, an incomplete Google profile and no reviews quietly cost credibility.',
   },
 ];
 
@@ -21,8 +25,8 @@ export function Challenge() {
       <SectionHeader
         eyebrow="The problem"
         tone="light"
-        title="SEO does not usually fail. It usually just stops."
-        blurb="Almost every business we talk to has already paid for search once. The work rarely failed on strategy — it failed because nobody owned it week to week, and nobody could tell what had actually shipped."
+        title="Your customers are searching differently. Can they still find you?"
+        blurb="People use search engines and AI assistants to discover businesses, compare providers and decide who to trust. A business that is difficult to discover, understand or trust online loses those customers to the ones that are not."
       />
 
       <div className="mt-14 grid gap-5 md:grid-cols-3">

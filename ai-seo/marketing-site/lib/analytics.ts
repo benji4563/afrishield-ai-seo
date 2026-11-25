@@ -20,8 +20,27 @@ declare global {
 
 export type LeadForm = 'contact' | 'ai_visibility_check';
 
-export function trackLead(form: LeadForm): void {
+function push(event: DataLayerEvent): void {
   if (typeof window === 'undefined') return;
   window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({ event: 'generate_lead', form_name: form });
+  window.dataLayer.push(event);
+}
+
+export function trackLead(form: LeadForm): void {
+  push({ event: 'generate_lead', form_name: form });
+}
+
+/**
+ * A click on a call to action. Never a lead: `generate_lead` alone counts a
+ * conversion. `cta_location` is where the click happened (hero, audit_section,
+ * services_section, final_cta, navigation); `cta_target` is where it leads
+ * (free_check, consultation, pricing, a service page).
+ */
+export function trackCta(location: string, target: string): void {
+  push({ event: 'cta_click', cta_location: location, cta_target: target });
+}
+
+/** A click that opens WhatsApp, wherever the link sits. */
+export function trackWhatsApp(location: string): void {
+  push({ event: 'whatsapp_click', cta_location: location });
 }
