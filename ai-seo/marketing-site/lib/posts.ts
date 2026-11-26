@@ -69,6 +69,56 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'hotel-marketing-in-arusha',
+    title: 'Hotel Marketing in Arusha: Getting Found on Google and AI',
+    cardTitle: 'Hotel marketing in Arusha',
+    metaTitle: 'Hotel Marketing in Arusha: Google and AI',
+    description:
+      'Hotel marketing in Arusha: what four live hotel searches show, why booking platforms win the broad ones, and how a lodge wins the narrow ones.',
+    lede:
+      'Four Arusha hotel searches were checked on 26 November 2026. The broad search returned one hotel website in ten results; a narrow search for lodges in Usa River returned four. This guide covers the three Arusha hotel markets, the role of safari operators in choosing first-night beds, what OTA commission pays for, and what AI assistants need before they name a hotel.',
+    category: 'Local visibility',
+    published: '2026-11-26',
+    modified: '2026-11-26',
+    readingMinutes: 10,
+    primaryKeyword: 'hotel marketing in arusha',
+    image: {
+      src: '/images/blog-hotel-marketing-in-arusha.webp',
+      alt: 'A man in khaki clothes stands outside a raised tented lodge room with a green corrugated roof, yellow flowers and forested hills behind, near Arusha, Tanzania.',
+    },
+    linkedin: `Every Arusha hotelier knows this booking. It arrives at eleven at night, through a platform, from a guest whose first WhatsApp message says: we found you on your Instagram, loved the verandas.
+
+They did find you. Then they searched your name and clicked the first result. It was not your website.
+
+Lovely verandas. Somebody else's commission.
+
+On 26 November we ran four Arusha hotel searches and counted whose pages came back.
+
+Best hotel in Arusha: one hotel website in ten results.
+Hotel near Kilimanjaro airport: one.
+Where to stay in Arusha before a safari: six of the ten were written by safari operators.
+Lodge in Usa River Arusha: four lodges' own sites. The narrower the search, the more room for the property.
+
+Think of the market in town. The stall with no sign still sells to its regulars. Everyone else buys from whoever wrote the price on a board.
+
+The board, for a hotel or lodge:
+
+Driving times to the airport, to town and to the park gate, written in text.
+One page per room type, with a from-price in USD.
+A page for safari operators: transfer times, late check-in, parking for the vehicle, a trade contact. On a safari package, they choose the bed.
+A Google Business Profile with every field filled in.
+
+We are a company that spent a Thursday counting search results so a hotel would not have to. Not our most glamorous Thursday.
+
+The full guide, with the order of work:
+
+https://afrishieldai.com/blog/hotel-marketing-in-arusha
+
+#Arusha #Tanzania #HotelMarketing #DirectBookings #Hospitality
+
+Keep the verandas. Just make sure the next guest who searches for them lands on your own page.`,
+  },
+  {
     slug: 'seo-for-safari-companies-in-tanzania',
     title: 'SEO for Safari Companies in Tanzania: What Our Arusha and Moshi Audits Found',
     cardTitle: 'SEO for safari companies in Tanzania',

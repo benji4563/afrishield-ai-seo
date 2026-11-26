@@ -318,7 +318,9 @@ export default function Post() {
           <a href="/blog/how-to-reduce-ota-commission">commission to an OTA</a> on a guest it was
           already driving around. Our guide to{' '}
           <a href="/blog/how-to-get-hotel-cited-by-chatgpt">getting a hotel cited by ChatGPT</a>{' '}
-          covers what each property page should contain.
+          covers what each property page should contain, and our guide to{' '}
+          <a href="/blog/hotel-marketing-in-arusha">hotel marketing in Arusha</a> covers the same
+          problem from the property owner&rsquo;s side.
         </p>
 
         <h2 id="order">The order of work</h2>

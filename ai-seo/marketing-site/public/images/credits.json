@@ -621,5 +621,17 @@
     "photographerUrl": "https://www.pexels.com/@droneafrica",
     "alt": "Safari vehicles parked under a cloudy sky outside the green entrance gate of the Ngorongoro Conservation Area in Tanzania, with drivers and visitors standing nearby.",
     "avgColor": "#8A8A7E"
+  },
+  {
+    "slot": "blog-hotel-marketing-in-arusha",
+    "file": "images/blog-hotel-marketing-in-arusha.webp",
+    "source": "Pexels",
+    "query": "tanzania lodge",
+    "pexelsId": 39177624,
+    "pexelsUrl": "https://www.pexels.com/photo/man-outside-safari-lodge-in-arusha-tanzania-39177624/",
+    "photographer": "Boaz Mashauri",
+    "photographerUrl": "https://www.pexels.com/@boaz",
+    "alt": "A man in khaki clothes stands outside a raised tented lodge room with a green corrugated roof, yellow flowers and forested hills behind, near Arusha, Tanzania.",
+    "avgColor": "#6E7A5A"
   }
 ]
