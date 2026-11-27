@@ -75,7 +75,7 @@ export const POSTS: PostMeta[] = [
     cardTitle: 'Marketing digital d’une clinique au Cameroun',
     metaTitle: 'Marketing digital : clinique au Cameroun',
     description:
-      'Marketing digital pour clinique au Cameroun : ce que le Code de déontologie interdit, et la fiche Google, WhatsApp, les avis et le site qui remplissent l’agenda.',
+      'Marketing digital pour clinique au Cameroun : ce que le Code de déontologie interdit, et ce qui remplit l’agenda : fiche Google, WhatsApp, avis, site.',
     lede:
       'Le décret n° 83-166 du 12 avril 1983 portant Code de déontologie des médecins du Cameroun interdit la publicité et la réclame sans but exclusivement scientifique ou éducatif. Le marketing digital d’une clinique à Douala ou à Yaoundé repose donc sur l’information : une fiche Google complète, un numéro WhatsApp qui répond, des avis demandés à chaque patient et une page par service.',
     lang: 'fr',
