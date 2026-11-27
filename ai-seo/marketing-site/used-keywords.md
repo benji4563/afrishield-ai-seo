@@ -63,6 +63,7 @@ reconcile.
 | ai visibility for opticians in lagos | NICHE — clinics × Lagos | `/blog/ai-visibility-for-opticians-in-lagos` | 2026-11-23 | Live |
 | seo for safari companies in tanzania | NICHE — hospitality × Arusha/Tanzania | `/blog/seo-for-safari-companies-in-tanzania` | 2026-11-24 | Live |
 | hotel marketing in arusha | NICHE — hospitality × Arusha | `/blog/hotel-marketing-in-arusha` | 2026-11-26 | Live |
+| marketing digital pour clinique au cameroun | NICHE — clinics × Cameroon × FR | `/blog/marketing-digital-clinique-cameroun` | 2026-11-27 | Live |
 
 ## Deliberately not targeted
 

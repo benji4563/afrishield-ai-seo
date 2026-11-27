@@ -479,6 +479,15 @@ export default function Post() {
         </p>
 
         <p>
+          Pour une clinique ou un centre médical, les règles de déontologie changent la donne :
+          nous les détaillons dans{' '}
+          <a href="/blog/marketing-digital-clinique-cameroun">
+            notre guide du marketing digital pour une clinique au Cameroun
+          </a>
+          .
+        </p>
+
+        <p>
           Pour comparer avec les autres secteurs, notre{' '}
           <a href="/blog/barometre-ia-cameroun-2026">Baromètre IA Cameroun 2026</a> montre ce que
           les assistants d’IA répondent aujourd’hui sur les entreprises camerounaises.

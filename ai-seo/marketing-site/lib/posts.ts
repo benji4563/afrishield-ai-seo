@@ -69,6 +69,57 @@ export function postOgImages(post: PostMeta) {
 
 export const POSTS: PostMeta[] = [
   {
+    slug: 'marketing-digital-clinique-cameroun',
+    title:
+      'Marketing digital pour une clinique au Cameroun : ce que la déontologie permet, et ce qui amène des patients',
+    cardTitle: 'Marketing digital d’une clinique au Cameroun',
+    metaTitle: 'Marketing digital : clinique au Cameroun',
+    description:
+      'Marketing digital pour clinique au Cameroun : ce que le Code de déontologie interdit, et la fiche Google, WhatsApp, les avis et le site qui remplissent l’agenda.',
+    lede:
+      'Le décret n° 83-166 du 12 avril 1983 portant Code de déontologie des médecins du Cameroun interdit la publicité et la réclame sans but exclusivement scientifique ou éducatif. Le marketing digital d’une clinique à Douala ou à Yaoundé repose donc sur l’information : une fiche Google complète, un numéro WhatsApp qui répond, des avis demandés à chaque patient et une page par service.',
+    lang: 'fr',
+    category: 'Référencement local',
+    published: '2026-11-27',
+    modified: '2026-11-27',
+    readingMinutes: 10,
+    primaryKeyword: 'marketing digital pour clinique au cameroun',
+    image: {
+      src: '/images/blog-marketing-digital-clinique-cameroun.webp',
+      alt: 'Un médecin en chemise blanche parle à un patient en chemise bleue assis de l’autre côté d’un bureau, le brassard d’un tensiomètre au bras, dans un cabinet de consultation lumineux.',
+    },
+    linkedin: `« Docteur, on vous propose un pack croissance : publicité par pathologie, concours sur Instagram, une consultation offerte au gagnant. »
+
+Si vous dirigez une clinique à Douala ou à Yaoundé, vous avez déjà reçu cette brochure. Elle est en FCFA. Elle a visiblement été écrite pour un autre pays.
+
+Petit détail : au Cameroun, le Code de déontologie des médecins, décret n° 83-166 du 12 avril 1983, interdit tout procédé de publicité ou de réclame sans but exclusivement scientifique ou éducatif. Il fixe même la taille de la plaque sur la porte : 25 cm sur 30.
+
+Le texte date de 1983. Il n'avait pas prévu Instagram. Mais il se transpose très bien : informer, oui. Vanter, non.
+
+Et bonne nouvelle, informer est justement ce qui marche sur Google et dans ChatGPT.
+
+Pensez à Google comme à un patient qui ne franchit jamais la porte. Il ne voit ni votre laboratoire ni vos médecins. Il lit ce qui est écrit sur vous, et il croit ce qu'il lit.
+
+Ce qu'il lui faut, dans l'ordre :
+
+Une fiche Google revendiquée, avec le repère sur la bonne entrée, les vrais horaires et le bon numéro.
+Un WhatsApp au nom de la clinique, tenu par l'accueil. C'est votre vrai système de rendez-vous.
+Un avis demandé à chaque patient après la consultation. À tous, sans cadeau, et sans jamais confirmer en public qu'une personne est patiente.
+Une page par service sur votre site, qui explique au lieu de promettre.
+
+Google l'écrit lui-même : aucun paiement ne fait monter dans le classement local.
+
+Nous vendons de la visibilité, et nous venons d'expliquer comment faire les trois premières étapes gratuitement. Notre service commercial reste très digne.
+
+Le guide complet, en français :
+
+https://afrishieldai.com/blog/marketing-digital-clinique-cameroun
+
+#Cameroun #Douala #Yaoundé #SantéPrivée #MarketingMédical
+
+Gardez la brochure du pack croissance. Elle fait un excellent sous-main.`,
+  },
+  {
     slug: 'hotel-marketing-in-arusha',
     title: 'Hotel Marketing in Arusha: Getting Found on Google and AI',
     cardTitle: 'Hotel marketing in Arusha',

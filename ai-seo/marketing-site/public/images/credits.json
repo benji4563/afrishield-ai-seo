@@ -633,5 +633,17 @@
     "photographerUrl": "https://www.pexels.com/@boaz",
     "alt": "A man in khaki clothes stands outside a raised tented lodge room with a green corrugated roof, yellow flowers and forested hills behind, near Arusha, Tanzania.",
     "avgColor": "#6E7A5A"
+  },
+  {
+    "slot": "blog-marketing-digital-clinique-cameroun",
+    "file": "images/blog-marketing-digital-clinique-cameroun.webp",
+    "source": "Pexels",
+    "query": "african doctor clinic reception",
+    "pexelsId": 30677591,
+    "pexelsUrl": "https://www.pexels.com/photo/doctor-consultation-with-blood-pressure-checkup-30677591/",
+    "photographer": "Ninthgrid",
+    "photographerUrl": "https://www.pexels.com/@ninthgrid-2149521550",
+    "alt": "Un médecin en chemise blanche parle à un patient en chemise bleue assis de l’autre côté d’un bureau, le brassard d’un tensiomètre au bras, dans un cabinet de consultation lumineux.",
+    "avgColor": "#B5B1B0"
   }
 ]
