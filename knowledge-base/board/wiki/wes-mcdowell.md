@@ -78,3 +78,13 @@ message-first design · social proof · local SEO tier list.
   and comparison; "how to choose" and "what the first month looks like" are the
   gaps. **Tension with the settled strategy:** he would put the effort into video
   rather than three blog posts a week — flagged to Ben, not acted on. — https://www.youtube.com/watch?v=VXGDHZIGf40
+- **2026-11-28** — His 2027 ranking of channels for expertise businesses: YouTube,
+  live streams, AEO and opt-in email at the top; classic SEO near the bottom (AI
+  answers take the clicks and authority is hard to control); local SEO strong only for
+  truly local firms; cold email and cold DMs written off. His AEO case is that
+  assistants care more about what your site and other sites say about you than about
+  domain age, and lean heavily on YouTube even for low-view videos (his figures and
+  example, not checked here). Corroborated in part by Mike King this week (video as
+  the easiest AI-answer gap). **Tension with the settled strategy:** he would demote
+  the 3-posts-a-week blog behind weekly video; flagged to Ben, not acted on. —
+  https://www.youtube.com/watch?v=xnqmiEz9-fA

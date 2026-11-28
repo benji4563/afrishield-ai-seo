@@ -16,6 +16,13 @@ transcript) / `shallow` (title+description fallback).
 | 2026-10-12 | zGfjuwDKrro | The NEW ChatGPT Just Killed Claude at Making YouTube Videos | skipped-off-niche | shallow |
 | 2026-10-12 | i1fLRypxgjU | Hormozi's New YouTube Strategy Is Genius (but Dangerous) | skipped-off-niche | shallow |
 | 2026-10-12 | JJTFLkD9NxU | How 'Everyday Experts' Are Getting Famous on YouTube | skipped-off-niche | shallow |
+| 2026-11-28 | cATcTCqF5h4 | The EXACT YouTube System I'm Betting It All On in 2027 | skipped-off-niche | shallow |
+| 2026-11-28 | yZ_rf78zjsw | Why YouTube Suddenly Wants Experts Over 40 | skipped-off-niche | shallow |
+| 2026-11-28 | O4IuiMx6kjc | This NEW YouTube Strategy for 2027 is Stupidly Profitable | skipped-off-niche | shallow |
+| 2026-11-28 | xnqmiEz9-fA | The New Rules of Digital Marketing (Ranked for 2027) | ingested | deep |
+| 2026-11-28 | DOA2SXz-XGA | The New Era of 'Expert Branding' Has Just Begun | skipped-off-niche | shallow |
+| 2026-11-28 | MqQAt48v298 | This coach had no time for youtube (so we fixed it) | skipped-off-niche | shallow |
+| 2026-11-28 | mmIWpdXk_wQ | Nobody Wants Your Free Advice on YouTube | skipped-off-niche | shallow |
 
 Note (dedup, 2026-08-05 run): all three videoIds above were first logged
 2026-07-29 at `shallow` depth (`RwEs5VdH_ZQ` and `HsLLTvosGJw` as `ingested`;
@@ -26,3 +33,5 @@ missed — so the deep entries above are what's kept; the shallow duplicates
 were dropped.
 
 Note (2026-10-12): the five skipped uploads are about making or growing a YouTube channel, not about a website, conversion or search. `VXGDHZIGf40` read in full from yt-dlp `en-orig` captions (Firecrawl returned no transcript).
+
+Note (2026-11-28): six of seven uploads are about growing a YouTube channel. `xnqmiEz9-fA` read in full from captions.

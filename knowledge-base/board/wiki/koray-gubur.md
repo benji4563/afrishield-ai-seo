@@ -109,3 +109,31 @@ context · "Koraynese" (his precise, coined terminology).
     each AI crawler by user agent (cloaking-style); backdating a new document and
     linking it from expired domains so it reads as old; hiding a site from Googlebot
     while building links, as a launch trick.
+- **2026-11-28** — The fluff test. He separates a "common sense" sentence, one anyone
+  could write without knowing the field, from knowledge: a named entity, one of its
+  attributes and a value. A vague claim ("our app is secure") should be rebuilt as the
+  named system, the attribute that makes it secure and its value. He also repeats that
+  an engine forms its first quality guess from the opening sentences and the main
+  above-the-fold block, before running costlier evaluation, and adds "source context":
+  Google first decides which type of site (agency, directory, regulator, publisher)
+  deserves a query, then compares sites within that type, so a topical map should know
+  which type it is competing as. For AfriShield the fluff test is the same check as the
+  working-copy blog rule BR-2026-11-21-1, and this week's four posts all open their
+  ShortAnswer with a definition sentence that fails it. — https://www.youtube.com/watch?v=JjRqqRKjdkA
+  - *not adopted: manipulative* — exact-match domains canonicalised to one site to
+    displace a brand ("canonical confusion"); expired Google Business Profile domains;
+    imitating a shop page that sends the buy button to a casino; buying canonical tags
+    and links on a pre-planned "external topical map"; automated Reddit posting of
+    listings with links back.
+- **2026-11-28** — Publishing pace and location pages. His view: velocity itself is a
+  classifier, so a new section should ramp up week by week and taper down rather than
+  spike or stop dead, and "crawled / discovered but not indexed" in Search Console is
+  the warning sign. For locations, a place without its own search demand (or its own
+  Google Business Profile) should be a subheading on a parent city page, made distinct
+  with numbers specific to each sub-area, not its own thin page; he reports rankings
+  rising after such merges (his case, not verified). For AfriShield, three posts a week
+  sits far inside his range, and the merge advice backs the `local-seo` doorway check
+  for Service × City pages. — https://www.youtube.com/watch?v=D9vOo4ZrkR4
+  - *not adopted: manipulative* — distributing fake "authorship signature" phrases
+    through prompts so AI text cannot be detected; linking a new site while keeping
+    Googlebot out until launch.

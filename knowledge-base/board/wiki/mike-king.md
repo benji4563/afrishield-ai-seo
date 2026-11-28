@@ -98,3 +98,22 @@ synthesis-first discovery.
   honest sources are the AI-visibility study dataset, measured audits and real
   prospect questions; a candidate rule, held until there are posts to test it on. —
   https://www.youtube.com/watch?v=6qF8mRrtTms
+- **2026-11-28** — A GEO programme in four parts (owner, direction, execution,
+  measurement) and a three-layer measurement cascade: input metrics (what was shipped,
+  bot visits, rankings for the sub-queries engines run in the background), channel
+  metrics (share of voice, citation rate, citation accuracy), then performance (AI
+  referral traffic and what it converts). He treats AI answers as mainly a brand
+  channel, says a prompt checked once a day tells you little because answers are
+  probabilistic, and finds gaps by comparing what an engine selected for its
+  background queries with what you have, on and off your site. Video is his easiest
+  gap to fill: when an engine looks for a video and none exists it falls back to other
+  formats. Blocking AI bots is a business decision, not a technical default. For
+  AfriShield: the monthly AI Overview check and the AI-visibility study should report
+  a rate across repeated runs, and citation accuracy (is what the assistant says about
+  AfriShield true?) is a cheap extra column. — https://www.youtube.com/watch?v=NVcLF2reldk
+- **2026-11-28** — Rank trackers are being served reordered results, and Google can
+  assemble result pages from generated components (calculators, comparison matrices,
+  planners). His conclusion is the same as for AI answers: run each check several
+  times, read the distribution rather than one position, and calibrate against Search
+  Console. On content, give the reader a reason to click that a generated widget
+  cannot: first-hand data, the lower-funnel detail. — https://www.youtube.com/watch?v=95pZgi3Ax3U

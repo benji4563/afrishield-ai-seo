@@ -72,3 +72,13 @@ work on it vs. in it · leverage.
   this is the same design as the humor/voice reference the blog skill already loads;
   the addition worth keeping is a per-channel voice note (blog, LinkedIn, outreach)
   instead of one voice for all. — https://www.youtube.com/watch?v=wtaRjOFqdyU
+- **2026-11-28** — A four-step sales call: connect (set the agenda, ask why us and why
+  now), diagnose (the future they want first, then where they are today, then what they
+  have already tried), prescribe (repeat their blockers back and present only the parts
+  of the offer that answer those blockers), commit (raise budget, decision-makers and
+  time before the price so they are handled as obstacles, and ask for payment on the
+  call rather than sending a proposal). Lost and won call transcripts are fed to an AI
+  against those four questions to find where calls break. For AfriShield: the free-check
+  and audit calls could follow this script, and recorded WhatsApp or video calls are
+  the "game tape". His insistence on taking payment while a prospect is driving is a
+  pressure tactic, not adopted. — https://www.youtube.com/watch?v=nsFKkeQg-V0

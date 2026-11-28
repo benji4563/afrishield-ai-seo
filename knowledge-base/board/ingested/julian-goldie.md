@@ -19,6 +19,16 @@ transcript) / `shallow` (title+description fallback).
 | 2026-10-12 | uRw7zRiKmpg | Google Gemini NEW Updates Are CRAZY! | skipped-off-niche | shallow |
 | 2026-10-12 | J3QsCAiIvOY | Perplexity Just Dropped Its New Embedding Models | skipped-off-niche | shallow |
 | 2026-10-12 | 67LTrHDt8bA | Free Claude Code + OmniRoute is WILD! | skipped-off-niche | shallow |
+| 2026-11-28 | II13y6BcmF8 | Claude Code Agent Swarms are WILD! | skipped-off-niche | shallow |
+| 2026-11-28 | 4ZMMgiAIw3k | Obsidian Just Changed AI Agents FOREVER! | skipped-off-niche | shallow |
+| 2026-11-28 | nM0rAVF4eXI | NEW Hermes Super Kanban Agent is ABSURD! | skipped-off-niche | shallow |
+| 2026-11-28 | viQarQSI-20 | 1,000 New Ways to Use Hermes Agent! | skipped-off-niche | shallow |
+| 2026-11-28 | YHnMVb-JTv8 | 50 Grok Bot Hacks I Wish I Knew Sooner | skipped-off-niche | shallow |
+| 2026-11-28 | wzFciCMSmTE | How to Automate Your Email Workflow With Hermes Agent | skipped-off-niche | shallow |
+| 2026-11-28 | aLEuEoJQx-4 | How to Build Interactive 3D Worlds With GPT-6 Astra | skipped-off-niche | shallow |
+| 2026-11-28 | jfsMFtP7UG0 | You've Never Seen DeepSeek Used Like This Before | skipped-off-niche | shallow |
+| 2026-11-28 | 1Yf28exEiXs | How to Rank #1 on Google With Paperclip + Hermes | skipped-off-niche | shallow |
+| 2026-11-28 | XMOs4nBMemo | How to Build an AI Memory Galaxy With Hermes + Obsidian | skipped-off-niche | shallow |
 
 Note: depth is `shallow` for all entries — the environment's network policy
 blocks direct access to youtube.com (yt-dlp/direct curl get a 403 at the
@@ -30,3 +40,5 @@ per the per-advisor cap. No videoId overlap between the 2026-07-29 and
 2026-08-05 runs.
 
 Note (2026-10-12, local weekly task): all six newest uploads are AI-tool launch or agent-demo videos, filtered on title before any credit was spent. Nothing read.
+
+Note (2026-11-28): all ten newest uploads are AI-tool launch or agent-demo videos, including the one with a ranking title (a tool demo). Filtered on title, nothing read.

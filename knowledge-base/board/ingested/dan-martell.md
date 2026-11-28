@@ -19,6 +19,12 @@ transcript) / `shallow` (title+description fallback).
 | 2026-10-12 | 4_urJ17Rx8s | Give me 57 sec... I'll DELETE your need for perfection | skipped-off-niche | shallow |
 | 2026-10-12 | _rBsOP658YA | You're only 6 months away from living your dream life | skipped-off-niche | shallow |
 | 2026-10-12 | gfSVNJZgbOo | Change Your Entire Life In 20 Minutes (with AI) | skipped-off-niche | shallow |
+| 2026-11-28 | ZoklIEHm9K8 | 10 things that will dramatically improve the quality of your life (under $100) | skipped-off-niche | shallow |
+| 2026-11-28 | TSr_qLZ-8YY | It took me 30 harsh years to learn what I'll teach you in just 27 minutes | skipped-off-niche | shallow |
+| 2026-11-28 | nsFKkeQg-V0 | If you only watch one sales video, make it this one | ingested | deep |
+| 2026-11-28 | SJywU4UQryQ | How to Build an AI Agent for Every Part of Your Life | skipped-off-niche | shallow |
+| 2026-11-28 | 9Cf416w4JJI | Copy This Strategy to 10X Your Business (Fast) | skipped-off-niche | shallow |
+| 2026-11-28 | Hgd1rxrIYGM | How to make more money with AI (for every income level) | skipped-off-niche | shallow |
 
 Note (2026-07-29, shallow pass): the environment's network policy blocked
 direct access to youtube.com, so no auto-transcript could be fetched;
@@ -33,3 +39,5 @@ newest uploads had moved on from the prior run's short-form clips to
 longer-form business/AI-leverage content — first wiki update logged this run.
 
 Note (2026-10-12): `wtaRjOFqdyU` read in full from yt-dlp `en-orig` captions and kept because it bears on producing content for this service. The other five are motivation or tool round-ups.
+
+Note (2026-11-28): `nsFKkeQg-V0` read in full from captions because it bears on selling this service. `YD8uRumP8cM` (1-person business with AI agents, 18 Nov) was not reached and is left unlogged for the next run.

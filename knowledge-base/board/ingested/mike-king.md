@@ -18,6 +18,10 @@ transcript) / `shallow` (title+description fallback).
 | 2026-10-12 | VBH9Od_OL1Q | Training Data Is Quietly Deciding Winners in AI Search - Inside SEO Week - Metehan Yesilyurt | skipped-backlog | shallow |
 | 2026-10-12 | BAf-PuMVVrs | AI Search Sentiment Might Matter More Than Rankings - Inside SEO Week - Ilana Gershteyn | skipped-backlog | shallow |
 | 2026-10-12 | _TxSBJ-__WA | Your Content Has a Mathematical Footprint - Scott Stouffer - Inside SEO Week | skipped-backlog | shallow |
+| 2026-11-28 | aNhNZmz5Twg | Agentic Marketing for CMOs: Where to Start, What to Build, and How to Measure It | skipped-off-niche | shallow |
+| 2026-11-28 | NVcLF2reldk | The GEO Operating System | ingested | deep |
+| 2026-11-28 | 95pZgi3Ax3U | How Do We Move Forward if the SERP Is Generative? | ingested | deep |
+| 2026-11-28 | 9WA6u0rdEqE | The Next SEO Advantage Is Empathy - Angela Skane - Inside SEO Week | skipped-backlog | shallow |
 
 Note (2026-07-29, shallow pass): the environment's network policy blocks
 direct access to youtube.com, so no auto-transcript could be fetched;
@@ -34,3 +38,5 @@ no new content beyond what's already logged there. No videoId overlap with
 the 2026-07-29 run.
 
 Note (2026-10-12): the two newest unread uploads were read in full (Firecrawl transcripts). Both are short pre-conference interviews from April 2026. The three older April uploads are marked `skipped-backlog` unread: older than 60 days and outside this run's cap.
+
+Note (2026-11-28): the two GEO videos read in full from yt-dlp `en-orig` captions. `aNhNZmz5Twg` is about staffing an enterprise marketing department with agents, judged from the title. `9WA6u0rdEqE` is an April Inside SEO Week clip, older than 60 days.
