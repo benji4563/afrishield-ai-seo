@@ -117,3 +117,33 @@ synthesis-first discovery.
   times, read the distribution rather than one position, and calibrate against Search
   Console. On content, give the reader a reason to click that a generated widget
   cannot: first-hand data, the lower-funnel detail. — https://www.youtube.com/watch?v=95pZgi3Ax3U
+- **2026-11-28** — "Agentic marketing for CMOs" (a conversation with iPullRank's
+  Director of Marketing, not a solo talk). Draws a line this wiki should keep: he
+  files "marketing *to* agents" under his own relevance engineering, and reserves
+  "agentic marketing" for using agents to *do* the marketing work — automating around
+  people, not replacing them. Names the two things to have ready before any agent
+  build: a **context layer** (brand voice/tone, personas, user journeys, business
+  documents — the slowest thing to gather because it touches many teams and
+  approvals) and **integrations** (API keys, MCPs, the right license tier — a free,
+  single-seat tool account won't work). His own build sequence: discovery → an
+  agentic plan naming which agents and why → integrations → context layer → build →
+  QA → handoff and team training → ongoing agent-ops review, because a model update
+  changes an agent's output even on an unchanged prompt, so agents need periodic
+  re-checking, not a one-time build. Measures success on three levels: efficiency
+  (same or fewer people doing more), utilization, and downstream marketing
+  performance (traffic, visibility, social actions actually increasing, not just
+  busywork reduced). His one piece of advice for any team, any budget: pick one
+  genuinely impactful thing to automate first and use that win to earn the next
+  round of buy-in, rather than trying to stand up a whole program at once. For
+  AfriShield: this is close to a checklist for the local board-update automation's
+  own 7-week dormancy pattern — it had no "agent-ops" review step, so it broke
+  silently and nobody noticed until this week's resumption; a periodic health check
+  on *that* automation specifically (not just the site-health report) would catch
+  the next gap sooner. — https://www.youtube.com/watch?v=aNhNZmz5Twg
+  - *Disagreement with the automation's own ledger, not resolved:* today's
+    `board/master` commit logged this same video `skipped-off-niche` (shallow,
+    judged from the title alone — "staffing an enterprise marketing department
+    with agents"). Logged `ingested`/`deep` here instead, having read the full
+    transcript and found it squarely relevant to AfriShield's own automation-of-
+    automation thesis. Flagged for a human call on which verdict stands once the
+    two tracks reconcile.

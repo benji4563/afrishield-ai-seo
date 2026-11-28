@@ -34,4 +34,14 @@ were dropped.
 
 Note (2026-10-12): the five skipped uploads are about making or growing a YouTube channel, not about a website, conversion or search. `VXGDHZIGf40` read in full from yt-dlp `en-orig` captions (Firecrawl returned no transcript).
 
-Note (2026-11-28): six of seven uploads are about growing a YouTube channel. `xnqmiEz9-fA` read in full from captions.
+Note (2026-11-28, local weekly task): six of seven uploads are about growing a YouTube channel. `xnqmiEz9-fA` read in full from captions.
+
+| 2026-11-28 | cATcTCqF5h4 | The EXACT YouTube System I'm Betting It All On in 2027 | ingested | deep |
+
+Note (2026-11-28, this check): `cATcTCqF5h4` re-read in full via Firecrawl
+(it had only just premiered when checked last week, with no transcript yet)
+and reclassified `ingested`/`deep`, overriding the local automation's same-
+day `skipped-off-niche`/`shallow` row above for the same videoId — both rows
+kept rather than overwritten. This is the fourth time in five weeks this
+advisor's on-niche line has been drawn differently between the two tracks
+(see the wiki entry); worth a human decision on where it actually sits.
