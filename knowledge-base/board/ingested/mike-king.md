@@ -39,4 +39,13 @@ the 2026-07-29 run.
 
 Note (2026-10-12): the two newest unread uploads were read in full (Firecrawl transcripts). Both are short pre-conference interviews from April 2026. The three older April uploads are marked `skipped-backlog` unread: older than 60 days and outside this run's cap.
 
-Note (2026-11-28): the two GEO videos read in full from yt-dlp `en-orig` captions. `aNhNZmz5Twg` is about staffing an enterprise marketing department with agents, judged from the title. `9WA6u0rdEqE` is an April Inside SEO Week clip, older than 60 days.
+Note (2026-11-28, local weekly task): the two GEO videos read in full from yt-dlp `en-orig` captions. `aNhNZmz5Twg` is about staffing an enterprise marketing department with agents, judged from the title. `9WA6u0rdEqE` is an April Inside SEO Week clip, older than 60 days.
+
+| 2026-11-28 | aNhNZmz5Twg | Agentic Marketing for CMOs: Where to Start, What to Build, and How to Measure It | ingested | deep |
+
+Note (2026-11-28, this check): `aNhNZmz5Twg` re-read in full via Firecrawl
+(not just the title) and reclassified `ingested`/`deep`, overriding the local
+automation's same-day `skipped-off-niche`/`shallow` row above — both rows are
+kept rather than overwritten, since the automation's row reflects a real
+(title-only) pass and the disagreement itself is worth keeping visible. See
+the wiki entry for why this is squarely on-niche.

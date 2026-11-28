@@ -88,3 +88,37 @@ message-first design · social proof · local SEO tier list.
   the easiest AI-answer gap). **Tension with the settled strategy:** he would demote
   the 3-posts-a-week blog behind weekly video; flagged to Ben, not acted on. —
   https://www.youtube.com/watch?v=xnqmiEz9-fA
+- **2026-11-28** — A ~70-minute year-end flagship training that answers a question
+  this wiki has carried open since the 10-31 entry on `DOA2SXz-XGA` ("The New Era of
+  'Expert Branding'" — logged shallow there, no transcript; thesis only). The answer:
+  stop building a broad **personal brand** and build **"the known expert"** in one
+  narrow topic instead — the first name that comes to mind for one specific problem,
+  not a recognizable face in general. Narrower is better, not worse: his case study
+  (David Jackson, an SEO freelancer) went general local-SEO videos → "local SEO for
+  dentists" → "local SEO for multi-location dental groups," and the narrowest tier is
+  the one that now pays him $3-5k/month retainers for years, not the general tier.
+  Names a three-way video taxonomy — entertainment, "edutainment" (teaching dressed
+  up with heavy editing/storylines), and plain education — and argues edutainment is
+  a trap for a service business: it draws viewers in for the spectacle, not people
+  seriously evaluating a provider, and cites Alex Hormozi's own public pivot away
+  from it back to plain whiteboard teaching as the only format that still brings him
+  business. Restates and sharpens the existing "pull video" doctrine: people don't
+  search YouTube by business category, but they do search by the specific question
+  a buyer has, and that's still how a service provider gets found organically there.
+  His own origin numbers: ranking a web-design site got him calls but only a 20%
+  close rate and constant price objections; switching the same questions into YouTube
+  videos moved him to an 80% close rate and let him double his rates, because viewers
+  arrived "already bought in." For AfriShield: "the known expert, narrow topic" is a
+  sharper articulation of the Africa-qualified, low-competition positioning already
+  in the content strategy — the same narrowing logic (country/city/vertical cuts)
+  the blog queue already applies to written content. — https://www.youtube.com/watch?v=cATcTCqF5h4
+  - *Disagreement with the automation's own ledger, not resolved:* today's
+    `board/master` commit logged this video, along with `DOA2SXz-XGA`,
+    `mmIWpdXk_wQ` and `MqQAt48v298`, as `skipped-off-niche`/shallow ("about
+    growing a YouTube channel," judged mostly by title). This wiki's own prior
+    entries (10-24, 10-31, 11-14, 11-21) read several of those same videos in
+    full and judged them on-niche — they bear directly on the recurring,
+    explicitly-flagged tension between the settled blog-first strategy and a
+    video channel, not on channel growth for its own sake. Worth a human
+    decision on where this advisor's on-niche line actually sits, since the two
+    ingestion tracks now disagree on it repeatedly rather than once.
